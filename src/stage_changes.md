@@ -1,7 +1,7 @@
 # Stage Changes
 \*EXACT PARAMETERS STILL NEEDED FOR MOST STAGES
 
-- ### - BATTLEFIELD -
+- ### - BATTLEFIELD - 
   - *Given a new aesthetic revamp courtesy of Silent*
   - Mainstage: 
     - Width: 159.9749 🠚 145
