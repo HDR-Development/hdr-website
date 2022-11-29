@@ -1,5 +1,5 @@
 # Stage Changes
-\*EXACT PARAMETERS STILL NEEDED FOR MOST STAGES
+\*EXACT PARAMETERS STILL NEEDED FOR MOST STAGES!
 
 - ### - BATTLEFIELD - 
   - *Given a new aesthetic revamp courtesy of Silent*
