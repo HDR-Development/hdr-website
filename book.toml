@@ -7,3 +7,4 @@ title = "hdr-changelog"
 
 [output.html]
 site-url = "/hdr-changelog/"
+default-theme = "ayu"
