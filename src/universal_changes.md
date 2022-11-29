@@ -1,0 +1,438 @@
+#  UNIVERSAL CHANGES 
+
+- ### ![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) New Mechanics:
+  - Edge Canceling
+    - Move toward an edge during any of the following states to slide off of the edge and cancel all grounded endlag:
+      - Aerials
+      - Special fall
+      - Shielding
+      - Dashing
+      - Standing turnaround
+      - Runbrake
+      - Damage
+      - Taunts
+  - Wavedashing
+    - Input an airdodge during jumpsquat to slide along the ground with a burst of momentum
+      - Jump and shield on the same frame will result in a wavedash similar to Rivals of Aether
+      - While jump is being input, roll and shield are non-bufferable
+      - Wavedashes can pick up items
+  - Shield Dropping
+    - Tilt down while in shield to drop through platforms (threshold is in between shield tilt and spotdodge)
+    - Alternatively, use the (shield + special) or (shield + shield) or (shield + taunt) shield lock shortcut and tilt/tap downwards to shield drop
+  - Shield Stopping
+    - Shielding can now be performed during initial dash
+  - Shield Slide-off follow up
+    - Edge slipping caused by shield knockback, or shield slide off happens more often due to parameter changes, and have new interactions:
+      - When facing towards the center of the platform you’re standing on you enter a state of pratfall when pushed off
+      - When facing outwards of the platform you’re instantly actionable like in melee/pm
+  - Jump Cancel Grabs
+    - Press grab during jumpsquat to execute a standing grab
+  - Dash Attack Cancel Up Smash (DACUS)
+    - Input up smash, up tilt, or up and grab between frames 3-10 of a dash attack to execute an up smash with the dash attack’s momentum
+  - Dash Attack Cancel Down Smash (DACDS)
+    - Input down smash, downtilt, or down and grab between frames 3-10 of a dash attack to execute a down smash with the dash attack’s momentum
+  - Dash Item Toss Cancel Item Toss (DITCIT)
+    - Input an item toss during the first 6 frames of a dash item toss to slide forward with a lot of momentum
+    - Can now be performed with a throw in any direction
+  - Glide Tossing
+    - Input an item toss during the first 5 frames of a roll to slide forward with a lot of momentum
+    - Can be performed with a throw in any direction
+    - Speed gained from a glide toss depends on the animation speed of the roll on the last frame before being canceled
+      - Due to varying roll animations, this means the timing for a “good” glide toss will vary per character and roll direction (generally, the later into the roll a glide toss is performed, the further the slide)
+  - Aerial Glide Tossing
+    - Airdodges can be canceled into an item toss during the first 5 frames
+    - Airdodges refresh after a successful AGT but are reduced in distance by 10% each time
+  - Airdodge Cancels
+    - Airdodges can be canceled with an item toss or zair after frame 3
+  - Perfect Shield Projectile Reflection
+  - Wiggle out of tumble
+    - While in tumble, tap the stick to the left or right to transition into normal fall
+    - Inputs cannot be buffered during knockback
+  - Pivoting / Perfect Pivoting
+    - After a dash, flick the control stick in the opposite direction and let go to return to standing
+      - If performed during the first 4 frames, you will perfect pivot similar to Smash 4
+      - If performed during the next 3 frames, you will pivot in place similar to Melee
+  - Ledge Hogging
+    - The ledge counts as “occupied” for the first 75% of all ledge animations (varies slightly per character)
+  - Double jump cancels
+    - Ness, Lucas, Mewtwo, Peach, Yoshi, and Sora can all now cancel the upwards momentum of their double jumps with an aerial attack. They can still rise with an aerial during their double jump by holding the jump button
+    - The leniency window for this is 5 frames
+    - They can also work with tap jump
+  - Crouch out of run
+  - Characters can now moonwalk during initial dash; you can perform a moonwalk by performing a half-circle back motion during your initial dash (or otherwise move your stick opposite your character's facing direction without triggering a dash back)
+  - Wiggling the control stick to exit tumble will now allow you to exit tumble directly after hitstun ends like in Melee/PM instead of a bit after the tumbling animation starts
+  - Can taunt on respawn platform as well as out of dash, run, and run brake
+  - Teeter Canceling
+    - Taunts, landing lag, and dashes can all be teeter canceled
+  - Added support for Bidou and Aidou control schemes
+    - When overridden with a held attack/special input, C-stick registers directional inputs for two frames (up from 1 frame in Sm4sh)
+    - Allows easier inputs of frame-perfect techniques such as perfect pivots, c-stick moonwalks, and RAR/IRAR
+  - Main CSS Changes
+    - Character selection is preserved between matches
+    - Random now previews the character before the match starts. Hold Z/ZR for traditional random
+  - Salty Runback and Quick Exit
+    - Input L + R + A + Y + Start to immediately restart a match
+    - Input L + R + A + X + Start to exit a match straight to the stage select screen
+  - Meter System for Terry, Ryu, and Ken
+    - Just like in traditional fighting games these characters have been given a meter of their own for usage in: Special Cancels, EX-Specials, (Super) Special moves and more.
+    - Up to 10 units of meter can be gained through dealing damage, and using specials (regardless if these whiff or not).
+      - Special moves gain meter equivalent to half their damage on hit rounded to the nearest integer unless otherwise stated
+      - Ex-Specials gain no meter upon use
+    - More details can be found on the individual character changelogs
+
+- ### ![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) New Modes:
+  - Tag Mode
+    - In this custom game mode, a random player starts with the final smash aura! Hit other players to pass it on. Once time runs out, you die!
+  - Turbo Mode
+    - In this custom game mode, every move can be canceled on hit. Embrace true chaos and create ridiculous combos!
+
+- ### ![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) New Controls:
+  - Added new control options which can be mapped to most buttons:
+    - Short Hop
+    - Taunt/Footstool
+    - Smash Attack
+    - Tilt Attack
+
+- ### ![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) Hitstun / DI / Damage / Knockback:
+  - Hitstun is now calculated with a linear formula as it has been in every previous game. In Ultimate, hitstun is logarithmically scaled with knockback, which means hitstun per unit of knockback drops off as knockback increases. This has been reverted to that hitstun scales linearly with knockback, so higher percents should have more hitstun without affecting low percents
+    - As a consequence, balloon knockback is no longer present. This was inherently tied to how hitstun was calculated, and we would rather have hitstun that works correctly that does not drop off at mid to high percents than keep balloon knockback
+  - Global Knockback to Hitstun Multiplier
+    - 0.40 🠚 0.42
+  - Maximum Grounded Initial Launch Speed
+    - 8.3 🠚 100
+  - Hitstun Frames to trigger Damage2 animations
+    - 15 🠚 22F
+  - Hitstun Frames to trigger Damage3 animations
+    - 21 🠚 22F
+  - Tumble Hitstun threshold 
+    - 32F 🠚 34F
+  - Tumble Knockback Threshold
+    - 80 🠚 90
+  - Balloon knockback:
+    - Lower hitstun frame threshold for balloon knockback speed up interpolation
+      - 30F 🠚 45F
+    - Upper hitstun frame threshold for balloon knockback speed up interpolation
+      - 80F 🠚 57F
+    - Balloon effect intensity scaling hitstun thresholds readjusted (min/max) ??/?? 🠚 45/57
+    - Balloon knockback speed deceleration and hitstun frame speed multiplier readjustment constant) increased  ?? 🠚 32
+    - Balloon effect deceleration constant increased ?? 🠚 32
+    - Balloon effect deceleration constant decreased 32 🠚 18
+  - Rate multiplier to velocity/acceleration to reach end of knockback trajectory
+    - 70 🠚 38
+  - Multiplier to initial knockback velocity/acceleration
+    - 6 🠚 5
+  - Launch angle range from base angle param to apply extra deceleration and further reduced hitstun scaling (damage\_fly\_speed\_up\_min\_max\_angle) 
+    - ?? 🠚 89
+  - Constant used in linear interpolation for speedup and hitstun scaling based on knockback angle (damage\_fly\_speed\_up\_angle\_rate) decreased:
+    - ?? 🠚 85
+  - Hitlag
+    - Multihit hitlag standardized based on number of hits
+    - Minimum hitlag decreased 5F 🠚 4F
+    - Damage to hitlag multiplier
+      - 0.65 🠚 0.45
+    - Electric hitlag multiplier
+      - 1.5 🠚 1.25
+    - Minimum hitlag
+      - 6F 🠚 5F
+    - Shield hitlag multiplier
+      - 0.67 🠚 0.85
+    - Hitlag reduction depending on number of players in match removed
+  - Fallspeed and gravity during launch angles 70°-110° now match the character’s base fallspeed and gravity
+  - Hitstun Cancel Window
+    - Removed; Airdodge/Attack: 40F/45F 🠚 999F/999F
+  - Directional Influence
+    - Maximum Angle: 9.74° 🠚 18°
+    - All knockback can now be directionally influenced regardless of whether it sends you into tumble or not
+  - Smash Directional Influence (Hitstun Shuffle)
+    - Base Distance: 2 Units 🠚 6 Units
+    - Minimum time between inputs: 4F 🠚 2F
+    - SDI input window: 4F 🠚 2F
+    - ASDI distance multiplier: 0.65 🠚 0.5
+    - Max SDI pulses 16 🠚 50
+  - Drift DI (new)
+    - For the duration of aerial hitstun, your horizontal stick position is used to accelerate you left or right
+      - In essence, you can DI during hitlag as normal to adjust angle, but then also drift in or out slightly during knockback
+    - Effectiveness scales down depending on the initial knockback taken, eventually having no effect above 3.0 launch speed
+    - *This change is intended to go hand in hand with the increase in hitstun. The combination of these two changes will result in a combo game that is more freeform, with more potential combo routes, and with a significantly increased level of interactivity in the combo game. On poor or read DI, especially hard DI in, punishes can be decently more significant. On the flipside, when YOU are getting comboed, your DI patterns, both traditional DI and Drift DI, will have a much larger impact on the situation. Many characters will need to be tuned around this over time for them to feel just right*
+  - Rage
+    - Removed; Maximum KB multiplier: 1.1x 🠚 1.0x
+  - Untechable Knockback
+    - Removed; Launch Speed Threshold 6 🠚 999
+  - Jab Locks
+    - Getup attack is disabled, choice of direction is locked in during hitlag
+      - No direction will perform neutral getup
+  - Tripping
+    - Random tripping removed; either a move trips 100% of the time or never
+  - Crouch Canceling
+    - Knockback Multiplier 0.85x 🠚 0.7x
+  - Short Hop Damage Multiplier
+    - Removed; 0.85x 🠚 1.0x
+  - 1v1 Damage Multiplier
+    - Removed; 1.2x 🠚 1.0x
+  - Ground Bounces
+    - Hitstun Multiplier: 0.8x 🠚 1.0x
+  - Grab Invulnerability Timer
+    - 60F 🠚 35F
+  - Teching
+    - Tech window 12F 🠚 20F
+    - Tech lockout window 28F 🠚 40F
+  - Gravity and Launch Speed
+    - Gravity-based KB boost:
+      - Gravity-based launch speed boost formula readjusted: Added Launch Speed = 1.5\*(g-0.05) 🠚 Added Launch Speed = 3.0\*(g-0.085)
+      - Gravity-based vertical launch speed boost removed; Added vertical launch speed formula readjusted: 3\*(g-0.085) 🠚 0\*(g-0)
+        - damage\_fly\_speed\_y\_mul\_base\_accel reduced 0.085 🠚 0
+        - damage\_fly\_speed\_y\_mul reduced 3 🠚 0
+    - Hitstun Gravity has a lower and upper cap for all characters to make comboing fastfallers and floaties less annoying and to make being comboed less frustrating and one-sided
+    - Launch speed of vertical knockback no longer overrides fall speed and gravity and will speed up accordingly on a per-character basis
+    - Launch speed required to trigger early lower blastzone activation (dead\_down\_damage\_speed param) increased 3 🠚 999 - This should remove the early bottom blastzone that gets triggered when you get spiked (<https://twitter.com/ruben_dal/status/1221151119172345858?lang=en>)
+    - Launch speed threshold for KB smoke graphics
+      - 2 🠚 3.08
+    - Launch speed threshold for KB aura graphics
+      - 4 🠚 4.2
+    - Launch Speed Influence
+      - Removed; Maximum/Minimum Launch Speed Multiplier: 1.095x/0.92x 🠚 1.0x/1.0x
+  - KB Aura graphic length
+    - 10 🠚 5
+  - KB Aura graphic frame
+    - 10 🠚 2
+  - Knockback smoke launch speed threshold reduced: 3.1 🠚 3.08
+  - Removed the final kill screen
+    - False flashes were too egregious with the new survivability mechanics
+
+- ### ![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) General Movement / Fighter Stats:
+  - Grab hitbox sizes have been increased
+  - Implemented Edge Canceling
+  - Platforms can now be dropped through during run, initial dash, and waveland
+  - Jump momentum is now calculated identically to Melee/PM
+    - There are many complicated formulas which one can find on the discord
+  - Environmental Collision Boxes (ECBs) have had their behavior changed to match Melee, and have been shifted upwards while airborne - now characters will enter landing animations once their knees collide with the ground
+    - Airdodge ECB shift lowered by 0.2 units for cleaner platform wavelands
+  - Jostle/pushback mechanics reworked to be more similar to Smash 4 (it is possible to run through non-teammate players now)
+    - Jostle overlap rate: 0.66 🠚 0.3
+    - Team jostle overlap rate increased 0.5 🠚 0.66
+  - Initial dash speeds, run speeds, and air speeds have all been lowered to compensate for the increased flexibility of movement offered by the new mechanics introduced
+  - Traction
+    - Extra traction formulas and statuses readjusted for tighter friction during landing states
+    - Traction decreased by 13% overall, with exceptions
+    - Characters now experience extra traction during grounded hitstun and aerial attack landings like most other landing states
+    - Grounded damage/hitstun traction multiplier increased 1 🠚 1.1	
+    - Double traction rules now apply to idle, crouch, crouch wait, crouch stand, special fall landing, jab, ftilt, utilt, dtilt, fsmash/charge, usmash/charge, and dsmash/charge states
+  - Fall speeds and gravity increased, values similar to Melee/PM
+  - Short hop heights decreased by 1-3 units overall, with exceptions
+  - Landing lag has been readjusted to be more in line with Melee/PM levels, being reduced overall (with exceptions to a few moves)
+  - Initial jump velocities have been decreased to 65% of their vanilla values, with some exceptions
+  - Zair Landing Lag 30F 🠚 25F
+  - Jump squats have been increased to 4F, with some characters having 5F
+  - Full hop speed up frame 4 🠚 5
+  - Full hop vertical velocity is calculated identically to short hops, removing their balloony feel
+  - Time between wall jumps reduced (wall\_jump\_disable\_frame): 5F 🠚 1F
+  - Time between wall jumps on the same wall reduced (wall\_jump\_interval\_frame): 180F 🠚 1F
+  - A lot of special moves have been given the ability to be b-reversed (DK Giant Punch, Cloud Limit Charge, Mario F.L.U.D.D., etc.)
+    - They can only be b-reversed once per airtime
+  - C-Stick aerials no longer move you forward or backward
+
+- ### ![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) Air Dodging / Wavedashing / Wavelanding:
+  - Air dodges function similarly to Rivals of Aether, consisting of linear movement in a direction followed by a stall in place. A short period of inactionable fall follows
+  - Airdodges are once-per-airtime, they are not returned until after grabbing ledge or touching the ground
+  - Gravity takes effect starting on frame 30 of both neutral and directional airdodges
+  - You can airdodge out of tumble after 60F
+  - Airdodge speeds have been lowered across the cast to bring wavedash distances more in line with Melee/PM
+  - Directional airdodges retain all momentum upon hitting the ground
+  - Air dodges now snap to the ground/platforms when nearby, making wavedashes and wavelanding easier and allowing for upwards wavelands
+  - Airdodges and wavedashes can also be performed while holding shield with a second shield button input
+  - All heavy landing animations and certain characters’ jumpsquat animations have been slightly adjusted for smoother-looking wavedashes and wavelands
+  - Wavelands will snap to ground surfaces if the character’s ECB is within 5 units
+  - End speed decreased 1.3 🠚 1
+  - Neutral Air Dodge
+    - Can grab ledges starting on the FAF
+    - Animation slowdown frame: 26 🠚 500
+  - Directional Air Dodge
+    - Distances have been normalized, FAF is based on each character’s gravity and fallspeed
+      - Note that upwards directional airdodges will *not* gain any vertical recovery distance
+    - Intangibility has been standardized to F4-29
+    - Can grab ledge starting on frame 35
+    - Landing lag (Max/Min): 20F/10F 🠚 10F/10F
+    - Initial sling removed
+    - Animation slowdown frame: 26 🠚 500
+  - Air Dodge 🠚 Tech Window
+    - 15F 🠚 0F
+  - Air Dodge Landing Max Speed: 2 🠚 4
+
+- ### ![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) Shielding / Shield Dropping:
+  - Shielding:
+    - Removed vanilla mechanic where opponents were unable to be grabbed while experiencing blockstun from a non-projectile move
+    - Minimum Hold Time: 3F 🠚 2F
+    - Maximum Health: 50 🠚 60
+    - Depletion per frame: 0.15 🠚 0.255
+    - Recovery per frame: 0.08 🠚 0.07
+    - Shield release duration:  ?? 🠚 10F
+    - Global shield damage multiplier increased ?? 🠚 1.4
+    - Shieldstun Canceling Removed; Number of hits to cancel shieldstun 10 🠚 999
+    - Shieldstun formula reworked: floor(d \* 0.8 \* m + 2) 🠚 floor(d \* 0.45 \* m + 2); where d = move damage and m = shieldstun multiplier
+      - Base shieldstun multiplier decreased 0.8 🠚 0.45
+      - Projectile shieldstun multiplier increased 0.29 🠚 0.5156
+      - Smash attack shieldstun multiplier increased 0.725 🠚 1.0
+      - Aerial attack shieldstun multiplier increased 0.33 🠚 1.0
+    - Shield pushback speed multiplier decreased ?? 🠚 0.051
+    - Max shield pushback speed decreased ?? 🠚 1.2
+    - Minimum shield hold frames increased ?? 🠚 4F
+  - Shield Dropping
+    - Spotdodge/platdrop stick thresholds changed to match Melee/ProjectM
+      - Platdrop stick y threshold: -0.9875 🠚 -0.71
+    - Reinstated Axe method for shield dropping
+    - Added Melee/ProjectM UCF shield dropping
+      - If your shield is angled using the Axe method, the platdrop stick threshold will move higher, and the spotdodge stick threshold will move much lower, so the range for a shield drop is much more accessible
+      - The thresholds shift as follows:
+        - Spotdodge stick y threshold: -0.75 🠚 -0.8
+        - Platdrop stick y threshold: -0.71 🠚 -0.675
+
+- ### ![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) Rolling / Teching:
+  - Rolling/Spotdodging
+    - Intangibility, startup, duration, and endlag for all rolls and spotdodges have been standardized as follows:
+      - Forward Roll: frames 4-16, FAF 33
+      - Backward Roll: frames 4-16, FAF 33
+      - Spotdodge: frames 3-17, FAF 26
+      - Bat Within and Foresight have been moved to frames 4-7 with subsequent intangibility matching that of the rest of the cast
+    - Spotdodge Canceling Removed; Attack FAF matched with IASA
+    - Spotdodge sensitivity decreased; 4 🠚 3
+    - Distance and Speed Staling
+      - Removed
+        - Frame Staling: 60F 🠚 1F
+        - Maximum Penalty Count: 5 🠚 1
+        - Recovery Time: 120F 🠚 1F
+        - Speed Multiplier Decrease per Penalty Count (Spotdodge/Forward Roll/Backward Roll): 0.06/0.06/0.1 🠚 0/0/0
+  - Shield Grabs
+    - Delay after Shieldstun: 4F 🠚 0F
+  - Teching
+    - The first 15 frames of airdodge out of tumble will trigger a tech when near ground
+    - When not in hitstun, you are unable to hold shield infinitely to tech. It must be within the 20 frame tech window
+
+- ### ![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png)Perfect Shield / Parry:
+  - Parrying projectiles will now reflect them
+    - Reflection
+      - Power Multiplier: 1.2x 🠚 0.6x
+      - Speed Multiplier: 1.5x 🠚 1.0x
+      - Maximum Reflection Number: 3 🠚 7
+      - Damage multiplier decreased ?? 🠚 0.5
+  - Activation Window after dropping Shield: 5F 🠚 3F
+  - Frame Advantage: 3F 🠚 10F
+  - Shield pushback multiplier: 0.15 🠚 0.01
+  - Parry hitlag increased (minimum/maximum) ??F/??F 🠚 22F/23F
+  - Base extra hitlag: 14F 🠚 24F
+
+- ### ![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) Dashing:
+  - Initial Dash / Foxtrot
+    - Dash Dancing Added; Turnaround window: 6F 🠚 Whole initial dash
+      - Initial dash speeds and run accelerations were readjusted to compensate for these changes, they are changed on a per character basis.
+      - Turn dash now only stops you in place for 2F rather than 3F, making dash dancing much smoother
+      - Snappier turn dash animations have been added for most of the cast additionally making dash dancing even smoother (Credit to JOB)
+    - Time to accelerate to max initial dash speed: 6F 🠚 1F
+    - Dash 🠚 Roll window: 5F 🠚 1F
+  - Maximum run animation motion rate 5 🠚 4
+  - Run brake 🠚 dash lockout window decreased 7F 🠚 5F
+
+- ### ![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) Grabs:
+  - Grabs in general have been given generous buffs in terms of size cast-wide:
+    - All standing grab ranges have been increased slightly; standing grab frame data normalized: Normal Grabs 🠚 7F startup, Long-Range Grabs 🠚 9F startup, tether grabs (Except Samus/Dark Samus) 🠚 12F startup
+    - All dash and pivot grab ranges have been increased moderately
+  - Dash grab friction has been decreased (1.6 🠚 1)
+  - Characters can no longer pass through opponents during standing grabs and dash grabs to facilitate more consistent grabbing; pivot grabs still have standard jostle and can pass through opponents
+
+- ### ![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) Footstools:
+  - Footstools are now performed by pressing taunt instead of jump
+  - Footstool Velocity (Fullhop/Shorthop): 1.3/0.7 🠚 0.8/0.5
+  - Footstool Invincibility Removed 
+    - Invincibility frames 4 🠚 0
+  - ` `Footstool lockout window after hitstun increased ?? 🠚 8F
+  - You can no longer airdodge out of a footstool until after F20
+  - Footstool vertical jump speed multiplier normalized for all characters
+
+- ### ![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) Item Mechanics:
+  - Roll 🠚 Item Toss Window: 2F 🠚 6F
+  - Item keep chance after taking damage: 70/2 🠚 100/100
+
+- ### ![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png)Jabs:
+  - All jab moves that are not the rapid jab finisher have had their knockback adjusted to be better suited for combos
+
+- ### ![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) Ledges:
+  - Characters can no longer grab the ledge while rising during an airborne state. You can now only grab ledge while either falling or with zero vertical velocity, rather than strictly falling (exceptions to these rules unchanged)
+  - 2-Framing has been completely removed; ledgegrab animations are a consistent intangible 8 frames regardless of if grabbing from above or below
+  - Ledge Hogging
+    - Characters can no longer grab ledge while another character is occupying the ledge. Tethers are an exception, and will cause a ledge trump when the tethered character pulls themself toward the ledge
+  - Ledge Intangibility
+    - Ledge intangibility duration: 47F 🠚 37F
+    - The remainder of iframes persist throughout any action after a ledgedrop
+    - Landing on the ground will clear the iframes, meaning *intangible ledgedashes are not possible*
+  - You cannot grab ledge during the first few frames after running off a ledge
+  - Buffering is cleared when missing a tech and sliding off a ledge or platform to prevent accidental airdodges
+  - Tether recoveries no longer occupy ledge until the characters rewinds to ledge
+  - Tether recoveries are now forced into a ledge trump upon rewinding to an occupied ledge; after getting trumped, the character is allowed one action before going into special fall, and is forced into special fall landing upon hitting the ground
+  - Max ledge tethers normalized with normal ledge grab limit 5 🠚 6
+  - Tether rewind ledge wait FAF decreased 20F 🠚 7F
+  - Ledge Grab FAF: 20 🠚 7
+  - Maximum ledge snap duration: 2F 🠚 3F
+  - Regrab Timer
+    - Drop/After Hit: 44F/30F 🠚 25F/25F
+  - Ledge Trump FAF: 28 🠚 30
+  - Ledge Trump Horizontal Speed: 0.9 🠚 -0.2
+  - Ledge snap windows for all special moves pushed further toward end of move
+  - Max ledge tethers per airtime (air\_lasso\_catch\_num): 3 🠚 5
+
+- ### ![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png)Staling:
+  - Stale-move negation damage reduction factors altered to match Melee
+    - Queue Position 2: 0.08545 🠚 0.08
+    - Queue Position 3: 0.07635 🠚 0.07
+    - Queue Position 4: 0.0679 🠚 0.06
+    - Queue Position 5: 0.05945 🠚 0.05
+    - Queue Position 6: 0.05035 🠚 0.04
+    - Queue Position 7: 0.04255 🠚 0.03
+    - Queue Position 8: 0.03345 🠚 0.02
+    - Queue Position 9: 0.025 🠚 0.01
+
+- ### ![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) Inputs:
+  - Tap Buffer: 9F 🠚 5F
+    - Input Buffer Extension: 2F 🠚 0F
+  - Mostly removed vanilla Ultimate’s hold buffer
+    - Hold buffer is preserved during certain states such as jumpsquat or Nana’s spotdodge
+    - During hitstun and shieldstun, there is a 5 frame tap extension buffer
+  - Buffer is now active during new cancels (land cancel/hammers etc)
+  - Removed the forced shorthop when buffering an aerial
+    - This change retains the ability to attack cancel while allowing the ability to buffer full hop aerials, allowing you to buffer frame-perfect fullhop aerials as well as fullhop attack cancels
+  - Stick sensitivity has been adjusted as follows:
+    - Low: Smash attacks can occur until frame 2 of analog press
+    - Normal: Smash attacks can occur until frame 4 of analog press
+    - High: Smash attacks can occur until frame 6 of analog press
+    - As a reference, vanilla Ultimate’s normal stick sensitivity is frame 6
+  - C-Stick drift has been completely removed and the macro has been reprogrammed from scratch to mitigate inconsistencies and provide cleaner Bidou/Aidou implementation
+  - Buffered airdodges out of hitstun have been disabled
+  - Buffered spotdodges/rolls out of wavedash have been disabled, making consecutive wavedashes and buffering shield out of wavedash more consistent
+  - Perfect/buffered wavedashes out of jumpsquat now transition you directly into landing, allowing for much smoother movement
+  - Jump cancels now work properly with tap jump
+  - Pivot horizontal stick detection window increased 0.0 🠚 0.075
+- Command inputs		
+  - Special command life increased 10F 🠚 12F
+  - Super Special (Final Smash) command life increased: 22F
+
+- ### ![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png)Camera: 
+  - Stage cameras have been reworked across the board to have faster player tracking and zoom to compensate for lack of balloon knockback and faster overall movement
+  - Frames to trigger weak camera shake
+    - 50 🠚 125
+  - Frames to trigger strong camera shake
+    - 70 🠚 155
+  - Camera shake on medium/strong hits removed
+  - Medium screen shake KB threshold: ?? 🠚 50
+  - Strong screen shake KB threshold ?? 🠚90
+  - Screen shake hitstun threshold for weak and strong screen shake increased (85/95 🠚 125/155) 
+  - Fixed visual rotation angles on certain direction-reversion actions
+  - Added unrestricted camera to all stages
+
+- ### ![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) Other:
+  - Characters’ double jumps are now returned upon being grabbed
+  - Characters’ voice clips for sustaining heavy knockback now play on frame 1 of hitstun instead of frame 6
+
+- ### ` `![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png)User Interface and Graphics:
+  - We have a wonderful menu courtesy of MilkiiJugs
+  - Pre-match load screen now has HDR logo, match load screen sparkles are green (also courtesy of MilkiiJugs)
+  - Optional HDR skin pack that revamps colors of characters, BF, FD together with killing blow packaged in a separate install folder, "HDR-Graphics"
+  - CSS has a green/blueish aura in the background with patterns of the HDR Comet (thanks MilkiiJugs)
+  - HDR-Tips: Get tips specifically about the mod (courtesy of H3ra)
