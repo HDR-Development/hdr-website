@@ -3,7 +3,7 @@
 
 - ### - BATTLEFIELD -
   - *Given a new aesthetic revamp courtesy of Silent*
-  - Mainstage:
+  - Mainstage: 
     - Width: 159.9749 🠚 145
     - Platforms adjusted to accommodate new size
   - Blastzones:
