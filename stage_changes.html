@@ -1,0 +1,652 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Stage Changes - hdr-changelog</title>
+                
+
+        <!-- Custom HTML head -->
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+                <link rel="icon" href="favicon.svg">
+                        <link rel="shortcut icon" href="favicon.png">
+                <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+                <link rel="stylesheet" href="css/print.css" media="print">
+        
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+                <link rel="stylesheet" href="fonts/fonts.css">
+        
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+            </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="intro.html">Introduction</a></li><li class="chapter-item expanded "><a href="universal_changes.html"><strong aria-hidden="true">1.</strong> Universal Changes</a></li><li class="chapter-item expanded "><a href="stage_changes.html" class="active"><strong aria-hidden="true">2.</strong> Stage Changes</a></li><li class="chapter-item expanded "><a href="character_changes.html"><strong aria-hidden="true">3.</strong> Character Changes</a></li></ol>            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                                            </div>
+
+                    <h1 class="menu-title">hdr-changelog</h1>
+
+                    <div class="right-buttons">
+                                                <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                                                                        
+                    </div>
+                </div>
+
+                                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="stage-changes"><a class="header" href="#stage-changes">Stage Changes</a></h1>
+<p>*EXACT PARAMETERS STILL NEEDED FOR MOST STAGES</p>
+<ul>
+<li>
+<h3 id="--battlefield--"><a class="header" href="#--battlefield--">- BATTLEFIELD -</a></h3>
+<ul>
+<li><em>Given a new aesthetic revamp courtesy of Silent</em></li>
+<li>Mainstage:
+<ul>
+<li>Width: 159.9749 🠚 145</li>
+<li>Platforms adjusted to accommodate new size</li>
+</ul>
+</li>
+<li>Blastzones:
+<ul>
+<li>Top: 192 🠚 200</li>
+<li>Bottom: -140 🠚 -108.8</li>
+<li>Left/Right: -240/240 🠚 -227.998322/228.001678</li>
+</ul>
+</li>
+<li>Camera Bounds:
+<ul>
+<li>Top: 130 🠚 126</li>
+<li>Bottom: -80 🠚 -75</li>
+<li>Left/Right: -170/170 🠚 -163/163</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="--small-battlefield--"><a class="header" href="#--small-battlefield--">- SMALL BATTLEFIELD -</a></h3>
+<ul>
+<li><em>Given a new &quot;Castlefield&quot; aesthetic courtesy of Silent</em></li>
+</ul>
+</li>
+<li>
+<h3 id="--final-destination--"><a class="header" href="#--final-destination--">- FINAL DESTINATION -</a></h3>
+<ul>
+<li><em>Given a new aesthetic revamp based on the World of Light Final Destination courtesy of Silent</em></li>
+</ul>
+</li>
+<li>
+<h3 id="--deadline--"><a class="header" href="#--deadline--">- DEADLINE -</a></h3>
+<ul>
+<li><em>Big Battlefield replaced with &quot;Deadline&quot;, the four-platformed stage that appears during the fight with Galeem/Dharkon</em></li>
+</ul>
+</li>
+<li>
+<h3 id="--peachs-castle--"><a class="header" href="#--peachs-castle--">- PEACH’S CASTLE -</a></h3>
+<ul>
+<li><em>Changed to singular mainstage with two vertically-moving platforms</em></li>
+<li>Blastzones:
+<ul>
+<li>Top: 192.000092 🠚 185</li>
+<li>Bottom: -140.000031 🠚 115</li>
+<li>Left/Right: -239/239 🠚 -225/225</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="--super-happy-tree--"><a class="header" href="#--super-happy-tree--">- SUPER HAPPY TREE -</a></h3>
+<ul>
+<li><em>Blastzone size reduced</em></li>
+<li><em>Removed cloud platforms</em></li>
+</ul>
+</li>
+<li>
+<h3 id="--dream-land--"><a class="header" href="#--dream-land--">- DREAM LAND -</a></h3>
+<ul>
+<li>Blastzones:
+<ul>
+<li>Top: 192 🠚 230</li>
+<li>Bottom: -140 🠚 -130</li>
+<li>Left/Right: -250/250 🠚 -255/255</li>
+</ul>
+</li>
+<li>Camera Bounds:
+<ul>
+<li>Top: 130 🠚 156</li>
+<li>Bottom: -80 🠚 -75</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="--kongo-falls--"><a class="header" href="#--kongo-falls--">- KONGO FALLS -</a></h3>
+<ul>
+<li><em>Removed right-side rock</em></li>
+<li><em>Layout repositioned to be similar to Warioware Inc.</em></li>
+</ul>
+</li>
+<li>
+<h3 id="--yoshis-story--"><a class="header" href="#--yoshis-story--">- YOSHI’S STORY -</a></h3>
+<ul>
+<li><em>Yoshi’s Story is now smaller</em></li>
+<li><em>Shy guys have been removed</em></li>
+<li>Blastzones:
+<ul>
+<li>Top: 180 🠚 168.0</li>
+<li>Bottom: -118 🠚 -91.0</li>
+<li>Left/Right: -227/227 🠚 -175.7/173.6</li>
+</ul>
+</li>
+<li>Camera Bounds:
+<ul>
+<li>Top: 118 🠚 118.3</li>
+<li>Bottom: -58 🠚 -49.7</li>
+<li>Left/Right: -157/157 🠚 -126.0/125.3</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="--fountain-of-dreams--"><a class="header" href="#--fountain-of-dreams--">- FOUNTAIN OF DREAMS -</a></h3>
+<ul>
+<li>Blastzones:
+<ul>
+<li>Top: 192 🠚 202.5</li>
+<li>Bottom: -140 🠚 -140</li>
+<li>Left/Right: -240/240 🠚 200/200</li>
+</ul>
+</li>
+<li>Camera Bounds:
+<ul>
+<li>Top: 130 🠚 132</li>
+<li>Left/Right: -170/170 🠚 -150/150</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="--venom--"><a class="header" href="#--venom--">- VENOM -</a></h3>
+<ul>
+<li>Changed to long mainstage with three parallel platforms</li>
+<li>Blastzones:
+<ul>
+<li>Top: 180 🠚 180</li>
+<li>Bottom: -145 🠚 -115</li>
+<li>Left/Right: -250/250 🠚 -225/225</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="--green-greens--"><a class="header" href="#--green-greens--">- GREEN GREENS -</a></h3>
+<ul>
+<li><em>Layout has been changed to match Hollow Bastion</em></li>
+<li>Blastzones:
+<ul>
+<li>Top: -192 🠚 -192</li>
+<li>Bottom: -140 🠚 -120</li>
+<li>Left/Right: -225/229 🠚 -225/225</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="--fourside--"><a class="header" href="#--fourside--">- FOURSIDE -</a></h3>
+<ul>
+<li><em>Changed to Smashville-esque layout</em></li>
+<li>Stage Width: 166 🠚 155</li>
+<li>Blastzones:
+<ul>
+<li>Top: 192.000092 🠚 195</li>
+<li>Bottom: -140.000031 🠚 -115</li>
+<li>Left/Right: -240/240 🠚 -224.5374/240.5</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="--pokemon-stadium--"><a class="header" href="#--pokemon-stadium--">- POKEMON STADIUM -</a></h3>
+<ul>
+<li>Blastzones:
+<ul>
+<li>Top: 180 🠚 </li>
+<li>Bottom: -150 🠚 -130</li>
+<li>Left/Right: -250/250 🠚 -235/235</li>
+</ul>
+</li>
+<li>Camera Bounds:
+<ul>
+<li>Bottom: -61 🠚 -56</li>
+<li>Left/Right: -180/180 🠚 -170/170</li>
+</ul>
+</li>
+<li>Camera now matches Pokemon Stadium 2’s camera</li>
+</ul>
+</li>
+<li>
+<h3 id="--pokemon-stadium-3--"><a class="header" href="#--pokemon-stadium-3--">- POKEMON STADIUM 3 -</a></h3>
+<ul>
+<li><em>A brand new Galar-themed Pokemon Stadium courtesy of Silent</em></li>
+<li>Mainstage:
+<ul>
+<li>Width: 187.5519104 🠚 178</li>
+</ul>
+</li>
+<li>Blastzones:
+<ul>
+<li>Top: 180 🠚 180</li>
+<li>Bottom: -125 🠚 -125</li>
+<li>Left/Right: -250/250 🠚 -235/235</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="--warioware-inc--"><a class="header" href="#--warioware-inc--">- WARIOWARE INC. -</a></h3>
+<ul>
+<li>Blastzones:
+<ul>
+<li>Top: 210 🠚 185</li>
+<li>Bottom: -95 🠚 100</li>
+<li>Left/Right: -180/180 🠚 -190/190</li>
+</ul>
+</li>
+<li>Camera Bounds:
+<ul>
+<li>Bottom: -20 🠚 -40</li>
+<li>Left/Right: -130/130 🠚 -150/150</li>
+</ul>
+</li>
+<li>Camera adjusted to more closely match PM</li>
+</ul>
+</li>
+<li>
+<h3 id="--spear-pillar--"><a class="header" href="#--spear-pillar--">- SPEAR PILLAR -</a></h3>
+<ul>
+<li><em>Removed bottom half</em></li>
+<li>Top: 204.999985 🠚 225</li>
+<li>Bottom: -170 🠚 -120</li>
+<li>Left/Right: -245.000015/244.999985 🠚 -225/225</li>
+</ul>
+</li>
+<li>
+<h3 id="--frigate-orpheon--"><a class="header" href="#--frigate-orpheon--">- FRIGATE ORPHEON -</a></h3>
+<ul>
+<li><em>Changed to flat main stage with two horizontal moving platforms</em></li>
+<li>Stage Width: 150 🠚 135</li>
+<li>Blastzones:
+<ul>
+<li>Top: 70 🠚 50</li>
+<li>Bottom: -255 🠚 -185</li>
+<li>Left/Right: -245/240 🠚 -225/225</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="--yoshis-island-brawl--"><a class="header" href="#--yoshis-island-brawl--">- YOSHI’S ISLAND (BRAWL) -</a></h3>
+<ul>
+<li>Blastzones:
+<ul>
+<li>Top:  🠚 </li>
+<li>Bottom:  🠚 </li>
+<li>Left/Right: 🠚 </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="--lylat-cruise--"><a class="header" href="#--lylat-cruise--">- LYLAT CRUISE -</a></h3>
+<ul>
+<li>Blastzones:
+<ul>
+<li>Top: 180 🠚 168</li>
+</ul>
+</li>
+<li>Camera Bounds:
+<ul>
+<li>Top: 130 🠚 120</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="--halberd--"><a class="header" href="#--halberd--">- HALBERD -</a></h3>
+<ul>
+<li>Blastzones:
+<ul>
+<li>Top:  🠚 </li>
+<li>Bottom:  🠚 </li>
+<li>Left/Right: 🠚 </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="--castle-siege--"><a class="header" href="#--castle-siege--">- CASTLE SIEGE -</a></h3>
+<ul>
+<li>Blastzones:
+<ul>
+<li>Top:  🠚 </li>
+<li>Bottom:  🠚 </li>
+<li>Left/Right: 🠚 </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="--smashville--"><a class="header" href="#--smashville--">- SMASHVILLE -</a></h3>
+<ul>
+<li>Blastzones:
+<ul>
+<li>Top: 190 🠚 180</li>
+<li>Bottom: -115.000015 🠚 -115</li>
+<li>Left/Right: -229/230 🠚 -220/220</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="--luigis-mansion--"><a class="header" href="#--luigis-mansion--">- LUIGI’S MANSION -</a></h3>
+<ul>
+<li><em>Mansion floors are now passable</em></li>
+</ul>
+</li>
+<li>
+<h3 id="--3d-land--"><a class="header" href="#--3d-land--">- 3D LAND -</a></h3>
+<ul>
+<li><em>Changed to ProjectM Delfino Secret layout (quad platform)</em></li>
+<li>Blastzones:
+<ul>
+<li>Top: 200 🠚 195</li>
+<li>Bottom: -119 🠚 -120</li>
+<li>Left/Right: -259/259 🠚 -230/230</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="--unova-pokemon-league--"><a class="header" href="#--unova-pokemon-league--">- UNOVA POKEMON LEAGUE -</a></h3>
+<ul>
+<li>Blastzones:
+<ul>
+<li>Top: 190 🠚 182</li>
+<li>Left/Right: -237/237 🠚 -227/227</li>
+</ul>
+</li>
+<li>Camera Bounds:
+<ul>
+<li>Top: 120 🠚 115</li>
+<li>Left/Right: -160/160 🠚 -153/153</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="--paper-mario--"><a class="header" href="#--paper-mario--">- PAPER MARIO -</a></h3>
+<ul>
+<li><em>Changed to singular main stage with wide-swinging platform</em></li>
+<li>Blastzones:
+<ul>
+<li>Top: 216 🠚 185</li>
+<li>Bottom: -90 🠚 -190</li>
+<li>Left/Right: -321/161 🠚 -280/120</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="--arena-ferox--"><a class="header" href="#--arena-ferox--">- ARENA FEROX -</a></h3>
+<ul>
+<li><em>Collision readjusted</em></li>
+</ul>
+</li>
+<li>
+<h3 id="--kalos-pokemon-league--"><a class="header" href="#--kalos-pokemon-league--">- KALOS POKEMON LEAGUE -</a></h3>
+<ul>
+<li><em>No longer transforms with hazards on</em></li>
+</ul>
+</li>
+<li>
+<h3 id="--wily-castle--"><a class="header" href="#--wily-castle--">- WILY CASTLE -</a></h3>
+<ul>
+<li>Blastzones: 
+<ul>
+<li>(top/bottom/left/right) 212/-120/-248/248 🠚 196/-115/-233/233</li>
+</ul>
+</li>
+<li>Camera bounds
+<ul>
+<li>(top/bottom/left/right) 150/-60.0000038/-178/178 🠚 145/-70/-170/170; </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="--suzaku-castle--"><a class="header" href="#--suzaku-castle--">- SUZAKU CASTLE -</a></h3>
+<ul>
+<li><em>Battlefield form now has two platforms, one long one and a shorter one above it</em></li>
+<li><em>Alpha Version remodel moved to normal version of stage</em></li>
+<li><em>Base stage model and collision now match Smash 4's omega version</em></li>
+</ul>
+</li>
+<li>
+<h3 id="--midgar--"><a class="header" href="#--midgar--">- MIDGAR -</a></h3>
+<ul>
+<li><em>Transforms between multiple layouts</em></li>
+<li>Blastzones:
+<ul>
+<li>(top/bottom/left/right) 192.425/-154.075/-250/250 🠚 189/-147/-240/240</li>
+</ul>
+</li>
+<li>Camera Bounds:
+<ul>
+<li>(top/bottom/left/right) 128.773636/-91.7263641/-180/180 🠚 128/-88/-175/175</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="--great-plateau-tower--"><a class="header" href="#--great-plateau-tower--">- GREAT PLATEAU TOWER -</a></h3>
+<ul>
+<li><em>Camera behavior readjusted</em></li>
+<li><em>Tower is now destroyed at the beginning of the match and no longer regenerates</em></li>
+</ul>
+</li>
+<li>
+<h3 id="--draculas-castle--"><a class="header" href="#--draculas-castle--">- DRACULA’S CASTLE -</a></h3>
+<ul>
+<li><em>Removed right staircase and made the main stage uniform height</em></li>
+<li>Blastzones:
+<ul>
+<li>Top: 169.999969 🠚 185</li>
+<li>Bottom: -145.000015 🠚 -145</li>
+<li>Left/Right: -265/230 🠚 -230/230</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="--yggdrasils-altar--"><a class="header" href="#--yggdrasils-altar--">- YGGDRASIL's ALTAR -</a></h3>
+<ul>
+<li><em>Walkoff at start removed</em></li>
+</ul>
+</li>
+<li>
+<h3 id="--spring-stadium--"><a class="header" href="#--spring-stadium--">- SPRING STADIUM -</a></h3>
+<ul>
+<li><em>Ceiling collision removed</em></li>
+</ul>
+</li>
+</ul>
+<h3 id=""><a class="header" href="#"></a></h3>
+<ul>
+<li>
+<h3 id="--extra--"><a class="header" href="#--extra--">- Extra -</a></h3>
+<ul>
+<li><em>The Online Training stage can now be selected as an L-Load alt for Training</em></li>
+<li><em>Training is now available in multiplayer modes</em></li>
+</ul>
+</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                                                    <a rel="prev" href="universal_changes.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+                                                    <a rel="next" href="character_changes.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                                    <a rel="prev" href="universal_changes.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+                                    <a rel="next" href="character_changes.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                            </nav>
+
+        </div>
+
+        
+        
+        
+                <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+        
+                <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        
+    </body>
+</html>
