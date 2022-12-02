@@ -1,0 +1,331 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js ayu">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Mechanics - HDR Master Changelog</title>
+                
+
+        <!-- Custom HTML head -->
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+                <link rel="icon" href="../favicon.svg">
+                        <link rel="shortcut icon" href="../favicon.png">
+                <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+                <link rel="stylesheet" href="../css/print.css" media="print">
+        
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+                <link rel="stylesheet" href="../fonts/fonts.css">
+        
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+            </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "ayu";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="../intro.html">Introduction</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.</strong> Engine Changes</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../engine/mechanics.html" class="active"><strong aria-hidden="true">1.1.</strong> Mechanics</a></li><li class="chapter-item "><a href="../engine/fighterstats.html"><strong aria-hidden="true">1.2.</strong> Fighter Stats</a></li><li class="chapter-item "><a href="../engine/knockback.html"><strong aria-hidden="true">1.3.</strong> Knockback</a></li><li class="chapter-item "><a href="../engine/di.html"><strong aria-hidden="true">1.4.</strong> Directional Influence</a></li><li class="chapter-item "><a href="../engine/collision.html"><strong aria-hidden="true">1.5.</strong> Collision</a></li><li class="chapter-item "><a href="../engine/ledges.html"><strong aria-hidden="true">1.6.</strong> Ledges</a></li><li class="chapter-item "><a href="../engine/shields.html"><strong aria-hidden="true">1.7.</strong> Shielding</a></li><li class="chapter-item "><a href="../engine/airdodges.html"><strong aria-hidden="true">1.8.</strong> Airdodging / Wavedashing</a></li><li class="chapter-item "><a href="../engine/rolls.html"><strong aria-hidden="true">1.9.</strong> Rolling / Teching</a></li><li class="chapter-item "><a href="../engine/items.html"><strong aria-hidden="true">1.10.</strong> Footstooling / Item Mechanics</a></li><li class="chapter-item "><a href="../engine/misc.html"><strong aria-hidden="true">1.11.</strong> Miscellaneous</a></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">2.</strong> System Changes</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../system/launcher.html"><strong aria-hidden="true">2.1.</strong> Launcher</a></li><li class="chapter-item "><a href="../system/inputs.html"><strong aria-hidden="true">2.2.</strong> Inputs and Controls</a></li><li class="chapter-item "><a href="../system/ui.html"><strong aria-hidden="true">2.3.</strong> User Interface and Graphics</a></li><li class="chapter-item "><a href="../system/modes.html"><strong aria-hidden="true">2.4.</strong> Extra Modes</a></li><li class="chapter-item "><a href="../system/online.html"><strong aria-hidden="true">2.5.</strong> Online</a></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">3.</strong> Stage Changes</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">3.1.</strong> Stages</div></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">4.</strong> Character Changes</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../characters/characterlist.html"><strong aria-hidden="true">4.1.</strong> Overview</a></li><li class="chapter-item "><div><strong aria-hidden="true">4.2.</strong> Smash 64</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../characters/smash64/mario.html"><strong aria-hidden="true">4.2.1.</strong> Mario</a></li><li class="chapter-item "><a href="../characters/smash64/donkey.html"><strong aria-hidden="true">4.2.2.</strong> Donkey Kong</a></li><li class="chapter-item "><a href="../characters/smash64/link.html"><strong aria-hidden="true">4.2.3.</strong> Link</a></li><li class="chapter-item "><a href="../characters/smash64/samus.html"><strong aria-hidden="true">4.2.4.</strong> Samus</a></li><li class="chapter-item "><a href="../characters/smash64/yoshi.html"><strong aria-hidden="true">4.2.5.</strong> Yoshi</a></li><li class="chapter-item "><a href="../characters/smash64/kirby.html"><strong aria-hidden="true">4.2.6.</strong> Kirby</a></li><li class="chapter-item "><a href="../characters/smash64/fox.html"><strong aria-hidden="true">4.2.7.</strong> Fox</a></li><li class="chapter-item "><a href="../characters/smash64/pikachu.html"><strong aria-hidden="true">4.2.8.</strong> Pikachu</a></li><li class="chapter-item "><a href="../characters/smash64/luigi.html"><strong aria-hidden="true">4.2.9.</strong> Luigi</a></li><li class="chapter-item "><a href="../characters/smash64/ness.html"><strong aria-hidden="true">4.2.10.</strong> Ness</a></li><li class="chapter-item "><a href="../characters/smash64/captain.html"><strong aria-hidden="true">4.2.11.</strong> Captain Falcon</a></li><li class="chapter-item "><a href="../characters/smash64/purin.html"><strong aria-hidden="true">4.2.12.</strong> Jigglypuff</a></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">4.3.</strong> Melee</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../characters/melee/peach.html"><strong aria-hidden="true">4.3.1.</strong> Peach</a></li><li class="chapter-item "><a href="../characters/melee/koopa.html"><strong aria-hidden="true">4.3.2.</strong> Bowser</a></li><li class="chapter-item "><a href="../characters/melee/popo.html"><strong aria-hidden="true">4.3.3.</strong> Ice Climbers</a></li><li class="chapter-item "><a href="../characters/melee/sheik.html"><strong aria-hidden="true">4.3.4.</strong> Sheik</a></li><li class="chapter-item "><a href="../characters/melee/zelda.html"><strong aria-hidden="true">4.3.5.</strong> Zelda</a></li><li class="chapter-item "><a href="../characters/melee/mariod.html"><strong aria-hidden="true">4.3.6.</strong> Dr. Mario</a></li><li class="chapter-item "><a href="../characters/melee/pichu.html"><strong aria-hidden="true">4.3.7.</strong> Pichu</a></li><li class="chapter-item "><a href="../characters/melee/falco.html"><strong aria-hidden="true">4.3.8.</strong> Falco</a></li><li class="chapter-item "><a href="../characters/melee/marth.html"><strong aria-hidden="true">4.3.9.</strong> Marth</a></li><li class="chapter-item "><a href="../characters/melee/younglink.html"><strong aria-hidden="true">4.3.10.</strong> Young Link</a></li><li class="chapter-item "><a href="../characters/melee/ganon.html"><strong aria-hidden="true">4.3.11.</strong> Ganondorf</a></li><li class="chapter-item "><a href="../characters/melee/mewtwo.html"><strong aria-hidden="true">4.3.12.</strong> Mewtwo</a></li><li class="chapter-item "><a href="../characters/melee/roy.html"><strong aria-hidden="true">4.3.13.</strong> Roy</a></li><li class="chapter-item "><a href="../characters/melee/gamewatch.html"><strong aria-hidden="true">4.3.14.</strong> Mr. Game and Watch</a></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">4.4.</strong> Brawl</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../characters/brawl/metaknight.html"><strong aria-hidden="true">4.4.1.</strong> Meta Knight</a></li><li class="chapter-item "><a href="../characters/brawl/pit.html"><strong aria-hidden="true">4.4.2.</strong> Pit</a></li><li class="chapter-item "><a href="../characters/brawl/szerosuit.html"><strong aria-hidden="true">4.4.3.</strong> Zero Suit Samus</a></li><li class="chapter-item "><a href="../characters/brawl/wario.html"><strong aria-hidden="true">4.4.4.</strong> Wario</a></li><li class="chapter-item "><a href="../characters/brawl/snake.html"><strong aria-hidden="true">4.4.5.</strong> Snake</a></li><li class="chapter-item "><a href="../characters/brawl/ike.html"><strong aria-hidden="true">4.4.6.</strong> Ike</a></li><li class="chapter-item "><a href="../characters/brawl/pzenigame.html"><strong aria-hidden="true">4.4.7.</strong> Squirtle</a></li><li class="chapter-item "><a href="../characters/brawl/pfushigisou.html"><strong aria-hidden="true">4.4.8.</strong> Ivysaur</a></li><li class="chapter-item "><a href="../characters/brawl/plizardon.html"><strong aria-hidden="true">4.4.9.</strong> Charizard</a></li><li class="chapter-item "><a href="../characters/brawl/diddy.html"><strong aria-hidden="true">4.4.10.</strong> Diddy Kong</a></li><li class="chapter-item "><a href="../characters/brawl/lucas.html"><strong aria-hidden="true">4.4.11.</strong> Lucas</a></li><li class="chapter-item "><a href="../characters/brawl/sonic.html"><strong aria-hidden="true">4.4.12.</strong> Sonic</a></li><li class="chapter-item "><a href="../characters/brawl/dedede.html"><strong aria-hidden="true">4.4.13.</strong> King Dedede</a></li><li class="chapter-item "><a href="../characters/brawl/pikmin.html"><strong aria-hidden="true">4.4.14.</strong> Olimar</a></li><li class="chapter-item "><a href="../characters/brawl/lucario.html"><strong aria-hidden="true">4.4.15.</strong> Lucario</a></li><li class="chapter-item "><a href="../characters/brawl/robot.html"><strong aria-hidden="true">4.4.16.</strong> R.O.B.</a></li><li class="chapter-item "><a href="../characters/brawl/toonlink.html"><strong aria-hidden="true">4.4.17.</strong> Toon Link</a></li><li class="chapter-item "><a href="../characters/brawl/wolf.html"><strong aria-hidden="true">4.4.18.</strong> Wolf</a></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.</strong> Smash 4</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../characters/smash4/murabito.html"><strong aria-hidden="true">4.5.1.</strong> Villager</a></li><li class="chapter-item "><a href="../characters/smash4/rockman.html"><strong aria-hidden="true">4.5.2.</strong> Mega Man</a></li><li class="chapter-item "><a href="../characters/smash4/wiifit.html"><strong aria-hidden="true">4.5.3.</strong> Wii Fit Trainer</a></li><li class="chapter-item "><a href="../characters/smash4/rosetta.html"><strong aria-hidden="true">4.5.4.</strong> Rosalina and Luma</a></li><li class="chapter-item "><a href="../characters/smash4/littlemac.html"><strong aria-hidden="true">4.5.5.</strong> Little Mac</a></li><li class="chapter-item "><a href="../characters/smash4/gekkouga.html"><strong aria-hidden="true">4.5.6.</strong> Greninja</a></li><li class="chapter-item "><a href="../characters/smash4/miifighter.html"><strong aria-hidden="true">4.5.7.</strong> Mii Brawler</a></li><li class="chapter-item "><a href="../characters/smash4/miiswordsman.html"><strong aria-hidden="true">4.5.8.</strong> Mii Swordfighter</a></li><li class="chapter-item "><a href="../characters/smash4/miigunner.html"><strong aria-hidden="true">4.5.9.</strong> Mii Gunner</a></li><li class="chapter-item "><a href="../characters/smash4/palutena.html"><strong aria-hidden="true">4.5.10.</strong> Palutena</a></li><li class="chapter-item "><a href="../characters/smash4/pitb.html"><strong aria-hidden="true">4.5.11.</strong> Dark Pit</a></li><li class="chapter-item "><a href="../characters/smash4/pacman.html"><strong aria-hidden="true">4.5.12.</strong> Pac-Man</a></li><li class="chapter-item "><a href="../characters/smash4/lucina.html"><strong aria-hidden="true">4.5.13.</strong> Lucina</a></li><li class="chapter-item "><a href="../characters/smash4/robin.html"><strong aria-hidden="true">4.5.14.</strong> Robin</a></li><li class="chapter-item "><a href="../characters/smash4/shulk.html"><strong aria-hidden="true">4.5.15.</strong> Shulk</a></li><li class="chapter-item "><a href="../characters/smash4/koopajr.html"><strong aria-hidden="true">4.5.16.</strong> Bowser Jr.</a></li><li class="chapter-item "><a href="../characters/smash4/duckhunt.html"><strong aria-hidden="true">4.5.17.</strong> Duck Hunt</a></li><li class="chapter-item "><a href="../characters/smash4/ryu.html"><strong aria-hidden="true">4.5.18.</strong> Ryu</a></li><li class="chapter-item "><a href="../characters/smash4/cloud.html"><strong aria-hidden="true">4.5.19.</strong> Cloud</a></li><li class="chapter-item "><a href="../characters/smash4/kamui.html"><strong aria-hidden="true">4.5.20.</strong> Corrin</a></li><li class="chapter-item "><a href="../characters/smash4/bayonetta.html"><strong aria-hidden="true">4.5.21.</strong> Bayonetta</a></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.</strong> Ultimate</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../characters/ultimate/inkling.html"><strong aria-hidden="true">4.6.1.</strong> Inkling</a></li><li class="chapter-item "><a href="../characters/ultimate/daisy.html"><strong aria-hidden="true">4.6.2.</strong> Daisy</a></li><li class="chapter-item "><a href="../characters/ultimate/ridley.html"><strong aria-hidden="true">4.6.3.</strong> Ridley</a></li><li class="chapter-item "><a href="../characters/ultimate/simon.html"><strong aria-hidden="true">4.6.4.</strong> Simon</a></li><li class="chapter-item "><a href="../characters/ultimate/richter.html"><strong aria-hidden="true">4.6.5.</strong> Richter</a></li><li class="chapter-item "><a href="../characters/ultimate/chrom.html"><strong aria-hidden="true">4.6.6.</strong> Chrom</a></li><li class="chapter-item "><a href="../characters/ultimate/samusd.html"><strong aria-hidden="true">4.6.7.</strong> Dark Samus</a></li><li class="chapter-item "><a href="../characters/ultimate/krool.html"><strong aria-hidden="true">4.6.8.</strong> King K. Rool</a></li><li class="chapter-item "><a href="../characters/ultimate/shizue.html"><strong aria-hidden="true">4.6.9.</strong> Isabelle</a></li><li class="chapter-item "><a href="../characters/ultimate/ken.html"><strong aria-hidden="true">4.6.10.</strong> Ken</a></li><li class="chapter-item "><a href="../characters/ultimate/gaogaen.html"><strong aria-hidden="true">4.6.11.</strong> Incineroar</a></li><li class="chapter-item "><a href="../characters/ultimate/pakkun.html"><strong aria-hidden="true">4.6.12.</strong> Piranha Plant</a></li><li class="chapter-item "><a href="../characters/ultimate/jack.html"><strong aria-hidden="true">4.6.13.</strong> Joker</a></li><li class="chapter-item "><a href="../characters/ultimate/brave.html"><strong aria-hidden="true">4.6.14.</strong> Hero</a></li><li class="chapter-item "><a href="../characters/ultimate/buddy.html"><strong aria-hidden="true">4.6.15.</strong> Banjo and Kazooie</a></li><li class="chapter-item "><a href="../characters/ultimate/dolly.html"><strong aria-hidden="true">4.6.16.</strong> Terry</a></li><li class="chapter-item "><a href="../characters/ultimate/master.html"><strong aria-hidden="true">4.6.17.</strong> Byleth</a></li><li class="chapter-item "><a href="../characters/ultimate/tantan.html"><strong aria-hidden="true">4.6.18.</strong> Min Min</a></li><li class="chapter-item "><a href="../characters/ultimate/pickel.html"><strong aria-hidden="true">4.6.19.</strong> Steve</a></li><li class="chapter-item "><a href="../characters/ultimate/edge.html"><strong aria-hidden="true">4.6.20.</strong> Sephiroth</a></li><li class="chapter-item "><a href="../characters/ultimate/eflame.html"><strong aria-hidden="true">4.6.21.</strong> Pyra</a></li><li class="chapter-item "><a href="../characters/ultimate/elight.html"><strong aria-hidden="true">4.6.22.</strong> Mythra</a></li><li class="chapter-item "><a href="../characters/ultimate/demon.html"><strong aria-hidden="true">4.6.23.</strong> Kazuya</a></li><li class="chapter-item "><a href="../characters/ultimate/trail.html"><strong aria-hidden="true">4.6.24.</strong> Sora</a></li></ol></li></ol></li></ol>            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu (default)</button></li>
+                        </ul>
+                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                                            </div>
+
+                    <h1 class="menu-title">HDR Master Changelog</h1>
+
+                    <div class="right-buttons">
+                                                <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                                                                        
+                    </div>
+                </div>
+
+                                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="mechanics"><a class="header" href="#mechanics">Mechanics</a></h1>
+<h2 id="img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--edge-canceling"><a class="header" href="#img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--edge-canceling"><img src="../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png" alt="" /> Edge Canceling</a></h2>
+<ul>
+<li>Move toward an edge during any of the following states to slide off of the edge and cancel all grounded endlag:
+<ul>
+<li>Aerials</li>
+<li>Special fall</li>
+<li>Shielding</li>
+<li>Dashing</li>
+<li>Standing turnaround</li>
+<li>Runbrake</li>
+<li>Damage</li>
+<li>Taunts</li>
+</ul>
+</li>
+</ul>
+<h2 id="img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--edge-slide-offs"><a class="header" href="#img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--edge-slide-offs"><img src="../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png" alt="" /> Edge Slide-offs</a></h2>
+<ul>
+<li>Edge slipping caused by shield knockback or shield slide off happens more often due to parameter changes
+<ul>
+<li>When facing towards the center of the platform you’re standing on, you enter a state of pratfall when pushed off</li>
+<li>When facing outwards of the platform, you will be instantly actionable like in Melee/ProjectM</li>
+</ul>
+</li>
+</ul>
+<h2 id="img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--shield-stopping"><a class="header" href="#img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--shield-stopping"><img src="../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png" alt="" /> Shield Stopping</a></h2>
+<ul>
+<li>Shielding can now be performed during initial dash</li>
+</ul>
+<h2 id="img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--platdropping"><a class="header" href="#img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--platdropping"><img src="../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png" alt="" /> Platdropping</a></h2>
+<ul>
+<li>Platforms can now be dropped through during run, initial dash, and waveland</li>
+</ul>
+<h2 id="img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--jump-cancel-grab"><a class="header" href="#img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--jump-cancel-grab"><img src="../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png" alt="" /> Jump Cancel Grab</a></h2>
+<ul>
+<li>Press grab during jumpsquat to execute a standing grab</li>
+</ul>
+<h2 id="img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--dash-attack-cancel-up-smash-dacus"><a class="header" href="#img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--dash-attack-cancel-up-smash-dacus"><img src="../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png" alt="" /> Dash Attack Cancel Up Smash (DACUS)</a></h2>
+<ul>
+<li>Input up smash, up tilt, or up and grab between frames 3-10 of a dash attack to execute an up smash with the dash attack’s momentum</li>
+</ul>
+<h2 id="img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--dash-attack-cancel-down-smash-dacds"><a class="header" href="#img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--dash-attack-cancel-down-smash-dacds"><img src="../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png" alt="" /> Dash Attack Cancel Down Smash (DACDS)</a></h2>
+<ul>
+<li>Input down smash, downtilt, or down and grab between frames 3-10 of a dash attack to execute a down smash with the dash attack’s momentum</li>
+</ul>
+<h2 id="img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--dash-item-toss-cancel-item-toss-ditcit"><a class="header" href="#img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--dash-item-toss-cancel-item-toss-ditcit"><img src="../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png" alt="" /> Dash Item Toss Cancel Item Toss (DITCIT)</a></h2>
+<ul>
+<li>Input an item toss during the first 6 frames of a dash item toss to slide forward with a lot of momentum</li>
+<li>Can now be performed with a throw in any direction</li>
+</ul>
+<h2 id="img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--glide-toss"><a class="header" href="#img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--glide-toss"><img src="../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png" alt="" /> Glide Toss</a></h2>
+<ul>
+<li>Input an item toss during the first 5 frames of a roll to slide forward with a burst of momentum</li>
+<li>Can be performed with a throw in any direction</li>
+<li>Speed gained from a glide toss depends on the animation speed of the roll on the last frame before being canceled
+<ul>
+<li>Due to varying roll animations, this means the timing for a “good” glide toss will vary per character and roll direction</li>
+<li>Generally, the later into the roll a glide toss is performed, the further the slide</li>
+</ul>
+</li>
+</ul>
+<h2 id="img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--aerial-glide-toss-agt"><a class="header" href="#img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--aerial-glide-toss-agt"><img src="../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png" alt="" /> Aerial Glide Toss (AGT)</a></h2>
+<ul>
+<li>Airdodges can be canceled into an item toss during the first 5 frames</li>
+<li>Airdodges refresh after a successful AGT but are reduced in distance by 10% for each subsequent use before landing</li>
+</ul>
+<h2 id="img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--airdodge-cancels"><a class="header" href="#img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--airdodge-cancels"><img src="../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png" alt="" /> Airdodge Cancels</a></h2>
+<ul>
+<li>Airdodges can be canceled with an item toss or zair after frame 3</li>
+</ul>
+<h2 id="img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--wiggle-out-of-tumble"><a class="header" href="#img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--wiggle-out-of-tumble"><img src="../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png" alt="" /> Wiggle out of Tumble</a></h2>
+<ul>
+<li>While in tumble, tap the stick to the left or right to transition into normal fall</li>
+<li>Inputs cannot be buffered during knockback</li>
+</ul>
+<h2 id="img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--pivoting--perfect-pivoting"><a class="header" href="#img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--pivoting--perfect-pivoting"><img src="../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png" alt="" /> Pivoting / Perfect Pivoting</a></h2>
+<ul>
+<li>After a dash, flick the control stick in the opposite direction and let go to return to standing position
+<ul>
+<li>If performed during the first 4 frames, you will perfect pivot similar to Smash 4</li>
+<li>If performed during the next 3 frames, you will pivot in place similar to Melee</li>
+</ul>
+</li>
+</ul>
+<h2 id="img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--ledge-hogging"><a class="header" href="#img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--ledge-hogging"><img src="../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png" alt="" /> Ledge Hogging</a></h2>
+<ul>
+<li>The ledge counts as “occupied” for the first 75% of all ledge animations (varies slightly per character)</li>
+</ul>
+<h2 id="img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--double-jump-canceling"><a class="header" href="#img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--double-jump-canceling"><img src="../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png" alt="" /> Double Jump Canceling</a></h2>
+<ul>
+<li>Ness, Lucas, Mewtwo, Peach, Yoshi, and Sora can cancel the upwards momentum of their double jumps with an aerial. They can still rise with an aerial during their double jump by holding the jump button</li>
+<li>The leniency window for this is 5 frames</li>
+<li>This also works with tap jump</li>
+</ul>
+<h2 id="img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--moonwalking"><a class="header" href="#img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--moonwalking"><img src="../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png" alt="" /> Moonwalking</a></h2>
+<ul>
+<li>Characters can now moonwalk during initial dash; perform a moonwalk by performing a half-circle back motion during initial dash (or otherwise move the stick opposite the character's facing direction without triggering a dash back)</li>
+</ul>
+<h2 id="img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--crouch-out-of-run"><a class="header" href="#img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--crouch-out-of-run"><img src="../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png" alt="" /> Crouch out of Run</a></h2>
+<ul>
+<li>Run can be directly canceled into crouch, allowing faster access to crouch-related options</li>
+</ul>
+<h2 id="img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--wiggle-out-of-tumble-1"><a class="header" href="#img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--wiggle-out-of-tumble-1"><img src="../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png" alt="" /> Wiggle out of Tumble</a></h2>
+<ul>
+<li>Wiggling the control stick to exit tumble will now allow you to exit tumble directly after hitstun ends like in Melee/ProjectM instead of a bit after the tumbling animation starts</li>
+</ul>
+<h2 id="img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--teeter-canceling"><a class="header" href="#img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--teeter-canceling"><img src="../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png" alt="" /> Teeter Canceling</a></h2>
+<ul>
+<li>Taunts, landing lag, and dashes can all be canceled by entering the teeter animation from standing right on an edge</li>
+</ul>
+<h2 id="img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--bidou--aidou"><a class="header" href="#img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--bidou--aidou"><img src="../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png" alt="" /> Bidou / Aidou</a></h2>
+<ul>
+<li>Added support for Bidou and Aidou control schemes
+<ul>
+<li>When overridden with a held attack/special input, C-stick registers directional inputs for two frames (up from 1 frame in Sm4sh)</li>
+<li>Allows easier inputs of frame-perfect techniques such as perfect pivots, c-stick moonwalks, and RAR/IRAR</li>
+</ul>
+</li>
+</ul>
+<h2 id="img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--salty-runback-and-quick-exit"><a class="header" href="#img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--salty-runback-and-quick-exit"><img src="../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png" alt="" /> Salty Runback and Quick Exit</a></h2>
+<ul>
+<li>Input L + R + A + Y + Start to immediately restart a match</li>
+<li>Input L + R + A + X + Start to exit a match straight to the stage select screen</li>
+</ul>
+<h2 id="img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--meter-system-for-terry-ryu-and-ken"><a class="header" href="#img-srcimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--meter-system-for-terry-ryu-and-ken"><img src="../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png" alt="" /> Meter System for Terry, Ryu, and Ken</a></h2>
+<ul>
+<li>Just like in traditional fighting games these characters have been given a meter of their own for usage in Special Cancels, EX Specials, Super Specials, and more</li>
+<li>Up to 5 bars of meter can be gained through dealing damage and using certain specials
+<ul>
+<li>Special moves gain meter equivalent to half their damage on hit rounded to the nearest integer unless otherwise stated</li>
+<li>Ex Specials gain no meter upon use</li>
+</ul>
+</li>
+<li>More details can be found on the individual character changelogs</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                                                    <a rel="prev" href="../intro.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+                                                    <a rel="next" href="../engine/fighterstats.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                                    <a rel="prev" href="../intro.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+                                    <a rel="next" href="../engine/fighterstats.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                            </nav>
+
+        </div>
+
+        
+        
+        
+                <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+        
+                <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        
+    </body>
+</html>
