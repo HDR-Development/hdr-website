@@ -1,8 +1,9 @@
-# ![](../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) Shielding
+# Shielding
 
-## Shielding
+## ![](../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) Shielding
 - Removed vanilla mechanic where opponents were unable to be grabbed while experiencing blockstun from a non-projectile move
 - Removed vanilla mechanic where shieldstun could be canceled after 10 consecutive hits
+- Removed the extra four frame startup of shield grabs after blocking an attack
 - Shieldstun formula: floor(d \* 0.8 \* m + 2) 🠚 floor(d \* 0.45 \* m+ 2)
   - Where d = move damage and m = shieldstun multiplier
 - Minimum Hold Time
@@ -28,7 +29,7 @@
 - Minimum shield hold frames
   - 2F 🠚 4F
 
-## Parrying
+## ![](../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) Parrying
 - **Parrying projectiles will now reflect them**
   - Power Multiplier: 1.2x 🠚 0.6x
   - Speed Multiplier: 1.5x 🠚 1.0x
@@ -43,7 +44,7 @@
 - Extra hitlag from parry
   - 14F 🠚 24F
 
- ## Shield Dropping
+## ![](../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) Shield Dropping
 - Tilt down while in shield to drop through platforms (threshold is in between shield tilt and spotdodge)
 - Alternatively, use the (shield + special) or (shield + shield) or (shield + taunt) shield lock shortcut and tilt/tap downwards to shield drop
 - Spotdodge/platdrop stick thresholds changed to match Melee/ProjectM

@@ -2,10 +2,10 @@
 
 ## Overview
 - These pages denote every change made to each character compared to their vanilla data (v13.0.1). Whether something is labeled a buff or nerf is mostly comparing the values themselves, otherwise a lot of moves would be labeled entirely as overhauls <br><br>
-- Buffs are in <span style="color:#1155cc">blue</span>
-- Nerfs are in <span style="color:#990000">red</span>
+- Buffs are in <span style="color:steelblue">blue</span>
+- Nerfs are in <span style="color:red">red</span>
 - Reworks / overhauls are in <span style="color:#674ea7">purple</span>
-- New properties or features are in <span style="color:#38761d">green</span>
+- New properties or features are in <span style="color:limegreen">green</span>
 - Adjustments (both a buff and a nerf depending on context) are in white
 
 <!-- ## Test

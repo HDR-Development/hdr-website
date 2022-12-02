@@ -16,11 +16,8 @@ Changelog made by: Askew, Gabe, JOB, Spawn32, Tone, Vertigo, Onaroc, Bandey, Jed
 <u>Master Changelog</u>
 </h1>
 <div style="text-align:center;font-size:150%">
-Current version: <span style="color:limegreen">v0.19.21-beta</span><br><br>
+Current game version: <span style="color:limegreen">v0.25.0-beta</span>
 </div>
-
-<!-- # Table of Contents
-- [Universal Changes](./universal_changes.md)
-  - [Mechanics]()
-  - [Modes]()
-  - [Hitstun / DI / Damage / Knockback]() -->
+<div style="text-align:center;font-size:150%">
+Current changelog version: <span style="color:green">v0.19.21-beta</span><br><br>
+</div>
