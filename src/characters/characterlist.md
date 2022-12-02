@@ -121,7 +121,7 @@
       <td><a href="./smash4/pitb.md">Dark Pit</a></td>
       <td><a href="./smash4/pacman.md">Pac-Man</a></td>
       <td><a href="./smash4/lucina.md">Lucina</a></td>
-      <td><a href="./smash4/reflet.md">Robin</a></td>
+      <td><a href="./smash4/robin.md">Robin</a></td>
     </tr>
     <tr>
       <td><a href="./smash4/shulk.md">Shulk</a></td>
