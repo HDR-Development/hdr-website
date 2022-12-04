@@ -1,22 +1,16 @@
 # ![](../../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) Character Changes
 
 ## Overview
-- These pages denote every change made to each character compared to their vanilla data (v13.0.1). Whether something is labeled a buff or nerf is mostly comparing the values themselves, otherwise a lot of moves would be labeled entirely as overhauls <br><br>
-- Buffs are in <span style="color:steelblue">blue</span>
+- These pages denote every change made to each character compared to their vanilla data (v13.0.1)<br><br>
+- Buffs are in <span style="color:CornFlowerBlue">blue</span>
 - Nerfs are in <span style="color:red">red</span>
-- Reworks / overhauls are in <span style="color:#674ea7">purple</span>
+- Adjustments (both a buff and a nerf depending on context) are in <span style="color:#CF68CF">purple</span>
+- Reworks are in <span style="color:#E5E5E5">white</span>
 - New properties or features are in <span style="color:limegreen">green</span>
-- Adjustments (both a buff and a nerf depending on context) are in white
-
-<!-- ## Test
-- Early
-  - <span style="color:#1155cc">[+]</span> Damage: 5.0% -> 6.0%
-  - <span style="color:#990000">[-]</span> BKB: 60 -> 50
-- Late
-  - <span style="color:#1155cc">[+] Damage: 5.0% -> 6.0%</span>
-  - <span style="color:#990000">[-] BKB: 60 -> 50</span> -->
-
-<br>
+- Aesthetic changes are in <span style="color:#C5AC00">yellow</span>
+- Unchanged fields are default color
+- Definitions for all terms can be found [here](./terms.md)
+<br><br>
 
 <table style="text-align:center;width:100%">
   <thead>

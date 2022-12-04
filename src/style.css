@@ -1,0 +1,39 @@
+@font-face {font-family: SplineSansMono; src: url('./SplineSansMono.ttf'); }
+
+p {
+    font-family: SplineSansMono;
+    font-size:20px;
+}
+
+ul {
+    font-family: SplineSansMono;
+    font-size:16px;
+}
+
+buff {
+    color: CornFlowerBlue;
+}
+
+nerf {
+    color:Red;
+}
+
+aesth {
+    color: #C5AC00;
+}
+
+property {
+    color: LimeGreen;
+}
+
+property::before {
+    content: url('./images/hdr.webp');
+}
+
+adjust {
+    color: #cf68cf;
+}
+
+rework {
+    color: #FFF8E7;
+}

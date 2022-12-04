@@ -1,1 +1,289 @@
-# Mario
+# ![](../../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.003.png) Mario
+
+<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
+
+![](../../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) <b>Attributes</b>
+- Initial Dash Speed: 1.936 🠚 1.52
+- Run Speed: 1.76 🠚 1.672
+- Dash to Run Transition Frame: F10 🠚 F11
+- Traction: 0.102 🠚 0.084
+- Air Speed: 1.208 🠚 1
+- Fall Speed: 1.5 🠚 1.8
+- Gravity: 0.087 🠚 0.095
+- Initial Jump Velocity: 19.9815 🠚 11.946
+- Short Hop Height: 17.54 🠚 13
+- Full Hop Height: 36.33 🠚 33.33
+- Double Jump Height: 36.33 🠚 33.33
+- Max Horizontal Jump Speed: 1.525 🠚 1.51
+- Weight: 98 🠚 100
+- Model Scale Multiplier: 1 🠚 1.02
+- Shield Radius: 9.7 🠚 9.9
+- Ledge Grab Max Height: 14.25 🠚 18
+<br><br>
+
+![](../../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) <b>Moveset</b>
+- Jab:
+  - Jab 1 (Left Punch)
+    - <adjust>Hitboxes attached to arm</adjust><br>
+    - <property class="prop"> Added locking hitbox</property>
+    - Damage: <buff>2.2% 🠚 2.5%</buff>
+    - Angle: <rework>361 🠚 80</rework>
+    - BKB: <rework>20/15 🠚 0</rework>
+    - FKB: <rework>0 🠚 25</rework>
+    - KBG: <adjust>30/20 🠚 100</adjust>
+    - Hitlag Multiplier: <adjust>1.8x 🠚 1.2x</adjust>
+    - FAF: <buff>F20 🠚 F16</buff>
+    <br>
+  - Jab 2 (Right Cross)
+    - Damage: <buff>1.7% 🠚 2.0%</buff>
+    - Hitbox Size: <buff>3.0/1.5/4.0u 🠚 3.0/2.5/4.0u</buff>
+    - FAF: <buff>22 🠚 18</buff>
+  - Jab 3 (Toe Kick)
+    - <adjust>Attached hitboxes to leg</adjust>
+    - <adjust>Adjusted animation slightly to allow hitboxes to properly interpolate along the kick</adjust>
+    - Hitbox Size (foot): <buff>2.6u 🠚 3.5u</buff>
+    - FAF: <buff>34 🠚 25</buff>
+<br><br>
+- Forward Tilt (Plumber Kick):
+  - High
+    - Angle: <rework>361 🠚 55</rework>
+    - BKB: <adjust>55 🠚 40</adjust>
+    - KBG: <adjust>70 🠚 80</adjust>
+  - Mid
+    - BKB: <adjust>55 🠚 40</adjust>
+    - KBG: <adjust>70 🠚 80</adjust>
+  - Low
+    - Damage: <nerf>7.0% 🠚 6.0%</nerf>
+    - Angle: <rework>361 🠚 30</rework>
+    - BKB: <adjust>60 🠚 45</adjust>
+    - KBG: <adjust>70 🠚 80</adjust>
+<br><br>
+- Up Tilt (Uppercut):
+  - Damage: <buff>5.5% 🠚 8.0%</buff>
+  - Angle: <nerf>96 🠚 92</nerf>
+  - BKB: <nerf>28 🠚 40</nerf>
+  - KBG (chest/arm/hand): <buff>130/130/130 🠚 117/113/110</buff>
+  - Hitbox Size (early, chest/arm/hand): <buff>3.5/4.2/5.0u 🠚 4.0/6.2/6.0u</buff>
+  - Hitbox Size (late, chest/arm/hand): <adjust>3.5/4.2/5.0u 🠚 4.0/4.0/4.0u</adjust>
+<br><br>
+- Down Tilt (Leg Sweep):
+  - *Added hip hitbox*
+  - Hitbox Duration: F5-7 🠚 F5-8
+  - Damage (hip/knee/foot): \*/5.0/7.0% 🠚 8.0/8.0/9.0%
+  - Angle (foot): 80 🠚 85
+  - BKB: 35 🠚 46
+  - KBG: 80 🠚 73
+  - Hitbox Size (hip/knee/foot): \*/3.2/4.2u 🠚 2.5/3.2/4.0u
+  - FAF: 28 🠚 25
+<br><br>
+- Dash Attack (Slide):
+  - *Attached hitboxes to leg*
+  - *Added hip hitbox*
+  - Early
+    - Damage: 8.0% 🠚 9.0%
+    - Angle: 50 🠚 60
+    - BKB: 35 🠚 80
+    - KBG: 80 🠚 43
+  - Late
+    - Damage: 6.0% 🠚 7.0%
+    - Angle: 48 🠚 105
+    - BKB: 35 🠚 70
+    - KBG: 80 🠚 50
+    - Hitbox Size: 2.7u 🠚 3.5u
+  - Hitlag Multiplier: 1.25x 🠚 1.2x
+<br><br>
+- Forward Smash (Fire Glove):
+  - *Added back shoulder hitbox, hitboxes enlarged*
+  - *Can now reverse hit*
+  - High
+    - Damage: 14.7%/17.799999% 🠚 15.0%/20.0%
+    - BKB: 26 🠚 30
+    - KBG: 105/101 🠚 97/100
+    - FAF: 48 🠚 57
+  - Mid
+    - Damage: 14.7%/17.799999% 🠚 14.0%/19.0%
+    - BKB: 25 🠚 30
+    - KBG: 105/99 🠚 97/100
+    - FAF: 48 🠚 52
+  - Low
+    - Damage: 14.7%/17.799999% 🠚 14.0%/18.0%
+    - BKB: 23 🠚 30
+    - KBG: 100/105 🠚 97/100
+<br><br>
+- Up Smash (Lead Headbutt):
+  - Hitbox Duration: F9-12 🠚 F9-14
+  - Damage: 14.0% 🠚 16.0%
+  - KBG: 94 🠚 98
+  - Hitbox Size (head/chest): 5.0/4.0u 🠚 4.7/3.5u
+  - FAF: 40 🠚 52
+<br><br>
+- Down Smash (Breakdance Sweep):
+  - *Hitboxes enlarged*
+  - Hit 1
+    - Damage: 10.0% 🠚 15.0%
+    - Angle: 32 🠚 361
+    - BKB: 30 🠚 45
+    - KBG: 100 🠚 85
+  - Hit 2
+    - KBG: 100 🠚 107
+    - Angle: 32 🠚 38
+    - BKB: 30 🠚 40
+    - KBG: 107 🠚 75
+    - FAF: 44 🠚 50
+  - Hitbox Size (foot/leg): 4.0/3.3u 🠚 4.5/3.5u
+<br><br>
+- Neutral Aerial (Plumber’s Boot):
+  - *Matched late hitbox size with early hit*
+  - Early Hit
+    - Damage: 8.0% 🠚 12.0%
+    - Hitbox Size: 4.0/4.0u 🠚 3.7/3.7u
+  - Late Hit
+    - Damage: 5.0% 🠚 9.0%
+    - BKB: 13 🠚 20
+    - KBG: 90 🠚 100
+    - Hitbox Size: 2.8/2.8u 🠚 3.0/3.0u
+  - Landing Lag: 6F 🠚 7F
+<br><br>
+- Forward Aerial (Plunger):
+  - Firebrand
+    - *Hold taunt or special during the move to give all hitboxes fire properties and increased hitlag*
+    - Hitlag Multiplier: 1.0x 🠚 1.5x
+  - Hitbox Duration (early/mid/late): F16/F17-20/F21 🠚 F16-17/F18-19/F20-22
+  - Early
+    - *Added shoulder hitbox, enlarged hand hitbox*
+    - Damage: 12.0%/12.0% 🠚 14.0%/15.0%
+    - Angle: 361 🠚 60
+    - BKB: (sourspot/sweetspot) 30/30 🠚 35/40
+    - KBG: 100 🠚 80
+    - Hitlag Multiplier: 1.5x 🠚 1.3x
+  - Mid
+    - Damage: 14.0% 🠚 15.0%
+    - BKB: 32 🠚 30
+    - KBG: 78 🠚 75
+    - Hitlag Multiplier: 1.0x 🠚 1.1x
+  - Late
+    - Damage: 10.0% 🠚 13.0%
+    - Angle: 361 🠚 280
+    - BKB: 20 🠚 25
+    - KBG: 80 🠚 75
+  - Landing Lag: 17F 🠚 11F
+  - FAF: 60 🠚 48
+<br><br>
+- Back Aerial (Drop Kick):
+  - *Can now reverse hit*
+  - Hitbox Duration (early/late): F6-7/F8-10 🠚 F6-8/F9-16
+  - Early
+    - Foot
+      - Damage: 10.5% 🠚 12.0%
+      - Angle: 361 🠚 38
+      - BKB: 12 🠚 20
+      - KBG: 106 🠚 70
+    - Leg
+      - Damage: 10.5% 🠚 10.0%
+      - Angle: 361 🠚 35
+      - BKB: 12 🠚 40
+      - KBG: 106 🠚 120
+  - Late
+    - Damage: 7.0% 🠚 9.0%
+    - BKB: 7 🠚 20
+    - KBG: 90 🠚 100
+  - Landing Lag: 6F 🠚 7F
+  - FAF: 34 🠚 30
+<br><br>
+- Up Aerial (Bicycle Kick):
+  - *Added late hit*
+  - Hitbox Duration (early/late): F4-7 🠚 F4-7/F8-12
+  - Early
+    - Damage: 7.0% 🠚 10.0%
+    - Angle: 75 🠚 69
+    - BKB: 10 🠚 30
+    - KBG: 135 🠚 84
+  - Late
+    - Damage: 9.0%
+    - Angle: 60
+    - BKB: 30
+    - KBG: 82
+  - Landing Lag: 6F 🠚 7F
+  - FAF: 32 🠚 30
+<br><br>
+- Down Aerial (Mario Tornado):
+  - *Removed landing hit and slight vertical momentum boost*
+  - *Duration extended by 1.333x*
+  - Hits 1-6
+    - Damage: 1.4% 🠚 1.1%
+    - BKB: 50 🠚 45
+    - Angle: 94 🠚 367
+    - Hitbox Size (body/feet): 7.0/4.0u 🠚 7.5/4.3u
+  - Hit 7
+    - Damage: 5.5% 🠚 5.0%
+    - Angle: 70 🠚 65
+    - KBG: 105 🠚 100
+    - Hitbox Size: 11.0u 🠚 11.5u
+  - FAF: 43 🠚 40
+  - Landing Lag: 15F 🠚 12F
+<br><br>
+- Fireball / Firebrand (Neutral Special):
+  - *Retains aerial momentum*
+  - Fireball
+    - Early
+      - Damage: 5.0% 🠚 6.5%
+    - Mid
+      - Damage: 5.0% 🠚 6.5%
+      - BKB: 28 🠚 25
+      - KBG: 15 🠚 20
+    - Late
+      - Damage: 4.0% 🠚 5.0%
+      - KBG: 10 🠚 20
+    - Hitlag Multiplier: 0.6x 🠚 1.0x
+    - FAF: 43 🠚 41
+  - Firebrand
+    - *By holding Special, a strong hitbox will appear on Mario’s hand*
+    - *Firebrand has more endlag than Fireball*
+    - Hitbox Duration: F13-17 🠚 F18-22
+    - Damage: 12.0%
+    - Angle: 50
+    - BKB: 50
+    - KBG: 110 🠚 115
+    - Hitlag Multiplier: 1.2x
+    - SDI Multiplier: 1.0x
+    - Hitbox Size: 4.5u
+    - FAF: 47
+<br><br>
+- Cape (Side Special):
+  - Vertical Speed (1st aerial use): 0.3 🠚 0.8
+  - Gravity: 0.031 🠚 0.029
+  - Max Fall Speed: 1 🠚 0.9
+  - Horizontal Speed Divisor: 2.5 🠚 1.5
+  - Damage: 7.0% 🠚 10.0%
+- Super Jump Punch (Up Special):
+  - *Can wall jump during frames 23-25 of the rise once per airtime*
+  - Aerial Distance Multiplier: 1.08x 🠚 1.0x
+  - Special Fall horizontal mobility multiplier: 0.5x 🠚 1.0x
+  - Multihits
+    - *Top hitboxes shifted downwards and rightmost hitboxes pulled inwards*
+    - *Hitbox sizes decreased*
+  - Launcher
+    - Damage: 3.0% 🠚 5.0%
+    - KBG: 145 🠚 155
+<br><br>
+- F.L.U.D.D. (Down Special):
+  - *Can now B-reverse F.L.U.D.D. charge and release once*
+  - *Canceling charge will no longer force you into an airdodge; you will instead be put into an actionable state*
+<br><br>
+- Up Taunt:
+  - FAF: 50 🠚 65
+<br><br>
+- Grab:
+  - *Merged air and ground-only hitboxes, increased grab range*
+  - Standing Grab 
+    - Hitbox Size: 3.3u 🠚 4.5u
+    - Hitbox Z-Offset: 4.0-8.7 🠚 4.0-9.2
+  - Dash Grab
+    - Hitbox Size: 3.3u 🠚 4.5u
+<br><br>
+- Down Throw:
+  - Damage: 5.0% 🠚 6.0%
+  - Angle: 68 🠚 74
+  - FAF: 40 🠚 38
+- Up Throw:
+  - FAF: 40 🠚 37

@@ -8,6 +8,7 @@ title = "HDR Master Changelog"
 [output.html]
 site-url = "/hdr-changelog/"
 default-theme = "ayu"
+copy-fonts = true
 
 [output.html.fold]
 enable = true
