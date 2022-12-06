@@ -1237,19 +1237,19 @@ Beta changelog: <a href="https://docs.google.com/document/d/1dSgmUu0znj9P9b5tRcn
 <li>Initial Dash Speed: 1.936 🠚 1.52</li>
 <li>Run Speed: 1.76 🠚 1.672</li>
 <li>Dash to Run Transition Frame: F10 🠚 F11</li>
-<li>Traction: 0.102 🠚 0.084</li>
-<li>Air Speed: 1.208 🠚 1</li>
-<li>Fall Speed: 1.5 🠚 1.8</li>
-<li>Gravity: 0.087 🠚 0.095</li>
+<li>Traction: 0.102 🠚 0.062</li>
+<li>Jumpsquat: 3 🠚 4</li>
 <li>Initial Jump Velocity: 19.9815 🠚 11.946</li>
-<li>Short Hop Height: 17.54 🠚 13</li>
+<li>Max Horizontal Jump Speed: 1.525 🠚 1.51</li>
+<li>Short Hop Height: 17.54 🠚 13.0</li>
 <li>Full Hop Height: 36.33 🠚 33.33</li>
 <li>Double Jump Height: 36.33 🠚 33.33</li>
-<li>Max Horizontal Jump Speed: 1.525 🠚 1.51</li>
+<li>Air Speed: 1.208 🠚 1.0</li>
+<li>Fall Speed: 1.5 🠚 1.8</li>
+<li>Gravity: 0.087 🠚 0.095</li>
 <li>Weight: 98 🠚 100</li>
-<li>Model Scale Multiplier: 1 🠚 1.02</li>
-<li>Shield Radius: 9.7 🠚 9.9</li>
-<li>Ledge Grab Max Height: 14.25 🠚 18
+<li>Model Scale Multiplier: 1.0 🠚 1.035</li>
+<li>Shield Radius: 9.7 🠚 9.9
 <br><br></li>
 </ul>
 <p><img src="characters/smash64/../../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png" alt="" /> <b>Moveset</b></p>
@@ -1259,21 +1259,27 @@ Beta changelog: <a href="https://docs.google.com/document/d/1dSgmUu0znj9P9b5tRcn
 <li>Jab 1 (Left Punch)
 <ul>
 <li><adjust>Hitboxes attached to arm</adjust><br></li>
-<li><property class="prop"> Added locking hitbox</property></li>
+<li><buff> Added locking hitbox</buff></li>
 <li>Damage: <buff>2.2% 🠚 2.5%</buff></li>
 <li>Angle: <rework>361 🠚 80</rework></li>
 <li>BKB: <rework>20/15 🠚 0</rework></li>
 <li>FKB: <rework>0 🠚 25</rework></li>
 <li>KBG: <adjust>30/20 🠚 100</adjust></li>
 <li>Hitlag Multiplier: <adjust>1.8x 🠚 1.2x</adjust></li>
+<li>Hitbox Size (hand/arm/shoulder/lock): <buff>1.2/1.5/1.8u 🠚 2.5/3.0/3.5u</buff></li>
 <li>FAF: <buff>F20 🠚 F16</buff>
 <br></li>
 </ul>
 </li>
 <li>Jab 2 (Right Cross)
 <ul>
+<li><buff>Added locking hitbox</buff></li>
 <li>Damage: <buff>1.7% 🠚 2.0%</buff></li>
-<li>Hitbox Size: <buff>3.0/1.5/4.0u 🠚 3.0/2.5/4.0u</buff></li>
+<li>Angle: <rework>361 🠚 80</rework></li>
+<li>BKB: <rework>20/15 🠚 0</rework></li>
+<li>FKB: <rework>0 🠚 32</rework></li>
+<li>KBG: <rework>30/15 🠚 100</rework></li>
+<li>Hitbox Size (hand/arm/shoulder): <buff>1.5/3.0/4.0u 🠚 2.5/3.0/4.0u</buff></li>
 <li>FAF: <buff>22 🠚 18</buff></li>
 </ul>
 </li>
@@ -1281,7 +1287,12 @@ Beta changelog: <a href="https://docs.google.com/document/d/1dSgmUu0znj9P9b5tRcn
 <ul>
 <li><adjust>Attached hitboxes to leg</adjust></li>
 <li><adjust>Adjusted animation slightly to allow hitboxes to properly interpolate along the kick</adjust></li>
-<li>Hitbox Size (foot): <buff>2.6u 🠚 3.5u</buff></li>
+<li>Hitbox Duration: <buff>F3-4 🠚 F3-7</buff></li>
+<li>Damage: <buff>4.0% 🠚 5.0%</buff></li>
+<li>BKB: <nerf>60 🠚 35</nerf></li>
+<li>KBG: <buff>80 🠚 83</buff></li>
+<li>Hitlag Multiplier: <adjust>2.0x 🠚 1.5x</adjust></li>
+<li>Hitbox Size (leg/foot): <buff>2.5/4.3u 🠚 2.5/4.5u</buff></li>
 <li>FAF: <buff>34 🠚 25</buff>
 <br><br></li>
 </ul>
@@ -1290,17 +1301,20 @@ Beta changelog: <a href="https://docs.google.com/document/d/1dSgmUu0znj9P9b5tRcn
 </li>
 <li>Forward Tilt (Plumber Kick):
 <ul>
+<li>Hitbox Duration: F5-7</li>
 <li>High
 <ul>
 <li>Angle: <rework>361 🠚 55</rework></li>
 <li>BKB: <adjust>55 🠚 40</adjust></li>
 <li>KBG: <adjust>70 🠚 80</adjust></li>
+<li>Hitbox Size (foot/knee/hip): <buff>3.8/3.0/2.0u -&gt; 4.5/3.0/3.5u</buff></li>
 </ul>
 </li>
 <li>Mid
 <ul>
 <li>BKB: <adjust>55 🠚 40</adjust></li>
 <li>KBG: <adjust>70 🠚 80</adjust></li>
+<li>Hitbox Size (foot/knee/hip): <buff>3.8/3.0/2.0u -&gt; 4.5/3.0/3.5u</buff></li>
 </ul>
 </li>
 <li>Low
@@ -1308,7 +1322,8 @@ Beta changelog: <a href="https://docs.google.com/document/d/1dSgmUu0znj9P9b5tRcn
 <li>Damage: <nerf>7.0% 🠚 6.0%</nerf></li>
 <li>Angle: <rework>361 🠚 30</rework></li>
 <li>BKB: <adjust>60 🠚 45</adjust></li>
-<li>KBG: <adjust>70 🠚 80</adjust>
+<li>KBG: <adjust>70 🠚 80</adjust></li>
+<li>Hitbox Size (foot/knee/hip): <buff>3.8/3.0/2.0u -&gt; 4.5/3.0/3.5u</buff>
 <br><br></li>
 </ul>
 </li>
@@ -1316,78 +1331,97 @@ Beta changelog: <a href="https://docs.google.com/document/d/1dSgmUu0znj9P9b5tRcn
 </li>
 <li>Up Tilt (Uppercut):
 <ul>
+<li><adjust>Added late hit</adjust></li>
+<li>Early
+<ul>
+<li>Hitbox Duration (early/late): <rework>F5-11 🠚 F5-6</rework></li>
 <li>Damage: <buff>5.5% 🠚 8.0%</buff></li>
 <li>Angle: <nerf>96 🠚 92</nerf></li>
 <li>BKB: <nerf>28 🠚 40</nerf></li>
-<li>KBG (chest/arm/hand): <buff>130/130/130 🠚 117/113/110</buff></li>
+<li>KBG (chest/arm/hand): <buff>130 🠚 117/113/110</buff></li>
 <li>Hitbox Size (early, chest/arm/hand): <buff>3.5/4.2/5.0u 🠚 4.0/6.2/6.0u</buff></li>
+</ul>
+</li>
+<li>Late
+<ul>
+<li>Hitbox Duration (early/late): <rework>F7-11</rework></li>
+<li>Damage: <buff>5.5% 🠚 8.0%</buff></li>
+<li>Angle: <nerf>96 🠚 92</nerf></li>
+<li>BKB: <nerf>28 🠚 40</nerf></li>
+<li>KBG (chest/arm/hand): <buff>130 🠚 117/113/110</buff></li>
 <li>Hitbox Size (late, chest/arm/hand): <adjust>3.5/4.2/5.0u 🠚 4.0/4.0/4.0u</adjust>
 <br><br></li>
 </ul>
 </li>
+</ul>
+</li>
 <li>Down Tilt (Leg Sweep):
 <ul>
-<li><em>Added hip hitbox</em></li>
-<li>Hitbox Duration: F5-7 🠚 F5-8</li>
-<li>Damage (hip/knee/foot): */5.0/7.0% 🠚 8.0/8.0/9.0%</li>
-<li>Angle (foot): 80 🠚 85</li>
-<li>BKB: 35 🠚 46</li>
-<li>KBG: 80 🠚 73</li>
-<li>Hitbox Size (hip/knee/foot): */3.2/4.2u 🠚 2.5/3.2/4.0u</li>
-<li>FAF: 28 🠚 25
+<li><buff>Added hip hitbox</buff></li>
+<li>Hitbox Duration: <buff>F5-7 🠚 F5-8</buff></li>
+<li>Damage (hip/knee/foot): <buff>*/5.0/7.0% 🠚 8.0/8.0/9.0%</buff></li>
+<li>Angle (foot): <buff>80 🠚 85<buff></li>
+<li>BKB: <nerf>35 🠚 46</nerf></li>
+<li>KBG: <buff>80 🠚 73</buff></li>
+<li>Hitbox Size (hip/knee/foot): <adjust>*/3.2/4.2u 🠚 2.5/3.2/4.0u</adjust></li>
+<li>FAF: <buff>28 🠚 25</buff>
 <br><br></li>
 </ul>
 </li>
 <li>Dash Attack (Slide):
 <ul>
-<li><em>Attached hitboxes to leg</em></li>
-<li><em>Added hip hitbox</em></li>
+<li><adjust>Attached hitboxes to leg</adjust></li>
+<li><buff>Added hip hitbox</buff></li>
 <li>Early
 <ul>
-<li>Damage: 8.0% 🠚 9.0%</li>
-<li>Angle: 50 🠚 60</li>
-<li>BKB: 35 🠚 80</li>
-<li>KBG: 80 🠚 43</li>
+<li>Hitbox Duration: F6-9</li>
+<li>Damage: <buff>8.0% 🠚 9.0%</buff></li>
+<li>Angle: <buff>50 🠚 60</buff></li>
+<li>BKB: <nerf>35 🠚 80</nerf></li>
+<li>KBG: <buff>80 🠚 43</nerf></li>
+<li>Hitlag Multiplier: <adjust>1.25x 🠚 1.2x</adjust></li>
 </ul>
 </li>
 <li>Late
 <ul>
-<li>Damage: 6.0% 🠚 7.0%</li>
-<li>Angle: 48 🠚 105</li>
-<li>BKB: 35 🠚 70</li>
-<li>KBG: 80 🠚 50</li>
-<li>Hitbox Size: 2.7u 🠚 3.5u</li>
+<li>Hitbox Duration: F10-25</li>
+<li>Damage: <buff>6.0% 🠚 7.0%</buff></li>
+<li>Angle: <rework>48 🠚 105</rework></li>
+<li>BKB: <adjust>35 🠚 70</adjust></li>
+<li>KBG: <adjust>80 🠚 50</adjust></li>
+<li>Hitbox Size: <buff>2.7u 🠚 3.5u</buff></li>
+<li>Hitlag Multiplier: <adjust>1.25x 🠚 1.0x</adjust>
+<br><br></li>
 </ul>
 </li>
-<li>Hitlag Multiplier: 1.25x 🠚 1.2x
-<br><br></li>
 </ul>
 </li>
 <li>Forward Smash (Fire Glove):
 <ul>
-<li><em>Added back shoulder hitbox, hitboxes enlarged</em></li>
-<li><em>Can now reverse hit</em></li>
+<li><buff>Added back shoulder hitbox</buff></li>
+<li><adjust>Can now reverse hit</adjust></li>
 <li>High
 <ul>
-<li>Damage: 14.7%/17.799999% 🠚 15.0%/20.0%</li>
-<li>BKB: 26 🠚 30</li>
-<li>KBG: 105/101 🠚 97/100</li>
-<li>FAF: 48 🠚 57</li>
+<li>Damage (sweetspot/sourspot): <buff>17.8%/14.7% 🠚 20.0%/15.0%</buff></li>
+<li>BKB: <buff>26 🠚 30</buff></li>
+<li>KBG: <nerf>101/105 🠚 100/97</nerf></li>
+<li>Hitbox Size (shoulder/arm/hand): <buff>*/2.0/5.0u 🠚 2.5/3.5/5.7u</buff></li>
 </ul>
 </li>
 <li>Mid
 <ul>
-<li>Damage: 14.7%/17.799999% 🠚 14.0%/19.0%</li>
-<li>BKB: 25 🠚 30</li>
-<li>KBG: 105/99 🠚 97/100</li>
-<li>FAF: 48 🠚 52</li>
+<li>Damage (sweetspot/sourspot): <buff>17.8%/14.7% 🠚 19.0%/14.0%</buff></li>
+<li>BKB: <buff>25 🠚 30</buff></li>
+<li>KBG: <nerf>99/105 🠚 100/97</nerf></li>
+<li>Hitbox Size (shoulder/arm/hand): <buff>*/2.0/5.0u 🠚 2.5/3.5/5.7u</buff></li>
 </ul>
 </li>
 <li>Low
 <ul>
-<li>Damage: 14.7%/17.799999% 🠚 14.0%/18.0%</li>
-<li>BKB: 23 🠚 30</li>
-<li>KBG: 100/105 🠚 97/100
+<li>Damage (sweetspot/sourspot): <buff>17.8%/14.7% 🠚 18.0%/14.0%</buff></li>
+<li>BKB: <buff>23 🠚 30</buff></li>
+<li>KBG: <buff>105/100 🠚 100/97</nerf></li>
+<li>Hitbox Size (shoulder/arm/hand): <buff>*/2.0/5.0u 🠚 2.5/3.5/5.7u</buff>
 <br><br></li>
 </ul>
 </li>
@@ -1395,224 +1429,251 @@ Beta changelog: <a href="https://docs.google.com/document/d/1dSgmUu0znj9P9b5tRcn
 </li>
 <li>Up Smash (Lead Headbutt):
 <ul>
-<li>Hitbox Duration: F9-12 🠚 F9-14</li>
-<li>Damage: 14.0% 🠚 16.0%</li>
-<li>KBG: 94 🠚 98</li>
-<li>Hitbox Size (head/chest): 5.0/4.0u 🠚 4.7/3.5u</li>
-<li>FAF: 40 🠚 52
+<li>Hitbox Duration: <buff>F9-12 🠚 F9-14</buff></li>
+<li>Damage: <buff>14.0% 🠚 16.0%</buff></li>
+<li>KBG: <buff>94 🠚 98</buff></li>
+<li>Hitbox Size (head/chest): <nerf>5.0/4.0u 🠚 4.7/3.5u</nerf></li>
+<li>FAF: <nerf>40 🠚 44</nerf>
 <br><br></li>
 </ul>
 </li>
 <li>Down Smash (Breakdance Sweep):
 <ul>
-<li><em>Hitboxes enlarged</em></li>
 <li>Hit 1
 <ul>
-<li>Damage: 10.0% 🠚 15.0%</li>
-<li>Angle: 32 🠚 361</li>
-<li>BKB: 30 🠚 45</li>
-<li>KBG: 100 🠚 85</li>
+<li>Hitbox Duration: F5-6</li>
+<li>Damage: <buff>10.0% 🠚 15.0%</buff></li>
+<li>Angle: <nerf>32 🠚 361</nerf></li>
+<li>BKB: <buff>30 🠚 45</buff></li>
+<li>KBG: <nerf>100 🠚 85</nerf></li>
+<li>Hitbox Size (foot/leg): <buff>4.0/3.3u 🠚 4.5/3.5u</buff></li>
 </ul>
 </li>
 <li>Hit 2
 <ul>
-<li>KBG: 100 🠚 107</li>
-<li>Angle: 32 🠚 38</li>
-<li>BKB: 30 🠚 40</li>
-<li>KBG: 107 🠚 75</li>
-<li>FAF: 44 🠚 50</li>
+<li>Hitbox Duration: 14-15</li>
+<li>KBG: <buff>100 🠚 107</buff></li>
+<li>Angle: <nerf>30 🠚 38</nerf></li>
+<li>BKB: <buff>30 🠚 40</buff></li>
+<li>KBG: <nerf>100 🠚 75</nerf></li>
+<li>Hitbox Size (foot/leg): <buff>4.0/3.3u 🠚 4.5/3.5u</buff></li>
 </ul>
 </li>
-<li>Hitbox Size (foot/leg): 4.0/3.3u 🠚 4.5/3.5u
+<li>FAF: <nerf>44 🠚 45</nerf>
 <br><br></li>
 </ul>
 </li>
 <li>Neutral Aerial (Plumber’s Boot):
 <ul>
-<li><em>Matched late hitbox size with early hit</em></li>
-<li>Early Hit
+<li>Early
 <ul>
-<li>Damage: 8.0% 🠚 12.0%</li>
-<li>Hitbox Size: 4.0/4.0u 🠚 3.7/3.7u</li>
+<li>Hitbox Duration: F3-5</li>
+<li>Damage: <buff>8.0% 🠚 12.0%</buff></li>
+<li>Hitbox Size: <nerf>4.0/4.0u 🠚 3.7/3.7u</nerf></li>
 </ul>
 </li>
-<li>Late Hit
+<li>Late
 <ul>
-<li>Damage: 5.0% 🠚 9.0%</li>
-<li>BKB: 13 🠚 20</li>
-<li>KBG: 90 🠚 100</li>
-<li>Hitbox Size: 2.8/2.8u 🠚 3.0/3.0u</li>
+<li>Hitbox Duration: F6-27</li>
+<li>Damage: <buff>5.0% 🠚 9.0%</buff></li>
+<li>Angle: 361</li>
+<li>BKB: <adjust>13 🠚 20</adjust></li>
+<li>KBG: <adjust>90 🠚 100</adjust></li>
+<li>Hitbox Size: <buff>2.8/2.8u 🠚 3.0/3.0u</buff></li>
 </ul>
 </li>
-<li>Landing Lag: 6F 🠚 7F
+<li>Autocancel: <buff>F39 🠚 F36</buff></li>
+<li>Landing Lag: <nerf>6F 🠚 7F</nerf>
 <br><br></li>
 </ul>
 </li>
 <li>Forward Aerial (Plunger):
 <ul>
-<li>Firebrand
+<li>Fire Fist
 <ul>
-<li><em>Hold taunt or special during the move to give all hitboxes fire properties and increased hitlag</em></li>
-<li>Hitlag Multiplier: 1.0x 🠚 1.5x</li>
+<li><property> Hold taunt or special during the move to give all hitboxes fire properties</property></li>
+<li>Hitlag Multiplier (early/mid/late): <adjust>1.0x 🠚 1.0/1.2/1.0x</adjust></li>
 </ul>
 </li>
-<li>Hitbox Duration (early/mid/late): F16/F17-20/F21 🠚 F16-17/F18-19/F20-22</li>
 <li>Early
 <ul>
-<li><em>Added shoulder hitbox, enlarged hand hitbox</em></li>
-<li>Damage: 12.0%/12.0% 🠚 14.0%/15.0%</li>
-<li>Angle: 361 🠚 60</li>
-<li>BKB: (sourspot/sweetspot) 30/30 🠚 35/40</li>
-<li>KBG: 100 🠚 80</li>
-<li>Hitlag Multiplier: 1.5x 🠚 1.3x</li>
+<li><buff>Added shoulder hitbox</buff></li>
+<li>Hitbox Duration: <buff>F16 🠚 F16-17</buff></li>
+<li>Damage (hand/shoulder): <buff>12.0% 🠚 14.0%/13.0%</buff></li>
+<li>Angle: <rework>361 🠚 60</rework></li>
+<li>BKB (hand/shoulder): <buff>30 🠚 40/35</buff></li>
+<li>Hitlag Multiplier: <adjust>1.5x 🠚 0.8x</adjust></li>
+<li>Hitbox Size (hand/shoulder): <buff>3.2u 🠚 4.0u</buff></li>
 </ul>
 </li>
 <li>Mid
 <ul>
-<li>Damage: 14.0% 🠚 15.0%</li>
-<li>BKB: 32 🠚 30</li>
-<li>KBG: 78 🠚 75</li>
-<li>Hitlag Multiplier: 1.0x 🠚 1.1x</li>
+<li>Hitbox Duration: <nerf>F17-20 🠚 F18-19</nerf></li>
+<li>Damage: <buff>14.0% 🠚 15.0%</buff></li>
+<li>BKB: <nerf>32 🠚 30</nerf></li>
+<li>KBG (ground/air): <nerf>78 🠚 75/43</nerf></li>
+<li>Hitlag Multiplier: <adjust>1.0x 🠚 1.1x</adjust></li>
+<li>Hitbox Size (hand/shoulder): <buff>3.4/4.0u 🠚 4.6/4.0u</buff></li>
 </ul>
 </li>
 <li>Late
 <ul>
-<li>Damage: 10.0% 🠚 13.0%</li>
-<li>Angle: 361 🠚 280</li>
-<li>BKB: 20 🠚 25</li>
-<li>KBG: 80 🠚 75</li>
+<li>Hitbox Duration: <buff>F21 🠚 F20-22</buff></li>
+<li>Damage: <buff>10.0% 🠚 13.0%</buff></li>
+<li>Angle: <rework>361 🠚 280</rework></li>
+<li>BKB: <buff>20 🠚 25</buff></li>
+<li>KBG (ground/air): <nerf>80 🠚 75/51</nerf></li>
+<li>Hitbox Size (hand/shoulder): <buff>3.2/4.0u 🠚 4.6/4.0u</buff></li>
 </ul>
 </li>
-<li>Landing Lag: 17F 🠚 11F</li>
-<li>FAF: 60 🠚 48
+<li>FAF: <buff>60 🠚 48</buff></li>
+<li>Landing Lag: <buff>17F 🠚 11F</buff>
 <br><br></li>
 </ul>
 </li>
 <li>Back Aerial (Drop Kick):
 <ul>
-<li><em>Can now reverse hit</em></li>
-<li>Hitbox Duration (early/late): F6-7/F8-10 🠚 F6-8/F9-16</li>
+<li><adjust>Can now reverse hit</adjust></li>
 <li>Early
 <ul>
+<li>Hitbox Duration: <buff>F6-7 🠚 F6-8</buff></li>
 <li>Foot
 <ul>
-<li>Damage: 10.5% 🠚 12.0%</li>
-<li>Angle: 361 🠚 38</li>
-<li>BKB: 12 🠚 20</li>
-<li>KBG: 106 🠚 70</li>
+<li>Damage: <buff>10.5% 🠚 12.0%</buff></li>
+<li>Angle: <buff>361 🠚 38</buff></li>
+<li>BKB: <buff>12 🠚 20</buff></li>
+<li>KBG: <nerf>106 🠚 70</nerf></li>
+<li>Hitbox Size: <nerf>4.5u 🠚 3.5u</nerf></li>
 </ul>
 </li>
 <li>Leg
 <ul>
-<li>Damage: 10.5% 🠚 10.0%</li>
-<li>Angle: 361 🠚 35</li>
-<li>BKB: 12 🠚 40</li>
-<li>KBG: 106 🠚 120</li>
+<li>Damage: <nerf>10.5% 🠚 10.0%</nerf></li>
+<li>Angle: <buff>361 🠚 35</buff></li>
+<li>BKB: <buff>12 🠚 40</buff></li>
+<li>KBG: <buff>106 🠚 120</buff></li>
+<li>Hitbox Size: <nerf>5.9u 🠚 4.7u</nerf></li>
 </ul>
 </li>
 </ul>
 </li>
 <li>Late
 <ul>
-<li>Damage: 7.0% 🠚 9.0%</li>
-<li>BKB: 7 🠚 20</li>
-<li>KBG: 90 🠚 100</li>
+<li>Hitbox Duration: <buff>F8-10 🠚 F9-16</buff></li>
+<li>Damage: <buff>7.0% 🠚 9.0%</buff></li>
+<li>BKB: <nerf>7 🠚 20</nerf></li>
+<li>KBG: <nerf>90 🠚 100</nerf></li>
+<li>Hitbox Size (foot/leg): <adjust>1.6/4.8u 🠚 3.5/4.5u</adjust></li>
 </ul>
 </li>
-<li>Landing Lag: 6F 🠚 7F</li>
-<li>FAF: 34 🠚 30
+<li>FAF: <nerf>34 🠚 35</nerf></li>
+<li>Autocancel (early/late): <nerf>F1-5/F19 🠚 F1-5/F24</nerf></li>
+<li>Landing Lag: <nerf>6F 🠚 7F</nerf>
 <br><br></li>
 </ul>
 </li>
 <li>Up Aerial (Bicycle Kick):
 <ul>
-<li><em>Added late hit</em></li>
-<li>Hitbox Duration (early/late): F4-7 🠚 F4-7/F8-12</li>
+<li><buff>Added late hit</buff></li>
 <li>Early
 <ul>
-<li>Damage: 7.0% 🠚 10.0%</li>
-<li>Angle: 75 🠚 69</li>
-<li>BKB: 10 🠚 30</li>
-<li>KBG: 135 🠚 84</li>
+<li>Hitbox Duration: F4-7</li>
+<li>Damage: <buff>7.0% 🠚 10.0%</buff></li>
+<li>Angle: <nerf>75 🠚 69</nerf></li>
+<li>BKB: <nerf>10 🠚 30</nerf></li>
+<li>KBG: <buff>135 🠚 84</buff></li>
+<li>Hitbox Size (foot/knee): <nerf>5.5/4.4u 🠚 4.7/3.5u</nerf></li>
 </ul>
 </li>
 <li>Late
 <ul>
+<li>Hitbox Duration: F8-9</li>
 <li>Damage: 9.0%</li>
 <li>Angle: 60</li>
 <li>BKB: 30</li>
 <li>KBG: 82</li>
+<li>Hitlag Multiplier: 1.0x</li>
+<li>SDI Multiplier: 1.0x</li>
+<li>Hitbox Size (foot/knee): 4.7/3.5u</li>
 </ul>
 </li>
-<li>Landing Lag: 6F 🠚 7F</li>
-<li>FAF: 32 🠚 30
+<li>FAF: <nerf>32 🠚 36</nerf></li>
+<li>Autocancel (early/late): <buff>*/F17 🠚 F1-3/F17</buff></li>
+<li>Landing Lag: <nerf>6F 🠚 7F</nerf>
 <br><br></li>
 </ul>
 </li>
 <li>Down Aerial (Mario Tornado):
 <ul>
-<li><em>Removed landing hit and slight vertical momentum boost</em></li>
-<li><em>Duration extended by 1.333x</em></li>
-<li>Hits 1-6
+<li><adjust>Removed landing hit</adjust></li>
+<li><nerf>Removed vertical momentum boost</nerf></li>
+<li>Hits 1-5
 <ul>
-<li>Damage: 1.4% 🠚 1.1%</li>
-<li>BKB: 50 🠚 45</li>
-<li>Angle: 94 🠚 367</li>
-<li>Hitbox Size (body/feet): 7.0/4.0u 🠚 7.5/4.3u</li>
+<li>Hitbox Duration: <adjust>F5/7/9/11/13 🠚 F6-7/F9/F12/F14-15/F17</adjust></li>
+<li>Damage: <nerf>1.4% 🠚 1.1%</nerf></li>
+<li>Angle: <buff>94 🠚 367</buff></li>
+<li>BKB: <adjust>50/25 🠚 45</adjust></li>
+<li>Hitlag Multiplier: <adjust>1.0x 🠚 0.75x</adjust></li>
+<li>SDI Multiplier: <nerf>0.8x 🠚 1.2x</nerf></li>
+<li>Hitbox Size (body/feet): <buff>7.0/4.0u 🠚 8.0/4.5u</buff></li>
 </ul>
 </li>
-<li>Hit 7
+<li>Hit 6
 <ul>
-<li>Damage: 5.5% 🠚 5.0%</li>
-<li>Angle: 70 🠚 65</li>
-<li>KBG: 105 🠚 100</li>
-<li>Hitbox Size: 11.0u 🠚 11.5u</li>
+<li>Hitbox Duration: <adjust>F23 🠚 F30-31</adjust></li>
+<li>Damage: <nerf>5.5% 🠚 5.0%</nerf></li>
+<li>Angle: <nerf>70 🠚 65</nerf></li>
+<li>BKB: <adjust>80 🠚 55</adjust></li>
+<li>KBG: <adjust>100 🠚 90</adjust></li>
+<li>Hitlag Multiplier: <adjust>1.0x 🠚 1.5x</adjust></li>
+<li>SDI Multiplier: <nerf>0.8x 🠚 1.0x</nerf></li>
+<li>Hitbox Size: <buff>11.0u 🠚 11.5u</buff></li>
 </ul>
 </li>
-<li>FAF: 43 🠚 40</li>
-<li>Landing Lag: 15F 🠚 12F
+<li>FAF: <nerf>43 🠚 52</nerf></li>
+<li>Autocancel: <nerf>F1-4/F33 🠚 F1-2/F40</nerf></li>
+<li>Landing Lag: <buff>15F 🠚 12F</buff>
 <br><br></li>
 </ul>
 </li>
 <li>Fireball / Firebrand (Neutral Special):
 <ul>
-<li><em>Retains aerial momentum</em></li>
+<li><buff>Retains aerial momentum</buff></li>
 <li>Fireball
 <ul>
 <li>Early
 <ul>
-<li>Damage: 5.0% 🠚 6.5%</li>
+<li>Damage: <buff>5.0% 🠚 6.5%</buff></li>
 </ul>
 </li>
 <li>Mid
 <ul>
-<li>Damage: 5.0% 🠚 6.5%</li>
-<li>BKB: 28 🠚 25</li>
-<li>KBG: 15 🠚 20</li>
+<li>Damage: <buff>5.0% 🠚 6.5%</buff></li>
+<li>BKB: <adjust>28 🠚 25</adjust></li>
+<li>KBG: <adjust>15 🠚 20</adjust></li>
 </ul>
 </li>
 <li>Late
 <ul>
-<li>Damage: 4.0% 🠚 5.0%</li>
-<li>KBG: 10 🠚 20</li>
+<li>Damage: <buff>4.0% 🠚 5.0%</buff></li>
+<li>KBG: <adjust>10 🠚 20</adjust></li>
 </ul>
 </li>
-<li>Hitlag Multiplier: 0.6x 🠚 1.0x</li>
-<li>FAF: 43 🠚 41</li>
+<li>Hitlag Multiplier: <adjust>0.6x 🠚 1.0x</adjust></li>
+<li>FAF: <buff>43 🠚 41</buff></li>
 </ul>
 </li>
 <li>Firebrand
 <ul>
-<li><em>By holding Special, a strong hitbox will appear on Mario’s hand</em></li>
-<li><em>Firebrand has more endlag than Fireball</em></li>
-<li>Hitbox Duration: F13-17 🠚 F18-22</li>
+<li><property> Hold Special to spawn a strong hitbox on Mario’s hand instead of throwing a fireball</property></li>
+<li>Hitbox Duration: <nerf>F13-17 🠚 F18-22</nerf></li>
 <li>Damage: 12.0%</li>
 <li>Angle: 50</li>
 <li>BKB: 50</li>
-<li>KBG: 110 🠚 115</li>
+<li>KBG: <buff>110 🠚 115</buff></li>
 <li>Hitlag Multiplier: 1.2x</li>
 <li>SDI Multiplier: 1.0x</li>
-<li>Hitbox Size: 4.5u</li>
+<li>Hitbox Size (hand/arm): 6.5/3.5u</li>
 <li>FAF: 47
 <br><br></li>
 </ul>
@@ -1621,28 +1682,29 @@ Beta changelog: <a href="https://docs.google.com/document/d/1dSgmUu0znj9P9b5tRcn
 </li>
 <li>Cape (Side Special):
 <ul>
-<li>Vertical Speed (1st aerial use): 0.3 🠚 0.8</li>
-<li>Gravity: 0.031 🠚 0.029</li>
-<li>Max Fall Speed: 1 🠚 0.9</li>
-<li>Horizontal Speed Divisor: 2.5 🠚 1.5</li>
-<li>Damage: 7.0% 🠚 10.0%</li>
+<li>Vertical Speed: <buff>0.3 🠚 0.8</buff></li>
+<li>Gravity: <buff>0.031 🠚 0.029</buff></li>
+<li>Max Fall Speed: <buff>1.0 🠚 0.9</buff></li>
+<li>Horizontal Speed Divisor: <buff>2.5 🠚 1.5</buff></li>
+<li>Damage: <buff>7.0% 🠚 10.0%</buff>
+<br><br></li>
 </ul>
 </li>
 <li>Super Jump Punch (Up Special):
 <ul>
-<li><em>Can wall jump during frames 23-25 of the rise once per airtime</em></li>
-<li>Aerial Distance Multiplier: 1.08x 🠚 1.0x</li>
-<li>Special Fall horizontal mobility multiplier: 0.5x 🠚 1.0x</li>
+<li><property> Can wall jump during frames 23-25 of the rise once per airtime</property></li>
+<li>Distance Multiplier (air): <nerf>1.08x 🠚 1.0x</nerf></li>
+<li>Special Fall horizontal mobility multiplier: <buff>0.5x 🠚 1.0x</buff></li>
 <li>Multihits
 <ul>
-<li><em>Top hitboxes shifted downwards and rightmost hitboxes pulled inwards</em></li>
-<li><em>Hitbox sizes decreased</em></li>
+<li><nerf> Top hitboxes shifted downwards and rightmost hitboxes pulled inwards</nerf></li>
 </ul>
 </li>
 <li>Launcher
 <ul>
-<li>Damage: 3.0% 🠚 5.0%</li>
-<li>KBG: 145 🠚 155
+<li>Damage: <buff>3.0% 🠚 5.0%</buff></li>
+<li>KBG: <buff>145 🠚 155</buff></li>
+<li>Hitbox Size: <nerf>9.0u 🠚 7.5u</nerf>
 <br><br></li>
 </ul>
 </li>
@@ -1650,44 +1712,35 @@ Beta changelog: <a href="https://docs.google.com/document/d/1dSgmUu0znj9P9b5tRcn
 </li>
 <li>F.L.U.D.D. (Down Special):
 <ul>
-<li><em>Can now B-reverse F.L.U.D.D. charge and release once</em></li>
-<li><em>Canceling charge will no longer force you into an airdodge; you will instead be put into an actionable state</em>
+<li><property> The charge and release can now be B-reversed</property></li>
+<li><property> Canceling charge will no longer force you into an airdodge; you will instead be put into an actionable state</property>
 <br><br></li>
 </ul>
 </li>
-<li>Up Taunt:
+<li>Standing Grab:
 <ul>
-<li>FAF: 50 🠚 65
+<li>Hitbox Size: <buff>3.3u 🠚 4.5u</buff></li>
+<li>Hitbox Z-Offset: <buff>4.0-8.7u 🠚 4.0-9.2u</buff>
 <br><br></li>
 </ul>
 </li>
-<li>Grab:
+<li>Dash Grab:
 <ul>
-<li><em>Merged air and ground-only hitboxes, increased grab range</em></li>
-<li>Standing Grab 
-<ul>
-<li>Hitbox Size: 3.3u 🠚 4.5u</li>
-<li>Hitbox Z-Offset: 4.0-8.7 🠚 4.0-9.2</li>
-</ul>
-</li>
-<li>Dash Grab
-<ul>
-<li>Hitbox Size: 3.3u 🠚 4.5u
+<li>Hitbox Size: <buff>3.3u 🠚 4.5u</buff>
 <br><br></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Down Throw:
-<ul>
-<li>Damage: 5.0% 🠚 6.0%</li>
-<li>Angle: 68 🠚 74</li>
-<li>FAF: 40 🠚 38</li>
 </ul>
 </li>
 <li>Up Throw:
 <ul>
-<li>FAF: 40 🠚 37</li>
+<li>FAF: <buff>40 🠚 37</buff>
+<br><br></li>
+</ul>
+</li>
+<li>Down Throw:
+<ul>
+<li>Damage: <buff>5.0% 🠚 6.0%</buff></li>
+<li>Angle: <buff>68 🠚 74</buff></li>
+<li>FAF: <buff>40 🠚 38</buff></li>
 </ul>
 </li>
 </ul>
