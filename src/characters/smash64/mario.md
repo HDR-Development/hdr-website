@@ -104,14 +104,12 @@
   - <adjust>Attached hitboxes to leg</adjust>
   - <buff>Added hip hitbox</buff>
   - Early
-    - Hitbox Duration: F6-9
     - Damage: <buff>8.0% 🠚 9.0%</buff>
     - Angle: <buff>50 🠚 60</buff>
     - BKB: <nerf>35 🠚 80</nerf>
     - KBG: <buff>80 🠚 43</nerf>
     - Hitlag Multiplier: <adjust>1.25x 🠚 1.2x</adjust>
   - Late
-    - Hitbox Duration: F10-25
     - Damage: <buff>6.0% 🠚 7.0%</buff>
     - Angle: <rework>48 🠚 105</rework>
     - BKB: <adjust>35 🠚 70</adjust>
@@ -147,14 +145,12 @@
 <br><br>
 - Down Smash (Breakdance Sweep):
   - Hit 1
-    - Hitbox Duration: F5-6
     - Damage: <buff>10.0% 🠚 15.0%</buff>
     - Angle: <nerf>32 🠚 361</nerf>
     - BKB: <buff>30 🠚 45</buff>
     - KBG: <nerf>100 🠚 85</nerf>
     - Hitbox Size (foot/leg): <buff>4.0/3.3u 🠚 4.5/3.5u</buff>
   - Hit 2
-    - Hitbox Duration: 14-15
     - KBG: <buff>100 🠚 107</buff>
     - Angle: <nerf>30 🠚 38</nerf>
     - BKB: <buff>30 🠚 40</buff>
@@ -164,13 +160,10 @@
 <br><br>
 - Neutral Aerial (Plumber’s Boot):
   - Early
-    - Hitbox Duration: F3-5
     - Damage: <buff>8.0% 🠚 12.0%</buff>
     - Hitbox Size: <nerf>4.0/4.0u 🠚 3.7/3.7u</nerf>
   - Late
-    - Hitbox Duration: F6-27
     - Damage: <buff>5.0% 🠚 9.0%</buff>
-    - Angle: 361
     - BKB: <adjust>13 🠚 20</adjust>
     - KBG: <adjust>90 🠚 100</adjust>
     - Hitbox Size: <buff>2.8/2.8u 🠚 3.0/3.0u</buff>
