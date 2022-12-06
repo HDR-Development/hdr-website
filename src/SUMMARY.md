@@ -30,96 +30,95 @@
   - [Terms](./characters/terms.md)
   - [Smash 64]()
     - [Mario](./characters/smash64/mario.md)
-    - [Donkey Kong](./characters/smash64/donkey.md)
-    - [Link](./characters/smash64/link.md)
-    - [Samus](./characters/smash64/samus.md)
-    - [Yoshi](./characters/smash64/yoshi.md)
-    - [Kirby](./characters/smash64/kirby.md)
-    - [Fox](./characters/smash64/fox.md)
-    - [Pikachu](./characters/smash64/pikachu.md)
-    - [Luigi](./characters/smash64/luigi.md)
-    - [Ness](./characters/smash64/ness.md)
-    - [Captain Falcon](./characters/smash64/captain.md)
-    - [Jigglypuff](./characters/smash64/purin.md)
+    - [Donkey Kong]()<!--(./characters/smash64/donkey.md)-->
+    - [Link]()<!--./characters/smash64/link.md)-->
+    - [Samus]()<!--./characters/smash64/samus.md)-->
+    - [Yoshi]()<!--./characters/smash64/yoshi.md)-->
+    - [Kirby]()<!--./characters/smash64/kirby.md)-->
+    - [Fox]()<!--./characters/smash64/fox.md)-->
+    - [Pikachu]()<!--./characters/smash64/pikachu.md)-->
+    - [Luigi]()<!--./characters/smash64/luigi.md)-->
+    - [Ness]()<!--./characters/smash64/ness.md)-->
+    - [Captain Falcon]()<!--./characters/smash64/captain.md)-->
+    - [Jigglypuff]()<!--./characters/smash64/purin.md)-->
   - [Melee]()
-    - [Peach](./characters/melee/peach.md)
-    - [Bowser](./characters/melee/koopa.md)
-    - [Ice Climbers](./characters/melee/popo.md)
-    - [Sheik](./characters/melee/sheik.md)
-    - [Zelda](./characters/melee/zelda.md)
-    - [Dr. Mario](./characters/melee/mariod.md)
-    - [Pichu](./characters/melee/pichu.md)
-    - [Falco](./characters/melee/falco.md)
-    - [Marth](./characters/melee/marth.md)
-    - [Young Link](./characters/melee/younglink.md)
-    - [Ganondorf](./characters/melee/ganon.md)
-    - [Mewtwo](./characters/melee/mewtwo.md)
-    - [Roy](./characters/melee/roy.md)
-    - [Mr. Game and Watch](./characters/melee/gamewatch.md)
+    - [Peach]()<!--./characters/melee/peach.md)-->
+    - [Bowser]()<!--./characters/melee/koopa.md)-->
+    - [Ice Climbers]()<!--./characters/melee/popo.md)-->
+    - [Sheik]()<!--./characters/melee/sheik.md)-->
+    - [Zelda]()<!--./characters/melee/zelda.md)-->
+    - [Dr. Mario]()<!--./characters/melee/mariod.md)-->
+    - [Pichu]()<!--./characters/melee/pichu.md)-->
+    - [Falco]()<!--./characters/melee/falco.md)-->
+    - [Marth]()<!--./characters/melee/marth.md)-->
+    - [Young Link]()<!--./characters/melee/younglink.md)-->
+    - [Ganondorf]()<!--./characters/melee/ganon.md)-->
+    - [Mewtwo]()<!--./characters/melee/mewtwo.md)-->
+    - [Roy]()<!--./characters/melee/roy.md)-->
+    - [Mr. Game and Watch]()<!--./characters/melee/gamewatch.md)-->
   - [Brawl]()
-    - [Meta Knight](./characters/brawl/metaknight.md)
-    - [Pit](./characters/brawl/pit.md)
-    - [Zero Suit Samus](./characters/brawl/szerosuit.md)
-    - [Wario](./characters/brawl/wario.md)
-    - [Snake](./characters/brawl/snake.md)
-    - [Ike](./characters/brawl/ike.md)
-    - [Squirtle](./characters/brawl/pzenigame.md)
-    - [Ivysaur](./characters/brawl/pfushigisou.md)
-    - [Charizard](./characters/brawl/plizardon.md)
-    - [Diddy Kong](./characters/brawl/diddy.md)
-    - [Lucas](./characters/brawl/lucas.md)
-    - [Sonic](./characters/brawl/sonic.md)
-    - [King Dedede](./characters/brawl/dedede.md)
-    - [Olimar](./characters/brawl/pikmin.md)
-    - [Lucario](./characters/brawl/lucario.md)
-    - [R.O.B.](./characters/brawl/robot.md)
-    - [Toon Link](./characters/brawl/toonlink.md)
-    - [Wolf](./characters/brawl/wolf.md)
+    - [Meta Knight]()<!--./characters/brawl/metaknight.md)-->
+    - [Pit]()<!--./characters/brawl/pit.md)-->
+    - [Zero Suit Samus]()<!--./characters/brawl/szerosuit.md)-->
+    - [Wario]()<!--./characters/brawl/wario.md)-->
+    - [Snake]()<!--./characters/brawl/snake.md)-->
+    - [Ike]()<!--./characters/brawl/ike.md)-->
+    - [Squirtle]()<!--./characters/brawl/pzenigame.md)-->
+    - [Ivysaur]()<!--./characters/brawl/pfushigisou.md)-->
+    - [Charizard]()<!--./characters/brawl/plizardon.md)-->
+    - [Diddy Kong]()<!--./characters/brawl/diddy.md)-->
+    - [Lucas]()<!--./characters/brawl/lucas.md)-->
+    - [Sonic]()<!--./characters/brawl/sonic.md)-->
+    - [King Dedede]()<!--./characters/brawl/dedede.md)-->
+    - [Olimar]()<!--./characters/brawl/pikmin.md)-->
+    - [Lucario]()<!--./characters/brawl/lucario.md)-->
+    - [R.O.B.]()<!--./characters/brawl/robot.md)-->
+    - [Toon Link]()<!--./characters/brawl/toonlink.md)-->
+    - [Wolf]()<!--./characters/brawl/wolf.md)-->
   - [Smash 4]()
-    - [Villager](./characters/smash4/murabito.md)
-    - [Mega Man](./characters/smash4/rockman.md)
-    - [Wii Fit Trainer](./characters/smash4/wiifit.md)
-    - [Rosalina and Luma](./characters/smash4/rosetta.md)
-    - [Little Mac](./characters/smash4/littlemac.md)
-    - [Greninja](./characters/smash4/gekkouga.md)
-    - [Mii Brawler](./characters/smash4/miifighter.md)
-    - [Mii Swordfighter](./characters/smash4/miiswordsman.md)
-    - [Mii Gunner](./characters/smash4/miigunner.md)
-    - [Palutena](./characters/smash4/palutena.md)
-    - [Dark Pit](./characters/smash4/pitb.md)
-    - [Pac-Man](./characters/smash4/pacman.md)
-    - [Lucina](./characters/smash4/lucina.md)
-    - [Robin](./characters/smash4/robin.md)
-    - [Shulk](./characters/smash4/shulk.md)
-    - [Bowser Jr.](./characters/smash4/koopajr.md)
-    - [Duck Hunt](./characters/smash4/duckhunt.md)
-    - [Ryu](./characters/smash4/ryu.md)
-    - [Cloud](./characters/smash4/cloud.md)
-    - [Corrin](./characters/smash4/kamui.md)
-    - [Bayonetta](./characters/smash4/bayonetta.md)
+    - [Villager]()<!--./characters/smash4/murabito.md)-->
+    - [Mega Man]()<!--./characters/smash4/rockman.md)-->
+    - [Wii Fit Trainer]()<!--./characters/smash4/wiifit.md)-->
+    - [Rosalina and Luma]()<!--./characters/smash4/rosetta.md)-->
+    - [Little Mac]()<!--./characters/smash4/littlemac.md)-->
+    - [Greninja]()<!--./characters/smash4/gekkouga.md)-->
+    - [Mii Brawler]()<!--./characters/smash4/miifighter.md)-->
+    - [Mii Swordfighter]()<!--./characters/smash4/miiswordsman.md)-->
+    - [Mii Gunner]()<!--./characters/smash4/miigunner.md)-->
+    - [Palutena]()<!--./characters/smash4/palutena.md)-->
+    - [Dark Pit]()<!--./characters/smash4/pitb.md)-->
+    - [Pac-Man]()<!--./characters/smash4/pacman.md)-->
+    - [Lucina]()<!--./characters/smash4/lucina.md)-->
+    - [Robin]()<!--./characters/smash4/robin.md)-->
+    - [Shulk]()<!--./characters/smash4/shulk.md)-->
+    - [Bowser Jr.]()<!--./characters/smash4/koopajr.md)-->
+    - [Duck Hunt]()<!--./characters/smash4/duckhunt.md)-->
+    - [Ryu]()<!--./characters/smash4/ryu.md)-->
+    - [Cloud]()<!--./characters/smash4/cloud.md)-->
+    - [Corrin]()<!--./characters/smash4/kamui.md)-->
+    - [Bayonetta]()<!--./characters/smash4/bayonetta.md)-->
   - [Ultimate]()
-    - [Inkling](./characters/ultimate/inkling.md)
-    - [Daisy](./characters/ultimate/daisy.md)
-    - [Ridley](./characters/ultimate/ridley.md)
-    - [Simon](./characters/ultimate/simon.md)
-    - [Richter](./characters/ultimate/richter.md)
-    - [Chrom](./characters/ultimate/chrom.md)
-    - [Dark Samus](./characters/ultimate/samusd.md)
-    - [King K. Rool](./characters/ultimate/krool.md)
-    - [Isabelle](./characters/ultimate/shizue.md)
-    - [Ken](./characters/ultimate/ken.md)
-    - [Incineroar](./characters/ultimate/gaogaen.md)
-    - [Piranha Plant](./characters/ultimate/pakkun.md)
-    - [Joker](./characters/ultimate/jack.md)
-    - [Hero](./characters/ultimate/brave.md)
-    - [Banjo and Kazooie](./characters/ultimate/buddy.md)
-    - [Terry](./characters/ultimate/dolly.md)
-    - [Byleth](./characters/ultimate/master.md)
-    - [Min Min](./characters/ultimate/tantan.md)
-    - [Steve](./characters/ultimate/pickel.md)
-    - [Sephiroth](./characters/ultimate/edge.md)
-    - [Pyra](./characters/ultimate/eflame.md)
-    - [Mythra](./characters/ultimate/elight.md)
-    - [Kazuya](./characters/ultimate/demon.md)
-    - [Sora](./characters/ultimate/trail.md)
-    <!-- - [Rocket League Car]() -->
+    - [Inkling]()<!--./characters/ultimate/inkling.md)-->
+    - [Daisy]()<!--./characters/ultimate/daisy.md)-->
+    - [Ridley]()<!--./characters/ultimate/ridley.md)-->
+    - [Simon]()<!--./characters/ultimate/simon.md)-->
+    - [Richter]()<!--./characters/ultimate/richter.md)-->
+    - [Chrom]()<!--./characters/ultimate/chrom.md)-->
+    - [Dark Samus]()<!--./characters/ultimate/samusd.md)-->
+    - [King K. Rool]()<!--./characters/ultimate/krool.md)-->
+    - [Isabelle]()<!--./characters/ultimate/shizue.md)-->
+    - [Ken]()<!--./characters/ultimate/ken.md)-->
+    - [Incineroar]()<!--./characters/ultimate/gaogaen.md)-->
+    - [Piranha Plant]()<!--./characters/ultimate/pakkun.md)-->
+    - [Joker]()<!--./characters/ultimate/jack.md)-->
+    - [Hero]()<!--./characters/ultimate/brave.md)-->
+    - [Banjo and Kazooie]()<!--./characters/ultimate/buddy.md)-->
+    - [Terry]()<!--./characters/ultimate/dolly.md)-->
+    - [Byleth]()<!--./characters/ultimate/master.md)-->
+    - [Min Min]()<!--./characters/ultimate/tantan.md)-->
+    - [Steve]()<!--./characters/ultimate/pickel.md)-->
+    - [Sephiroth]()<!--./characters/ultimate/edge.md)-->
+    - [Pyra]()<!--./characters/ultimate/eflame.md)-->
+    - [Mythra]()<!--./characters/ultimate/elight.md)-->
+    - [Kazuya]()<!--./characters/ultimate/demon.md)-->
+    - [Sora]()<!--./characters/ultimate/trail.md)-->
