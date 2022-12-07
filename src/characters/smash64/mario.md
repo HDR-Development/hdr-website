@@ -170,7 +170,7 @@
 <br><br>
 - Forward Aerial (Plunger):
   - Fire Fist
-    - <property> Hold taunt or special during the move to give all hitboxes fire properties</property>
+    - <property>Hold taunt or special during the move to give all hitboxes fire properties</property>
     - Hitlag Multiplier (early/mid/late): <adjust>1.0x 🠚 1.0/1.2/1.0x</adjust>
   - Early
     - <buff>Added shoulder hitbox</buff>
@@ -284,7 +284,7 @@
     - Hitlag Multiplier: <adjust>0.6x 🠚 1.0x</adjust>
     - FAF: <buff>43 🠚 41</buff>
   - Firebrand
-    - <property> Hold Special to spawn a strong hitbox on Mario’s hand instead of throwing a fireball</property>
+    - <property>Hold Special to spawn a strong hitbox on Mario’s hand instead of throwing a fireball</property>
     - Hitbox Duration: <nerf>F13-17 🠚 F18-22</nerf>
     - Damage: 12.0%
     - Angle: 50
@@ -303,7 +303,7 @@
   - Damage: <buff>7.0% 🠚 10.0%</buff>
 <br><br>
 - Super Jump Punch (Up Special):
-  - <property> Can wall jump during frames 23-25 of the rise once per airtime</property>
+  - <property>Can wall jump during frames 23-25 of the rise once per airtime</property>
   - Distance Multiplier (air): <nerf>1.08x 🠚 1.0x</nerf>
   - Special Fall horizontal mobility multiplier: <buff>0.5x 🠚 1.0x</buff>
   - Multihits
@@ -314,8 +314,8 @@
     - Hitbox Size: <nerf>9.0u 🠚 7.5u</nerf>
 <br><br>
 - F.L.U.D.D. (Down Special):
-  - <property> The charge and release can now be B-reversed</property>
-  - <property> Canceling charge will no longer force you into an airdodge; you will instead be put into an actionable state</property>
+  - <property>The charge and release can now be B-reversed</property>
+  - <property>Canceling charge will no longer force you into an airdodge; you will instead be put into an actionable state</property>
 <br><br>
 - Standing Grab:
   - Hitbox Size: <buff>3.3u 🠚 4.5u</buff>
