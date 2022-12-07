@@ -7,7 +7,7 @@
 - How much damage a move or particular hitbox deals to an opponent. Assumes no staling or freshness bonus and default damage multipliers
 
 ## Angle
-- What direction an opponent will be sent flying. Angles above 361 are special angles and function as follows:
+- What direction an opponent will be sent flying. Angles above 360 are special angles and function as follows:
   - 361: Known as the Sakurai Angle. Keeps grounded opponents on the ground if the knockback taken is less than the global tumble threshold. Launches at an angle of 44 if above said threshold or against aerial opponents
   - 362: Always launches away from the center of the hitbox
   - 363: Launches opponents in the direction that the attacker is moving. Does not have any launch speed modifications
@@ -18,13 +18,13 @@
   - 368: Launches an opponent to a specified position in a defined amount of frames
 
 ## Base Knockback (BKB)
-- How far a move will send an opponent at 0%. Distance is affected by character weight unless stated otherwise
+- How far a move will send an opponent at 0%. Also controls the amount of hitstun at 0% when used in conjunction with FKB or an autolink angle
 
 ## Fixed Knockback (FKB)
-- The distance that a move will send an opponent at *any* percent. Overrides the values of BKB/KBG and is 0 unless stated otherwise
+- The set distance that a move will send an opponent at any percent. Overrides the values of BKB/KBG and is 0 unless stated otherwise
 
 ## Knockback Growth (KBG)
-- Determines how much a move scales in knockback distance with the opponent's percent. Also controls the amount of hitstun when used in conjunction with FKB or an autolink angle
+- Determines how much a move scales in knockback distance with the opponent's percent. Also controls the amount of hitstun scaling when used in conjunction with FKB or an autolink angle
 
 ## Hitlag Multiplier
 - Hitlag is the state when an attack hits and both players are frozen in place, and the multiplier affects the overall duration. This is the point where Smash DI is able to be utilized

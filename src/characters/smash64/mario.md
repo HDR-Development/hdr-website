@@ -33,8 +33,7 @@
     - KBG: <adjust>30/20 🠚 100</adjust>
     - Hitlag Multiplier: <adjust>1.8x 🠚 1.2x</adjust>
     - Hitbox Size (hand/arm/shoulder/lock): <buff>1.2/1.5/1.8u 🠚 2.5/3.0/3.5u</buff>
-    - FAF: <buff>F20 🠚 F16</buff>
-    <br>
+    - FAF: <buff>20 🠚 16</buff>
   - Jab 2 (Right Cross)
     - <buff>Added locking hitbox</buff>
     - Damage: <buff>1.7% 🠚 2.0%</buff>
@@ -56,7 +55,6 @@
     - FAF: <buff>34 🠚 25</buff>
 <br><br>
 - Forward Tilt (Plumber Kick):
-  - Hitbox Duration: F5-7
   - High
     - Angle: <rework>361 🠚 55</rework>
     - BKB: <adjust>55 🠚 40</adjust>
