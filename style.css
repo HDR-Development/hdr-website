@@ -28,7 +28,7 @@ property {
 }
 
 property::before {
-    content: url('./images/hdr.webp');
+    content: url('./images/hdr.webp') " ";
 }
 
 adjust {
