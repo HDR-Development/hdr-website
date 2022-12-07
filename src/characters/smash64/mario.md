@@ -331,3 +331,6 @@
   - Damage: <buff>5.0% 🠚 6.0%</buff>
   - Angle: <buff>68 🠚 74</buff>
   - FAF: <buff>40 🠚 38</buff>
+
+<script src="../../arrow.js">
+</script>

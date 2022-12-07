@@ -12,7 +12,7 @@
 - Definitions for all terms can be found [here](./terms.md)
 <br><br>
 
-<table style="text-align:center;width:100%">
+<table class="charTable" style="text-align:center;width:100%">
   <thead>
     <tr><th colspan="6">Smash 64</th></tr>
   </thead>
@@ -36,7 +36,7 @@
   </tbody>
 </table>
 
-<table style="text-align:center;width:100%">
+<table class="charTable" style="text-align:center;width:100%">
   <thead>
     <tr><th colspan="7">Melee</th></tr>
   </thead>
@@ -62,7 +62,7 @@
   </tbody>
 </table>
 
-<table style="text-align:center;width:100%">
+<table class="charTable" style="text-align:center;width:100%">
   <thead>
     <tr><th colspan="6">Brawl</th></tr>
   </thead>
@@ -94,7 +94,7 @@
   </tbody>
 </table>
 
-<table style="text-align:center;width:100%;font-size:99.5%">
+<table class="charTable" style="text-align:center;width:100%;font-size:99.5%">
   <thead>
     <tr><th colspan="7">Smash 4</th></tr>
   </thead>
@@ -129,7 +129,7 @@
   </tbody>
 </table>
 
-<table style="text-align:center;width:100%">
+<table class="charTable" style="text-align:center;width:100%">
   <thead>
     <tr><th colspan="6">Ultimate</th></tr>
   </thead>
