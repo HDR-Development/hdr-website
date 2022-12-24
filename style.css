@@ -27,9 +27,9 @@ property {
     color: LimeGreen;
 }
 
-property::before {
+/* property::before {
     content: url('./images/hdr.webp') " ";
-}
+} */
 
 adjust {
     color: #cf68cf;

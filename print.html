@@ -401,6 +401,11 @@ Beta changelog: <a href="https://docs.google.com/document/d/1dSgmUu0znj9P9b5tRcn
 <ul>
 <li>Removed the shorthop damage reduction multiplier</li>
 <li>Removed the 1v1 damage multiplier</li>
+<li>Reverse Hits
+<ul>
+<li>Most hitboxes that are either behind a character's base position or collide with an opponent that is behind said position will have their knockback angle flipped horizontally</li>
+</ul>
+</li>
 </ul>
 <h2 id="img-srcengineimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--launching"><a class="header" href="#img-srcengineimagesasposewordsf93ce4e3-25f6-48dc-9813-fc237aafe008002png-alt--launching"><img src="engine/../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png" alt="" /> Launching</a></h2>
 <ul>
@@ -1395,7 +1400,6 @@ Beta changelog: <a href="https://docs.google.com/document/d/1dSgmUu0znj9P9b5tRcn
 <li>Forward Smash (Fire Glove):
 <ul>
 <li><buff>Added back shoulder hitbox</buff></li>
-<li><adjust>Can now reverse hit</adjust></li>
 <li>High
 <ul>
 <li>Damage (sweetspot/sourspot): <buff>17.8%/14.7% 🠚 20.0%/15.0%</buff></li>
@@ -1524,7 +1528,6 @@ Beta changelog: <a href="https://docs.google.com/document/d/1dSgmUu0znj9P9b5tRcn
 </li>
 <li>Back Aerial (Drop Kick):
 <ul>
-<li><adjust>Can now reverse hit</adjust></li>
 <li>Early
 <ul>
 <li>Hitbox Duration: <buff>F6-7 🠚 F6-8</buff></li>
@@ -1745,23 +1748,31 @@ Beta changelog: <a href="https://docs.google.com/document/d/1dSgmUu0znj9P9b5tRcn
 <li>Initial Dash Speed: 2.09 🠚 1.8</li>
 <li>Run Speed: 1.873 🠚 1.8</li>
 <li>Traction: 0.123 🠚 0.08</li>
-<li>Air Speed: 1.208 🠚 1.105</li>
-<li>Air Acceleration (base/additional): 0.01/0.05 🠚 0.01/0.04</li>
-<li>Horizontal Air Friction: 0.015 🠚 0.0175</li>
+<li>Jumpsquat: 3F 🠚 5F</li>
+<li>Initial Jump Velocity: 18.7 🠚 12.155</li>
 <li>Max Horizontal Jump Speed: 1.6 🠚 1.685</li>
+<li>Short Hop Height: 17.3 🠚 15</li>
+<li>Double Jump Height: 35.5 🠚 34.5</li>
+<li>Air Speed: 1.208 🠚 1.105</li>
+<li>Air Acceleration (base/additional): 0.01/0.05 🠚 0.012/0.04</li>
+<li>Horizontal Air Friction: 0.015 🠚 0.0175</li>
 <li>Fall Speed: 1.63 🠚 2.4</li>
 <li>Fast Fall Speed: 2.608 🠚 2.96</li>
 <li>Gravity: 0.085 🠚 0.1</li>
-<li>Initial Jump Velocity: 18.7 🠚 12.155</li>
-<li>Short Hop Height: 17.3 🠚 15</li>
-<li>Double Jump Height: 35.5 🠚 34.5</li>
-<li>Weight: 127 🠚 121</li>
+<li>Model Scale Multiplier: 1.0x 🠚 0.95x</li>
+<li>Weight: 127 🠚 110</li>
+<li>Heavy Item Carry Landing Lag: 24F 🠚 8F</li>
 <li>Can now wall jump</li>
 <li>Wall Jump Horizontal Velocity: 1.3 🠚 1.25
 <br><br></li>
 </ul>
 <p><img src="characters/smash64/../../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png" alt="" /> <b>Moveset</b></p>
 <ul>
+<li>Dash:
+<ul>
+<li><buff>Feet made intangible during the first 8 frames</buff></li>
+</ul>
+</li>
 <li>Jab:
 <ul>
 <li>Jab 1 (Swipe)
@@ -1783,123 +1794,202 @@ Beta changelog: <a href="https://docs.google.com/document/d/1dSgmUu0znj9P9b5tRcn
 </li>
 <li>Forward Tilt:
 <ul>
-<li><em>Shoulder hitbox enlarged</em></li>
-<li>Startup: F7 🠚 F6</li>
-<li>FAF: 36 🠚 35
+<li>Hitbox Size (shoulder:) <buff>3.5u 🠚 6.0u</buff></li>
+<li>FAF: <buff>35 🠚 34</buff>
 <br><br></li>
 </ul>
 </li>
 <li>Up Tilt (Spider Web Swipe):
 <ul>
-<li><em>Hand hitbox enlarged</em></li>
-<li>Damage (hand/arm/shoulder): 10.0/9.0/8.0% 🠚 9.0/10.0/11.0%</li>
-<li>KBG (hand/arm/shoulder): 115/110/105 🠚 105/110/115</li>
-<li>FAF: 39 🠚 36
+<li>Damage (hand/arm/shoulder): <buff>8.0/9.0/10.0% 🠚 9.0/10.0/11.0%</buff></li>
+<li>Angle: <nerf>100 🠚 110</nerf></li>
+<li>BKB: <adjust>40 🠚 70</adjust></li>
+<li>KBG (hand/arm/shoulder): <adjust>115/110/105 🠚 105/110/115</adjust></li>
+<li>Hitbox Size (hand): <buff>5.3u 🠚 6.0u</buff></li>
+<li>FAF: <buff>39 🠚 36</buff>
 <br><br></li>
 </ul>
 </li>
 <li>Down Tilt (Slouch Slap):
 <ul>
-<li><em>Hand hitbox extended outwards, added hitbox closer to shoulder</em></li>
-<li>Hitbox Duration: F6-7 🠚 F6-9</li>
-<li>Damage: 6.0% 🠚 7.0%</li>
-<li>BKB: 10 🠚 25</li>
-<li>FAF: 25 🠚 23
+<li><buff>Added shoulder hitbox</buff></li>
+<li><buff>Hand hitbox moved outwards</buff></li>
+<li>Hitbox Duration: <buff>F6-7 🠚 F6-9</buff></li>
+<li>Damage: <buff>6.0% 🠚 9.0%</buff></li>
+<li>Angle: <buff>361 🠚 40</buff></li>
+<li>BKB: <adjust>10 🠚 25</adjust></li>
+<li>KBG: <adjust>80 🠚 95</adjust></li>
+<li>FAF: <buff>25 🠚 23</buff>
 <br><br></li>
 </ul>
 </li>
 <li>Dash Attack:
 <ul>
-<li><em>Hitbox added to chest, late hitbox enlarged</em></li>
-<li>Hitbox Duration: F9-24 🠚 F9-20</li>
-<li>Angle (late): 45 🠚 361
+<li><property>Dash Attack now continues off ledges into the air</property>
+<ul>
+<li><property>Can be jumped out of after frame 25 in midair</property></li>
+</ul>
+</li>
+<li><buff>Added light armor during active frames</buff>
+<ul>
+<li>Knockback Threshold: 80</li>
+</ul>
+</li>
+<li><buff>Added chest hitbox</buff></li>
+<li>Early
+<ul>
+<li>Damage: <nerf>12.0% 🠚 10.0%</nerf></li>
+<li>Angle: <buff>53 🠚 65</buff></li>
+<li>BKB: <adjust>85 🠚 60</adjust></li>
+<li>KBG: <nerf>46 🠚 73</nerf></li>
+</ul>
+</li>
+<li>Late
+<ul>
+<li>Hitbox Duration: <nerf>F13-24 🠚 F13-19</nerf></li>
+<li>Damage: <nerf>9.0% 🠚 7.0%</nerf></li>
+<li>Angle: <nerf>45 🠚 361</nerf></li>
+<li>BKB: <buff>60 🠚 20</buff></li>
+<li>KBG: <nerf>60 🠚 90</nerf></li>
+<li>Hitbox Size: <buff>5.5u 🠚 7.0u</buff></li>
+</ul>
+</li>
+<li>FAF: <nerf>35 🠚 38</nerf>
 <br><br></li>
 </ul>
 </li>
 <li>Forward Smash:
 <ul>
-<li>Hitbox Duration: F22-23 🠚 F22-24</li>
-<li>KBG (sweetspot/sourspot): 88/86 🠚 95/93</li>
-<li>FAF: 55 🠚 60
+<li>Hitbox Duration: <buff>F22-23 🠚 F22-24</buff></li>
+<li>KBG (hand/arm): <buff>88/86 🠚 95/93</buff></li>
+<li>FAF: <nerf>55 🠚 60</nerf>
 <br><br></li>
 </ul>
 </li>
 <li>Up Smash:
 <ul>
-<li>Hitbox Duration: F14-15 🠚 F14-16</li>
-<li>KBG 84 🠚 89</li>
-<li>FAF: 50 🠚 55
+<li>Hitbox Duration: <buff>F14-15 🠚 F14-16</buff></li>
+<li>Damage: <nerf>22.0/21.0% 🠚 19.0%</nerf></li>
+<li>BKB: <buff>21/18 🠚 40</buff></li>
+<li>KBG: <buff>88/86 🠚 89</buff></li>
+<li>Hitlag Multiplier: <adjust>1.4x 🠚 1.0x</adjust></li>
+<li>Hitbox Size (hand/arm): <buff>5.7/3.7u 🠚 8.8/7.0u</buff></li>
+<li>FAF: <nerf>50 🠚 55</nerf>
 <br><br></li>
 </ul>
 </li>
 <li>Down Smash:
 <ul>
-<li>KBG: 88 🠚 93</li>
-<li>FAF: 56 🠚 60
+<li>Early
+<ul>
+<li>KBG: <buff>88 🠚 93</buff></li>
+</ul>
+</li>
+<li>Late
+<ul>
+<li>KBG: <buff>88 🠚 93</buff></li>
+<li>Hitbox Size (hand): <nerf>6.0u 🠚 5.0u</nerf></li>
+</ul>
+</li>
+<li>FAF: <nerf>56 🠚 60</nerf>
 <br><br></li>
 </ul>
 </li>
 <li>Neutral Aerial (Kong Whirl):
 <ul>
-<li><em>Hitboxes enlarged</em></li>
-<li>Hitbox Duration: F10-26 🠚 F7-24</li>
-<li>Damage (late): 9.0% 🠚 10.0%</li>
-<li>Autocancel: 23 🠚 37</li>
-<li>Landing Lag: 10F 🠚 8F
+<li><buff>Arm hitboxes attached to hands</buff></li>
+<li>Early
+<ul>
+<li>Hitbox Duration: <buff>F10-13 🠚 F7-10</buff></li>
+<li>BKB: <buff>20 🠚 25</buff></li>
+<li>Hitbox Size (hand/body): <buff>5.0/5.7u 🠚 5.5/8.0u</buff></li>
+</ul>
+</li>
+<li>Late
+<ul>
+<li>Hitbox Duration: <buff>F14-26 🠚 F11-25</buff></li>
+<li>Angle: <buff>361 🠚 50</buff></li>
+<li>Hitbox Size (hand/body): <buff>5.0/5.7u 🠚 5.5/7.0u</buff></li>
+</ul>
+</li>
+<li>FAF: <buff>39 🠚 37</buff></li>
+<li>Autocancel: <adjust>F1-9/F27 🠚 F1-6/F26</adjust></li>
+<li>Landing Lag: <buff>10F 🠚 8F</buff>
 <br><br></li>
 </ul>
 </li>
 <li>Forward Aerial (Hammer Knuckle):
 <ul>
-<li><em>Hitboxes enlarged</em></li>
-<li><em>Added hitboxes to left arm and on both shoulders</em></li>
-<li><em>Can now reverse hit</em></li>
-<li>KBG (early, shoulder/arm): 82/85 🠚 94</li>
-<li>KBG (mid): 103 🠚 105</li>
-<li>KBG (late, shoulder/arm): 96/100 🠚 103/103</li>
-<li>Autocancel: 56 🠚 49</li>
-<li>FAF: 56 🠚 49</li>
-<li>Landing Lag: 17F 🠚 14F
+<li><buff>Added right arm and shoulder hitboxes</buff></li>
+<li>Early
+<ul>
+<li>Hitbox Duration: <nerf>F18-20 🠚 F20-22</nerf></li>
+<li>Damage: <buff>16.0% 🠚 17.0%</buff></li>
+<li>KBG: <buff>85 🠚 89</buff></li>
+<li>Hitlag Multiplier: <adjust>1.0x 🠚 1.1x</adjust></li>
+<li>Hitbox Size: <buff>5.5/4.5u 🠚 6.0u</buff></li>
+</ul>
+</li>
+<li>Late
+<ul>
+<li>Hitbox Duration: <nerf>F21-23 🠚 F23-25</nerf></li>
+<li>Damage (ground/air): <buff>15.0/13.0% 🠚 17.0/15.0%</buff></li>
+<li>Angle (shoulder): <buff>361 🠚 270</buff></li>
+<li>KBG (air-only): <nerf>100 🠚 55</nerf></li>
+<li>Hitbox Size: <buff>5.5/5.0u 🠚 6.0u</buff></li>
+</ul>
+</li>
+<li>FAF: <buff>56 🠚 51</buff></li>
+<li>Autocancel: <buff>F56 🠚 F51</buff></li>
+<li>Landing Lag: <buff>17F 🠚 14F</buff>
 <br><br></li>
 </ul>
 </li>
 <li>Back Aerial (Back Kick):
 <ul>
-<li><em>Animation changed to a more Smash64-like lingering enlarged foot</em></li>
-<li><em>Hip hitbox enlarged</em></li>
-<li><em>Late hit hitbox sizes matched with early hit</em></li>
-<li><em>Can now reverse hit</em></li>
-<li>KBG (early): 97 🠚 104</li>
-<li>Sourspot
+<li><rework>Animation changed to a Smash64-like lingering enlarged foot</rework></li>
+<li><buff>Leg hitboxes moved down and inward slightly</buff></li>
+<li>Early
 <ul>
-<li>Hitbox Duration: F9-16 🠚 F9-21</li>
+<li>KBG: <buff>97 🠚 104</buff></li>
 </ul>
 </li>
-<li>Landing Lag: 11F 🠚 9F
+<li>Late
+<ul>
+<li>Hitbox Duration: <buff>F9-16 🠚 F9-19</buff></li>
+<li>Hitbox Size (leg/foot): <buff>4.0/6.0u 🠚 5.0/7.0u</buff></li>
+</ul>
+</li>
+<li>Autocancel: <buff>F1-6/F31 🠚 F1-6/F22</buff></li>
+<li>Landing Lag: <buff>11F 🠚 9F</buff>
 <br><br></li>
 </ul>
 </li>
 <li>Up Aerial (Flying Headbutt):
 <ul>
-<li><em>Hits 1F earlier in the animation, animation rate from F1-5 decreased to maintain F6 startup</em></li>
-<li><em>Hitbox moved downwards and enlarged</em></li>
-<li>Hitbox duration: F6-10 🠚 F6-8</li>
-<li>Damage: 13.0% 🠚 11.0%</li>
-<li>KBG: 90 🠚 93</li>
-<li>Landing Lag: 15F 🠚 11F
+<li><buff>Hits 1F earlier in the animation</buff></li>
+<li><adjust>Hitbox moved slightly lower on head</adjust></li>
+<li>Hitbox Duration: <nerf>F6-10 🠚 F6-9</nerf></li>
+<li>Damage: <nerf>13.0% 🠚 12.0%</nerf></li>
+<li>BKB: <adjust>32 🠚 31</adjust></li>
+<li>KBG: <buff>90 🠚 103</buff></li>
+<li>Hitbox Size: <nerf>7.5u 🠚 7.0u</nerf></li>
+<li>Landing Lag: <buff>15F 🠚 11F</buff>
 <br><br></li>
 </ul>
 </li>
 <li>Down Aerial:
 <ul>
-<li>Hitbox Duration: F14-16 🠚 F14-19</li>
-<li>Angle (early, sourspot): 361 🠚 270</li>
-<li>Late (new)
+<li>Hitbox Duration: <adjust>F14-16 🠚 F16-21</adjust></li>
+<li>Leg
 <ul>
-<li>Damage: 13.0%</li>
-<li>Angle: 361</li>
-<li>BKB: 20</li>
-<li>KBG: 85
+<li>Angle: <buff>361 🠚 270</buff></li>
+<li>KBG (air-only): <nerf>90 🠚 49</nerf></li>
+</ul>
+</li>
+<li>Foot
+<ul>
+<li>KBG (air-only): <nerf>90 🠚 62</nerf>
 <br><br></li>
 </ul>
 </li>
@@ -1907,21 +1997,53 @@ Beta changelog: <a href="https://docs.google.com/document/d/1dSgmUu0znj9P9b5tRcn
 </li>
 <li>Giant Punch (Neutral Special):
 <ul>
-<li><em>Charge can now be B-reversed</em></li>
-<li><em>Hitbox activity moved forward from F19 to F17 in animation</em></li>
-<li><em>Punch hitbox interpolated from over shoulder to front fist</em></li>
-<li><em>Added weak shoulder hitbox on frame 1 with angle 65</em></li>
+<li><buff>The charge can be B-reversed</buff></li>
+<li><buff>Startup: F19 🠚 F15</buff></li>
+<li><buff>Added shoulder hitbox during the punch startup</buff></li>
+<li>Shoulder
+<ul>
+<li>Hitbox Duration: F15</li>
+<li>Damage (min/max charge): 9.0/25.0%</li>
+<li>Angle: 70</li>
+<li>BKB: 30</li>
+<li>KBG (ground/air): 70/65</li>
+<li>Hitbox Size: 9.0u</li>
+</ul>
+</li>
 <li>Uncharged/Semi-Charged
 <ul>
-<li><em>Hitboxes enlarged</em></li>
-<li>BKB (ground/air): 45/60 🠚 30/30</li>
-<li>KBG (ground/air): 70/65 🠚 80/75</li>
+<li>Ground
+<ul>
+<li>BKB: <adjust>45 🠚 30</adjust></li>
+<li>KBG: <adjust>70 🠚 80</adjust></li>
+</ul>
+</li>
+<li>Air
+<ul>
+<li>Damage: <buff>6.0% 🠚 10.0%</buff></li>
+<li>BKB: <nerf>60 🠚 30</nerf></li>
+<li>KBG: <buff>65 🠚 75</buff></li>
+</ul>
+</li>
+<li>Hitbox Size: <buff>5.5u 🠚 6.0u</buff></li>
 </ul>
 </li>
 <li>Fully Charged
 <ul>
-<li><em>Fist hitbox enlarged, elbow hitbox size reduced</em></li>
-<li>Damage (ground/air): 28.0/25.0% 🠚 28.0%
+<li>Ground
+<ul>
+<li>BKB: <adjust>45 🠚 30</adjust></li>
+<li>KBG: <adjust>70 🠚 80</adjust></li>
+</ul>
+</li>
+<li>Air
+<ul>
+<li>Damage: <buff>25.0% 🠚 28.0%</buff></li>
+<li>BKB: <nerf>60 🠚 30</nerf></li>
+<li>KBG: <buff>65 🠚 75</buff></li>
+</ul>
+</li>
+<li>Hitbox Size: <buff>5.5u 🠚 6.0u</buff>
 <br><br></li>
 </ul>
 </li>
@@ -1929,32 +2051,23 @@ Beta changelog: <a href="https://docs.google.com/document/d/1dSgmUu0znj9P9b5tRcn
 </li>
 <li>Headbutt (Side Special):
 <ul>
-<li><em>Hitboxes repositioned to connect better</em></li>
-<li><em>Stalls in the air during frames 1-24 (only once per airtime)</em></li>
-<li>Super Armor Duration: F5-15 🠚 F5-19</li>
-<li>Ground
+<li><property>Stalls in the air during frames 1-24 (once per airtime)</property></li>
+<li><buff>Matched grounded and aerial hitboxes</buff></li>
+<li>Super Armor Duration: <buff>F5-14 🠚 F5-18</buff></li>
+<li>Ground-only
 <ul>
-<li><em>Hitboxes matched with aerial version</em></li>
+<li>KBG: <buff>40 🠚 50</buff></li>
+<li>Shield Damage: <nerf>25 🠚 22</nerf></li>
+<li>Hitbox Size: <buff>5.0/3.0u 🠚 6.5u</buff></li>
 </ul>
 </li>
-<li>Air
+<li>Air-only
 <ul>
-<li><em>Sweetspot outer edge pulled forward and down</em></li>
-<li><em>Sourspot pulled inward and size decreased</em></li>
-<li><em>All air-only hitboxes spike</em></li>
-<li>Shield Damage decreased [MISSING DATA]</li>
-</ul>
-</li>
-<li>Spike
-<ul>
-<li>Angle: 270 🠚 300</li>
-<li>BKB: 40 🠚 45</li>
-<li>KBG: 90 🠚 50</li>
-</ul>
-</li>
-<li>Bury
-<ul>
-<li>BKB: 30 🠚 40
+<li>Angle: <rework>70 🠚 300</rework></li>
+<li>BKB: <buff>15 🠚 45</buff></li>
+<li>KBG: <buff>40 🠚 41</buff></li>
+<li>Shield Damage: <nerf>25 🠚 22</nerf></li>
+<li>Hitbox Size: <nerf>10.0u 🠚 9.0u</nerf>
 <br><br></li>
 </ul>
 </li>
@@ -1962,81 +2075,138 @@ Beta changelog: <a href="https://docs.google.com/document/d/1dSgmUu0znj9P9b5tRcn
 </li>
 <li>Spinning Kong (Up Special):
 <ul>
-<li><em>Can be edge canceled and can slip off and grab ledges</em></li>
-<li>Initial Aerial Vertical Speed: 0.9 🠚 0.909</li>
-<li>Max Aerial Horizontal Speed: 1.7 🠚 1.67</li>
-<li>Grounded Acceleration: 0.034 🠚 0.05</li>
-<li>Grounded Deceleration: 0.015 🠚 0.04</li>
-<li>Max Ground Speed: 1.1 🠚 1.15</li>
-<li>Early Hit (new)
+<li><property>Can be edge canceled and can slip off and grab ledges</property></li>
+<li>Initial Vertical Speed: <buff>0.9 🠚 1.1</buff></li>
+<li>Ground Acceleration: <buff>0.034 🠚 0.05</buff></li>
+<li>Grounded Friction: <buff>0.015 🠚 0.04</buff></li>
+<li>Max Ground Speed: <buff>1.1 🠚 1.15</buff></li>
+<li>Max Airspeed: <nerf>1.7 🠚 1.67</nerf></li>
+<li>Ground
 <ul>
-<li>Hitbox Duration: F3-7</li>
+<li><nerf>Removed heavy armor</nerf></li>
+<li><rework>Added early hit</rework></li>
+<li>Early Hit
+<ul>
+<li>Hitbox Duration: F3-6</li>
 <li>Damage: 12.0%</li>
 <li>Angle: 361</li>
 <li>BKB: 60</li>
-<li>KBG: 81 🠚 90</li>
+<li>KBG: <buff>81 🠚 90</buff></li>
 </ul>
 </li>
 <li>Final Hit
 <ul>
-<li>BKB: 60 🠚 75</li>
-<li>KBG: 157 🠚 85</li>
+<li>BKB: <buff>60 🠚 75</buff></li>
+<li>KBG: <nerf>157 🠚 85</nerf></li>
 </ul>
 </li>
-<li>Grounded FAF: 105 🠚 111</li>
-<li>Landing Lag: 38F 🠚 30F
-<br><br></li>
+<li>FAF (flex): <buff>57 🠚 28</buff></li>
 </ul>
 </li>
-<li>Hand Slap (Down Special):
+<li>Air
 <ul>
-<li><em>Performs one hand slap if the button is not held</em></li>
-<li>Damage: 14.0% 🠚 10.0%
+<li><rework>Added early hit</rework></li>
+<li>Early Hit
+<ul>
+<li><buff>Given full-body intangibility</buff></li>
+<li>Hitbox Duration: <nerf>F4-11 🠚 F4-6</nerf></li>
+<li>Damage: <buff>5.0% 🠚 10.0%</buff></li>
+<li>Angle: <rework>85 🠚 361</rework></li>
+<li>BKB: <adjust>50 🠚 60</adjust></li>
+<li>KBG: <adjust>10 🠚 78</adjust></li>
+</ul>
+</li>
+<li>Multihits
+<ul>
+<li>Hitbox Duration: <adjust>F12-43 🠚 F13-43</adjust></li>
+<li>Arm Intangibility: <buff>F7-37 🠚 F7-43</buff></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Landing Lag: <buff>38F 🠚 18F</buff>
 <br><br></li>
+</ul>
+</li>
+<li>Hand Slap / Air Cargo (Down Special):
+<ul>
+<li>Ground
+<ul>
+<li><property>Performs one hand slap if the button is not held</property></li>
+<li>Damage: <nerf>14.0% 🠚 10.0%</nerf></li>
+<li>BKB: <adjust>85 🠚 90</adjust></li>
+<li>Shieldstun Multiplier: <buff>0.58 🠚 0.6</buff></li>
+</ul>
+</li>
+<li>Air
+<ul>
+<li>Air Cargo is a command grab that transitions into Cargo Carry upon grabbing an opponent</li>
+<li><property>Can be B-reversed, and can also fastfall and influence horizontal drift slightly during the move</property></li>
+<li><property>Successfully grabbing and throwing an opponent refreshes double jump</property></li>
+<li>Hitbox Duration: F18-22</li>
+<li>FAF: 51</li>
+<li>Landing Lag: 20F
+<br><br></li>
+</ul>
+</li>
 </ul>
 </li>
 <li>Barrel Pull (Shield Special):
 <ul>
-<li><em>Press special while shielding to pull out a barrel</em>
+<li>Press special while shielding to pull out a barrel
 <ul>
-<li><em>Has a 15 second cooldown</em></li>
-<li><em>Donkey Kong will get a yellow flash above his head and on his portrait when the cooldown is over</em></li>
+<li><property>Has a 15 second cooldown</property></li>
+<li><property>Donkey Kong will get a yellow flash above his head and on his portrait when the cooldown is over</property></li>
 </ul>
 </li>
-<li><em>The barrel has an upward angle if thrown using a tilt input</em></li>
-<li><em>In training mode, taunting will reset the cooldown</em></li>
-<li><em>Can have up to 3 on-screen at a time</em>
+<li>The barrel has an upward angle if thrown using a tilt input</li>
+<li>In training mode, taunting will reset the cooldown</li>
+<li>Can have up to 3 on-screen at a time
+<br><br></li>
+</ul>
+</li>
+<li>Forward Throw (Cargo Carry):
+<ul>
+<li><buff>Properly chooses the c-stick direction if it is used to input the throw</buff></li>
+<li>Base Clatter (required mash): <nerf>50 🠚 30</nerf></li>
+<li>Clatter Scaling Multiplier: <nerf>1.5x 🠚 1.25x</nerf></li>
+<li>Landing Lag: <buff>24F 🠚 8F</buff>
 <br><br></li>
 </ul>
 </li>
 <li>Cargo Forward Throw:
 <ul>
-<li>Angle: 60 🠚 65</li>
-<li>BKB: 90 🠚 70</li>
-<li>KBG: 46 🠚 53</li>
-<li>FAF: 46 🠚 27
+<li>Damage: <nerf>12.0% 🠚 9.0%</nerf></li>
+<li>Angle: <buff>60 🠚 65</buff></li>
+<li>BKB: <buff>90 🠚 65</buff></li>
+<li>KBG: <nerf>46 🠚 52</nerf></li>
+<li>FAF: <buff>46 🠚 27</buff>
 <br><br></li>
 </ul>
 </li>
 <li>Cargo Back Throw:
 <ul>
-<li>BKB: 85 🠚 80</li>
-<li>FAF: 43 🠚 33
+<li>Damage: <buff>13.0% 🠚 9.0%</buff></li>
+<li>Angle: <nerf>72 🠚 65</nerf></li>
+<li>BKB: <adjust>85 🠚 65</adjust></li>
+<li>FAF: <buff>43 🠚 33</buff>
 <br><br></li>
 </ul>
 </li>
 <li>Cargo Up Throw:
 <ul>
-<li>Angle: 92 🠚 90</li>
-<li>BKB: 65 🠚 90</li>
-<li>KBG: 53 🠚 30</li>
-<li>FAF: 30 🠚 32
+<li>Damage: <nerf>12.0% 🠚 7.0%</nerf></li>
+<li>Angle: <buff>92 🠚 90</buff></li>
+<li>BKB: <nerf>65 🠚 90</nerf></li>
+<li>KBG: <buff>53 🠚 30</buff></li>
+<li>FAF: <nerf>30 🠚 32</nerf>
 <br><br></li>
 </ul>
 </li>
 <li>Cargo Down Throw:
 <ul>
-<li>FAF: 45 🠚 41</li>
+<li>Damage: <nerf>11.0% 🠚 9.0%</nerf></li>
+<li>FAF: <buff>45 🠚 41</buff></li>
 </ul>
 </li>
 </ul>
