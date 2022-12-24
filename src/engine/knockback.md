@@ -31,6 +31,8 @@
 ## ![](../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) Damage
 - Removed the shorthop damage reduction multiplier
 - Removed the 1v1 damage multiplier
+- Reverse Hits
+  - Most hitboxes that are either behind a character's base position or collide with an opponent that is behind said position will have their knockback angle flipped horizontally
 
 ## ![](../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) Launching
 - Removed the rage mechanic

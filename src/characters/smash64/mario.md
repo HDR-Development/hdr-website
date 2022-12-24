@@ -117,7 +117,6 @@
 <br><br>
 - Forward Smash (Fire Glove):
   - <buff>Added back shoulder hitbox</buff>
-  - <adjust>Can now reverse hit</adjust>
   - High
     - Damage (sweetspot/sourspot): <buff>17.8%/14.7% 🠚 20.0%/15.0%</buff>
     - BKB: <buff>26 🠚 30</buff>
@@ -198,7 +197,6 @@
   - Landing Lag: <buff>17F 🠚 11F</buff>
 <br><br>
 - Back Aerial (Drop Kick):
-  - <adjust>Can now reverse hit</adjust>
   - Early
     - Hitbox Duration: <buff>F6-7 🠚 F6-8</buff>
     - Foot
