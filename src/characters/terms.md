@@ -33,10 +33,13 @@
 - Affects how effective each Smash DI input is during the hitlag of the move
 
 ## Additional Hitstun
-- How much additional hitstun the hitbox has (in frames)
+- How many frames of additional hitstun the hitbox has
 
 ## First Actionable Frame (FAF)
 - The first frame that a character becomes fully actionable after performing a move
 
 ## Autocancel
 - Landing during or after an autocancel frame will incur the character's empty landing lag (usually 4-5 frames) instead of the move's landing lag
+
+## Landing Lag
+- The amount of inactionable frames a character has when landing with aerials or certain specials (while not in an autocancel window)

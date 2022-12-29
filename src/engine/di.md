@@ -1,11 +1,11 @@
 # Directional Influence
 
-## ![](../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) Trajectory Directional Influence (DI)
+## ![](../images/SmashBall.png) Trajectory Directional Influence (DI)
 - All knockback can now be DI'd regardless of whether it sends into tumble or not
 - Maximum Angle
   - 9.74° 🠚 18°
 
-## ![](../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) Smash Directional Influence (SDI)
+## ![](../images/SmashBall.png) Smash Directional Influence (SDI)
 - Base Distance
   - 2 Units 🠚 6 Units
 - SDI Input Window
@@ -15,10 +15,10 @@
 - ASDI distance multiplier
   - 0.65x 🠚 0.5x
 
-## ![](../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) Automatic Smash Directional Influence (ASDI)
+## ![](../images/SmashBall.png) Automatic Smash Directional Influence (ASDI)
 - Coming soon
 
-## ![](../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) Drift DI (DDI)
+## ![](../images/SmashBall.png) Drift DI (DDI)
 - For the duration of aerial hitstun, your horizontal stick position is used to accelerate you left or right
 - You can DI during hitlag as normal to adjust angle, but then also drift in or out slightly during knockback
 - Effectiveness scales down depending on the initial knockback taken, eventually having no effect above 3.0 launch speed

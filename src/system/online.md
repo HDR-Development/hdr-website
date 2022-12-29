@@ -1,6 +1,6 @@
 # Online
 
-## ![](../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) Readjustable Latency Control (RLC)
+## ![](../images/SmashBall.png) Readjustable Latency Control (RLC)
 - Background
   - In delay-based netcode, the game assigns a default amount of input delay to ensure stuttering is kept to a minimum. Ultimate in particular is extremely conservative on this to accommodate unstable connections, averaging around 4-6 frames for a perfect connection and adding additional frames based on ping (up to a technical max of 25)
 - The online input delay can now be set manually, from 1 to 25 frames

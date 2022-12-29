@@ -1,12 +1,12 @@
-# ![](../../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) Character Changes
+# ![](../../images/SmashBall.png) Character Changes
 
 ## Overview
 - These pages denote every change made to each character compared to their vanilla data (v13.0.1)<br><br>
 - Buffs are in <span style="color:CornFlowerBlue">blue</span>
-- Nerfs are in <span style="color:red">red</span>
+- Nerfs are in <span style="color:Red">red</span>
 - Adjustments (both a buff and a nerf depending on context) are in <span style="color:#CF68CF">purple</span>
-- Reworks are in <span style="color:#E5E5E5">white</span>
-- New properties or features are in <span style="color:limegreen">green</span>
+- Reworks are in <span style="color:#FFF8E7">white</span>
+- New properties or features are in <span style="color:LimeGreen">green</span>
 - Aesthetic changes are in <span style="color:#C5AC00">yellow</span>
 - Unchanged fields are default color
 - Definitions for all terms can be found [here](./terms.md)
