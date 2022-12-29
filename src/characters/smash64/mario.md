@@ -5,9 +5,8 @@
 ![](../../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) <b>Attributes</b>
 - Initial Dash Speed: 1.936 🠚 1.52
 - Run Speed: 1.76 🠚 1.672
-- Dash to Run Transition Frame: F10 🠚 F11
 - Traction: 0.102 🠚 0.062
-- Jumpsquat: 3 🠚 4
+- Jumpsquat: 3F 🠚 4F
 - Initial Jump Velocity: 19.9815 🠚 11.946
 - Max Horizontal Jump Speed: 1.525 🠚 1.51
 - Short Hop Height: 17.54 🠚 13.0
@@ -17,7 +16,7 @@
 - Fall Speed: 1.5 🠚 1.8
 - Gravity: 0.087 🠚 0.095
 - Weight: 98 🠚 100
-- Model Scale Multiplier: 1.0 🠚 1.035
+- Model Scale Multiplier: 1.0x 🠚 1.035x
 - Shield Radius: 9.7 🠚 9.9
 <br><br>
 

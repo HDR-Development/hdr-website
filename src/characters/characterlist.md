@@ -20,7 +20,7 @@
     <tr>
       <td><a href="./smash64/mario.md">Mario</a></td>
       <td><a href="./smash64/donkey.md">Donkey Kong</a></td>
-      <td><!--<a href="./smash64/link.md">-->Link<!--</a>--></td>
+      <td><a href="./smash64/link.md">Link</a></td>
       <td><!--<a href="./smash64/samus.md">-->Samus<!--</a>--></td>
       <td><!--<a href="./smash64/yoshi.md">-->Yoshi<!--</a>--></td>
       <td><!--<a href="./smash64/kirby.md">-->Kirby<!--</a>--></td>
