@@ -1,8 +1,8 @@
-# ![](../../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.003.png) Mario
+# ![](../../images/Stock_Mario.png) Mario
 
 <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
 
-![](../../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) <b>Attributes</b>
+![](../../images/SmashBall.png) <b>Attributes</b>
 - Initial Dash Speed: 1.936 🠚 1.52
 - Run Speed: 1.76 🠚 1.672
 - Traction: 0.102 🠚 0.062
@@ -20,7 +20,7 @@
 - Shield Radius: 9.7 🠚 9.9
 <br><br>
 
-![](../../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) <b>Moveset</b>
+![](../../images/SmashBall.png) <b>Moveset</b>
 - Jab:
   - Jab 1 (Left Punch)
     - <adjust>Hitboxes attached to arm</adjust><br>

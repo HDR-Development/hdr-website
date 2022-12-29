@@ -1,8 +1,8 @@
-# ![](../../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.004.png) Donkey Kong
+# ![](../../images/Stock_DonkeyKong.png) Donkey Kong
 
 <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
 
-![](../../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) <b>Attributes</b>
+![](../../images/SmashBall.png) <b>Attributes</b>
 - Walk Speed: 1.365 🠚 1.265
 - Walk Acceleration (base/additional): 0.105/0.105
 - Initial Dash Speed: 2.09 🠚 1.8
@@ -26,7 +26,7 @@
 - Wall Jump Horizontal Velocity: 1.3 🠚 1.25
 <br><br>
 
-![](../../images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.002.png) <b>Moveset</b>
+![](../../images/SmashBall.png) <b>Moveset</b>
 - Dash:
   - <buff>Feet made intangible during the first 8 frames</buff>
 - Jab:
@@ -136,7 +136,7 @@
   - Landing Lag: <buff>17F 🠚 14F</buff>
 <br><br>
 - Back Aerial (Back Kick):
-  - <rework>Animation changed to a Smash64-like lingering enlarged foot</rework>
+  - <rework>Animation changed to a lingering kick</rework>
   - <buff>Leg hitboxes moved down and inward slightly</buff>
   - Early
     - KBG: <buff>97 🠚 104</buff>
@@ -279,7 +279,7 @@
   - FAF: <buff>46 🠚 27</buff>
 <br><br>
 - Cargo Back Throw:
-  - Damage: <buff>13.0% 🠚 9.0%</buff>
+  - Damage: <nerf>13.0% 🠚 9.0%</nerf>
   - Angle: <nerf>72 🠚 65</nerf>
   - BKB: <adjust>85 🠚 65</adjust>
   - FAF: <buff>43 🠚 33</buff>
