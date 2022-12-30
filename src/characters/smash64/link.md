@@ -23,7 +23,7 @@
   - Can now wall jump
 
 ![](../../images/SmashBall.png) <b>Moveset</b>
-  - General
+  - General:
     - <aesth>Sword trails have been given new visuals</aesth>
   - Jab:
     - Jab 1 (Slash)
