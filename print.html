@@ -160,11 +160,11 @@ Created by The HDR Dev Team <br>
 <div style="text-align:center;font-size:115%;font-family:Verdana">
 <i>Legacy Contributors: Gabe, JOB, Sergio C.</i><br><br>
 </div>
-<h1 style="text-align:center;font-size:300%;font-family:Verdana">
+<h1 style="text-align:center;font-size:325%;font-family:Verdana">
 <u>Master Changelog</u>
 </h1>
 <div style="text-align:center;font-size:150%">
-Current game version: <span style="color:limegreen">v0.26.35</span>
+Current game version: <span style="color:limegreen">v0.26.37</span>
 </div>
 <div style="text-align:center;font-size:150%">
 Current changelog version: <span style="color:green">v0.19.21</span>
@@ -182,8 +182,8 @@ Beta changelogs:<br>
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://docs.google.com/document/d/1kFUdtKlywRh4TX32iqGMDzsuw_M8C4NOXzBHe2z5NTw">0.26.35</a></td>
-      <td>12/31/2022</td>
+      <td><a href="https://docs.google.com/document/d/1kFUdtKlywRh4TX32iqGMDzsuw_M8C4NOXzBHe2z5NTw">0.26.37</a></td>
+      <td>1/1/2023</td>
     </tr>
     <tr>
       <td><a href="https://docs.google.com/document/d/1dSgmUu0znj9P9b5tRcnhHpPKlXRkzdjLiFZXZVR2edw">0.25.0</a></td>
@@ -1316,7 +1316,7 @@ Beta changelogs:<br>
 <ul>
 <li>Jab 1 (Left Punch)
 <ul>
-<li><adjust>Hitboxes attached to arm</adjust><br></li>
+<li><adjust>Attached hitboxes to arm</adjust><br></li>
 <li><buff> Added locking hitbox</buff></li>
 <li>Damage: <buff>2.2% 🠚 2.5%</buff></li>
 <li>Angle: <rework>361 🠚 80</rework></li>
@@ -1324,7 +1324,7 @@ Beta changelogs:<br>
 <li>FKB: <rework>0 🠚 25</rework></li>
 <li>KBG: <adjust>30/20 🠚 100</adjust></li>
 <li>Hitlag Multiplier: <adjust>1.8x 🠚 1.2x</adjust></li>
-<li>Hitbox Size (hand/arm/shoulder/lock): <buff>1.2/1.5/1.8u 🠚 2.5/3.0/3.5u</buff></li>
+<li>Hitbox Size (hand/arm/shoulder): <buff>1.2/1.5/1.8u 🠚 2.5/3.0/3.5u</buff></li>
 <li>FAF: <buff>20 🠚 16</buff></li>
 </ul>
 </li>
@@ -1343,7 +1343,6 @@ Beta changelogs:<br>
 <li>Jab 3 (Toe Kick)
 <ul>
 <li><adjust>Attached hitboxes to leg</adjust></li>
-<li><adjust>Adjusted animation slightly to allow hitboxes to properly interpolate along the kick</adjust></li>
 <li>Hitbox Duration: <buff>F3-4 🠚 F3-7</buff></li>
 <li>Damage: <buff>4.0% 🠚 5.0%</buff></li>
 <li>BKB: <nerf>60 🠚 35</nerf></li>
@@ -1712,7 +1711,7 @@ Beta changelogs:<br>
 </li>
 <li>Firebrand
 <ul>
-<li><property>Hold Special to spawn a strong hitbox on Mario’s hand instead of throwing a fireball</property></li>
+<li><property>Hold Special to generate a strong hitbox on Mario’s hand instead of throwing a fireball</property></li>
 <li>Hitbox Duration: <nerf>F13-17 🠚 F18-22</nerf></li>
 <li>Damage: 12.0%</li>
 <li>Angle: 50</li>
@@ -1739,7 +1738,7 @@ Beta changelogs:<br>
 </li>
 <li>Super Jump Punch (Up Special):
 <ul>
-<li><property>Can wall jump during frames 23-25 of the rise once per airtime</property></li>
+<li><property>Can wall jump during frames 23-25 of the rise (once per airtime)</property></li>
 <li>Distance Multiplier (air): <nerf>1.08x 🠚 1.0x</nerf></li>
 <li>Special Fall horizontal mobility multiplier: <buff>0.5x 🠚 1.0x</buff></li>
 <li>Multihits
@@ -1760,7 +1759,7 @@ Beta changelogs:<br>
 <li>F.L.U.D.D. (Down Special):
 <ul>
 <li><property>The charge and release can now be B-reversed</property></li>
-<li><property>Canceling charge will no longer force you into an airdodge; you will instead be put into an actionable state</property>
+<li><buff>Canceling the charge midair transitions into normal fall instead of forcing an airdodge</buff>
 <br><br></li>
 </ul>
 </li>
@@ -2128,7 +2127,8 @@ Beta changelogs:<br>
 </li>
 <li>Spinning Kong (Up Special):
 <ul>
-<li><property>Can be edge canceled and can slip off and grab ledges</property></li>
+<li><property>Can slip off and grab ledges</property></li>
+<li><property>Can be edge canceled</property></li>
 <li>Initial Vertical Speed: <buff>0.9 🠚 1.1</buff></li>
 <li>Ground Acceleration: <buff>0.034 🠚 0.05</buff></li>
 <li>Grounded Friction: <buff>0.015 🠚 0.04</buff></li>
@@ -2193,7 +2193,7 @@ Beta changelogs:<br>
 </li>
 <li>Air
 <ul>
-<li>Air Cargo is a command grab that transitions into Cargo Carry upon grabbing an opponent</li>
+<li><rework>Air Cargo is a command grab that transitions into Cargo Carry upon grabbing an opponent</rework></li>
 <li><property>Can be B-reversed, and can also fastfall and influence horizontal drift slightly during the move</property></li>
 <li><property>Successfully grabbing and throwing an opponent refreshes double jump</property></li>
 <li>Hitbox Duration: F18-22</li>
@@ -2206,15 +2206,15 @@ Beta changelogs:<br>
 </li>
 <li>Barrel Pull (Shield Special):
 <ul>
-<li>Press special while shielding to pull out a barrel
+<li><property>Press special while shielding to pull out a barrel</property>
 <ul>
-<li><property>Has a 15 second cooldown</property></li>
-<li><property>Donkey Kong will get a yellow flash above his head and on his portrait when the cooldown is over</property></li>
+<li>Has a 15 second cooldown before another barrel can be pulled</li>
+<li>Donkey Kong will get a yellow flash above his head and on his portrait when the cooldown is over</li>
+<li>Up to 3 barrels can be on-screen at a time</li>
 </ul>
 </li>
 <li>The barrel has an upward angle if thrown using a tilt input</li>
-<li>In training mode, taunting will reset the cooldown</li>
-<li>Can have up to 3 on-screen at a time
+<li>In training mode, taunting will reset the cooldown
 <br><br></li>
 </ul>
 </li>
@@ -2488,7 +2488,7 @@ Beta changelogs:<br>
 </li>
 <li>Forward Aerial (Spinning Sword):
 <ul>
-<li><buff>Hitboxes attached to arm and sword</buff></li>
+<li><buff>Attached hitboxes to arm and sword</buff></li>
 <li>Hit 1
 <ul>
 <li>Hitbox Duration: <buff>F16-17 🠚 F14-15</buff></li>
@@ -2847,7 +2847,7 @@ Beta changelogs:<br>
 </li>
 <li>Dash Attack (Shoulder Tackle / Shinespark):
 <ul>
-<li>Normal
+<li>Shoulder Tackle
 <ul>
 <li><nerf>Travel distance and speed decreased</nerf></li>
 <li><buff>Added shoulder hitbox</buff></li>
@@ -3027,7 +3027,7 @@ Beta changelogs:<br>
 <li>Late
 <ul>
 <li>Hitbox Duration: <nerf>F9-27 🠚 F9-24</nerf></li>
-<li>Damage: 10.0%</li>
+<li>Damage: <buff>7.0% 🠚 10.0%</buff></li>
 <li>Angle: 361</li>
 <li>BKB: 10</li>
 <li>KBG: <adjust>96 🠚 100</adjust></li>
@@ -3163,7 +3163,7 @@ Beta changelogs:<br>
 <br><br></li>
 </ul>
 </li>
-<li>Misslie/Super Missile (Side Special):
+<li>Missile/Super Missile (Side Special):
 <ul>
 <li><buff>Can be B-reversed</buff></li>
 <li><property>Can be land canceled</property></li>
@@ -3196,7 +3196,7 @@ Beta changelogs:<br>
 </li>
 <li>Bomb (Down Special):
 <ul>
-<li><property>Samus can maneuver around in Morph Ball form by holding down attack</property></li>
+<li><property>Samus can maneuver around in Morph Ball form by holding down Attack</property></li>
 <li>Bomb Hop Speed: <adjust>0.9 🠚 1.28</adjust></li>
 <li>Bomb Hop Angle: <adjust>44.7 🠚 50</adjust></li>
 <li>Explosion Initial Speed: <adjust>1.9 🠚 2.33</adjust></li>
