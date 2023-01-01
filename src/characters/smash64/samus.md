@@ -62,7 +62,7 @@
     - FAF: <buff>45 🠚 37</buff>
 <br><br>
   - Dash Attack (Shoulder Tackle / Shinespark):
-    - Normal
+    - Shoulder Tackle
       - <nerf>Travel distance and speed decreased</nerf>
       - <buff>Added shoulder hitbox</buff>
       - <buff>Hitboxes repositioned to cover more of body</buff>
@@ -169,7 +169,7 @@
       - KBG: <buff>96 🠚 100</buff>
     - Late
       - Hitbox Duration: <nerf>F9-27 🠚 F9-24</nerf>
-      - Damage: 10.0%
+      - Damage: <buff>7.0% 🠚 10.0%</buff>
       - Angle: 361
       - BKB: 10
       - KBG: <adjust>96 🠚 100</adjust>
@@ -259,7 +259,7 @@
       - KBG: <buff>50 🠚 64</buff>
     - Hitlag Multiplier: <buff>1.0x 🠚 1.25x</buff>
 <br><br>
-  - Misslie/Super Missile (Side Special):
+  - Missile/Super Missile (Side Special):
     - <buff>Can be B-reversed</buff>
     - <property>Can be land canceled</property>
     - Homing Missile
@@ -279,7 +279,7 @@
     - KBG (ground/air): <buff>190/240 🠚 200/250</buff>
 <br><br>
   - Bomb (Down Special):
-    - <property>Samus can maneuver around in Morph Ball form by holding down attack</property>
+    - <property>Samus can maneuver around in Morph Ball form by holding down Attack</property>
     - Bomb Hop Speed: <adjust>0.9 🠚 1.28</adjust>
     - Bomb Hop Angle: <adjust>44.7 🠚 50</adjust>
     - Explosion Initial Speed: <adjust>1.9 🠚 2.33</adjust>

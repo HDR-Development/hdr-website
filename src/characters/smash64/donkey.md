@@ -210,7 +210,8 @@
     - Hitbox Size: <nerf>10.0u 🠚 9.0u</nerf>
 <br><br>
 - Spinning Kong (Up Special):
-  - <property>Can be edge canceled and can slip off and grab ledges</property>
+  - <property>Can slip off and grab ledges</property>
+  - <property>Can be edge canceled</property>
   - Initial Vertical Speed: <buff>0.9 🠚 1.1</buff>
   - Ground Acceleration: <buff>0.034 🠚 0.05</buff>
   - Grounded Friction: <buff>0.015 🠚 0.04</buff>
@@ -250,7 +251,7 @@
     - BKB: <adjust>85 🠚 90</adjust>
     - Shieldstun Multiplier: <buff>0.58 🠚 0.6</buff>
   - Air
-    - Air Cargo is a command grab that transitions into Cargo Carry upon grabbing an opponent
+    - <rework>Air Cargo is a command grab that transitions into Cargo Carry upon grabbing an opponent</rework>
     - <property>Can be B-reversed, and can also fastfall and influence horizontal drift slightly during the move</property>
     - <property>Successfully grabbing and throwing an opponent refreshes double jump</property>
     - Hitbox Duration: F18-22
@@ -258,12 +259,12 @@
     - Landing Lag: 20F
 <br><br>
 - Barrel Pull (Shield Special):
-  - Press special while shielding to pull out a barrel
-    - <property>Has a 15 second cooldown</property>
-    - <property>Donkey Kong will get a yellow flash above his head and on his portrait when the cooldown is over</property>
+  - <property>Press special while shielding to pull out a barrel</property>
+    - Has a 15 second cooldown before another barrel can be pulled
+    - Donkey Kong will get a yellow flash above his head and on his portrait when the cooldown is over
+    - Up to 3 barrels can be on-screen at a time
   - The barrel has an upward angle if thrown using a tilt input
   - In training mode, taunting will reset the cooldown
-  - Can have up to 3 on-screen at a time
 <br><br>
 - Forward Throw (Cargo Carry):
   - <buff>Properly chooses the c-stick direction if it is used to input the throw</buff>

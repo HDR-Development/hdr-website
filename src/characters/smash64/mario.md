@@ -23,7 +23,7 @@
 ![](../../images/SmashBall.png) <b>Moveset</b>
 - Jab:
   - Jab 1 (Left Punch)
-    - <adjust>Hitboxes attached to arm</adjust><br>
+    - <adjust>Attached hitboxes to arm</adjust><br>
     - <buff> Added locking hitbox</buff>
     - Damage: <buff>2.2% 🠚 2.5%</buff>
     - Angle: <rework>361 🠚 80</rework>
@@ -31,7 +31,7 @@
     - FKB: <rework>0 🠚 25</rework>
     - KBG: <adjust>30/20 🠚 100</adjust>
     - Hitlag Multiplier: <adjust>1.8x 🠚 1.2x</adjust>
-    - Hitbox Size (hand/arm/shoulder/lock): <buff>1.2/1.5/1.8u 🠚 2.5/3.0/3.5u</buff>
+    - Hitbox Size (hand/arm/shoulder): <buff>1.2/1.5/1.8u 🠚 2.5/3.0/3.5u</buff>
     - FAF: <buff>20 🠚 16</buff>
   - Jab 2 (Right Cross)
     - <buff>Added locking hitbox</buff>
@@ -44,7 +44,6 @@
     - FAF: <buff>22 🠚 18</buff>
   - Jab 3 (Toe Kick)
     - <adjust>Attached hitboxes to leg</adjust>
-    - <adjust>Adjusted animation slightly to allow hitboxes to properly interpolate along the kick</adjust>
     - Hitbox Duration: <buff>F3-4 🠚 F3-7</buff>
     - Damage: <buff>4.0% 🠚 5.0%</buff>
     - BKB: <nerf>60 🠚 35</nerf>
@@ -281,7 +280,7 @@
     - Hitlag Multiplier: <adjust>0.6x 🠚 1.0x</adjust>
     - FAF: <buff>43 🠚 41</buff>
   - Firebrand
-    - <property>Hold Special to spawn a strong hitbox on Mario’s hand instead of throwing a fireball</property>
+    - <property>Hold Special to generate a strong hitbox on Mario’s hand instead of throwing a fireball</property>
     - Hitbox Duration: <nerf>F13-17 🠚 F18-22</nerf>
     - Damage: 12.0%
     - Angle: 50
@@ -300,7 +299,7 @@
   - Damage: <buff>7.0% 🠚 10.0%</buff>
 <br><br>
 - Super Jump Punch (Up Special):
-  - <property>Can wall jump during frames 23-25 of the rise once per airtime</property>
+  - <property>Can wall jump during frames 23-25 of the rise (once per airtime)</property>
   - Distance Multiplier (air): <nerf>1.08x 🠚 1.0x</nerf>
   - Special Fall horizontal mobility multiplier: <buff>0.5x 🠚 1.0x</buff>
   - Multihits
@@ -312,7 +311,7 @@
 <br><br>
 - F.L.U.D.D. (Down Special):
   - <property>The charge and release can now be B-reversed</property>
-  - <property>Canceling charge will no longer force you into an airdodge; you will instead be put into an actionable state</property>
+  - <buff>Canceling the charge midair transitions into normal fall instead of forcing an airdodge</buff>
 <br><br>
 - Standing Grab:
   - Hitbox Size: <buff>3.3u 🠚 4.5u</buff>

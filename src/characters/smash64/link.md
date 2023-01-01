@@ -137,7 +137,7 @@
     - Landing Lag: <nerf>6F 🠚 8F</nerf>
 <br><br>
   - Forward Aerial (Spinning Sword):
-    - <buff>Hitboxes attached to arm and sword</buff>
+    - <buff>Attached hitboxes to arm and sword</buff>
     - Hit 1
       - Hitbox Duration: <buff>F16-17 🠚 F14-15</buff>
       - Damage: <buff>8.0% 🠚 14.0%</buff>
