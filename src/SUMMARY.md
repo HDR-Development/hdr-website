@@ -33,7 +33,7 @@
     - [Donkey Kong](./characters/smash64/donkey.md)
     - [Link](./characters/smash64/link.md)
     - [Samus](./characters/smash64/samus.md)
-    - [Yoshi]()<!--./characters/smash64/yoshi.md)-->
+    - [Yoshi](./characters/smash64/yoshi.md)
     - [Kirby]()<!--./characters/smash64/kirby.md)-->
     - [Fox]()<!--./characters/smash64/fox.md)-->
     - [Pikachu]()<!--./characters/smash64/pikachu.md)-->
