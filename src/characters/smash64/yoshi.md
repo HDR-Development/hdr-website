@@ -3,24 +3,23 @@
 <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Attributes</b>
-- Attributes:
-    - Walk Speed: 1.208 🠚 1.168
-    - Initial Dash Speed: 1.98 🠚 1.45
-    - Run Speed: 2.046 🠚 1.696
-    - Run Acceleration (base/additional): 0.044/0.1056 🠚 0.02/0.08
-    - Traction: 0.095 🠚 0.0655
-    - Jumpsquat: 3F 🠚 5F
-    - Short Hop Height: 14.43
-    - Max Horizontal Jump Speed: 1.5 🠚 1.515
-    - Initial Jump Velocity: 19.8495 🠚 12.9022
-    - Air Speed: 1.344 🠚 1.22
-    - Air Acceleration (base/additional): 0.03/0.068 🠚 0.02/0.068
-    - Horizontal Air Friction: 0.005 🠚 0.009
-    - Gravity: 0.08 🠚 0.094
-    - Fall Speed: 1.29 🠚 1.9
-    - Fast Fall Speed: 2.064 🠚 2.93
-    - Hard Landing Lag: 7F 🠚 5F
-    - Shield Radius: 8.0 🠚 7.7
+  - Walk Speed: 1.208 🠚 1.168
+  - Initial Dash Speed: 1.98 🠚 1.45
+  - Run Speed: 2.046 🠚 1.696
+  - Run Acceleration (base/additional): 0.044/0.1056 🠚 0.02/0.08
+  - Traction: 0.095 🠚 0.0655
+  - Jumpsquat: 3F 🠚 5F
+  - Short Hop Height: 14.43
+  - Max Horizontal Jump Speed: 1.5 🠚 1.515
+  - Initial Jump Velocity: 19.8495 🠚 12.9022
+  - Air Speed: 1.344 🠚 1.22
+  - Air Acceleration (base/additional): 0.03/0.068 🠚 0.02/0.068
+  - Horizontal Air Friction: 0.005 🠚 0.009
+  - Gravity: 0.08 🠚 0.094
+  - Fall Speed: 1.29 🠚 1.9
+  - Fast Fall Speed: 2.064 🠚 2.93
+  - Hard Landing Lag: 7F 🠚 5F
+  - Shield Radius: 8.0 🠚 7.7
 
 ![](../../images/SmashBall.png) <b>Moveset</b>
   - Flutter Jump:
