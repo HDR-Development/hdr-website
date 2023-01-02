@@ -35,6 +35,9 @@
 ## Additional Hitstun
 - How many frames of additional hitstun the hitbox has
 
+## Shield Damage
+- How much additional damage a hitbox deals specifically to shields. Negative values will result in the move doing less shield damage than normal
+
 ## First Actionable Frame (FAF)
 - The first frame that a character becomes fully actionable after performing a move
 
