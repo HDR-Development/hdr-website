@@ -18,6 +18,7 @@
   - Gravity: 0.075 🠚 0.085
   - Hard Landing Lag: 7F 🠚 5F
   - Shield Radius: 12.5 🠚 12.2
+<br><br>
 
 ![](../../images/SmashBall.png) <b>Moveset</b>
   - Jab:

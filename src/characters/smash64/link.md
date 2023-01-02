@@ -10,7 +10,6 @@
   - Traction: 0.113 🠚 0.09
   - Jumpsquat: 3F 🠚 4F
   - Max Horizontal Jump Speed: 0.95 🠚 1.3
-  - Initial Jump Velocity: 15.29 🠚 9.9385
   - Short Hop Height: 13.38 🠚 12.58
   - Double Jump Height: 29.0 🠚 25.0
   - Air Speed: 0.924 🠚 1.0
@@ -21,10 +20,12 @@
   - Model Scale Multiplier: 1.0x 🠚 1.02x
   - Shield Radius: 10.9 🠚 10.4
   - Can now wall jump
+<br><br>
 
 ![](../../images/SmashBall.png) <b>Moveset</b>
   - General:
     - <aesth>Sword trails have been given new visuals</aesth>
+<br><br>
   - Jab:
     - Jab 1 (Slash)
       - <buff>Added locking hitboxes</buff>
@@ -36,6 +37,7 @@
       - FAF: <buff>26 🠚 18</buff>
     - Jab 3 (Master Sweep)
       - FAF: <buff>35 🠚 32</buff>
+<br><br>
   - Forward Tilt (Sword Chop):
     - <buff>Hitboxes aligned with sword</buff>
     - Hitbox Duration: <buff>F15-19 🠚 F14-18</buff>
@@ -49,7 +51,7 @@
       - KBG: <buff>82 🠚 86</buff>
       - Hitbox Size: <buff>3.5u 🠚 4.5u</buff>
     - FAF: <buff>40 🠚 36</buff>
-  <br><br>
+<br><br>
   - Up Tilt:
     - Hitbox Duration: <buff>F8-12 🠚 F8-13</buff>
     - Damage: <nerf>11.0% 🠚 10.0%</nerf>
@@ -57,7 +59,7 @@
     - KBG (shoulder/arm/blade/tip): <adjust>104/105/111/103 🠚 101/102/105/100</adjust>
     - Hitbox Size (shoulder/arm/blade/tip): <buff>2.16/2.7/4.3/3.4u 🠚 4.0/3.0/3.5/3.5u</buff>
     - FAF: <buff>36 🠚 31</buff>
-  <br><br>
+<br><br>
   - Down Tilt:
     - <buff>Added arm and leg hitboxes</buff>
     - <buff>Hits 1F earlier in the animation</buff>
@@ -71,7 +73,7 @@
       - KBG: <rework>30 🠚 43</rework>
     - Hitbox Size (arm/leg/blade/tip): <buff>1.3u 🠚 4.0/4.0/4.5/4.5u</buff>
     - FAF: <buff>31 🠚 28</buff>
-  <br><br>
+<br><br>
   - Dash Attack:
     - <buff>Hitboxes aligned with sword</buff>
     - <buff>Hits 1F earlier in the animation</buff>
@@ -90,7 +92,7 @@
       - Hitbox Size: <buff>3.2u 🠚 3.5u</buff>
     - Shieldstun Multiplier: <buff>1.0x 🠚 1.4x</buff>
     - FAF: <buff>57 🠚 52</buff>
-  <br><br>
+<br><br>
   - Forward Smash:
     - Hit 2
       - <nerf>Hitbox Priority reversed (shoulder/arm > sword)</nerf>
@@ -99,7 +101,7 @@
       - Angle: <nerf>48 🠚 50</nerf>
       - BKB: <nerf>85 🠚 30</nerf>
       - KBG: <buff>89 🠚 100</buff>
-  <br><br>
+<br><br>
   - Up Smash:
     - <buff>Hitboxes aligned with sword</buff>
     - Hit 1
@@ -257,7 +259,7 @@
         - KBG: <buff>82 🠚 100</buff>
         - Shieldstun Multiplier: <buff>1.0x 🠚 2.0x</buff>
       - FAF: <nerf>77 🠚 82</nerf>
-    - Aerial
+    - Air
       - Multihits
         - Hitlag Multiplier: <adjust>1.0x 🠚 1.2x</adjust>
       - Launcher
