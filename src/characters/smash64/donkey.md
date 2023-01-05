@@ -1,4 +1,4 @@
-# ![](../../images/Stock_DonkeyKong.png) Donkey Kong
+# ![](../../images/Stock_Donkey.png) Donkey Kong
 
 <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
 
