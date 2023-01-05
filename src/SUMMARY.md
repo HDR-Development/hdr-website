@@ -36,7 +36,7 @@
     - [Yoshi](./characters/smash64/yoshi.md)
     - [Kirby](./characters/smash64/kirby.md)
     - [Fox](./characters/smash64/fox.md)
-    - [Pikachu]()<!--./characters/smash64/pikachu.md)-->
+    - [Pikachu](./characters/smash64/pikachu.md)
     - [Luigi]()<!--./characters/smash64/luigi.md)-->
     - [Ness]()<!--./characters/smash64/ness.md)-->
     - [Captain Falcon]()<!--./characters/smash64/captain.md)-->
