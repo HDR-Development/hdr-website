@@ -20,8 +20,8 @@
   - Fast Fall Speed: 2.608 🠚 2.96
   - Combo Gravity: 0.084672 🠚 0.1
   - Combo Fall Speed: 1.8 🠚 2.4
-  - Model Scale Multiplier: 1.0x 🠚 0.95x
   - Weight: 127 🠚 110
+  - Model Scale Multiplier: 1.0x 🠚 0.95x
   - Heavy Item Carry Landing Lag: 24F 🠚 8F
   - Can now wall jump
   - Wall Jump Horizontal Velocity: 1.3 🠚 1.25

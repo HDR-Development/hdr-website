@@ -20,6 +20,7 @@
   - Combo Gravity: 0.067872 🠚 0.15
   - Combo Fall Speed: 1.8 🠚 2.8
   - Weight: 77 🠚 75
+<br><br>
 
 ![](../../images/SmashBall.png) <b>Moveset</b>
   - Jab:
