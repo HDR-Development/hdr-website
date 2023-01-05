@@ -18,6 +18,8 @@
   - Gravity: 0.08 🠚 0.094
   - Fall Speed: 1.29 🠚 1.9
   - Fast Fall Speed: 2.064 🠚 2.93
+  - Combo Gravity: 0.076944 🠚 0.094
+  - Combo Fall Speed: 1.8 🠚 1.9
   - Hard Landing Lag: 7F 🠚 5F
   - Shield Radius: 8.0 🠚 7.7
 

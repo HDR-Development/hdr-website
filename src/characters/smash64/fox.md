@@ -10,6 +10,7 @@
   - Run Acceleration (base/additional): 0.044/0.12221 🠚 0.02/0.1
   - Jumpsquat: 3F
   - Horizontal Jump Speed Multiplier: 0.68 🠚 0.72
+  - Max Horizontal Jump Speed: 1.8 🠚 1.7
   - Short Hop Height: 16.4 🠚 12
   - Air Acceleration (base/additional): 0.01/0.08 🠚 0.02/0.06
   - Air Speed: 1.11 🠚 0.83

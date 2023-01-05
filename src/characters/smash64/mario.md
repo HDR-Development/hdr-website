@@ -12,8 +12,9 @@
 - Full Hop Height: 36.33 🠚 33.33
 - Double Jump Height: 36.33 🠚 33.33
 - Air Speed: 1.208 🠚 1.0
-- Fall Speed: 1.5 🠚 1.8
 - Gravity: 0.087 🠚 0.095
+- Fall Speed: 1.5 🠚 1.8
+- Combo Gravity: 0.074928 🠚 0.095
 - Weight: 98 🠚 100
 - Model Scale Multiplier: 1.0x 🠚 1.035x
 - Shield Radius: 9.7 🠚 9.9

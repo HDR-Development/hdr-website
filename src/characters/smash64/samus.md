@@ -14,8 +14,10 @@
   - Air Acceleration (Base/Additional): 0.04/0.05 🠚 0.025/0.04
   - Air Friction: 0.0075 🠚 0.01
   - Fall Speed: 1.33 🠚 1.87
-  - Fast Fall Speed: 2.128 🠚 2.604
   - Gravity: 0.075 🠚 0.085
+  - Fast Fall Speed: 2.128 🠚 2.604
+  - Combo Gravity: 0.78288 🠚 0.09
+  - Combo Fall Speed: 1.8 🠚 1.87
   - Hard Landing Lag: 7F 🠚 5F
   - Shield Radius: 12.5 🠚 12.2
 <br><br>

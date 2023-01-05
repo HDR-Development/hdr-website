@@ -15,9 +15,11 @@
   - Air Speed: 1.208 🠚 1.105
   - Air Acceleration (base/additional): 0.01/0.05 🠚 0.012/0.04
   - Horizontal Air Friction: 0.015 🠚 0.0175
+  - Gravity: 0.085 🠚 0.1
   - Fall Speed: 1.63 🠚 2.4
   - Fast Fall Speed: 2.608 🠚 2.96
-  - Gravity: 0.085 🠚 0.1
+  - Combo Gravity: 0.084672 🠚 0.1
+  - Combo Fall Speed: 1.8 🠚 2.4
   - Model Scale Multiplier: 1.0x 🠚 0.95x
   - Weight: 127 🠚 110
   - Heavy Item Carry Landing Lag: 24F 🠚 8F
