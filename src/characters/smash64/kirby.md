@@ -15,7 +15,7 @@
     - 1.674/1.572/1.46/1.339/1.209 🠚 1.75/1.6/1.5/1.45/1.4
   - Air Speed: 0.84 🠚 1.0
   - Air Acceleration (base/additional): 0.03/0.065 🠚 0.02/0.045
-  - Horizontal Air Friction: 0.015 🠚 0.02
+  - Air Friction: 0.015 🠚 0.02
   - Gravity: 0.064 🠚 0.082
   - Fall Speed: 1.23 🠚 1.6
   - Fast Fall Speed: 1.968 🠚 2.217
@@ -237,7 +237,6 @@
       - BKB: <rework>60 🠚 0</rework>
       - FKB: <rework>0 🠚 30</rework>
       - KBG: <rework>180 🠚 100</rework>
-
 
 <script src="../../arrow.js">
 </script>

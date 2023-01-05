@@ -14,7 +14,7 @@
   - Short Hop Height: 16.4 🠚 12
   - Air Acceleration (base/additional): 0.01/0.08 🠚 0.02/0.06
   - Air Speed: 1.11 🠚 0.83
-  - Horizontal Air Friction: 0.015 🠚 0.02
+  - Air Friction: 0.015 🠚 0.02
   - Fall Speed: 2.1 🠚 2.8
   - Fast Fall Speed: 3.36 🠚 3.4
   - Combo Gravity: 0.067872 🠚 0.15

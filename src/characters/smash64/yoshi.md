@@ -14,7 +14,7 @@
   - Initial Jump Velocity: 19.8495 🠚 12.9022
   - Air Speed: 1.344 🠚 1.22
   - Air Acceleration (base/additional): 0.03/0.068 🠚 0.02/0.068
-  - Horizontal Air Friction: 0.005 🠚 0.009
+  - Air Friction: 0.005 🠚 0.009
   - Gravity: 0.08 🠚 0.094
   - Fall Speed: 1.29 🠚 1.9
   - Fast Fall Speed: 2.064 🠚 2.93

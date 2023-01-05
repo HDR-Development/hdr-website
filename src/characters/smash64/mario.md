@@ -3,21 +3,21 @@
 <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Attributes</b>
-- Initial Dash Speed: 1.936 🠚 1.52
-- Run Speed: 1.76 🠚 1.672
-- Traction: 0.102 🠚 0.062
-- Jumpsquat: 3F 🠚 4F
-- Max Horizontal Jump Speed: 1.525 🠚 1.51
-- Short Hop Height: 17.54 🠚 13.0
-- Full Hop Height: 36.33 🠚 33.33
-- Double Jump Height: 36.33 🠚 33.33
-- Air Speed: 1.208 🠚 1.0
-- Gravity: 0.087 🠚 0.095
-- Fall Speed: 1.5 🠚 1.8
-- Combo Gravity: 0.074928 🠚 0.095
-- Weight: 98 🠚 100
-- Model Scale Multiplier: 1.0x 🠚 1.035x
-- Shield Radius: 9.7 🠚 9.9
+  - Initial Dash Speed: 1.936 🠚 1.52
+  - Run Speed: 1.76 🠚 1.672
+  - Traction: 0.102 🠚 0.062
+  - Jumpsquat: 3F 🠚 4F
+  - Max Horizontal Jump Speed: 1.525 🠚 1.51
+  - Short Hop Height: 17.54 🠚 13.0
+  - Full Hop Height: 36.33 🠚 33.33
+  - Double Jump Height: 36.33 🠚 33.33
+  - Air Speed: 1.208 🠚 1.0
+  - Gravity: 0.087 🠚 0.095
+  - Fall Speed: 1.5 🠚 1.8
+  - Combo Gravity: 0.074928 🠚 0.095
+  - Weight: 98 🠚 100
+  - Model Scale Multiplier: 1.0x 🠚 1.035x
+  - Shield Radius: 9.7 🠚 9.9
 <br><br>
 
 ![](../../images/SmashBall.png) <b>Moveset</b>

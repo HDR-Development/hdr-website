@@ -14,7 +14,7 @@
   - Short Hop Height: 17.12 🠚 15
   - Air Speed: 0.957 🠚 0.901
   - Air Acceleration (base/additional): 0.01/0.09 🠚 0.01/0.07
-  - Horizontal Air Friction: 0.0075 🠚 0.01
+  - Air Friction: 0.0075 🠚 0.01
   - Gravity: 0.095 🠚 0.11
   - Fall Speed: 1.55 🠚 1.9
   - Fast Fall Speed: 2.48 🠚 2.7
@@ -195,9 +195,9 @@
     - <buff>Maintains aerial momentum</buff>
 <br><br>
   - Skull Bash (Side Special):
+    - Charge Time: <buff>80F 🠚 60F</buff>
     - Minimum Travel Speed: <nerf>1.6 🠚 1.4</nerf>
     - Maximum Travel Speed: <nerf>3.2 🠚 2.5</nerf>
-    - Charge Time: <buff>80F 🠚 60F</buff>
 <br><br>
   - Quick Attack (Up Special):
     - <property>The first zip can be jump canceled after frame 7 if moving into the ground</property>
