@@ -21,7 +21,7 @@
   - Fast Fall Speed: 2.112 🠚 2.2
   - Combo Gravity: 0.74592 🠚 0.09
   - Combo Fall Speed: 1.8 🠚 1.71
-  - Hard landing lag: 8F 🠚 5F
+  - Hard Landing Lag: 8F 🠚 5F
   - Shield Radius: 10.2 🠚 10.5
   - Weight: 97 🠚 100
   - Can now wall jump

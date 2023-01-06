@@ -29,7 +29,7 @@
       <td><a href="./smash64/fox.md">Fox</a></td>
       <td><a href="./smash64/pikachu.md">Pikachu</a></td>
       <td><a href="./smash64/luigi.md">Luigi</a></td>
-      <td><!--<a href="./smash64/ness.md">-->Ness<!--</a>--></td>
+      <td><a href="./smash64/ness.md">Ness</a></td>
       <td><!--<a href="./smash64/captain.md">-->Captain Falcon<!--</a>--></td>
       <td><!--<a href="./smash64/purin.md">-->Jigglypuff<!--</a>--></td>
     </tr>
