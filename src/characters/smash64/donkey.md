@@ -105,7 +105,7 @@
       - Hitbox Size (hand): <nerf>6.0u 🠚 5.0u</nerf>
     - FAF: <nerf>56 🠚 60</nerf>
 <br><br>
-  - Neutral Aerial (Kong Whirl):
+  - Neutral Air (Kong Whirl):
     - <buff>Arm hitboxes attached to hands</buff>
     - Early
       - Hitbox Duration: <buff>F10-13 🠚 F7-10</buff>
@@ -119,7 +119,7 @@
     - Autocancel: <adjust>F1-9/F27 🠚 F1-6/F26</adjust>
     - Landing Lag: <buff>10F 🠚 8F</buff>
 <br><br>
-  - Forward Aerial (Hammer Knuckle):
+  - Forward Air (Hammer Knuckle):
     - <buff>Added right arm and shoulder hitboxes</buff>
     - Early
       - Hitbox Duration: <nerf>F18-20 🠚 F20-22</nerf>
@@ -137,7 +137,7 @@
     - Autocancel: <buff>F56 🠚 F51</buff>
     - Landing Lag: <buff>17F 🠚 14F</buff>
 <br><br>
-  - Back Aerial (Back Kick):
+  - Back Air (Back Kick):
     - <rework>Animation changed to a lingering kick</rework>
     - <buff>Leg hitboxes moved down and inward slightly</buff>
     - Early
@@ -148,7 +148,7 @@
     - Autocancel: <buff>F1-6/F31 🠚 F1-6/F22</buff>
     - Landing Lag: <buff>11F 🠚 9F</buff>
 <br><br>
-  - Up Aerial (Flying Headbutt):
+  - Up Air (Flying Headbutt):
     - <buff>Hits 1F earlier in the animation</buff>
     - <adjust>Hitbox moved slightly lower on head</adjust>
     - Hitbox Duration: <nerf>F6-10 🠚 F6-9</nerf>
@@ -158,7 +158,7 @@
     - Hitbox Size: <nerf>7.5u 🠚 7.0u</nerf>
     - Landing Lag: <buff>15F 🠚 11F</buff>
 <br><br>
-  - Down Aerial:
+  - Down Air:
     - Hitbox Duration: <adjust>F14-16 🠚 F16-21</adjust>
     - Leg
       - Angle: <buff>361 🠚 270</buff>

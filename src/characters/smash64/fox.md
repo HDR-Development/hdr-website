@@ -108,7 +108,7 @@
     - Hitbox Duration: <buff>F6-7 🠚 F6-10</buff>
     - KBG: <buff>75 🠚 78</buff>
 <br><br>
-  - Neutral Aerial:
+  - Neutral Air:
     - <buff>Added back leg hitbox
     - Early
       - Damage: <buff>9.0% 🠚 12.0%</buff>
@@ -119,7 +119,7 @@
       - KBG: <adjust>100 🠚 90</adjust>
       - Hitbox Size (hip/knee/back leg): <nerf>3.8/3.5u 🠚 3.0/3.5/3.0u</nerf>
 <br><br>
-  - Forward Aerial:
+  - Forward Air:
     - <adjust>Removed landing hitbox</adjust>
     - Multihits
       - Angle (air-only): <nerf>367 🠚 366</nerf>
@@ -136,7 +136,7 @@
     - Autocancel: <nerf>F46 🠚 F47</nerf>
     - Landing Lag: <buff>18F 🠚 15F</buff>
 <br><br>
-  - Back Aerial:
+  - Back Air:
     - <rework>Animation changed to a lingering kick similar to Melee</rework>
     - <buff>Added hip and front knee hitboxes</buff>
     - <buff>Added late hit</buff>
@@ -158,7 +158,7 @@
     - Autocancel: <nerf>F1-6/F23 🠚 F1-2/F25</nerf>
     - Landing Lag: <nerf>9F 🠚 10F</nerf>
 <br><br>
-  - Up Aerial:
+  - Up Air:
     - Hit 1
       - SDI Multiplier: <nerf>1.0x 🠚 1.25x</nerf>
       - Hitbox Size (base/mid/tip): <nerf>5.2u 🠚 4.2u</nerf>
@@ -168,7 +168,7 @@
       - Hitbox Size (hip/knee/foot): <nerf>4.7/6.2/6.2u 🠚 3.9/4.8/4.8u</nerf>
     - Landing Lag: <buff>13F 🠚 10F</buff>
 <br><br>
-  - Down Aerial:
+  - Down Air:
     - Multihits
       - Damage (hip/foot): <buff>1.4% 🠚 3.0/2.0%</buff>
       - Angle: <rework>325/110 🠚 290</rework>

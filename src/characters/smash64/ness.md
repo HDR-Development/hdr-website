@@ -6,13 +6,13 @@
   - Walk Speed: 0.907 🠚 0.877
   - Initial Dash Speed: 1.826 🠚 1.45
   - Run Speed: 1.609 🠚 1.6
-  - Run Acceleration (Base/Additional): 0.044/0.07161 🠚 0.02/0.04
+  - Run Acceleration (base/additional): 0.044/0.07161 🠚 0.02/0.04
   - Traction: 0.131 🠚 0.06
   - Jumpsquat: 3F 🠚 4F
   - Max Horizontal Jump Speed: 1.3 🠚 1.5
   - Short Hop Height: 16.65 🠚 14.65
   - Max Air Speed: 1.007 🠚 1.05
-  - Air Acceleration (Base/Additional): 0.01/0.09 🠚 0.01/0.075
+  - Air Acceleration (base/additional): 0.01/0.09 🠚 0.01/0.075
   - Air Friction: 0.0225 🠚 0.02
   - Gravity: 0.077 🠚 0.09
   - Fall Speed: 1.31 🠚 1.83
@@ -86,7 +86,7 @@
   - Down Smash:
     - FAF: <nerf>46 🠚 58</nerf>
 <br><br>
-  - Neutral Aerial:
+  - Neutral Air:
     - Early
       - BKB: <buff>20 🠚 25</buff>
     - Late
@@ -94,7 +94,7 @@
       - BKB: <adjust>10 🠚 15</adjust>
     - Landing Lag: <buff>8F 🠚 7F</buff>
 <br><br>
-  - Forward Aerial:
+  - Forward Air:
     - Multihits
       - BKB: <adjust>16 🠚 35</adjust>
       - KBG: <adjust>60 🠚 55</adjust>
@@ -104,7 +104,7 @@
       - KBG: <buff>128 🠚 140</buff>
     - Landing Lag: <buff>12F 🠚 8F</buff>
 <br><br>
-  - Back Aerial:
+  - Back Air:
     - Early
       - Hitbox Duration: <nerf>F10-11 🠚 F11-12</nerf>
       - Damage: <buff>15.0% 🠚 16.0%</buff>
@@ -115,7 +115,7 @@
       - KBG: <adjust>100 🠚 90</adjust>
     - Autocancel: <adjust>F1-9/F25 🠚 F1-10/F26</adjust>
 <br><br>
-  - Up Aerial:
+  - Up Air:
     - Multihits:
       - Angle (air-only): <buff>366 🠚 367</buff>
       - Hitlag Multiplier: <adjust>1.0x 🠚 0.75x</adjust>
@@ -124,7 +124,7 @@
     - FAF: <nerf>34 🠚 35</nerf>
     - Autocancel: <nerf>F1-7/F34 🠚 F1-7/F40</nerf>
 <br><br>
-  - Down Aerial:
+  - Down Air:
     - Early
       - Hitbox Duration: <buff>F18-20 🠚 F8-11</buff>
       - KBG (ground/air): <nerf>74 🠚 74/37</nerf>
@@ -157,7 +157,7 @@
     - Ground
       - Hitlag Multiplier: <adjust>0.0x 🠚 1.0x</adjust>
       - SDI Multiplier: <buff>1.5x 🠚 1.25x</buff>
-    - Aerial
+    - Air
       - Hitlag Multiplier: <adjust>0.33x 🠚 1.0x</adjust>
       - SDI Multiplier: <buff>1.5x 🠚 1.25x</buff>
 <br><br>

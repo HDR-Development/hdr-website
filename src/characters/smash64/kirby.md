@@ -97,7 +97,7 @@
     - KBG: <nerf>94 🠚 92</nerf>
     - FAF: <nerf>51 🠚 60</nerf>
 <br><br>
-  - Neutral Aerial:
+  - Neutral Air:
     - <adjust>Attached hitboxes to limbs</adjust>
     - <buff>Added intangibility to feet during active frames</buff>
     - Early
@@ -118,7 +118,7 @@
     - Autocancel: <buff>F1-3/F49 🠚 F1-2/F44</buff>
     - Landing Lag: <nerf>6F 🠚 7F</nerf>
 <br><br>
-  - Forward Aerial:
+  - Forward Air:
     - Hit 1
       - Hitbox Duration: <buff>F10-11 🠚 F9-10</buff>
       - Damage: <nerf>4.0% 🠚 3.0%</nerf>
@@ -144,7 +144,7 @@
     - FAF: <buff>48 🠚 38</buff>
     - Autocancel: <buff>F1-9/F41 🠚 F1-8/F35</buff>
 <br><br>
-  - Back Aerial:
+  - Back Air:
     - <adjust>Hitboxes attached to feet</adjust>
     - <buff>Added foot intangibility during active frames</buff>
     - Early
@@ -158,11 +158,11 @@
       - Hitbox Size: 3.5u
     - Landing Lag: <buff>10F 🠚 8F</buff>
 <br><br>
-  - Up Aerial:
+  - Up Air:
     - FAF: <buff>36 🠚 33</buff>
     - Landing Lag: <nerf>7F 🠚 8F</nerf>
 <br><br>
-  - Down Aerial:
+  - Down Air:
     - <adjust>Removed landing hitbox</adjust>
     - Multihits
       - Hitbox Duration: <buff>F18-19/F21-22/F24-25/F27-28/F30-31 🠚 F14-15/F17-18/F20-21/F23-24/F26-27</buff>

@@ -108,7 +108,7 @@
       - Hitbox Size: <buff>2.0% 🠚 2.5%</buff>
     - FAF: <nerf>50 🠚 56</nerf>
 <br><br>
-  - Neutral Aerial:
+  - Neutral Air:
     - <rework>Animation changed to Smash4 neutral air</rework>
     - <buff>Matched late hit with mid hit</buff>
     - <buff>Added foot hitbox</buff>
@@ -124,7 +124,7 @@
       - BKB: <nerf>30 🠚 0</nerf>
     - FAF: <buff>45 🠚 43</buff>
 <br><br>
-  - Forward Aerial:
+  - Forward Air:
     - <rework>Animation changed to Smash4 forward air</rework>
     - Sweetspot
       - KBG (ground/air): <nerf>90 🠚 90/79</nerf>
@@ -135,7 +135,7 @@
       - Hitbox Size: <buff>4.2u 🠚 5.0u</buff>
     - Landing Lag: <buff>12F 🠚 10F</buff>
 <br><br>
-  - Back Aerial:
+  - Back Air:
     - <adjust>Attached hitboxes to tail</adjust>
     - Hit 1/Hit 2
       - Hitbox Duration: <rework>F11/F14 🠚 F11-14/F17-19</rework>
@@ -155,7 +155,7 @@
     - FAF: <buff>56 🠚 42</buff>
     - Landing Lag: <buff>11F 🠚 8F</buff>
 <br><br>
-  - Up Aerial:
+  - Up Air:
     - Hitbox Duration: <buff>F5-6 🠚 F5-8</buff>
     - Damage: <buff>12.0% 🠚 13.0%</buff>
     - Hitbox Size: <nerf>7.5u 🠚 5.5u</nerf>
@@ -163,7 +163,7 @@
     - Autocancel: <nerf>F1-4/F31 🠚 F1-4/F33</nerf>
     - Landing Lag: <nerf>8F 🠚 9F</nerf>
 <br><br>
-  - Down Aerial:
+  - Down Air:
     - Multihits
       - Hitbox Size (side): <buff>3.5u 🠚 4.5u</buff>
     - Launcher
@@ -212,7 +212,7 @@
     - Ground
       - KBG (hit 2): <buff>72 🠚 80</buff>
       - Hitlag Multiplier (hit 2): <adjust>0.7x 🠚 1.0x</adjust>
-    - Aerial
+    - Air
       - Damage: <buff>12.0% 🠚 14.0%</buff>
       - KBG: <buff>68 🠚 85</buff>
       - Hitlag Multiplier: <adjust>0.7x 🠚 1.0x</adjust>

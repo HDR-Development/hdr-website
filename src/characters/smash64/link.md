@@ -13,7 +13,7 @@
   - Short Hop Height: 13.38 🠚 12.58
   - Double Jump Height: 29.0 🠚 25.0
   - Air Speed: 0.924 🠚 1.0
-  - Aerial Acceleration (Base/Additional): 0.01/0.04 🠚 0.02/0.04
+  - Air Acceleration (base/additional): 0.01/0.04 🠚 0.02/0.04
   - Air Friction: 0.0038 🠚 0.005
   - Gravity: 0.096 🠚 0.11
   - Fall Speed: 1.6 🠚 2.13
@@ -125,7 +125,7 @@
       - KBG: <buff>63 🠚 60</buff>
     - FAF: <buff>57 🠚 52</buff>
 <br><br>
-  - Neutral Aerial (Hylian Kick):
+  - Neutral Air (Hylian Kick):
     - Early
       - <nerf>Hitbox Priority shifted (knee > foot > hip)</nerf>
       - Hitbox Duration: <buff>F7-8 🠚 F5-7</buff>
@@ -140,7 +140,7 @@
     - Autocancel: <buff>F36 🠚 F34</buff>
     - Landing Lag: <nerf>6F 🠚 8F</nerf>
 <br><br>
-  - Forward Aerial (Spinning Sword):
+  - Forward Air (Spinning Sword):
     - <buff>Attached hitboxes to arm and sword</buff>
     - Hit 1
       - Hitbox Duration: <buff>F16-17 🠚 F14-15</buff>
@@ -161,7 +161,7 @@
     - Autocancel: <nerf>F53 🠚 F56</nerf>
     - Landing Lag: <buff>11F 🠚 8F</buff>
 <br><br>
-  - Back Aerial (Double Kick):
+  - Back Air (Double Kick):
     - Hit 1
       - Hitbox Duration: <buff>F6-8 🠚 F6-9</buff>
       - Damage: <buff>5.0% 🠚 7.0%</buff>
@@ -177,7 +177,7 @@
     - FAF: <nerf>31 🠚 32</nerf>
     - Landing Lag: <nerf>6F 🠚 7F</nerf>
 <br><br>
-  - Up Aerial (Stab-Up):
+  - Up Air (Stab-Up):
     - <buff>Hitbox extended into shoulders and to end of sword</buff>
     - Startup: <buff>F11-13/F14-40 🠚 F7-9/F10-36</buff>
     - Early
@@ -192,7 +192,7 @@
     - Autocancel: <buff>F43 🠚 F39</buff>
     - Landing Lag: <buff>14F 🠚 13F</buff>
 <br><br>
-  - Down Aerial (Sword Plant):
+  - Down Air (Sword Plant):
     - <buff>Hitbox extended into body and down to end of sword</buff>
     - Early
       - Damage: <buff>18.0% 🠚 21.0%</buff>

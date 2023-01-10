@@ -6,7 +6,7 @@
   - Walk Speed: 1.134 🠚 1.1
   - Initial Dash Speed: 1.815 🠚 1.3
   - Run Speed: 1.69 🠚 1.525
-  - Run Acceleration (Base/Additional) 0.044/0.08646 🠚 0.02/0.06
+  - Run Acceleration (base/additional) 0.044/0.08646 🠚 0.02/0.06
   - Traction: 0.096 🠚 0.025
   - Jumpsquat: 3F 🠚 4F
   - Horizontal Jump Speed Multiplier: 0.78 🠚 0.75
@@ -14,7 +14,7 @@
   - Short Hop Height: 19.98 🠚 14.0
   - Double Jump Height: 41.31 🠚 34
   - Air Speed: 0.77 🠚 0.68
-  - Air Acceleration (Base/Additional) 0/0.075 🠚 0.015/0.035
+  - Air Acceleration (base/additional) 0/0.075 🠚 0.015/0.035
   - Air Friction: 0.0075 🠚 0.01
   - Gravity: 0.083 🠚 0.079
   - Fall Speed: 1.32 🠚 1.71
@@ -102,7 +102,7 @@
     - Hitbox Size (hip/foot): <buff>3.6/3.6u 🠚 4.5/5.6u</buff>
     - FAF: <nerf>38 🠚 40</nerf>
 <br><br>
-  - Neutral Aerial:
+  - Neutral Air:
     - Early
       - KBG: <buff>90 🠚 121</buff>
     - Late
@@ -110,7 +110,7 @@
       - Hitbox Size (front leg/back leg): <buff>3.0/2.5u 🠚 4.5/4.0u</buff>
     - Landing Lag: <buff>8F 🠚 7F</buff>
 <br><br>
-  - Forward Aerial:
+  - Forward Air:
     - <buff>Added elbow hitbox</buff>
     - Damage: <buff>8.0% 🠚 14.0%</buff>
     - BKB: <adjust>30 🠚 43</adjust>
@@ -120,7 +120,7 @@
     - Autocancel: <buff>F1/F21 🠚 F1-2/F21</buff>
     - Landing Lag: <buff>13F 🠚 11F</buff>
 <br><br>
-  - Back Aerial:
+  - Back Air:
     - <buff>Leg hitbox pulled inwards, foot hitbox pushed outwards</buff>
     - Early
       - <nerf>Hitbox Priority shifted (foot > hip)</nerf>
@@ -140,14 +140,14 @@
     - Autocancel: <nerf>F1-2/F33 🠚 F1-2/F34</nerf>
     - Landing Lag: <buff>10F 🠚 8F</buff>
 <br><br>
-  - Up Aerial:
+  - Up Air:
     - <adjust>Matched late hit to early hit</adjust>
     - Angle: <buff>55 🠚 70</buff>
     - BKB: <nerf>0 🠚 25</nerf>
     - FAF: <nerf>27 🠚 30</nerf>
     - Autocancel: <buff>F1/F19 🠚 F1-2/F19</buff>
 <br><br>
-  - Down Aerial:
+  - Down Air:
     - Early
       - <buff>Added hip hitbox</buff>
       - Hip

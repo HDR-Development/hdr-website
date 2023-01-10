@@ -102,8 +102,8 @@
       - KBG: <buff>192 🠚 206</buff>
       - Hitlag Multiplier: <adjust>1.0x 🠚 1.2x</adjust>
 <br><br>
-  - Neutral Aerial:
-    - <nerf>Pancaking duration decreased</nerf>
+  - Neutral Air:
+    - <nerf>Reduced pancaking on landing</nerf>
     - Multihits
       - Hitbox Duration: <adjust>F3-6/F9-12/F15-18 🠚 F3-7/F11-15/F18-22</adjust>
       - Angle (air-only): <nerf>367 🠚 366</nerf>
@@ -118,8 +118,8 @@
     - FAF: <nerf>39 🠚 44</nerf>
     - Autocancel: <nerf>F37 🠚 F42</nerf>
 <br><br>
-  - Forward Aerial:
-    - <nerf>Pancaking duration decreased</nerf>
+  - Forward Air:
+    - <nerf>Reduced pancaking on landing</nerf>
     - Multihits
       - <buff>Added body hitbox</buff>
       - Upper
@@ -143,9 +143,9 @@
       - Hitbox Size: <nerf>7.0u 🠚 6.0u</nerf>
     - Landing Lag: <buff>12F 🠚 11F</buff>
 <br><br>
-  - Back Aerial:
+  - Back Air:
     - <rework>Animation changed to a single back kick</rework>
-    - <nerf>Pancaking duration decreased</nerf>
+    - <nerf>Reduced pancaking on landing</nerf>
     - Early
       - Hitbox Duration: F8-10
       - Damage: <buff>13.0% 🠚 14.0%</buff>
@@ -162,8 +162,8 @@
     - Autocancel: F35
     - Landing Lag: <buff>18F 🠚 9F</buff>
 <br><br>
-  - Up Aerial:
-    - <nerf>Pancaking duration decreased</nerf>
+  - Up Air:
+    - <nerf>Reduced pancaking on landing</nerf>
     - <buff>Added late hit</buff>
     - Early
       - Hitbox Duration: <buff>F4-6 🠚 F3-6</buff>
@@ -183,8 +183,8 @@
     - Hitbox Size (base/mid/tip): <buff>4.0/5.0/4.0u 🠚 4.0/5.0/5.0u</buff>
     - Landing Lag: <buff>14F 🠚 8F</buff>
 <br><br>
-  - Down Aerial
-    - <nerf>Pancaking duration decreased</nerf>
+  - Down Air
+    - <nerf>Reduced pancaking on landing</nerf>
     - Early
       - KBG (ground/air): <nerf>86 🠚 82/59</nerf>
     - Late

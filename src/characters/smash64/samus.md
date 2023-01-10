@@ -5,13 +5,13 @@
 ![](../../images/SmashBall.png) <b>Attributes</b>
   - Initial Dash Speed: 1.87 🠚 1.86
   - Run Speed: 1.654 🠚 1.55
-  - Run Acceleration (Base/Additional): 0.044/0.132 🠚 0.02/0.1
+  - Run Acceleration (base/additional): 0.044/0.132 🠚 0.02/0.1
   - Traction: 0.082 🠚 0.06
   - Jumpsquat: 3F 🠚 4F
   - Initial Jump Velocity: 20.35 🠚 13.2275
   - Short Hop Height: 18 🠚 19.4
   - Air Speed: 1.103 🠚 0.942
-  - Air Acceleration (Base/Additional): 0.04/0.05 🠚 0.025/0.04
+  - Air Acceleration (base/additional): 0.04/0.05 🠚 0.025/0.04
   - Air Friction: 0.0075 🠚 0.01
   - Fall Speed: 1.33 🠚 1.87
   - Gravity: 0.075 🠚 0.085
@@ -162,7 +162,7 @@
       - KBG: <adjust>68 🠚 87</adjust>
     - FAF: <nerf>45 🠚 52</nerf>
 <br><br>
-  - Neutral Aerial (Chozo Kick):
+  - Neutral Air (Chozo Kick):
     - <rework>Changed to a single-hit lingering kick</rework>
     - Early
       - Hitbox Duration: F5-8
@@ -181,7 +181,7 @@
     - Autocancel: <nerf>F1-7/F35 🠚 F1-4/F44</nerf>
     - Landing Lag: <buff>9F 🠚 7F</buff>
 <br><br>
-  - Forward Aerial (Aerial Fire):
+  - Forward Air (Aerial Fire):
     - <buff>Added shoulder hitbox</buff>
     - <adjust>Animation speed increased</adjust>
     - Hit 1
@@ -202,7 +202,7 @@
     - Landing Lag: <buff>14F 🠚 8F</buff>
     - Autocancel: <buff>F47 🠚 F1-F4/F47</buff>
 <br><br>
-  - Back Aerial (Flying Back Kick):
+  - Back Air (Flying Back Kick):
     - <rework>Animation changed to Smash4 back air</rework>
     - <nerf>Removed late hit</nerf>
     - <buff>Added hip hitbox</buff>
@@ -220,7 +220,7 @@
     - Autocancel: <buff>F1-8/F42 🠚 F1-8/F25</buff>
     - Landing Lag: <buff>14F 🠚 9F</buff>
 <br><br>
-  - Up Aerial (Drill Kick):
+  - Up Air (Drill Kick):
     - <nerf>Foot hitbox moved inward</nerf>
     - Hit 1
       - BKB: <adjust>0 🠚 48</adjust>
@@ -244,7 +244,7 @@
     - Autocancel: <nerf>F1-3/F34 🠚 F1-3/F37</nerf>
     - Landing Lag: <buff>18F 🠚 10F</buff>
 <br><br>
-  - Down Aerial:
+  - Down Air:
     - <rework>Removed late hit</rework>
     - Hitbox Duration: <rework>F17-18/F19-21/F22-23 🠚 F14-F17</rework>
     - Damage: <buff>14.0/10.0% 🠚 16.0%</buff>

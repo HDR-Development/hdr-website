@@ -153,7 +153,7 @@
       - Hitbox Size (foot/leg): <buff>4.0/3.3u 🠚 4.5/3.5u</buff>
     - FAF: <nerf>44 🠚 45</nerf>
 <br><br>
-  - Neutral Aerial (Plumber’s Boot):
+  - Neutral Air (Plumber’s Boot):
     - Early
       - Damage: <buff>8.0% 🠚 12.0%</buff>
       - Hitbox Size: <nerf>4.0/4.0u 🠚 3.7/3.7u</nerf>
@@ -165,7 +165,7 @@
     - Autocancel: <buff>F39 🠚 F36</buff>
     - Landing Lag: <nerf>6F 🠚 7F</nerf>
 <br><br>
-  - Forward Aerial (Plunger):
+  - Forward Air (Plunger):
     - Fire Fist
       - <property>Hold taunt or special during the move to give all hitboxes fire properties</property>
       - Hitlag Multiplier (early/mid/late): <adjust>1.0x 🠚 1.0/1.2/1.0x</adjust>
@@ -194,7 +194,7 @@
     - FAF: <buff>60 🠚 48</buff>
     - Landing Lag: <buff>17F 🠚 11F</buff>
 <br><br>
-  - Back Aerial (Drop Kick):
+  - Back Air (Drop Kick):
     - Early
       - Hitbox Duration: <buff>F6-7 🠚 F6-8</buff>
       - Foot
@@ -219,7 +219,7 @@
     - Autocancel (early/late): <nerf>F1-5/F19 🠚 F1-5/F24</nerf>
     - Landing Lag: <nerf>6F 🠚 7F</nerf>
 <br><br>
-  - Up Aerial (Bicycle Kick):
+  - Up Air (Bicycle Kick):
     - <buff>Added late hit</buff>
     - Early
       - Hitbox Duration: F4-7
@@ -241,7 +241,7 @@
     - Autocancel (early/late): <buff>*/F17 🠚 F1-3/F17</buff>
     - Landing Lag: <nerf>6F 🠚 7F</nerf>
 <br><br>
-  - Down Aerial (Mario Tornado):
+  - Down Air (Mario Tornado):
     - <adjust>Removed landing hit</adjust>
     - <nerf>Removed vertical momentum boost</nerf>
     - Hits 1-5
