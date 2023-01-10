@@ -250,8 +250,8 @@
     - Damage: <buff>14.0/10.0% 🠚 16.0%</buff>
     - Angle: <rework>361/270 🠚 270</rework>
     - KBG (air-only): <nerf>85 🠚 47</nerf>
-    - FAF: 49 🠚 UNDOCUMENTED
-    - Autocancel: F1-3/F34 🠚 UNDOCUMENTED
+    - FAF: <buff>49 🠚 36</buff>
+    - Autocancel: <buff>F1-3/F34 🠚 F1-3/F30</buff>
 <br><br>
   - Charge Shot (Neutral Special):
     - <buff>Canceling the charge midair transitions into normal fall instead of forcing an airdodge</buff>
