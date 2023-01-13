@@ -40,7 +40,7 @@
     - [Luigi](./characters/smash64/luigi.md)
     - [Ness](./characters/smash64/ness.md)
     - [Captain Falcon](./characters/smash64/captain.md)
-    - [Jigglypuff]()<!--./characters/smash64/purin.md)-->
+    - [Jigglypuff](./characters/smash64/purin.md)
   - [Melee]()
     - [Peach]()<!--./characters/melee/peach.md)-->
     - [Bowser]()<!--./characters/melee/koopa.md)-->

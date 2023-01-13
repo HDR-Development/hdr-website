@@ -31,7 +31,7 @@
       <td><a href="./smash64/luigi.md">Luigi</a></td>
       <td><a href="./smash64/ness.md">Ness</a></td>
       <td><a href="./smash64/captain.md">Captain Falcon</a></td>
-      <td><!--<a href="./smash64/purin.md">-->Jigglypuff<!--</a>--></td>
+      <td><a href="./smash64/purin.md">Jigglypuff</a></td>
     </tr>
   </tbody>
 </table>
