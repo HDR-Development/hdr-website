@@ -22,6 +22,7 @@
   - Combo Fall Speed: 1.8 🠚 1.9
   - Hard Landing Lag: 7F 🠚 5F
   - Shield Radius: 8.0 🠚 7.7
+<br><br>
 
 ![](../../images/SmashBall.png) <b>Moveset</b>
   - Flutter Jump:

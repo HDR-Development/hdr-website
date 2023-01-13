@@ -22,6 +22,7 @@
   - Combo Gravity: 0.076944 🠚 0.13
   - Combo Fall Speed: 1.8 🠚 2.808
   - Shield Radius: 11.1 🠚 11.0
+<br><br>
 
 ![](../../images/SmashBall.png) <b>Moveset</b>
   - Dash:
