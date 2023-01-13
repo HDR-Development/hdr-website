@@ -12,7 +12,7 @@
 - Tumble Hitstun Threshold
   - 32F 🠚 34F
 - Tumble Knockback Threshold
-  - 80 🠚 90
+  - 90 🠚 80
 - Maximum Grounded Initial Launch Speed
   - 8.3 🠚 100
 
