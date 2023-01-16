@@ -42,7 +42,7 @@
     - [Captain Falcon](./characters/smash64/captain.md)
     - [Jigglypuff](./characters/smash64/purin.md)
   - [Melee]()
-    - [Peach]()<!--./characters/melee/peach.md)-->
+    - [Peach](./characters/melee/peach.md)
     - [Bowser]()<!--./characters/melee/koopa.md)-->
     - [Ice Climbers]()<!--./characters/melee/popo.md)-->
     - [Sheik]()<!--./characters/melee/sheik.md)-->

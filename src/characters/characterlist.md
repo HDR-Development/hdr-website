@@ -42,7 +42,7 @@
   </thead>
   <tbody>
     <tr>
-      <td><!--<a href="./melee/peach.md">-->Peach<!--</a>--></td>
+      <td><a href="./melee/peach.md">Peach</a></td>
       <td><!--<a href="./melee/koopa.md">-->Bowser<!--</a>--></td>
       <td><!--<a href="./melee/popo.md">-->Ice Climbers<!--</a>--></td>
       <td><!--<a href="./melee/sheik.md">-->Sheik<!--</a>--></td>
