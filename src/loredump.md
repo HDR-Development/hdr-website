@@ -1,127 +1,5 @@
 # Character Changes
 
-- ### ![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.017.png) - ICE CLIMBERS -
-  - Attributes:
-    - Walk Acceleration (base/additional): 0.105/0.089 🠚 0.1155/0.0979
-    - Initial Dash Speed: 1.68 🠚 1.45
-    - Dash to Run Transition Frame: F10 🠚 F13
-    - Run Speed (Popo/Nana): 1.53/1.683 🠚 1.45/1.545
-    - Traction: (Popo/Nana) 0.077/0.0847 🠚 0.035 / 0.0385
-    - Air Speed: 0.807/0.84735 🠚 0.875/0.91875‬
-    - Air Acceleration (Nana, base/additional): 0.08/0.084735 🠚 0.06/0.06355
-    - Horizontal Air Friction: 0.015/0.015 🠚 0.02/0.02
-    - Fall Speed: 1.3 🠚 1.61
-    - Fast Fall Speed: 2.08 🠚 2.167
-    - Gravity: 0.082 🠚 0.1
-    - Hard Landing Lag: 7F/4F 🠚 4F/4F
-    - Initial Jump Velocity: 12.1415 🠚 9.7132
-    - Short Hop Height: 16.45 🠚 14.75
-    - Stick-Based Jump Momentum: 0.57 🠚 0.6
-    - Directional Airdodge Velocity: 3 🠚 2.79
-    - Directional Airdodge Landing Speed Multiplier: 1 🠚 0.875
-    - Downward Airdodge Distance (18 🠚 16)
-    - Footstool Vertical Jump Speed Multiplier (full hop/short hop): 0.8/0.5 🠚 0.835
-  - Nana:
-    - *Nana is now actionable during all throws*
-    - *Popo’s buffer is now inactive during spotdodges and rolls, allowing for Nana to buffer an action during them to desync the Ice Climbers*
-    - Nana Damage/Knockback Multiplier: 1.05x/1.05x 🠚 1x/1x
-    - Nana cp\_rank\_for\_ params: 77 🠚 100
-  - Jab:
-    - Jab 1
-      - Damage (popo): 2.0% 🠚 2.5%
-      - FAF: 28 🠚 18
-    - Jab 2
-      - FAF: 30 🠚 21
-  - Forward Tilt:
-    - *Can now reverse hit*
-    - Popo
-      - Damage: 9.0% 🠚 8.0%
-      - KBG: 100 🠚 110
-    - Nana
-      - Damage: 6.75% 🠚 8.0%
-      - KBG: 100 🠚 105
-  - Up Tilt:
-    - *Added scoop hitboxes to both climbers’ sides on frame 6*
-    - Multihits
-      - Damage (Popo/Nana): 0.8/0.6% 🠚 0.2/0.8%
-    - Launcher
-      - Damage (Nana): 3.0% 🠚 4.0%
-      - BKB: 40 🠚 47
-      - KBG: 100 🠚 95
-  - Down Tilt:
-    - *Added shoulder hitbox to both climbers*
-    - *Can now reverse hit*
-    - Startup: F8 🠚 F6
-    - Damage (Nana): 4.5% 🠚 6.0%
-    - Angle: 20 🠚 75
-    - KBG: 100 🠚 95
-  - Dash Attack:
-    - *Hitbox size increased*
-  - Forward Smash:
-    - *Hitboxes enlarged and repositioned to better cover blind spots in arc*
-    - Hitbox Duration: F11-13 🠚 F10-14
-    - Damage (Popo/Nana): 12/9% 🠚 12.5/12.5%
-    - KBG (Popo/Nana): 105/126 🠚 110/110
-    - FAF: 47 🠚 51
-  - Up Smash:
-    - *Tipper hitboxes enlarged and moved outward*
-    - Charge Frame: F10 🠚 F8
-    - Hitbox Duration: F12-17 🠚 F12-18
-    - Damage (Nana, sweetspot/sourspot): 8.25/6.75% 🠚 11.0/9.0%
-    - KBG (Popo/Nana): 105/126 🠚 110/110
-    - FAF: 50 🠚 55
-  - Down Smash:
-    - *Animation adjusted so that Popo and Nana hit both forwards and backwards*
-      - *No longer hits over the shoulder on startup*
-    - Startup: F9 🠚 F6
-    - Damage (Popo/Nana): 13/9.75% 🠚 12/12%
-    - Angle: 60 🠚 40
-    - BKB: 45 🠚 50
-    - KBG (Popo/Nana): 100/120 🠚 105/110
-    - FAF: 41 🠚 46
-  - Neutral Aerial:
-    - *Tipper hitboxes slightly enlarged and moved outward*
-    - *Added shoulder hitboxes*
-    - Damage (Popo/Nana): 8.0/6.0% 🠚 7.0/7.0%
-    - KBG (Nana): 120 🠚 100
-    - Landing Lag: 7F 🠚 8F
-  - Forward Aerial:
-    - *Can spike grounded opponents*
-    - *Can now reverse hit*
-    - Hitbox Duration: F19-20 🠚 F18-22
-    - Sweetspot
-      - *Added spike to Popo on frame 17*
-      - KBG (Popo): 95 🠚 100
-    - Sourspot
-      - Damage (Nana): 9.0% 🠚 12.0%
-      - KBG (Nana): 114 🠚 100
-    - Autocancel (early): F1-3 🠚 F1-4
-  - Back Aerial:
-    - *Tipper hitboxes enlarged and moved outward*
-    - *Can now reverse hit*
-    - Damage (Popo/Nana): 10.0/7.5% 🠚 9.0/9.0%
-    - KBG (Popo/Nana): 115/138 🠚 134/134
-    - FAF: 36 🠚 32
-    - Landing Lag: 7F 🠚 9F
-  - Up Aerial:
-    - *Hitboxes enlarged*
-    - *Added shoulder hitboxes*
-    - Hitbox Duration: F7-12 🠚 F7-13
-    - Damage (Popo/Nana): 9.0/6.75% 🠚 8.0/8.0%
-    - BKB: 20 🠚 24
-    - KBG (Popo/Nana): 129/154.800003 🠚 141
-    - Landing Lag: 14F 🠚 12F
-  - Down Aerial:
-    - *Removed stall and fall*
-    - Startup: F12 🠚 F3
-    - Landing Lag: 20F 🠚 13F
-  - Ice Shot (Neutral Special):
-    - Startup: F18 🠚 F11
-  - Squall Hammer (Side Special):
-    - Initial Height Gain (Single Climber/Double Climber): 0.6/1.2 🠚 1.3/1.35
-  - Standing Grab:
-    - *Grab range increased*
-
 - ### ![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.018.png) - SHEIK -
   - Attributes:
     - Walk Speed: 1.47 🠚 1.43
@@ -232,7 +110,7 @@
       - KBG: 165 🠚 120
       - Hitbox Size: 5.0/6.0u 🠚 4.5u
     - FAF: 52 🠚 56
-  - Neutral Aerial:
+  - Neutral Air:
     - *Hip and back knee hitboxes enlarged*
     - Early
       - Damage (sweetspot/sourspot): 7.0/6.0% 🠚 8.0/6.0%
@@ -242,7 +120,7 @@
     - SDI Multiplier: 1.0x 🠚 1.1x
     - FAF: 50 🠚 42
     - Landing Lag: 6F 🠚 8F
-  - Forward Aerial:
+  - Forward Air:
     - *Sweetspot moved outward, sourspot enlarged and pulled inward*
     - *Added back foot hitbox and elbow sourspot*
     - *Late hitboxes enlarged to match early hit*
@@ -253,7 +131,7 @@
     - SDI Multiplier: 1.0x 🠚 1.1x
     - FAF: 35 🠚 33
     - Landing Lag: 5F 🠚 8F
-  - Back Aerial:
+  - Back Air:
     - *Thigh and knee hitboxes enlarged, knee hitbox pulled inwards*
     - *Added back knee hitbox*
     - Early
@@ -268,7 +146,7 @@
     - SDI Multiplier increased [MISSING DATA]
     - FAF: 35 🠚 33
     - Landing Lag: 7F 🠚 8F
-  - Up Aerial:
+  - Up Air:
     - Multihits
       - *Hitbox size decreased*
       - BKB (ground/air): 35/40 🠚 40/45
@@ -279,7 +157,7 @@
       - Damage: 4.0% 🠚 6.0%
       - KBG: 140 🠚 150
     - Landing Lag: 13F 🠚 12F
-  - Down Aerial:
+  - Down Air:
     - *Removed stall and fall, removed landing hitbox*
     - *Hitbox size decreased*
     - *Added top knee hitbox*
@@ -452,7 +330,7 @@
     - Hitbox Duration (hit 1/hit 2): F5-6/F13-14 🠚 F5-7/F13-16
     - KBG (hit 1/hit 2): 86/96 🠚 96/106
     - FAF: 38 🠚 40
-  - Neutral Aerial:
+  - Neutral Air:
     - *Attached hitboxes to head/arms/torso*
     - *Added hip hitbox*
     - Multihits
@@ -466,7 +344,7 @@
       - KBG: 130 🠚 120
     - FAF: 51 🠚 43
     - Landing Lag: 15F 🠚 9F
-  - Forward Aerial:
+  - Forward Air:
     - *Added late hit*
     - *Can now reverse hit*
     - Hitbox Duration (early/late): F6/F7-10 🠚 F6-8/F9-17
@@ -488,7 +366,7 @@
     - FAF: 53 🠚 41
     - Autocancel: F43 🠚 F36
     - Landing Lag: 15F 🠚 10F
-  - Back Aerial:
+  - Back Air:
     - *Added late hit*
     - *Can now reverse hit*
     - Hitbox Duration (early/late): F6/F7-10 🠚 F6-7/F8/F9-17
@@ -513,14 +391,14 @@
     - FAF: F53 🠚 F41
     - Autocancel: F46 🠚 F36
     - Landing Lag: 16F 🠚 11F
-  - Up Aerial:
+  - Up Air:
     - *Added shoulder hitbox on frames 10-12 that links into explosion*
     - *Late hitbox enlarged*
     - Hitbox Duration (early/late): F14-16/F17-19 🠚 F14-16/F17-20
     - Early
       - KBG: 73 🠚 71
     - FAF: F55 🠚 F50
-  - Down Aerial:
+  - Down Air:
     - *Added mid hit*
     - Hitbox Duration (early/mid/late): F14/F15-24 🠚 F14-15/F16-17/F18-24
     - Early
@@ -734,7 +612,7 @@
       - KBG: 102 🠚 75
       - Hitbox Size (leg/foot): 3.3/4.0u 🠚 3.5/4.5u
     - FAF: 44 🠚 52
-  - Neutral Aerial:
+  - Neutral Air:
     - Early
       - Damage: 8.0% 🠚 10.0%
       - Angle: 361 🠚 50
@@ -746,7 +624,7 @@
       - KBG: 95 🠚 102
       - Hitbox Size: 3.6u 🠚 3.0u
     - Landing Lag: 7F 🠚 8F
-  - Forward Aerial:
+  - Forward Air:
     - *Hitboxes given electric effects and properties*
     - Hitbox Duration (early/mid/late): F16/F17-20/F21 🠚 F16/F17-20/F21-22
     - Early
@@ -761,7 +639,7 @@
       - KBG: 97 🠚 95
     - FAF: 60 🠚 50
     - Landing Lag: 17F 🠚 12F
-  - Back Aerial:
+  - Back Air:
     - *Changed leg hitbox to sourspot*
     - *Can now reverse hit*
     - Hitbox Duration (early/late): F6-8/F9-13 🠚 F6-8/F9-15
@@ -777,7 +655,7 @@
       - Hitbox Size (foot/leg): 4.5/5.3u 🠚 3.5/4.5u
     - FAF: 34 🠚 32
     - Landing Lag: 10F 🠚 8F
-  - Up Aerial:
+  - Up Air:
     - *Added late hit*
     - Hitbox Duration (early/late): F4-7 🠚 F4-8/F9-11
     - Early
@@ -793,7 +671,7 @@
       - KBG: 90
       - Hitbox Size (leg/foot): 3.5/4.7u
     - FAF: 32 🠚 28
-  - Down Aerial:
+  - Down Air:
     - *Attached hitboxes to legs*
     - Hitbox Duration: F14-17 🠚 F16-18
     - Hitbox Size (foot/leg): 5.2/4.5u 🠚 5.0/4.0u
@@ -909,7 +787,7 @@
       - BKB: 45
       - KBG: 90
     - FAF: 51 🠚 57
-  - Neutral Aerial:
+  - Neutral Air:
     - *Reduced pancaking*
     - Early
       - Damage: 7.0% 🠚 10.0%
@@ -922,7 +800,7 @@
       - KBG: 112 🠚 95
       - Hitbox Size: 4.0u 🠚 4.5u
     - Autocancel: F35 🠚 F29
-  - Forward Aerial:
+  - Forward Air:
     - *Changed to single hit*
     - *Reduced pancaking*
     - Self-Damage: 1.5% 🠚 2.0%
@@ -939,7 +817,7 @@
       - KBG: 85
     - Autocancel: F34 🠚 F29
     - Landing Lag: 12F 🠚 10F
-  - Back Aerial:
+  - Back Air:
     - *Reduced pancaking*
     - Self-Damage: 1.5% 🠚 2.0%
     - Hitbox Duration (multihits/launcher): F5-27/F30-31 🠚 F8-27/F28-29
@@ -950,7 +828,7 @@
       - BKB: 70 🠚 45
       - KBG: 160 🠚 242
     - FAF: F55 🠚 F50
-  - Up Aerial:
+  - Up Air:
     - *Reduced pancaking*
     - *Hitboxes enlarged*
     - Self-Damage: 1.5% 🠚 2.0%
@@ -959,7 +837,7 @@
     - BKB: 70 🠚 45
     - KBG: 70 🠚 95
     - Landing Lag: 11F 🠚 9F
-  - Down Aerial:
+  - Down Air:
     - *Reduced pancaking*
     - Early
       - *Added body sourspot*
@@ -1113,7 +991,7 @@
     - FAF: 50 🠚 53
   - Down Smash:
     - FAF: 47 🠚 51
-  - Neutral Aerial:
+  - Neutral Air:
     - *Changed to a sex kick similar to Melee, given new animation*
     - Early
       - Damage: 12.0%
@@ -1128,13 +1006,13 @@
       - KBG: 100 🠚 80
       - Hitbox Size (hip/leg/foot/back knee): 3.5/3.0u
     - Landing Lag: 9F 🠚 7F
-  - Forward Aerial:
+  - Forward Air:
     - *Changed to vanilla nair animation*
     - *Hitbox size reduced*
     - Launcher
       - Angle: 361 🠚 50
     - Landing Lag: 15F 🠚 9F
-  - Back Aerial:
+  - Back Air:
     - *Animation altered to be more like Melee*
     - *Added hitbox on lower leg*
     - Hitbox Duration (early/late): F9-10/F11-16 🠚 F6-7/F8-17
@@ -1149,14 +1027,14 @@
       - Hitbox Size (foot/hip/back foot): 3.8/2.8u 🠚 4.0/3.5/3.5u
     - FAF: 36 🠚 33
     - Landing Lag: 13F 🠚 10F
-  - Up Aerial:
+  - Up Air:
     - *Hitbox priority changed to hip > leg > foot*
     - Damage: 9.0% 🠚 8.5%
     - Angle: 65 🠚 70
     - BKB: 45 🠚 35
     - KBG: 92 🠚 105
     - Landing Lag: 10F 🠚 9F
-  - Down Aerial:
+  - Down Air:
     - Hitbox Duration (early/late): F10-14/F15-24 🠚 F6-9/F10-23
     - Early
       - Damage: 9.0% 🠚 12.0%
@@ -1455,7 +1333,7 @@
         - Hitbox Size: 3.5u 🠚 4.0u
         - Hitbox Z-Offset: 7.3 🠚 8.3
     - FAF: 56 🠚 51
-  - Neutral Aerial:
+  - Neutral Air:
     - *Added hip and shoulder hitboxes*
     - *Priority shifted to tipper*
     - Hit 1
@@ -1505,7 +1383,7 @@
         - Hitbox Size: 3.4u 🠚 5.0u
         - Hitbox Z-Offset: 7.0 🠚 8.2
     - Autocancel (early/late): F1/47+ 🠚 F1-2/37+
-  - Forward Aerial:
+  - Forward Air:
     - *Added shoulder hitbox*
     - Shoulder/Arm
       - Damage: 8.0% 🠚 7.0%
@@ -1529,7 +1407,7 @@
     - FAF: 38 🠚 32
     - Autocancel: 36 🠚 33
     - Landing Lag: 10F 🠚 8F
-  - Back Aerial:
+  - Back Air:
     - *Added shoulder hitbox*
     - Shoulder/Arm
       - BKB: \*/40 🠚 30
@@ -1549,7 +1427,7 @@
       - Hitbox Z-Offset: 7.0 🠚 8.0
     - FAF: 40 🠚 35
     - Landing Lag: 10F 🠚 12F
-  - Up Aerial:
+  - Up Air:
     - *Hitbox priority reordered: Tipper > Hilt > Arm/Chest*
     - Hitbox Duration: F5-9 🠚 F5-10
     - Chest/Arm
@@ -1574,7 +1452,7 @@
       - Hitbox Z-Offset: 6.7 🠚 7.75
     - FAF: 46 🠚 44
     - Landing Lag: 8F 🠚7F
-  - Down Aerial:
+  - Down Air:
     - *Given a new animation, swings in a front-to-back motion*
     - *Hitbox priority shifted to Tipper > Hilt > Arm/Shoulder*
     - Hitbox Duration: F5-11 🠚 F6-10
@@ -1821,14 +1699,14 @@
     - Hit 1
       - Damage: 9.5% 🠚 12.5%
       - KBG: 88 🠚 92
-  - Neutral Aerial:
+  - Neutral Air:
     - Hit 1
       - Damage: 4.0% 🠚 3.0%
     - Hit 2
       - Damage: 8.0% 🠚 7.0%
       - KBG: 90 🠚 100
     - Landing Lag: 7F 🠚 8F
-  - Forward Aerial:
+  - Forward Air:
     - *Added shoulder hitbox, sword hitboxes shifted outwards*
     - Damage: 9.5% 🠚 10.0%
     - Angle: 361 🠚 50
@@ -1836,7 +1714,7 @@
     - KBG: 80 🠚 85
     - FAF: 38 🠚 34
     - Landing Lag: 10F 🠚 9F
-  - Back Aerial:
+  - Back Air:
     - *Added shoulder hitbox*
     - Sourspot
       - BKB: 35 🠚 10
@@ -1849,14 +1727,14 @@
       - KBG: 95 🠚 110
     - FAF: 40 🠚 36
     - Landing Lag: 10F 🠚 12F
-  - Up Aerial:
+  - Up Air:
     - *Hitboxes enlarged*
     - *Blade and tipper hitboxes moved outwards*
     - Damage: 10.5% 🠚 10.0%
     - BKB: 40 🠚 44
     - KBG: 83 🠚 80
     - Landing Lag: 8F 🠚 9F
-  - Down Aerial:
+  - Down Air:
     - *Reworked to a spinning slash*
     - Hitbox Duration (multihits/launcher): F12-23/F26-27
     - Multihits
@@ -1980,13 +1858,13 @@
     - Hit 2
       - KBG (sweetspot/sourspot): 70/90 🠚 93/95
     - FAF: 50 🠚 56
-  - Neutral Aerial:
+  - Neutral Air:
     - Early
       - KBG: 115 🠚 105
     - Late
       - Damage: 5.0% 🠚 7.0%
     - Landing Lag: 6F 🠚 8F
-  - Forward Aerial:
+  - Forward Air:
     - *Hitboxes enlarged and attached to sword*
     - *Added shield hitboxes*
     - Hitbox Duration (hit 1/hit 2): F14-15/F24-25 🠚 F9-12/F21-25
@@ -1999,7 +1877,7 @@
         - BKB: 35
         - KBG: 85
     - Landing Lag: 6F 🠚 9F
-  - Back Aerial:
+  - Back Air:
     - Hit 1
       - Angle (air-only): 75/72/70 🠚 367
       - FKB (ground-only): 55/40 🠚 60
@@ -2007,13 +1885,13 @@
     - Hit 2
       - KBG: 102 🠚 75
     - Landing Lag: 6F 🠚 7F
-  - Up Aerial:
+  - Up Air:
     - *Shoulder hitbox enlarged*
     - Hitbox Duration (early/late): F5-7/F8-49 🠚 F5-8/F9-49
     - Early
       - KBG: 80 🠚 100
     - Landing Lag: 14F 🠚 13F
-  - Down Aerial:
+  - Down Air:
     - *Holding A/C-Stick now causes sword to stay out for up to six seconds*
     - *Strong hit during first 4 frames, after which there is a very weak hit for rest of move's duration*
     - *Spike hitbox now located at hilt for move's entire duration*
@@ -2134,7 +2012,7 @@
   - Down Smash:
     - KBG (hit 2): 81 🠚 88
     - FAF: 60 🠚 66
-  - Neutral Aerial:
+  - Neutral Air:
     - *Animation adjusted so legs hit lower and more horizontally*
     - Hitbox Duration (hit 1/hit 2): F7-12/F17-26 🠚 F7-11/F15-23
     - Hit 1
@@ -2148,14 +2026,14 @@
       - Damage: 12.0/9.0% 🠚 11.0%
       - BKB: 25 🠚 35
     - Landing Lag: 10F 🠚 11F
-  - Forward Aerial:
+  - Forward Air:
     - *Hitboxes enlarged*
     - *Can now reverse hit*
     - KBG (sweetspot/sourspot): 93 🠚 97/99
     - FAF: 45 🠚 40
     - Autocancel: F45 🠚 F33
     - Landing Lag: 13F 🠚 12F
-  - Back Aerial:
+  - Back Air:
     - *Added forearm intangibility during active frames*
     - *Added late hit*
     - *Can now reverse hit*
@@ -2172,7 +2050,7 @@
       - Hitbox Size (arm/hand): 4.0/4.5u
     - FAF: 36 🠚 30
     - Landing Lag: 11F 🠚 12F
-  - Up Aerial:
+  - Up Air:
     - Hitbox Duration (early/mid/late): F8-10/F11-13/F14-16 🠚 F6-10/F11-13/F14-20
     - Early
     - Mid
@@ -2183,7 +2061,7 @@
       - KBG: 75 🠚 80
     - FAF: 34 🠚 31
     - Landing Lag: 11F 🠚 10F
-  - Down Aerial:
+  - Down Air:
     - FAF: 45 🠚 40
     - Landing Lag: 16F 🠚 15F
   - Float (Neutral Special):
@@ -2298,7 +2176,7 @@
     - *Added late hit*
     - KBG: 118 🠚 122
     - FAF: 41 🠚 48
-  - Neutral Aerial:
+  - Neutral Air:
     - *Hitbox sizes increased*
     - Startup: F8 🠚 F7
     - Multihits
@@ -2308,7 +2186,7 @@
     - Launcher
       - BKB: 40 🠚 60
       - KBG: 110 🠚 87
-  - Forward Aerial:
+  - Forward Air:
     - *Can now reverse hit*
     - Tipper
       - *Hitbox moved outwards*
@@ -2321,14 +2199,14 @@
       - KBG: 100 🠚 110
     - FAF: 39 🠚 38
     - Landing Lag: 8 🠚 9
-  - Back Aerial:
+  - Back Air:
     - *Body hitbox moved inwards, tipper hitbox enlarged*
     - Startup decreased [MISSING DATA]
     - Damage (base/mid/tip): 13.0/12.0/11.0% 🠚 12.0/10.0/10.0%
     - KBG (base/mid/tip): 101/90/90 🠚 105/100/100
     - FAF: 40 🠚 32
     - Landing Lag: 10F 🠚 12F
-  - Up Aerial:
+  - Up Air:
     - *Tipper hitbox enlarged*
     - Startup decreased [MISSING DATA]
     - Damage (base/mid/tip): 12.0/11.0/10.0% 🠚 10.0/9.0/8.0%
@@ -2336,7 +2214,7 @@
     - KBG (base/mid/tip): 92/92/92 🠚 120/110/110
     - FAF: 40 🠚 32
     - Landing Lag: 8F 🠚 9F
-  - Down Aerial:
+  - Down Air:
     - *Sweetspot hitbox enlarged*
     - Sweetspot
       - Damage: 15.0% 🠚 14.0%
@@ -2489,7 +2367,7 @@
         - Hitbox Size: 2.8u 🠚 3.5u
         - Hitbox Z-Offset: 9.0u 🠚 8.5u
     - ### FAF: 62 🠚 63
-  - Neutral Aerial:
+  - Neutral Air:
     - *Set weight knockback removed from second hit and added to first hit*
     - *Added hip hitbox*
     - Hitbox Duration (hit1/hit2): F6-7/F15-21 🠚 F6-7/F13-19
@@ -2503,7 +2381,7 @@
       - BKB (sweetspot/sourspot): 50 🠚 45/40
       - KBG: 105/100 🠚 90
       - Hitbox Size (arm): 5.6u 🠚 4.5u
-  - Forward Aerial:
+  - Forward Air:
     - *Added shoulder hitbox*
     - Hitbox Duration: F10-12 🠚 F8-11
     - Sweetspot
@@ -2518,7 +2396,7 @@
       - KBG: 80 🠚 70
     - Landing Lag: 8F 🠚 9F
     - FAF: 34 🠚 37
-  - Back Aerial:
+  - Back Air:
     - *Added back shoulder hitbox*
     - Hitbox Duration: F8-10 🠚 F8-11
     - Sweetspot
@@ -2535,7 +2413,7 @@
       - KBG: 100 🠚 95
       - Hitbox Size: 4.0u 🠚 3.5u
     - Landing Lag: 10F 🠚 12F
-  - ### Up Aerial:
+  - ### Up Air:
     - Hitbox Duration: F5-12 🠚 F5-11
     - Sweetspot
       - Damage: 9.0% 🠚 10.0%
@@ -2547,7 +2425,7 @@
       - Damage: 6.0% 🠚 8.0%
       - BKB: 10 🠚 35
       - Hitbox Size: 4.0u 🠚 3.5u
-  - Down Aerial:
+  - Down Air:
     - #### *Reanimated to downward-arcing slash*
     - *Priority shifted to shoulder*
     - Hitbox Duration: F7-10
@@ -2685,7 +2563,7 @@
     - *Removed bury*
     - KBG (sweetspot): 85 🠚 91
     - FAF: 34 🠚 40
-  - Neutral Aerial (Tropical Fish):
+  - Neutral Air (Tropical Fish):
     - *All hitboxes enlarged*
     - Hit 1
       - *Lowered bottom fishbowl hitbox*
@@ -2723,12 +2601,12 @@
         - Hitbox Z-Offset (front fish): 13.5/13.5u 🠚 12.8/12.8u
         - Hitbox Y-Offset (back fish): 2.4/1.0u 🠚 2.9/1.5u
         - Hitbox Z-Offset (back fish): -10.2/-10.0u 🠚 -9.0/-9.0u
-  - Forward Aerial (Mario Bros.):
+  - Forward Air (Mario Bros.):
     - *Reworked to pre-Ultimate fair*
     - *Hitboxes readjusted*
     - KBG (early): 100 🠚 102
     - Landing Lag: 17F 🠚 12F
-  - Back Aerial (Turtle Bridge):
+  - Back Air (Turtle Bridge):
     - *Removed landing hitbox*
     - Multihits
       - *Inner hitbox slightly enlarged*
@@ -2746,7 +2624,7 @@
       - Hitlag Multiplier: 2.0x 🠚 1.5x
     - Autocancel: F38 🠚 F29
     - Landing Lag: 18F 🠚 11F
-  - Up Aerial (Spitball Sparky):
+  - Up Air (Spitball Sparky):
     - *Reworked to be similar to pre-Ultimate up air, a two-hit move with hitboxes on Mr. Game and Watch's head and a single puff of air above him*
     - Hitbox Duration (hit 1/hit 2): F6-10/F18-20
     - Hit 1
@@ -2763,7 +2641,7 @@
       - KBG: 95 🠚 82
       - Hitbox Size (body/head/puff): 4.5/6.5/7.5u 🠚 4.5/5.5/6.5u
     - Landing Lag: 12F 🠚 10F
-  - Down Aerial (Donkey Kong Jr.):
+  - Down Air (Donkey Kong Jr.):
     - *No longer dives during the move*
     - Hitbox Duration (early/mid/late): F12-13/\*/F14-38 🠚 F12-13/F14-25/F26-35
     - Early
@@ -2943,7 +2821,7 @@
       - Hitbox Duration: F9 🠚 F8-10
       - KBG: 78 🠚 86
     - FAF: 38 🠚 44
-  - Neutral Aerial (Knight Spin):
+  - Neutral Air (Knight Spin):
     - *Hitboxes enlarged and repositioned*
     - Startup: F6 🠚 F3
     - Early
@@ -2955,7 +2833,7 @@
       - KBG: 80 🠚 100
     - Shieldstun: 4F 🠚 3F
     - Landing Lag: 7F 🠚 8F
-  - Forward Aerial (Air Chop):
+  - Forward Air (Air Chop):
     - *Changed to two hits*
     - *Hitboxes enlarged and repositioned*
     - Hitbox Duration (hit 1/hit 2/hit 3): F9/F12/F15 🠚 F5-6/F8-9/F11
@@ -2972,7 +2850,7 @@
       - Additional Hitstun: 0F 🠚 -5F
       - Hitbox Z-Offset (outer hitbox): 13.5 🠚 14.5
     - FAF: 46 🠚 41
-  - Back Aerial (Meta Spin Slash):
+  - Back Air (Meta Spin Slash):
     - *Hitboxes enlarged and repositioned*
     - Hit 1
       - *Hitboxes added to sword*
@@ -2989,7 +2867,7 @@
       - KBG (launcher): 204 🠚 210
     - FAF: 52 🠚 47
     - Landing Lag: 11F 🠚 13F
-  - Up Aerial (High Slice):
+  - Up Air (High Slice):
     - *Hitboxes enlarged and repositioned*
     - *Added capsule hitbox near body*
     - *Added late hit*
@@ -2998,7 +2876,7 @@
     - BKB: 30 🠚 45
     - KBG: 128 🠚 120
     - Additional Hitstun: 0F 🠚 -5F
-  - Down Aerial (Low Slice):
+  - Down Air (Low Slice):
     - *Hitboxes enlarged and repositioned*
     - *Added capsule hitbox inside of body*
     - *Added late hit*
@@ -3140,7 +3018,7 @@
     - FAF: 52 🠚 56
   - Down Smash:
     - FAF: 41 🠚 49
-  - Neutral Aerial (Rotary Cutter):
+  - Neutral Air (Rotary Cutter):
     - *Hitboxes attached to blades*
     - Multihits
       - Hits: 7 🠚 4
@@ -3152,7 +3030,7 @@
       - *Added hitbox to center that always sends forwards*
     - FAF: 55 🠚 50
     - Landing Lag: 14F 🠚 9F
-  - Forward Aerial (Hover Bow):
+  - Forward Air (Hover Bow):
     - *Hitboxes enlarged and extended to chest*
     - Launcher
       - Damage: 6.0% 🠚 7.5%
@@ -3160,7 +3038,7 @@
       - Hitlag Multiplier: 2.2 🠚 1.25
     - FAF: 47 🠚 45
     - Landing Lag: 12F 🠚 10F
-  - Back Aerial (Reversal Stab):
+  - Back Air (Reversal Stab):
     - *Added late sourspot, extended both sourspots into chest*
     - *Swapped early sweetspot and sourspot priority*
     - Hitbox Duration (sweetspot/sourspot): F10-12 🠚 F9-11/F12-22
@@ -3178,14 +3056,14 @@
       - KBG: 87
     - FAF: 41 🠚 40
     - Landing Lag: 8F 🠚 7F
-  - Up Aerial (Blade Twirl):
+  - Up Air (Blade Twirl):
     - *Hitboxes enlarged*
     - Launcher
       - Damage: 5.0% 🠚 8.0%
       - KBG: 135 🠚 126
       - Hitlag Multiplier: 2.0 🠚 1.25
     - Landing Lag: 14F 🠚 11F
-  - Down Aerial (Under-Arc Slash):
+  - Down Air (Under-Arc Slash):
     - *Hitbox activity starts 1 frame earlier in animation*
     - *Added shoulder hitbox*
     - Sweetspot (ground-only)
@@ -3284,7 +3162,7 @@
       - KBG (sweetspot/sourspot): 106/97 🠚 119/107
   - Up Smash:
     - FAF: 49 🠚 52
-  - Neutral Aerial (Plasma Rope):
+  - Neutral Air (Plasma Rope):
     - *Hitboxes reworked and attached to whip*
     - Hitbox Duration: F10-11/F12-16 🠚 F7-15
     - Damage: 8.0% 🠚 12.0%
@@ -3301,7 +3179,7 @@
     - Hitlag Multiplier: 0.8x 🠚 0.9x
     - FAF: 52 🠚 38
     - Landing Lag: 6F 🠚 7F
-  - Forward Aerial (Jet Double):
+  - Forward Air (Jet Double):
     - *Added hip hitbox*
     - *Can now reverse hit*
     - Hitbox Duration (hit 1/hit 2): F6-7/F13-14 🠚 F6-9/F15-18
@@ -3320,7 +3198,7 @@
     - FAF: 47 🠚 38
     - Autocancel: F31 🠚 F38
     - Landing Lag: 10F 🠚 9F
-  - Back Aerial (Rocket Kick):
+  - Back Air (Rocket Kick):
     - *Added hip hitbox*
     - *Can now reverse hit*
     - Hitbox Duration: F8-9 🠚 F7-11
@@ -3331,7 +3209,7 @@
     - Hitlag Multiplier (sweetspot): 1.0x 🠚 1.1x
     - FAF: 40 🠚 39
     - Landing Lag: 10F 🠚 9F
-  - Up Aerial (Boost Arc):
+  - Up Air (Boost Arc):
     - *Animation adjusted for a cleaner arc*
     - *Added late hit*
     - Hitbox Duration (early/late): F6-12 🠚 F4-8/F9-12
@@ -3347,7 +3225,7 @@
     - Hitbox Size (hip/knee/foot): 3.6/3.6/4.6u 🠚 3.0/3.0/4.0u
     - FAF: 35 🠚 34
     - Landing Lag: 5F 🠚 8F
-  - Down Aerial (Shooting Star):
+  - Down Air (Shooting Star):
     - *Added late hit*
     - Dive Speed (horizontal/vertical): 1/-5 🠚 1.25/-3.5
     - Damage: 5.0/6.0% 🠚 9.0%
@@ -3500,7 +3378,7 @@
   - Up Smash:
     - Hitbox Duration: F11-12/13 🠚 F8-12
     - KBG: 85 🠚 86
-  - Neutral Aerial:
+  - Neutral Air:
     - *Hitboxes enlarged*
     - Hit 1
       - BKB: 25 🠚 30
@@ -3508,7 +3386,7 @@
       - Damage: 4.0/5.0% 🠚 4.0%
       - Angle: 70 🠚 72
     - Landing Lag: 7F 🠚 8F
-  - Forward Aerial (Shin Kick):
+  - Forward Air (Shin Kick):
     - *Hitboxes enlarged*
     - Hitbox Duration (early/late): F5-6/F7-17 🠚 F5-7/F8-17
     - Early
@@ -3524,7 +3402,7 @@
       - Damage: 4.5% 🠚 6.0%
       - BKB: 15 🠚 20
       - KBG: 80 🠚 65
-  - Back Aerial (Lay Down):
+  - Back Air (Lay Down):
     - *Hitboxes enlarged*
     - *Added late hit*
     - Hitbox Duration (early/late): F9-11 🠚 F9-12/F13-17
@@ -3540,7 +3418,7 @@
     - FAF: 50 🠚 42
     - Autocancel: F34 🠚 F32
     - Landing Lag: 16F 🠚 12F
-  - Up Aerial (Hand Slap):
+  - Up Air (Hand Slap):
     - *Hitboxes enlarged*
     - *Added early hit before clap*
     - Hitbox Duration (early/late): F8-9 🠚 F7/F8-12
@@ -3554,7 +3432,7 @@
       - KBG: 78 🠚 108
     - FAF: 47 🠚 42
     - Landing Lag: 7F 🠚 9F
-  - Down Aerial (Low Twirl):
+  - Down Air (Low Twirl):
     - KBG (launcher): 200 🠚 204
     - Landing Lag: 18F 🠚 13F
   - Chomp (Neutral Special):
@@ -3673,7 +3551,7 @@
       - Angle: 20 🠚 35
       - KBG: 88 🠚 98
     - FAF: 56 🠚 49
-  - Neutral Aerial (Quad Kick):
+  - Neutral Air (Quad Kick):
     - *Animation speed increased*
     - *Attached hitboxes to hip/knee/foot*
     - *Added hip hitboxes*
@@ -3689,7 +3567,7 @@
       - KBG: 100 🠚 145
     - FAF: 60 🠚 46
     - Landing Lag: 16F 🠚 8F  
-  - Forward Aerial (Flying Axe):
+  - Forward Air (Flying Axe):
     - *Can now reverse hit*
     - Startup: F23 🠚 F20
     - Sourspot
@@ -3699,7 +3577,7 @@
     - FAF: 70 🠚 44
     - Autocancel: 1-4/63 🠚 1-6/63
     - Landing Lag: 19F 🠚 13F
-  - Back Aerial (Drop Kick):
+  - Back Air (Drop Kick):
     - *Added hip hitboxes*
     - *Swapped sourspot and sweetspot; sweetspot now on shins/feet and sourspot is on thighs*
     - Early
@@ -3714,7 +3592,7 @@
       - KBG: 85 🠚 100
     - FAF: 43 🠚 41
     - Landing Lag: 19F 🠚 10F 
-  - Up Aerial (Springboard):
+  - Up Air (Springboard):
     - *Attached hitboxes to hip/knee/foot*
     - Early
       - Damage (hip/knee/foot): 14.0% 🠚 12.0/13.0/14.0%
@@ -3725,7 +3603,7 @@
       - KBG: 100 🠚 95
     - FAF: 48 🠚 43
     - Landing Lag: 15F 🠚 10F
-  - Down Aerial (Air Stomp):
+  - Down Air (Air Stomp):
     - *Removed air stall*
     - *Attached hitboxes to hip/knee/foot*
     - *Added ground-only launcher hitbox with higher BKB and KBG*
@@ -3891,7 +3769,7 @@
       - BKB: 40/30 🠚 40
       - KBG: 100 🠚 105
     - FAF: 71 🠚 69
-  - Neutral Aerial (Spacing Swing):
+  - Neutral Air (Spacing Swing):
     - Hitbox Duration (early/late): F10-14/F15-22 🠚 F7-13/F14-18
     - Early
       - Damage (shoulder/arm/hilt/blade/tip): 7.5% 🠚 12.0/12.0/14.0/12.0/10.0%
@@ -3905,7 +3783,7 @@
       - KBG: 130 🠚 90
     - FAF: 60 🠚 42
     - Landing Lag: 8F 🠚 9F
-  - Forward Aerial (Aerial Smash):
+  - Forward Air (Aerial Smash):
     - *Wrist rotated outwards slightly to give the sword more horizontal range*
     - Hitbox Duration: F11-15 🠚 F14-17
     - Damage (shoulder/arm/hilt/blade/tip): 13.0% 🠚 14.0/14.0/15.0/14.0/10.0%
@@ -3915,18 +3793,18 @@
     - FAF: 52 🠚 47
     - Autocancel: F42 🠚 F35
     - Landing Lag: 14F 🠚 13F
-  - Back Aerial (Repositioning Slash):
+  - Back Air (Repositioning Slash):
     - Damage (shoulder/arm/hilt/blade/tip): 14.0% 🠚 15.0/15.0/17.0/15.0/12.0%
     - FAF: 55 🠚 36
     - Landing Lag: 11F 🠚 9F
-  - Up Aerial (Reaching Blade):
+  - Up Air (Reaching Blade):
     - Hitbox Duration: F13-18 🠚 F12-20
     - Damage (body/shoulder/arm/hilt/blade/tip): 11.0% 🠚 12.0/12.0/12.0/15.0/11.0/10.0%
     - Angle: 80 🠚 75
     - KBG: 94 🠚 105
     - FAF: 57 🠚 47
     - Landing Lag: 9F 🠚 12F
-  - Down Aerial (Cliff Striker):
+  - Down Air (Cliff Striker):
     - *Added late hit*
     - Hitbox Duration (early/late): F16-17 🠚 F16-17/F18-30
     - Damage (shoulder/arm/hilt/blade/tip): 15.0% 🠚 14.0/14.0/17.0/14.0/12.0%
@@ -4037,7 +3915,7 @@
     - Hitbox Duration: F18-19/F24-25 🠚 F12-14/F18-20
     - KBG: 74 🠚 83
     - FAF: 52 🠚 60
-  - Neutral Aerial:
+  - Neutral Air:
     - *Late hitbox matched to early hit*
     - Early
       - Damage: 10.0% 🠚 11.0%
@@ -4047,12 +3925,12 @@
       - Damage: 7.0% 🠚 8.0%
       - Angle: 42 🠚 361
     - Landing Lag: 8F 🠚 7F
-  - Forward Aerial:
+  - Forward Air:
     - *Can now reverse hit*
     - Damage (early/late): 7.0/6.0% 🠚 9.0/7.0%
     - Autocancel: F36 🠚 F23
     - Landing Lag: 6F 🠚 8F
-  - Back Aerial:
+  - Back Air:
     - *Removed landing hitbox*
     - Multihits
       - Angle (air-only): 38 🠚 367
@@ -4062,14 +3940,14 @@
       - *Can now reverse hit*
       - KBG: 95 🠚 115
     - Landing Lag: 18F 🠚 10F
-  - Up Aerial:
+  - Up Air:
     - *Hitboxes enlarged*
     - Hitbox Duration: F5-9 🠚 F4-12
     - Angle: 64 🠚 60
     - BKB: 40 🠚 45
     - KBG: 115 🠚 110
     - Landing Lag: 6F 🠚 7F
-  - Down Aerial:
+  - Down Air:
     - Hitbox Duration (multihits/launcher): F6-20/F22 🠚 F6-20/F22-24
     - Multihits
       - Angle: 98 🠚 367
@@ -4167,14 +4045,14 @@
   - Down Smash:
     - Damage (body/vine/tip): 8.0/10.0/12.0% 🠚 9.0/11.0/13.0%
     - KBG (body/vine/tip): 80/84/77 🠚 83/89/83
-  - Neutral Aerial:
+  - Neutral Air:
     - *Hitboxes enlarged*
     - Multihits
       - BKB: 35 🠚 45
     - Launcher
       - Angle: 43 🠚 361
     - Landing Lag: 16F 🠚 10F
-  - Forward Aerial:
+  - Forward Air:
     - *Hitboxes enlarged*
     - *Can now reverse hit*
     - Hitbox Duration: F14-18 🠚 F13-19
@@ -4197,7 +4075,7 @@
       - KBG: 90 🠚 55
     - FAF: 49 🠚 36
     - Landing Lag: 13F 🠚 9F
-  - Back Aerial:
+  - Back Air:
     - *Hitboxes enlarged and spread evenly across vines*
     - *Can now reverse hit*
     - Hit 1
@@ -4209,7 +4087,7 @@
     - FAF: 44 🠚 41
     - Autocancel: 43 🠚 39
     - Landing Lag: 7F 🠚 8F  
-  - Up Aerial:
+  - Up Air:
     - *Hitbox size decreased*
     - *Added hitbox below Ivysaur*
     - Hitbox Duration (bulb, body early/body late): F12-13 🠚 F11-12/F13-36
@@ -4220,7 +4098,7 @@
       - KBG: 70
     - FAF: 52 🠚 45
     - Landing Lag: 11F 🠚 10F
-  - Down Aerial:
+  - Down Air:
     - *Hitbox size decreased*
     - FAF: 64 🠚 54
     - Landing Lag: 13F 🠚 12F
@@ -4294,7 +4172,7 @@
   - Down Smash:
     - KBG: 79 🠚 85
     - FAF: 54 🠚 60
-  - Neutral Aerial (Flame Wheel):
+  - Neutral Air (Flame Wheel):
     - *Tail flame changed to sweetspot*
     - *Hitboxes enlarged*
     - *Added hip hitbox*
@@ -4305,7 +4183,7 @@
     - KBG (sweetspot/sourspot): 78 🠚 90/100
     - FAF: 40 🠚 36
     - Landing Lag: 10F 🠚 8F
-  - Forward Aerial (Dragon Claw):
+  - Forward Air (Dragon Claw):
     - *Hitboxes enlarged*
     - *Added claw sweetspot*
     - Hitbox Duration: F8-9/F10-12 🠚 F8-13
@@ -4315,7 +4193,7 @@
     - KBG (sweetspot/sourspot): 92 🠚 95/105
     - FAF: 46 🠚 36
     - Landing Lag: 19F 🠚 12F
-  - Back Aerial (Fire Lash):
+  - Back Air (Fire Lash):
     - *Tail flame hitbox changed to sweetspot on first active frame*
     - *Added hip hitbox*
     - *Can now reverse hit*
@@ -4324,14 +4202,14 @@
     - KBG (sourspot/sweetspot): 90/90 🠚 100/105
     - FAF: 46 🠚 38
     - Landing Lag: 20F 🠚 12F
-  - Up Aerial (Thrash):
+  - Up Air (Thrash):
     - Hitbox Duration: F12-15 🠚 F9-14
     - Damage: 13.0% 🠚 10.0%
     - BKB: 30 🠚 40
     - KBG: 105 🠚 114
     - FAF: 46 🠚 38
     - Landing Lag: 13F 🠚 12F
-  - Down Aerial (Dragon Hammer):
+  - Down Air (Dragon Hammer):
     - *Matched early sourspot damage/knockback with sweetspot*
     - BKB (early): 20 🠚 17
     - KBG: 100 🠚 90
@@ -4424,7 +4302,7 @@
       - BKB: 46 🠚 40
       - KBG: 76 🠚 80
     - FAF: 53 🠚 56
-  - Neutral Aerial (Jungle Spin):
+  - Neutral Air (Jungle Spin):
     - *Added late hit*
     - Hitbox Duration (early/late): F8-20 🠚 F5-8/F9-17
     - Early
@@ -4438,7 +4316,7 @@
       - BKB: 55
       - KBG: 70 🠚 90
     - FAF: 48 🠚 35
-  - Forward Aerial (Jungle Dropkick):
+  - Forward Air (Jungle Dropkick):
     - *Can now reverse hit*
     - Damage (early/late): 13.0/11.0% 🠚 12.0/9.0%
     - BKB: 30 🠚 35
@@ -4446,17 +4324,17 @@
     - FAF: 47 🠚 40
     - Autocancel: F26 🠚 F22
     - Landing Lag: 16F 🠚 11F
-  - Back Aerial (Leg Reversal):
+  - Back Air (Leg Reversal):
     - *Can now reverse hit*
     - *Priority shifted to sourspot*
     - Damage (sweetspot/sourspot): 9.0% 🠚 12.0/11.0%
     - Landing Lag: 7F 🠚 8F
-  - Up Aerial:
+  - Up Air:
     - Hitbox Duration: F4-7 🠚 F5-10
     - Damage: 7.0% 🠚 9.0%
     - KBG: 95 🠚 98
     - FAF: 36 🠚 38
-  - Down Aerial (Jungle Slam):
+  - Down Air (Jungle Slam):
     - *Changed to Sm4sh animation*
     - Hitbox Duration: F15-16 🠚 F13-15
     - Damage (sweetspot/sourspot): 13.0/10.0% 🠚 15.0/14.0%
@@ -4643,7 +4521,7 @@
       - BKB: 50
       - KBG: 80
     - FAF: 60 🠚 54
-  - Neutral Aerial (PK Love α):
+  - Neutral Air (PK Love α):
     - Animation Length: 44F 🠚 40F
     - Hitbox Duration (multihits/launcher): F7-21/F26 🠚 F4-16/F17-20
     - Multihits
@@ -4664,7 +4542,7 @@
       - KBG: 140 🠚 150
     - Autocancel: 37 🠚 32
     - Landing Lag: 12F 🠚 9F
-  - Forward Aerial (PK Love β)
+  - Forward Air (PK Love β)
     - *Added hip hitbox*
     - Animation length: 15F 🠚 13F
     - Hitbox Duration (early/late): F9-10/F11 🠚 F5-7/F8-10
@@ -4688,7 +4566,7 @@
         - Damage: 8.0% 🠚 7.0%
         - KBG: 93 🠚 94
     - Autocancel: 34 🠚 31
-  - Back Aerial (PK Bicycle Kick):
+  - Back Air (PK Bicycle Kick):
     - *Sweetspot moved to foot, sourspot moved to leg/hip*
     - Hitbox Duration (early/late): F15-19/F20-22 🠚 F12/F13-16
     - Early
@@ -4713,12 +4591,12 @@
         - KBG: 90 🠚 100
     - Autocancel: F1-2/F34 🠚 F1-3/F35
     - Landing Lag: 9F 🠚 10F
-  - Up Aerial (Flying Headbutt):
+  - Up Air (Flying Headbutt):
     - Hitbox Duration: F7-10 🠚 F5-9
     - Damage: 11.0% 🠚 10.0%
     - Angle: 80 🠚 70
     - Autocancel: F34 🠚 F1-3/F32
-  - Down Aerial (PK Tap):
+  - Down Air (PK Tap):
     - *Animation adjusted to three hits*
     - Animation Length: 56F 🠚 38F
     - Hitbox Duration: F10-12/F18-20/F26-28/F34-35 🠚 F4-6/F11-13/F19-21
@@ -4887,7 +4765,7 @@
   - Down Smash:
     - KBG: 96 🠚 94
     - FAF: 55 🠚 65
-  - Neutral Aerial:
+  - Neutral Air:
     - *Animation changed to centered spin*
     - Hitbox Duration (early/mid/late): F6-9/F10-19/F20-38 🠚 F7-10/F11-20/F21-39
     - Early
@@ -4904,7 +4782,7 @@
       - BKB: 15 🠚 25
       - KBG: 105 🠚 100
     - Landing Lag: 10F 🠚 7F
-  - Forward Aerial (Sonic Eagle):
+  - Forward Air (Sonic Eagle):
     - *Changed to axe kick*
     - Early
       - Sweetspot
@@ -4919,13 +4797,13 @@
       - Damage (sourspot): 9.5% 🠚 9.0%
     - FAF: 46 🠚 40
     - Landing Lag: 16F 🠚 11F  
-  - Back Aerial:
+  - Back Air:
     - *Changed to ProjectM-style animation*
     - *Added hip hitbox*
     - Hitbox Duration (early/late): F13-14/F15-19 🠚 F11-12/F13-17
     - KBG (early/late): 90/76 🠚 94/80
     - Landing Lag: 15F 🠚 10F
-  - Up Aerial:
+  - Up Air:
     - *Changed to ProjectM-style animation*
     - Hitbox Duration (hit 1/hit 2): F5-7/F14-15 🠚 F5-7/F10-11
     - Hit 1
@@ -4938,7 +4816,7 @@
       - BKB: 66 🠚 45
       - KBG: 68 🠚 85
     - Landing Lag: 13F 🠚 10F
-  - Down Aerial:
+  - Down Air:
     - *Horizontal speed increased*
     - *Animation duration decreased*
     - Hitbox Duration: F17-19/F20-32 🠚 F14-16/F17-29
@@ -5086,7 +4964,7 @@
     - Hitbox Duration: F14-22 🠚 F13-21
     - KBG: 80 🠚 85
     - FAF: 53 🠚 49
-  - Neutral Aerial:
+  - Neutral Air:
     - Hitbox Duration (early/late): F7-8/F9-29 🠚 F5-6/F7-28
     - Early
       - Angle: 50 🠚 60
@@ -5095,7 +4973,7 @@
     - Late
       - Angle: 80 🠚 75
     - Landing Lag: 9F 🠚 11F
-  - Forward Aerial (Giant Swing):
+  - Forward Air (Giant Swing):
     - *Hammer head changed to sweetspot*
     - Sourspot
       - Damage: 12.0% 🠚 13.0%
@@ -5106,7 +4984,7 @@
       - BKB: 15 🠚 20
       - KBG: 98 🠚 100
     - Landing Lag: 18F 🠚 14F  
-  - Back Aerial:
+  - Back Air:
     - *Changed to Brawl/ProjectM animation*
     - Hitbox Duration (early/late): F6-8/F9-20 🠚 F6-9/F10-21
     - Early
@@ -5121,14 +4999,14 @@
       - KBG: 100
     - FAF: 35 🠚 34
     - Landing Lag: 13F 🠚 11F
-  - Up Aerial (High Twirl):
+  - Up Air (High Twirl):
     - Multihits
       - Damage: 1.0% 🠚 1.3%
     - Launcher
       - Angle: 60 🠚 80
       - KBG: 147 🠚 160
     - Landing Lag: 13F 🠚 12F  
-  - Down Aerial (Dedede Smack):
+  - Down Air (Dedede Smack):
     - *Sourspot matched with sweetspot*
     - *Hitboxes repositioned to better match animation*
     - Hitbox Duration (early/late): F22-23 🠚 F18-22
@@ -5231,7 +5109,7 @@
     - *Hitboxes enlarged*
     - Damage: 6.5% 🠚 7.5%
     - FAF: 39 🠚 37
-  - Neutral Aerial:
+  - Neutral Air:
     - *Hitboxes enlarged*
     - Multihits
       - Damage: 1.5% 🠚 2.8%
@@ -5241,7 +5119,7 @@
       - KBG: 150 🠚 140
     - FAF: 54 🠚 45
     - Landing Lag: 13F 🠚 7F
-  - Forward Aerial:
+  - Forward Air:
     - *Hitboxes enlarged and given trample properties*
     - Hitbox Duration: F7-10 🠚 F6-12
     - Red
@@ -5260,7 +5138,7 @@
       - Damage: 13.6% 🠚 14.0%
     - Landing Lag: 9F 🠚 7F
     - FAF: 43 🠚 30
-  - Back Aerial:
+  - Back Air:
     - *Hitboxes enlarged and given trample properties*
     - Hitbox Duration: F10-14 🠚 F9-15
     - Red
@@ -5285,10 +5163,10 @@
     - FAF: 49 🠚 35
     - Autocancel: F34 🠚 F30
     - Landing Lag: 9F 🠚 8F
-  - Up Aerial:
+  - Up Air:
     - FAF: 35 🠚 34
     - Landing Lag: 18F 🠚 10F
-  - Down Aerial:
+  - Down Air:
     - FAF: 52 🠚 41
     - Landing Lag: 18F 🠚 12F
   - Pikmin Order (Neutral Special):
@@ -5391,7 +5269,7 @@
   - Down Smash:
     - *Hitboxes readjusted, knockback decreased*
     - FAF: 55 🠚 58
-  - Neutral Aerial:
+  - Neutral Air:
     - *Added late hit to hit 2*
     - Hitbox Duration (hit 1/hit 2 early/late): F10-14/F18-21 🠚 F6-8/F10-14/F15-26
     - Hit 2
@@ -5399,13 +5277,13 @@
         - Damage: 4.0% 🠚 6.0%
         - Angle: 75 🠚 60
     - Landing Lag: 5F 🠚 7F
-  - Forward Aerial:
+  - Forward Air:
     - *Hitboxes readjusted, knockback decreased*
     - *Can now reverse hit*
     - Angle (leg): 66 🠚 60
     - FAF: 28 🠚 31
     - Landing Lag: 9F 🠚 8F
-  - Back Aerial:
+  - Back Air:
     - *Fist hitbox changed to sweetspot*
     - *Attached hitboxes to arm and body*
     - *Added back shoulder hitbox*
@@ -5420,7 +5298,7 @@
       - Arm
         - Damage: 12.0% 🠚 13.0%
         - KBG: 107 🠚 100
-  - Up Aerial:
+  - Up Air:
     - *Foot hitbox changed to sweetspot*
     - Hitbox Duration (early/late): F10-11/F12-13 🠚 F9-12/F13-20
     - Early
@@ -5436,7 +5314,7 @@
       - BKB: 30 🠚 40
       - KBG: 90 🠚 80
     - Landing Lag: 13F 🠚 10F
-  - Down Aerial:
+  - Down Air:
     - *No longer resets horizontal momentum*
     - *Knee hitbox moved upwards toward hips*
     - Landing Lag: 12F 🠚 10F
@@ -5524,7 +5402,7 @@
     - Hitbox Duration: F7-8/F11-12/F16 🠚 F7-8/F11-12/F16-17
     - KBG (launcher): 160 🠚 180
     - FAF: 46 🠚 51
-  - Neutral Aerial:
+  - Neutral Air:
     - *Added late hit*
     - *Added chassis hitbox*
     - Hitbox Duration (early/late): F14-32 🠚 F12-18/F19-27
@@ -5543,7 +5421,7 @@
       - BKB: 40
       - KBG: 100
     - Landing Lag: 7F 🠚 9F
-  - Forward Aerial:
+  - Forward Air:
     - *Hitboxes now attached to arms*
     - *Added late hit*
     - Hitbox Duration (early/late): F6-8 🠚 F6-8/F9-20
@@ -5558,7 +5436,7 @@
       - KBG: 60
     - FAF: 36 🠚 33
     - Landing Lag: 9F 🠚 7F
-  - Back Aerial:
+  - Back Air:
     - *Split into light and heavy variants*
       - *Tap to perform a faster, weaker bair*
       - *Do a smash input to perform a slower, stronger bair with the jet boost*
@@ -5582,7 +5460,7 @@
       - KBG: 75/74 🠚 91
     - FAF: 53 🠚 46
     - Landing Lag (normal/boost): 13F 🠚 12/18F
-  - Up Aerial:
+  - Up Air:
     - *Hitboxes enlarged*
     - Multihits
       - Angle (ground/air): 120/240 🠚 85/367
@@ -5593,7 +5471,7 @@
       - KBG: 180 🠚 204
     - FAF: 52 🠚 49
     - Landing Lag: 13F 🠚 11F
-  - Down Aerial:
+  - Down Air:
     - Hitbox Duration (early/late): F20-21/F22-26 🠚 F18-21/F22-25
     - Early
       - Angle: 80/280/45/361 🠚 280
@@ -5722,7 +5600,7 @@
   - Angle: 48/42 🠚 30
   - KBG (early/late) 90/85 🠚 89/89
   - FAF: 50 🠚 54
-- Neutral Aerial:
+- Neutral Air:
   - *Hitboxes enlarged*
   - Hit 1
     - Damage: 8.5% 🠚 10.5%
@@ -5730,7 +5608,7 @@
   - Hit 2
     - Damage: 7.0% 🠚 9.0%
     - Angle: 361 🠚 35
-- Forward Aerial:
+- Forward Air:
   - *Added shoulder hitbox*
   - *Can now reverse hit*
   - Hitbox Duration: F14-15 🠚 F11-14
@@ -5739,7 +5617,7 @@
   - KBG (body/sword): 106 🠚 98/95
   - Autocancel: F38 🠚 F32
   - Landing Lag: 11F 🠚 9F
-- Back Aerial:
+- Back Air:
   - *Added shoulder hitbox*
   - *Can now reverse hit*
   - Hitbox Duration: F6-9 🠚 F5-11
@@ -5750,7 +5628,7 @@
   - FAF: 25 🠚 23
   - Autocancel: F24 🠚 F19
   - Landing Lag: 8F 🠚 7F
-- Up Aerial:
+- Up Air:
   - *Changed to a multihit*
   - Hitbox Duration (multihit/launcher): F7-17/F18-24
   - Multihits
@@ -5769,7 +5647,7 @@
     - Hitbox Size (arm/hilt/sword): 4.0/5.5/6.75u
   - FAF: 60 🠚 58
   - Landing Lag: 13F 🠚 11F
-- Down Aerial:
+- Down Air:
   - Landing Lag: 23F 🠚 17F
 - Zair:
   - Damage: 4.0% 🠚 6.0%
@@ -5853,14 +5731,14 @@
     - FAF: 48 🠚 60
   - Down Smash:
     - FAF: 35 🠚 46
-  - Neutral Aerial:
+  - Neutral Air:
     - *Late hitboxes enlarged to match early hit*
     - Startup: F7 🠚 F5
     - Late
       - BKB: 0 🠚 25
       - KBG: 100 🠚 81
     - Landing Lag: 9F 🠚 7F
-  - Forward Aerial:
+  - Forward Air:
     - *Added shoulder hitbox*
     - *Can now reverse hit*
     - Hitbox Duration: F7-9 🠚 F9-12
@@ -5872,7 +5750,7 @@
       - BKB: 45
       - KBG: 110
     - FAF: 41 🠚 37
-  - Back Aerial:
+  - Back Air:
     - *Tipper hitbox moved downward; hip hitbox slightly enlarged*
     - Hitbox Duration: F13-15 🠚 F7-11
     - Damage decreased [MISSING DATA]
@@ -5880,12 +5758,12 @@
     - KBG: 104 🠚 98
     - FAF: 45 🠚 38
     - Landing Lag: 15F 🠚 10F
-  - Up Aerial:
+  - Up Air:
     - *Hand hitbox enlarged and moved outward*
     - *Hitbox starts 1 frame earlier in animation, animation readjusted*
     - Hitbox Duration: F7-9 🠚 F7-11
     - FAF: 39 🠚 34
-  - Down Aerial:
+  - Down Air:
     - *Upper hitbox enlarged and moved upwards*
     - Hitbox Duration: F16-17 🠚 F13-15
     - BKB (ground/air): 6 🠚 30/6
@@ -6023,7 +5901,7 @@
     - BKB (hit 1/hit 2): 30/50 🠚 40/40
     - KBG: 70 🠚 98
     - Hitlag Multiplier: 1.0x 🠚 1.2x
-  - Neutral Aerial:
+  - Neutral Air:
     - *Added head intangibility during active frames*
     - *Early hit hitboxes enlarged*
     - Damage increased [MISSING DATA]
@@ -6036,7 +5914,7 @@
       - BKB: 20 🠚 30
       - KBG: 100 🠚 90
     - Landing Lag: 8F 🠚 7F
-  - Forward Aerial:
+  - Forward Air:
     - Early
       - Angle: 361 🠚 60
       - KBG: 100 🠚 80
@@ -6048,7 +5926,7 @@
       - BKB: 10 🠚 25
       - Hitlag Multiplier: 1.0x 🠚 1.2x
     - Landing Lag: 14F 🠚 10F
-  - Back Aerial:
+  - Back Air:
     - *Changed to a fireworks shot, a short ranged multihit*
     - Multihits
       - Damage: 0.5%
@@ -6062,7 +5940,7 @@
       - BKB: 40
       - KBG: 135
     - Landing Lag: 14F 🠚 12F
-  - Up Aerial:
+  - Up Air:
     - Early
       - Hitbox Duration: F6-7 🠚 F6-8
       - Damage (1/2/3 turnips): 8.0/10.0/13.0% 🠚 9.0/11.0/13.5%
@@ -6076,7 +5954,7 @@
     - FAF: 43 🠚 38
     - Autocancel: F39 🠚 F29
     - Landing Lag: 12F 🠚 9F
-  - Down Aerial:
+  - Down Air:
     - *Hitboxes enlarged and extended toward body*
     - Startup: F14 🠚 F11
     - Early
@@ -6228,13 +6106,13 @@
     - FAF 79 🠚 68
   - Down Throw:
     - FAF 40 🠚 30
-  - Neutral Aerial:
+  - Neutral Air:
     - *Added hitbox to cannon*
     - Cannon (new)
       - Damage: 2.0% 🠚 6.0%
       - Angle: 361 🠚 60
       - KBG: 150 🠚 90
-  - Forward Aerial:
+  - Forward Air:
     - *Added shoulder hitbox*
     - *Can now reverse hit*
     - Hitbox Duration (early/late): F9-11/F12-17 🠚 F7-11/F12-17
@@ -6249,7 +6127,7 @@
     - FAF: 41 🠚 35
     - Autocancel: F39 🠚 F30
     - Landing Lag: 11F 🠚 8F
-  - Back Aerial:
+  - Back Air:
     - Hitbox Duration (hit 1/hit 2/hit 3): F4-5/F7-8/F10-11 🠚 F4-5/F7-8/F9-10
     - Hit 1
       - BKB: 0/55 🠚 50
@@ -6262,7 +6140,7 @@
     - FAF: 45 🠚 40
     - Autocancel: F40 🠚 F30
     - Landing Lag: 20F 🠚 10F
-  - Up Aerial:
+  - Up Air:
     - *Added arm and shoulder hitboxes*
     - Projectile
       - Startup: F11 🠚 F9
@@ -6285,7 +6163,7 @@
         - Hitbox Size (shoulder/arm/hand): 4.25/4.5/4.5u
     - FAF: 54 🠚 49
     - Landing Lag: 20F 🠚 17F 
-  - Down Aerial:
+  - Down Air:
     - *Added shoulder hitbox*
     - Shoulder
       - Hitbox Duration: F19-21/F22-27
@@ -6375,7 +6253,7 @@
     - Startup: F14 🠚 F12
   - Down Smash:
     - KBG: 110 🠚 115
-  - Neutral Aerial:
+  - Neutral Air:
     - *Added hip hitboxes*
     - Startup: F8 🠚 F5
     - Hit 2
@@ -6387,7 +6265,7 @@
       - BKB: 20 🠚 45
       - KBG: 102 🠚 80
     - Landing Lag: 8F 🠚 7F
-  - Forward Aerial:
+  - Forward Air:
     - *Hip hitbox can now reverse hit*
     - *Animation duration decreased*
     - Startup: F9 🠚 F7
@@ -6397,7 +6275,7 @@
       - *Hitboxes enlarged, hip hitbox persists into late hit*
       - *Moved foot hitbox downward*
       - Hitbox Duration: F11-15 🠚 F11-18
-  - Back Aerial:
+  - Back Air:
     - *Can now reverse hit*
     - Early
       - *Sweetspot and outer hitboxes combined*
@@ -6414,11 +6292,11 @@
     - FAF: 49 🠚 42
     - Autocancel: 43 🠚 23
     - Landing Lag: 12F 🠚 10F
-  - Up Aerial:
+  - Up Air:
     - *Added chest and hip hitboxes*
     - Hitbox Duration: F6-10 🠚 F6-11
     - FAF: 40 🠚 33
-  - Down Aerial:
+  - Down Air:
     - *Can spike grounded opponents*
     - Startup: F15 🠚 F14
     - Late
@@ -6501,17 +6379,17 @@
       - Hitbox Duration: F6-7/F17-18 🠚 F6-8/F17-19
       - KBG: 102/105 🠚 107/110
     - FAF: 42 🠚 48
-  - Neutral Aerial:
+  - Neutral Air:
     - FAF: 49 🠚 46
     - Landing Lag: 8F 🠚 7F
-  - Forward Aerial:
+  - Forward Air:
     - Rosalina
       - *Hitboxes added to hip*
       - *Launcher can now reverse hit*
     - FAF: 55 🠚 50
     - Autocancel: 50 🠚 44
     - Landing Lag: 16F 🠚 10F
-  - Back Aerial:
+  - Back Air:
     - Rosalina
       - *Added hip hitboxes*
       - *Hitboxes enlarged*
@@ -6521,14 +6399,14 @@
       - KBG (early/late): 65 🠚 83/73
     - FAF: 55 🠚 40
     - Autocancel: 50 🠚 44
-  - Up Aerial:
+  - Up Air:
     - Rosalina
       - *Added hip hitboxes*
       - Damage (mid/late): 5.0/2.0% 🠚 6.0/4.0%
       - Autocancel: F1/F45 🠚 F2/F45
     - FAF: 50 🠚 47
     - Landing Lag: 11F 🠚 9F
-  - Down Aerial:
+  - Down Air:
     - Rosalina
       - *Added shin hitbox*
       - Damage (early/mid/late/last): 8.0/7.0/6.0/2.0% 🠚 9.0/8.0/7.0/4.0%
@@ -6698,7 +6576,7 @@
     - *Hip hitbox enlarged*
     - *Added chest hitbox*
     - FAF: 43 🠚 48
-  - Neutral Aerial:
+  - Neutral Air:
     - *Added late hit and shoulder hitbox*
     - *Removed hip hitbox*
     - *Hitboxes enlarged*
@@ -6715,7 +6593,7 @@
       - KBG: 140 🠚 128
     - FAF: 16 🠚 22 
     - Landing Lag: 10F 🠚 7F
-  - Forward Aerial:
+  - Forward Air:
     - *Matched sourspot with sweetspot*
     - *Added chest hitbox, hand hitbox enlarged*
     - Hitbox Duration: F10-12 🠚 F5-8
@@ -6725,7 +6603,7 @@
     - FAF: 37 🠚 30
     - Autocancel: F35 🠚 F29
     - Landing Lag: 13F 🠚 7F
-  - Back Aerial:
+  - Back Air:
     - *Hand hitbox enlarged*
     - Trip Chance: 0% 🠚 5%
     - Hitbox Duration: F11-F13 🠚 F7-F11
@@ -6736,7 +6614,7 @@
     - FAF: 38 🠚 29
     - Autocancel: F36 🠚 F34
     - Landing Lag: 16F 🠚 8F  
-  - Up Aerial:
+  - Up Air:
     - *Added chest hitbox*
     - *Hitboxes enlarged*
     - Hitbox Duration:* F5-8 🠚 F4-F10
@@ -6747,7 +6625,7 @@
     - FAF: 42 🠚 35
     - Autocancel: F40 🠚 F30
     - Landing Lag: 13F 🠚 7F  
-  - Down Aerial:
+  - Down Air:
     - *Hitboxes enlarged*
     - *Shoulder hitbox moved upward*
     - *Added late hit*
@@ -6896,7 +6774,7 @@
   - Down Smash:
     - Hitbox Duration: F11-12 🠚 F11-13
     - KBG: 92 🠚 99
-  - Neutral Aerial:
+  - Neutral Air:
     - *Early hitbox enlarged*
     - Startup: F12 🠚 F9
     - Hitbox Duration (early/late): F12-13/F14-19 🠚 F10-13/F14-23
@@ -6908,7 +6786,7 @@
       - Angle: 60 🠚 69
       - BKB: 30 🠚 40
       - KBG: 95 🠚 85
-  - Forward Aerial:
+  - Forward Air:
     - *Added shoulder hitbox*
     - *Can now reverse hit*
     - Hitbox Duration: F16-17 🠚 F13-16
@@ -6921,7 +6799,7 @@
       - KBG: 80
     - FAF: 49 🠚 46
     - Landing Lag: 11F 🠚 10F
-  - Back Aerial:
+  - Back Air:
     - *Thigh hitboxes enlarged*
     - *Launcher can now reverse hit*
     - Hit 1
@@ -6931,13 +6809,13 @@
       - KBG: 95 🠚 80
     - FAF: 41 🠚 34
     - Landing Lag: 10F 🠚 9F
-  - Up Aerial:
+  - Up Air:
     - *Multihit hitboxes extended into thighs*
     - Hitbox Duration (launcher): F22 🠚 F22-25
     - BKB (multihits): 55 🠚 50
     - KBG (launcher): 168 🠚 195
     - Landing Lag: 14F 🠚 12F
-  - Down Aerial:
+  - Down Air:
     - *Can drift left and right during descent and can be jump canceled after frame 30 on whiff*
     - Late
       - Angle: 60 🠚 75
@@ -7005,13 +6883,13 @@
     - FAF: 28 🠚 25
   - Forward Smash:
     - FAF: 68 🠚 55
-  - Neutral Aerial:
+  - Neutral Air:
     - *Hitboxes enlarged*
     - *Early foot hitbox pulled inwards*
     - Damage (late): 5.0% 🠚 7.0%
     - FAF: 46 🠚 43
     - Landing Lag: 6F 🠚 7F
-  - Forward Aerial:
+  - Forward Air:
     - *Hitboxes attached to hips*
     - Startup: F8 🠚 F6
     - Hit 1
@@ -7024,17 +6902,17 @@
     - FAF: 45 🠚 37
     - Autocancel: 30 🠚 26
     - Landing Lag: 11F 🠚 9F
-  - Back Aerial:
+  - Back Air:
     - *Attached sourspot to left leg*
     - Hitbox Duration: F7-9 🠚 F7-10
     - Damage (sourspot): 12.0% 🠚 9.0%
     - KBG: 105 🠚 113
     - FAF: 40 🠚 35
     - Landing Lag: 11F 🠚 10F
-  - Up Aerial:
+  - Up Air:
     - FAF: 36 🠚 30
     - Landing Lag: 10F 🠚 7F
-  - Down Aerial:
+  - Down Air:
     - FAF: 50 🠚 46
   - Soaring Axe Kick (Up Special 1):
     - *Can be canceled on hit into regular fall by holding shield at the apex*
@@ -7050,7 +6928,7 @@
     - *Can be edge canceled*
     - Max Horizontal Speed: 0.5 🠚 0.4
     - Landing Lag (leap/kick): 30/38F 🠚 16/31F
-  - Down Aerial:
+  - Down Air:
     - Landing Lag: 18F 🠚 12F
   - Down Throw:
     - Damage: 2.0/4.0% 🠚 1.0/6.0%
@@ -7195,7 +7073,7 @@
     - *Hitboxes extended to end of sword*
     - KBG increased (Hit 1/Hit 2) 50/50 🠚 60/57
     - FAF: 54 🠚 50
-  - Neutral Aerial:
+  - Neutral Air:
     - Hitbox Duration (early/late): F10-23 🠚 F6-14/F15-18
     - Early
       - Sourspot (inner blade/shoulder/arm)
@@ -7213,7 +7091,7 @@
       - KBG: 110
     - FAF: 50 🠚 36
     - Landing Lag: 9F 🠚 8F
-  - Forward Aerial:
+  - Forward Air:
     - Startup: F12 🠚 F10
     - Hit 1
       - Angle (arm, ground-only): 66 🠚 367
@@ -7226,12 +7104,12 @@
     - FAF: 47 🠚 41
     - Autocancel: 48 🠚 35
     - Landing Lag: 12F 🠚 11F
-  - Back Aerial:
+  - Back Air:
     - *Hitboxes readjusted for better coverage*
     - Hitbox Duration: F10-11 🠚 F9-13
     - KBG: 100 🠚 109
     - FAF: 38 🠚 37
-  - Up Aerial:
+  - Up Air:
     - *Hitboxes attached to sword/arm/shoulder*
     - Early
       - Hitbox Duration: F11-13 🠚 F10-14
@@ -7250,7 +7128,7 @@
       - KBG: 85 🠚 92
     - FAF: 45 🠚 43
     - Autocancel (early): F1-8 🠚 F1-4
-  - Down Aerial:
+  - Down Air:
     - Multihits
       - Angle (air-only): 220/250 🠚 365
     - Final Hit (new)
@@ -7442,16 +7320,16 @@
   - Down Smash:
     - Hitbox Duration (hit 1): F9 🠚 F9-10
     - KBG (hit 1/hit 2): 105/84 🠚 110/88
-  - Neutral Aerial:
+  - Neutral Air:
     - *Added shoulder hitbox*
     - Startup: F8 🠚 F6
     - FAF: 42 🠚 39
     - Landing Lag: 11F 🠚 8F
-  - Forward Aerial:
+  - Forward Air:
     - Startup: F12 🠚 F9
     - Hitbox Duration: F12-20 🠚 F9-23
     - Landing Lag: 12F 🠚 10F
-  - Back Aerial:
+  - Back Air:
     - *Removed late hitbox*
     - *Added sourspot on shoulder*
     - Hitbox Duration: F9-11 🠚 F9-12
@@ -7460,12 +7338,12 @@
     - KBG: 96 🠚 103
     - FAF: 48 🠚 42
     - Landing Lag: 11F 🠚 10F
-  - Up Aerial:
+  - Up Air:
     - Startup: F17 🠚 F14
     - KBG (launcher): 175 🠚 188
     - Additional Hitstun (multihits): 0F 🠚 1F
     - Landing Lag: 13F 🠚 11F
-  - Down Aerial:
+  - Down Air:
     - Landing Lag: 17F 🠚 13F
   - Stealth Burst (Side Special 1):
     - Minimum Time before Detonation: 19F 🠚 10F
@@ -7546,7 +7424,7 @@
       - KBG: 56 🠚 60
   - Up Smash:
     - KBG (sweetspot/midspot/sourspot): 84/89/92 🠚 91
-  - Neutral Aerial:
+  - Neutral Air:
     - *Launcher can now reverse hit*
     - Multihits
       - Angle (air-only): 367 🠚 366
@@ -7557,7 +7435,7 @@
     - SDI Multiplier increased [MISSING DATA]
     - FAF: 52 🠚 48
     - Landing Lag: 12F 🠚 10F
-  - Forward Aerial:
+  - Forward Air:
     - *Hitboxes attached to leg/hips*
     - *Added late hit and chest hitbox*
     - *Can now reverse hit*
@@ -7579,7 +7457,7 @@
       - BKB: 31 🠚 35
       - KBG: 92 🠚 90
     - FAF: 45 🠚 34
-  - Back Aerial:
+  - Back Air:
     - *Removed invincibility*
     - *Added chest sourspot, extended sourspot inwards*
     - *Can now reverse hit*
@@ -7590,7 +7468,7 @@
       - KBG (sweetspot/sourspot): 95/101 🠚 104/100
     - FAF: 50 🠚 39
     - Landing Lag: 10F 🠚 9F
-  - Up Aerial:
+  - Up Air:
     - *Reversed launch angle, no longer sends backwards*
     - *Added chest hitboxes*
     - Multihits
@@ -7600,7 +7478,7 @@
       - KBG: 152 🠚 161
     - Hitstun Multiplier increased [MISSING DATA]
     - Landing Lag: 14F 🠚 11F
-  - Down Aerial:
+  - Down Air:
     - *Hitboxes now attached to leg, knee, and foot*
     - *Added launcher sourspot hitboxes*
     - Hitbox Duration (early/late): F10-11 🠚 F6-8/F10-12
@@ -7719,7 +7597,7 @@
   - Down Smash:
     - Hitbox Z-Offset (hit 2): -6.0/-12.0/-17.0u 🠚 -8.4/-14.4/-19.4u
     - FAF: 41 🠚 45
-  - Neutral Aerial:
+  - Neutral Air:
     - *Hitboxes attached to blades*
     - Multihits
       - Hits: 7 🠚 4
@@ -7737,17 +7615,17 @@
       - KBG: 100 🠚 80
     - FAF: 55 🠚 48
     - Landing Lag: 14F 🠚 7F
-  - Forward Aerial:
+  - Forward Air:
     - *Changed to a single-hit sex kick*
     - *Hitboxes enlarged, added chest hitbox*
     - Hitbox Duration (early/late): F9-13/F14-19 🠚 F9-11/F12-15
     - FAF: 47 🠚 40
     - Landing Lag: 12F 🠚 8F
-  - Back Aerial:
+  - Back Air:
     - Hitbox Duration: F10-12 🠚 F10-17
     - Angle (sourspot): 66 🠚 43
     - KBG (sweetspot): 105 🠚 108
-  - Up Aerial:
+  - Up Air:
     - *Changed to a single-hit sex kick*
     - *Hitboxes enlarged*
     - Hitbox Duration (early/late): F9-12/F13-25 🠚 F9-12/F13-20
@@ -7756,7 +7634,7 @@
     - Hitbox Y-Offset (body): 9.6u 🠚 11.0u
     - FAF: 50 🠚 39
     - Landing Lag: 14F 🠚 10F
-  - Down Aerial:
+  - Down Air:
     - *Hitbox activity starts 1 frame earlier in animation*
     - *Added shoulder hitbox*
     - Sweetspot (ground-only)
@@ -7870,14 +7748,14 @@
     - Startup: F15 🠚 F13
     - KBG increased [MISSING DATA]
     - FAF: 55 🠚 59
-  - Forward Aerial:
+  - Forward Air:
     - *Foot hitbox enlarged and moved outward*
     - *Can now reverse hit*
     - Hitbox Duration: F5-8 🠚 F5-9
     - Damage: 7.65% 🠚 7.5%
     - FAF: 26 🠚 34
     - Landing Lag: 10F 🠚 8F
-  - Back Aerial:
+  - Back Air:
     - *Can now reverse hit*
     - Early
       - Damage: 11.8% 🠚 12.0%
@@ -7888,14 +7766,14 @@
       - KBG: 90 🠚 80
     - FAF: 41 🠚 38
     - Landing Lag: 13F 🠚 8F
-  - Up Aerial:
+  - Up Air:
     - *Late hit sends at a lower angle*
     - Early
       - BKB: 13 🠚 35
       - KBG: 100 🠚 85
     - FAF: 37 🠚 35
     - Landing Lag: 10F 🠚 8F
-  - Down Aerial:
+  - Down Air:
     - Multihits
       - Hitstun: 14/19/23F 🠚 22F
     - Launcher
@@ -8050,7 +7928,7 @@
       - KBG: 95 🠚 105
     - Levin
       - KBG: 95 🠚 98
-  - Neutral Aerial:
+  - Neutral Air:
     - *Added chest hitboxes*
     - Startup: F9 🠚 F5
     - Bronze
@@ -8066,7 +7944,7 @@
     - Levin
       - Damage: 11.5% 🠚 12.0%
     - Landing Lag: 11F 🠚 8F
-  - Forward Aerial:
+  - Forward Air:
     - *Can now reverse hit*
     - Startup: F12 🠚 F6
     - Bronze
@@ -8078,7 +7956,7 @@
     - Levin
       - Damage: 12.5% 🠚 12.0%
     - Landing Lag: 11F 🠚 9F
-  - Back Aerial:
+  - Back Air:
     - *Can now reverse hit*
     - Hitbox Duration (early/late): F9-10/F11-16 🠚 F9-11/F12-16
     - Bronze
@@ -8089,7 +7967,7 @@
       - Damage (early): 15.0% 🠚 13.0%
       - KBG: 93 🠚 111
     - Landing Lag: 11F 🠚 10F
-  - Up Aerial:
+  - Up Air:
     - Startup: F10 🠚 F5
     - Bronze
       - *Hitboxes enlarged*
@@ -8099,7 +7977,7 @@
       - Damage (early): 13.0% 🠚 12.0%
       - KBG (early): 90 🠚 104
     - FAF: F46 🠚 F44
-  - Down Aerial:
+  - Down Air:
     - Landing Lag: 16F 🠚 12F
   - Thunder (Neutral Special):
   - Arcfire (Side Special) / Fire Tome:
@@ -8206,19 +8084,19 @@
     - *Added final hit*
     - Hitbox Duration: F18-19/F23-24/F28-29/F35-36/F41-42 🠚 F18-20/F23-25/F28-30/F35-37/F41-43/F48
     - KBG (early/late): 95/90 🠚 97/92
-  - Neutral Aerial:
+  - Neutral Air:
     - *Added chest hitbox*
     - Startup: F13 🠚 F8
     - Shieldstun: 3F 🠚 2F
     - FAF: 60 🠚 50
     - Landing Lag: 6F 🠚 7F
-  - Forward Aerial:
+  - Forward Air:
     - *Added shoulder hitbox*
     - Startup: F14 🠚 F10
     - Damage (sourspot): 6.5% 🠚 7.0%
     - KBG: 100 🠚 104
     - Shieldstun: 5F 🠚 2F
-  - Back Aerial:
+  - Back Air:
     - *Added chest and right knee hitboxes*
     - *Hitbox activity shifted 1 frame forward in animation*
     - Startup: F19 🠚 F10
@@ -8231,7 +8109,7 @@
     - Shieldstun: 10F 🠚 2F
     - FAF: 55 🠚 49
     - Landing Lag: 11F 🠚 12F
-  - Up Aerial:
+  - Up Air:
     - *Added weaker late hit*
     - Startup: F14 🠚 F10
     - Hitbox Duration (hit 2):F24-26 🠚 F24-39
@@ -8239,7 +8117,7 @@
     - Angle (hit 1/hit 2 early/hit 2 late, air-only): 102/111/104 🠚 367
     - FKB (hit 1): 30 🠚 60
     - KBG (hit 2, early): 100 🠚 104
-  - Down Aerial:
+  - Down Air:
     - *Early hit spikes throughout entire blade*
     - Hitbox Duration: F14-15/F23-25 🠚 F12-13/F20-35
     - Hit 1
@@ -8330,7 +8208,7 @@
     - Hitbox Duration: F12-14 🠚 F11-14
     - Angle: 53 🠚 44
     - KBG: 91 🠚 87
-  - Neutral Aerial:
+  - Neutral Air:
     - *Matched late hit with mid hit*
     - Hitbox Duration (early/late): F7-8/F9-13/F14-19 🠚 F4-7/F8-16
     - Early
@@ -8342,7 +8220,7 @@
       - KBG: 81 🠚 88
     - FAF: 44 🠚 36
     - Landing Lag: 9F 🠚 7F
-  - Forward Aerial:
+  - Forward Air:
     - *Matched late hit with mid hit*
     - *Added body hitbox*
     - *Can now reverse hit*
@@ -8356,7 +8234,7 @@
       - KBG: 93 🠚 112
     - FAF: 44 🠚 41
     - Landing Lag: 16F 🠚 9F  
-  - Back Aerial:
+  - Back Air:
     - *Added body hitbox*
     - *Can now reverse hit*
     - Hitbox Duration (early/late): F12-13/F14-18 🠚 F9-11/F12-16
@@ -8367,7 +8245,7 @@
       - KBG: 100 🠚 101
     - FAF: 46 🠚 43
     - Landing Lag: 14F 🠚 10F
-  - Up Aerial:
+  - Up Air:
     - *Matched late hit with early hit*
     - *Added body and chest hitboxes*
     - Hitbox Duration: F6-9/F10-13 🠚 F5-13
@@ -8377,7 +8255,7 @@
     - KBG: 100 🠚 115
     - FAF: 46 🠚 43
     - Landing Lag: 9F 🠚 7F
-  - Down Aerial:
+  - Down Air:
     - *Removed landing hitbox*
     - *Hitboxes enlarged*
     - *Can now reverse hit*
@@ -8487,13 +8365,13 @@
   - Down Smash:
     - *Hitboxes enlarged and given fire properties*
     - KBG (launcher): 155 🠚 160
-  - Neutral Aerial:
+  - Neutral Air:
     - *Early hit hitboxes attached to legs*
     - Startup: F6 🠚 F3
     - Damage increased [MISSING DATA]
     - KBG increased [MISSING DATA]
     - Landing Lag: 10F 🠚 8F  
-  - Forward Aerial:
+  - Forward Air:
     - *Body hitbox moved towards body and enlarged, lasts as long as other hitboxes*
     - *Sweetspot enlarged and extended towards body*
     - *Priority shifted to sourspot*
@@ -8502,7 +8380,7 @@
     - BKB (late): 30 🠚 40
     - FAF decreased 45 🠚 37
     - Autocancel pushed back [MISSING DATA]
-  - Back Aerial:
+  - Back Air:
     - *Body hitbox moved towards body and enlarged, lasts as long as other hitboxes*
     - *Sweetspot enlarged and extended towards body*
     - *Can now reverse hit*
@@ -8512,7 +8390,7 @@
     - KBG (sweetspot): 100 🠚 104
     - FAF: 42 🠚 37
     - Landing Lag: 14F 🠚 10F  
-  - Up Aerial:
+  - Up Air:
     - *Added air-only hitboxes to first two hits*
     - *Added body hitbox*
     - Hit 1
@@ -8523,7 +8401,7 @@
       - Damage: 6.0% 🠚 7.0%
       - KBG: 120 🠚 125
     - Landing Lag: 11F 🠚 9F
-  - Down Aerial:
+  - Down Air:
     - Hit 1
       - Damage: 3.0% 🠚 2.0%
       - Angle (ground-only): 275
@@ -8689,7 +8567,7 @@
   - Damage: 10.0/8.0% 🠚 10.5/9.0%
   - BKB: 28 🠚 25
   - KBG: 25 🠚 75
-- Neutral Aerial (JF. Short II):
+- Neutral Air (JF. Short II):
   - Damage: 8.0/4.5% 🠚 6.5/4.0%
   - Early
     - BKB: 20 🠚 25
@@ -8698,22 +8576,22 @@
     - *Hitboxes enlarged to match early hit*
     - Additional Hitstun: 4F 🠚 7F
   - Landing Lag: 5F 🠚 7F
-- Forward Aerial (Tobigeri/J. Forward II):
+- Forward Air (Tobigeri/J. Forward II):
   - *Sourspot changed to capsule hitbox, inner portion brought towards back knee*
   - Damage (early sweetspot/early sourspot/late sweetspot/late sourspot): 12.0/9.0/10.0/8.0% 🠚 8.0/6.0/6.5/5.0%
   - BKB (early sweetspot/early sourspot/late sweetspot/late sourspot): 40/25/40/25 🠚 45/30/45/30
   - KBG (sweetspot/sourspot): 45/30 🠚 55/40
   - Landing Lag: 11F 🠚 9F
-- Back Aerial (J. Roundhouse II):
+- Back Air (J. Roundhouse II):
   - *Can be reversed by holding the attack button on frame 6*
   - Damage: 13/16% 🠚 14%
   - KBG: 100 🠚 120
-- Up Aerial (J. Strong II):
+- Up Air (J. Strong II):
   - Damage: 5.0/6.0% 🠚 5.0/4.5%
   - FKB (hit 1): 20 🠚 35
   - KBG (hit 2): 130 🠚 190
   - Landing Lag: 11F 🠚 10F
-- Down Aerial (J. Fierce II):
+- Down Air (J. Fierce II):
   - *Stun hitbox no longer hits aerial opponents*
   - Damage (early): 15.0/12.0/11.0% 🠚 15.0/11.0/10.0%
   - Damage (late): 7.0% 🠚 8.0%
@@ -8861,7 +8739,7 @@
     - Hit 2
       - *Extended hitbox to end of sword*
     - FAF: 50 🠚 55
-  - Neutral Aerial:
+  - Neutral Air:
     - *Restored Smash4 animation*
     - *Added shoulder hitbox*
     - Hitbox Duration: F5-15 🠚 F8-18
@@ -8883,7 +8761,7 @@
       - KBG: 80 🠚 95
     - SDI Multiplier: 0.8x 🠚 1.0x
     - Autocancel: F31 🠚 F40
-  - Forward Aerial:
+  - Forward Air:
     - *Tipper hitbox moved inwards*
     - *Added hitboxes to cover trail*
     - Hitbox Duration (early/late): F18-19/F20-25 🠚 F15-17/F18-23
@@ -8898,7 +8776,7 @@
         - Angle: 45 🠚 60
       - KBG: 83 🠚 73
     - Landing Lag: 11F 🠚 13F
-  - Back Aerial:
+  - Back Air:
     - *Hitboxes attached to sword*
     - *Sweetspot extended outwards, tipper brought inwards*
     - Hitbox Duration (early/late): F11-12 🠚 F10-12/F13-16
@@ -8911,7 +8789,7 @@
     - FAF: 42 🠚 40
     - Autocancel pushed forward [MISSING DATA]
     - Landing Lag: 8F 🠚 10F
-  - Up Aerial:
+  - Up Air:
     - Hitbox Duration (early/late); F8-9/F10-23 🠚 F7-9/F10-28
     - Early
       - Damage (tipper): 11.0% 🠚 12.0%
@@ -8919,7 +8797,7 @@
     - Late
       - *Hitboxes enlarged*
     - Landing Lag: 9F 🠚 11F
-  - Down Aerial:
+  - Down Air:
     - Early
       - *Matched ground and air hitboxes and extended into body*
       - Damage (body/blade/tipper): 13.0% 🠚 15.0/15.0/13.0%
@@ -9093,7 +8971,7 @@
     - Back Leg
       - Damage (sourspot): 9.0% 🠚 10.0%
     - FAF: 49 🠚 53
-  - Neutral Aerial:
+  - Neutral Air:
     - Early
       - Hitbox Duration: F5-6 🠚 F5-14
       - Sweetspot
@@ -9116,7 +8994,7 @@
         - BKB: 45 🠚 50
     - FAF: 47 🠚 43
     - Landing Lag: 10F 🠚 9F
-  - Forward Aerial:
+  - Forward Air:
     - Hitbox Duration: F9-12 🠚 F9-13
     - Sweetspot
       - Damage: 9.0% 🠚 1.0/8.0%
@@ -9128,7 +9006,7 @@
       - KBG: 95 🠚 85
     - FAF: 36 🠚 33
     - Landing Lag: 8F 🠚 10F
-  - Back Aerial:
+  - Back Air:
     - *The wing flap can be charged by holding Attack after frame 10 to give a boost in momentum*
       - *Charging increases both damage and distance gained from the wing flap*
     - Hitbox Duration (early/late): F13/F14-16 🠚 F13-14/F15-17
@@ -9144,7 +9022,7 @@
       - Damage: 9.0% 🠚 10.0%
       - Hitbox Y2-Offset: 12.2u 🠚 11.9u
       - Hitbox Z2-Offset: -21.0u 🠚 -19.3u
-  - Up Aerial:
+  - Up Air:
     - Hitbox Duration: F7-12 🠚 F6-11
     - Sweetspot
       - Damage: 10.0% 🠚 1.0/9.0%
@@ -9156,7 +9034,7 @@
       - BKB: 55 🠚 85
       - KBG: 100 🠚 75
     - Landing Lag: 9F 🠚 12F
-  - Down Aerial:
+  - Down Air:
     - *No longer stalls and falls*
     - *Removed landing hitbox*
     - *All hitbox sizes reduced*
@@ -9354,7 +9232,7 @@
       - BKB: 150
       - KBG: 10
       - Additional Hitstun: 5F
-  - Neutral Aerial:
+  - Neutral Air:
     - Hitbox Duration (early/late): F9-17/F18-25 🠚 F6-14/F15-22
     - Early
       - Damage: 8.0% 🠚 9.0%
@@ -9374,7 +9252,7 @@
     - Hitlag Multiplier: 1.0 🠚 1.8
     - SDI Multiplier increased [MISSING DATA]
     - Landing Lag: 10F 🠚 8F
-  - Forward Aerial:
+  - Forward Air:
     - Hit 1
       - *Added shin hitbox*
       - Bounce Speed: 1.5 🠚 1.4
@@ -9401,7 +9279,7 @@
       - FAF: 47 🠚 45
       - Landing Lag: 12F 🠚 10F
       - Bullet Arts Extension Additional Landing Lag: 6F 🠚 3F
-  - Back Aerial:
+  - Back Air:
     - *Sourspot extended into body, sweetspot enlarged*
     - *Attached hitboxes to legs*
     - *Priority shifted to sourspot*
@@ -9422,7 +9300,7 @@
       - KBG: 70
     - Hitbox Size (foot/knee/hip/front leg): 5.5/4.5/4.0/4.0u 🠚 5.0/4.0/3.5/3.5u
     - Bullet Arts Extension Additional Landing Lag: 6F 🠚 3F
-  - Up Aerial:
+  - Up Air:
     - Hitbox Duration: F9-18 🠚 F8-14
     - Normal
       - Angle: 60 🠚 71
@@ -9437,7 +9315,7 @@
       - Rehit Rate: 5F 🠚 7F
       - Additional Landing Lag: 6F 🠚 3F
     - FAF: 40F 🠚 37F
-  - Down Aerial:
+  - Down Air:
     - Late
       - Damage: 7.0/8.0/9.0% 🠚 8.0%
       - Angle: 50/270 🠚 50
@@ -9626,13 +9504,13 @@
     - FAF: 58 🠚 63
   - Down Smash:
     - FAF: 56 🠚 60
-  - Neutral Aerial:
+  - Neutral Air:
     - *Added body hitbox*
     - Angle: 361 🠚 55
     - BKB: 35 🠚 50
     - FAF 33 🠚 32
     - Landing Lag: 5F 🠚 7F
-  - Forward Aerial:
+  - Forward Air:
     - Hitbox Duration: F10-11/F12-21 🠚 F8-10/F11-17
     - Early
       - *Sourspot pulled in towards body, sweetspot extended outwards*
@@ -9643,7 +9521,7 @@
       - KBG: 78 🠚 88
     - FAF: 42 🠚 40
     - Landing Lag: 12F 🠚 9F
-  - Back Aerial:
+  - Back Air:
     - *Attached hitboxes to gun and arm*
     - *Sweetspot moved outwards and enlarged, sourspot extended further into body*
     - Hitbox Duration: F7-11 🠚 F6-10
@@ -9656,14 +9534,14 @@
       - BKB: 18 🠚 25
       - KBG: 101 🠚 105
     - Landing Lag: 6F 🠚 8F
-  - Up Aerial:
+  - Up Air:
     - *Animation slowed during first hit*
     - *Added hip hitbox, all hitboxes enlarged*
     - Hitbox Duration: F12-15/F17-20 🠚 F7-11/F13-18
     - KBG (hit 1/hit 2): 20/160 🠚 50/165
     - FAF: 44 🠚 40
     - Landing Lag: 6F 🠚 7F
-  - Down Aerial:
+  - Down Air:
     - Hitbox Duration: F16-17 🠚 F16-18
     - Sourspot
       - BKB: 30 🠚 15
@@ -9828,7 +9706,7 @@
     - Angle (launcher): 361 🠚 100
     - KBG (launcher): 130 🠚 225
     - FAF (on-hit): 55 🠚 51
-  - Neutral Aerial:
+  - Neutral Air:
     - Hitbox Duration (early/late): F5-8/F9-19 🠚 F5-8/F9-18
     - Damage (early): 13.0% 🠚 10.0%
     - Early
@@ -9839,7 +9717,7 @@
       - KBG: 100 🠚 95
     - FAF: 48 🠚 38
     - Landing Lag: 7F 🠚 8F
-  - Forward Aerial:
+  - Forward Air:
     - *Hitboxes enlarged, body hitbox moved inwards*
     - Startup: F16 🠚 F12
     - Sweetspot
@@ -9851,7 +9729,7 @@
       - KBG: 71 🠚 86
     - FAF: 57 🠚 45
     - Landing Lag: 13F 🠚 12F
-  - Back Aerial:
+  - Back Air:
     - *Can now reverse hit*
     - Hitbox Duration: F6-7/F8-13 🠚 F5-7/F8-18
     - Early
@@ -9864,7 +9742,7 @@
       - KBG: 87 🠚 90
     - FAF: 54 🠚 32
     - Landing Lag: 11F 🠚 8F
-  - Up Aerial:
+  - Up Air:
     - *Reworked to single-hit kick akin to Peach’s Melee up air*
     - Hitbox Duration: F7-11
     - Damage: 8.0%
@@ -9872,7 +9750,7 @@
     - KBG: 110 🠚 95
     - FAF: 46 🠚 33
     - Landing Lag: 7F 🠚 8F
-  - Down Aerial:
+  - Down Air:
     - *Hitboxes enlarged*
     - *Added ground-only hitboxes to keep opponents grounded*
     - Startup: F8 🠚 F12
@@ -10001,19 +9879,19 @@
     - FAF: 48 🠚 53
   - Down Smash:
     - FAF: 58 🠚 62
-  - Neutral Aerial:
+  - Neutral Air:
     - *Late hitbox sizes now match early hit; tipper moved outward*
     - Hitbox Duration: F8-20 🠚 F8-21
     - Damage (late, sweetspot/sourspot): 8.0/5.0% 🠚 9.0/6.0%
     - KBG (sweetspot): 62 🠚 73
     - Landing Lag: 12F 🠚 9F  
-  - Forward Aerial:
+  - Forward Air:
     - *Can now reverse hit*
     - Hitbox Duration (launcher): F16-17 🠚 F16-18
     - FKB (autolink): 30/40/45 🠚 50
     - FAF: 42 🠚 38
     - Landing Lag: 16F 🠚 11F  
-  - Back Aerial:
+  - Back Air:
     - *Can now reverse hit*
     - *Added hitbox to right knee*
     - Startup: F10 🠚 F8
@@ -10024,7 +9902,7 @@
     - FAF: 48 🠚 43
     - Autocancel: 42 🠚 31
     - Landing Lag: 17F 🠚 13F
-  - Up Aerial:
+  - Up Air:
     - *Sourspot hitbox enlarged*
     - Hitbox Duration: F11-13 🠚 F11-21
     - Sweetspot
@@ -10034,7 +9912,7 @@
       - Angle (sourspot, early/late): 86/86 🠚 84/78
       - KBG (sourspot): 62 🠚 60
     - Landing Lag: 14F 🠚 12F
-  - Down Aerial:
+  - Down Air:
     - *Ridley no longer dives during the move*
     - FAF: 46 🠚 80
     - Landing Lag: 32F 🠚 14F
@@ -10129,13 +10007,13 @@
     - Damage: 12.0/14.0/16.0% 🠚 13.0/15.0/17.5%
     - Angle: 48 🠚 40
     - KBG (sourspot/midspot/sweetspot): 77/85/85 🠚 83/83/80
-  - Neutral Aerial:
+  - Neutral Air:
     - *Hitboxes attached to whip*
     - Damage (multihit): 1.4% 🠚 1.9%
     - Angle (multihit) altered [MISSING DATA]
     - SDI Multiplier increased [MISSING DATA]
     - Landing Lag: 14F 🠚 8F
-  - Forward Aerial:
+  - Forward Air:
     - *Can now reverse hit*
     - *Hitboxes enlarged*
     - Hitbox Duration: F14 🠚 F13-14
@@ -10151,7 +10029,7 @@
       - Angle (high/mid/low): 361/361/40 🠚 40/40/40
       - BKB: 80 🠚 70
       - KBG: 55 🠚 67
-  - Back Aerial:
+  - Back Air:
     - *Hitboxes enlarged*
     - *Can now reverse hit*
     - Angle (low/high angled): 361/361 🠚 40/45
@@ -10165,7 +10043,7 @@
     - Tipper
       - Damage: 12.0% 🠚 14.0%
       - KBG: 75 🠚 76
-  - Up Aerial:
+  - Up Air:
     - *Hitboxes enlarged*
     - Inner
       - Damage: 2.0% 🠚 5.0%
@@ -10174,7 +10052,7 @@
     - Tipper
       - Damage: 12.0% 🠚 11.5%
       - KBG: 75 🠚 83
-  - Down Aerial:
+  - Down Air:
     - FAF (Hit): 28 🠚 25
     - Landing Lag: 26F 🠚 16F
   - Axe (Neutral Special):
@@ -10294,14 +10172,14 @@
     - *Hitboxes enlarged*
     - Hitbox Duration (hit 1/hit 2): F14-15/F20-21 🠚 F13-14/F18-20
     - KBG (sourspot/midspot/sweetspot): 77/82/85 🠚 85/85/82
-  - Neutral Aerial:
+  - Neutral Air:
     - *Hitboxes reshaped to match animation*
     - Multihits
       - Damage: 1.0% 🠚 1.2%
     - Launcher
       - Angle: 50 🠚 361
     - Landing Lag: 14F 🠚 8F
-  - Forward Aerial:
+  - Forward Air:
     - *Hitboxes enlarged*
     - *Can now reverse hit*
     - Hitbox Duration: F14 🠚 F14-15
@@ -10318,7 +10196,7 @@
       - BKB: 80 🠚 60
       - KBG: 55 🠚 60
     - Landing Lag: 10F 🠚 12F
-  - Back Aerial:
+  - Back Air:
     - *Hitboxes enlarged*
     - *Can now reverse hit*
     - Sourspot
@@ -10330,7 +10208,7 @@
       - Angle: 361 🠚 38
       - KBG: 70 🠚 88
     - Landing Lag: 10F 🠚 12F
-  - Up Aerial:
+  - Up Air:
     - *Hitboxes enlarged*
     - Sourspot
       - Damage: 2.0% 🠚 5.0%
@@ -10342,7 +10220,7 @@
       - Damage: 12.0% 🠚 9.5%
       - Angle: 90 🠚 285
     - Landing Lag: 10F 🠚 12F
-  - Down Aerial:
+  - Down Air:
     - *Can now drift around during startup*
     - *Hitboxes enlarged and moved lower*
     - Hitbox Duration: F13-14/F15-36 🠚 F16-17/F18-39
@@ -10472,7 +10350,7 @@
     - Hit 2
       - Damage: 11.5/12.5% 🠚 12.0%
       - Angle: 47/77 🠚 45
-  - Neutral Aerial:
+  - Neutral Air:
     - *Added hip hitbox*
     - *Tipper hitboxes moved outwards*
     - KBG (hit 1): 53 🠚 50
@@ -10482,7 +10360,7 @@
       - Angle: 50 🠚 55
       - KBG: 105 🠚 110
       - Shieldstun: 3F 🠚 2F
-  - Forward Aerial:
+  - Forward Air:
     - *Added shoulder hitbox*
     - *Tipper and hilt hitboxes moved outwards*
     - *Torso hitbox decreased on first active frame to match animation*
@@ -10492,7 +10370,7 @@
     - BKB: 53 🠚 43
     - KBG: 80 🠚 95
     - Landing Lag: 8F 🠚 9F
-  - Back Aerial:
+  - Back Air:
     - *Can now reverse hit*
     - *Tipper and hilt hitboxes moved outwards*
     - *Removed horizontal displacement on sword hitboxes*
@@ -10500,7 +10378,7 @@
     - Angle: 361 🠚 42
     - KBG: 106 🠚 108
     - Landing Lag: 10F 🠚 13F
-  - Up Aerial:
+  - Up Air:
     - *Tipper hitbox moved outwards*
     - *Hilt hitbox enlarged and moved outwards*
     - Hitbox Duration (early/late): F5-12 🠚 F5-11
@@ -10514,7 +10392,7 @@
       - VKV: 45
       - KBG: 110
     - Landing Lag: 8F 🠚 9F
-  - Down Aerial:
+  - Down Air:
     - *Added late hit that sends up*
     - Hitbox Duration (early/late): F16-17 🠚 F14-15/F16-20
     - Early
@@ -10689,7 +10567,7 @@
       - KBG: 108
       - Hitbox Size (flame tips): 4.5u 🠚 4.0u
     - FAF: 68
-  - Neutral Aerial (Phaze Shock):
+  - Neutral Air (Phaze Shock):
     - *Changed to an electric multihit similar to Mewtwo*
     - Multihits
       - Hitbox Duration: F8-9/F12-13/F16-17/F20-21/F24-25/F28-29/F32-33
@@ -10706,7 +10584,7 @@
       - Hitbox Offset: 0.0/9.0/1.5u 🠚 0.0/9.5/0.0u
     - FAF: 56
     - Landing Lag: 9F 🠚 10F
-  - Forward Aerial (Aerial Claw):
+  - Forward Air (Aerial Claw):
     - *Changed to a claw swipe similar to Wolf*
     - Hitbox Duration: F8-11 🠚 F7-10
     - Damage (arm/hand): 8.5% 🠚 9.0/9.5%
@@ -10716,7 +10594,7 @@
     - Hitbox Size (hand): 6.0u 🠚 5.0u
     - FAF: 60 🠚 34
     - Landing Lag: 14F 🠚 9F
-  - Back Aerial (Flying Back Kick):
+  - Back Air (Flying Back Kick):
     - *Added hip hitbox*
     - *Can now reverse hit*
     - Hitbox Duration (early/late): F9-10/F11-14 🠚 F8-9/F10-22
@@ -10728,7 +10606,7 @@
     - Hitbox X-Offset (knee/foot): 2.0/6.5u 🠚 3.0/6.0u
     - FAF: 42 🠚 39
     - Landing Lag: 14F 🠚 11F
-  - Up Aerial:
+  - Up Air:
     - *Changed to an overhead arm sweep*
     - Hitbox Duration: F6-13 🠚 F6-11
     - Damage: 11.0%
@@ -10738,7 +10616,7 @@
     - Hitbox Size (arm/hand): 4.0/4.0u 🠚 4.0/4.5u
     - FAF: 32
     - Landing Lag: 18F 🠚 10F
-  - Down Aerial:
+  - Down Air:
     - Hitbox Duration (early/late): F17-18/F19-21/F22-23 🠚 F11-13/F14-17
     - Early
       - KBG (ground/air): 85 🠚 80/65
@@ -10875,7 +10753,7 @@
     - KBG (sweetspot): 96 🠚 92
   - Down Smash:
     - FAF: 64 🠚 70
-  - Neutral Aerial:
+  - Neutral Air:
     - *Hitboxes enlarged*
     - Hitbox Duration (early/late): F7-8/F9-30 🠚 F4-6/F7-27
     - Early
@@ -10884,7 +10762,7 @@
       - Angle: 361 🠚 35
       - KBG: 90 🠚 120
     - Landing Lag: 9F 🠚 8F
-  - Forward Aerial:
+  - Forward Air:
     - *Sourspot extended into body*
     - *Can now reverse hit*
     - Hitbox Duration: F11-14/F15-17 🠚 F10-13/F14-20
@@ -10895,7 +10773,7 @@
     - FAF: 58 🠚 42
     - Autocancel: F40 🠚 F29
     - Landing Lag: 11F 🠚 10F
-  - Back Aerial:
+  - Back Air:
     - *Added early and late hits*
     - *Added shoulder hitbox*
     - *Can now reverse hit*
@@ -10920,10 +10798,10 @@
       - Hitbox Size (shoulder/arm/hand): 5.0/5.0/7.4u
     - FAF: 60 🠚 45
     - Landing Lag: 14F 🠚 12F
-  - Up Aerial (Kremling Krown):
+  - Up Air (Kremling Krown):
     - FAF: 57 🠚 54
     - Landing Lag: 13F 🠚 12F
-  - Down Aerial:
+  - Down Air:
     - FAF: 62 🠚 47 
     - Landing Lag: 14F 🠚 13F 
   - Blunderbuss (Neutral Special):
@@ -10989,7 +10867,7 @@
   - Down Smash:
     - *Hitboxes enlarged and moved outward*
     - KBG decreased 110 🠚 109
-  - Neutral Aerial:
+  - Neutral Air:
     - *Added hip hitbox, hitboxes enlarged*
     - Early
       - Hitbox Duration: F5-7 🠚 F3-7
@@ -11002,12 +10880,12 @@
       - BKB: 13 🠚 20
       - KBG: 90 🠚 85
     - Landing Lag: 6F 🠚 7F
-  - Forward Aerial:
+  - Forward Air:
     - Bullet Lifetime: 14F 🠚 10F
     - Landing Lag: 14F 🠚 10F
-  - Back Aerial:
+  - Back Air:
     - Landing Lag: 14F 🠚 12F
-  - Up Aerial:
+  - Up Air:
     - *Added body hitbox*
     - Hitbox Duration (early/late): F6-7/F8-31 🠚 F6-8/F9-32
     - Early
@@ -11021,7 +10899,7 @@
       - BKB: 30 🠚 50
       - KBG: 100 🠚 60
     - KBG: 100 🠚 104
-  - Down Aerial:
+  - Down Air:
     - Hitbox Duration (early/late): F11-12/F13-28 🠚 F11-13/F14-39
     - Early
       - Damage: 10.0% 🠚 12.0%
@@ -11190,7 +11068,7 @@
     - BKB: 60
     - KBG: 40
   - FAF: 42 🠚 35
-- Neutral Aerial:
+- Neutral Air:
   - *All hitboxes enlarged; late hitboxes enlarged to match early hit*
   - Early
     - Damage: 8.0% 🠚 12.0%
@@ -11201,7 +11079,7 @@
     - KBG: 45 🠚 50
     - Additional Hitstun: 4F 🠚 7F
   - Landing Lag: 5F 🠚 7F
-- Forward Aerial:
+- Forward Air:
   - *Sourspot changed to capsule hitbox, inner portion brought towards back knee*
   - Early
     - Sweetspot
@@ -11222,12 +11100,12 @@
       - BKB: 65 🠚 60
       - LBG: 55 🠚 65
   - Landing Lag: 11F 🠚 10F
-- Back Aerial:
+- Back Air:
   - *Can be reversed by holding the attack button on frame 6*
   - Damage: 13.0/16.0% 🠚 14.0%
   - BKB: 21 🠚 20
   - KBG: 90 🠚 115
-- Up Aerial:
+- Up Air:
   - *Added knee and thigh hitboxes*
   - *Added late hit*
   - Hitbox Duration (early/late): F5-9 🠚 F5-7/F8-18
@@ -11248,7 +11126,7 @@
       - BKB: 40
       - KBG: 80
   - Landing Lag: 11F 🠚 8F
-- Down Aerial:
+- Down Air:
   - *Stun hitbox no longer hits aerial opponents*
   - Additional Hitstun: 40F 🠚 27F
   - Landing Lag: 15F 🠚 12F
@@ -11394,7 +11272,7 @@
       - BKB: 73 🠚 103
       - KBG: 71 🠚 70
     - FAF (whiff/hit): 58/29 🠚 65/36
-  - Neutral Aerial:
+  - Neutral Air:
     - Early
       - *Hitbox size increased*
       - Damage: 13.0% 🠚 12.0%
@@ -11407,7 +11285,7 @@
       - BKB: 25 🠚 30
       - KBG: 106 🠚 100
     - Landing Lag: 11F 🠚 9F
-  - Forward Aerial:
+  - Forward Air:
     - *Hip hitbox moved inwards*
     - *Fair can now reverse hit*
     - Early
@@ -11424,7 +11302,7 @@
     - FAF: 45 🠚 42
     - Autocancel: F46 🠚 F30
     - Landing Lag: 14F 🠚 12F
-  - Back Aerial:
+  - Back Air:
     - *Hip hitbox added, foot and knee hitboxes moved outward slightly*
     - *Bair can now reverse hit*
     - Angle (sweetspot): 40 🠚 45
@@ -11432,14 +11310,14 @@
     - FAF: 42 🠚 37
     - Autocancel: F36 🠚 F25
     - Landing Lag: 11F 🠚 12F
-  - Up Aerial:
+  - Up Air:
     - Hitbox Duration: F7-11 🠚 F6-12
     - Damage (foot): 8.0% 🠚 9.0%
     - Angle (leg/foot): 85 🠚 65/71
     - KBG: 87 🠚 85
     - FAF: 32 🠚 31
     - Landing Lag: 8F 🠚 10F
-  - Down Aerial:
+  - Down Air:
     - *Added nipple spike to early hit*
     - Hitbox Duration: F17-21 🠚 F16-20
     - Landing Lag: 16F 🠚 15F
@@ -11591,7 +11469,7 @@
       - Damage: 14.0% 🠚 12.0%
       - Angle: 32 🠚 30
     - FAF: 48 🠚 52
-  - Neutral Aerial:
+  - Neutral Air:
     - *Hitboxes enlarged*
     - Startup: F8 🠚 F5
     - Damage increased [MISSING DATA]
@@ -11600,7 +11478,7 @@
     - KBG: 140 🠚 125
     - Autocancel: F40 🠚 F36
     - Landing Lag: 15F 🠚 8F
-  - Forward Aerial:
+  - Forward Air:
     - *The pot is now intangible during active frames*
     - *Hitboxes enlarged*
     - Startup: F10 🠚 F6
@@ -11611,7 +11489,7 @@
     - FAF: 48 🠚 38
     - Autocancel: F31 🠚 F30
     - Landing Lag: 13F 🠚 9F  
-  - Back Aerial:
+  - Back Air:
     - *Hitbox size slightly increased*
     - Hitbox Duration: F14-15 🠚 F14-17
     - Damage: 14.5% 🠚 15.0%
@@ -11619,7 +11497,7 @@
     - KBG: 105 🠚 108
     - FAF: 62 🠚 41
     - Landing Lag: 16F 🠚 14F  
-  - Up Aerial:
+  - Up Air:
     - *Intangible on head during active frames*
     - *Hitbox Size increased*
     - Hitbox Duration increased [MISSING DATA]
@@ -11627,7 +11505,7 @@
     - KBG decreased [MISSING DATA]
     - FAF: 39 🠚 30
     - Landing Lag: 10F 🠚 7F
-  - Down Aerial:
+  - Down Air:
     - *Early hit now spikes throughout the whole pot*
     - Hitbox Duration (sweetspot): 3F 🠚 4F
     - Damage (sweetspot): 13.0% 🠚 14.0%
@@ -11759,7 +11637,7 @@
       - Damage: 18.0% 🠚 15.0%
       - KBG (Joker/Arsene): 106/173 🠚 108/311
       - FAF: 46 🠚 58
-  - Neutral Aerial:
+  - Neutral Air:
     - *Added arm and shoulder hitboxes*
     - *Priority moved to arm/shoulder hitboxes*
     - *Added late hit*
@@ -11784,7 +11662,7 @@
         - KBG: 139
       - FAF: 55 🠚 50
       - Landing Lag: 8F 🠚 9F
-  - Forward Aerial:
+  - Forward Air:
     - Base
       - Hit 1
         - *Foot hitbox enlarged*
@@ -11806,7 +11684,7 @@
       - KBG (Joker/Arsene): 131/98 🠚 137/125
       - FAF: 48 🠚 45
       - Landing Lag: 12F 🠚 10F
-  - Back Aerial:
+  - Back Air:
     - *Added arm and shoulder hitboxes*
     - Hitbox Duration: F7-8 🠚 F6-9
     - Base
@@ -11821,7 +11699,7 @@
       - KBG (Joker/Arsene): 98/114 🠚 112/151
       - FAF: 32 🠚 38
       - Landing Lag: 9F 🠚 10F
-  - Up Aerial:
+  - Up Air:
     - *Multihits extended towards hips*
     - BKB (multihits, ground/air): 30/35 🠚 40/40
     - SDI Multiplier (multihits): 1.0x 🠚 1.3x
@@ -11833,7 +11711,7 @@
       - Damage (multihits): 0.7% 🠚 1.0%
       - KBG (launcher): 126 🠚 106
       - Landing Lag: 14F 🠚 13F
-  - Down Aerial:
+  - Down Air:
     - *Added arm hitbox*
     - *Inner knife hitbox shifted inwards*
     - Base
@@ -11916,11 +11794,11 @@
   - General:
     - *Sword length increased by 12.5%*
   - Critical Hits:
-    - *Forward Aerial, Back Aerial, and Down Aerial are now all capable of critical hits*
+    - *Forward Air, Back Air, and Down Air are now all capable of critical hits*
       - *[PARAM NEEDED]: Damage/KB Multipliers for new crits*
-      - Back Aerial Critical Hit Chance: 3.125% (1/32)
-      - Forward Aerial and Down Aerial Critical Hit Chance: 1.5625% (1/64)
-        - *Down Aerial will only Critical Hit on the early hit*
+      - Back Air Critical Hit Chance: 3.125% (1/32)
+      - Forward Air and Down Air Critical Hit Chance: 1.5625% (1/64)
+        - *Down Air will only Critical Hit on the early hit*
     - Smash Attack Critical Hit Chance: 12.5% 🠚 8%
   - Jab:
     - Jab 1
@@ -11985,7 +11863,7 @@
     - Crit
       - BKB: 10 🠚 25
     - FAF: 56 🠚 60
-  - Neutral Aerial:
+  - Neutral Air:
     - *Hitboxes reshaped to cover sword model, tipper moved outward*
     - *Added shoulder and arm hitboxes*
     - Hitbox Duration: F8-16 🠚 F7-18
@@ -12002,7 +11880,7 @@
     - FAF: 46 🠚 42
     - Autocancel: F46 🠚 F37
     - Landing Lag: 10F 🠚 8F
-  - Forward Aerial:
+  - Forward Air:
     - *Hitboxes reshaped to cover sword model, tipper moved outwards*
     - *Hitbox activity moved one frame earlier in animation*
     - *Added shoulder hitbox*
@@ -12013,7 +11891,7 @@
     - KBG: 97/89 🠚 95
     - FAF: 43 🠚 41
     - Landing Lag: 12F 🠚 10F
-  - Back Aerial:
+  - Back Air:
     - *Hitboxes reshaped to cover sword model, tipper moved outwards*
     - *Added shoulder hitbox*
     - Hitbox Duration: F18-20 🠚 F14-17
@@ -12030,7 +11908,7 @@
     - FAF: 48 🠚 46
     - Autocancel: F48 🠚 F35
     - Landing Lag: 14F 🠚 12F
-  - Up Aerial:
+  - Up Air:
     - *Added lower knee sourspot*
     - *Added late hit*
     - Hitbox Duration (early/late): F6-10 🠚 F6-8/F9-23
@@ -12051,7 +11929,7 @@
       - KBG: 100
     - FAF: 33 🠚 29
     - Landing Lag: 8F 🠚 7F
-  - Down Aerial:
+  - Down Air:
     - *Late hitboxes matched to early hit*
     - *Added arm hitboxes*
     - Hitbox Duration (early/late): F16-18/F19-24 🠚 F16-17/F18-27
@@ -12202,7 +12080,7 @@
       - Hitbox Size (Banjo head/Kazooie neck/Kazooie beak): 4.8/4.2/3.2u 🠚 5.0/4.5/3.5u
   - Down Smash:
     - FAF: 50 🠚 55
-  - Neutral Aerial:
+  - Neutral Air:
     - *Attached hitboxes to wings, hitbox size reduced*
     - *Can now reverse hit*
     - Hitbox Duration (multihits/launcher): F10-29/F31-32 🠚 F7-21/F23-24
@@ -12217,7 +12095,7 @@
       - Hitlag Multiplier: 1.9x 🠚 1.5x
     - Autocancel: F39 🠚 F37
     - Landing Lag: 16F 🠚 8F
-  - Forward Aerial:
+  - Forward Air:
     - *Added late hit*
     - *Can now reverse hit*
     - Hitbox Duration (early/late): F15-18 🠚 F15-17/F18-19
@@ -12231,7 +12109,7 @@
         - BKB: 15
         - KBG: 90
     - FAF: 52 🠚 45
-  - Back Aerial:
+  - Back Air:
     - Launcher
       - Damage: 4.8% 🠚 5.0%
       - Angle: 41 🠚 60
@@ -12239,14 +12117,14 @@
       - KBG: 136 🠚 100
     - FAF: 44 🠚 40
     - Landing Lag: 18F 🠚 12F
-  - Up Aerial:
+  - Up Air:
     - *Changed to single hit, hitboxes attached to wings*
     - Hitbox Duration: F7-8/F9-11 🠚 F7-11
     - Damage: 5.8% 🠚 7.0%
     - BKB: 42 🠚 50
     - KBG: 94 🠚 90
     - Landing Lag: 12F 🠚 8F
-  - Down Aerial:
+  - Down Air:
     - *Bounces upwards on hit*
     - Hitbox Duration (early/late): F15-17/F18-45 🠚 F15-16/F17-45
     - Early
@@ -12466,7 +12344,7 @@
   - FAF: 39 🠚 46
   - Fire Kick
     - *By holding special or shield as down smash comes out, it will instead launch upwards with fixed knockback and transition to a Jab3 animation with an alternate hitbox that launches upwards for juggles*
-- Neutral Aerial (Chop):
+- Neutral Air (Chop):
   - *Hitbox moved inward slightly and size increased*
   - Early
     - Damage: 7.0% 🠚 8.0%
@@ -12479,7 +12357,7 @@
     - BKB: 24 🠚 30
     - KBG: 65 🠚 60
   - Landing Lag: 6F 🠚 7F
-- Forward Aerial (Jump Kick):
+- Forward Air (Jump Kick):
   - *Hitbox added to back knee*
   - Early
     - Damage: 11.0% 🠚 8.0%
@@ -12491,17 +12369,17 @@
     - Angle: 48 🠚 65
     - KBG: 60 🠚 70
   - Landing Lag: 11F 🠚 8F
-- Back Aerial (Jump Backward Kick):
+- Back Air (Jump Backward Kick):
   - *Can be reversed by holding Attack on frame 6*
   - KBG (early/late): 83/67 🠚 94/75
   - Hitlag Multiplier: 1.0 🠚 1.15
-- Up Aerial (Somersault Kick):
+- Up Air (Somersault Kick):
   - Hitbox Duration: F7-9 🠚 F6-12
   - Damage: 5.0% 🠚 7.0%
   - BKB: 25 🠚 50
   - KBG: 100 🠚 88
   - Landing Lag: 6F 🠚 7F
-- Down Aerial (Karate Punch):
+- Down Air (Karate Punch):
   - *Spike hitbox enlarged, only affects aerial opponents*
   - Hit Cancel Window: F12-20 🠚 F12-22
   - BKB (sweetspot, air-only): 15 🠚 10
@@ -12738,7 +12616,7 @@
   - Up Smash:
     - FAF: 58 🠚 62
   - Down Smash:
-  - Neutral Aerial:
+  - Neutral Air:
     - *Removed landing hitbox, added ground-only hitbox that links into multihits*
     - *Added small sweetspot in the center of the launcher that sends forwards*
     - Hitbox Duration (multihits/launcher): F6-26/F28 🠚 F6-21/F23-24
@@ -12752,7 +12630,7 @@
       - KBG: 150 🠚 135
     - FAF: 52 🠚 46
     - Landing Lag: 13F 🠚 8F
-  - Forward Aerial:
+  - Forward Air:
     - *Hitboxes enlarged, sourspots pulled inward*
     - *Can now reverse hit*
     - Hitbox Duration: F12-13 🠚 F10-13
@@ -12767,7 +12645,7 @@
     - FAF: 40 🠚 37
     - Autocancel: F36 🠚 F25
     - Landing Lag: 11F 🠚 10F
-  - Back Aerial:
+  - Back Air:
     - *Hitboxes enlarged, sourspots pulled inward*
     - *Can now reverse hit*
     - Hitbox Duration (early/late): F13-14/F15-17 🠚 F10-12/F13-23
@@ -12781,7 +12659,7 @@
       - KBG increased [MISSING DATA]
     - FAF: 47 🠚 43
     - Landing Lag: 13F 🠚 12F
-  - Up Aerial:
+  - Up Air:
     - *Head hitbox extended downward towards chest*
     - Multihits
       - Damage: 3.0% 🠚 2.5%
@@ -12793,7 +12671,7 @@
     - Hitlag Multiplier: 0.3 🠚 0.6
     - FAF: 49 🠚 37
     - Landing Lag: 14F 🠚 11F
-  - Down Aerial:
+  - Down Air:
     - *Attached hitboxes to axe*
     - Damage (sourspot): 19.0% 🠚 15.0%
     - KBG (ground/air): 56/61 🠚 70/76
@@ -12913,10 +12791,10 @@
     - KBG (sweetspot/sourspot): 72/70 🠚 80/77
     - Angle (sourspot): 361 🠚 40
     - FAF: 49 🠚 53
-  - Neutral Aerial:
+  - Neutral Air:
     - FAF (left arm): 38 🠚 33
     - Landing Lag: 10F 🠚 8F
-  - Up Aerial:
+  - Up Air:
     - *Added late hit*
     - *Hitboxes enlarged*
     - Hitbox Duration: F7-14 🠚 F6-17
@@ -12933,7 +12811,7 @@
     - FAF: 39 🠚 32
     - Autocancel: F30 🠚 F24
     - Landing Lag: 8F 🠚 7F
-  - Down Aerial:
+  - Down Air:
     - *Can drift left and right during startup*
     - *Retains momentum upon landing*
     - Horizontal Speed: 0.9 🠚 1.15
@@ -12997,7 +12875,7 @@
     - FAF: F50 🠚 F53
   - Down Smash:
     - FAF: F52 🠚 F57
-  - Forward Aerial:
+  - Forward Air:
     - *Added shoulder sourspot*
     - *Hitboxes enlarged*
     - Early
@@ -13024,13 +12902,13 @@
         - KBG: 63 🠚 65
     - SDI Multiplier: 2.0x 🠚 1.25x
     - Landing Lag: 12F 🠚 10F
-  - Back Aerial:
+  - Back Air:
     - Startup decreased [MISSING DATA]
     - FAF: 48 🠚 35
     - Landing Lag: 12F 🠚 11F
-  - Up Aerial:
+  - Up Air:
     - Landing Lag 10F 🠚 8F
-  - Down Aerial:
+  - Down Air:
     - Anvil
       - Lifetime: 120F 🠚 180F
     - No Anvil
@@ -13166,7 +13044,7 @@
   - Down Smash:
     - *Removed super armor during One-Winged angel*
     - FAF: 54 🠚 58
-  - Neutral Aerial:
+  - Neutral Air:
     - Hitbox Duration (early/late): F9-10 🠚 F8-10/F12-20
     - Early
       - KBG: 82 🠚 77
@@ -13177,7 +13055,7 @@
       - BKB: 65
       - KBG: 75 🠚 70
     - FAF: 28 🠚 33
-  - Forward Aerial:
+  - Forward Air:
     - Hitbox Duration (early/late): F13-14/F15-18 🠚 F12-14/F15-20
     - Early
       - Sourspot
@@ -13198,7 +13076,7 @@
         - KBG: 86 🠚 81
     - Autocancel: F42 🠚 F33
     - Landing Lag: 14F 🠚 12F
-  - Back Aerial:
+  - Back Air:
     - *Attached hitboxes to sword*
     - *Added chest and shoulder hitboxes*
     - Startup: F15 🠚 F14
@@ -13212,7 +13090,7 @@
       - KBG: 106 🠚 100
     - FAF: 48 🠚 44
     - Landing Lag: 14F 🠚 13F
-  - Up Aerial:
+  - Up Air:
     - *Hitboxes reshaped to better match animation*
     - *Added chest and shoulder hitboxes*
     - Hitbox Duration: F16-21 🠚 F15-20
@@ -13222,7 +13100,7 @@
     - FAF: 56 🠚 51
     - Autocancel: F54 🠚 F52
     - Landing Lag: 21F 🠚 14F
-  - Down Aerial:
+  - Down Air:
     - *Now spikes grounded opponents*
     - KBG (sweetspot/sourspot): 90/73 🠚 85/76
     - Landing Lag: 26F 🠚 30F
@@ -13312,7 +13190,7 @@
     - FAF: 28 🠚 25
   - Back Throw:
     - FAF: 36 🠚 33
-  - Neutral Aerial:
+  - Neutral Air:
     - *Added arm hitbox*
     - *Blade changed to sourspot*
       - Damage: 8.0%
@@ -13321,7 +13199,7 @@
       - KBG: 80
     - FAF: 52 🠚 45
     - Landing Lag: 15F 🠚 9F
-  - Forward Aerial:
+  - Forward Air:
     - Hitbox Duration: F11-14 🠚 F10-15
     - *Blade changed to sourspot*
       - Damage: 9.0%
@@ -13332,7 +13210,7 @@
       - *Hitboxes repositioned to better match beam*
     - FAF: 46 🠚 38
     - Landing Lag: 14F 🠚 10F
-  - Back Aerial:
+  - Back Air:
     - Hitbox Duration: F15-18 🠚 F14-19
     - *Blade changed to sourspot*
       - Damage: 11.0%
@@ -13343,7 +13221,7 @@
       - *Hitboxes repositioned to better match beam*
     - FAF: 48 🠚 41
     - Landing Lag: 14F 🠚 11F
-  - Up Aerial:
+  - Up Air:
     - Hitbox Duration: F9-14 🠚 F8-16
     - *Blade changed to sourspot*
       - Damage: 8.0%
@@ -13353,7 +13231,7 @@
     - Beam
       - *Hitboxes repositioned to better match beam*
     - FAF: F56 🠚 F50
-  - Down Aerial:
+  - Down Air:
     - Hitbox Duration (early/late): F17-18/F19-20 🠚 F16-18/F19-21
     - Early
       - Sweetspot
@@ -13450,7 +13328,7 @@
     - FAF: 64 🠚 67
   - Down Smash:
     - FAF: 56 🠚 59
-  - Neutral Aerial:
+  - Neutral Air:
     - Multihits
       - *Removed last frame of multihit activity for more consistent linking into launcher*
       - Hitlag Multiplier: 0.75x 🠚 1.0x
@@ -13461,7 +13339,7 @@
       - Hitlag Multiplier: 0.75x 🠚 1.2x
     - FAF: 49 🠚 43
     - Landing Lag: 13F 🠚 10F
-  - Forward Aerial:
+  - Forward Air:
     - Hitbox Duration: F8-11 🠚 F7-12
     - *Beam changed to sourspot*
       - Damage: 6.0%
@@ -13475,7 +13353,7 @@
     - FAF: 46 🠚 44
     - Autocancel: F36 🠚 F32
     - Landing Lag 10F 🠚 9F
-  - Back Aerial:
+  - Back Air:
     - *Late hit matched to early hit*
     - Hitbox Duration: F10-13 🠚 F9-14
     - *Beam changed to sourspot*
@@ -13483,7 +13361,7 @@
       - Angle: 62
       - BKB: 72
       - KBG: 68
-  - Up Aerial:
+  - Up Air:
     - *Added shoulder hitbox*
     - Hitbox Duration: F9-14 🠚 F8-16
     - *Beam changed to sourspot*
@@ -13495,7 +13373,7 @@
       - Damage: 6.0% 🠚 7.0%
       - BKB: 62 🠚 65
     - FAF: 46 🠚 49
-  - Down Aerial:
+  - Down Air:
     - *Added shoulder hitbox*
     - Hitbox Duration: F13-16 🠚 F12-18
     - *Beam changed to sourspot*
@@ -13588,7 +13466,7 @@
       - BKB: 84
       - KBG: 70
     - Hitlag Multiplier: 0.35x 🠚 0.5x
-  - Neutral Aerial (Jumping Knuckle):
+  - Neutral Air (Jumping Knuckle):
     - Early
       - Fist
         - Damage: 11.0% 🠚 10.0%
@@ -13598,7 +13476,7 @@
       - Arm/Shoulder
         - BKB: 70/40 🠚 40
         - KBG: 70/80 🠚 85
-  - Forward Aerial (Searing Edge):
+  - Forward Air (Searing Edge):
     - Early
       - Sweetspot
         - Damage: 13.0% 🠚 11.0%
@@ -13622,10 +13500,10 @@
         - BKB: 42 🠚 40
         - KBG: 59 🠚 75
     - Landing Lag: 10F 🠚 8F
-  - Back Aerial (Jumping Sobat):
+  - Back Air (Jumping Sobat):
     - *Hold attack to unleash the move forward*
     - Landing Lag: 10F 🠚 9F
-  - Up Aerial (Rising Toe Kick):
+  - Up Air (Rising Toe Kick):
     - Early
       - Sweetspot
         - Damage: 12.0% 🠚 11.0%
@@ -13637,7 +13515,7 @@
         - Angle: 77 🠚 45
         - BKB: 65 🠚 42
         - KBG: 73 🠚 64
-  - Down Aerial (Demon Scissors):
+  - Down Air (Demon Scissors):
     - Landing Lag: 35F 🠚 27F
   - Devil Fist (Side Special):
     - *Can be used in midair along with Devil Wings once per airtime*
@@ -13811,7 +13689,7 @@
     - *Removed intangibility*
     - Angle: 23 🠚 76
     - KBG (sweetspot/sourspot): 80/74 🠚 100/96
-  - Neutral Aerial:
+  - Neutral Air:
     - *Changed to altered Hurricane Blast animation*
     - Hitbox Duration (early/late): F7-14/F15-20
     - Early
@@ -13826,7 +13704,7 @@
       - KBG: 100
     - Hitlag Multiplier: 0.25x 🠚 0.8x
     - FAF: 42 🠚 35
-  - Forward Aerial:
+  - Forward Air:
     - Hit 1
       - Hitbox Duration: F10-15 🠚 F7-12
       - Damage: 4.8% 🠚 4.5%
@@ -13853,13 +13731,13 @@
       - Hitlag Multiplier: 0.8x 🠚 1.0x
       - FAF: 41 🠚 32
       - Landing Lag: 14F 🠚 12F
-  - Back Aerial:
+  - Back Air:
     - *Hitboxes attached to sword and shoulder*
     - Hitbox Duration: F13-15 🠚 F10-13
     - Damage: 13.2% 🠚 13.5%
     - BKB: 26 🠚 30
     - KBG: 92 🠚 100
-  - Up Aerial:
+  - Up Air:
     - *Increased animation speed*
     - *Removed trailing hitboxes*
     - Hitbox Duration: F10-18 🠚 F9-16
@@ -13868,7 +13746,7 @@
     - BKB: 44 🠚 65
     - KBG: 86 🠚 75
     - Landing Lag: 10F 🠚 9F
-  - Down Aerial:
+  - Down Air:
     - *Changed to an underhanded swipe*
     - Hitbox Duration (early/late): F8-12/F13-14
     - Early

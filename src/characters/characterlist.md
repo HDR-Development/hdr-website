@@ -44,8 +44,8 @@
     <tr>
       <td><a href="./melee/peach.md">Peach</a></td>
       <td><a href="./melee/koopa.md">Bowser</a></td>
-      <td><!--<a href="./melee/popo.md">-->Ice Climbers<!--</a>--></td>
-      <td><!--<a href="./melee/sheik.md">-->Sheik<!--</a>--></td>
+      <td><a href="./melee/popo.md">Ice Climbers</a></td>
+      <td><a href="./melee/sheik.md">Sheik</a></td>
       <td><!--<a href="./melee/zelda.md">-->Zelda<!--</a>--></td>
       <td><!--<a href="./melee/mariod.md">-->Dr. Mario<!--</a>--></td>
       <td><!--<a href="./melee/pichu.md">-->Pichu<!--</a>--></td>
