@@ -43,7 +43,7 @@
     - [Jigglypuff](./characters/smash64/purin.md)
   - [Melee]()
     - [Peach](./characters/melee/peach.md)
-    - [Bowser]()<!--./characters/melee/koopa.md)-->
+    - [Bowser](./characters/melee/koopa.md)
     - [Ice Climbers]()<!--./characters/melee/popo.md)-->
     - [Sheik]()<!--./characters/melee/sheik.md)-->
     - [Zelda]()<!--./characters/melee/zelda.md)-->
