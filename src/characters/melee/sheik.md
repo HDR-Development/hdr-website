@@ -3,8 +3,330 @@
 <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Attributes</b>
+  - Walk Speed: 1.47 🠚 1.43
+  - Initial Dash Speed: 2.178 🠚 1.704
+  - Run Speed: 2.42 🠚 1.83
+  - Run Acceleration (base/additional): 0.044/0.121 🠚 0.02/0.01
+  - Traction: 0.106 🠚 0.082
+  - Jumpsquat: 3F
+  - Short Hop Height: 18.75 🠚 16.25
+  - Air Speed: 1.155 🠚 1.0175
+  - Air Acceleration (base/additional): 0.01/0.08 🠚 0.01/0.075
+  - Air Friction: 0.015 🠚 0.0115
+  - Fall Speed: 1.75 🠚 2.15
+  - Fast Fall Speed: 2.8 🠚 3.08
+  - Combo Gravity: 0.068208 🠚 0.15
+  - Combo Fall Speed: 1.8 🠚 2.2
+  - Hard Landing Lag: 7F 🠚 5F
+  - Weight: 78 🠚 85
+  - Shield Radius: 13.2 🠚 11.5
+<br><br>
 
 ![](../../images/SmashBall.png) <b>Moveset</b>
+  - Jab:
+    - Jab 1
+      - <adjust>Attached hitboxes to arm</adjust>
+      - <buff>Added locking hitbox</buff>
+      - Hitbox Duration: <buff>F2 🠚 F2-4</buff>
+      - Damage: <buff>2.0% 🠚 3.0%</buff>
+      - Angle: <rework>361 🠚 70</rework>
+      - BKB: <rework>35/30/20 🠚 10</rework>
+      - KBG: <rework>30/15 🠚 80</rework>
+      - Hitlag Multiplier: <adjust>1.6x 🠚 1.1x</adjust>
+      - Hitbox Size (shoulder/arm/hand): <buff>1.7/1.7/2.0u 🠚 2.5/3.5/4.0u</buff>
+      - FAF: <buff>18 🠚 16</buff>
+    - Jab 2
+      - <property>Can be canceled into Rapid Jab Finisher by pressing Special between frames 5 and 13</property>
+      - <adjust>Attached hitboxes to arm</adjust>
+      - <buff>Added locking hitbox</buff>
+      - Hitbox Duration: <buff>F3 🠚 F3-5</buff>
+      - Damage: <buff>1.6% 🠚 3.0%</buff>
+      - Angle: <rework>361 🠚 70</rework>
+      - BKB: <rework>35/25 🠚 35</rework>
+      - KBG: <rework>25/20 🠚 50</rework>
+      - Hitlag Multiplier: <adjust>1.2x 🠚 1.1x</adjust>
+      - Hitbox Size (shoulder/arm/hand): <buff>1.8/2.4/2.5u 🠚 2.5/3.5/4.0u</buff>
+      - FAF: <buff>18 🠚 17</buff>
+    - Rapid Jab Finisher
+      - Damage: <buff>2.0% 🠚 5.0%</buff>
+      - Hitlag Multiplier: <adjust>2.0x 🠚 1.5x</adjust>
+      - Hitbox Size (shoulder/arm/hand): <adjust>3.0/3.2/3.2u 🠚 4.0/4.2/4.2u</buff>
+      - FAF: <buff>36 🠚 28</buff>
+<br><br>
+  - Forward Tilt:
+    - Damage: <buff>3.0% 🠚 6.0%</buff>
+    - Angle (hip/knee/foot): <nerf>84/86/78 🠚 72/75/80</nerf>
+    - BKB: <buff>20 🠚 58</nerf>
+    - KBG: <buff>180/188 🠚 100</buff>
+    - Hitlag Multiplier: <adjust>0.5x 🠚 1.0x<adjust>
+    - Hitbox Size (hip/knee/foot): <buff>3.8/3.0/4.0u 🠚 4.0/3.5/4.0u</buff>
+    - FAF: <nerf>25 🠚 27</nerf>
+<br><br>
+  - Up Tilt:
+    - Hit 1
+      - Hitbox Size (hip/knee/foot): <nerf>3.5/5.5/4.5u 🠚 3.5/4.5/4.0u</nerf>
+      - SDI Multiplier: <nerf>0.5x 🠚 1.0x</nerf>
+    - Hit 2
+      - Hitbox Duration: <nerf>F16-23 🠚 F16-22</nerf>
+      - Hip/Knee
+        - Damage: <buff>4.0% 🠚 5.0%</buff>
+        - BKB: <adjust>25 🠚 30</adjust>
+        - KBG: <adjust>147 🠚 130</adjust>
+      - Foot
+        - Damage: <buff>4.0% 🠚 6.5%</buff>
+        - Angle: <rework>60 🠚 100</rework>
+        - BKB: <rework>25 🠚 30</rework>
+        - KBG: <rework>147 🠚 80</rework>
+<br><br>
+  - Down Tilt:
+    - Hitbox Duration: <buff>F5-6 🠚 F5-7</buff>
+    - Hip/Knee
+      - Damage: <buff>4.5% 🠚 6.0%</buff>
+      - Angle: <buff>70 🠚 70/80</buff>
+      - BKB: <nerf>37 🠚 65</nerf>
+      - KBG: <buff>100 🠚 70</buff>
+      - Hitbox Size: <buff>3.2/3.2u 🠚 3.7/3.7u</buff>
+    - Foot
+      - Damage: <buff>4.5% 🠚 7.0%</buff>
+      - BKB: <nerf>37 🠚 65</nerf>
+      - KBG: <buff>100 🠚 58</buff>
+      - Hitbox Size: <buff>4.2u 🠚 4.3u</buff>
+<br><br>
+  - Dash Attack:
+    - <buff>Attached hitboxes to body and hands</buff>
+    - Early
+      - Body
+        - Damage: <buff>7.0% 🠚 8.0%</buff>
+        - BKB: <adjust>70 🠚 50</adjust>
+        - KBG: <adjust>90 🠚 100</adjust>
+        - Hitbox Size: <nerf>4.0u 🠚 3.0u</nerf>
+      - Hand
+        - Damage: <buff>7.0% 🠚 10.0%</buff>
+        - Angle: <buff>60 🠚 80</buff>
+        - BKB: <adjust>70 🠚 50</adjust>
+        - KBG: <adjust>90 🠚 100</adjust>
+        - Hitbox Size: <nerf>3.5/3.0u 🠚 3.0/3.0u</nerf>
+      - SDI Multiplier: <nerf>1.0x 🠚 1.25x</nerf>
+    - Late
+      - Hitbox Duration: <buff>F7-8 🠚 F7-11</buff>
+      - Damage: <buff>5.0% 🠚 6.0%</buff>
+      - BKB: <adjust>20 🠚 34</adjust>
+      - Hitbox Size: <adjust>4.0/3.0/2.0u 🠚 3.0/3.0/3.0u</adjust>
+    - FAF: <nerf>35 🠚 38</nerf>
+<br><br>
+  - Forward Smash:
+    - Hit 1
+      - Hitbox Duration: <buff>F12 🠚 F11</buff>
+      - Hip
+        - Angle: <buff>35 🠚 25</buff>
+        - FKB: <buff>47 🠚 62</buff>
+        - Hitbox Size: <buff>3.2u 🠚 3.5u</buff>
+      - Knee
+        - Hitbox Size: <buff>3.0u 🠚 3.5u</buff>
+      - Foot
+        - FKB: <buff>30 🠚 45</buff>
+    - Hit 2
+      - <buff>Added hip hitbox</buff>
+      - Hitbox Duration: <buff>F20-21 🠚 F19-20</buff>
+      - Damage: <buff>8.0% 🠚 9.0%</buff>
+      - Angle: <nerf>361 🠚 55</nerf>
+      - KBG: <buff>109 🠚 110</buff>
+      - Hitbox Size (hip): 4.0u
+    - FAF: <nerf>45 🠚 48</nerf>
+<br><br>
+  - Up Smash:
+    - Hit 1
+      - Damage: <buff>15.0% 🠚 16.0%</buff>
+      - Angle: <buff>93 🠚 90</buff>
+      - KBG: <buff>88 🠚 95</buff>
+      - Hitbox Size: <buff>6.1u 🠚 6.3u</buff>
+    - Hit 2
+      - <buff>Added hand hitboxes</buff>
+      - Hitbox Duration: <buff>F14-15 🠚 F13-15</buff>
+      - Damage: <buff>11.0% 🠚 13.0%</buff>
+      - Angle: <rework>50 🠚 78</rework>
+      - KBG: <buff>100 🠚 104</buff>
+      - Hitbox Size (hand/body): <buff>*/3.4u 🠚 3.5/3.75u</buff>
+    - FAF: <buff>53 🠚 48</buff>
+<br><br>
+  - Down Smash:
+    - <buff>Attached hitboxes to legs</buff>
+    - Hit 1
+      - Hitbox Duration: <buff>F8-9 🠚 F8-10</buff>
+    - Hit 2
+      - Hitbox Duration: <buff>F15-16 🠚 F15-17</buff>
+      - Damage: <buff>6.0% 🠚 8.0%</buff>
+      - Angle: <nerf>43 🠚 50</nerf>
+      - KBG: <nerf>165 🠚 120</nerf>
+    - FAF: <buff>49 🠚 45</buff>
+<br><br>
+  - Neutral Air:
+    - <buff>Added back knee hitbox</buff>
+    - Early
+      - Damage (foot/leg): <buff>6.0/5.0% 🠚 8.0/6.0%</buff>
+      - Hitbox Size (foot/knee/hip/back knee): <buff>3.7/3.0/3.0u 🠚 3.5/2.5/3.5/3.0u</buff>
+      - SDI Multiplier: <nerf>1.0x 🠚 1.2x</nerf>
+    - Late
+      - Hitbox Duration: <nerf>F7-30 🠚 F7-29</nerf>
+      - Damage: <buff>4.0/3.0% 🠚 5.0%</buff>
+      - KBG: 100 🠚 105
+      - SDI Multiplier: <nerf>1.0x 🠚 1.2x</nerf>
+      - Hitbox Size (foot/knee/hip/back knee): <buff>3.4/2.7/1.5u 🠚 3.5/2.5/3.5/3.0u</buff>
+    - FAF: <buff>50 🠚 42</buff>
+    - Landing Lag: <nerf>6F 🠚 8F</nerf>
+<br><br>
+  - Forward Air:
+    - <buff>Added arm hitbox</buff>
+    - Hand
+      - Damage: <buff>4.5% 🠚 7.0%</buff>
+      - Angle: <buff>50 🠚 60</buff>
+      - BKB: <buff>43 🠚 40</buff>
+      - KBG: <buff>127 🠚 95</buff>
+      - SDI Multiplier: <nerf>1.0x 🠚 1.1x</nerf>
+      - Hitbox Size: <nerf>5.0u 🠚 4.0u</nerf>
+    - Arm/Shoulder
+      - Damage: <buff>3.8% 🠚 5.5%</buff>
+      - BKB: <buff>44 🠚 40</buff>
+      - KBG: <buff>127 🠚 100</buff>
+      - SDI Multiplier: <nerf>1.0x 🠚 1.1x</nerf>
+      - Hitbox Size: <nerf>*/5.0u 🠚 3.0/4.0u</nerf>
+    - FAF: <buff>35 🠚 33</buff>
+    - Autocancel: <nerf>F1-4/F11 🠚 F1-4/F13</nerf>
+    - Landing Lag: <nerf>5F 🠚 8F</nerf>
+<br><br>
+  - Back Air:
+    - <buff>Added front knee hitbox</buff>
+    - Early
+      - Hitbox Duration: <buff>F4-6 🠚 F4-7</buff>
+      - Hip/Front Knee
+        - Damage: <buff>7.5% 🠚 8.0%</buff>
+        - BKB: <buff>32 🠚 35</buff>
+        - KBG: <buff>98 🠚 100</buff>
+        - Hitbox Size: <nerf>3.8u 🠚 3.2/3.5u</nerf>
+      - Back Knee
+        - Damage: <buff>7.5% 🠚 10.0%</buff>
+        - BKB: <buff>32 🠚 35</buff>
+        - KBG: <buff>98 🠚 100</buff>
+        - Hitbox Size: <buff>2.0u 🠚 2.75u</buff>
+      - Foot
+        - Damage: <buff>9.5% 🠚 12.0%</buff>
+        - BKB: <buff>30 🠚 35</buff>
+        - KBG: <buff>98 🠚 100</buff>
+        - Hitbox Size: <buff>4.2u 🠚 4.5u</buff>
+      - SDI Multiplier: <nerf>1.0x 🠚 1.2x</nerf>
+    - Late
+      - Hitbox Duration: <buff>F7-14 🠚 F8-17</buff>
+      - Hip
+        - BKB: <adjust>10 🠚 25</adjust>
+        - KBG: <adjust>101 🠚 95</adjust>
+        - Hitbox Size: <nerf>4.0u 🠚 3.5u</nerf>
+      - Front Knee
+        - Damage: <buff>6.0% 🠚 7.0%</buff>
+        - BKB: <adjust>10 🠚 25</adjust>
+        - KBG: <adjust>101 🠚 95</adjust>
+        - Hitbox Size: 3.5u
+      - Back Knee
+        - Damage: <buff>6.0% 🠚 8.0%</buff>
+        - BKB: <adjust>10 🠚 25</adjust>
+        - KBG: <adjust>101 🠚 95</adjust>
+        - Hitbox Size: <nerf>3.3u 🠚 3.2u</nerf>
+      - Foot
+        - Damage: <buff>6.0% 🠚 9.0%</buff>
+        - BKB: <adjust>10 🠚 25</adjust>
+        - KBG: <adjust>101 🠚 95</adjust>
+        - Hitbox Size: <buff>2.8u 🠚 3.7u</buff>
+      - SDI Multiplier: <nerf>1.0x 🠚 1.2x</nerf>
+    - Landing Lag: <nerf>7F 🠚 8F</nerf>
+<br><br>
+  - Up Air:
+    - <buff>Added knee and hip hitboxes</buff>
+    - Multihits
+      - Damage: <buff>1.0% 🠚 1.5%</buff>
+      - BKB: <buff>20/30 🠚 45</buff>
+      - KBG (ground/air): <adjust>80/100 🠚 85/80</adjust>
+      - Hitlag Multiplier: <adjust>0.7x 🠚 0.5x</adjust>
+      - SDI Multiplier: <nerf>1.2x 🠚 1.5x</nerf>
+      - Additional Hitstun: <nerf>0F 🠚 -1F</nerf>
+    - Launcher
+      - Hitbox Duration: <buff>F23-24 🠚 F23-25</buff>
+      - Damage: <buff>4.0% 🠚 6.0%</buff>
+      - BKB: <adjust>50 🠚 45</adjust>
+      - KBG: <adjust>138 🠚 150</adjust>
+      - Hitlag Multiplier: <adjust>2.0x 🠚 1.5x</adjust>
+    - Landing Lag: <buff>13F 🠚 12F</buff>
+<br><br>
+  - Down Air:
+    - <adjust>Removed stall and fall</adjust>
+    - <adjust>Removed landing hitbox</adjust>
+    - <buff>Added top knee hitbox</buff>
+    - Early
+      - Hitbox Duration: <rework>F15-18 🠚 F14-15</rework>
+      - Foot
+        - Damage: <buff>10.0% 🠚 11.0%</buff>
+        - Ground
+          - Angle: <buff>280 🠚 275</buff>
+          - BKB: <adjust>30 🠚 25</adjust>
+          - KBG: <adjust>90 🠚 100</adjust>
+        - Air
+          - BKB: <nerf>30 🠚 10</nerf>
+          - KBG: <nerf>90 🠚 76</nerf>
+        - Hitlag Multiplier: <adjust>1.0x 🠚 1.2x</adjust>
+        - Hitbox Size: <nerf>5.9u 🠚 5.0u</nerf>
+      - Knee
+        - Damage: 11.0%
+        - Angle: 80
+        - BKB: 30
+        - KBG: 90
+        - Hitbox Size: 6.0u
+    - Late
+      - Hitbox Duration: <rework>F19-33 🠚 F16-32</rework>
+      - Damage: <nerf>10.0% 🠚 9.0%</nerf>
+      - Angle: <rework>56 🠚 80</rework>
+      - BKB: <rework>55 🠚 35</rework>
+      - KBG: <rework>78 🠚 85</rework>
+      - Hitbox Size (knee/foot): <nerf>*/5.8u 🠚 5.5/5.0u</nerf>
+    - FAF: <buff>55 🠚 51</buff>
+    - Autocancel: <buff>F1-2/F53 🠚 F1/F44</buff>
+    - Landing Lag: <buff>22F 🠚 11F</buff>
+<br><br>
+  - Needle Storm (Neutral Special):
+    - Needle Angle: <adjust>-35 🠚 -40</adjust>
+    - Damage: <buff>1.5% 🠚 2.0%</buff>
+    - Angle: <buff>60 🠚 65</buff>
+    - BKB: <adjust>0 🠚 25</adjust>
+    - KBG: <adjust>167 🠚 140</adjust>
+    - Hitlag Multiplier: <buff>0.8x 🠚 1.25x</buff>
+    - Hitbox Size: <buff>1.5u 🠚 2.0u</buff>
+    - FAF (ground/air): <nerf>42/36 🠚 48/39</nerf>
+    - Landing Lag: <buff>12F 🠚 4F</buff>
+<br><br>
+  - Burst Grenade (Side Special):
+    - <property>Hold attack during the startup to obtain the grenade item</property>
+      - This action has a 15 second cooldown
+      - In Training mode, taunting resets the timer
+<br><br>
+  - Vanish (Up Special):
+    - <nerf>Removed hitbox from reappearance</nerf>
+    - Base Travel Speed: <nerf>1.5 🠚 1.34</nerf>
+    - Landing Lag: <nerf>20F 🠚 34F</nerf>
+<br><br>
+  - Bouncing Fish (Down Special):
+    - <property>The returning flip can be canceled on hit into jump, Vanish, or airdodge starting on framme 11</property>
+    - Initial Horizontal Speed: <nerf>1.5/1.6 🠚 1.0</nerf>
+    - Horizontal Acceleration (forward): <buff>0.2 🠚 0.35</buff>
+    - Max Forward Speed: <nerf>2.4 🠚 2.35</nerf>
+    - KBG: <buff>97 🠚 110</buff>
+    - Hitbox Size (leg/foot): <buff>3.5/3.0u 🠚 5.0/5.0u</buff>
+    - FAF (first hit/subsequent hits): <buff>15/20F 🠚 10/15F</buff>
+<br><br>
+  - Forward Throw:
+    - FAF: <buff>40 🠚 36</buff>
+<br><br>
+  - Back Throw:
+    - FAF: <buff>36 🠚 34</buff>
+<br><br>
+  - Down Throw:
+    - FAF: <buff>54 🠚 48</buff>
 
 <script src="../../arrow.js">
 </script>
