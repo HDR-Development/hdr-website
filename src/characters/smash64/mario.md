@@ -70,21 +70,21 @@
       - Hitbox Size (foot/knee/hip): <buff>3.8/3.0/2.0u -> 4.5/3.0/3.5u</buff>
 <br><br>
   - Up Tilt (Uppercut):
-    - <adjust>Added late hit</adjust>
+    - <adjust>Split into early and late hit</adjust>
     - Early
-      - Hitbox Duration (early/late): <rework>F5-11 🠚 F5-6</rework>
+      - Hitbox Duration: <rework>F5-11 🠚 F5-6</rework>
       - Damage: <buff>5.5% 🠚 8.0%</buff>
       - Angle: <nerf>96 🠚 92</nerf>
       - BKB: <nerf>28 🠚 40</nerf>
       - KBG (chest/arm/hand): <buff>130 🠚 117/113/110</buff>
-      - Hitbox Size (early, chest/arm/hand): <buff>3.5/4.2/5.0u 🠚 4.0/6.2/6.0u</buff>
+      - Hitbox Size (chest/arm/hand): <buff>3.5/4.2/5.0u 🠚 4.0/6.2/6.0u</buff>
     - Late
-      - Hitbox Duration (early/late): <rework>F7-11</rework>
+      - Hitbox Duration: F7-11
       - Damage: <buff>5.5% 🠚 8.0%</buff>
       - Angle: <nerf>96 🠚 92</nerf>
       - BKB: <nerf>28 🠚 40</nerf>
       - KBG (chest/arm/hand): <buff>130 🠚 117/113/110</buff>
-      - Hitbox Size (late, chest/arm/hand): <adjust>3.5/4.2/5.0u 🠚 4.0/4.0/4.0u</adjust>
+      - Hitbox Size (chest/arm/hand): <adjust>3.5/4.2/5.0u 🠚 4.0/4.0/4.0u</adjust>
 <br><br>
   - Down Tilt (Leg Sweep):
     - <buff>Added hip hitbox</buff>
