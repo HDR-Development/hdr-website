@@ -155,7 +155,7 @@
       - Angle: <nerf>44 🠚 361</nerf>
       - BKB: <nerf>43 🠚 40</nerf>
       - Hitlag Multiplier: <adjust>1.2x 🠚 1.0x</adjust>
-      - Shield Damage: <buff>0 🠚 2</buff>
+      - Shield Damage: <buff>0.0 🠚 2.0</buff>
       - Hitbox Size (shoulder/arm/blade/tip): <adjust>*/6.8/6.5/4.5u 🠚 3.0/3.5/6.0/6.0u</adjust>
     - FAF: <buff>52 🠚 47</buff>
     - Autocancel: <nerf>F53 🠚 F56</nerf>

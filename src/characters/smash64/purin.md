@@ -85,7 +85,7 @@
   - Pound (Side Special):
     - Maximum Angle: <buff>20 🠚 40</buff>
     - Horizontal Acceleration: <buff>3 🠚 3.1</buff>
-    - Shield Damage: <nerf>20 🠚 17</nerf>
+    - Shield Damage: <nerf>20.0 🠚 17.0</nerf>
 <br><br>
   - Rest (Down Special):
     - <nerf>Hit effect changed from Flower to Fire</nerf>

@@ -202,13 +202,13 @@
     - Super Armor Duration: <buff>F5-14 🠚 F5-18</buff>
     - Ground-only
       - KBG: <buff>40 🠚 50</buff>
-      - Shield Damage: <nerf>25 🠚 22</nerf>
+      - Shield Damage: <nerf>25.0 🠚 22.0</nerf>
       - Hitbox Size: <buff>5.0/3.0u 🠚 6.5u</buff>
     - Air-only
       - Angle: <rework>70 🠚 300</rework>
       - BKB: <buff>15 🠚 45</buff>
       - KBG: <buff>40 🠚 41</buff>
-      - Shield Damage: <nerf>25 🠚 22</nerf>
+      - Shield Damage: <nerf>25.0 🠚 22.0</nerf>
       - Hitbox Size: <nerf>10.0u 🠚 9.0u</nerf>
 <br><br>
   - Spinning Kong (Up Special):
