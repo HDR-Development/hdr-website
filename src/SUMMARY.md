@@ -46,7 +46,7 @@
     - [Bowser](./characters/melee/koopa.md)
     - [Ice Climbers](./characters/melee/popo.md)
     - [Sheik](./characters/melee/sheik.md)
-    - [Zelda]()<!--./characters/melee/zelda.md)-->
+    - [Zelda](./characters/melee/zelda.md)
     - [Dr. Mario]()<!--./characters/melee/mariod.md)-->
     - [Pichu]()<!--./characters/melee/pichu.md)-->
     - [Falco]()<!--./characters/melee/falco.md)-->

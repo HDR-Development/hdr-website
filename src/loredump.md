@@ -1,258 +1,5 @@
 # Character Changes
 
-- ### ![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.019.png) - ZELDA -
-  - Attributes:
-    - Walk Speed: 0.914 🠚 0.874
-    - Walk acceleration (base/additional): 0.105/0.21
-    - Initial Dash Speed: 1.958 🠚 2.0
-    - Run Speed: 1.43 🠚 1.35
-    - Run Acceleration (base/additional): 0.044/0.12925 🠚 0.044/0.12025
-    - Traction: 0.116 🠚 0.08
-    - Air Speed: 1.092 🠚 1.051
-    - Air Acceleration (base/additional): 0.02/0.055 🠚 0.02/0.05
-    - Fall Speed: 1.35 🠚 1.5
-    - Fast Fall Speed: 2.16 🠚 2.245
-    - Gravity: 0.071 🠚 0.077
-    - Initial Jump Velocity: 17.3525 🠚 11.2791
-    - Short hop height 15.24 🠚 14.24
-    - Hard landing lag: 8F 🠚 5F
-    - Horizontal Jump Speed Multiplier: 0.7 🠚 0.75
-    - Max Horizontal Jump Speed: 1.1 🠚 1.13
-    - Model Scale Multiplier: 1 🠚 0.97
-    - Weight 85 🠚 86
-    - Footstool Jump Speed Multiplier (full hop/short hop): 0.8/0.5 🠚 0.79
-    - Directional Airdodge Velocity: 3 🠚 2.79
-    - Directional Airdodge Landing Speed Multiplier: 1 🠚 0.875
-  - Jab:
-    - Jab
-      - *Can be canceled into Rapid Jab Finisher by pressing special between frames 8-18*
-      - *Split into three hits*
-      - Hit 1/Hit 2
-        - Angle: 361 🠚 60
-      - Hit 3
-        - Shieldstun Multiplier: 1.0x 🠚 2.2x
-        - Additional Hitstun (inner/outer): 2/2F 🠚 4/6F
-      - FAF: 25 🠚 24
-    - Rapid Jab Finisher:
-      - ` `FAF: 43 🠚 42
-  - Forward Tilt:
-    - *Added intangibility to forearm during active frames*
-    - *Added chest hitbox*
-    - *Adjusted vfx to match hitboxes*
-    - Hitbox Duration: F12-13 🠚 F9-12
-    - Sourspot
-      - Damage (chest/shoulder/arm): \*/11.0/15.0% 🠚 8.0/9.0/10.0%
-      - Angle: 361 🠚 100
-      - BKB: 72 🠚 70
-      - KBG: 68 🠚 50
-    - Sweetspot
-      - Hand
-        - Damage: 15.0% 🠚 13.0%
-        - BKB: 72 🠚 50
-        - KBG: 69 🠚 95
-      - Tipper
-        - Damage: 15.0% 🠚 14.0%
-        - BKB: 72 🠚 60
-        - KBG: 69 🠚 95
-    - FAF: 40 🠚 34
-  - Up Tilt:
-    - *Added intangibility to head and arm during active frames*
-  - Down Tilt:
-    - *Hitboxes enlarged, thigh hitbox moved inwards*
-    - Thigh/Leg
-      - Damage: 5.5% 🠚 6.5%
-      - Angle: 62 🠚 80
-      - BKB: 15 🠚 47
-      - KBG: 125 🠚 70
-    - Foot
-      - *Split into ground and air-only hitboxes*
-      - Damage: 5.5% 🠚 10.0%
-      - Ground
-        - Angle: 62 🠚 270
-        - BKB: 15 🠚 80
-        - KBG: 125 🠚 65
-      - Air
-        - Angle: 62 🠚 90
-        - BKB: 15 🠚 60
-        - KBG: 125 🠚 90
-      - Hitlag Multiplier: 1.0x 🠚 1.5x
-  - Dash Attack:
-    - *Attached hitboxes to arms*
-    - *Added chest hitbox*
-    - *Outer hitbox moved forward*
-    - Hitbox Duration: F6-7/F8-12 🠚 F6-8/F9-16
-    - KBG Increased 70 🠚 72
-    - Early
-      - Chest
-        - Damage: 12.0% 🠚 13.0%
-        - Angle: 50 🠚 80
-        - BKB: 85 🠚 50
-      - Arm/Hand
-        - Angle: 50 🠚 361
-        - BKB: 80 🠚 60
-        - KBG: 50 🠚 72
-    - Late
-      - Chest/Arm
-        - Damage: 6.0% 🠚 7.0%
-        - Angle: 50 🠚 83
-        - BKB: 80 🠚 62
-        - KBG: 50 🠚 72
-      - Hand
-        - Damage: 6.0% 🠚 8.0%
-        - Angle: 50 🠚 83
-        - BKB: 80 🠚 62
-        - KBG: 50 🠚 72
-  - Forward Smash:
-    - Hitbox Duration: F16/F18/F20/F22/F24 🠚 F14/F16/F18/F20/F22-23
-    - Launcher
-      - KBG: 110 🠚 112
-    - FAF: 50 🠚 54
-  - Up Smash:
-    - *Hitboxes enlarged and moved upwards*
-    - KBG (launcher): 214 🠚 218
-    - FAF: 64 🠚 65
-  - Down Smash:
-    - Hitbox Duration (hit 1/hit 2): F5-6/F13-14 🠚 F5-7/F13-16
-    - KBG (hit 1/hit 2): 86/96 🠚 96/106
-    - FAF: 38 🠚 40
-  - Neutral Air:
-    - *Attached hitboxes to head/arms/torso*
-    - *Added hip hitbox*
-    - Multihits
-      - Damage: 2.5% 🠚 2.0%
-      - Angle (air-only): 367 🠚 366
-      - Additional Hitstun: 5F 🠚 6F
-    - Launcher
-      - *Launches forwards on all but the back hitbox*
-      - Angle: 361 🠚 50
-      - BKB: 35 🠚 40
-      - KBG: 130 🠚 120
-    - FAF: 51 🠚 43
-    - Landing Lag: 15F 🠚 9F
-  - Forward Air:
-    - *Added late hit*
-    - *Can now reverse hit*
-    - Hitbox Duration (early/late): F6/F7-10 🠚 F6-8/F9-17
-    - Early
-      - Sweetspot
-        - Damage: 20.0% 🠚 16.0%
-        - KBG: 95 🠚 105
-        - Hitbox Size: 2.2u 🠚 4.0u
-      - Sourspot
-        - Damage: 4.0% 🠚 9.0%
-        - BKB: 5 🠚 25
-        - KBG: 80 🠚 89
-    - Late
-      - Damage: 7.5%
-      - Angle: 70
-      - BKB: 65
-      - KBG: 50
-      - Hitbox Size: 4.5/4.0/5.0u 🠚 3.5/3.5/3.5u
-    - FAF: 53 🠚 41
-    - Autocancel: F43 🠚 F36
-    - Landing Lag: 15F 🠚 10F
-  - Back Air:
-    - *Added late hit*
-    - *Can now reverse hit*
-    - Hitbox Duration (early/late): F6/F7-10 🠚 F6-7/F8/F9-17
-    - Early
-      - Sweetspot
-        - Damage: 20.0% 🠚 18.0%
-        - BKB: 24 🠚 30
-        - KBG: 95 🠚 108
-        - Hitbox Size: 2.2u 🠚 3.5u
-      - Sourspot
-        - Damage: 4.0% 🠚 10.0%
-        - Angle: 25 🠚 38
-        - BKB: 5 🠚 10
-        - KBG: 80/96 🠚 103
-        - Hitbox Size (hip/knee/foot): 4.0/4.5/5.0u 🠚 4.5/4.0/4.5u
-    - Late
-      - Damage: 8.0%
-      - Angle: 38
-      - BKB: 25
-      - KBG: 100
-      - Hitbox Size: 3.0/3.0/3.0u
-    - FAF: F53 🠚 F41
-    - Autocancel: F46 🠚 F36
-    - Landing Lag: 16F 🠚 11F
-  - Up Air:
-    - *Added shoulder hitbox on frames 10-12 that links into explosion*
-    - *Late hitbox enlarged*
-    - Hitbox Duration (early/late): F14-16/F17-19 🠚 F14-16/F17-20
-    - Early
-      - KBG: 73 🠚 71
-    - FAF: F55 🠚 F50
-  - Down Air:
-    - *Added mid hit*
-    - Hitbox Duration (early/mid/late): F14/F15-24 🠚 F14-15/F16-17/F18-24
-    - Early
-      - Hitbox Size (leg/foot): 4.0/4.2u 🠚 5.0/5.0u
-    - Mid
-      - Damage (sweetspot/sourspot): 5.0/4.0% 🠚 9.0/8.0%
-      - BKB (sweetspot): 5 🠚 10
-      - KBG (sweetspot/sourspot): 90/70 🠚 85/80
-      - Hitbox Size: 5.0/5.0u 🠚 4.8/4.8u
-    - Late
-      - Damage (sweetspot/sourspot): 5.0/4.0% 🠚 9.0/8.0%
-      - BKB (sweetspot): 5 🠚 10
-      - KBG (sweetspot/sourspot): 90/70 🠚 85/80
-      - Hitbox Size: 5.0/5.0u 🠚 3.8/3.8u
-    - FAF: 44 🠚 34
-    - Autocancel: F40 🠚 F35
-  - Neutral Special (Nayru's Love):
-    - *Changed to single hit*
-    - *Can be jump canceled on hit*
-    - Max Airspeed: 0.8 🠚 1.051
-    - Horizontal Speed Divisor: 4.0 🠚 1.0
-    - Intangibility: F4-15 🠚 F5-12
-    - Damage: 5.0%
-    - Angle: 361 🠚 77
-    - BKB (early/late): 63/67
-    - Hitlag Multiplier: 0.5x 🠚 1.0x
-    - FAF: 60 🠚 64
-  - Din’s Fire (Side Special):
-    - *The release animation can be land canceled*
-    - Minimum Explosion Trigger Startup: F18 🠚 F6
-    - Angling Capability: 1.645 🠚 2.145
-    - Max Angle: 78 🠚 85
-    - Max Damage Scaling Frames: 45F 🠚 50F
-    - Explosion Startup: F12 🠚 F6
-    - Maximum Size: 3.8 🠚 3
-    - FAF: 40 🠚 41
-  - Farore’s Wind (Up Special):
-    - *Can be shortened by pressing special during travel*
-    - Speed Multiplier (reappearance): 0.2x 🠚 0.6x
-    - Travel Speed: 2 🠚 1.2
-    - Reappearance Speed Multiplier: 0.6x 🠚 0.35x
-    - Hitbox Duration (hit 1/hit 2): F6-7/F35-36 🠚 F6-8/F36-37
-    - Hit 1
-      - BKB (air): 60 🠚 85
-      - KBG (ground/air): 118/80 🠚 105/60
-    - Hit 2
-      - Ground
-        - KBG (sweetspot/sourspot): 90 🠚 89/87
-      - Air
-        - KBG (sweetspot/sourspot): 94/90 🠚 93/85
-    - Landing Lag: 30F 🠚 35F
-  - Phantom Slash (Down Special):
-    - *The final stage of the phantom will wait until manually released*
-    - *The phantom can be released at any point that Zelda is not in hitstun, being grabbed, or shielding*
-    - *Added new effects and vfx to stages 3-5*
-    - *All stages have reduced distance on the charge*
-    - Stage 3
-      - *Phantom charge delayed by 2 frames*
-    - Stage 4
-      - *Phantom charge delayed by 22 frames*
-    - Stage 5
-      - *Phantom charge delayed by 22 frames*
-  - Up Throw:
-    - FAF: 55 🠚 53
-  - Forward Throw:
-    - FAF: 50 🠚 46
-  - Back Throw:
-    - FAF: 50 🠚 46
-
 - ### ![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.020.png) - DR. MARIO -
   - Attributes:
     - Walk Speed: 1.155 🠚 1.12
@@ -1901,7 +1648,7 @@
     - Initial Jump Velocity: 17.1105 🠚 11.121825
     - Short Hop Height: 17.5 🠚 14.5
     - Footstool Vertical Jump Multiplier (fullhop/shorthop): 0.8/0.5 🠚 0.825
-    - Hard Landing Lag: 7F 🠚 5F
+    - Heavy Landing Lag: 7F 🠚 5F
     - Model Scale Multiplier: 1 🠚 1.03
     - Weight: 79 🠚 90
     - Directional Airdodge Distance: 18 🠚 14
@@ -2040,7 +1787,7 @@
     - Initial Jump Velocity: 17.0335 🠚 11.0718
     - Double Jump Height: 28 🠚 25
     - Max Horizontal Jump Speed: 1.2 🠚 1.265
-    - Hard Landing Lag: 2F 🠚 4F
+    - Heavy Landing Lag: 2F 🠚 4F
     - Model Scale Multiplier: 0.96 🠚 0.98
     - Shield Radius: 11.9 🠚 12.4
     - Slightly decreased downwards airdodge distance (19 🠚 16) 
@@ -2292,7 +2039,7 @@
     - Gravity: 0.08 🠚 0.095
     - Initial Jump Velocity: 15.1305 🠚 9.8348
     - Short Hop Height 13.26 🠚 11.76
-    - Hard Landing Lag: 4F
+    - Heavy Landing Lag: 4F
     - Footstool Vertical Jump Speed Multiplier (fullhop/shorthop): 0.8/0.5 🠚 0.835
     - Model Scale Multiplier: 1 🠚 1.05
     - Shield Radius: 9.3 🠚 10
@@ -2525,7 +2272,7 @@
     - Stick-Based Jump Momentum: 0.85
     - Max Horizontal Jump Speed: 1.4 🠚 1.415
     - Footstool Vertical Jump Speed Multiplier (fullhop/shorthop): 0.8/0.5 🠚 0.815
-    - Hard Landing Lag: 4F 🠚 5F
+    - Heavy Landing Lag: 4F 🠚 5F
     - Weight: 80 🠚 78
     - Model Scale Multiplier: 1 🠚 1.05
     - Shield Radius: 10.4 🠚 10.7
@@ -2902,7 +2649,7 @@
     - Wall Jump Vertical Velocity: 2.3 🠚 2.6
     - Model Scale Multiplier: 1 🠚 1.01
     - Shield Radius: 11.5 🠚 11.6
-    - Hard Landing Lag: 8F 🠚 5F
+    - Heavy Landing Lag: 8F 🠚 5F
     - Dairdodge Distance: 18 🠚 16.5
     - Directional Airdodge Velocity: 3 🠚 2.79
     - Directional Airdodge Landing Speed Multiplier: 1 🠚 0.875
@@ -3113,7 +2860,7 @@
     - Slightly Decreased Dairdodge Distance: 18 🠚 16
     - Directional Airdodge Velocity: 3 🠚 2.79
     - Directional airdodge landing speed multiplier: 1 🠚 0.875
-    - Hard Landing Lag: 4F 🠚 5F
+    - Heavy Landing Lag: 4F 🠚 5F
   - Jab:
     - Jab 1 (Kneecap Buster)
       - *Hitboxes enlarged*
@@ -3656,7 +3403,7 @@
     - Stick-Based Jump Momentum: 0.9 🠚 0.5
     - Max Horizontal Jump Speed: 1.3 🠚 1.345
     - Model Scale Multiplier: 0.94 🠚 0.97
-    - Hard landing lag: 8F 🠚 5F
+    - Heavy Landing Lag: 8F 🠚 5F
     - Shield Radius: 9 🠚 9.2
     - Slightly decreased dairdodge distance (18 🠚 15)
     - Directional Airdodge Velocity: 3 🠚 2.79
@@ -3779,7 +3526,7 @@
     - Initial Jump Velocity: 17.7375 🠚 11.5294
     - Max Horizontal Jump Speed: 1.3 🠚 1.4
     - Footstool Vertical Jump Speed Multiplier (full hop/short hop): 0.8/0.5 🠚 0.825
-    - Hard Landing Lag: 8F 🠚 5F
+    - Heavy Landing Lag: 8F 🠚 5F
     - Model Scale Multiplier: 1.14 🠚 1.16
     - Shield Radius: 9.6 🠚 10
     - Dairdodge distance: 18 🠚 16
@@ -3914,7 +3661,7 @@
     - Air Friction: 0.008 🠚 0.016
     - Fall Speed: 1.52 🠚 1.75
     - Gravity: 0.11 🠚 0.1
-    - Hard landing lag: 6F 🠚 5F
+    - Heavy Landing Lag: 6F 🠚 5F
     - Initial Jump Velocity: 17.6 🠚 11.44
     - Stick-Based Jump Momentum: 0.85 🠚 0.95
     - Footstool Vertical Jump Speed Multiplier (full hop/short hop): 0.8/0.5 🠚 0.825
@@ -4029,7 +3776,7 @@
     - Full Hop Height: 41.21 🠚 33
     - Max Horizontal Jump Speed: 1.3 🠚 1.475
     - Footstool Vertical Jump Speed Multiplier (Full Hop/Short Hop): 0.8/0.5 🠚 0.815
-    - Hard Landing Lag: 7F 🠚 5F
+    - Heavy Landing Lag: 7F 🠚 5F
     - Heavy Item Walk Speed: 0.95252 🠚 1.15252
     - Heavy Item Additional Acceleration: 0.0692308 🠚 0.0792308
     - Model Scale Multiplier: 1 🠚 1.02
@@ -4504,7 +4251,7 @@
     - Stick-Based Jump Momentum: 0.6 🠚 0.85
     - Model Scale Multiplier: 0.95 🠚 0.99
     - Shield Radius: 9.9 🠚 10.6
-    - Hard landing lag: 5F 🠚 4F
+    - Heavy Landing Lag: 5F 🠚 4F
     - Directional Airdodge Velocity: 3 🠚 2.79
     - Directional Airdodge Landing Speed Multiplier: 1 🠚 0.875
     - Slightly decreased dairdodge distance (18 🠚 16)
@@ -4647,7 +4394,7 @@
     - Initial Jump Velocity: 18.0675 🠚 11.7439
     - Short Hop Height: 16.02 🠚 15.02
     - Footstool vertical jump speed multiplier (Full Hop/Short Hop): 0.8/0.5 🠚 0.815
-    - Hard Landing Lag: 4F 🠚 5F
+    - Heavy Landing Lag: 4F 🠚 5F
     - Model Scale Multiplier: 0.95 🠚 0.93
     - Weight: 127 🠚 115
     - Directional Airdodge Velocity: 3 🠚 2.79
@@ -5006,7 +4753,7 @@
     - Weight: 92 🠚 99
     - Model Scale Multiplier: 1.05 🠚 1.07
     - Shield Radius: 10.3 🠚 10.6
-    - Hard Landing Lag: 6F 🠚 5F
+    - Heavy Landing Lag: 6F 🠚 5F
     - Directional Airdodge Velocity: 3 🠚 2.79
     - Directional Airdodge Landing Speed Multiplier: 1 🠚 0.875
   - General:
@@ -5137,7 +4884,7 @@
     - Max Horizontal Jump Speed: 1.1 🠚 1.2
     - Ground to Air Momentum Multiplier: 0 🠚 0.8
     - Shield Radius: 13.4 🠚 13
-    - Hard Landing Lag: 7F 🠚 6F
+    - Heavy Landing Lag: 7F 🠚 6F
     - Model Scale Multiplier: 1 🠚 0.95
     - Dairdodge Distance: 18 🠚 15
     - Directional Airdodge Velocity: 3 🠚 2.79
@@ -5312,7 +5059,7 @@
     - Double Jump Height: 33.8 🠚 28.8
     - Model Scale Multiplier: 1 🠚 1.04
     - Shield Radius: 9.2 🠚 9.7
-    - Hard landing lag: 5F 🠚 4F
+    - Heavy Landing Lag: 5F 🠚 4F
     - Slightly decreased dairdodge distance (18 🠚 15)
     - Directional airdodge velocity: 3 🠚 2.79
     - Directional airdodge landing speed multiplier: 1 🠚 0.875
@@ -5618,7 +5365,7 @@
     - Short Hop Height: 15.69 🠚 15.09
     - Gravity: 0.078 🠚 0.084
     - Model Scale Multiplier: 0.993 🠚 1.037
-    - Hard Landing Lag: 8F 🠚 4F
+    - Heavy Landing Lag: 8F 🠚 4F
     - Shield Radius: 9.3 🠚 9.6
     - Dairdodge Distance (18 🠚 15)
     - Directional Airdodge Velocity: 3 🠚 2.79
@@ -5997,7 +5744,7 @@
     - Initial Jump Velocity: 19.58 🠚 12.727
     - Short Hop Height: 17.18 🠚 13.18
     - Max Horizontal Jump Speed: 1.3 🠚 1.435
-    - Hard Landing Lag: 7F 🠚 5F
+    - Heavy Landing Lag: 7F 🠚 5F
     - Model Scale Multiplier: 0.96 🠚 0.99
     - Shield Radius: 12 🠚 12.5
     - Directional Airdodge Velocity: 3 🠚 2.79
@@ -6107,7 +5854,7 @@
     - Initial Jump Velocity: 22 🠚 14.3
     - Short Hop Height: 19.37 🠚 16.17
     - Max Horizontal Jump Speed: 1.1 🠚 1.235
-    - Hard Landing Lag: 7F 🠚 4F
+    - Heavy Landing Lag: 7F 🠚 4F
     - Model Scale Multiplier: 1 🠚 1.02
     - Shield Radius: 12.2 🠚 12.6
     - Directional Airdodge Velocity: 3 🠚 2.79
@@ -6227,7 +5974,7 @@
     - Horizontal Jump Speed Multiplier: 0.75 🠚 0.8
     - Max Horizontal Jump Speed: 2.1 🠚 1.44
     - Footstool Vertical Jump Speed Multiplier (fullhop/shorthop): 0.8/0.5 🠚 0.785
-    - Hard Landing Lag: 2F 🠚 4F
+    - Heavy Landing Lag: 2F 🠚 4F
     - Weight: 87 🠚 90
     - Model Scale Multiplier: 1.11 🠚 1.13
     - Shield Radius: 10.4 🠚 10.7
@@ -6496,7 +6243,7 @@
     - Short Hop Height: 22.11 🠚 15.51
     - Max Horizontal Jump Speed: 1.3 🠚 1.455
     - Footstool Vertical Jump Speed Multiplier (fullhop/shorthop): 0.8/0.5 🠚 0.65
-    - Hard Landing Lag; 7F 🠚 5F
+    - Heavy Landing Lag; 7F 🠚 5F
     - Model Scale Multiplier: 1 🠚 1.02
     - Shield Radius: 9.7 🠚 10
     - Directional Airdodge Velocity: 3 🠚 2.79
@@ -6649,7 +6396,7 @@
     - Short Hop Height: 17 🠚 13
     - Max Horizontal Jump Speed: 1.3 🠚 1.534
     - Footstool Vertical Jump Speed Multiplier (fullhop/shorthop): 0.8/0.5 🠚 0.815
-    - Hard Landing Lag: 7F 🠚 4F
+    - Heavy Landing Lag: 7F 🠚 4F
     - Model Scale Multiplier: 1.15 🠚 1.19
     - Shield Radius: 9 🠚 9.9
     - Directional Airdodge Velocity: 3 🠚 2.79
@@ -7084,7 +6831,7 @@
     - Gravity: 0.098 🠚 0.102
     - Initial Jump Velocity: 16.995 🠚 11.0468
     - Footstool Vertical Jump Speed Multiplier (fullhop/shorthop): 0.8/0.5 🠚 0.81
-    - Hard Landing Lag: 7F 🠚 6F
+    - Heavy Landing Lag: 7F 🠚 6F
     - Weight: 104 🠚 101
     - Model Scale Multiplier: 1.15 🠚 1.17
     - Shield Radius: 9.1 🠚 9.5
@@ -7158,7 +6905,7 @@
     - Fall Speed: 1.55 🠚 1.915
     - Fast Fall Speed: 2.48 🠚 2.51
     - Gravity: 0.12 🠚 0.124
-    - Hard Landing Lag: 7F 🠚 6F
+    - Heavy Landing Lag: 7F 🠚 6F
     - Initial Jump Velocity: 19.745 🠚 12.8343
     - Short Hop Height: 17.3 🠚 16.8
     - Horizontal Jump Speed Multiplier: 0.7 🠚 0.8
@@ -7484,7 +7231,7 @@
     - Gravity: 0.075 🠚 0.0765
     - Combo Gravity: 0.0775 🠚 0.085
     - Weight: 95 🠚 94
-    - Hard Landing Lag: 7F 🠚 5F
+    - Heavy Landing Lag: 7F 🠚 5F
     - Initial Jump Velocity: 18.755 🠚 12.1908
     - Short Hop Height: 16.48 🠚 15.48
     - Double Jump Height: 34.1 🠚 32.1
@@ -7935,7 +7682,7 @@
     - Gravity: 0.092 🠚 0.111
     - Short Hop Height: 16.59 🠚 15.59
     - Initial Jump Velocity: 18.92 🠚 12.298
-    - Hard Landing Lag: 7F 🠚 4F
+    - Heavy Landing Lag: 7F 🠚 4F
     - Footstool Vertical Jump Speed Multiplier (full hop/short hop): 0.8/0.5 🠚 0.81
     - Directional Airdodge Velocity: 3 🠚 2.79
     - Directional Airdodge Landing Speed Multiplier: 1 🠚 0.875
@@ -8099,7 +7846,7 @@
     - Footstool Vertical Jump Speed Multiplier (full hop/short hop): 0.8/0.5 🠚 0.775
     - Model Scale Multiplier: 1 🠚 1.02
     - Shield Radius: 9.1 🠚 9.5
-    - Hard Landing Lag: 7F 🠚 4F
+    - Heavy Landing Lag: 7F 🠚 4F
     - Directional Airdodge Velocity Decreased: 3 🠚 2.79
     - Directional Airdodge Landing Speed Multiplier Decreased: 1 🠚 0.875
   - Duck:
@@ -8447,7 +8194,7 @@
     - Shield Radius: 11.9 🠚 12.6
     - Directional airdodge velocity decreased: 3 🠚 2.79
     - Directional airdodge landing speed multiplier: 1 🠚 0.875
-    - Hard Landing Lag: 4F 🠚 5F
+    - Heavy Landing Lag: 4F 🠚 5F
   - Buster Sword:
     - *Cloud now has a sweetspot system; the base and middle of the blade is now the strongest, with the body and tip now sourspots*
   - Jab:
@@ -8894,7 +8641,7 @@
     - Initial Jump Velocity: 21.45 🠚 13.9425
     - Max Horizontal Jump Speed: 1.3 🠚 1.35
     - Footstool Vertical Jump Speed Multiplier (fullhop/shorthop): 0.8/0.5 🠚 0.815
-    - Hard Landing Lag: 7F 🠚 4F
+    - Heavy Landing Lag: 7F 🠚 4F
     - Weight: 81 🠚 84
     - Model Scale Multiplier: 1.03 🠚 1.07
     - Shield Radius: 11.7 🠚 12.6
@@ -9385,7 +9132,7 @@
     - Initial Jump Velocity: 16.5165 🠚 10.7357
     - Short Hop Height: 14.5 🠚 11.5
     - Double Jump Height: 27.03 🠚 28.03
-    - Hard Landing Lag: 7F 🠚 4F
+    - Heavy Landing Lag: 7F 🠚 4F
     - Horizontal Jump Speed Multiplier: 0.7 🠚 0.8
     - Stick-Based Jump Momentum: 0.72 🠚 0.82
     - Max Horizontal Jump Speed: 1.1 🠚 1.46
@@ -9629,7 +9376,7 @@
     - Horizontal Jump Speed Multiplier: 0.8
     - Stick-Based Jump Momentum: 0.8
     - Max Horizontal Jump Speed: 1.2 🠚 1.6
-    - Hard Landing Lag: 6F 🠚 5F
+    - Heavy Landing Lag: 6F 🠚 5F
     - Weight: 107 🠚 115
     - Directional Airdodge Velocity: 3 🠚 2.79
     - Directional Airdodge Landing Speed Multiplier: 1 🠚 0.875
@@ -10058,7 +9805,7 @@
     - Stick-Based Jump Momentum: 1 🠚 0.8
     - Max Horizontal Jump Speed: 1.2 🠚 1.38
     - Footstool Vertical Jump Speed Multiplier (fullhop/shorthop): 0.8/0.5 🠚 0.815
-    - Hard Landing Lag: 2F 🠚 4F
+    - Heavy Landing Lag: 2F 🠚 4F
     - Weight: 95 🠚 92
     - Model Scale Multiplier: 0.96 🠚 1
     - Shield Radius: 11.9 🠚 12.5
@@ -10249,7 +9996,7 @@
     - Slightly decreased dairdodge distance (18 🠚 13)
     - Directional airdodge velocity 3 🠚 2.79
     - Directional airdodge landing speed multiplier (1 🠚 0.875)
-    - Hard landing lag: 7F 🠚 6F
+    - Heavy Landing Lag: 7F 🠚 6F
     - *Aerial ECB offset increased 5* 🠚 *6*
   - Float:
     - *Dark Samus has an omnidirectional float that can be held for up to 50 frames*
@@ -10475,7 +10222,7 @@
     - Gravity: 0.105 🠚 0.118
     - Initial Jump Velocity: 18.15 🠚 11.7975
     - Short Hop Height: 13.5
-    - Hard Landing Lag: 7F 🠚 5F
+    - Heavy Landing Lag: 7F 🠚 5F
     - Model Scale Multiplier: 0.89
     - Max Horizontal Jump Speed: 1 🠚 1.567
     - Footstool Vertical Jump Speed Multiplier Normalized: 0.8/0.5 🠚 0.81
@@ -10616,7 +10363,7 @@
     - Gravity: 0.07 🠚 0.084
     - Initial Jump Velocity: 17.875 🠚 11.6188
     - Short hop height: 15.69 🠚 15.29
-    - Hard Landing Lag: 8F 🠚 4F
+    - Heavy Landing Lag: 8F 🠚 4F
     - Model Scale Multiplier: 1 🠚 1.04
     - Shield Radius: 9.3 🠚 9.6
     - Slightly decreased dairdodge distance (18 🠚 15)
@@ -10981,7 +10728,7 @@
     - Short Hop Height: 14.4 🠚 11
     - Initial Jump Velocity: 17.38 🠚 11.297
     - Footstool Vertical Jump Speed Multiplier (fullhop/shorthop): 0.8/0.5 🠚 0.805
-    - Hard Landing Lag: 8F 🠚 5F
+    - Heavy Landing Lag: 8F 🠚 5F
     - Model Scale Multiplier: 1 🠚 1.03
     - Shield Radius: 11.7 🠚 12.3
     - Weight: 116 🠚 112
@@ -11815,7 +11562,7 @@
       - 2.18/2.12 🠚 2.75/2.5
     - Max Horizontal Jump Speed: 1.2 🠚 1.45
     - Footstool Vertical Jump Speed Multiplier (fullhop/shorthop): 0.8/0.5 🠚 0.815
-    - Hard Landing Lag: 8F 🠚 4F
+    - Heavy Landing Lag: 8F 🠚 4F
     - Directional Airdodge Velocity: 3 🠚 2.79
     - Directional Airdodge Landing Speed Multiplier: 1 🠚 0.875
   - Jab:
