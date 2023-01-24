@@ -1,0 +1,684 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js ayu">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Pichu - HDR Master Changelog</title>
+                
+
+        <!-- Custom HTML head -->
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+                <link rel="icon" href="../../favicon.svg">
+                        <link rel="shortcut icon" href="../../favicon.png">
+                <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+                <link rel="stylesheet" href="../../css/print.css" media="print">
+        
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+                <link rel="stylesheet" href="../../fonts/fonts.css">
+        
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+            </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "ayu";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="../../intro.html">Introduction</a></li><li class="chapter-item "><div><strong aria-hidden="true">1.</strong> Engine Changes</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../engine/mechanics.html"><strong aria-hidden="true">1.1.</strong> Mechanics</a></li><li class="chapter-item "><a href="../../engine/fighterstats.html"><strong aria-hidden="true">1.2.</strong> Fighter Stats</a></li><li class="chapter-item "><a href="../../engine/knockback.html"><strong aria-hidden="true">1.3.</strong> Knockback</a></li><li class="chapter-item "><a href="../../engine/di.html"><strong aria-hidden="true">1.4.</strong> Directional Influence</a></li><li class="chapter-item "><a href="../../engine/collision.html"><strong aria-hidden="true">1.5.</strong> Collision</a></li><li class="chapter-item "><a href="../../engine/ledges.html"><strong aria-hidden="true">1.6.</strong> Ledges</a></li><li class="chapter-item "><a href="../../engine/shields.html"><strong aria-hidden="true">1.7.</strong> Shielding</a></li><li class="chapter-item "><a href="../../engine/airdodges.html"><strong aria-hidden="true">1.8.</strong> Airdodging / Wavedashing</a></li><li class="chapter-item "><a href="../../engine/rolls.html"><strong aria-hidden="true">1.9.</strong> Rolling / Teching</a></li><li class="chapter-item "><a href="../../engine/items.html"><strong aria-hidden="true">1.10.</strong> Footstooling / Item Mechanics</a></li><li class="chapter-item "><a href="../../engine/misc.html"><strong aria-hidden="true">1.11.</strong> Miscellaneous</a></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">2.</strong> System Changes</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../system/launcher.html"><strong aria-hidden="true">2.1.</strong> Launcher</a></li><li class="chapter-item "><a href="../../system/inputs.html"><strong aria-hidden="true">2.2.</strong> Inputs and Controls</a></li><li class="chapter-item "><a href="../../system/ui.html"><strong aria-hidden="true">2.3.</strong> User Interface and Graphics</a></li><li class="chapter-item "><a href="../../system/modes.html"><strong aria-hidden="true">2.4.</strong> Extra Modes</a></li><li class="chapter-item "><a href="../../system/online.html"><strong aria-hidden="true">2.5.</strong> Online</a></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">3.</strong> Stage Changes</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">3.1.</strong> Stages</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Character Changes</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../characters/characterlist.html"><strong aria-hidden="true">4.1.</strong> Overview</a></li><li class="chapter-item "><a href="../../characters/terms.html"><strong aria-hidden="true">4.2.</strong> Terms</a></li><li class="chapter-item "><div><strong aria-hidden="true">4.3.</strong> Smash 64</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../characters/smash64/mario.html"><strong aria-hidden="true">4.3.1.</strong> Mario</a></li><li class="chapter-item "><a href="../../characters/smash64/donkey.html"><strong aria-hidden="true">4.3.2.</strong> Donkey Kong</a></li><li class="chapter-item "><a href="../../characters/smash64/link.html"><strong aria-hidden="true">4.3.3.</strong> Link</a></li><li class="chapter-item "><a href="../../characters/smash64/samus.html"><strong aria-hidden="true">4.3.4.</strong> Samus</a></li><li class="chapter-item "><a href="../../characters/smash64/yoshi.html"><strong aria-hidden="true">4.3.5.</strong> Yoshi</a></li><li class="chapter-item "><a href="../../characters/smash64/kirby.html"><strong aria-hidden="true">4.3.6.</strong> Kirby</a></li><li class="chapter-item "><a href="../../characters/smash64/fox.html"><strong aria-hidden="true">4.3.7.</strong> Fox</a></li><li class="chapter-item "><a href="../../characters/smash64/pikachu.html"><strong aria-hidden="true">4.3.8.</strong> Pikachu</a></li><li class="chapter-item "><a href="../../characters/smash64/luigi.html"><strong aria-hidden="true">4.3.9.</strong> Luigi</a></li><li class="chapter-item "><a href="../../characters/smash64/ness.html"><strong aria-hidden="true">4.3.10.</strong> Ness</a></li><li class="chapter-item "><a href="../../characters/smash64/captain.html"><strong aria-hidden="true">4.3.11.</strong> Captain Falcon</a></li><li class="chapter-item "><a href="../../characters/smash64/purin.html"><strong aria-hidden="true">4.3.12.</strong> Jigglypuff</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.4.</strong> Melee</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../characters/melee/peach.html"><strong aria-hidden="true">4.4.1.</strong> Peach</a></li><li class="chapter-item "><a href="../../characters/melee/koopa.html"><strong aria-hidden="true">4.4.2.</strong> Bowser</a></li><li class="chapter-item "><a href="../../characters/melee/popo.html"><strong aria-hidden="true">4.4.3.</strong> Ice Climbers</a></li><li class="chapter-item "><a href="../../characters/melee/sheik.html"><strong aria-hidden="true">4.4.4.</strong> Sheik</a></li><li class="chapter-item "><a href="../../characters/melee/zelda.html"><strong aria-hidden="true">4.4.5.</strong> Zelda</a></li><li class="chapter-item "><a href="../../characters/melee/mariod.html"><strong aria-hidden="true">4.4.6.</strong> Dr. Mario</a></li><li class="chapter-item expanded "><a href="../../characters/melee/pichu.html" class="active"><strong aria-hidden="true">4.4.7.</strong> Pichu</a></li><li class="chapter-item "><div><strong aria-hidden="true">4.4.8.</strong> Falco</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.4.9.</strong> Marth</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.4.10.</strong> Young Link</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.4.11.</strong> Ganondorf</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.4.12.</strong> Mewtwo</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.4.13.</strong> Roy</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.4.14.</strong> Mr. Game and Watch</div></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.</strong> Brawl</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">4.5.1.</strong> Meta Knight</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.2.</strong> Pit</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.3.</strong> Zero Suit Samus</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.4.</strong> Wario</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.5.</strong> Snake</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.6.</strong> Ike</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.7.</strong> Squirtle</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.8.</strong> Ivysaur</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.9.</strong> Charizard</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.10.</strong> Diddy Kong</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.11.</strong> Lucas</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.12.</strong> Sonic</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.13.</strong> King Dedede</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.14.</strong> Olimar</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.15.</strong> Lucario</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.16.</strong> R.O.B.</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.17.</strong> Toon Link</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.18.</strong> Wolf</div></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.</strong> Smash 4</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">4.6.1.</strong> Villager</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.2.</strong> Mega Man</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.3.</strong> Wii Fit Trainer</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.4.</strong> Rosalina and Luma</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.5.</strong> Little Mac</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.6.</strong> Greninja</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.7.</strong> Mii Brawler</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.8.</strong> Mii Swordfighter</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.9.</strong> Mii Gunner</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.10.</strong> Palutena</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.11.</strong> Dark Pit</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.12.</strong> Pac-Man</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.13.</strong> Lucina</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.14.</strong> Robin</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.15.</strong> Shulk</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.16.</strong> Bowser Jr.</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.17.</strong> Duck Hunt</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.18.</strong> Ryu</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.19.</strong> Cloud</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.20.</strong> Corrin</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.21.</strong> Bayonetta</div></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.</strong> Ultimate</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">4.7.1.</strong> Inkling</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.2.</strong> Daisy</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.3.</strong> Ridley</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.4.</strong> Simon</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.5.</strong> Richter</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.6.</strong> Chrom</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.7.</strong> Dark Samus</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.8.</strong> King K. Rool</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.9.</strong> Isabelle</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.10.</strong> Ken</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.11.</strong> Incineroar</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.12.</strong> Piranha Plant</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.13.</strong> Joker</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.14.</strong> Hero</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.15.</strong> Banjo and Kazooie</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.16.</strong> Terry</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.17.</strong> Byleth</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.18.</strong> Min Min</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.19.</strong> Steve</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.20.</strong> Sephiroth</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.21.</strong> Pyra</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.22.</strong> Mythra</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.23.</strong> Kazuya</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.24.</strong> Sora</div></li></ol></li></ol></li></ol>            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu (default)</button></li>
+                        </ul>
+                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                                            </div>
+
+                    <h1 class="menu-title">HDR Master Changelog</h1>
+
+                    <div class="right-buttons">
+                                                <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                                                                        
+                    </div>
+                </div>
+
+                                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="img-srcimagesstock_pichupng-alt--pichu"><a class="header" href="#img-srcimagesstock_pichupng-alt--pichu"><img src="../../images/Stock_Pichu.png" alt="" /> Pichu</a></h1>
+<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
+<p><img src="../../images/SmashBall.png" alt="" /> <b>Attributes</b></p>
+<ul>
+<li>Walk Speed: 1.302 🠚 1.25</li>
+<li>Initial Dash Speed: 1.98 🠚 1.85</li>
+<li>Run Speed: 1.892 🠚 1.82</li>
+<li>Run Acceleration: (base/additional): 0.06/0.14 🠚 0.02/0.08</li>
+<li>Traction: 0.11 🠚 0.096</li>
+<li>Jumpsquat: 3F</li>
+<li>Max Horizontal Jump Speed: 1.8 🠚 1.6</li>
+<li>Short Hop Height: 17.43 🠚 15.43</li>
+<li>Full Hop Height: 36.75 🠚 32.0</li>
+<li>Air Speed: 1.029 🠚 1.05</li>
+<li>Air Acceleration (base/additional): 0.01/0.09 🠚 0.0055/0.08</li>
+<li>Air Friction: 0.0075 🠚 0.01</li>
+<li>Gravity: 0.14 🠚 0.15</li>
+<li>Fall Speed: 1.9 🠚 2.4</li>
+<li>Fast Fall Speed: 2.5 🠚 3.15</li>
+<li>Combo Gravity: 0.062832 🠚 0.14</li>
+<li>Combo Fall Speed: 1.8 🠚 1.9</li>
+<li>Weight: 62 🠚 70</li>
+<li>Model Scale Multiplier: 0.92 🠚 1.0</li>
+<li>Shield Radius: 8.8 🠚 8.3
+<br><br></li>
+</ul>
+<p><img src="../../images/SmashBall.png" alt="" /> <b>Moveset</b></p>
+<ul>
+<li>Charge State:
+<ul>
+<li><property>Using electric attacks builds up charge</property>
+<ul>
+<li>Connecting with the move will build charge equal to the move's damage whereas whiffing will only accrue 25% of that</li>
+<li>Thunder Jolt builds charge on use, but none on hit</li>
+</ul>
+</li>
+<li><property>After dealing 60% with electric attacks, Pichu enters Charge State</property>
+<ul>
+<li>Charge State lasts 15 seconds and increases the damage of all electric moves by 1.2x while also increasing their recoil by 1.25x</li>
+<li>Charge State also changes Pichu’s specials significantly</li>
+<li>Pressing Shield while taunting in training mode instantly activates Charge State
+<br><br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Jab:
+<ul>
+<li><rework>Changed to a single hit rather than a repeatable series</rework></li>
+<li>Hitbox Duration: <nerf>F2-3 🠚 F4-5</nerf></li>
+<li>Damage: <buff>1.2% 🠚 4.0%</buff></li>
+<li>Angle: <rework>0 🠚 67</rework></li>
+<li>BKB: <rework>10/20 🠚 70</rework></li>
+<li>KBG: <rework>60 🠚 72</rework></li>
+<li>SDI Multiplier: <buff>1.5x 🠚 1.0x</buff></li>
+<li>FAF: <nerf>17 🠚 22</nerf>
+<br><br></li>
+</ul>
+</li>
+<li>Forward Tilt:
+<ul>
+<li>Hitbox Duration (early/late): <buff>F5-9/F9-12 🠚 F5-9/F9-15</buff></li>
+<li>Self-Damage: <nerf>1.0% 🠚 1.5%</nerf></li>
+<li>Damage: <buff>8.0% 🠚 9.0%</buff></li>
+<li>Angle: <buff>361 🠚 40</buff></li>
+<li>BKB (early/late): <buff>5 🠚 50/45</buff></li>
+<li>KBG: <nerf>130 🠚 105</nerf></li>
+<li>FAF <nerf>25 🠚 27</nerf>
+<br><br></li>
+</ul>
+</li>
+<li>Up Tilt:
+<ul>
+<li>Damage: <buff>5.0% 🠚 5.5%</buff></li>
+<li>Angle: <rework>95 🠚 75</rework></li>
+<li>BKB: <rework>32 🠚 70</rework></li>
+<li>KBG: <rework>105 🠚 90</rework></li>
+<li>Hitbox Size (base/mid/tip): <buff>2.0/2.8/3.6u 🠚 3.0/3.5/4.2u</buff>
+<br><br></li>
+</ul>
+</li>
+<li>Down Tilt:
+<ul>
+<li>Hitbox Duration: <buff>F7-8 🠚 F6-9</buff></li>
+<li>Inner Tail
+<ul>
+<li>Angle: <rework>80 🠚 101</rework></li>
+<li>BKB: <nerf>40 🠚 65</nerf></li>
+<li>KBG: <nerf>50 🠚 70</nerf></li>
+<li>Hitbox Size: <buff>3.2u 🠚 3.5u</buff></li>
+</ul>
+</li>
+<li>Outer tail
+<ul>
+<li>Damage: <buff>6.0% 🠚 7.0%</buff></li>
+<li>Angle: <rework>100 🠚 110</rework></li>
+<li>BKB: <nerf>40 🠚 65</nerf></li>
+<li>Hitbox Size: <buff>4.0u 🠚 4.5u</buff>
+<br><br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Forward Smash:
+<ul>
+<li><property>Hitboxes become 1.2x larger during Charge State</property></li>
+<li>Self-Damage: <nerf>1.5% 🠚 2.5%</nerf></li>
+<li>Multihits
+<ul>
+<li>Hitlag Multiplier: <adjust>0.3x 🠚 0.6x</adjust></li>
+</ul>
+</li>
+<li>Launcher
+<ul>
+<li>Angle: <buff>361 🠚 40</buff></li>
+<li>BKB: <adjust>68 🠚 65</adjust></li>
+<li>KBG: <adjust>123 🠚 130</adjust></li>
+<li>Hitlag Multiplier: <adjust>1.0x 🠚 1.2x</adjust></li>
+<li>Hitbox Size (inner/outer): <nerf>4.7/5.2u 🠚 4.3/5.3u</nerf></li>
+</ul>
+</li>
+<li>FAF: <nerf>54 🠚 60</nerf>
+<br><br></li>
+</ul>
+</li>
+<li>Up Smash:
+<ul>
+<li><property>Becomes electric during Charge State</property></li>
+<li>Hitbox Duration: <buff>F9-11 🠚 F8-12</buff></li>
+<li>Normal
+<ul>
+<li>Damage: <buff>14.0% 🠚 15.0%</buff></li>
+<li>KBG: <buff>85 🠚 98</buff></li>
+<li>Hitbox Size (head/body): <buff>5.4/3.2u 🠚 6.0/3.2u</buff></li>
+</ul>
+</li>
+<li>Charge State
+<ul>
+<li>Self-Damage: 2.5%</li>
+<li>Damage: 18.0%</li>
+<li>Angle: 95</li>
+<li>BKB (head/body): 40/15</li>
+<li>KBG: 98</li>
+<li>Hitbox Size (head/body): 6.0/3.2u</li>
+</ul>
+</li>
+<li>FAF: <nerf>41 🠚 46</nerf>
+<br><br></li>
+</ul>
+</li>
+<li>Down Smash:
+<ul>
+<li><rework>Changed to a single hit</rework></li>
+<li>Self-Damage: <nerf>1.3% 🠚 1.5%</nerf></li>
+<li>Normal
+<ul>
+<li>Hitbox Duration (early/late): F8-12/F13-19</li>
+<li>Early
+<ul>
+<li>Normal
+<ul>
+<li>Damage: 12.0%</li>
+<li>Angle: 55</li>
+<li>BKB: 45</li>
+<li>KBG: 120</li>
+<li>Hitbox Size: 6.0u</li>
+</ul>
+</li>
+<li>Late
+<ul>
+<li>Damage: 8.0%</li>
+<li>Angle: 55</li>
+<li>BKB: 45</li>
+<li>KBG: 90</li>
+<li>Hitbox Size: 4.5u</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Charge State
+<ul>
+<li>Hitbox Duration: F8-19</li>
+<li>Damage: 14.4%</li>
+<li>Angle: 125</li>
+<li>BKB: 45</li>
+<li>KBG: 120</li>
+<li>Hitbox Size: 6.0u</li>
+</ul>
+</li>
+<li>FAF: <nerf>51 🠚 57</nerf>
+<br><br></li>
+</ul>
+</li>
+<li>Neutral Air:
+<ul>
+<li><nerf>Reduced pancaking on landing</nerf></li>
+<li>Early
+<ul>
+<li>Damage: <buff>7.0% 🠚 10.0%</buff></li>
+<li>BKB: <adjust>20 🠚 35</adjust></li>
+<li>KBG: <adjust>112 🠚 105</adjust></li>
+<li>Hitbox Size: <buff>4.0u 🠚 4.5u</buff></li>
+</ul>
+</li>
+<li>Late
+<ul>
+<li>Damage: <buff>5.0% 🠚 7.0%</buff></li>
+<li>BKB: <adjust>0 🠚 30</adjust></li>
+<li>KBG: <adjust>112 🠚 95</adjust></li>
+<li>Hitbox Size: <buff>4.0u 🠚 4.5u</buff></li>
+</ul>
+</li>
+<li>Autocancel: <buff>F35 🠚 F29</buff>
+<br><br></li>
+</ul>
+</li>
+<li>Forward Air:
+<ul>
+<li><rework>Changed to a single hit</rework></li>
+<li><nerf>Reduced pancaking on landing<nerf></li>
+<li>Hitbox Duration (early/late): F10-13/F14-18</li>
+<li>Self-Damage: <nerf>1.0% 🠚 2.0%</nerf></li>
+<li>Early
+<ul>
+<li>Damage: <buff>12.0% 🠚 12.5%</buff></li>
+<li>Angle: 45</li>
+<li>BKB: <buff>30 🠚 35</buff></li>
+<li>KBG: <buff>98 🠚 100</buff></li>
+</ul>
+</li>
+<li>Late
+<ul>
+<li>Damage: <buff>5.0% 🠚 5.5%</buff></li>
+<li>Angle: 361</li>
+<li>BKB: 35</li>
+<li>KBG: 85</li>
+</ul>
+</li>
+<li>Autocancel: <buff>F1-9/F34 🠚 F1-8/F25</buff></li>
+<li>Landing Lag: <buff>12F 🠚 10F</buff>
+<br><br></li>
+</ul>
+</li>
+<li>Back Air:
+<ul>
+<li><nerf>Reduced pancaking on landing</nerf></li>
+<li>Hitbox Duration (multihits/launcher): <nerf>F5-27/F30-31 🠚 F8-25/F28-29</nerf></li>
+<li>Self-Damage: <nerf>1.5% 🠚 2.0%</nerf></li>
+<li>Launcher
+<ul>
+<li>BKB: <nerf>70 🠚 35</nerf></li>
+<li>KBG: <buff>160 🠚 257</buff></li>
+<li>Hitlag Multiplier: <adjust>1.0x 🠚 1.2x</adjust></li>
+</ul>
+</li>
+<li>FAF: <buff>55 🠚 48</buff></li>
+<li>Autocancel: <buff>F1-4/F38 🠚 F1-7/F35</buff></li>
+<li>Landing Lag: <buff>18F 🠚 13F</buff>
+<br><br></li>
+</ul>
+</li>
+<li>Up Air:
+<ul>
+<li><nerf>Reduced pancaking on landing</nerf></li>
+<li>Damage: <buff>4.0% 🠚 7.0%</buff></li>
+<li>Angle: <nerf>80 🠚 63</nerf></li>
+<li>BKB: <adjust>70 🠚 45</adjust></li>
+<li>KBG: <adjust>70 🠚 95</adjust></li>
+<li>Hitbox Size (base/tip): <buff>2.8/3.6u 🠚 4.0/5.0u</buff></li>
+<li>Autocancel: <nerf>F1-3/F18 🠚 F1-3/F19</nerf></li>
+<li>Landing Lag: <buff>11F 🠚 9F</buff>
+<br><br></li>
+</ul>
+</li>
+<li>Down Air:
+<ul>
+<li><adjust>Removed landing hit</adjust></li>
+<li><nerf>Reduced pancaking on landing</nerf></li>
+<li>Self-Damage: <nerf>1.5% 🠚 2.0%</nerf></li>
+<li>Early
+<ul>
+<li><buff>Added body hitbox</buff></li>
+<li>Body
+<ul>
+<li>Damage: 12.0%</li>
+<li>Angle: 361</li>
+<li>BKB: 40</li>
+<li>KBG: 110</li>
+<li>Hitbox Size: 4.5u</li>
+</ul>
+</li>
+<li>Head
+<ul>
+<li>KBG (ground/air): <nerf>86 🠚 86/63</nerf></li>
+<li>Hitbox Size: <buff>4.5u 🠚 5.5u</buff></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Late
+<ul>
+<li>BKB: <buff>20 🠚 35</buff></li>
+<li>KBG: <buff>100 🠚 104</buff></li>
+<li>Hitbox Size (body/head): <nerf>3.5/5.4u 🠚 3.5/5.0u</nerf></li>
+</ul>
+</li>
+<li>Landing Lag: <buff>22F 🠚 14F</buff>
+<br><br></li>
+</ul>
+</li>
+<li>Thunder Jolt / Electroweb (Neutral Special):
+<ul>
+<li><rework>Travels straight horizontally</rework></li>
+<li><rework>No longer bounces off surfaces</rework></li>
+<li><buff>Retains aerial momentum</buff></li>
+<li>Self-Damage: <nerf>0.8% 🠚 1.0%</nerf></li>
+<li>Thunder Jolt
+<ul>
+<li>Lifetime: <rework>100F 🠚 75F</rework></li>
+<li>Horizontal Speed: <rework>2.4 🠚 1.2</rework></li>
+<li>Startup: <buff>F18 🠚 F13</buff></li>
+<li>Damage: <nerf>10.0% 🠚 7.0%</nerf></li>
+<li>Angle: <rework>361 🠚 75</rework></li>
+<li>BKB: <adjust>50 🠚 35</adjust></li>
+<li>KBG: <adjust>30 🠚 50</adjust></li>
+<li>Hitlag Multiplier: <buff>0.3x 🠚 1.25x</buff></li>
+</ul>
+</li>
+<li>Electroweb
+<ul>
+<li><property>Electroweb is larger and paralyzes opponents</property></li>
+<li><property>Decrements Charge State duration by 1 second upon use</property></li>
+<li>Self-Damage: 3.0%</li>
+<li>Damage: 5.0%</li>
+<li>Angle: 75</li>
+<li>BKB: 35</li>
+<li>KBG: 50</li>
+<li>Hitlag Multiplier: 0.3x</li>
+<li>Hitbox Size: 6.0u</li>
+</ul>
+</li>
+<li>FAF: <buff>52 🠚 46</buff>
+<br><br></li>
+</ul>
+</li>
+<li>Skull Bash / Wild Charge (Side Special):
+<ul>
+<li><rework>Removed the ability to charge; travels a set distance</rework></li>
+<li><rework>Removed bounce on hit</rework></li>
+<li>Skull Bash
+<ul>
+<li>Horizontal Travel Speed: <rework>1.8/5 🠚 1.7</rework></li>
+<li>Hitbox Duration: <rework>F17-52 🠚 F13-31</rework></li>
+<li>Self-Damage: 1.0%</li>
+<li>Damage: 8.0%</li>
+<li>Angle: 68</li>
+<li>BKB: 70</li>
+<li>KBG: 55</li>
+<li>Hitbox Size: 3.2u</li>
+<li>FAF (ground/air): <buff>96/86 🠚 58/67</buff></li>
+</ul>
+</li>
+<li>Wild Charge
+<ul>
+<li><property>Wild Charge is much stronger at the cost of much higher endlag</property></li>
+<li><property>Decrements Charge State duration by 1 second upon use</property></li>
+<li>Hitbox Duration (early/late): F13-18/F19-25</li>
+<li>Self-Damage: 3.0%</li>
+<li>Early
+<ul>
+<li>Damage: 25.0%</li>
+<li>Angle: 40</li>
+<li>BKB: 60</li>
+<li>KBG: 65</li>
+<li>Hitbox Size: 3.2u</li>
+</ul>
+</li>
+<li>Late
+<ul>
+<li>Damage: 15.0%</li>
+<li>Angle: 40</li>
+<li>BKB: 60</li>
+<li>KBG: 65</li>
+<li>Hitbox Size: 3.2u</li>
+</ul>
+</li>
+<li>FAF (ground/air): 65/79
+<br><br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Agility / Zippy Zap (Up Special):
+<ul>
+<li><property>The first zip can be jump canceled starting on frame 7 if angled into the ground</property></li>
+<li><buff>Snaps to ledge earlier and can grab ledge moving downwards</buff></li>
+<li>Travel Speed: <nerf>8.3 🠚 7.0</nerf></li>
+<li>Zippy Zap
+<ul>
+<li><property>Zippy Zap gains a hitbox and can be jump canceled on hit</property></li>
+<li>1st Zip
+<ul>
+<li>Self-Damage: 1.0%</li>
+<li>Damage: 2.0%</li>
+<li>Angle: 70</li>
+<li>BKB: 20</li>
+<li>KBG: 50</li>
+<li>Hitbox Size: 1.6u</li>
+</ul>
+</li>
+<li>2nd Zip
+<ul>
+<li>Self-Damage: 2.0%</li>
+<li>Damage: 3.0%</li>
+<li>Angle: 70</li>
+<li>BKB: 20</li>
+<li>KBG: 150</li>
+<li>Hitbox Size: 1.6u
+<br><br></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Thunder / Discharge (Down Special):
+<ul>
+<li>Thunder
+<ul>
+<li>Contact
+<ul>
+<li>Hitbox Duration: <buff>F1-3 🠚 F1-4</buff></li>
+<li>KBG: <buff>65 🠚 71</buff></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Discharge
+<ul>
+<li><property>Discharge is only the blast hitbox of Thunder but much larger and stronger</property>
+<ul>
+<li>The size and strength decrease based on how long Charge State has remaining, to a minimum of 50%</li>
+</ul>
+</li>
+<li><property>Ends Charge State on use</property></li>
+<li>Hitbox Duration: F21-24</li>
+<li>Self-Damage: 8.0%</li>
+<li>Damage: 20.0%</li>
+<li>Angle: 361</li>
+<li>BKB: 90</li>
+<li>KBG: 71</li>
+<li>Hitbox Size: 11.0u</li>
+<li>FAF (ground/air): 81/72
+<br><br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Forward Throw:
+<ul>
+<li>BKB: <buff>45 🠚 55</buff>
+<br><br></li>
+</ul>
+</li>
+<li>Back Throw:
+<ul>
+<li><property>Becomes electric during Charge State</property></li>
+<li>Charge State
+<ul>
+<li>Self-Damage: 1.0%</li>
+<li>Angle: <rework>135 🠚 80</rework></li>
+<li>FAF: <buff>50 🠚 31</buff>
+<br><br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Up Throw:
+<ul>
+<li><property>Becomes electric during Charge State</property></li>
+<li>Charge State
+<ul>
+<li>Self-Damage: 1.2%</li>
+<li>Damage: <buff>5.0/5.0% 🠚 5.0/9.0%</buff></li>
+<li>BKB: <nerf>90 🠚 70</nerf></li>
+<li>KBG: <buff>45 🠚 90</buff></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<script src="../../arrow.js">
+</script>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                                                    <a rel="prev" href="../../characters/melee/mariod.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+                        
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                                    <a rel="prev" href="../../characters/melee/mariod.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+                            </nav>
+
+        </div>
+
+        
+        
+        
+                <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+        
+                <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        
+    </body>
+</html>
