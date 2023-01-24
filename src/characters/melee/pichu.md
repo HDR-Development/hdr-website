@@ -1,1 +1,324 @@
-# Pichu
+# ![](../../images/Stock_Pichu.png) Pichu
+
+<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
+
+![](../../images/SmashBall.png) <b>Attributes</b>
+  - Walk Speed: 1.302 🠚 1.25
+  - Initial Dash Speed: 1.98 🠚 1.85
+  - Run Speed: 1.892 🠚 1.82
+  - Run Acceleration: (base/additional): 0.06/0.14 🠚 0.02/0.08
+  - Traction: 0.11 🠚 0.096
+  - Jumpsquat: 3F
+  - Max Horizontal Jump Speed: 1.8 🠚 1.6
+  - Short Hop Height: 17.43 🠚 15.43
+  - Full Hop Height: 36.75 🠚 32.0
+  - Air Speed: 1.029 🠚 1.05
+  - Air Acceleration (base/additional): 0.01/0.09 🠚 0.0055/0.08
+  - Air Friction: 0.0075 🠚 0.01
+  - Gravity: 0.14 🠚 0.15
+  - Fall Speed: 1.9 🠚 2.4
+  - Fast Fall Speed: 2.5 🠚 3.15
+  - Combo Gravity: 0.062832 🠚 0.14
+  - Combo Fall Speed: 1.8 🠚 1.9
+  - Weight: 62 🠚 70
+  - Model Scale Multiplier: 0.92 🠚 1.0
+  - Shield Radius: 8.8 🠚 8.3
+<br><br>
+
+![](../../images/SmashBall.png) <b>Moveset</b>
+  - Charge State:
+    - <property>Using electric attacks builds up charge</property>
+      - Connecting with the move will build charge equal to the move's damage whereas whiffing will only accrue 25% of that
+      - Thunder Jolt builds charge on use, but none on hit
+    - <property>After dealing 60% with electric attacks, Pichu enters Charge State</property>
+      - Charge State lasts 15 seconds and increases the damage of all electric moves by 1.2x while also increasing their recoil by 1.25x
+      - Charge State also changes Pichu’s specials significantly
+      - Pressing Shield while taunting in training mode instantly activates Charge State
+<br><br>
+  - Jab:
+    - <rework>Changed to a single hit rather than a repeatable series</rework>
+    - Hitbox Duration: <nerf>F2-3 🠚 F4-5</nerf>
+    - Damage: <buff>1.2% 🠚 4.0%</buff>
+    - Angle: <rework>0 🠚 67</rework>
+    - BKB: <rework>10/20 🠚 70</rework>
+    - KBG: <rework>60 🠚 72</rework>
+    - SDI Multiplier: <buff>1.5x 🠚 1.0x</buff>
+    - FAF: <nerf>17 🠚 22</nerf>
+<br><br>
+  - Forward Tilt:
+    - Hitbox Duration (early/late): <buff>F5-9/F9-12 🠚 F5-9/F9-15</buff>
+    - Self-Damage: <nerf>1.0% 🠚 1.5%</nerf>
+    - Damage: <buff>8.0% 🠚 9.0%</buff>
+    - Angle: <buff>361 🠚 40</buff>
+    - BKB (early/late): <buff>5 🠚 50/45</buff>
+    - KBG: <nerf>130 🠚 105</nerf>
+    - FAF <nerf>25 🠚 27</nerf>
+<br><br>
+  - Up Tilt:
+    - Damage: <buff>5.0% 🠚 5.5%</buff>
+    - Angle: <rework>95 🠚 75</rework>
+    - BKB: <rework>32 🠚 70</rework>
+    - KBG: <rework>105 🠚 90</rework>
+    - Hitbox Size (base/mid/tip): <buff>2.0/2.8/3.6u 🠚 3.0/3.5/4.2u</buff>
+<br><br>
+  - Down Tilt:
+    - Hitbox Duration: <buff>F7-8 🠚 F6-9</buff>
+    - Inner Tail
+      - Angle: <rework>80 🠚 101</rework>
+      - BKB: <nerf>40 🠚 65</nerf>
+      - KBG: <nerf>50 🠚 70</nerf>
+      - Hitbox Size: <buff>3.2u 🠚 3.5u</buff>
+    - Outer tail
+      - Damage: <buff>6.0% 🠚 7.0%</buff>
+      - Angle: <rework>100 🠚 110</rework>
+      - BKB: <nerf>40 🠚 65</nerf>
+      - Hitbox Size: <buff>4.0u 🠚 4.5u</buff>
+<br><br>
+  - Forward Smash:
+    - <property>Hitboxes become 1.2x larger during Charge State</property>
+    - Self-Damage: <nerf>1.5% 🠚 2.5%</nerf>
+    - Multihits
+      - Hitlag Multiplier: <adjust>0.3x 🠚 0.6x</adjust>
+    - Launcher
+      - Angle: <buff>361 🠚 40</buff>
+      - BKB: <adjust>68 🠚 65</adjust>
+      - KBG: <adjust>123 🠚 130</adjust>
+      - Hitlag Multiplier: <adjust>1.0x 🠚 1.2x</adjust>
+      - Hitbox Size (inner/outer): <nerf>4.7/5.2u 🠚 4.3/5.3u</nerf>
+    - FAF: <nerf>54 🠚 60</nerf>
+<br><br>
+  - Up Smash:
+    - <property>Becomes electric during Charge State</property>
+    - Hitbox Duration: <buff>F9-11 🠚 F8-12</buff>
+    - Normal
+      - Damage: <buff>14.0% 🠚 15.0%</buff>
+      - KBG: <buff>85 🠚 98</buff>
+      - Hitbox Size (head/body): <buff>5.4/3.2u 🠚 6.0/3.2u</buff>
+    - Charge State
+      - Self-Damage: 2.5%
+      - Damage: 18.0%
+      - Angle: 95
+      - BKB (head/body): 40/15
+      - KBG: 98
+      - Hitbox Size (head/body): 6.0/3.2u
+    - FAF: <nerf>41 🠚 46</nerf>
+<br><br>
+  - Down Smash:
+    - <rework>Changed to a single hit</rework>
+    - Self-Damage: <nerf>1.3% 🠚 1.5%</nerf>
+    - Normal
+      - Hitbox Duration (early/late): F8-12/F13-19
+      - Early
+        - Normal
+          - Damage: 12.0%
+          - Angle: 55
+          - BKB: 45
+          - KBG: 120
+          - Hitbox Size: 6.0u
+        - Late
+          - Damage: 8.0%
+          - Angle: 55
+          - BKB: 45
+          - KBG: 90
+          - Hitbox Size: 4.5u
+    - Charge State
+      - Hitbox Duration: F8-19
+      - Damage: 14.4%
+      - Angle: 125
+      - BKB: 45
+      - KBG: 120
+      - Hitbox Size: 6.0u
+    - FAF: <nerf>51 🠚 57</nerf>
+<br><br>
+  - Neutral Air:
+    - <nerf>Reduced pancaking on landing</nerf>
+    - Early
+      - Damage: <buff>7.0% 🠚 10.0%</buff>
+      - BKB: <adjust>20 🠚 35</adjust>
+      - KBG: <adjust>112 🠚 105</adjust>
+      - Hitbox Size: <buff>4.0u 🠚 4.5u</buff>
+    - Late
+      - Damage: <buff>5.0% 🠚 7.0%</buff>
+      - BKB: <adjust>0 🠚 30</adjust>
+      - KBG: <adjust>112 🠚 95</adjust>
+      - Hitbox Size: <buff>4.0u 🠚 4.5u</buff>
+    - Autocancel: <buff>F35 🠚 F29</buff>
+<br><br>
+  - Forward Air:
+    - <rework>Changed to a single hit</rework>
+    - <nerf>Reduced pancaking on landing<nerf>
+    - Hitbox Duration (early/late): F10-13/F14-18
+    - Self-Damage: <nerf>1.0% 🠚 2.0%</nerf>
+    - Early
+      - Damage: <buff>12.0% 🠚 12.5%</buff>
+      - Angle: 45
+      - BKB: <buff>30 🠚 35</buff>
+      - KBG: <buff>98 🠚 100</buff>
+    - Late
+      - Damage: <buff>5.0% 🠚 5.5%</buff>
+      - Angle: 361
+      - BKB: 35
+      - KBG: 85
+    - Autocancel: <buff>F1-9/F34 🠚 F1-8/F25</buff>
+    - Landing Lag: <buff>12F 🠚 10F</buff>
+<br><br>
+  - Back Air:
+    - <nerf>Reduced pancaking on landing</nerf>
+    - Hitbox Duration (multihits/launcher): <nerf>F5-27/F30-31 🠚 F8-25/F28-29</nerf>
+    - Self-Damage: <nerf>1.5% 🠚 2.0%</nerf>
+    - Launcher
+      - BKB: <nerf>70 🠚 35</nerf>
+      - KBG: <buff>160 🠚 257</buff>
+      - Hitlag Multiplier: <adjust>1.0x 🠚 1.2x</adjust>
+    - FAF: <buff>55 🠚 48</buff>
+    - Autocancel: <buff>F1-4/F38 🠚 F1-7/F35</buff>
+    - Landing Lag: <buff>18F 🠚 13F</buff>
+<br><br>
+  - Up Air:
+    - <nerf>Reduced pancaking on landing</nerf>
+    - Damage: <buff>4.0% 🠚 7.0%</buff>
+    - Angle: <nerf>80 🠚 63</nerf>
+    - BKB: <adjust>70 🠚 45</adjust>
+    - KBG: <adjust>70 🠚 95</adjust>
+    - Hitbox Size (base/tip): <buff>2.8/3.6u 🠚 4.0/5.0u</buff>
+    - Autocancel: <nerf>F1-3/F18 🠚 F1-3/F19</nerf>
+    - Landing Lag: <buff>11F 🠚 9F</buff>
+<br><br>
+  - Down Air:
+    - <adjust>Removed landing hit</adjust>
+    - <nerf>Reduced pancaking on landing</nerf>
+    - Self-Damage: <nerf>1.5% 🠚 2.0%</nerf>
+    - Early
+      - <buff>Added body hitbox</buff>
+      - Body
+        - Damage: 12.0%
+        - Angle: 361
+        - BKB: 40
+        - KBG: 110
+        - Hitbox Size: 4.5u
+      - Head
+        - KBG (ground/air): <nerf>86 🠚 86/63</nerf>
+        - Hitbox Size: <buff>4.5u 🠚 5.5u</buff>
+    - Late
+      - BKB: <buff>20 🠚 35</buff>
+      - KBG: <buff>100 🠚 104</buff>
+      - Hitbox Size (body/head): <nerf>3.5/5.4u 🠚 3.5/5.0u</nerf>
+    - Landing Lag: <buff>22F 🠚 14F</buff>
+<br><br>
+  - Thunder Jolt / Electroweb (Neutral Special):
+    - <rework>Travels straight horizontally</rework>
+    - <rework>No longer bounces off surfaces</rework>
+    - <buff>Retains aerial momentum</buff>
+    - Self-Damage: <nerf>0.8% 🠚 1.0%</nerf>
+    - Thunder Jolt
+      - Lifetime: <rework>100F 🠚 75F</rework>
+      - Horizontal Speed: <rework>2.4 🠚 1.2</rework>
+      - Startup: <buff>F18 🠚 F13</buff>
+      - Damage: <nerf>10.0% 🠚 7.0%</nerf>
+      - Angle: <rework>361 🠚 75</rework>
+      - BKB: <adjust>50 🠚 35</adjust>
+      - KBG: <adjust>30 🠚 50</adjust>
+      - Hitlag Multiplier: <buff>0.3x 🠚 1.25x</buff>
+    - Electroweb
+      - <property>Electroweb is larger and paralyzes opponents</property>
+      - <property>Decrements Charge State duration by 1 second upon use</property>
+      - Self-Damage: 3.0%
+      - Damage: 5.0%
+      - Angle: 75
+      - BKB: 35
+      - KBG: 50
+      - Hitlag Multiplier: 0.3x
+      - Hitbox Size: 6.0u
+    - FAF: <buff>52 🠚 46</buff>
+<br><br>
+  - Skull Bash / Wild Charge (Side Special):
+    - <rework>Removed the ability to charge; travels a set distance</rework>
+    - <rework>Removed bounce on hit</rework>
+    - Skull Bash
+      - Horizontal Travel Speed: <rework>1.8/5 🠚 1.7</rework>
+      - Hitbox Duration: <rework>F17-52 🠚 F13-31</rework>
+      - Self-Damage: 1.0%
+      - Damage: 8.0%
+      - Angle: 68
+      - BKB: 70
+      - KBG: 55
+      - Hitbox Size: 3.2u
+      - FAF (ground/air): <buff>96/86 🠚 58/67</buff>
+    - Wild Charge
+      - <property>Wild Charge is much stronger at the cost of much higher endlag</property>
+      - <property>Decrements Charge State duration by 1 second upon use</property>
+      - Hitbox Duration (early/late): F13-18/F19-25
+      - Self-Damage: 3.0%
+      - Early
+        - Damage: 25.0%
+        - Angle: 40
+        - BKB: 60
+        - KBG: 65
+        - Hitbox Size: 3.2u
+      - Late
+        - Damage: 15.0%
+        - Angle: 40
+        - BKB: 60
+        - KBG: 65
+        - Hitbox Size: 3.2u
+      - FAF (ground/air): 65/79
+<br><br>
+  - Agility / Zippy Zap (Up Special):
+    - <property>The first zip can be jump canceled starting on frame 7 if angled into the ground</property>
+    - <buff>Snaps to ledge earlier and can grab ledge moving downwards</buff>
+    - Travel Speed: <nerf>8.3 🠚 7.0</nerf>
+    - Zippy Zap
+      - <property>Zippy Zap gains a hitbox and can be jump canceled on hit</property>
+      - 1st Zip
+        - Self-Damage: 1.0%
+        - Damage: 2.0%
+        - Angle: 70
+        - BKB: 20
+        - KBG: 50
+        - Hitbox Size: 1.6u
+      - 2nd Zip
+        - Self-Damage: 2.0%
+        - Damage: 3.0%
+        - Angle: 70
+        - BKB: 20
+        - KBG: 150
+        - Hitbox Size: 1.6u
+<br><br>
+  - Thunder / Discharge (Down Special):
+    - Thunder
+      - Contact
+        - Hitbox Duration: <buff>F1-3 🠚 F1-4</buff>
+        - KBG: <buff>65 🠚 71</buff>
+    - Discharge
+      - <property>Discharge is only the blast hitbox of Thunder but much larger and stronger</property>
+        - The size and strength decrease based on how long Charge State has remaining, to a minimum of 50%
+      - <property>Ends Charge State on use</property>
+      - Hitbox Duration: F21-24
+      - Self-Damage: 8.0%
+      - Damage: 20.0%
+      - Angle: 361
+      - BKB: 90
+      - KBG: 71
+      - Hitbox Size: 11.0u
+      - FAF (ground/air): 81/72
+<br><br>
+  - Forward Throw:
+    - BKB: <buff>45 🠚 55</buff>
+<br><br>
+  - Back Throw:
+    - <property>Becomes electric during Charge State</property>
+    - Charge State
+      - Self-Damage: 1.0%
+      - Angle: <rework>135 🠚 80</rework>
+      - FAF: <buff>50 🠚 31</buff>
+<br><br>
+  - Up Throw:
+    - <property>Becomes electric during Charge State</property>
+    - Charge State
+      - Self-Damage: 1.2%
+      - Damage: <buff>5.0/5.0% 🠚 5.0/9.0%</buff>
+      - BKB: <nerf>90 🠚 70</nerf>
+      - KBG: <buff>45 🠚 90</buff>
+
+<script src="../../arrow.js">
+</script>

@@ -48,7 +48,7 @@
     - [Sheik](./characters/melee/sheik.md)
     - [Zelda](./characters/melee/zelda.md)
     - [Dr. Mario](./characters/melee/mariod.md)
-    - [Pichu]()<!--./characters/melee/pichu.md)-->
+    - [Pichu](./characters/melee/pichu.md)
     - [Falco]()<!--./characters/melee/falco.md)-->
     - [Marth]()<!--./characters/melee/marth.md)-->
     - [Young Link]()<!--./characters/melee/younglink.md)-->

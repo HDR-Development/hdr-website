@@ -48,7 +48,7 @@
       <td><a href="./melee/sheik.md">Sheik</a></td>
       <td><a href="./melee/zelda.md">Zelda</a></td>
       <td><a href="./melee/mariod.md">Dr. Mario</a></td>
-      <td><!--<a href="./melee/pichu.md">-->Pichu<!--</a>--></td>
+      <td><a href="./melee/pichu.md">Pichu</a></td>
     </tr>
     <tr>
       <td><!--<a href="./melee/falco.md">-->Falco<!--</a>--></td>
