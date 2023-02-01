@@ -51,7 +51,7 @@
       <td><a href="./melee/pichu.md">Pichu</a></td>
     </tr>
     <tr>
-      <td><!--<a href="./melee/falco.md">-->Falco<!--</a>--></td>
+      <td><a href="./melee/falco.md">Falco</a></td>
       <td><!--<a href="./melee/marth.md">-->Marth<!--</a>--></td>
       <td><!--<a href="./melee/younglink.md">-->Young Link<!--</a>--></td>
       <td><!--<a href="./melee/ganon.md">-->Ganondorf<!--</a>--></td>
