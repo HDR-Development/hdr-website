@@ -4,7 +4,7 @@
 
 ![](../../images/SmashBall.png) <b>Attributes</b>
   - Walk Speed: 1.523 🠚 1.6
-  - Traction: 0.115 🠚 0.085
+  - Ground Friction: 0.115 🠚 0.085
   - Initial Dash Speed: 2.09 🠚 1.9
   - Run Speed: 2.402 🠚 2.2
   - Run Acceleration (base/additional): 0.044/0.12221 🠚 0.02/0.1
@@ -203,7 +203,7 @@
 <br><br>
   - Reflector (Down Special):
     - <property>Can be jump canceled starting on frame 4</property>
-    - <property>Snaps to ground if done during first airborne frame</property>
+    - <property>Snaps to ground if performed during first airborne frame</property>
     - Gravity Startup: <adjust>F4 🠚 F2</adjust>
     - Damage: <buff>2.0% 🠚 3.0%</buff>
     - Ground

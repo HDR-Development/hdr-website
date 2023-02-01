@@ -5,7 +5,7 @@
 ![](../../images/SmashBall.png) <b>Attributes</b>
   - Initial Dash Speed: 1.936 🠚 1.52
   - Run Speed: 1.76 🠚 1.672
-  - Traction: 0.102 🠚 0.062
+  - Ground Friction: 0.102 🠚 0.062
   - Jumpsquat: 3F 🠚 4F
   - Max Horizontal Jump Speed: 1.525 🠚 1.51
   - Short Hop Height: 17.54 🠚 13.0

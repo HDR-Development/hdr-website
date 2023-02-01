@@ -7,7 +7,7 @@
   - Initial Dash Speed: 1.826 🠚 1.45
   - Run Speed: 1.609 🠚 1.6
   - Run Acceleration (base/additional): 0.044/0.07161 🠚 0.02/0.04
-  - Traction: 0.131 🠚 0.06
+  - Ground Friction: 0.131 🠚 0.06
   - Jumpsquat: 3F 🠚 4F
   - Max Horizontal Jump Speed: 1.3 🠚 1.5
   - Short Hop Height: 16.65 🠚 14.65

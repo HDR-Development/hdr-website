@@ -3,7 +3,7 @@
 <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Attributes</b>
-  - Traction: 0.087 🠚 0.08
+  - Ground Friction: 0.087 🠚 0.08
   - Initial Dash Speed: 1.65 🠚 1.62
   - Run Acceleration (base/additional): 0.044/0.09119 🠚 0.02/0.065
   - Jumpsquat: 3F 🠚 5F
