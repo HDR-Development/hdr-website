@@ -24,7 +24,7 @@
 <br><br>
 
 ![](../../images/SmashBall.png) <b>Moveset</b>
-  - Falchion:
+  - General:
     - <buff>Sword length increased by 11.5%</buff>
 <br><br>
   - Jab:
