@@ -5,7 +5,7 @@
 
 <div style="text-align:center;font-size:200%;font-family:Verdana">
 <i><b>
-A Mod for Smash Ultimate <br>
+A Mod for Super Smash Bros. Ultimate <br>
 Created by The HDR Dev Team <br>
 </b></i>
 </div>

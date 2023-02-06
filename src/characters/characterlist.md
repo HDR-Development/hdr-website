@@ -52,7 +52,7 @@
     </tr>
     <tr>
       <td><a href="./melee/falco.md">Falco</a></td>
-      <td><!--<a href="./melee/marth.md">-->Marth<!--</a>--></td>
+      <td><a href="./melee/marth.md">Marth</a></td>
       <td><!--<a href="./melee/younglink.md">-->Young Link<!--</a>--></td>
       <td><!--<a href="./melee/ganon.md">-->Ganondorf<!--</a>--></td>
       <td><!--<a href="./melee/mewtwo.md">-->Mewtwo<!--</a>--></td>
