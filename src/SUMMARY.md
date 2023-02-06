@@ -50,7 +50,7 @@
     - [Dr. Mario](./characters/melee/mariod.md)
     - [Pichu](./characters/melee/pichu.md)
     - [Falco](./characters/melee/falco.md)
-    - [Marth]()<!--./characters/melee/marth.md)-->
+    - [Marth](./characters/melee/marth.md)
     - [Young Link]()<!--./characters/melee/younglink.md)-->
     - [Ganondorf]()<!--./characters/melee/ganon.md)-->
     - [Mewtwo]()<!--./characters/melee/mewtwo.md)-->
