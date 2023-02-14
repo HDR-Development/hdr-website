@@ -13,7 +13,7 @@
   - Short Hop Height: 17.43 🠚 15.43
   - Full Hop Height: 36.75 🠚 32.0
   - Air Speed: 1.029 🠚 1.05
-  - Air Acceleration (base/additional): 0.01/0.09 🠚 0.0055/0.08
+  - Air Acceleration (base/multiplier): 0.01/0.09 🠚 0.0055/0.08
   - Air Friction: 0.0075 🠚 0.01
   - Gravity: 0.14 🠚 0.15
   - Fall Speed: 1.9 🠚 2.4

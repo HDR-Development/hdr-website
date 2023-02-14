@@ -5,11 +5,11 @@
 ![](../../images/SmashBall.png) <b>Attributes</b>
   - Ground Friction: 0.087 🠚 0.08
   - Initial Dash Speed: 1.65 🠚 1.62
-  - Run Acceleration (base/additional): 0.044/0.09119 🠚 0.02/0.065
+  - Run Acceleration (base/multiplier): 0.044/0.09119 🠚 0.02/0.065
   - Jumpsquat: 3F 🠚 5F
   - Short Hop Height: 11.26 🠚 11.76
   - Air Speed: 1.332 🠚 1.34
-  - Air Acceleration (base/additional): 0.05/0.08 🠚 0.06/0.12
+  - Air Acceleration (base/multiplier): 0.05/0.08 🠚 0.06/0.12
   - Horizontal Air Friction: 0.0375 🠚 0.04
   - Gravity: 0.053 🠚 0.06
   - Fall Speed: 0.98 🠚 1.22

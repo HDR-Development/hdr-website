@@ -13,7 +13,7 @@
   - Short Hop Height: 17.3 🠚 15
   - Double Jump Height: 35.5 🠚 34.5
   - Air Speed: 1.208 🠚 1.105
-  - Air Acceleration (base/additional): 0.01/0.05 🠚 0.012/0.04
+  - Air Acceleration (base/multiplier): 0.01/0.05 🠚 0.012/0.04
   - Air Friction: 0.015 🠚 0.0175
   - Gravity: 0.085 🠚 0.1
   - Fall Speed: 1.63 🠚 2.4

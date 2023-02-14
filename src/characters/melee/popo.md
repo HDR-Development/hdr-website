@@ -6,13 +6,13 @@
   - Popo
     - Initial Dash Speed: 1.68 🠚 1.45
     - Run Speed: 1.53 🠚 1.45
-    - Run Acceleration (base/additional): 0.044/0.08096 🠚 0.02/0.05
+    - Run Acceleration (base/multiplier): 0.044/0.08096 🠚 0.02/0.05
     - Ground Friction: 0.077 🠚 0.035
     - Jumpsquat: 3F 🠚 4F
     - Horizontal Jump Speed Multiplier: 0.57 🠚 0.6
     - Short Hop Height: 16.75 🠚 14.75
     - Air Speed: 0.83 🠚 0.875
-    - Air Acceleration (base/additional): 0.01/0.08 🠚 0.01/0.06
+    - Air Acceleration (base/multiplier): 0.01/0.08 🠚 0.01/0.06
     - Air Friction: 0.015 🠚 0.02
     - Gravity: 0.082 🠚 0.1
     - Fall Speed: 1.3 🠚 1.61
@@ -24,13 +24,13 @@
     - Walk Speed: 1.008 🠚 1.108
     - Initial Dash Speed: 1.68 🠚 1.45
     - Run Speed: 1.683 🠚 1.545
-    - Run Acceleration (base/additional): 0.0484/0.089056 🠚 0.02/0.05
+    - Run Acceleration (base/multiplier): 0.0484/0.089056 🠚 0.02/0.05
     - Ground Friction: 0.0847 🠚 0.0385
     - Jumpsquat: 3F 🠚 4F
     - Max Horizontal Jump Speed: 0.57 🠚 0.6
     - Short Hop Height: 16.75 🠚 14.75
     - Air Speed: 0.8715 🠚 0.91875
-    - Air Acceleration (base/additional): 0.0105/0.084 🠚 0.0105/0.0.6355
+    - Air Acceleration (base/multiplier): 0.0105/0.084 🠚 0.0105/0.0.6355
     - Air Friction: 0.015 🠚 0.02
     - Gravity: 0.082 🠚 0.1
     - Fall Speed: 1.3 🠚 1.61

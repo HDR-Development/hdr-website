@@ -6,13 +6,13 @@
   - Walk Speed: 0.907 🠚 0.877
   - Initial Dash Speed: 1.826 🠚 1.45
   - Run Speed: 1.609 🠚 1.6
-  - Run Acceleration (base/additional): 0.044/0.07161 🠚 0.02/0.04
+  - Run Acceleration (base/multiplier): 0.044/0.07161 🠚 0.02/0.04
   - Ground Friction: 0.131 🠚 0.06
   - Jumpsquat: 3F 🠚 4F
   - Max Horizontal Jump Speed: 1.3 🠚 1.5
   - Short Hop Height: 16.65 🠚 14.65
   - Max Air Speed: 1.007 🠚 1.05
-  - Air Acceleration (base/additional): 0.01/0.09 🠚 0.01/0.075
+  - Air Acceleration (base/multiplier): 0.01/0.09 🠚 0.01/0.075
   - Air Friction: 0.0225 🠚 0.02
   - Gravity: 0.077 🠚 0.09
   - Fall Speed: 1.31 🠚 1.83
