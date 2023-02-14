@@ -5,11 +5,11 @@
     - Walk Speed: 1.575 🠚 1.6
     - Initial Dash Speed: 2.255 🠚 1.65
     - Run Speed: 1.964 🠚 1.85
-    - Run Acceleration (base/additional): 0.044/0.0902 🠚 0.0702/0.024
+    - Run Acceleration (base/multiplier): 0.044/0.0902 🠚 0.0702/0.024
     - Dash to Run Transition Frame: F10 🠚 F12
     - Ground Friction: 0.114 🠚 0.063
     - Air Speed: 1.071 🠚 0.93
-    - Air Acceleration (base/additional): 0.01/0.07 🠚 0.015/0.06
+    - Air Acceleration (base/multiplier): 0.01/0.07 🠚 0.015/0.06
     - Air Friction: 0.00375 🠚 0.006
     - Fall Speed: 1.58 🠚 2.28
     - Fast Fall Speed: 2.528 🠚 2.698
@@ -168,166 +168,16 @@
   - Forward Throw:
     - FAF: 32 🠚 24
 
-- ### ![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.025.png) - YOUNG LINK -
-  - Attributes:
-    - Initial Dash Speed: 2.09 🠚 1.8
-    - Run Speed: 1.749 🠚 1.6
-    - Run Acceleration (base/additional): 0.044/0.0902 🠚 0.044/0.0802
-    - Ground Friction: 0.105 🠚 0.08
-    - Air Speed: 0.966 🠚 1
-    - Fall Speed: 1.8 🠚 2.16
-    - Fast Fall Speed: 2.88 🠚 2.9
-    - Gravity: 0.096 🠚 0.11
-    - Initial Jump Velocity: 18.513 🠚 12.03345
-    - Short Hop Height: 16.26 🠚 12.6
-    - Air Friction: 0.00375 🠚 0.005
-    - Model Scale Multiplier: 1 🠚 1.03
-    - Shield Radius: 10 🠚 10.4
-    - Dairdodge Distance: 18 🠚 16
-    - Directional Airdodge Velocity: 3 🠚 2.79
-    - Directional Airdodge Landing Speed Multiplier: 1 🠚 0.875
-  - Sword:
-    - *Model size increased by 10%*
-  - Jab:
-    - Jab 1
-      - Hitbox Size: 1.8u 🠚 3.0/3.5/4.0u
-      - FAF: 20 🠚 17
-    - Jab 2
-      - Damage: 1.5% 🠚 2.0%
-      - Angle (inner/outer): 361/180 🠚 75/80
-      - BKB: 25/20 🠚 32
-      - Hitbox Size: 2.5/3.2u 🠚 3.0/4.0u
-    - Jab 3
-      - FAF: 36 🠚 32
-    - Rapid Jab Finisher
-      - FAF: 46 🠚 44
-  - Dash Attack:
-    - *Can now reverse hit*
-    - Hitbox Duration: F8-10 🠚 F8-15
-    - Angle (arm/hilt/blade): 45/50/55 🠚 85/90/75
-  - Forward Tilt:
-    - *Hitboxes enlarged*
-    - *Added shoulder hitbox*
-    - Hitbox Duration: F10-12 🠚 F10-13
-    - KBG: 85 🠚 88
-  - Up Tilt:
-    - *Arm hitbox enlarged*
-    - *Added chest hitbox*
-  - Down Tilt:
-    - *Hitboxes enlarged*
-    - *Added shoulder hitbox*
-    - *Sourspot spikes aerial opponents*
-    - BKB (ground/air): 80/65 🠚 70/45
-    - KBG (ground/air): 30/50 🠚 40/65
-  - Forward Smash:
-    - Hitbox Duration (hit 1/hit 2): F15-16/F11-12 🠚 F13-14/F11-14
-    - Hit 2
-      - KBG: 118 🠚 119
-      - FAF: 50 🠚 53
-  - Up Smash:
-    - FAF: 69 🠚 74
-  - Down Smash:
-    - *Sweetspot hitbox enlarged*
-    - *Added shoulder hitbox*
-    - Hit 1
-      - KBG (sweetspot/sourspot): 90/90 🠚 93/95
-    - Hit 2
-      - KBG (sweetspot/sourspot): 70/90 🠚 93/95
-    - FAF: 50 🠚 56
-  - Neutral Air:
-    - Early
-      - KBG: 115 🠚 105
-    - Late
-      - Damage: 5.0% 🠚 7.0%
-    - Landing Lag: 6F 🠚 8F
-  - Forward Air:
-    - *Hitboxes enlarged and attached to sword*
-    - *Added shield hitboxes*
-    - Hitbox Duration (hit 1/hit 2): F14-15/F24-25 🠚 F9-12/F21-25
-    - Hit 2
-      - BKB: 45 🠚 30
-      - KBG: 132 🠚 147
-      - *Alternate hitboxes added for if hit 1 does not connect*
-        - Damage: 8.0%
-        - Angle: 76
-        - BKB: 35
-        - KBG: 85
-    - Landing Lag: 6F 🠚 9F
-  - Back Air:
-    - Hit 1
-      - Angle (air-only): 75/72/70 🠚 367
-      - FKB (ground-only): 55/40 🠚 60
-      - Additional Hitstun (ground/air): 0F 🠚 4/6F
-    - Hit 2
-      - KBG: 102 🠚 75
-    - Landing Lag: 6F 🠚 7F
-  - Up Air:
-    - *Shoulder hitbox enlarged*
-    - Hitbox Duration (early/late): F5-7/F8-49 🠚 F5-8/F9-49
-    - Early
-      - KBG: 80 🠚 100
-    - Landing Lag: 14F 🠚 13F
-  - Down Air:
-    - *Holding A/C-Stick now causes sword to stay out for up to six seconds*
-    - *Strong hit during first 4 frames, after which there is a very weak hit for rest of move's duration*
-    - *Spike hitbox now located at hilt for move's entire duration*
-    - *Can bounce indefinitely, bounce height increased*
-    - Early
-      - Angle: 275 🠚 281
-    - Late
-      - BKB: 30 🠚 40
-      - KBG: 86 🠚 110
-    - Landing Lag: 17F 🠚 16F
-  - Zair (Hookshot):
-    - FAF: 74 🠚 60
-  - Fire Arrows (Neutral Special):
-    - *Can fast fall during the move*
-    - Lifetime: 35F 🠚 42F
-    - Max Charge Time: 50F 🠚 40F
-    - Base Travel Speed: 2.8 🠚 1.65
-    - Gravity (uncharged): 0.035 🠚 0.045
-    - Base Damage: 4.5% 🠚 5.0%
-    - FAF: 25 🠚 23
-  - Boomerang (Side Special):
-    - Startup: F27 🠚 F24
-    - FAF: 46 🠚 43
-  - Spin Attack (Up Special):
-    - *Young Link can now move left and right slightly along the ground during the charge and release of Spin Attack*
-    - *Can slide off edges and grab ledge on the way down*
-    - Ground
-      - Movement Speed increased [MISSING DATA]
-      - Launcher
-        - Angle: 84 🠚 85
-        - BKB increased [MISSING DATA]
-        - KBG increased [MISSING DATA]
-    - Air
-      - *Hitboxes enlarged*
-      - Hit 1
-        - Damage: 3.0% 🠚 5.0%
-      - Launcher
-        - KBG: 180 🠚 207
-  - Bomb (Down Special):
-    - *Can be B-reversed*
-    - *By holding the special button while pulling out a bomb, Young Link will instead pull out a Bombchu; one can be pulled every 12 seconds*
-      - Damage: 5.0% 🠚 9.0%
-  - Up Throw:
-    - FAF: 50 🠚 48
-  - Down Throw:
-    - FAF: 50 🠚 48
-  - Down Taunt:
-    - *Heals 2% after drinking the entire bottle of milk*
-    - *Can not be canceled early*
-
 - ### ![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.026.png) - GANONDORF -
   - Attributes:
     - Walk Acceleration (base/additional): 0.0315/0.084
     - Initial Dash Speed: 1.87 🠚 1.4
     - Run Speed: 1.34 🠚 1.45
-    - Run Acceleration (base/additional): 0.033/0.10593 🠚 0.044/0.07593
+    - Run Acceleration (base/multiplier): 0.033/0.10593 🠚 0.044/0.07593
     - Ground Friction: 0.125 🠚 0.07
     - Initial Jump Velocity: 14.0195 🠚 10.61365
     - Air Speed: 0.83 🠚 0.9
-    - Air Acceleration (base/additional): 0.01/0.03 🠚 0.02/0.055
+    - Air Acceleration (base/multiplier): 0.01/0.03 🠚 0.02/0.055
     - Air Friction: 0.015 🠚 0.02
     - Fall Speed: 1.65 🠚 2
     - Gravity: 0.108 🠚 0.13
@@ -486,7 +336,7 @@
     - Dash to Run Transition Frame: F10 🠚 F12
     - Ground Friction: 0.116 🠚 0.07
     - Air Speed: 1.313 🠚 1.2
-    - Air Acceleration (base/additional): 0.02/0.05 🠚 0.02/0.045
+    - Air Acceleration (base/multiplier): 0.02/0.05 🠚 0.02/0.045
     - Fall Speed: 1.55 🠚 1.6
     - Gravity: 0.082 🠚 0.085
     - Initial Jump Velocity: 17.1105 🠚 11.121825
@@ -869,11 +719,11 @@
     - Walk Acceleration (base/additional): 0.105/0.105
     - Initial Dash Speed: 1.98 🠚 1.608
     - Run Speed: 1.679 🠚 1.578
-    - Run Acceleration (base/additional): 0.044/0.09053 🠚 0.044/0.07053
+    - Run Acceleration (base/multiplier): 0.044/0.09053 🠚 0.044/0.07053
     - Dash to Run Transition Frame: F8 🠚 F11
     - Ground Friction: 0.131 🠚 0.06
     - Air Speed: 1.176 🠚 1.045
-    - Air Acceleration (base/additional): 0.07/0.03 🠚 0.06/0.03
+    - Air Acceleration (base/multiplier): 0.07/0.03 🠚 0.06/0.03
     - Horizontal Jump Speed Multiplier: 0.8
     - Stick-Based Jump Momentum: 0.95
     - Max Horizontal Jump Speed: 1.5 🠚 1.48
@@ -1099,11 +949,11 @@
     - Walk Acceleration (base/additional): 0.105/0.168
     - Initial Dash Speed: 2.211 🠚 1.7925
     - Run Speed: 2.09 🠚 2.0
-    - Run Acceleration (base/additional): 0.044/0.10428 🠚 0.044/0.05628
+    - Run Acceleration (base/multiplier): 0.044/0.10428 🠚 0.044/0.05628
     - Dash to Run Transition Frame: F10 🠚 F13
     - Ground Friction: 0.097 🠚 0.085
     - Air Speed: 1.04 🠚 1.21
-    - Air Acceleration (base/additional): 0.01/0.065 🠚 0.01/0.075
+    - Air Acceleration (base/multiplier): 0.01/0.065 🠚 0.01/0.075
     - Air Friction: 0.012 🠚 0.015
     - Fall Speed: 1.66 🠚 2.44
     - Fast Fall Speed: 2.656 🠚 3.281
@@ -1342,7 +1192,7 @@
     - Walk Acceleration (base/additional): 0.105/0.21
     - Initial Dash Speed: 2.09 🠚 1.628
     - Run Speed: 1.828 🠚 1.701
-    - Run Acceleration (base/additional): 0.044/0.12474 🠚 0.044/0.08474
+    - Run Acceleration (base/multiplier): 0.044/0.12474 🠚 0.044/0.08474
     - Ground Friction: 0.135 🠚 0.07
     - Air Speed: 0.935 🠚 1.01
     - Air Friction: 0.008 🠚 0.01
@@ -1476,11 +1326,11 @@
     - Walk Speed: 1.47 🠚 1.35
     - Initial Dash Speed: 2.42 🠚 1.7
     - Run Speed: 2.31 🠚 2.05
-    - Run Acceleration (base/additional): 0.044/0.10362 🠚 0.044/0.06
+    - Run Acceleration (base/multiplier): 0.044/0.10362 🠚 0.044/0.06
     - Dash to Run Transition Frame: F10 🠚 F13
     - Ground Friction: 0.116 🠚 0.07
     - Air Speed: 1.26 🠚 1.005
-    - Air Acceleration (base/additional): 0.01/0.085 🠚 0.01/0.09
+    - Air Acceleration (base/multiplier): 0.01/0.085 🠚 0.01/0.09
     - Air Friction: 0.008 🠚 0.005
     - Fall Speed: 1.7 🠚 2.05
     - Fast Fall Speed: 2.72 🠚 2.75
@@ -1687,7 +1537,7 @@
     - Walk Speed: 0.889 🠚 0.869
     - Initial Dash Speed: 1.837 🠚 1.55
     - Run Speed: 1.65 🠚 1.55
-    - Run Acceleration (base/additional): 0.044/0.10494 🠚 0.044/0.08494
+    - Run Acceleration (base/multiplier): 0.044/0.10494 🠚 0.044/0.08494
     - Ground Friction: 0.106 🠚 0.08
     - Air Speed: 1.271 🠚 1.2
     - Base Air Acceleration: 0.04 🠚 0.08
@@ -1834,7 +1684,7 @@
     - Walk Acceleration (base/additional): 0.105/0.21
     - Initial Dash Speed: 1.6 🠚 1.35
     - Run Speed: 1.595 🠚 1.55
-    - Run Acceleration (base/additional): 0.044/0.12694 🠚 0.02/0.10694
+    - Run Acceleration (base/multiplier): 0.044/0.12694 🠚 0.02/0.10694
     - Dash to Run Transition Frame: F10 🠚 F12
     - Ground Friction: 0.116 🠚 0.1
     - Air Speed: 0.987 🠚 0.94
@@ -2237,7 +2087,7 @@
     - Run Speed: 1.76 🠚 1.585
     - Ground Friction: 0.088 🠚 0.035
     - Air Speed: 1.01 🠚 1.2
-    - Air Acceleration (base/additional): 0.01/0.095 🠚 0.02/0.08
+    - Air Acceleration (base/multiplier): 0.01/0.095 🠚 0.02/0.08
     - Air Friction: 0.018 🠚 0.005
     - Fall Speed: 1.35 🠚 1.72
     - Fast Fall Speed: 2.16 🠚 2.40
@@ -2359,7 +2209,7 @@
     - Walk Speed: 1.103 🠚 1.083
     - Initial Dash Speed: 1.903 🠚 1.435
     - Run Speed: 1.595 🠚 1.5
-    - Run Acceleration (base/additional): 0.044/0.089 🠚 0.044/0.059
+    - Run Acceleration (base/multiplier): 0.044/0.089 🠚 0.044/0.059
     - Dash to Run Transition Frame: F10 🠚 F11
     - Ground Friction: 0.121 🠚 0.06
     - Air Speed: 0.998 🠚 0.93
@@ -2497,11 +2347,11 @@
     - Walk Speed: 1.187 🠚 0.987
     - Initial Dash Speed: 2.288 🠚 1.7
     - Run Speed: 2.2 🠚 2.08
-    - Run Acceleration (base/additional): 0.0165/0.10593 🠚 0.0265/0.05
+    - Run Acceleration (base/multiplier): 0.0165/0.10593 🠚 0.0265/0.05
     - Dash to Run Transition Frame: F10 🠚 F13
     - Ground Friction: 0.11 🠚 0.0675
     - Air Speed: 1.103 🠚 1
-    - Air Acceleration (base/additional): 0.01/0.05 🠚 0.02/0.04
+    - Air Acceleration (base/multiplier): 0.01/0.05 🠚 0.02/0.04
     - Air Friction: 0.008 🠚 0.016
     - Fall Speed: 1.52 🠚 1.75
     - Gravity: 0.11 🠚 0.1
@@ -2608,10 +2458,10 @@
     - Walk Speed: 1.313 🠚 1.283
     - Initial Dash Speed: 2.09 🠚 1
     - Run Speed: 2.006 🠚 1.926
-    - Run Acceleration (base/additional): 0.044/0.165 🠚 0.04/0.1
+    - Run Acceleration (base/multiplier): 0.044/0.165 🠚 0.04/0.1
     - Ground Friction: 0.093 🠚 0.08
     - Air Speed: 0.924 🠚 1.004
-    - Air Acceleration (base/additional): 0/0.05 🠚 0.01/0.05
+    - Air Acceleration (base/multiplier): 0/0.05 🠚 0.01/0.05
     - Air Friction: 0.008 🠚 0.012
     - Fall Speed: 1.75 🠚 2.55
     - Fast Fall Speed: 2.8 🠚 3.023
@@ -3222,13 +3072,13 @@
     - Walk Speed: 1.029 🠚 0.975
     - Initial Dash Speed: 1.815 🠚 1.48
     - Run Speed: 1.496 🠚 1.36
-    - Run Acceleration (base/additional): 0.044/0.09438 🠚 0.044/0.08438
+    - Run Acceleration (base/multiplier): 0.044/0.09438 🠚 0.044/0.08438
     - Dash to Run Transition Frame: F10 🠚 F12
     - Ground Friction: 0.085 🠚 0.07
     - Fall Speed: 1.95 🠚 2.34
     - Horizontal Jump Speed Multiplier: 1 🠚 0.85
     - Air Speed: 0.735 🠚 0.915
-    - Air Acceleration (base/additional) 0.01/0.04 🠚 0.02/0.04
+    - Air Acceleration (base/multiplier) 0.01/0.04 🠚 0.02/0.04
     - Air Friction: 0.006 🠚 0.005
     - Max Horizontal Jump Speed: 1.2 🠚 1.16
     - Gravity: 0.097 🠚 0.095
@@ -3428,11 +3278,11 @@
     - Walk Speed: 0.945 🠚 0.925
     - Initial Dash Speed: 1.606 🠚 1.56
     - Run Speed: 1.617 🠚 1.61
-    - Run Acceleration (base/additional): 0.044/0.09592 🠚 0.044/0.07592
+    - Run Acceleration (base/multiplier): 0.044/0.09592 🠚 0.044/0.07592
     - Dash to Run Transition Frame: F10 🠚 F13
     - Ground Friction: 0.093 🠚 0.075
     - Air Speed: 0.861 🠚 1.11
-    - Air Acceleration (base/additional): 0.01/0.07 🠚 0.01/0.065
+    - Air Acceleration (base/multiplier): 0.01/0.07 🠚 0.01/0.065
     - Air Friction: 0.015 🠚 0.02
     - Fall Speed: 1.35 🠚 1.9
     - Fast Fall Speed: 2.16 🠚 2.46
@@ -3584,7 +3434,7 @@
     - Dash to Run Transition Frame: F10 🠚 F11
     - Ground Friction: 0.116 🠚 0.095
     - Air Speed: 1.281 🠚 1
-    - Air Acceleration (base/additional): 0.01/0.08 🠚 0/0.04
+    - Air Acceleration (base/multiplier): 0.01/0.08 🠚 0/0.04
     - Air Friction: 0.004 🠚 0.005
     - Horizontal Jump Speed Multiplier: 0.8 🠚 1
     - Fall Speed: 1.68 🠚 2.02
@@ -3715,7 +3565,7 @@
     - Walk Speed: 1.178 🠚 1.138
     - Initial Dash Speed: 2.002 🠚 1.3
     - Run Speed: 1.725 🠚 1.618
-    - Run Acceleration (base/additional): 0.044/0.12408 🠚 0.1/0.02
+    - Run Acceleration (base/multiplier): 0.044/0.12408 🠚 0.1/0.02
     - Dash to Run Transition Frame: F10 🠚 F13
     - Ground Friction: 0.105 🠚 0.07
     - Air Speed: 1.134 🠚 1.08
@@ -3890,10 +3740,10 @@
     - Walk acceleration (base/additional): 0.105/0.105
     - Initial Dash Speed: 1.914 🠚 1.8
     - Run Speed: 1.906 🠚 1.675
-    - Run acceleration (base/additional): 0.044/0.10978 🠚 0.044/0.08978
+    - Run Acceleration (base/multiplier): 0.044/0.10978 🠚 0.044/0.08978
     - Ground Friction: 0.086 🠚 0.078
     - Air Speed: 1.05 🠚 1.035
-    - Air acceleration (base/additional): 0.01/0.08 🠚 0.01/0.075
+    - Air Acceleration (base/multiplier): 0.01/0.08 🠚 0.01/0.075
     - Air Friction: 0.01 🠚 0.005
     - Fall Speed: 1.38 🠚 2.06
     - Fast Fall Speed: 2.208 🠚 2.831
@@ -4048,11 +3898,11 @@
     - Walk Acceleration (base/additional): 0.105/0.1058
     - Initial Dash Speed: 2 🠚 2.05
     - Run Speed: 1.54 🠚 1.8
-    - Run Acceleration (base/additional): 0.044/0.1978 🠚 0.044/0.09978
+    - Run Acceleration (base/multiplier): 0.044/0.1978 🠚 0.044/0.09978
     - Dash to Run Transition Frame: F10 🠚 F11
     - Ground Friction: 0.11 🠚 0.09
     - Air Speed: 1.281 🠚 1.2
-    - Air Acceleration (base/additional): 0.01/0.08 🠚 0.02/0.06
+    - Air Acceleration (base/multiplier): 0.01/0.08 🠚 0.02/0.06
     - Air Friction: 0.004 🠚 0.0125
     - Fall Speed: 1.8 🠚 2.7
     - Fast Fall Speed: 2.88 🠚 3.4
@@ -4197,11 +4047,11 @@
     - Walk Speed: 1.092 🠚 1.112
     - Initial Dash Speed: 1.815 🠚 1.705
     - Run Speed: 1.397 🠚 1.517
-    - Run Acceleration (base/additional): 0.044/0.10978 🠚 0.044/0.08978
+    - Run Acceleration (base/multiplier): 0.044/0.10978 🠚 0.044/0.08978
     - Dash to Run Transition Frame: F10 🠚 F14
     - Ground Friction: 0.131 🠚 0.0835
     - Air Speed: 0.987 🠚 1.09
-    - Air Acceleration (base/additional): 0.01/0.05 🠚 0.02/0.055
+    - Air Acceleration (base/multiplier): 0.01/0.05 🠚 0.02/0.055
     - Air Friction: 0.014 🠚 0.0175
     - Fall Speed: 1.32 🠚 1.649
     - Fast Fall Speed: 2.112 🠚 2.225
@@ -4383,10 +4233,10 @@
     - Initial Dash Speed: 1.958 🠚 1.738
     - Dash to Run Transition Frame: F10 🠚 F13
     - Run Speed: 1.602 🠚 1.542
-    - Run Acceleration (base/additional): 0.044/0.10978 🠚 0.044/0.08978
+    - Run Acceleration (base/multiplier): 0.044/0.10978 🠚 0.044/0.08978
     - Ground Friction: 0.094 🠚 0.076
     - Air Speed: 1.155 🠚 1.08
-    - Air Acceleration (base/additional): 0.01/0.1 🠚 0.01/0.095
+    - Air Acceleration (base/multiplier): 0.01/0.1 🠚 0.01/0.095
     - Air Friction: 0.05 🠚 0.025
     - Fall Speed: 1.8 🠚 2.18
     - Fast Fall Speed: 2.88 🠚 2.91
@@ -4579,7 +4429,7 @@
     - Walk Acceleration (base/additional): 0.105/0.105
     - Initial Dash Speed: 2.024 🠚 1.815
     - Run Speed: 1.866 🠚 1.82
-    - Run Acceleration (base/additional): 0.044/0.10978 🠚 0.044/0.08978
+    - Run Acceleration (base/multiplier): 0.044/0.10978 🠚 0.044/0.08978
     - Ground Friction: 0.128 🠚 0.0835
     - Air Speed: 1.019 🠚 1.1
     - Fall Speed: 1.3 🠚 1.816
@@ -4685,10 +4535,10 @@
     - Walk Acceleration (base/additional): 0.105/0.21
     - Initial Dash Speed: 2.035 🠚 1.735
     - Run Speed: 1.795 🠚 1.67
-    - Run Acceleration (base/additional): 0.044/0.12991 🠚 0.044/0.10991
+    - Run Acceleration (base/multiplier): 0.044/0.12991 🠚 0.044/0.10991
     - Ground Friction: 0.099 🠚 0.057
     - Air Speed: 1.05 🠚 1.065
-    - Air Acceleration (base/additional): 0.01/0.1 🠚 0.015/0.095
+    - Air Acceleration (base/multiplier): 0.01/0.1 🠚 0.015/0.095
     - Air Friction: 0.01 🠚 0.009
     - Fall Speed: 1.2 🠚 1.6
     - Fast Fall Speed: 1.92 🠚 2.287
@@ -4804,10 +4654,10 @@
     - Walk Acceleration (base/additional): 0.105/0.1575
     - Initial Dash Speed: 2.365 🠚 1.88
     - Run Speed: 2.464 🠚 2.046
-    - Run Acceleration (base/additional): 0.033/0.17798 🠚 0.10098/0.057
+    - Run Acceleration (base/multiplier): 0.033/0.17798 🠚 0.10098/0.057
     - Ground Friction: 0.116 🠚 0.0835
     - Air Speed: 1.208 🠚 1.085
-    - Air Acceleration (base/additional): 0.01/0.03 🠚 0.02/0.04
+    - Air Acceleration (base/multiplier): 0.01/0.03 🠚 0.02/0.04
     - Air Friction: 0.0075 🠚 0.01
     - Fall Speed: 1.95 🠚 2.165
     - Fast Fall Speed: 3.12 🠚 3
@@ -5074,11 +4924,11 @@
     - Walk Acceleration (base/additional): 0.12/0.14
     - Initial Dash Speed: 2.178 🠚 1.775
     - Run Speed: 2.288 🠚 1.9
-    - Run Acceleration (base/additional): 0.055/0.132 🠚 0.055/0.102
+    - Run Acceleration (base/multiplier): 0.055/0.132 🠚 0.055/0.102
     - Dash to Run Transition Frame: F10 🠚 F12
     - Ground Friction: 0.087 🠚 0.063
     - Air Speed: 1.239 🠚 1.09
-    - Air Acceleration (base/additional): 0.01/0.07 🠚 0.01/0.066
+    - Air Acceleration (base/multiplier): 0.01/0.07 🠚 0.01/0.066
     - Air Friction: 0.015 🠚 0.01125
     - Fall Speed: 1.85 🠚 2.49
     - Fast Fall Speed: 2.96 🠚 3.411
@@ -5227,11 +5077,11 @@
     - Walk Acceleration (base/additional): 0.105/0.105
     - Initial Dash Speed: 1.87 🠚 1.9
     - Run Speed: 1.92 🠚 1.8
-    - Run Acceleration (base/additional): 0.044/0.10978 🠚 0.04/0.08978
+    - Run Acceleration (base/multiplier): 0.044/0.10978 🠚 0.04/0.08978
     - Ground Friction: 0.12 🠚 0.08
     - Dash to Run Transition Frame: F10 🠚 F11
     - Air Speed: 1.15 🠚 1.12
-    - Air Acceleration (base/additional): 0.01/0.058 🠚 0.02/0.058
+    - Air Acceleration (base/multiplier): 0.01/0.058 🠚 0.02/0.058
     - Air Friction: 0.015 🠚 0.01
     - Fall Speed: 1.92 🠚 2.5
     - Fast Fall Speed: 3.072 🠚 3.272
@@ -5319,11 +5169,11 @@
     - Walk Speed: 1.07 🠚 1.17
     - Initial Dash Speed: 1.74 🠚 1.81
     - Run Speed: 1.58 🠚 1.65
-    - Run Acceleration (base/additional): 0.044/0.13167 🠚 0.04/0.1
+    - Run Acceleration (base/multiplier): 0.044/0.13167 🠚 0.04/0.1
     - Dash to Run Transition Frame: F10 🠚 F13
     - Ground Friction: 0.11 🠚 0.077
     - Air Speed: 1.17 🠚 1.12
-    - Air Acceleration (base/additional): 0.01/0.05 🠚 0.015/0.05
+    - Air Acceleration (base/multiplier): 0.01/0.05 🠚 0.015/0.05
     - Air Friction: 0.0038 🠚 0.005
     - Fall Speed: 1.55 🠚 2.06
     - Fast Fall Speed: 2.48 🠚 2.76
@@ -5666,11 +5516,11 @@
     - Walk Acceleration (base/additional): 0.105/0.105
     - Initial Dash Speed: 1.63 🠚 1.82
     - Run Speed: 1.37 🠚 1.61
-    - Run Acceleration (base/additional): 0.044/0.10978 🠚 0.044/0.08978
+    - Run Acceleration (base/multiplier): 0.044/0.10978 🠚 0.044/0.08978
     - Ground Friction: 0.076 🠚 0.059
     - Dash to Run Transition Frame: F10 🠚 F11
     - Air Speed: 0.93 🠚 1.03
-    - Air Acceleration (base/additional): 0.01/0.043 🠚 0.01/0.047
+    - Air Acceleration (base/multiplier): 0.01/0.043 🠚 0.01/0.047
     - Fall Speed: 1.45 🠚 1.78
     - Gravity: 0.098 🠚 0.102
     - Initial Jump Velocity: 16.995 🠚 11.0468
@@ -5740,11 +5590,11 @@
     - Walk Acceleration (base/additional): 0.105/0.21
     - Initial Dash Speed: 2.035 🠚 1.845
     - Run Speed: 2.077 🠚 1.818
-    - Run Acceleration (base/additional): 0.044/0.12991 🠚 0.044/0.10991
+    - Run Acceleration (base/multiplier): 0.044/0.12991 🠚 0.044/0.10991
     - Dash to Run Transition Frame: F10 🠚 F14
     - Ground Friction: 0.106 🠚 0.0785
     - Air Speed: 1 🠚 1.02
-    - Air Acceleration (base/additional): 0.01/0.105 🠚 0.01/0.095
+    - Air Acceleration (base/multiplier): 0.01/0.105 🠚 0.01/0.095
     - Air Friction: 0.0095 🠚 0.0065
     - Fall Speed: 1.55 🠚 1.915
     - Fast Fall Speed: 2.48 🠚 2.51
@@ -5908,11 +5758,11 @@
     - Walk Acceleration (base/additional): 0.105/0.21
     - Initial Dash Speed: 2.09 🠚 1.765
     - Run Speed: 1.828 🠚 1.74
-    - Run Acceleration (base/additional): 0.044/0.12474 🠚 0.044/0.08474
+    - Run Acceleration (base/multiplier): 0.044/0.12474 🠚 0.044/0.08474
     - Ground Friction: 0.135 🠚 0.072
     - Air Speed: 0.935 🠚 0.97
-    - Air Acceleration (base/additional): 0.01/0.065 🠚 0.01/0.06
-    - Air Acceleration (base/additional): 0.01/0.065 🠚 0.02/0.07
+    - Air Acceleration (base/multiplier): 0.01/0.065 🠚 0.01/0.06
+    - Air Acceleration (base/multiplier): 0.01/0.065 🠚 0.02/0.07
     - Fall Speed: 1.48 🠚 2.42
     - Fast Fall Speed: 2.368 🠚 3.146
     - Gravity: 0.081 🠚 0.11
@@ -6064,10 +5914,10 @@
   - Attributes:
     - Initial Dash Speed: 1.77 🠚 1.625
     - Run Speed: 1.672 🠚 1.6
-    - Run Acceleration (base/additional): 0.044/0.10978 🠚 0.044/0.08978
+    - Run Acceleration (base/multiplier): 0.044/0.10978 🠚 0.044/0.08978
     - Ground Friction: 0.116 🠚 0.0815
     - Air Speed: 1.092 🠚 1.07
-    - Air Acceleration (base/additional): 0.01/0.07 🠚 0.01/0.0675
+    - Air Acceleration (base/multiplier): 0.01/0.07 🠚 0.01/0.0675
     - Air Friction: 0.015 🠚 0.0125
     - Fall Speed: 1.35 🠚 1.655
     - Combo Fall Speed: 1.655 🠚 1.8
@@ -6374,11 +6224,11 @@
     - Walk Acceleration (base/additional): 0/0.1575
     - Initial Dash Speed: 1.87 🠚 1.732
     - Run Speed: 1.672 🠚 1.6
-    - Run Acceleration (base/additional): 0.11/0.07964 🠚 0.1/0.05964
+    - Run Acceleration (base/multiplier): 0.11/0.07964 🠚 0.1/0.05964
     - Dash to Run Transition Frame: F10 🠚 F13
     - Ground Friction: 0.094 🠚 0.06
     - Air Speed: 1.113 🠚 0.982
-    - Air Acceleration (base/additional): 0.01/0.04 🠚 0.02/0.045
+    - Air Acceleration (base/multiplier): 0.01/0.04 🠚 0.02/0.045
     - Air Friction: 0.009 🠚 0.0065
     - Fall Speed: 1.58 🠚 2.18
     - Fast Fall Speed: 2.528 🠚 2.998
@@ -6678,7 +6528,7 @@
     - Initial Dash Speed: 1.76 🠚 1.512
     - Dash to Run Transition Frame: F10 🠚 F12
     - Run Speed: 1.793 🠚 1.642
-    - Run Acceleration (base/additional): 0.044/0.10978 🠚 0.04/0.06478
+    - Run Acceleration (base/multiplier): 0.044/0.10978 🠚 0.04/0.06478
     - Ground Friction: 0.09 🠚 0.0605
     - Air Speed: 1.155 🠚 1.093
     - Fall Speed: 1.65 🠚 1.91
@@ -7019,12 +6869,12 @@
     - Initial Dash Speed: 2.145 🠚 1.66
     - Dash to Run Transition Frame: F10 🠚 F13
     - Run Speed: 2.167 🠚 1.855
-    - Run Acceleration (base/additional): 0.011/0.099 🠚 0.03/0.055
+    - Run Acceleration (base/multiplier): 0.011/0.099 🠚 0.03/0.055
     - Ground Friction: 0.106 🠚 0.0795
     - Fall Speed: 1.68 🠚 2.375
     - Fast Fall Speed: 2.688 🠚 3.225
     - Air Speed: 1.079 🠚 1.01
-    - Air Acceleration (base/additional): 0.01/0.06 🠚 0.015/0.0475
+    - Air Acceleration (base/multiplier): 0.01/0.06 🠚 0.015/0.0475
     - Air Friction: 0.009 🠚 0.0105
     - Gravity: 0.098 🠚 0.114
     - Short Hop Height: 17 🠚 15
@@ -7257,11 +7107,11 @@
     - Walk Acceleration (base/additional): 0/0.1575
     - Initial Dash Speed: 1.892 🠚 1.813
     - Run Speed: 1.595 🠚 1.689
-    - Run Acceleration (base/additional): 0.011/0.07964 🠚 0.033/0.06764
+    - Run Acceleration (base/multiplier): 0.011/0.07964 🠚 0.033/0.06764
     - Dash to Run Transition Frame: F10 🠚 F15
     - Ground Friction: 0.129 🠚 0.0625
     - Air Speed: 1.019 🠚 0.996
-    - Air Acceleration (base/additional): 0.01/0.04 🠚 0.015/0.04
+    - Air Acceleration (base/multiplier): 0.01/0.04 🠚 0.015/0.04
     - Air Friction: 0.009 🠚 0.00525
     - Fall Speed: 1.65 🠚 2.08
     - Fast Fall Speed: 2.64 🠚 2.848
@@ -7473,11 +7323,11 @@
     - Walk Acceleration (base/additional): 0.105/0.105
     - Initial Dash Speed: 1.936 🠚 1.806
     - Run Speed: 1.76 🠚 1.635
-    - Run Acceleration (base/additional): 0.044/0.10362 🠚 0.044/0.08362
+    - Run Acceleration (base/multiplier): 0.044/0.10362 🠚 0.044/0.08362
     - Dash to Run Transition Frame: F10 🠚 F13
     - Ground Friction: 0.11 🠚 0.069
     - Airspeed: 1.019 🠚 1.03
-    - Air Acceleration (base/additional): 0.01/0.085 🠚 0.015/0.075
+    - Air Acceleration (base/multiplier): 0.01/0.085 🠚 0.015/0.075
     - Air Friction: 0.008 🠚 0.007
     - Fall Speed: 1.77 🠚 2.12
     - Fast Fall Speed: 2.832 🠚 2.852
@@ -7810,10 +7660,10 @@
     - Walk Acceleration (base/additional): 0.105/0.105
     - Initial Dash Speed: 2.118 🠚 1.6
     - Run Speed: 1.925 🠚 1.875
-    - Run Acceleration (base/additional): 0.044/0.10978 🠚 0.044/0.09678
+    - Run Acceleration (base/multiplier): 0.044/0.10978 🠚 0.044/0.09678
     - Ground Friction: 0.102 🠚 0.065
     - Air Speed: 1.208 🠚 1.11
-    - Air Acceleration (base/additional): 0.01/0.07 🠚 0.03/0.07
+    - Air Acceleration (base/multiplier): 0.01/0.07 🠚 0.03/0.07
     - Air Friction: 0.015 🠚 0.0125
     - Fall Speed: 1.58 🠚 2
     - Fast Fall Speed: 2.528 🠚 2.817
@@ -7969,7 +7819,7 @@
     - Run Speed: 1.595 🠚 1.696
     - Ground Friction: 0.111 🠚 0.08
     - Air Speed: 1.029 🠚 1.055
-    - Air Acceleration (base/additional): 0.015/0.105 🠚 0.02/0.045
+    - Air Acceleration (base/multiplier): 0.015/0.105 🠚 0.02/0.045
     - Fall Speed: 1.19 🠚 2.34
     - Fast Fall Speed: 1.904 🠚 3.2
     - Gravity: 0.07 🠚 0.13
@@ -8210,7 +8060,7 @@
     - Dash to Run Transition Frame: F10 🠚 F15
     - Ground Friction: 0.08 🠚 0.0675
     - Air Speed: 1.05 🠚 1.0875
-    - Air Acceleration (base/additional): 0.01/0.06 🠚 0.01/0.0625
+    - Air Acceleration (base/multiplier): 0.01/0.06 🠚 0.01/0.0625
     - Air Friction: 0.015 🠚 0.02
     - Fall Speed: 1.78 🠚 2.19
     - Fast Fall Speed: 2.848 🠚 2.993
@@ -8310,11 +8160,11 @@
     - Walk Acceleration (base/additional): 0.1/0.3
     - Initial Dash Speed: 1.73 🠚 1.765
     - Run Speed: 1.52 🠚 1.51
-    - Run Acceleration (base/additional): 0.04/0.0998 🠚 0.04/0.0898
+    - Run Acceleration (base/multiplier): 0.04/0.0998 🠚 0.04/0.0898
     - Dash to Run Transition Frame [MISSING DATA]
     - Ground Friction: 0.085 🠚 0.06
     - Air Speed: 0.94 🠚 0.965
-    - Air Acceleration (base/additional): 0.01/0.02 🠚 0.01/0.025
+    - Air Acceleration (base/multiplier): 0.01/0.02 🠚 0.01/0.025
     - Air Friction: 0.02 🠚 0.015
     - Max Horizontal Jump Speed: 1 🠚 1.2
     - Fall Speed: 1.85 🠚 2
@@ -8635,11 +8485,11 @@
     - Walk Acceleration (base/additional): 0/0.1575
     - Initial Dash Speed: 2.2 🠚 1.7
     - Run Speed: 2.145 🠚 1.9
-    - Run Acceleration (base/additional): 0.077/0.033 🠚 0.067/0.033
+    - Run Acceleration (base/multiplier): 0.077/0.033 🠚 0.067/0.033
     - Dash to Run Transition Frame: F10 🠚 F12
     - Ground Friction: 0.107 🠚 0.07
     - Air Speed: 1.302 🠚 1.11
-    - Air Acceleration (base/additional): 0.02/0.03 🠚 0.03/0.03
+    - Air Acceleration (base/multiplier): 0.02/0.03 🠚 0.03/0.03
     - Fall Speed: 1.8 🠚 2.33
     - Fast Fall Speed: 2.88 🠚 2.98
     - Initial Jump Velocity: 17.0335 🠚 11.0718
@@ -8815,12 +8665,12 @@
     - Walk acceleration (base/additional): 0.105/0.315
     - Initial Dash Speed: 1.87 🠚 1.674
     - Run Speed: 1.654 🠚 1.61
-    - Run acceleration (base/additional): 0.044/0.132 🠚 0.044/0.118
+    - Run Acceleration (base/multiplier): 0.044/0.132 🠚 0.044/0.118
     - Initial Dash Speed: 1.754 🠚 1.734
     - Dash to Run Transition Frame: F10 🠚 F15
     - Ground Friction: 0.082 🠚 0.06
     - Air Speed: 1.103 🠚 1.093
-    - Air acceleration (base/additional): 0.04/0.05 🠚 0.02/0.045
+    - Air Acceleration (base/multiplier): 0.04/0.05 🠚 0.02/0.045
     - Air Friction: 0.0075 🠚 0.0125
     - Fall Speed: 1.33 🠚 1.43
     - Combo Fall Speed: 1.4 🠚 1.55
@@ -9059,7 +8909,7 @@
     - Run Speed: 1.485 🠚 1.725
     - Ground Friction: 0.105 🠚 0.0695
     - Air Speed: 0.945 🠚 0.9
-    - Air Acceleration (base/additional): 0.01/0.05 🠚 0.02/0.04
+    - Air Acceleration (base/multiplier): 0.01/0.05 🠚 0.02/0.04
     - Air Friction: 0.015 🠚 0.0175
     - Fall Speed: 1.7 🠚 2.3
     - Fast Fall Speed: 2.72 🠚 3.05
@@ -9201,7 +9051,7 @@
     - Run Speed: 1.48 🠚 1.58
     - Ground Friction: 0.131 🠚 0.081
     - Air Speed: 1.02 🠚 1.095
-    - Air Acceleration (base/additional): 0.01/0.05 🠚 0.02/0.07
+    - Air Acceleration (base/multiplier): 0.01/0.05 🠚 0.02/0.07
     - Fall Speed: 1.3 🠚 1.76
     - Fast Fall Speed: 2.08 🠚 2.37
     - Gravity: 0.07 🠚 0.084
@@ -9317,7 +9167,7 @@
     - Walk Acceleration (base/additional): 1.1/0.11 🠚 1.2/0.12
     - Initial Dash Speed: 1.936 🠚 1.7
     - Run Speed: 1.76 🠚 1.825
-    - Run Acceleration (base/additional): 0.044/0.11 🠚 0.044/0.086
+    - Run Acceleration (base/multiplier): 0.044/0.11 🠚 0.044/0.086
     - Ground Friction: 0.11 🠚 0.105
     - Max Horizontal Jump Speed: 1.3 🠚 1.55
     - Footstool Vertical Jump Multiplier (fullhop/shorthop): 0.8/0.5 🠚 0.825
@@ -9559,7 +9409,7 @@
     - Walk Acceleration (base/additional): 0.1/0.05
     - Initial Dash Speed: 1.76 🠚 1.6
     - Run Speed: 1.18 🠚 1.45
-    - Run Acceleration (base/additional): 0.02/0.09
+    - Run Acceleration (base/multiplier): 0.02/0.09
     - Dash to Run Transition Frame: F10 🠚 F12
     - Ground Friction: 0.114 🠚 0.08
     - Air Speed: 0.88 🠚 0.94
@@ -9768,11 +9618,11 @@
     - Walk Acceleration (base/additional): 0.05/0.05 🠚 0.105/0.105
     - Initial Dash Speed: 1.72 🠚 1.71
     - Run Speed: 1.72 🠚 1.586
-    - Run Acceleration (base/additional): 0.06/0.08
+    - Run Acceleration (base/multiplier): 0.06/0.08
     - Dash to Run Transition Frame: F10 🠚 F14
     - Ground Friction: 0.088 🠚 0.06
     - Air Speed: 1 🠚 0.981
-    - Air Acceleration (base/additional): 0.01/0.05 🠚 0.015/0.05
+    - Air Acceleration (base/multiplier): 0.01/0.05 🠚 0.015/0.05
     - Air Friction: 0.008 🠚 0.0125
     - Horizontal Jump Speed Multiplier: 0.75 🠚 0.825
     - Stick-Based Jump Momentum: 0.9
@@ -9901,11 +9751,11 @@
     - Walk Acceleration (base/additional): 0.2/0.11
     - Initial Dash Speed: 1.9 🠚 1.705
     - Run Speed: 2.06 🠚 1.81
-    - Run Acceleration (base/additional): 0.04/0.11 🠚 0.04/0.085
+    - Run Acceleration (base/multiplier): 0.04/0.11 🠚 0.04/0.085
     - Dash to Run Transition Frame: F10 🠚 F11
     - Ground Friction: 0.13 🠚 0.083
     - Air Speed: 1.1 🠚 1.01
-    - Air Acceleration (base/additional): 0.01/0.07 🠚 0.01/0.065
+    - Air Acceleration (base/multiplier): 0.01/0.07 🠚 0.01/0.065
     - Fall Speed: 1.63 🠚 2.42
     - Fast Fall Speed: 3.097 🠚 3.32
     - Gravity: 0.127 🠚 0.14
@@ -10152,7 +10002,7 @@
     - Run Speed: 1.84 🠚 1.625
     - Dash to run transition frame (forwards/backwards): 10/12 🠚 14/17
     - Air Speed: 1.01 🠚 0.96
-    - Air acceleration (base/additional): 0.01/0.045 🠚 0.01/0.05
+    - Air Acceleration (base/multiplier): 0.01/0.045 🠚 0.01/0.05
     - Fall Speed: 1.57 🠚 1.98
     - Fast Fall Speed: 2.512 🠚 2.7
     - Initial Jump Velocity: 15.95 🠚 10.3675
@@ -10391,11 +10241,11 @@
     - Walk Acceleration (base/additional): 0.06/0.04
     - Initial Dash Speed: 1.68 🠚 1.605
     - Run Speed: 2.18 🠚 1.74
-    - Run Acceleration (base/additional): 0.07/0.07 🠚 0.07/0.05
+    - Run Acceleration (base/multiplier): 0.07/0.07 🠚 0.07/0.05
     - Dash to Run Transition Frame: F10 🠚 F11
     - Ground Friction: 0.076 🠚 0.0595
     - Air Speed: 0.91 🠚 0.898
-    - Air Acceleration (base/additional): 0.01/0.06 🠚 0.013/0.06
+    - Air Acceleration (base/multiplier): 0.01/0.06 🠚 0.013/0.06
     - Air Friction: 0.014 🠚 0.013
     - Fall Speed: 1.76 🠚 2.33
     - Fast Fall Speed: 2.816 🠚 3.1
@@ -10570,11 +10420,11 @@
     - Walk Acceleration (base/additional): 0.3/0.1 🠚 1.2/0.12
     - Initial Dash Speed: 1.72 🠚 1.7
     - Run Speed: 1.65 🠚 1.655
-    - Run Acceleration (base/additional): 0.04/0.12
+    - Run Acceleration (base/multiplier): 0.04/0.12
     - Ground Friction: 0.111 🠚 0.09
     - Fall Speed: 1.48 🠚 2.48
     - Air Speed: 0.95 🠚 0.9775
-    - Air Acceleration (base/additional): 0.01/0.05 🠚 0.01/0.04
+    - Air Acceleration (base/multiplier): 0.01/0.05 🠚 0.01/0.04
     - Air Friction: 0.012 🠚 0.011
     - Fast Fall Speed: 2.368 🠚 3.102
     - Gravity: 0.09 🠚 0.111
@@ -10890,14 +10740,14 @@
     - Ground Friction: 0.125 🠚 0.06
     - Initial Dash Speed: 1.8 🠚 1.765
     - Run Speed: 1.498 🠚 1.53
-    - Run Acceleration (base/additional): 0.02/0.13 🠚 0.03/0.09
+    - Run Acceleration (base/multiplier): 0.02/0.13 🠚 0.03/0.09
     - Dash to Run Transition Frame: F10 🠚 F15
     - Full Hop Height: 26.5 🠚 30
     - Double Jump Height: 28.5 🠚 30
     - Max Horizontal Jump Speed: 1 🠚 1.297
     - Footstool Vertical Jump Speed Multiplier (fullhop/shorthop): 0.8/0.5 🠚 0.825
     - Air Speed: 0.89 🠚 0.975
-    - Air Acceleration (base/additional): 0.01/0.043 🠚 0.01/0.045
+    - Air Acceleration (base/multiplier): 0.01/0.043 🠚 0.01/0.045
     - Air Friction: 0.008 🠚 0.009
     - Fall Speed: 1.6 🠚 2.2
     - Fast Fall Speed: 2.56 🠚 3.106
@@ -11105,7 +10955,7 @@
     - Neutral/Side Special Startup Ground Speed Multiplier: 0.5 🠚 0.65
     - Initial Dash Speed: 1.9 🠚 1.865
     - Run Speed: 1.55 🠚 1.54
-    - Run Acceleration (base/additional): 0.04/0.11 🠚 0.1/0.04
+    - Run Acceleration (base/multiplier): 0.04/0.11 🠚 0.1/0.04
     - Dash to Run Transition Frame: F10 🠚 F15
     - Short Hop Height: 16 🠚 14
     - Air Speed: 0.85 🠚 0.9475
@@ -11513,7 +11363,7 @@
     - Initial Dash Speed: 1.69 🠚 1.725
     - Run Speed: 1.38 🠚 1.4975
     - Air Speed: 1.1 🠚 1.05
-    - Air Acceleration (base/additional): 0.01/0.055 🠚 0.015/0.055
+    - Air Acceleration (base/multiplier): 0.01/0.055 🠚 0.015/0.055
     - Max Horizontal Jump Speed: 1.2 🠚 1.25
     - Short Hop Height: 15.2 🠚 14.7
     - Fall Speed: 1.62 🠚 2.09
