@@ -14,7 +14,7 @@
   - Jump Height: 37.31 🠚 40.13
   - Double Jump Height: 37.31 🠚 29.94
   - Air Speed: 1.218 🠚 1.12
-  - Air Acceleration (base/multiplier): 0.01/0.065 🠚 0.02/0.0525
+  - Air Acceleration (base/multiplier): 0.01/0.065 🠚 0.02/0.04
   - Horizontal Air Friction: 0.0075 🠚 0.01
   - Gravity: 0.12 🠚 0.13
   - Fall Speed: 1.865 🠚 2.808

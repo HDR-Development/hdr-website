@@ -11,8 +11,7 @@
     - Jumpsquat: 3F 🠚 4F
     - Horizontal Jump Speed Multiplier: 0.57 🠚 0.6
     - Short Hop Height: 16.75 🠚 14.75
-    - Air Speed: 0.83 🠚 0.875
-    - Air Acceleration (base/multiplier): 0.01/0.08 🠚 0.01/0.06
+    - Air Acceleration (base/multiplier): 0.01/0.08 🠚 0.02/0.027
     - Air Friction: 0.015 🠚 0.02
     - Gravity: 0.082 🠚 0.1
     - Fall Speed: 1.3 🠚 1.61
@@ -30,7 +29,7 @@
     - Max Horizontal Jump Speed: 0.57 🠚 0.6
     - Short Hop Height: 16.75 🠚 14.75
     - Air Speed: 0.8715 🠚 0.91875
-    - Air Acceleration (base/multiplier): 0.0105/0.084 🠚 0.0105/0.0.6355
+    - Air Acceleration (base/multiplier): 0.0105/0.084 🠚 0.02/0.03105
     - Air Friction: 0.015 🠚 0.02
     - Gravity: 0.082 🠚 0.1
     - Fall Speed: 1.3 🠚 1.61

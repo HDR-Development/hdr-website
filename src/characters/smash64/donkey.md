@@ -13,7 +13,7 @@
   - Short Hop Height: 17.3 🠚 15
   - Double Jump Height: 35.5 🠚 34.5
   - Air Speed: 1.208 🠚 1.105
-  - Air Acceleration (base/multiplier): 0.01/0.05 🠚 0.012/0.04
+  - Air Acceleration (base/multiplier): 0.01/0.05 🠚 0.012/0.03
   - Air Friction: 0.015 🠚 0.0175
   - Gravity: 0.085 🠚 0.1
   - Fall Speed: 1.63 🠚 2.4
@@ -263,7 +263,7 @@
   - Barrel Pull (Shield Special):
     - <property>Press special while shielding to pull out a barrel</property>
       - Has a 15 second cooldown before another barrel can be pulled
-      - Donkey Kong will get a yellow flash above his head and on his portrait when   the cooldown is over
+      - Donkey Kong will get a yellow flash above his head and on his portrait when the cooldown is over
       - Up to 3 barrels can be on-screen at a time
     - The barrel has an upward angle if thrown using a tilt input
     - In training mode, taunting will reset the cooldown

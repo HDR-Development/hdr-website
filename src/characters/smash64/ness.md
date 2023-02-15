@@ -12,7 +12,7 @@
   - Max Horizontal Jump Speed: 1.3 🠚 1.5
   - Short Hop Height: 16.65 🠚 14.65
   - Max Air Speed: 1.007 🠚 1.05
-  - Air Acceleration (base/multiplier): 0.01/0.09 🠚 0.01/0.075
+  - Air Acceleration (base/multiplier): 0.01/0.09 🠚 0.02/0.04
   - Air Friction: 0.0225 🠚 0.02
   - Gravity: 0.077 🠚 0.09
   - Fall Speed: 1.31 🠚 1.83

@@ -1,333 +1,5 @@
 # Character Changes
 
-- ### ![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.024.png) - LUCINA -
-  - Attributes:
-    - Walk Speed: 1.575 🠚 1.6
-    - Initial Dash Speed: 2.255 🠚 1.65
-    - Run Speed: 1.964 🠚 1.85
-    - Run Acceleration (base/multiplier): 0.044/0.0902 🠚 0.0702/0.024
-    - Dash to Run Transition Frame: F10 🠚 F12
-    - Ground Friction: 0.114 🠚 0.063
-    - Air Speed: 1.071 🠚 0.93
-    - Air Acceleration (base/multiplier): 0.01/0.07 🠚 0.015/0.06
-    - Air Friction: 0.00375 🠚 0.006
-    - Fall Speed: 1.58 🠚 2.28
-    - Fast Fall Speed: 2.528 🠚 2.698
-    - Gravity: 0.075 🠚 0.091
-    - Short Hop Height: 16.26 🠚 15.26
-    - Jump Height: 33.66 🠚 31.5
-    - Double Jump Height: 33.66 🠚 28.5
-    - Max Horizontal Jump Speed: 1.2 🠚 1.3
-    - Ground to Air Jump Speed Multiplier: 0.8 🠚 0.825
-    - Footstool Vertical Jump Speed Multiplier (Full Hop/Short Hop): 0.8/0.5 🠚 0.775
-    - Weight: 90 🠚 84
-    - Initial Jump Velocity: 18.513 🠚 12.03345
-    - Model Scale Multiplier: 0.95 🠚 0.96
-    - Dairdodge distance (18 🠚 15)
-    - Directional Airdodge Velocity: 3 🠚 2.79
-    - Directional Airdodge Landing Speed Multiplier: 1 🠚 0.875
-  - Parallel Falchion:
-    - *Model size increased by 11.5%*
-  - Dash:
-    - *Dash animation reworked for cleaner dash dancing*
-  - Jab:
-    - Jab 1
-      - *Can jablock grounded opponents*
-      - *Added shoulder hitbox*
-      - KBG: 30 🠚 20
-      - Additional Hitstun: 3F 🠚 2F
-    - Jab 2
-      - *Added shoulder hitbox*
-      - *Can now reverse hit*
-      - Hitbox Duration: F4-5 🠚 F3-8
-      - Damage: 4.75% 🠚 5.0%
-      - FAF: 29 🠚 28
-  - Forward Tilt:
-    - *Added shoulder hitbox*
-    - Damage: 11.0% 🠚 10.0%
-    - KBG: 74 🠚 77
-  - Up Tilt:
-    - *Hitboxes enlarged*
-    - Early
-      - Damage: 7.6% 🠚 8.0%
-    - Late
-      - Damage: 8.075% 🠚 9.0%
-  - Down Tilt:
-    - *Hitboxes enlarged*
-    - *Added shoulder, arm, and blade hitboxes*
-    - BKB: 45 🠚 47
-  - Dash Attack:
-    - *Added shoulder hitbox*
-    - *Sword hitboxes enlarged*
-    - *Can now reverse hit*
-    - Damage: 10.925% 🠚 10.0%
-    - KBG: 67 🠚 70
-  - Forward Smash:
-    - *Hitboxes enlarged*
-    - *Can now reverse hit*
-    - KBG: 90 🠚 83
-  - Up Smash:
-    - FAF: 59 🠚 52
-  - Down Smash:
-    - *Added hip hitbox*
-    - *Shoulder and sword hitboxes enlarged*
-    - Hitbox Duration (hit 1/hit 2): F6-7/F21-23 🠚 F6-8/F22-24
-    - Hit 1
-      - Damage: 9.5% 🠚 12.5%
-      - KBG: 88 🠚 92
-  - Neutral Air:
-    - Hit 1
-      - Damage: 4.0% 🠚 3.0%
-    - Hit 2
-      - Damage: 8.0% 🠚 7.0%
-      - KBG: 90 🠚 100
-    - Landing Lag: 7F 🠚 8F
-  - Forward Air:
-    - *Added shoulder hitbox, sword hitboxes shifted outwards*
-    - Damage: 9.5% 🠚 10.0%
-    - Angle: 361 🠚 50
-    - BKB: 40 🠚 45
-    - KBG: 80 🠚 85
-    - FAF: 38 🠚 34
-    - Landing Lag: 10F 🠚 9F
-  - Back Air:
-    - *Added shoulder hitbox*
-    - Sourspot
-      - BKB: 35 🠚 10
-    - Midspot
-      - BKB: 35 🠚 25
-      - KBG: 80 🠚 70
-    - Sweetspot
-      - BKB: 35 🠚 30
-    - Tipper
-      - KBG: 95 🠚 110
-    - FAF: 40 🠚 36
-    - Landing Lag: 10F 🠚 12F
-  - Up Air:
-    - *Hitboxes enlarged*
-    - *Blade and tipper hitboxes moved outwards*
-    - Damage: 10.5% 🠚 10.0%
-    - BKB: 40 🠚 44
-    - KBG: 83 🠚 80
-    - Landing Lag: 8F 🠚 9F
-  - Down Air:
-    - *Reworked to a spinning slash*
-    - Hitbox Duration (multihits/launcher): F12-23/F26-27
-    - Multihits
-      - Front
-        - Damage: 1.5%
-        - Angle: 367
-        - BKB: 0
-        - KBG: 100
-      - Back
-        - Damage: 1.5%
-        - Angle: 25 🠚 35
-        - BKB: 45
-        - KBG: 80
-      - SDI Multiplier: 1.0x 🠚 1.25x
-    - Launcher
-      - Sourspot
-        - Damage: 8.0% 🠚 7.5%
-        - Angle: 75
-        - BKB: 40
-        - KBG: 80
-      - Sweetspot
-        - Damage: 9.0%
-        - Angle: 305
-        - BKB: 20
-        - KBG: 80
-    - Landing Lag: 14F 🠚 15F
-  - Shield Breaker (Neutral Special):
-    - *Rushes forward upon release, speed depends on charge level*
-    - Maximum Charge Time: 60F 🠚 45F
-    - Maximum Charge Multiplier: 2.2x 🠚 2x
-    - FAF: 40 🠚 45
-  - Quad Strike+ (Side Special):
-    - *Aerial first hit stalls for the first 16 frames once per airtime*
-    - *Glows the direction's respective color on all hits*
-    - Horizontal Speed Multiplier: 0.5x 🠚 0.8x
-    - Air Speed Multiplier: 0.8x 🠚 0.78x
-    - Initial Vertical Speed: 1.4 🠚 1.55
-    - Hit 1
-      - Angle: 361 🠚 90
-    - Hit 3
-      - *Can cancel into the direction’s corresponding tilt/smash/aerial on hit*
-    - Hit 4
-      - *Can jump cancel the upwards variant on hit*
-  - Crescent Slash (Up Special):
-    - Height Multiplier (ground/air): 1.1x 🠚 0.9/0.95x
-    - Maximum Travel Angle: 20 🠚 30
-    - KBG (sweetspot): 74 🠚 89
-  - Iai Counter (Down Special):
-    - Damage Multiplier: 1.2x 🠚 1.15x
-    - Minimum Damage: 8.0% 🠚 6.0%
-  - Down Throw:
-    - FAF: 43 🠚 40
-  - Up Throw:
-    - FAF: 45 🠚 34
-  - Forward Throw:
-    - FAF: 32 🠚 24
-
-- ### ![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.026.png) - GANONDORF -
-  - Attributes:
-    - Walk Acceleration (base/additional): 0.0315/0.084
-    - Initial Dash Speed: 1.87 🠚 1.4
-    - Run Speed: 1.34 🠚 1.45
-    - Run Acceleration (base/multiplier): 0.033/0.10593 🠚 0.044/0.07593
-    - Ground Friction: 0.125 🠚 0.07
-    - Initial Jump Velocity: 14.0195 🠚 10.61365
-    - Air Speed: 0.83 🠚 0.9
-    - Air Acceleration (base/multiplier): 0.01/0.03 🠚 0.02/0.055
-    - Air Friction: 0.015 🠚 0.02
-    - Fall Speed: 1.65 🠚 2
-    - Gravity: 0.108 🠚 0.13
-    - Jump Height: 25.49 🠚 30.5
-    - Short Hop Height: 12.24 🠚 15.74
-    - Double Jump Height: 26 🠚 30
-    - Horizontal Jump Speed Cap: 1.45 🠚 1.44
-    - Directional Airdodge Velocity: 3 🠚 2.79
-    - Directional Airdodge Landing Speed Multiplier: 1 🠚 0.875
-    - Model Scale Multiplier: 0.96 🠚 0.98
-    - Shield Radius: 12.9 🠚 13.4
-    - Weight: 118 🠚 115
-    - Horizontal Jump Speed Multiplier: 0.75 🠚 0.8
-    - Max Horizontal Jump Speed: 1.8 🠚 1.455
-  - Jab:
-    - *Hitboxes extended towards the ground to hit low opponents*
-    - Hitbox Duration: F7-8 🠚 F5-6
-    - Damage: 11.0% 🠚 8.5%
-    - FAF: 30 🠚 29
-  - Forward Tilt:
-    - *Added lower leg intangibility during frames 8-13*
-    - *Hitboxes given trample properties*
-    - Hitbox Duration: F10-12 🠚 F10-13
-    - Damage (leg/foot): 13.0/14.0% 🠚 12.0/13.0%
-    - KBG: 82 🠚 86
-    - Shield Damage: 0 🠚 4
-    - FAF: 40 🠚 35
-  - Up Tilt:
-    - *Reworked to Sm4sh up smash*
-    - *Added leg intangibility during active frames*
-    - Hitbox Duration: F13-17
-    - Damage: 12.0%
-    - Angle (foot/leg/hip): 85/83/80
-    - BKB: 60
-    - KBG: 67
-    - Additional Hitstun: 2F 🠚 4F
-    - FAF 95 🠚 48
-  - Down Tilt:
-    - *Can now reverse hit*
-    - Damage: 14.0% 🠚 12.0%
-    - BKB: 30 🠚 34
-    - Shield Damage: 0 🠚 2
-    - FAF: 36 🠚 33
-  - Forward Smash: 
-    - *Hitboxes enlarged*
-    - *Added knee and hand hitboxes*
-    - Hitbox Duration: F29-31 🠚 F29-32
-    - Damage: 24.0% 🠚 22.0%
-    - BKB: 61 🠚 45
-    - KBG: 75 🠚 96
-    - FAF: 70 🠚 74
-  - Up Smash:
-    - *Hitboxes enlarged*
-    - Hitbox Duration: F20-25 🠚 F20-28
-    - Damage (blade/arm): 24.0/21.0% 🠚 22.0/19.0%
-    - KBG(sourspot/sweetspot): 82/77 🠚 82/85
-    - FAF: 62 🠚 66
-  - Down Smash:
-    - KBG (hit 2): 81 🠚 88
-    - FAF: 60 🠚 66
-  - Neutral Air:
-    - *Animation adjusted so legs hit lower and more horizontally*
-    - Hitbox Duration (hit 1/hit 2): F7-12/F17-26 🠚 F7-11/F15-23
-    - Hit 1
-      - Damage: 7.0/5.25% 🠚 6.0%
-      - Angle (ground/air): 55/70 🠚 75/367
-      - BKB (ground/air): 20 🠚 58/50
-      - KBG (ground/air): 30 🠚 51/30
-      - Additional Hitstun (ground/air): 0F 🠚 2/4F
-      - Hitbox Size (hip/leg/foot): 5.5/5.5/4.3u 🠚 6.0/6.0/5.0u
-    - Hit 2
-      - Damage: 12.0/9.0% 🠚 11.0%
-      - BKB: 25 🠚 35
-    - Landing Lag: 10F 🠚 11F
-  - Forward Air:
-    - *Hitboxes enlarged*
-    - *Can now reverse hit*
-    - KBG (sweetspot/sourspot): 93 🠚 97/99
-    - FAF: 45 🠚 40
-    - Autocancel: F45 🠚 F33
-    - Landing Lag: 13F 🠚 12F
-  - Back Air:
-    - *Added forearm intangibility during active frames*
-    - *Added late hit*
-    - *Can now reverse hit*
-    - Hitbox Duration (early/late): F10-12 🠚 F10-13/F14-18
-    - Early
-      - Damage (sweetspot/sourspot): 18.5/17.0% 🠚 16.5/15.0%
-      - KBG: 86 🠚 93
-      - Hitbox Size (shoulder): 3.0u 🠚 4.0u
-    - Late
-      - Damage: 10.0% 🠚 13.0%
-      - Angle: 45
-      - BKB: 30
-      - KBG: 93
-      - Hitbox Size (arm/hand): 4.0/4.5u
-    - FAF: 36 🠚 30
-    - Landing Lag: 11F 🠚 12F
-  - Up Air:
-    - Hitbox Duration (early/mid/late): F8-10/F11-13/F14-16 🠚 F6-10/F11-13/F14-20
-    - Early
-    - Mid
-      - KBG: 80 🠚 85
-    - Late
-      - Damage (sweetspot/sourspot): 8.0/6.0% 🠚 8.0/7.0%
-      - Angle: 70 🠚 0
-      - KBG: 75 🠚 80
-    - FAF: 34 🠚 31
-    - Landing Lag: 11F 🠚 10F
-  - Down Air:
-    - FAF: 45 🠚 40
-    - Landing Lag: 16F 🠚 15F
-  - Float (Neutral Special):
-    - *Grounded version rises into the air with full intangibility*
-    - *Aerial version stalls for a short duration and slowly descends with increasing speed*
-    - *Pressing down or Special will cancel the float into normal fall once airborne*
-    - Intangibility (ground): F6-19
-  - Flame Choke (Side Special):
-    - *Opponents can no longer mash out of Flame Choke*
-    - *Can grab ledge throughout the entire move*
-  - Dark Dive (Up Special):
-    - Height Multiplier: 1.0x 🠚 0.9x
-    - FAF (hit): 50 🠚 37
-  - Wizard’s Foot (Down Special):
-    - *Hitboxes enlarged*
-    - *Added hip hitbox, knee hitbox moved inwards*
-    - *Can be B-reversed*
-    - Ground
-      - *Added invincibility to full leg and forearm during frames 16-26 and intangibility to lower leg on frames F27-36*
-      - Angle: 45 🠚 42
-      - KBG: 65 🠚 72
-    - Air
-      - *Restores double jump upon completion*
-      - *Added horizontal speed to landing, allowing the move to edge cancel*
-      - Landing Speed: 1.0 🠚 1.65
-  - Down Throw:
-    - FAF: 40 🠚 35
-  - Up Throw:
-    - FAF: 44 🠚 40
-  - Forward Throw:
-    - FAF: 40 🠚 29
-  - Back Throw:
-    - FAF: 50 🠚 40
-  - Up Taunt:
-    - *Added super armor during frames 40-64*
-    - FAF: 50 🠚 80
-  - Down Taunt:
-    - *Added super armor during frames 29-59*
-    - FAF: 50 🠚 90
-
 - ### ![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.027.png) - MEWTWO -
   - Attributes:
     - Walk Acceleration (base/additional): 0.105/0.315
@@ -6059,6 +5731,174 @@
     - FAF: F65 🠚 F63
   - Forward Throw:
     - FAF: F34 🠚 F33
+
+- ### ![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.024.png) - LUCINA -
+  - Attributes:
+    - Walk Speed: 1.575 🠚 1.6
+    - Initial Dash Speed: 2.255 🠚 1.65
+    - Run Speed: 1.964 🠚 1.85
+    - Run Acceleration (base/multiplier): 0.044/0.0902 🠚 0.0702/0.024
+    - Dash to Run Transition Frame: F10 🠚 F12
+    - Ground Friction: 0.114 🠚 0.063
+    - Air Speed: 1.071 🠚 0.93
+    - Air Acceleration (base/multiplier): 0.01/0.07 🠚 0.015/0.06
+    - Air Friction: 0.00375 🠚 0.006
+    - Fall Speed: 1.58 🠚 2.28
+    - Fast Fall Speed: 2.528 🠚 2.698
+    - Gravity: 0.075 🠚 0.091
+    - Short Hop Height: 16.26 🠚 15.26
+    - Jump Height: 33.66 🠚 31.5
+    - Double Jump Height: 33.66 🠚 28.5
+    - Max Horizontal Jump Speed: 1.2 🠚 1.3
+    - Ground to Air Jump Speed Multiplier: 0.8 🠚 0.825
+    - Footstool Vertical Jump Speed Multiplier (Full Hop/Short Hop): 0.8/0.5 🠚 0.775
+    - Weight: 90 🠚 84
+    - Initial Jump Velocity: 18.513 🠚 12.03345
+    - Model Scale Multiplier: 0.95 🠚 0.96
+    - Dairdodge distance (18 🠚 15)
+    - Directional Airdodge Velocity: 3 🠚 2.79
+    - Directional Airdodge Landing Speed Multiplier: 1 🠚 0.875
+  - Parallel Falchion:
+    - *Model size increased by 11.5%*
+  - Dash:
+    - *Dash animation reworked for cleaner dash dancing*
+  - Jab:
+    - Jab 1
+      - *Can jablock grounded opponents*
+      - *Added shoulder hitbox*
+      - KBG: 30 🠚 20
+      - Additional Hitstun: 3F 🠚 2F
+    - Jab 2
+      - *Added shoulder hitbox*
+      - *Can now reverse hit*
+      - Hitbox Duration: F4-5 🠚 F3-8
+      - Damage: 4.75% 🠚 5.0%
+      - FAF: 29 🠚 28
+  - Forward Tilt:
+    - *Added shoulder hitbox*
+    - Damage: 11.0% 🠚 10.0%
+    - KBG: 74 🠚 77
+  - Up Tilt:
+    - *Hitboxes enlarged*
+    - Early
+      - Damage: 7.6% 🠚 8.0%
+    - Late
+      - Damage: 8.075% 🠚 9.0%
+  - Down Tilt:
+    - *Hitboxes enlarged*
+    - *Added shoulder, arm, and blade hitboxes*
+    - BKB: 45 🠚 47
+  - Dash Attack:
+    - *Added shoulder hitbox*
+    - *Sword hitboxes enlarged*
+    - *Can now reverse hit*
+    - Damage: 10.925% 🠚 10.0%
+    - KBG: 67 🠚 70
+  - Forward Smash:
+    - *Hitboxes enlarged*
+    - *Can now reverse hit*
+    - KBG: 90 🠚 83
+  - Up Smash:
+    - FAF: 59 🠚 52
+  - Down Smash:
+    - *Added hip hitbox*
+    - *Shoulder and sword hitboxes enlarged*
+    - Hitbox Duration (hit 1/hit 2): F6-7/F21-23 🠚 F6-8/F22-24
+    - Hit 1
+      - Damage: 9.5% 🠚 12.5%
+      - KBG: 88 🠚 92
+  - Neutral Air:
+    - Hit 1
+      - Damage: 4.0% 🠚 3.0%
+    - Hit 2
+      - Damage: 8.0% 🠚 7.0%
+      - KBG: 90 🠚 100
+    - Landing Lag: 7F 🠚 8F
+  - Forward Air:
+    - *Added shoulder hitbox, sword hitboxes shifted outwards*
+    - Damage: 9.5% 🠚 10.0%
+    - Angle: 361 🠚 50
+    - BKB: 40 🠚 45
+    - KBG: 80 🠚 85
+    - FAF: 38 🠚 34
+    - Landing Lag: 10F 🠚 9F
+  - Back Air:
+    - *Added shoulder hitbox*
+    - Sourspot
+      - BKB: 35 🠚 10
+    - Midspot
+      - BKB: 35 🠚 25
+      - KBG: 80 🠚 70
+    - Sweetspot
+      - BKB: 35 🠚 30
+    - Tipper
+      - KBG: 95 🠚 110
+    - FAF: 40 🠚 36
+    - Landing Lag: 10F 🠚 12F
+  - Up Air:
+    - *Hitboxes enlarged*
+    - *Blade and tipper hitboxes moved outwards*
+    - Damage: 10.5% 🠚 10.0%
+    - BKB: 40 🠚 44
+    - KBG: 83 🠚 80
+    - Landing Lag: 8F 🠚 9F
+  - Down Air:
+    - *Reworked to a spinning slash*
+    - Hitbox Duration (multihits/launcher): F12-23/F26-27
+    - Multihits
+      - Front
+        - Damage: 1.5%
+        - Angle: 367
+        - BKB: 0
+        - KBG: 100
+      - Back
+        - Damage: 1.5%
+        - Angle: 25 🠚 35
+        - BKB: 45
+        - KBG: 80
+      - SDI Multiplier: 1.0x 🠚 1.25x
+    - Launcher
+      - Sourspot
+        - Damage: 8.0% 🠚 7.5%
+        - Angle: 75
+        - BKB: 40
+        - KBG: 80
+      - Sweetspot
+        - Damage: 9.0%
+        - Angle: 305
+        - BKB: 20
+        - KBG: 80
+    - Landing Lag: 14F 🠚 15F
+  - Shield Breaker (Neutral Special):
+    - *Rushes forward upon release, speed depends on charge level*
+    - Maximum Charge Time: 60F 🠚 45F
+    - Maximum Charge Multiplier: 2.2x 🠚 2x
+    - FAF: 40 🠚 45
+  - Quad Strike+ (Side Special):
+    - *Aerial first hit stalls for the first 16 frames once per airtime*
+    - *Glows the direction's respective color on all hits*
+    - Horizontal Speed Multiplier: 0.5x 🠚 0.8x
+    - Air Speed Multiplier: 0.8x 🠚 0.78x
+    - Initial Vertical Speed: 1.4 🠚 1.55
+    - Hit 1
+      - Angle: 361 🠚 90
+    - Hit 3
+      - *Can cancel into the direction’s corresponding tilt/smash/aerial on hit*
+    - Hit 4
+      - *Can jump cancel the upwards variant on hit*
+  - Crescent Slash (Up Special):
+    - Height Multiplier (ground/air): 1.1x 🠚 0.9/0.95x
+    - Maximum Travel Angle: 20 🠚 30
+    - KBG (sweetspot): 74 🠚 89
+  - Iai Counter (Down Special):
+    - Damage Multiplier: 1.2x 🠚 1.15x
+    - Minimum Damage: 8.0% 🠚 6.0%
+  - Down Throw:
+    - FAF: 43 🠚 40
+  - Up Throw:
+    - FAF: 45 🠚 34
+  - Forward Throw:
+    - FAF: 32 🠚 24
 
 - ### ![](images/Aspose.Words.f93ce4e3-25f6-48dc-9813-fc237aafe008.060.png) - ROBIN -
   - Attributes:

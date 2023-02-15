@@ -10,7 +10,7 @@
   - Jumpsquat: 3F 🠚 4F
   - Short Hop Height: 18 🠚 19.4
   - Air Speed: 1.103 🠚 0.942
-  - Air Acceleration (base/multiplier): 0.04/0.05 🠚 0.025/0.04
+  - Air Acceleration (base/multiplier): 0.04/0.05 🠚 0.02/0.015
   - Air Friction: 0.0075 🠚 0.01
   - Fall Speed: 1.33 🠚 1.87
   - Gravity: 0.075 🠚 0.085
