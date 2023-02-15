@@ -60,8 +60,8 @@
     - Internal CPU Level Modifier: <buff>76 🠚 100</buff>
 <br><br>
   - Desyncs:
-  - <property>Popo’s buffer is now inactive during spotdodges and rolls, allowing Nana to buffer an action during them to desync the Ice Climbers</property>
-  - <property>Spotdodge/Roll desyncs also work during ledge getup/roll</property>
+    - <property>Popo’s buffer is now inactive during spotdodges and rolls, allowing Nana to buffer an action during them to desync the Ice Climbers</property>
+    - <property>Spotdodge/Roll desyncs also work during ledge getup/roll</property>
 <br><br>
   - Jab:
     - Jab 1
