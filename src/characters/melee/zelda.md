@@ -210,20 +210,20 @@
         - BKB: <buff>24 🠚 30</buff>
         - KBG: <buff>95 🠚 111</buff>
         - SDI Multiplier: <nerf>0.0x 🠚 1.0x</nerf>
-        - Hitbox Size: <nerf>2.2u 🠚 2.0u</nerf>
+        - Hitbox Size: <nerf>2.2u 🠚 1.8u</nerf>
       - Hip/Knee/Foot
         - Hitbox Duration: <nerf>F7-10 🠚 F8-11</nerf>
         - Damage: <buff>4.0% 🠚 9.0%</buff>
         - BKB: <buff>5 🠚 25</buff>
         - KBG: <buff>80 🠚 89</buff>
-        - Hitbox Size (hip/knee/foot): <nerf>4.0/4.5/5.0u 🠚 4.0/4.5/4.5u</nerf>
+        - Hitbox Size (hip/knee/foot): <nerf>4.0/4.5/5.0u 🠚 3.5/4.5/4.5u</nerf>
     - Late
       - Hitbox Duration: F12-16
       - Damage: 8.0%
       - Angle: 38
       - BKB: 25
       - KBG: 100
-      - Hitbox Size (hip/knee/foot): 3.0/3.0/3.0u
+      - Hitbox Size (hip/knee/foot): 3.25/3.75/4.25u
     - FAF: <buff>50 🠚 44</buff>
     - Autocancel: <buff>F1-2/F43 🠚 F1-6/F33</buff>
     - Landing Lag: <buff>15F 🠚 10F</buff>
@@ -233,24 +233,25 @@
     - Early
       - <rework>Heel hitbox removed; sweetspot changed to foot hitbox</rework>
       - <nerf>Hitbox Priority shifted (hip > knee > foot)</nerf>
-      - Hitbox Duration: <rework>F6/F7-10 🠚 F6-8</rework>
+      - Hitbox Duration: <rework>F6/F7-10 🠚 F6-9</rework>
       - Hip/Knee
         - Damage: <buff>4.0% 🠚 10.0%</buff>
         - BKB: <buff>5 🠚 10</buff>
         - KBG: <buff>80/96 🠚 103</buff>
+        - Hitbox Size: <nerf>4.5/4.0u 🠚 3.5/4.0u</nerf>
       - Foot
         - Damage: <nerf>20.0% 🠚 15.0%</nerf>
         - BKB: <nerf>30 🠚 24</nerf>
         - KBG: <buff>95 🠚 103</buff>
         - SDI Multiplier: <nerf>0.0x 🠚 1.0x</nerf>
-        - Hitbox Size: <nerf>5.0u 🠚 4.25u</nerf>
+        - Hitbox Size: <nerf>5.0u 🠚 4.5u</nerf>
     - Late
       - Hitbox Duration: F9-15
       - Damage: 7.5%
       - Angle: 55
       - BKB: 65
       - KBG: 50
-      - Hitbox Size (hip/knee/foot): 3.5/3.5/3.5u
+      - Hitbox Size (hip/knee/foot): 3.25/3.75/4.25u
     - FAF: <buff>50 🠚 31</buff>
     - Autocancel: <buff>F1-2/F45 🠚 F1-2/F30</buff>
     - Landing Lag: <buff>16F 🠚 11F</buff>
@@ -334,12 +335,12 @@
     - <nerf>Only one Din's Fire can be active at a time</nerf>
     - <aesth>Added effects throughout explosion timer</aesth>
     - Travel
-      - Base Travel Speed: <buff>1.2 🠚 1.75</buff>
+      - Base Travel Speed: <buff>1.2 🠚 2.0</buff>
       - Max Travel Speed: <buff>7.0 🠚 8.0</buff>
       - Angling Constant: <buff>1.645 🠚 3.0</buff>
       - Max Angle: <buff>78 🠚 85</buff>
       - Max Travel Duration: <buff>45F 🠚 50F</buff>
-      - Explosion Delay: <rework>12F 🠚 90F</rework>
+      - Explosion Delay: <rework>12F 🠚 120F</rework>
     - Explosion
       - <rework>Removed sourspot</rework>
       - <buff>Explosion made transcendent</buff>

@@ -4,13 +4,12 @@
 
 ![](../../images/SmashBall.png) <b>Attributes</b>
   - Walk Speed: 1.365 🠚 1.265
-  - Walk Acceleration (base/additional): 0.105/0.105
   - Initial Dash Speed: 2.09 🠚 1.8
   - Run Speed: 1.873 🠚 1.8
   - Ground Friction: 0.123 🠚 0.08
   - Jumpsquat: 3F 🠚 5F
   - Max Horizontal Jump Speed: 1.6 🠚 1.685
-  - Short Hop Height: 17.3 🠚 15
+  - Short Hop Height: 17.3 🠚 13.0
   - Double Jump Height: 35.5 🠚 34.5
   - Air Speed: 1.208 🠚 1.105
   - Air Acceleration (base/multiplier): 0.01/0.05 🠚 0.012/0.03
@@ -22,7 +21,6 @@
   - Combo Fall Speed: 1.8 🠚 2.4
   - Weight: 127 🠚 110
   - Model Scale Multiplier: 1.0x 🠚 0.95x
-  - Heavy Item Carry Landing Lag: 24F 🠚 8F
   - Can now wall jump
   - Wall Jump Horizontal Velocity: 1.3 🠚 1.25
 <br><br>
@@ -42,10 +40,12 @@
       - FAF: <buff>35 🠚 29</buff>
 <br><br>
   - Forward Tilt:
+    - <adjust>Hitboxes moved inward</adjust>
     - Hitbox Size (shoulder:) <buff>3.5u 🠚 6.0u</buff>
     - FAF: <buff>35 🠚 34</buff>
 <br><br>
   - Up Tilt (Spider Web Swipe):
+    - Hitbox Duration: <nerf>F5-11 🠚 F6-11</nerf>
     - Damage (hand/arm/shoulder): <buff>8.0/9.0/10.0% 🠚 9.0/10.0/11.0%</buff>
     - Angle: <nerf>100 🠚 110</nerf>
     - BKB: <adjust>40 🠚 70</adjust>
@@ -74,13 +74,14 @@
       - Angle: <buff>53 🠚 65</buff>
       - BKB: <adjust>85 🠚 60</adjust>
       - KBG: <nerf>46 🠚 73</nerf>
+      - Hitbox Size: <nerf>7.0u 🠚 6.0u</nerf>
     - Late
       - Hitbox Duration: <nerf>F13-24 🠚 F13-19</nerf>
       - Damage: <nerf>9.0% 🠚 7.0%</nerf>
       - Angle: <nerf>45 🠚 361</nerf>
       - BKB: <buff>60 🠚 20</buff>
       - KBG: <nerf>60 🠚 90</nerf>
-      - Hitbox Size: <buff>5.5u 🠚 7.0u</buff>
+      - Hitbox Size: <buff>5.5u 🠚 6.0u</buff>
     - FAF: <nerf>35 🠚 38</nerf>
 <br><br>
   - Forward Smash:
@@ -123,19 +124,19 @@
     - <buff>Added right arm and shoulder hitboxes</buff>
     - Early
       - Hitbox Duration: <nerf>F18-20 🠚 F20-22</nerf>
-      - Damage: <buff>16.0% 🠚 17.0%</buff>
+      - Damage: <buff>16.0% 🠚 18.0%</buff>
       - KBG: <buff>85 🠚 89</buff>
       - Hitlag Multiplier: <adjust>1.0x 🠚 1.1x</adjust>
       - Hitbox Size: <buff>5.5/4.5u 🠚 6.0u</buff>
     - Late
       - Hitbox Duration: <nerf>F21-23 🠚 F23-25</nerf>
-      - Damage (ground/air): <buff>15.0/13.0% 🠚 17.0/15.0%</buff>
+      - Damage (ground/air): <buff>15.0/13.0% 🠚 18.0/15.0%</buff>
       - Angle (shoulder): <buff>361 🠚 270</buff>
       - KBG (air-only): <nerf>100 🠚 55</nerf>
       - Hitbox Size: <buff>5.5/5.0u 🠚 6.0u</buff>
     - FAF: <buff>56 🠚 51</buff>
     - Autocancel: <buff>F56 🠚 F51</buff>
-    - Landing Lag: <buff>17F 🠚 14F</buff>
+    - Landing Lag: <buff>17F 🠚 13F</buff>
 <br><br>
   - Back Air (Back Kick):
     - <rework>Animation changed to a lingering kick</rework>
@@ -151,11 +152,11 @@
   - Up Air (Flying Headbutt):
     - <buff>Hits 1F earlier in the animation</buff>
     - <adjust>Hitbox moved slightly lower on head</adjust>
-    - Hitbox Duration: <nerf>F6-10 🠚 F6-9</nerf>
+    - Hitbox Duration: <nerf>F6-10 🠚 F6-8</nerf>
     - Damage: <nerf>13.0% 🠚 12.0%</nerf>
     - BKB: <adjust>32 🠚 31</adjust>
     - KBG: <buff>90 🠚 103</buff>
-    - Hitbox Size: <nerf>7.5u 🠚 7.0u</nerf>
+    - Hitbox Size: <nerf>7.5u 🠚 6.0u</nerf>
     - Landing Lag: <buff>15F 🠚 11F</buff>
 <br><br>
   - Down Air:
@@ -176,7 +177,7 @@
       - Angle: 70
       - BKB: 30
       - KBG (ground/air): 70/65
-      - Hitbox Size: 9.0u
+      - Hitbox Size: 6.0u
     - Uncharged/Semi-Charged
       - Ground
         - BKB: <adjust>45 🠚 30</adjust>
@@ -185,7 +186,6 @@
         - Damage: <buff>6.0% 🠚 10.0%</buff>
         - BKB: <nerf>60 🠚 30</nerf>
         - KBG: <buff>65 🠚 75</buff>
-      - Hitbox Size: <buff>5.5u 🠚 6.0u</buff>
     - Fully Charged
       - Ground
         - BKB: <adjust>45 🠚 30</adjust>
@@ -194,12 +194,11 @@
         - Damage: <buff>25.0% 🠚 28.0%</buff>
         - BKB: <nerf>60 🠚 30</nerf>
         - KBG: <buff>65 🠚 75</buff>
-      - Hitbox Size: <buff>5.5u 🠚 6.0u</buff>
 <br><br>
   - Headbutt (Side Special):
     - <property>Stalls in the air during frames 1-24 (once per airtime)</property>
     - <buff>Matched grounded and aerial hitboxes</buff>
-    - Super Armor Duration: <buff>F5-14 🠚 F5-18</buff>
+    - Super Armor Duration: <buff>F5-14 🠚 F5-16</buff>
     - Ground-only
       - KBG: <buff>40 🠚 50</buff>
       - Shield Damage: <nerf>25.0 🠚 22.0</nerf>
@@ -212,7 +211,6 @@
       - Hitbox Size: <nerf>10.0u 🠚 9.0u</nerf>
 <br><br>
   - Spinning Kong (Up Special):
-    - <property>Can slip off and grab ledges</property>
     - <property>Can be edge canceled</property>
     - Initial Vertical Speed: <buff>0.9 🠚 1.1</buff>
     - Ground Acceleration: <buff>0.034 🠚 0.05</buff>
@@ -220,56 +218,84 @@
     - Max Ground Speed: <buff>1.1 🠚 1.15</buff>
     - Max Airspeed: <nerf>1.7 🠚 1.67</nerf>
     - Ground
+      - <property>Can slip off and grab ledges</property>
+      - <property>Can travel forwards or backwards</property>
+        - <aesth>DK angles his body depending on which direction he is moving</aesth>
       - <nerf>Removed heavy armor</nerf>
       - <rework>Added early hit</rework>
       - Early Hit
-        - Hitbox Duration: F3-6
+        - <buff>Added full-body intangibility</buff>
+        - Hitbox Duration: <nerf>F3-6 🠚 F3-5</nerf>
         - Damage: 12.0%
         - Angle: 361
         - BKB: 60
         - KBG: <buff>81 🠚 90</buff>
+        - Hitbox Size (shoulders/body): 6.0/7.0u
+      - Multihits
+        - <nerf>Added damage falloff for each subsequent hit</nerf>
+        - Angle: <nerf>367 🠚 361</nerf>
+        - BKB: <rework>90/65/35 🠚 30</rework>
+        - KBG: <rework>55/100 🠚 80</rework>
+        - Hitlag Multiplier: <adjust>1.0/0.5x 🠚 1.0x</adjust>
+        - Shield Damage: <nerf>1 🠚 0</nerf>
+        - Hitbox Size: <buff>6.0/5.04.0u 🠚 8.0u</buff>
       - Final Hit
         - BKB: <buff>60 🠚 75</buff>
         - KBG: <nerf>157 🠚 85</nerf>
       - FAF (flex): <buff>57 🠚 28</buff>
     - Air
       - <rework>Added early hit</rework>
+      - Hitbox Duration (early hit/multihits): <adjust>F4-11/F12-43 🠚 F4-6/F13-43</adjust>
       - Early Hit
-        - <buff>Given full-body intangibility</buff>
-        - Hitbox Duration: <nerf>F4-11 🠚 F4-6</nerf>
+        - <buff>Added full-body intangibility</buff>
         - Damage: <buff>5.0% 🠚 10.0%</buff>
         - Angle: <rework>85 🠚 361</rework>
-        - BKB: <adjust>50 🠚 60</adjust>
-        - KBG: <adjust>10 🠚 78</adjust>
+        - BKB: <adjust>50 🠚 40</adjust>
+        - KBG: <adjust>10 🠚 80</adjust>
+        - Hitbox Size: <nerf>7.7u 🠚 7.0u</nerf>
       - Multihits
-        - Hitbox Duration: <adjust>F12-43 🠚 F13-43</adjust>
         - Arm Intangibility: <buff>F7-37 🠚 F7-43</buff>
+        - <nerf>Added damage falloff for each subsequent hit</nerf>
+        - Angle: <nerf>367 🠚 361</nerf>
+        - BKB: <rework>55 🠚 30</rework>
+        - KBG: <rework>20 🠚 80</rework>
+        - Hitbox Size (shoulder/arm): <buff>3.7/5.0u 🠚 4.0/5.0u</buff>
     - Landing Lag: <buff>38F 🠚 18F</buff>
 <br><br>
   - Hand Slap / Air Cargo (Down Special):
     - Ground
       - <property>Performs one hand slap if the button is not held</property>
+      - <nerf>Hitbox length reduced</nerf>
       - Damage: <nerf>14.0% 🠚 10.0%</nerf>
       - BKB: <adjust>85 🠚 90</adjust>
       - Shieldstun Multiplier: <buff>0.58 🠚 0.6</buff>
     - Air
       - <rework>Air Cargo is a command grab that transitions into Cargo Carry upon   grabbing an opponent</rework>
-      - <property>Can be B-reversed, and can also fastfall and influence horizontal   drift slightly during the move</property>
+      - <property>Can be B-reversed, and can also fastfall and influence horizontal drift slightly during the move</property>
       - <property>Successfully grabbing and throwing an opponent refreshes double   jump</property>
+      - <property>If performed while holding an item, DK will enter heavy item carry</property>
       - Hitbox Duration: F18-22
       - FAF: 51
       - Landing Lag: 20F
 <br><br>
   - Barrel Pull (Shield Special):
     - <property>Press special while shielding to pull out a barrel</property>
-      - Has a 15 second cooldown before another barrel can be pulled
+      - Has a 7 second cooldown before another barrel can be pulled
       - Donkey Kong will get a yellow flash above his head and on his portrait when the cooldown is over
       - Up to 3 barrels can be on-screen at a time
     - The barrel has an upward angle if thrown using a tilt input
     - In training mode, taunting will reset the cooldown
 <br><br>
+  - Heavy Item Carry:
+    - <buff>Forward/back throw animations sped up by 25%
+    - <buff>Strong back throw release position adjusted</buff>
+    - Landing Lag: <buff>24F 🠚 8F</buff>
+<br><br>
+  - Pivot Grab:
+    - <nerf>Grab range reduced</nerf>
+<br><br>
   - Forward Throw (Cargo Carry):
-    - <buff>Properly chooses the c-stick direction if it is used to input the throw</  buff>
+    - <buff>Properly chooses the c-stick direction if it is used to input the throw</buff>
     - Base Clatter (required mash): <nerf>50 🠚 30</nerf>
     - Clatter Scaling Multiplier: <nerf>1.5x 🠚 1.25x</nerf>
     - Landing Lag: <buff>24F 🠚 8F</buff>

@@ -19,10 +19,10 @@ Created by The HDR Dev Team <br>
 <u>Master Changelog</u>
 </h1>
 <div style="text-align:center;font-size:150%">
-Current game version: <span style="color:limegreen">v0.26.37</span>
+Current release version: <span style="color:limegreen">v0.26.100</span>
 </div>
 <div style="text-align:center;font-size:150%">
-Current changelog version: <span style="color:green">v0.19.21</span>
+Current changelog version: <span style="color:green">v0.26.100</span>
 </div>
 <br><br><br>
 <div style="text-align:center;font-size:140%">
@@ -36,6 +36,10 @@ Beta changelogs:<br>
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><a href="https://docs.google.com/document/d/1Vtuvw-Z_Cbbbpsia1BRZEhzvQPbnxUeMyXP2U6upugw">0.26.100</a></td>
+      <td>?/?/2023</td>
+    </tr>
     <tr>
       <td><a href="https://docs.google.com/document/d/1kFUdtKlywRh4TX32iqGMDzsuw_M8C4NOXzBHe2z5NTw">0.26.37</a></td>
       <td>1/1/2023</td>
