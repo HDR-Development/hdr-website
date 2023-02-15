@@ -149,8 +149,9 @@
 <ul>
 <li>Popo
 <ul>
-<li>Initial Dash Speed: 1.68 🠚 1.45</li>
-<li>Run Speed: 1.53 🠚 1.45</li>
+<li>Walk Speed: 1.108 🠚 0.95</li>
+<li>Initial Dash Speed: 1.68 🠚 1.4</li>
+<li>Run Speed: 1.53 🠚 1.4</li>
 <li>Run Acceleration (base/multiplier): 0.044/0.08096 🠚 0.02/0.05</li>
 <li>Ground Friction: 0.077 🠚 0.035</li>
 <li>Jumpsquat: 3F 🠚 4F</li>
@@ -164,26 +165,28 @@
 <li>Combo Gravity: 0.072912 🠚 0.1</li>
 <li>Combo Fall Speed: 1.8 🠚 1.61</li>
 <li>Heavy Landing Lag: 7F 🠚 4F</li>
+<li>Weight: 92 🠚 88</li>
 </ul>
 </li>
 <li>Nana
 <ul>
-<li>Walk Speed: 1.008 🠚 1.108</li>
-<li>Initial Dash Speed: 1.68 🠚 1.45</li>
-<li>Run Speed: 1.683 🠚 1.545</li>
+<li>Walk Speed: 1.008 🠚 0.95</li>
+<li>Initial Dash Speed: 1.68 🠚 1.4</li>
+<li>Run Speed: 1.683 🠚 1.4</li>
 <li>Run Acceleration (base/multiplier): 0.0484/0.089056 🠚 0.02/0.05</li>
-<li>Ground Friction: 0.0847 🠚 0.0385</li>
+<li>Ground Friction: 0.0847 🠚 0.035</li>
 <li>Jumpsquat: 3F 🠚 4F</li>
 <li>Max Horizontal Jump Speed: 0.57 🠚 0.6</li>
 <li>Short Hop Height: 16.75 🠚 14.75</li>
-<li>Air Speed: 0.8715 🠚 0.91875</li>
+<li>Air Speed: 0.8715 🠚 0.87375</li>
 <li>Air Acceleration (base/multiplier): 0.0105/0.084 🠚 0.02/0.03105</li>
 <li>Air Friction: 0.015 🠚 0.02</li>
 <li>Gravity: 0.082 🠚 0.1</li>
 <li>Fall Speed: 1.3 🠚 1.61</li>
 <li>Fast Fall Speed: 2.08 🠚 2.167</li>
 <li>Combo Gravity: 0.072912 🠚 0.1</li>
-<li>Combo Fall Speed: 1.8 🠚 1.61
+<li>Combo Fall Speed: 1.8 🠚 1.61</li>
+<li>Weight: 92 🠚 88
 <br><br></li>
 </ul>
 </li>
@@ -192,13 +195,40 @@
 <ul>
 <li>Nana:
 <ul>
-<li><property>Popo’s buffer is now inactive during spotdodges and rolls, allowing for Nana to buffer an action during them to desync the Ice Climbers</property></li>
-<li><buff>Nana is now actionable during all throws</buff></li>
+<li><property>Nana can now grab and is actionable during Popo's throws</property>
+<ul>
+<li>Pressing grab when the climbers are together will only grab with Popo unless the input is performed again</li>
+<li>Pummels can be buffered during Nana’s grab</li>
+<li>If not pummeling, Nana will pick a random throw according to the following weights:
+<ul>
+<li>Normal
+<ul>
+<li>50% up</li>
+<li>20% down</li>
+<li>10% forward</li>
+<li>10% back</li>
+</ul>
+</li>
+<li>Within 30 units of ledge
+<ul>
+<li>60% towards ledge</li>
+<li>40% down</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><property>Hold Shield + Special + Down Taunt at the start of a match to play as Sopo for the entire match</property></li>
 <li>Damage/Knockback Multiplier: <buff>1.05x 🠚 1.0x</buff></li>
 <li>Internal CPU Level Modifier: <buff>76 🠚 100</buff>
 <br><br></li>
 </ul>
 </li>
+<li>Desyncs:</li>
+<li><property>Popo’s buffer is now inactive during spotdodges and rolls, allowing Nana to buffer an action during them to desync the Ice Climbers</property></li>
+<li><property>Spotdodge/Roll desyncs also work during ledge getup/roll</property>
+<br><br></li>
 <li>Jab:
 <ul>
 <li>Jab 1
@@ -248,6 +278,7 @@
 <li>Up Tilt:
 <ul>
 <li><buff>Added scoop hitbox</buff></li>
+<li>Hitbox Duration (scoop/multihits/launcher): <buff>F8-23/F27 🠚 F7-8/F9-24/F26</buff></li>
 <li>Scoop
 <ul>
 <li>Hitbox Duration: F6-11</li>
@@ -260,17 +291,11 @@
 </li>
 <li>Multihits
 <ul>
-<li>Popo
-<ul>
-<li>Damage: <nerf>0.8% 🠚 0.2%</nerf></li>
-</ul>
-</li>
-<li>Nana
-<ul>
-<li>Damage: <nerf>0.6% 🠚 0.2%</nerf></li>
-</ul>
-</li>
-<li>Hitlag Multiplier: <adjust>0.5x 🠚 0.75x</adjust></li>
+<li>Damage: <nerf>0.8/0.6% 🠚 0.5%</nerf></li>
+<li>Angle: <nerf>115/125/160 🠚 110</nerf></li>
+<li>BKB: <buff>65/60/20 🠚 15</buff></li>
+<li>KBG: <adjust>10 🠚 20</adjust></li>
+<li>Hitbox Size (hilt/hammer): <nerf>4.5/6.0u 🠚 3.5/5.0u</nerf></li>
 </ul>
 </li>
 <li>Launcher
@@ -287,61 +312,54 @@
 <li>Damage: <buff>3.0% 🠚 4.0%</buff></li>
 <li>BKB: <adjust>38 🠚 47</adjust></li>
 <li>KBG: <adjust>118 🠚 95</adjust></li>
-<li>Hitlag Multiplier: <adjust>2.8x 🠚 1.5x</adjust>
-<br><br></li>
+<li>Hitlag Multiplier: <adjust>2.8x 🠚 1.5x</adjust></li>
 </ul>
 </li>
+<li>Hitbox Size (hilt/hammer): <nerf>5.5/7.0u 🠚 4.5/6.0u</nerf>
+<br><br></li>
 </ul>
 </li>
 </ul>
 </li>
 <li>Down Tilt:
 <ul>
-<li><buff>Added shoulder hitbox</buff></li>
-<li>Hitbox Duration: <buff>F8-11 🠚 F6-9</buff></li>
-<li>Popo
-<ul>
-<li>Angle: <rework>20 🠚 75</rework></li>
+<li>Hitbox Duration: <buff>F8-11 🠚 F6-8</buff></li>
+<li>Damage (Nana): <buff>4.5% 🠚 6.0%</buff></li>
+<li>Angle (hilt/hammer): <rework>20 🠚 75/85</rework></li>
 <li>KBG: <buff>100 🠚 95</buff></li>
-</ul>
-</li>
-<li>Nana
-<ul>
-<li>Damage: <buff>4.5% 🠚 6.0%</buff></li>
-<li>Angle: <rework>20 🠚 75</rework></li>
-<li>KBG: <buff>100 🠚 95</buff></li>
-</ul>
-</li>
-<li>Hitbox Size (shoulder/base/mid/tip): <buff>*/3.0/3.0/4.0u 🠚 4.0/4.0/4.0/5.0u</buff></li>
 <li>FAF: <buff>31 🠚 29</buff>
 <br><br></li>
 </ul>
 </li>
 <li>Dash Attack:
 <ul>
-<li>BKB: <buff>90 🠚 80</buff></li>
-<li>Hitlag Multiplier (Popo): <adjust>1.2x 🠚 1.0x</adjust></li>
-<li>FAF: <nerf>40 🠚 42</nerf>
+<li>Damage: <buff>4.5% 🠚 9.0%</buff></li>
+<li>Angle: <nerf>80 🠚 70</nerf></li>
+<li>KBG: <buff>60 🠚 40</buff></li>
+<li>Hitlag Multiplier (Popo): <adjust>1.2x 🠚 1.0x</adjust>
 <br><br></li>
 </ul>
 </li>
 <li>Forward Smash:
 <ul>
-<li><buff>Added hitbox to base of hammer</buff></li>
-<li>Hitbox Duration: <buff>F11-13 🠚 F10-14</buff></li>
-<li>Popo
+<li><buff>Added splash hitbox when the hammer hits the ground</buff></li>
+<li>Hitbox Duration (swing/impact): <buff>F11-13 🠚 F10-12/F13</buff></li>
+<li>Swing
 <ul>
-<li>Damage: <buff>12.0% 🠚 12.5%</buff></li>
-<li>KBG: <buff>105 🠚 110</buff></li>
+<li>Damage: 12.0/9.0% 🠚 12.5%</li>
+<li>KBG: 105/126 🠚 110</li>
+<li>Hitbox Size: <nerf>5.5u 🠚 5.0u</nerf></li>
 </ul>
 </li>
-<li>Nana
+<li>Impact
 <ul>
-<li>Damage: <buff>9.0% 🠚 12.5%</buff></li>
-<li>KBG: <nerf>126 🠚 110</nerf></li>
+<li>Damage: 11.0%</li>
+<li>Angle: 361</li>
+<li>BKB: 50</li>
+<li>KBG: 110</li>
+<li>Hitbox Size: 5.0u</li>
 </ul>
 </li>
-<li>Hitbox Size (base/mid/tip): <buff>*/4.0/5.5u 🠚 3.0/4.0/6.0u</buff></li>
 <li>FAF: <nerf>47 🠚 51</nerf>
 <br><br></li>
 </ul>
@@ -403,22 +421,25 @@
 </li>
 <li>Forward Air:
 <ul>
-<li>Hitbox Duration: <buff>F19-20 🠚 F17-21</buff></li>
+<li>Hitbox Duration: <buff>F19-20 🠚 F18-21</buff></li>
 <li>Popo
 <ul>
-<li><buff>Added spike on frame 18</buff></li>
+<li><buff>Added sweetspot just below the hammer head</buff></li>
 <li>Sweetspot
 <ul>
 <li>Damage: 12.0%</li>
-<li>Angle: 270</li>
-<li>BKB: 20</li>
-<li>KBG (ground/air): 100/66</li>
-<li>Hitbox Size: 4.5u</li>
+<li>Angle: 285</li>
+<li>BKB: 30</li>
+<li>KBG: 66</li>
+<li>Hitbox Size: 3.0u</li>
 </ul>
 </li>
 <li>Sourspot
 <ul>
+<li>Damage (hilt/hammer): 12.0% 🠚 11.0/12.0%</li>
+<li>Angle: <rework>30 🠚 70</rework></li>
 <li>KBG: <buff>95 🠚 103</buff></li>
+<li>Hitbox Size (hilt/hammer): <nerf>3.0/4.5u 🠚 3.0/4.0u</nerf></li>
 </ul>
 </li>
 </ul>
@@ -427,13 +448,16 @@
 <ul>
 <li>Sweetspot
 <ul>
-<li>KBG (ground/air): <nerf>100 🠚 100/66</nerf></li>
+<li>Angle: <rework>270 🠚 285</rework></li>
+<li>KBG: <nerf>100 🠚 66</nerf></li>
 </ul>
 </li>
 <li>Sourspot
 <ul>
-<li>Damage: <buff>9.0% 🠚 12.0%</buff></li>
+<li>Damage (hilt/hammer): <buff>9.0% 🠚 11.0/12.0%</buff></li>
+<li>Angle: <rework>30 🠚 70</rework></li>
 <li>KBG: <nerf>114 🠚 103</nerf></li>
+<li>Hitbox Size (hilt/hammer): <nerf>3.0/4.5u 🠚 3.0/4.0u</nerf></li>
 </ul>
 </li>
 </ul>
@@ -444,7 +468,7 @@
 </li>
 <li>Back Air:
 <ul>
-<li><buff>Added shoulder hitbox</buff></li>
+<li><nerf>Hammer hitbox moved inward</nerf></li>
 <li>Popo
 <ul>
 <li>Damage: <nerf>10.0% 🠚 9.0%</nerf></li>
@@ -457,7 +481,6 @@
 <li>KBG: <nerf>138 🠚 134</nerf></li>
 </ul>
 </li>
-<li>Hitbox Size (tip): <buff>4.0u 🠚 4.5u</buff></li>
 <li>FAF: <buff>36 🠚 32</buff></li>
 <li>Landing Lag: <nerf>7F 🠚 9F</nerf>
 <br><br></li>
@@ -465,54 +488,66 @@
 </li>
 <li>Up Air:
 <ul>
-<li><buff>Added shoulder hitbox</buff></li>
-<li>Hitbox Duration: <buff>F7-11 🠚 F7-12</buff></li>
-<li>Popo
+<li><rework>Animation changed to an upward poke similar to Melee</rework></li>
+<li>Hitbox Duration (early/late): F6-8/F9-28</li>
+<li>Hammer
 <ul>
-<li>Damage: <nerf>9.0% 🠚 8.0%</nerf></li>
-<li>BKB: <adjust>20 🠚 25</adjust></li>
-<li>KBG: <adjust>129 🠚 141</adjust></li>
+<li>Damage (early/late): 9.0/7.0%</li>
+<li>Angle: 70</li>
+<li>BKB: 10</li>
+<li>KBG: 140</li>
+<li>Hitbox Size: 3.5u</li>
 </ul>
 </li>
-<li>Nana
+<li>Hilt/Hand
 <ul>
-<li>Damage: <buff>6.75% 🠚 8.0%</buff></li>
-<li>BKB: <adjust>20 🠚 25</adjust></li>
-<li>KBG: <adjust>154.8 🠚 141</adjust></li>
+<li>Damage: 7.0%</li>
+<li>Angle: 70</li>
+<li>BKB: 10</li>
+<li>KBG: 140</li>
+<li>Hitbox Size: 2.5/2.5u</li>
 </ul>
 </li>
-<li>Hitbox Size (shoulder/base/tip): <buff>*/3.2/4.6u 🠚 3.5/3.5/5.0u</buff></li>
-<li>Autocancel: <nerf>F1-6/F27 🠚 F1-6/F28</nerf></li>
-<li>Landing Lag: <buff>14F 🠚 12F</buff>
+<li>FAF: 35</li>
+<li>Autocancel: F1-5/F35</li>
+<li>Landing Lag: 12F
 <br><br></li>
 </ul>
 </li>
 <li>Down Air:
 <ul>
 <li><rework>Removed stall and fall</rework></li>
-<li>Hitbox Duration: <buff>F12-51 🠚 F4-45</buff></li>
-<li>Popo
+<li><property>Bounces on hit</property>
 <ul>
-<li>Damage: <buff>8.0% 🠚 9.0%</buff></li>
-<li>Angle: <rework>70 🠚 361</rework></li>
-<li>KBG: <buff>90 🠚 95</buff></li>
-<li>Hitbox Size: <nerf>6.5u 🠚 6.0u</nerf></li>
+<li>Bounces less on shield</li>
 </ul>
 </li>
-<li>Nana
-<ul>
-<li>Damage: <buff>6.0% 🠚 7.0%</buff></li>
-</ul>
-</li>
-<li>FAF: <buff>64 🠚 56</buff></li>
-<li>Autocancel: <buff>F54 🠚 F1/F46</buff></li>
+<li>Hitbox Duration: <buff>F12-51 🠚 F5-38</buff></li>
+<li>Damage: <buff>8.0/6.0% 🠚 10.0%</buff></li>
+<li>Angle: <nerf>70 🠚 65</nerf></li>
+<li>BKB: <rework>40 🠚 80</rework></li>
+<li>KBG: <rework>90 🠚 41</rework></li>
+<li>Hitbox Size: <nerf>6.5u 🠚 4.0u</nerf></li>
+<li>FAF: <buff>64 🠚 62</buff></li>
+<li>Autocancel: <buff>F54 🠚 F1/F53</buff></li>
 <li>Landing Lag: <buff>20F 🠚 13F</buff>
 <br><br></li>
 </ul>
 </li>
 <li>Ice Shot (Neutral Special):
 <ul>
-<li>Startup: <buff>F18 🠚 F11</buff></li>
+<li><buff>Added hammer hitbox</buff></li>
+<li>Hammer
+<ul>
+<li>Hitbox Duration: F18-21</li>
+<li>Damage: 9.0%</li>
+<li>Angle: 80</li>
+<li>BKB: 80</li>
+<li>KBG: 60</li>
+<li>Shield Damage: -4</li>
+<li>Hitbox Size: 4.0u</li>
+</ul>
+</li>
 <li>FAF: <buff>56 🠚 48</buff>
 <br><br></li>
 </ul>
@@ -536,7 +571,44 @@
 </li>
 <li>Belay (Up Special):
 <ul>
-<li>Distance for Nana to warp to Popo: <nerf>60 🠚 50</nerf></li>
+<li>Distance for Nana to warp to Popo: <nerf>60 🠚 50</nerf>
+<br><br></li>
+</ul>
+</li>
+<li>Blizzard (Down Special):
+<ul>
+<li>Hitbox Duration (early/mid/late): <adjust>F1-2/F3-6/F7-9 🠚 F1-2/F3-4/F5-9</adjust></li>
+<li>Early
+<ul>
+<li>KBG: <nerf>50 🠚 60</nerf></li>
+</ul>
+</li>
+<li>Mid
+<ul>
+<li>KBG: <nerf>50 🠚 60</nerf></li>
+</ul>
+</li>
+<li>Late
+<ul>
+<li>Damage: <nerf>1.0% 🠚 0.5%</nerf></li>
+</ul>
+</li>
+<li>SDI Multiplier: <nerf>1.5x 🠚 1.6x</nerf>
+<br><br></li>
+</ul>
+</li>
+<li>Up Throw:
+<ul>
+<li>Startup: <adjust>F20 🠚 F28</adjust>
+<br><br></li>
+</ul>
+</li>
+<li>Down Throw:
+<ul>
+<li><property>Startup is weight-dependent</property></li>
+<li>BKB: <nerf>30 🠚 45</nerf></li>
+<li>KBG: <nerf>116 🠚 120</nerf></li>
+<li>FAF (100 weight): <nerf>49 🠚 54</nerf></li>
 </ul>
 </li>
 </ul>
