@@ -52,7 +52,7 @@
     - [Falco](./characters/melee/falco.md)
     - [Marth](./characters/melee/marth.md)
     - [Young Link](./characters/melee/younglink.md)
-    - [Ganondorf]()<!--./characters/melee/ganon.md)-->
+    - [Ganondorf](./characters/melee/ganon.md)
     - [Mewtwo]()<!--./characters/melee/mewtwo.md)-->
     - [Roy]()<!--./characters/melee/roy.md)-->
     - [Mr. Game and Watch]()<!--./characters/melee/gamewatch.md)-->
