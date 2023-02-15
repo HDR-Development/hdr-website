@@ -130,8 +130,8 @@
     - <buff>Added splash hitbox when the hammer hits the ground</buff>
     - Hitbox Duration (swing/impact): <buff>F11-13 🠚 F10-12/F13</buff>
     - Swing
-      - Damage: 12.0/9.0% 🠚 12.5%
-      - KBG: 105/126 🠚 110
+      - Damage: <buff>12.0/9.0% 🠚 12.5%</buff>
+      - KBG: <adjust>105/126 🠚 110</adjust>
       - Hitbox Size: <nerf>5.5u 🠚 5.0u</nerf>
     - Impact
       - Damage: 11.0%
@@ -183,7 +183,7 @@
         - KBG: 66
         - Hitbox Size: 3.0u
       - Sourspot
-        - Damage (hilt/hammer): 12.0% 🠚 11.0/12.0%
+        - Damage (hilt/hammer): <nerf>12.0% 🠚 11.0/12.0%</nerf>
         - Angle: <rework>30 🠚 70</rework>
         - KBG: <buff>95 🠚 103</buff>
         - Hitbox Size (hilt/hammer): <nerf>3.0/4.5u 🠚 3.0/4.0u</nerf>
