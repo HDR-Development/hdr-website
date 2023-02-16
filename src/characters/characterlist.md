@@ -55,7 +55,7 @@
       <td><a href="./melee/marth.md">Marth</a></td>
       <td><a href="./melee/younglink.md">Young Link</a></td>
       <td><a href="./melee/ganon.md">Ganondorf</a></td>
-      <td><!--<a href="./melee/mewtwo.md">-->Mewtwo<!--</a>--></td>
+      <td><a href="./melee/mewtwo.md">Mewtwo</a></td>
       <td><!--<a href="./melee/roy.md">-->Roy<!--</a>--></td>
       <td><!--<a href="./melee/gamewatch.md">-->Mr. Game and Watch<!--</a>--></td>
     </tr>
