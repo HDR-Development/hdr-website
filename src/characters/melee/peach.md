@@ -30,12 +30,13 @@
 <br><br>
 
 ![](../../images/SmashBall.png) <b>Moveset</b>
+  - Double Jump:
+    - <rework>Peach's double jump has a delayed rise similar to Melee</rework>
+    - <property>Release Jump within three frames of performing an aerial to interrupt the vertical momentum of the jump (double jump cancel), or continue holding Jump to rise with the aerial</property>
+<br><br>
   - Float:
     - Float Canceling
       - <property>All aerials performed during float will incur only 4F of landing lag</property>
-    - Double Jump:
-      - <rework>Peach's double jump has a delayed rise similar to Melee</rework>
-      - <property>Release Jump within three frames of performing an aerial to interrupt the vertical momentum of the jump (double jump cancel), or continue holding Jump to rise with the aerial</property>
 <br><br>
   - Jab:
     - Jab 1
