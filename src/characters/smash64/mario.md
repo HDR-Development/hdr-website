@@ -322,11 +322,14 @@
     - Hitbox Size: <buff>3.3u 🠚 4.5u</buff>
 <br><br>
   - Up Throw:
+    - KBG: <nerf>72 🠚 82</nerf>
     - FAF: <buff>40 🠚 37</buff>
 <br><br>
   - Down Throw:
     - Damage: <buff>5.0% 🠚 6.0%</buff>
     - Angle: <buff>68 🠚 74</buff>
+    - BKB: <nerf>40 🠚 50</nerf>
+    - KBG: <nerf>90 🠚 105</nerf>
     - FAF: <buff>40 🠚 38</buff>
 
 <script src="../../arrow.js">

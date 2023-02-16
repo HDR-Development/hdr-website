@@ -165,6 +165,7 @@
     - PK Thunder 1
       - <property>Can be canceled by pressing special on the ground or in the air (once per airtime)</property>
         - The aerial cancel is actionable after 30 frames
+      - <buff>The projectile no longer despawns when inside the blastzone</buff>
       - Gravity Startup: <buff>F30 🠚 F40</buff>
       - Gravity: <buff>0.017 🠚 0.014</buff>
       - FAF on release: <nerf>30 🠚 40</nerf>

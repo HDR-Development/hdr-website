@@ -211,8 +211,8 @@
       - Landing Lag (land cancel): 12F
 <br><br>
   - Final Cutter (Up Special):
-    - <property>The rise can be canceled into special fall by pressing Shield between frames 11-18</property>
-      - <buff>If canceling after hitting an opponent, Kirby will transition into regular fall instead</buff>
+    - <property>Performs only the rising portion automatically; The rise can be canceled into the falling portion by pressing or holding Special between frames 11-18</property>
+      - If an opponent is hit with the rise and the falling portion is not triggered, Kirby will be actionable
     - Projectile Speed: <nerf>4.8 🠚 4.5</nerf>
     - Landing Lag: <buff>31F 🠚 29F</buff>
 <br><br>
