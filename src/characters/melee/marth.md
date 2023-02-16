@@ -337,7 +337,7 @@
   - Dancing Blade (Side Special):
     - <aesth>Marth flashes each direction's respective color</aesth>
     - Hit 1
-      - <property>Stalls aerial momentum on first use</property>
+      - <property>Stalls aerial momentum once per airtime</property>
         - Horizontal Speed Multiplier: <buff>0.5x 🠚 0.8x</buff>
         - Initial Vertical Speed: <nerf>1.4 🠚 1.0</nerf>
       - Close

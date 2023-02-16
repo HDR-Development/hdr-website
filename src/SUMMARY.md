@@ -54,7 +54,7 @@
     - [Young Link](./characters/melee/younglink.md)
     - [Ganondorf](./characters/melee/ganon.md)
     - [Mewtwo](./characters/melee/mewtwo.md)
-    - [Roy]()<!--./characters/melee/roy.md)-->
+    - [Roy](./characters/melee/roy.md)
     - [Mr. Game and Watch]()<!--./characters/melee/gamewatch.md)-->
   - [Brawl]()
     - [Meta Knight]()<!--./characters/brawl/metaknight.md)-->
