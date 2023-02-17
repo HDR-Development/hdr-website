@@ -57,7 +57,7 @@
       <td><a href="./melee/ganon.md">Ganondorf</a></td>
       <td><a href="./melee/mewtwo.md">Mewtwo</a></td>
       <td><a href="./melee/roy.md">Roy</a></td>
-      <td><!--<a href="./melee/gamewatch.md">-->Mr. Game and Watch<!--</a>--></td>
+      <td><a href="./melee/gamewatch.md">Mr. Game and Watch</a></td>
     </tr>
   </tbody>
 </table>
