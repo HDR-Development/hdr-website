@@ -57,7 +57,7 @@
     - [Roy](./characters/melee/roy.md)
     - [Mr. Game and Watch](./characters/melee/gamewatch.md)
   - [Brawl]()
-    - [Meta Knight]()<!--./characters/brawl/metaknight.md)-->
+    - [Meta Knight](./characters/brawl/metaknight.md)
     - [Pit]()<!--./characters/brawl/pit.md)-->
     - [Zero Suit Samus]()<!--./characters/brawl/szerosuit.md)-->
     - [Wario]()<!--./characters/brawl/wario.md)-->

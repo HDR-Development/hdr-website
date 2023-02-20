@@ -1,1 +1,322 @@
-# Meta Knight
+# ![](../../images/Stock_MetaKnight.png) Meta Knight
+
+<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
+
+![](../../images/SmashBall.png) <b>Attributes</b>
+  - Initial Dash Speed: 2.211 🠚 1.765
+  - Run Speed: 2.09 🠚 1.8475
+  - Run Acceleration (base/multiplier): 0.044/0.10428 🠚 0.02/0.08
+  - Ground Friction: 0.097 🠚 0.085
+  - Jumpsquat: 3F 🠚 5F
+  - Max Horizontal Jump Speed: 1.4 🠚 1.415
+  - Short Hop Height: 13.92 🠚 14.32
+  - Aerial Jump Velocities:
+    - 2.2/2.1/2.0/1.88/1.75 🠚 2.45/2.4/2.35/2.25/2.1
+  - Air Speed: 1.04 🠚 1.0
+  - Air Acceleration (base/multiplier): 0.01/0.065 🠚 0.01/0.062
+  - Air Friction: 0.012 🠚 0.015
+  - Gravity: 0.11 🠚 0.12
+  - Fall Speed: 1.66 🠚 2.44
+  - Fast Fall Speed: 2.656 🠚 3.281
+  - Combo Gravity: 0.06888 🠚 0.12
+  - Combo Fall Speed: 1.8 🠚 2.44
+  - Heavy Landing Lag: 4F 🠚 5F
+  - Weight: 80 🠚 78
+  - Shield Radius: 11.6 🠚 10.7
+<br><br>
+
+![](../../images/SmashBall.png) <b>Moveset</b>
+  - Meta Quick:
+    - Once Meta Knight has dealt a total of 50% damage, input Down Taunt while actionable to activate Meta Quick
+    - <property>Meta Quick boosts Meta Knight's speed by 30% for 8 seconds</property>
+      - The duration can be extended by continuing to deal damage during the buff
+    - Base Speed Modifier: 0.9x
+    - Meta Quick Speed Modifier: 1.3x
+<br><br>
+  - Forward Tilt:
+    - Hit 1
+      - Hitbox Duration: <buff>F6 🠚 F6-7</buff>
+      - Angle: <rework>68/88 🠚 110</rework>
+      - Hitlag Multiplier: <adjust>1.0x 🠚 1.75x</adjust>
+      - Additional Hitstun: <buff>0F 🠚 5F</buff>
+      - Hitbox Size (inner/outer): <buff>3.5/3.5u 🠚 5.0/5.5u</buff>
+      - FAF: <buff>26 🠚 21</buff>
+    - Hit 2
+      - Hitbox Duration: <buff>F2 🠚 F2-3</buff>
+      - Angle (inner/outer): <rework>60/85 🠚 110/70</rework>
+      - BKB: <rework>20 🠚 32</rework>
+      - KBG: <rework>20 🠚 25</rework>
+      - Hitlag Multiplier: <adjust>1.0x 🠚 1.5x</adjust>
+      - Additional Hitstun: <buff>0F 🠚 5F</buff>
+      - Hitbox Size (inner/outer): <buff>4.0/3.6u 🠚 4.0/4.5u</buff>
+    - Hit 3
+      - Hitbox Duration: <buff>F2 🠚 F2-4</buff>
+      - Angle: <rework>361 🠚 75</rework>
+      - KBG: <rework>107 🠚 90</rework>
+      - Hitlag Multiplier: <adjust>2.0x 🠚 1.7x</adjust>
+      - Hitbox Size (inner/outer): <buff>6.0/5.0u 🠚 8.0/6.0u</buff>
+      - FAF: <buff>31 🠚 20</buff>
+<br><br>
+  - Up Tilt:
+    - Early
+      - <buff>Added body hitbox on frame 8</buff>
+      - Body/Hand
+        - Angle: <nerf>95 🠚 110/100</nerf>
+        - BKB: <nerf>60 🠚 70</nerf>
+        - KBG: <nerf>90 🠚 100</nerf>
+        - Hitbox Size: <adjust>*/8.0u 🠚 8.0/7.0u</adjust>
+      - Sword
+        - Angle: <buff>95 🠚 90</buff>
+        - BKB: <nerf>60 🠚 70</nerf>
+        - KBG: <nerf>90 🠚 100</nerf>
+      - Hitlag Multiplier: <adjust>1.2x 🠚 1.0x</adjust>
+    - Late
+      - Hand
+        - Angle: <nerf>95 🠚 100</nerf>
+        - BKB: <nerf>60 🠚 70</nerf>
+        - KBG: <nerf>90 🠚 100</nerf>
+      - Sword
+        - Angle: <buff>95 🠚 90</buff>
+        - BKB: <nerf>60 🠚 70</nerf>
+        - KBG: <nerf>90 🠚 100</nerf>
+      - Hitlag Multiplier: <adjust>1.2x 🠚 1.0x</adjust>
+<br><br>
+  - Down Tilt:
+    - <buff>Hand hitbox extended into body</buff>
+    - Hitbox Duration: <nerf>F3-4 🠚 F5-7</nerf>
+    - Hand
+      - Angle: <rework>361 🠚 50</rework>
+      - BKB: <rework>15 🠚 72</rework>
+      - KBG: <rework>88 🠚 90</rework>
+      - Additional Hitstun: <buff>0F 🠚 1F</buff>
+    - Sword
+      - Angle: <rework>0 🠚 35</rework>
+      - BKB: <rework>15 🠚 25</rework>
+      - KBG: <rework>88 🠚 25</rework>
+      - Additional Hitstun: <buff>0F 🠚 3F</buff>
+    - Shieldstun Multiplier: <buff>1.0x 🠚 1.3x</buff>
+    - FAF: <nerf>19 🠚 25</nerf>
+<br><br>
+  - Dash Attack (Lunging Kick):
+    - <buff>Added late hit</buff>
+    - Hitbox Duration (early/late): <buff>F7-11 🠚 F7-12/F13-16</buff>
+    - Early
+      - Hip/Inner Foot
+        - Damage: <buff>7.0% 🠚 7.5%</buff>
+        - Angle: <buff>60/70 🠚 70/75</buff>
+      - Outer Foot
+        - Damage: <buff>6.0% 🠚 6.5%</buff>
+    - Late
+      - Damage: 5.5%
+      - Angle: 70
+      - BKB: 65
+      - KBG: 107
+      - Hitbox Size: 4.0u
+    - FAF: <nerf>33 🠚 36</nerf>
+<br><br>
+  - Forward Smash:
+    - Hitbox Duration: <buff>F24 🠚 F24-26</buff>
+    - KBG (inner/outer): <buff>108/98 🠚 112/102</buff>
+    - Hitlag Multiplier (inner): <adjust>1.5x 🠚 1.4x</adjust>
+    - Hitbox Size (inner): <buff>6.2u 🠚 7.0u</buff>
+    - FAF: <nerf>42 🠚 46</nerf>
+<br><br>
+  - Up Smash:
+    - Hitbox Duration (hit 1/hit 2/hit 3): <buff>F8/F12/F17 🠚 F8-9/F12-13/F17-19</buff>
+    - Hit 1
+      - Hitbox Size (center/side): <adjust>5.5/4.5u 🠚 8.5/6.5u</adjust>
+    - Hit 2
+      - Hitbox Size (center/side): <adjust>5.5/4.5u 🠚 8.0/7.5u</adjust>
+    - Hit 3
+      - KBG: <buff>148 🠚 175</buff>
+      - Hitlag Multiplier: <adjust>2.0x 🠚 1.4x</adjust>
+      - Hitbox Size (center/side): <buff>7.0/5.5u 🠚 9.0/9.0u</buff>
+<br><br>
+  - Down Smash:
+    - Hitbox Duration (hit 1/hit 2): <buff>F4/F9 🠚 F4-5/F8-10</buff>
+    - Hit 1
+      - <buff>Added lower hitbox below sword</buff>
+      - Damage: <buff>10.0% 🠚 13.0%</buff>
+      - KBG: <buff>77 🠚 80</buff>
+      - Hitbox Size: <buff>3.8u 🠚 4.25/4.25u</buff>
+    - Hit 2
+      - KBG: <buff>78 🠚 86</buff>
+      - Hitbox Size: <buff>4.6/4.6u 🠚 5.0/5.5u</buff>
+    - FAF: <nerf>38 🠚 44</nerf>
+<br><br>
+  - Neutral Air (Knight Spin):
+    - <buff>Sword hitbox extended to cover blade</buff>
+    - Hitbox Duration (early/late): <buff>F6-7/F8-20 🠚 F3-6/F7-21</buff>
+    - Early
+      - KBG: <buff>100 🠚 110</buff>
+      - Hitbox Size (body/hand/sword): <buff>7.5/4.5/4.5u 🠚 8.0/5.0/5.0u</buff>
+    - Late
+      - BKB: <adjust>40 🠚 25</adjust>
+      - Hitbox Size (body/hand/sword): <buff>6.0/4.0/4.0u 🠚 6.5/4.5/4.5u</buff>
+    - Shieldstun Multiplier: <nerf>1.0x 🠚 0.2x</nerf>
+    - FAF: <buff>44 🠚 41</buff>
+    - Autocancel: <buff>F1-5/F40 🠚 F1-2/F37</buff>
+    - Landing Lag: <nerf>7F 🠚 8F</nerf>
+<br><br>
+  - Forward Air (Air Chop):
+    - <rework>Changed to two hits</rework>
+    - Hitbox Duration (hit 1/hit 2): F5/F11-12
+    - Hit 1
+      - Damage: 1.5%
+      - Angle (ground/air): 60/365
+      - BKB (ground): 60
+      - FKB (air): 40
+      - KBG: 100
+      - Hitbox Size: 6.5/6.5u
+    - Hit 2
+      - Damage: 3.0%
+      - Angle: 55
+      - BKB: 60
+      - KBG: 155
+      - Additional Hitstun: -5F
+      - Hitbox Size: 7.0/7.0u
+    - FAF: 37
+    - Autocancel: F1/F32
+    - Landing Lag: 10F
+<br><br>
+  - Back Air (Meta Spin Slash):
+    - <buff>Added sword hitbox</buff>
+    - Hit 1/Hit 2
+      - Hitbox Duration (sword): F7-10
+      - Ground
+        - Angle: <buff>55 🠚 70</buff>
+        - BKB: <rework>0 🠚 50</rework>
+        - FKB: <rework>55 🠚 0</rework>
+        - KBG: <rework>100 🠚 80</rework>
+      - Additional Hitstun: <buff>0F 🠚 3F</buff>
+      - Hitbox Size (sword/inner/outer): <buff>*/4.2/4.2u 🠚 4.5/5.0/5.0u</buff>
+    - Hit 3
+      - Angle: <buff>361 🠚 42</buff>
+      - KBG: <buff>198 🠚 210</buff>
+      - Hitlag Multiplier: <adjust>2.0x 🠚 1.5x</adjust>
+      - Hitbox Size (sword/inner/outer): <buff>*/5.2/5.0u 🠚 5.5/6.0/5.5u</buff>
+    - FAF: <buff>52 🠚 47</buff>
+    - Landing Lag: <nerf>11F 🠚 13F</nerf>
+<br><br>
+  - Up Air (High Slice):
+    - <buff>Hitboxes extended along arc</buff>
+    - <buff>Added sword hitbox</buff>
+    - <buff>Added inner arc hitbox</buff>
+    - Hitbox Duration: <adjust>F6 🠚 F7-8</adjust>
+    - Damage: <buff>4.0% 🠚 5.0%</buff>
+    - Angle: <nerf>67 🠚 65</nerf>
+    - BKB: <adjust>30 🠚 45</adjust>
+    - KBG: <adjust>128 🠚 120</adjust>
+    - Additional Hitstun: <nerf>0F 🠚 -5F</nerf>
+    - Hitbox Size (outer arc/inner arc/sword): <buff>3.5/3.0u 🠚 4.0/4.0/3.5u</buff>
+    - FAF: <nerf>27 🠚 28</nerf>
+    - Autocancel: <buff>F1-5/F24 🠚 F1-6/F24</buff>
+<br><br>
+  - Down Air (Low Slice):
+    - <buff>Hitboxes extended along arc</buff>
+    - <buff>Added sword hitbox</buff>
+    - <buff>Added inner arc hitbox</buff>
+    - Hitbox Duration: <adjust>F4 🠚 F7-8</adjust>
+    - Angle: <rework>35/50 🠚 120</rework>
+    - BKB: <rework>30 🠚 55</rework>
+    - KBG: <rework>108 🠚 90</rework>
+    - Additional Hitstun: <nerf>0F 🠚 -5F</nerf>
+    - Hitbox Size (outer arc/inner arc/sword): <buff>3.5/3.0u 🠚 5.0/4.5/3.0u</buff>
+    - FAF: <nerf>28 🠚 33</nerf>
+    - Autocancel: <nerf>F1-3/F26 🠚 F1-6/F29</nerf>
+    - Landing Lag: <nerf>9F 🠚 10F</nerf>
+<br><br>
+  - Mach Tornado (Neutral Special):
+    - <rework>Changed to a multihit</rework>
+    - Horizontal Speed (ground/air): <nerf>2.5/2.5 🠚 0.95/0.95</nerf>
+    - Stick-Based Horizontal Acceleration (base/multiplier): <nerf>1.5/0.8 🠚 0.5/0.25</nerf>
+    - Height Gain on button press: <buff>0.9/1.3 🠚 1.5/1.5</buff>
+    - Multihits
+      - Damage: 1.0%
+      - Angle: 367
+      - BKB: 40
+      - KBG: 0
+      - Hitlag Multiplier: 0.5x
+      - Rehit Rate (sides/body/bottom): 5/4/5F
+      - Hitbox Size (sides/body/bottom): 9.0/9.0/10.0u
+    - Launcher
+      - Damage: 5.0%
+      - Angle: 90
+      - BKB: 50
+      - KBG: 120
+      - Hitlag Multiplier: 1.5x
+      - Hitbox Size: 13.0u
+<br><br>
+  - Drill Rush (Side Special):
+    - <property>Connecting with an opponent immediately performs the final hit</property>
+    - <property>Transitions to normal fall on hit instead of special fall</property>
+    - Horizontal Speed (bounce): <rework>-1.0 🠚 0.5</rework>
+    - Damage: <buff>3.0% 🠚 10.0%</buff>
+    - Angle: <rework>40 🠚 70</rework>
+    - BKB: <rework>40 🠚 80</rework>
+    - KBG: <rework>185 🠚 60</rework>
+    - Hitbox Size (body/sword): <buff>8.0/6.0u 🠚 9.0/7.0u</buff>
+    - FAF (hit): 24
+<br><br>
+  - Shuttle Loop (Up Special):
+    - <property>Can be reversed during the initial hit</property>
+    - Height Multiplier: <nerf>1.1/1.08x 🠚 0.8/0.8x</nerf>
+    - Maximum Angle Adjustment: <buff>18 🠚 30</buff>
+    - Hitbox Duration (ground, hit 1/hit 2): <buff>F8-12/F22-27 🠚 F4-9/F18-24</buff>
+    - Hit 1
+      - <buff>Added sweetspot near sword hilt</buff>
+      - Sweetspot
+        - Hitbox Duration (ground/air): F4/F7
+        - Damage: 15.0%
+        - Angle: 40
+        - BKB: 90
+        - KBG: 61
+        - Hitlag Multiplier: 1.5x
+        - Hitbox Size: 5.0u
+      - Sourspot
+        - Damage: <nerf>9.0% 🠚 8.0%</nerf>
+        - Angle (body/sword): <nerf>86 🠚 70/80</nerf>
+        - BKB: <rework>0 🠚 55</rework>
+        - FKB: <rework>125/120 🠚 0</rework>
+        - KBG: <rework>120 🠚 80</rework>
+        - Hitlag Multiplier: <adjust>1.5x 🠚 1.0x</adjust>
+        - Hitbox Size (body/sword): <buff>4.0/4.0u 🠚 5.0/5.5u</buff>
+    - Hit 2
+      - Damage: <buff>6.0% 🠚 7.0%</buff>
+      - KBG: <nerf>130 🠚 90</nerf>
+      - Hitlag Multiplier: <adjust>1.5x 🠚 1.0x</adjust>
+      - Hitbox Size (body/sword): <adjust>3.0/7.7u 🠚 5.0/7.5u</adjust>
+<br><br>
+  - Dimensional Cape (Down Special):
+    - <property>The reappearance can be triggered early by pressing Attack starting on frame 11</property>
+    - <property>Transitions to normal fall on hit instead of special fall</property>
+    - <adjust>Matched air and ground values</adjust>
+    - Reappearance (forward)
+      - Damage: 14.0%
+      - Angle: 53
+      - BKB: 20
+      - KBG: 114
+      - Hitlag Multiplier: 1.3x
+      - Hitbox Size (inner/outer): 7.5/6.4u
+    - Reappearance (backward)
+      - Damage: 14.0%
+      - Angle: 361
+      - BKB: 20
+      - KBG: 114
+      - Hitlag Multiplier: 1.3x
+      - Hitbox Size (inner/outer): 7.5/6.4u
+<br><br>
+  - Forward Throw:
+    - Angle (hitbox): <adjust>40 🠚 60</adjust>
+<br><br>
+  - Back Throw:
+    - Angle (hitbox): <adjust>45 🠚 75</adjust>
+    - FAF: <buff>35 🠚 34</buff>
+<br><br>
+  - Down Throw (Meta Fury Stomp):
+    - <adjust>Animation sped up by 1.25x</adjust>
+    - Angle (hitbox): <adjust>70 🠚 80</adjust>
+    - FAF: <buff>87 🠚 66</buff>
+
+<script src="../../arrow.js">
+</script>

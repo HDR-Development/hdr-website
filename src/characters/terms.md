@@ -21,7 +21,7 @@
 - How far a move will send an opponent at 0%. Also controls the amount of hitstun at 0% when used in conjunction with FKB or an autolink angle
 
 ## Fixed Knockback (FKB)
-- The set distance that a move will send an opponent at any percent. Overrides the values of BKB/KBG and is 0 unless stated otherwise
+- The set distance that a move will send an opponent at any percent. Overrides the values of BKB/KBG
 
 ## Knockback Growth (KBG)
 - Determines how much a move scales in knockback distance with the opponent's percent. Also controls the amount of hitstun scaling when used in conjunction with FKB or an autolink angle

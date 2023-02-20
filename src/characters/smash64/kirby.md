@@ -11,7 +11,7 @@
   - Jumpsquat: 3F 🠚 4F
   - Horizontal Jump Speed Multiplier: 0.85 🠚 0.95
   - Max Horizontal Jump Speed: 1.3 🠚 1.5
-  - Mid Air Jump Heights:
+  - Aerial Jump Velocities:
     - 1.674/1.572/1.46/1.339/1.209 🠚 1.75/1.6/1.5/1.45/1.4
   - Air Speed: 0.84 🠚 1.0
   - Air Acceleration (base/multiplier): 0.03/0.065 🠚 0.02/0.045
