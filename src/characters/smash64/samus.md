@@ -266,7 +266,7 @@
     - <property>Can be land canceled</property>
     - Homing Missile
       - Lifetime: <nerf>120F 🠚 70F</nerf>
-      - Angling Capability: <nerf>0.65 🠚 0.75</buff>
+      - Angling Degrees per Frame: <nerf>0.65 🠚 0.75</buff>
     - Super Missile
       - Maximum Amount: <buff>1 🠚 2</buff>
       - Lifetime: <nerf>50F 🠚 40F</nerf>

@@ -337,7 +337,7 @@
     - Travel
       - Base Travel Speed: <buff>1.2 🠚 2.0</buff>
       - Max Travel Speed: <buff>7.0 🠚 8.0</buff>
-      - Angling Constant: <buff>1.645 🠚 3.0</buff>
+      - Angling Degrees per Frame: <buff>1.645 🠚 3.0</buff>
       - Max Angle: <buff>78 🠚 85</buff>
       - Max Travel Duration: <buff>45F 🠚 50F</buff>
       - Explosion Delay: <rework>12F 🠚 120F</rework>
