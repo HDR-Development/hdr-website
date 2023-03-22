@@ -92,3 +92,6 @@
   - Special moves gain meter equivalent to half their damage on hit rounded to the nearest integer unless otherwise stated
   - Ex Specials gain no meter upon use
 - More details can be found on the individual character changelogs
+
+<script src="../arrow.js">
+</script>

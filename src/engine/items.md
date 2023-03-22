@@ -10,3 +10,6 @@
 - Characters no longer have a 30% chance to drop items when hit
 - Roll 🠚 Item Toss Window
   - 2F 🠚 6F
+
+<script src="../arrow.js">
+</script>

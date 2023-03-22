@@ -70,7 +70,7 @@
     <tr>
       <td><a href="./brawl/metaknight.md">Meta Knight</a></td>
       <td><a href="./brawl/pit.md">Pit</a></td>
-      <td><!--<a href="./brawl/szerosuit.md">-->Zero Suit Samus<!--</a>--></td>
+      <td><a href="./brawl/szerosuit.md">Zero Suit Samus</a></td>
       <td><!--<a href="./brawl/wario.md">-->Wario<!--</a>--></td>
       <td><!--<a href="./brawl/snake.md">-->Snake<!--</a>--></td>
       <td><!--<a href="./brawl/ike.md">-->Ike<!--</a>--></td>

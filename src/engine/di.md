@@ -23,3 +23,6 @@
 - You can DI during hitlag as normal to adjust angle, but then also drift in or out slightly during knockback
 - Effectiveness scales down depending on the initial knockback taken, eventually having no effect above 3.0 launch speed
 - *This change is intended to go hand in hand with the increase in hitstun. The combination of these two changes will result in a combo game that is more freeform, with more potential combo routes, and with a significantly increased level of interactivity in the combo game. On poor or read DI, especially hard DI in, punishes can be decently more significant. On the flipside, when YOU are getting comboed, your DI patterns, both traditional DI and Drift DI, will have a much larger impact on the situation*
+
+<script src="../arrow.js">
+</script>

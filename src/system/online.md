@@ -9,3 +9,6 @@
 - Choose the default “Auto” option to use whatever the game would normally assign you. After playing a match, said assigned delay will be displayed in parenthesis
 - Extra Modes may also be toggled in online arenas by pressing Dpad down while waiting for a match
   - Note that all players must have the exact same combination of modes selected or the match will immediately desync
+
+<script src="../arrow.js">
+</script>

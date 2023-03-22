@@ -16,3 +16,6 @@
   - 12F 🠚 20F
 - Tech lockout window
   - 28F 🠚 40F
+
+<script src="../arrow.js">
+</script>

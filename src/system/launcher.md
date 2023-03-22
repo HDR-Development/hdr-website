@@ -5,3 +5,6 @@
 
 ## ![](../images/SmashBall.png) Setup
 - Coming soonTM
+
+<script src="../arrow.js">
+</script>

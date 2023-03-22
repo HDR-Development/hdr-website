@@ -56,3 +56,6 @@
   - The thresholds shift as follows:
     - Spotdodge stick y threshold: -0.75 🠚 -0.8
     - Platdrop stick y threshold: -0.71 🠚 -0.675
+
+<script src="../arrow.js">
+</script>

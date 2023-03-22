@@ -58,3 +58,6 @@
 ## ![](../images/SmashBall.png) Killscreen
 - Removed the final kill screen
   - False flashes were too egregious with the new survivability mechanics
+
+<script src="../arrow.js">
+</script>

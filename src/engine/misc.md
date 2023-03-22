@@ -39,3 +39,6 @@
 - Characters’ voice clips for sustaining heavy knockback now play on frame 1 of hitstun instead of frame 6
 - Grab Invulnerability Timer
   - 60F 🠚 35F
+
+<script src="../arrow.js">
+</script>

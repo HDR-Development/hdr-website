@@ -23,3 +23,6 @@
 - Double traction rules now apply to idle, crouch, crouch wait, crouch stand, special fall landing, jab, ftilt, utilt, dtilt, fsmash/charge, usmash/charge, and dsmash/charge states
 - Grounded damage/hitstun traction multiplier
   - 1.0x 🠚 1.1x
+
+<script src="../arrow.js">
+</script>
