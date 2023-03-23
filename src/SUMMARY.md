@@ -59,7 +59,7 @@
   - [Brawl]()
     - [Meta Knight](./characters/brawl/metaknight.md)
     - [Pit](./characters/brawl/pit.md)
-    - [Zero Suit Samus]()<!--./characters/brawl/szerosuit.md)-->
+    - [Zero Suit Samus](./characters/brawl/szerosuit.md)
     - [Wario]()<!--./characters/brawl/wario.md)-->
     - [Snake]()<!--./characters/brawl/snake.md)-->
     - [Ike]()<!--./characters/brawl/ike.md)-->

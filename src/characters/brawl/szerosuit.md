@@ -1,1 +1,363 @@
-# Zero Suit Samus
+# ![](../../images/Stock_SZeroSuit.png) Zero Suit Samus
+
+<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
+
+![](../../images/SmashBall.png) <b>Attributes</b>
+  - Walk Speed: 1.47 🠚 1.35
+  - Initial Dash Speed: 2.42 🠚 1.7
+  - Run Speed: 2.31 🠚 2.05
+  - Run Acceleration (base/multiplier): 0.044/0.10362 🠚 0.02/0.08
+  - Ground Friction: 0.116 🠚 0.0725
+  - Jumpsquat: 3F 🠚 4F
+  - Max Horizontal Jump Speed: 1.3 🠚 1.45
+  - Short Hop Height: 21.35 🠚 13.5
+  - Full Hop Height: 44.5 🠚 37.5
+  - Double Jump Height: 44.2 🠚 32.5
+  - Air Speed: 1.26 🠚 1.005
+  - Air Acceleration (base/multiplier): 0.01/0.085 🠚 0.01/0.09
+  - Air Friction: 0.008 🠚 0.005
+  - Gravity: 0.12 🠚 0.135
+  - Fall Speed: 1.7 🠚 2.05
+  - Fast Fall Speed: 2.72 🠚 2.75
+  - Combo Gravity: 0.06888 🠚 0.135
+  - Combo Fall Speed: 1.8 🠚 2.05
+  - Heavy Landing Lag: 8F 🠚 5F
+  - Shield Radius: 12.5 🠚 11.6
+  - Wall Jump Vertical Velocity: 2.3 🠚 2.6
+<br><br>
+
+![](../../images/SmashBall.png) <b>Moveset</b>
+  - Jab:
+    - Jab 1 (Straight Check)
+      - <buff>Added locking hitbox</buff>
+      - Hitbox Duration: <nerf>F1 🠚 F2-3</nerf>
+      - Damage: <buff>1.5% 🠚 3.0%</buff>
+      - Angle: <rework>361/180 🠚 70</rework>
+      - BKB: <rework>20/15/10 🠚 0</rework>
+      - KBG: <rework>50/33/20 🠚 100</rework>
+      - Hitlag Multiplier: <adjust>1.8x 🠚 1.0x</adjust>
+      - Additional Hitstun: <nerf>10/6/2F 🠚 2F</nerf>
+      - Hitbox Size (shoulder/arm/hand): <buff>2.0/2.3/2.5u 🠚 3.5/3.8/3.5u</buff>
+      - FAF: <buff>24 🠚 17</buff>
+    - Jab 2 (Pistol Whip)
+      - <buff>Added locking hitbox</buff>
+      - Hitbox Duration: <buff>F2 🠚 F2-3</buff>
+      - Damage: <buff>1.5% 🠚 3.0%</buff>
+      - Angle: <rework>361 🠚 70</buff>
+      - BKB: <rework>30/25/20 🠚 0</rework>
+      - KBG: <rework>40/30 🠚 100</rework>
+      - Hitlag Multiplier: <adjust>1.8x 🠚 1.0x</adjust>
+      - Hitbox Size (shoulder/arm/hand): <buff>2.2/2.8/3.5u 🠚 2.9/2.9/3.5u</buff>
+      - FAF: <buff>26 🠚 19</buff>
+    - Jab 3 (Elbow Jab)
+      - <buff>Added hand hitbox</buff>
+      - Damage: <buff>3.0% 🠚 5.0%</buff>
+      - Angle: <buff>45 🠚 361</buff>
+      - BKB: <adjust>60 🠚 50</adjust>
+      - KBG: <adjust>100 🠚 70</adjust>
+      - Hitbox Size (hand): 2.5u
+      - FAF: <buff>35 🠚 23</buff>
+<br><br>
+  - Forward Tilt (Spin Kick):
+    - <buff>Added back leg hitbox</buff>
+    - High
+      - Damage: <buff>6.5/8.0% 🠚 9.0%</buff>
+      - Angle: <buff>361 🠚 35</buff>
+      - BKB: <nerf>30 🠚 18</nerf>
+      - Hitbox Size (back leg): 3.0u
+    - Mid
+      - Damage: <buff>6.0/7.0% 🠚 9.0%</buff>
+      - Angle: <buff>361 🠚 35</buff>
+      - BKB: <nerf>30 🠚 18</nerf>
+      - Hitbox Size (back leg): 3.0u
+    - Low
+      - Damage: <buff>6.5/8.0% 🠚 12.0%</buff>
+      - Angle: <buff>361 🠚 35</buff>
+      - BKB: <nerf>30 🠚 18</nerf>
+      - Hitbox Size (back leg): 3.0u
+<br><br>
+  - Up Tilt (Handstand Scissor):
+    - Hitbox Duration (early/late): <adjust>F3-4/F9-10 🠚 F5-7/F10-14</adjust>
+    - Hit 1
+      - <adjust>Attached hitboxes to legs</adjust>
+      - Hip
+        - Angle: 90
+        - BKB: 45
+        - KBG: 40
+        - Hitbox Size: 3.0u
+      - Knee
+        - Angle: 128
+        - BKB: 40
+        - KBG: 40
+        - Hitbox Size: 3.0u
+      - Foot
+        - Angle: 136
+        - BKB: 50
+        - KBG: 30
+        - Hitbox Size: 3.0u
+      - Hitlag Multiplier: <adjust>1.2x 🠚 1.0x</adjust>
+    - Hit 2
+      - Damage: <buff>7.0% 🠚 8.0%</buff>
+      - BKB: <adjust>70 🠚 50</adjust>
+      - KBG: <adjust>90 🠚 100</adjust>
+      - Hitlag Multiplier: <adjust>1.2x 🠚 1.0x</adjust>
+      - Hitbox Size (leg/foot): <nerf>6.0/7.0u 🠚 5.0/6.0u</nerf>
+    - FAF: <buff>46 🠚 39</buff>
+<br><br>
+  - Down Tilt (Jet Sweep):
+    - <adjust>Attached hitboxes to leg</adjust>
+    - Hitbox Duration: <buff>F8-9 🠚 F6-8</buff>
+    - Damage (hip/knee/foot): <buff>6.0/8.0%% 🠚 6.0/7.0/8.0%</buff>
+    - Angle (hip/knee/foot): <adjust>70 🠚 65/75/85</adjust>
+    - BKB: <adjust>60 🠚 30</adjust>
+    - KBG: <adjust>85 🠚 110</adjust>
+    - FAF: <buff>30 🠚 26</buff>
+<br><br>
+  - Dash Attack:
+    - Hitbox Duration (early/late): <adjust>F7-9/F10-19 🠚 F6-9/F10-14</adjust>
+    - Early:
+      - Damage: <buff>8.0% 🠚 10.0%</buff>
+      - Angle: <rework>70 🠚 361</rework>
+      - BKB: <rework>100 🠚 50</rework>
+      - KBG: <rework>40 🠚 64</rework>
+    - Late:
+      - Damage: <buff>5.0% 🠚 7.0%</buff>
+      - Angle: <buff>60 🠚 70</buff>
+      - BKB: <buff>80 🠚 60</buff>
+      - KBG: <nerf>40 🠚 85</nerf>
+    - FAF: <buff>52 🠚 39</buff>
+<br><br>
+  - Forward Smash:
+    - Hitbox Duration: <buff>F13-14/F26-28 🠚 F13-14/F26-29</buff>
+    - Hit 1
+      - Hitlag Multiplier: <adjust>1.0x 🠚 0.5x</adjust>
+    - Hit 2
+      - Hip/Knee/Foot
+        - KBG: <buff>97 🠚 110</buff>
+        - Hitbox Size: <nerf>3.7/4.2/5.7u 🠚 3.5/4.0/5.5u</nerf>
+      - Blast
+        - Damage: <buff>11.0% 🠚 12.0%</buff>
+        - KBG: <buff>106 🠚 119</buff>
+        - Hitlag Multiplier: <adjust>1.6x 🠚 1.5x</adjust>
+        - Hitbox Size: <buff>3.2u 🠚 4.5u</buff>
+<br><br>
+  - Neutral Air (Plasma Rope):
+    - <adjust>Attached hitboxes to whip</adjust>
+    - Hitbox Duration: <buff>F10-11/F15-16 🠚 F7-15</buff>
+    - Damage: <buff>8.0% 🠚 12.0%</buff>
+    - Angle (gun/inner whip/outer whip/tip): <nerf>55 🠚 55/52/50/47</nerf>
+    - BKB: <buff>38 🠚 25</buff>
+    - KBG: <buff>96 🠚 80</buff>
+    - Hitlag Multiplier: <adjust>1.0x 🠚 0.8x</adjust>
+    - FAF: <buff>52 🠚 35</buff>
+    - Autocancel: <buff>F1-3/F42 🠚 F1-2/F32</buff>
+    - Landing Lag: <buff>8F 🠚 7F</buff>
+<br><br>
+  - Forward Air (Jet Double):
+    - <buff>Added hip hitbox</buff>
+    - Hitbox Duration (hit 1/hit 2): <adjust>F6-7/F13-14 🠚 F6-9/F15-18</adjust>
+    - Hit 1
+      - Ground
+        - Angle (hip/knee/foot): <buff>40/50 🠚 70/75/80</buff>
+      - Air
+        - Angle: <buff>361 🠚 366</buff>
+      - BKB: <rework>60/50 🠚 0</rework>
+      - FKB: <rework>0 🠚 50</rework>
+      - KBG: <rework>50 🠚 100</rework>
+      - Additional Hitstun: <buff>0F 🠚 2F</buff>
+      - Hitbox Size (hip/knee/foot): <nerf>*/5.5/6.4u 🠚 3.5/3.5/4.0u</nerf>
+    - Hit 2
+      - Damage: <buff>7.0% 🠚 10.0%</buff>
+      - Angle: <buff>361 🠚 40</buff>
+      - KBG: <buff>100 🠚 104</buff>
+      - Hitbox Size (hip/knee/foot): <nerf>*/5.5/6.4u 🠚 3.7/4.0/4.5u</nerf>
+    - FAF: <buff>47 🠚 40</buff>
+    - Autocancel: <nerf>F1-3/F38 🠚 F1-3/F39</nerf>
+    - Landing Lag: <buff>10F 🠚 9F</buff>
+<br><br>
+  - Back Air (Rocket Kick):
+    - <buff>Added hip hitbox</buff>
+    - Hitbox Duration: <buff>F8-9 🠚 F7-11</buff>
+    - Hip
+      - BKB: <adjust>42 🠚 20</adjust>
+      - KBG: <adjust>98 🠚 110</adjust>
+      - Hitbox Size: 2.5u
+    - Knee/Foot
+      - Damage: <buff>12.0% 🠚 13.0%</buff>
+      - BKB: <adjust>42 🠚 33</adjust>
+      - KBG: <adjust>98 🠚 110</adjust>
+      - Hitbox Size: <nerf>3.5/5.5u 🠚 3.0/4.0u</nerf>
+    - FAF: <buff>41 🠚 38</buff>
+    - Autocancel: <buff>F1-3/F31 🠚 F1-3/F30</buff>
+    - Landing Lag: <buff>10F 🠚 9F</buff>
+<br><br>
+  - Up Air (Boost Arc):
+    - <adjust>Animation adjusted for a smoother arc</adjust>
+    - <buff>Added late hit</buff>
+    - Hitbox Duration (early/late): <buff>F6-12 🠚 F4-8/F9-12</buff>
+    - Early
+      - Damage: <buff>6.5% 🠚 10.0%</buff>
+      - Angle: <nerf>80 🠚 60</nerf>
+      - KBG: <buff>125 🠚 110</buff>
+    - Late
+      - Damage: 7.0%
+      - Angle: 30
+      - BKB: 20
+      - KBG: 100
+    - Hitbox Size (hip/knee/foot): <nerf>3.6/3.6/4.6u 🠚 3.0/3.0/4.0u</nerf>
+    - FAF: <buff>35 🠚 34</buff>
+    - Autocancel: <nerf>F25 🠚 F26</nerf>
+    - Landing Lag: <nerf>5F 🠚 8F</nerf>
+<br><br>
+  - Down Air (Shooting Star):
+    - <rework>Removed stall and fall</rework>
+    - <property>Rebounds ZSS upwards on hit</property>
+    - Hitbox Duration (early/late): F12-15/F16-22
+    - Early
+      - Damage: 12.0%
+      - Angle: 90
+      - BKB: 70
+      - KBG: 35
+      - Hitbox Size (hip/knee/foot): 4.0/4.5/4.5u
+    - Late
+      - Damage: 6.0%
+      - Angle: 90
+      - BKB: 35
+      - KBG: 64
+      - Hitbox Size (hip/knee/foot): 3.5/4.0/4.0u
+    - FAF: 45
+    - Autocancel: F1-3/F46
+    - Landing Lag: 9F
+<br><br>
+  - Zair:
+    - Landing Lag: <nerf>8F 🠚 16F</nerf>
+<br><br>
+  - Paralyzer (Neutral Special):
+    - Lifetime (uncharged/charged): <buff>24/48F 🠚 36/69F</buff>
+    - Uncharged
+      - <rework>No longer paralyzes</rework>
+<br><br>
+  - Plasma Whip (Side Special):
+    - Ground
+      - <rework>Changed to two hits</rework>
+      - Hitbox Duration (hit 1/hit 2): F24-25/F28-31
+      - Hit 1
+        - Damage (arm/gun/whip): 1.0/4.0/4.0%
+        - Angle (arm/gun/whip): 15/20/25
+        - FKB (arm/gun/whip): 90/80/50
+        - KBG: 100
+        - Hitbox Size (arm/gun/whip): 4.0/3.5/4.0u
+      - Hit 2
+        - Tap
+          - Damage: <buff>8.0% 🠚 9.0%</buff>
+          - Angle: <buff>55 🠚 50</buff>
+          - BKB: <adjust>47 🠚 50</adjust>
+          - KBG: <adjust>138 🠚 115</adjust>
+        - Hold
+          - Damage: <buff>4.0% 🠚 7.0%</adjust>
+          - Angle: <rework>75 🠚 100</rework>
+          - BKB: <rework>98 🠚 90</rework>
+          - KBG: <rework>62 🠚 60</rework>
+          - Hitlag Multiplier: <adjust>1.0x 🠚 1.5x</adjust>
+          - Additional Hitstun: <nerf>4F 🠚 0F</nerf>
+        - Hitbox Size: 6.0u
+        - FAF: <buff>56 🠚 52</buff>
+    - Air
+      - Final Hit
+        - Tap
+          - Damage: <buff>8.0% 🠚 9.0%</buff>
+          - Angle: <buff>60 🠚 50</buff>
+          - BKB: <buff>45 🠚 50</buff>
+          - KBG: <buff>105 🠚 115</buff>
+        - Hold
+          - Damage: <buff>4.0% 🠚 7.0%</buff>
+          - Angle: <adjust>108/100/80/75 🠚 110</adjust>
+          - BKB: <adjust>60 🠚 90</adjust>
+          - KBG: <adjust>105 🠚 60</adjust>
+          - Hitlag Multiplier: <adjust>1.0x 🠚 1.5x</adjust>
+<br><br>
+  - Boost Kick (Up Special):
+    - Ground
+      - Height Multiplier: <nerf>1.1x 🠚 1.0x</nerf>
+      - Max Angle: <buff>18 🠚 35</buff>
+      - Multihits
+        - Hitlag Multiplier: <adjust>1.0x 🠚 0.75x</adjust>
+      - Launcher
+        - KBG: <nerf>209 🠚 208</nerf>
+        - Hitlag Multiplier: <adjust>2.5x 🠚 1.5x</adjust>
+    - Air
+      - Height Multiplier: <nerf>1.1x 🠚 0.975x</nerf>
+      - Max Angle: <buff>18 🠚 35</buff>
+      - Multihits
+        - Hitlag Multiplier: <adjust>1.0x 🠚 0.75x</adjust>
+      - Launcher
+        - KBG: <nerf>184 🠚 196</nerf>
+        - Hitlag Multiplier: <adjust>2.5x 🠚 1.5x</adjust>
+<br><br>
+  - Flip Jump (Down Special):
+    - <nerf>Removed intangibility</nerf>
+    - <property>Can be jump canceled starting on frame 22</property>
+    - <property>Can be edge canceled</property>
+    - Travel Arc
+      - Speed Control Multiplier: <buff>0.7x 🠚 1.0x</buff>
+      - Speed Multiplier: <nerf>1.0x 🠚 0.55x</nerf>
+    - Kick
+      - Rebound Horizontal Speed: <nerf>0.7 🠚 0.2</nerf>
+      - Rebound Vertical Speed: <nerf>2.5 🠚 1.75</nerf>
+      - Hip
+        - Damage: <buff>14.0% 🠚 12.0%</nerf>
+        - BKB: <buff>30 🠚 45</buff>
+        - KBG: <buff>100 🠚 115</buff>
+        - Hitbox Size: <buff>4.1u 🠚 4.8u</buff>
+      - Foot
+        - Ground
+          - Angle: <adjust>48 🠚 45</adjust>
+          - KBG: <adjust>102 🠚 100</adjust>
+        - Air
+          - KBG: <nerf>100 🠚 52</nerf>
+        - Hitbox Size: <nerf>8.0u 🠚 4.8u</nerf>
+      - FAF: <buff>60 🠚 35</buff>
+    - Footstool
+      - <rework>Only footstools when Special is held</property>
+      - Horizontal Speed (min/max): <nerf>0.7/1.0 🠚 0.1/0.8</nerf>
+<br><br>
+  - Grab:
+    - Standing Grab
+      - <rework>Changed to a close-range grab</rework>
+    - Dash Grab:
+      - <buff>Added elbow and shoulder grab boxes</buff>
+      - Hitbox Duration (hand/elbow/shoulder): <buff>F17-18 🠚 F17-22</buff>
+    - Pivot Grab:
+      - <buff>Added elbow and shoulder grab boxes</buff>
+      - Hitbox Duration (hand/elbow/shoulder): <buff>F18-19 🠚 F18-23</buff>
+<br><br>
+  - Forward Throw:
+    - Damage: <adjust>4.0/5.0% 🠚 7.0/2.0%</adjust>
+    - Angle: <nerf>33 🠚 40</nerf>
+    - BKB: <adjust>58 🠚 63</adjust>
+    - KBG: <adjust>75 🠚 50</adjust>
+    - FAF: <nerf>26 🠚 28</nerf>
+<br><br>
+  - Back Throw:
+    - Damage: <nerf>6.0% 🠚 4.0%</nerf>
+    - BKB: <adjust>72 🠚 70</adjust>
+    - KBG: <adjust>45 🠚 60</adjust>
+    - FAF: <nerf>28 🠚 29</nerf>
+<br><br>
+  - Up Throw:
+    - Startup: <nerf>F5 🠚 F11</nerf>
+    - Damage: <nerf>8.0% 🠚 4.0%</nerf>
+    - Angle: <rework>73 🠚 105</rework>
+    - KBG: <nerf>93 🠚 115</nerf>
+    - FAF: <buff>41 🠚 37</buff>
+<br><br>
+  - Down Throw (Axe Stomp):
+    - Startup: <buff>F22 🠚 F17</buff>
+    - Damage: <nerf>4.0/4.0% 🠚 2.0/5.0%</nerf>
+    - Angle: <nerf>75 🠚 70</nerf>
+    - BKB: <adjust>90 🠚 68</adjust>
+    - KBG: <adjust>60 🠚 78</adjust>
+    - FAF: <nerf>52 🠚 55</nerf>
+
+<script src="../../arrow.js">
+</script>
