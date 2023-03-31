@@ -8,49 +8,57 @@
 - <buff>Test</buff>
 <br><br>
 
-<table class="charTable">
-  <thead>
-    <tr><th colspan="6">Test 1</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><nerf>Mario</nerf></td>
-      <td>Donkey Kong</td>
-      <td>Link</td>
-      <td>Samus</td>
-      <td>Yoshi</td>
-      <td>Kirby</td>
-    </tr>
-    <tr>
-      <td>Fox</td>
-      <td>Pikachu</td>
-      <td>Luigi</td>
-      <td>Ness</td>
-      <td>Captain Falcon</td>
-      <td>Jigglypuff</td>
-    </tr>
-  </tbody>
-</table>
+<div class="charTable" id="forward_air">
+  <table>
+    <thead>
+      <tr>
+        <th>Hitbox ID</th>
+        <th>Damage</th>
+        <th>Angle</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <table>
+    <thead>
+      <tr>
+        <th>Hitlag Multiplier</th>
+        <th>SDI Multiplier</th>
+        <th>Additional Hitstun</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+</div>
 <input type="button" value="Toggle"/>
-<table class="charTable">
-  <thead>
-    <tr><th colspan="6">Test 2</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Mario</td>
-      <td><adjust>Donkey Kong</adjust></td>
-      <td>Link</td>
-      <td>Samus</td>
-    </tr>
-    <tr>
-      <td>Fox</td>
-      <td>Pikachu</td>
-      <td>Luigi</td>
-      <td>Ness</td>
-    </tr>
-  </tbody>
-</table>
+<br><br>
+<div class="charTable" id="back_air">
+  <table>
+    <thead>
+      <tr>
+        <th>Hitbox ID</th>
+        <th>Damage</th>
+        <th>Angle</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <table>
+    <thead>
+      <tr>
+        <th>Hitlag Multiplier</th>
+        <th>SDI Multiplier</th>
+        <th>Additional Hitstun</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+</div>
+<input type="button" value="Toggle"/>
 
 - <aesth>Test</aesth>
 

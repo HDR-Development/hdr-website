@@ -55,7 +55,54 @@
         }, {
             "name": "back_air",
             "data": [
-
+                {
+                    "name": "early",
+                    "data": {
+                        "is_grab": false,
+                        "include_fa": false,
+                        "hitbox_start": 140,
+                        "hitbox_end": 150,
+                        "hitboxes": [{
+                            "id": 0,
+                            "damage": 140.0,
+                            "angle": 2700,
+                            "BKB": 800,
+                            "KBG": 600,
+                            "hitbox_size": 40.0
+                        }, {
+                            "id": 10,
+                            "damage": 140.0,
+                            "angle": 2700,
+                            "BKB": 800,
+                            "KBG": 600,
+                            "hitbox_size": 50.0
+                        }]
+                    }
+                },
+                {
+                    "name": "late",
+                    "data": {
+                        "is_grab": true,
+                        "include_fa": false,
+                        "hitbox_start": 160,
+                        "hitbox_end": 180,
+                        "hitboxes": [{
+                            "id": 20,
+                            "damage": 130.0,
+                            "angle": 600,
+                            "BKB": 700,
+                            "KBG": 700,
+                            "hitbox_size": 30.0
+                        }, {
+                            "id": 30,
+                            "damage": 130.0,
+                            "angle": 600,
+                            "BKB": 700,
+                            "KBG": 700,
+                            "hitbox_size": 40.0
+                        }]
+                    }
+                }
             ]
         }
     ]
