@@ -1,6 +1,6 @@
 # ![](../../images/Stock_Mario.png) Mario
 
-<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
+<link rel="stylesheet" type="text/css" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Attributes</b>
   - Initial Dash Speed: 1.936 🠚 1.52
@@ -58,17 +58,17 @@
       - Angle: <rework>361 🠚 55</rework>
       - BKB: <adjust>55 🠚 40</adjust>
       - KBG: <adjust>70 🠚 80</adjust>
-      - Hitbox Size (foot/knee/hip): <buff>3.8/3.0/2.0u -> 4.5/3.0/3.5u</buff>
+      - Hitbox Size (foot/knee/hip): <buff>3.8/3.0/2.0u 🠚 4.5/3.0/3.5u</buff>
     - Mid
       - BKB: <adjust>55 🠚 40</adjust>
       - KBG: <adjust>70 🠚 80</adjust>
-      - Hitbox Size (foot/knee/hip): <buff>3.8/3.0/2.0u -> 4.5/3.0/3.5u</buff>
+      - Hitbox Size (foot/knee/hip): <buff>3.8/3.0/2.0u 🠚 4.5/3.0/3.5u</buff>
     - Low
       - Damage: <nerf>7.0% 🠚 6.0%</nerf>
       - Angle: <rework>361 🠚 30</rework>
       - BKB: <adjust>60 🠚 45</adjust>
       - KBG: <adjust>70 🠚 80</adjust>
-      - Hitbox Size (foot/knee/hip): <buff>3.8/3.0/2.0u -> 4.5/3.0/3.5u</buff>
+      - Hitbox Size (foot/knee/hip): <buff>3.8/3.0/2.0u 🠚 4.5/3.0/3.5u</buff>
 <br><br>
   - Up Tilt (Uppercut):
     - <adjust>Split into early and late hit</adjust>
@@ -332,5 +332,8 @@
     - KBG: <nerf>90 🠚 105</nerf>
     - FAF: <buff>40 🠚 38</buff>
 
-<script src="../../arrow.js">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="../../js/arrow.js">
+</script>
+<script src="../../js/togglecolumn.js">
 </script>

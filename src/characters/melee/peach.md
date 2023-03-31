@@ -1,6 +1,6 @@
 # ![](../../images/Stock_Peach.png) Peach
 
-<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
+<link rel="stylesheet" type="text/css" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Attributes</b>
   - Walk Speed: 0.924 🠚 0.904
@@ -223,5 +223,5 @@
     - Beam Sword Odds: <property>0 🠚 1/166</property>
     - Bob-Omb Odds: <buff>1/250 🠚 1/248</buff>
 
-<script src="../../arrow.js">
+<script src="../../js/arrow.js">
 </script>

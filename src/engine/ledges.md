@@ -30,5 +30,5 @@
 - Max ledge tethers per airtime
   - 3 🠚 5
 
-<script src="../arrow.js">
+<script src="../js/arrow.js">
 </script>

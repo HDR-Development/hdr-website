@@ -1,6 +1,6 @@
 # ![](../../images/Stock_MetaKnight.png) Meta Knight
 
-<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
+<link rel="stylesheet" type="text/css" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Attributes</b>
   - Initial Dash Speed: 2.211 🠚 1.765
@@ -318,5 +318,5 @@
     - Angle (hitbox): <adjust>70 🠚 80</adjust>
     - FAF: <buff>87 🠚 66</buff>
 
-<script src="../../arrow.js">
+<script src="../../js/arrow.js">
 </script>

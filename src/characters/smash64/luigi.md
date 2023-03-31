@@ -1,6 +1,6 @@
 # ![](../../images/Stock_Luigi.png) Luigi
 
-<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
+<link rel="stylesheet" type="text/css" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Attributes</b>
   - Walk Speed: 1.134 🠚 1.1
@@ -261,5 +261,5 @@
     - BKB: <rework>45 🠚 75</rework>
     - KBG: <rework>135 🠚 30</rework>
 
-<script src="../../arrow.js">
+<script src="../../js/arrow.js">
 </script>

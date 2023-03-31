@@ -1,6 +1,6 @@
 # ![](../../images/Stock_Pikachu.png) Pikachu
 
-<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
+<link rel="stylesheet" type="text/css" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Attributes</b>
   - Walk Speed: 1.302 🠚 1.252
@@ -215,5 +215,5 @@
       - Hitbox Duration: <buff>F1-3 🠚 F1-8</buff>
       - KBG: <buff>77 🠚 85</buff>
 
-<script src="../../arrow.js">
+<script src="../../js/arrow.js">
 </script>

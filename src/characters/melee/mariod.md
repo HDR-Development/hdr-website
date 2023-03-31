@@ -1,6 +1,6 @@
 # ![](../../images/Stock_MarioD.png) Dr. Mario
 
-<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
+<link rel="stylesheet" type="text/css" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Attributes</b>
   - Walk Speed: 1.155 🠚 1.12
@@ -323,5 +323,5 @@
     - Angle: <buff>80 🠚 85</buff>
     - KBG: <buff>45 🠚 42</buff>    
 
-<script src="../../arrow.js">
+<script src="../../js/arrow.js">
 </script>

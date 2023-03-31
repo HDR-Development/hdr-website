@@ -11,5 +11,5 @@
 - Roll 🠚 Item Toss Window
   - 2F 🠚 6F
 
-<script src="../arrow.js">
+<script src="../js/arrow.js">
 </script>

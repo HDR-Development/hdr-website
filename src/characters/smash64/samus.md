@@ -1,6 +1,6 @@
 # ![](../../images/Stock_Samus.png) Samus
 
-<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
+<link rel="stylesheet" type="text/css" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Attributes</b>
   - Initial Dash Speed: 1.87 🠚 1.86
@@ -292,5 +292,5 @@
     - BKB: <nerf>60 🠚 45</nerf>
     - KBG: <buff>55 🠚 100</buff>
 
-<script src="../../arrow.js">
+<script src="../../js/arrow.js">
 </script>

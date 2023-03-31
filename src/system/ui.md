@@ -17,5 +17,5 @@
 - The Stage Select Screen has been separated into 3 pages; Press L or R to navigate pages
 - Press Z/ZR while hovering over a stage to strike it; Hold the button for three seconds to un-strike all stages
 
-<script src="../arrow.js">
+<script src="../js/arrow.js">
 </script>

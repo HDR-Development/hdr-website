@@ -1,6 +1,6 @@
 # ![](../../images/Stock_Roy.png) Roy
 
-<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
+<link rel="stylesheet" type="text/css" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Attributes</b>
   - Initial Dash Speed: 2.2 🠚 1.475
@@ -348,5 +348,5 @@
     - KBG: <buff>90 🠚 85</buff>
     - FAF: <buff>42 🠚 41</buff>
 
-<script src="../../arrow.js">
+<script src="../../js/arrow.js">
 </script>

@@ -1,6 +1,6 @@
 # ![](../../images/Stock_Purin.png) Jigglypuff
 
-<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
+<link rel="stylesheet" type="text/css" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Attributes</b>
   - Ground Friction: 0.087 🠚 0.08
@@ -117,5 +117,5 @@
   - Up Throw:
     - KBG: <adjust>30 🠚 25</adjust>
 
-<script src="../../arrow.js">
+<script src="../../js/arrow.js">
 </script>

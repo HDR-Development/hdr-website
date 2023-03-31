@@ -1,6 +1,6 @@
 # ![](../../images/Stock_Link.png) Link
 
-<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
+<link rel="stylesheet" type="text/css" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Attributes</b>
   - Walk Speed: 1.247 🠚 1.217
@@ -309,5 +309,5 @@
     - Hitbox Size: 3.0u
     - FAF: 89
 
-<script src="../../arrow.js">
+<script src="../../js/arrow.js">
 </script>

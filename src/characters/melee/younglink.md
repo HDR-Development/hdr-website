@@ -1,6 +1,6 @@
 # ![](../../images/Stock_YoungLink.png) Young Link
 
-<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
+<link rel="stylesheet" type="text/css" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Attributes</b>
   - Initial Dash Speed: 2.09 🠚 1.8
@@ -246,5 +246,5 @@
     - <property>Heals 2.5% after drinking the entire bottle of milk</property>
     - <nerf>Can not be canceled early</nerf>
 
-<script src="../../arrow.js">
+<script src="../../js/arrow.js">
 </script>

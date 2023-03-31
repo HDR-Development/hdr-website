@@ -11,5 +11,5 @@
 - ECBs have had their behavior changed to match Melee, and have been shifted upwards while airborne; characters will enter landing animations once their knees collide with the ground
 - Large changes to be added
 
-<script src="../arrow.js">
+<script src="../js/arrow.js">
 </script>

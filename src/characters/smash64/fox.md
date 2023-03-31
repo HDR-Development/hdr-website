@@ -1,6 +1,6 @@
 # ![](../../images/Stock_Fox.png) Fox
 
-<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
+<link rel="stylesheet" type="text/css" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Attributes</b>
   - Walk Speed: 1.523 🠚 1.6
@@ -229,5 +229,5 @@
   - Up Taunt:
     - <property>Can be canceled into Fire Fox by holding Special on frames 40-43</property>
 
-<script src="../../arrow.js">
+<script src="../../js/arrow.js">
 </script>

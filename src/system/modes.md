@@ -18,5 +18,5 @@
 ## ![](../images/SmashBall.png) Airdash Mode
 - In this custom game mode, airdodges can be immediately interrupted by most aerial actions while preserving the momentum. Inspired by certain fighting games such as Project NX
 
-<script src="../arrow.js">
+<script src="../js/arrow.js">
 </script>

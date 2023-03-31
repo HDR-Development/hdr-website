@@ -1,6 +1,6 @@
 # ![](../../images/Stock_IceClimbers.png) Ice Climbers
 
-<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
+<link rel="stylesheet" type="text/css" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Attributes</b>
   - Popo
@@ -284,5 +284,5 @@
     - KBG: <nerf>116 🠚 120</nerf>
     - FAF (100 weight): <nerf>49 🠚 54</nerf>
 
-<script src="../../arrow.js">
+<script src="../../js/arrow.js">
 </script>

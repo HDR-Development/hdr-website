@@ -1,10 +1,13 @@
 # ![](../../images/???.png) H
 
-<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
+<link rel="stylesheet" type="text/css" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Attributes</b>
 
 ![](../../images/SmashBall.png) <b>Moveset</b>
 
-<script src="../../arrow.js">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="../../js/arrow.js">
+</script>
+<script src="../../js/togglecolumn.js">
 </script>

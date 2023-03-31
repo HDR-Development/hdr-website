@@ -24,5 +24,5 @@
 - Grounded damage/hitstun traction multiplier
   - 1.0x 🠚 1.1x
 
-<script src="../arrow.js">
+<script src="../js/arrow.js">
 </script>

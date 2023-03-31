@@ -61,8 +61,8 @@
     - [Pit](./characters/brawl/pit.md)
     - [Zero Suit Samus](./characters/brawl/szerosuit.md)
     - [Wario](./characters/brawl/wario.md)
-    - [Snake]()<!--./characters/brawl/snake.md)-->
-    - [Ike]()<!--./characters/brawl/ike.md)-->
+    - [Snake](./characters/brawl/snake.md)
+    - [Ike](./characters/brawl/ike.md)
     - [Squirtle]()<!--./characters/brawl/pzenigame.md)-->
     - [Ivysaur]()<!--./characters/brawl/pfushigisou.md)-->
     - [Charizard]()<!--./characters/brawl/plizardon.md)-->

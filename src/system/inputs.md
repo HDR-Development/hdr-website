@@ -41,5 +41,5 @@
   - Super Special / Final Smash command window
     - 20F 🠚 22F
 
-<script src="../arrow.js">
+<script src="../js/arrow.js">
 </script>

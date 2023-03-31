@@ -1,6 +1,6 @@
 # ![](../../images/Stock_Zelda.png) Zelda
 
-<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
+<link rel="stylesheet" type="text/css" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Attributes</b>
   - Walk Speed: 0.914 🠚 0.874
@@ -443,5 +443,5 @@
   - Up Throw:
     - FAF: <buff>50 🠚 49</buff>
 
-<script src="../../arrow.js">
+<script src="../../js/arrow.js">
 </script>

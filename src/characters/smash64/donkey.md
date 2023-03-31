@@ -1,6 +1,6 @@
 # ![](../../images/Stock_Donkey.png) Donkey Kong
 
-<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
+<link rel="stylesheet" type="text/css" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Attributes</b>
   - Walk Speed: 1.365 🠚 1.265
@@ -324,5 +324,5 @@
     - Damage: <nerf>11.0% 🠚 9.0%</nerf>
     - FAF: <buff>45 🠚 41</buff>
 
-<script src="../../arrow.js">
+<script src="../../js/arrow.js">
 </script>

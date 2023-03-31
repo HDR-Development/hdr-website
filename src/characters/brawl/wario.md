@@ -1,6 +1,6 @@
 # ![](../../images/Stock_Wario.png) Wario
 
-<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
+<link rel="stylesheet" type="text/css" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Attributes</b>
   - Walk Speed: 0.889 🠚 0.85
@@ -231,5 +231,5 @@
     - Damage: <nerf>7.0/4.0% 🠚 4.0/4.0%</nerf>
     - KBG: <adjust>18 🠚 50</adjust>
 
-<script src="../../arrow.js">
+<script src="../../js/arrow.js">
 </script>

@@ -93,5 +93,5 @@
   - Ex Specials gain no meter upon use
 - More details can be found on the individual character changelogs
 
-<script src="../arrow.js">
+<script src="../js/arrow.js">
 </script>

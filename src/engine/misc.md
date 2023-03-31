@@ -40,5 +40,5 @@
 - Grab Invulnerability Timer
   - 60F 🠚 35F
 
-<script src="../arrow.js">
+<script src="../js/arrow.js">
 </script>

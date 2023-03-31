@@ -1,6 +1,6 @@
 # ![](../../images/Stock_Ness.png) Ness
 
-<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
+<link rel="stylesheet" type="text/css" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Attributes</b>
   - Walk Speed: 0.907 🠚 0.877
@@ -185,5 +185,5 @@
     - Damage: <buff>4.0% 🠚 5.5%</buff>
 <br><br>
 
-<script src="../../arrow.js">
+<script src="../../js/arrow.js">
 </script>

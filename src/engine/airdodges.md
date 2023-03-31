@@ -21,5 +21,5 @@
 - Wavedashes can pick up items
 - Wavelands will snap to ground surfaces if the character’s ECB is within 5 units
 
-<script src="../arrow.js">
+<script src="../js/arrow.js">
 </script>

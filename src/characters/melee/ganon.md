@@ -1,6 +1,6 @@
 # ![](../../images/Stock_Ganon.png) Ganondorf
 
-<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
+<link rel="stylesheet" type="text/css" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Attributes</b>
   - Initial Dash Speed: 1.87 🠚 1.4
@@ -207,5 +207,5 @@
     - <property>Added super armor during frames 29-59</property>
     - FAF: <nerf>50 🠚 90</nerf>
 
-<script src="../../arrow.js">
+<script src="../../js/arrow.js">
 </script>

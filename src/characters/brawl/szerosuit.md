@@ -1,6 +1,6 @@
 # ![](../../images/Stock_SZeroSuit.png) Zero Suit Samus
 
-<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
+<link rel="stylesheet" type="text/css" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Attributes</b>
   - Walk Speed: 1.47 🠚 1.35
@@ -359,5 +359,5 @@
     - KBG: <adjust>60 🠚 78</adjust>
     - FAF: <nerf>52 🠚 55</nerf>
 
-<script src="../../arrow.js">
+<script src="../../js/arrow.js">
 </script>

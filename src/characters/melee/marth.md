@@ -1,6 +1,6 @@
 # ![](../../images/Stock_Marth.png) Marth
 
-<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
+<link rel="stylesheet" type="text/css" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Attributes</b>
   - Walk Speed: 1.575 🠚 1.6
@@ -470,5 +470,5 @@
     - KBG: <rework>57 🠚 50</rework>
     - FAF: <buff>47 🠚 41</buff>
 
-<script src="../../arrow.js">
+<script src="../../js/arrow.js">
 </script>

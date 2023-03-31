@@ -1,6 +1,6 @@
 # ![](../../images/Stock_Gamewatch.png) Mr. Game and Watch
 
-<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
+<link rel="stylesheet" type="text/css" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Attributes</b>
   - Initial Dash Speed: 1.98 🠚 1.5
@@ -350,5 +350,5 @@
   - Up Taunt:
     - <aesth>Plays a higher-pitched beep</aesth>
 
-<script src="../../arrow.js">
+<script src="../../js/arrow.js">
 </script>

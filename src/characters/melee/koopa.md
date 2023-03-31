@@ -1,6 +1,6 @@
 # ![](../../images/Stock_Koopa.png) Bowser
 
-<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
+<link rel="stylesheet" type="text/css" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Attributes</b>
   - Initial Dash Speed: 2.255 🠚 1.625
@@ -281,5 +281,5 @@
   - Down Throw:
     - FAF: <buff>85 🠚 65</buff>
 
-<script src="../../arrow.js">
+<script src="../../js/arrow.js">
 </script>

@@ -17,5 +17,5 @@
 - Tech lockout window
   - 28F 🠚 40F
 
-<script src="../arrow.js">
+<script src="../js/arrow.js">
 </script>

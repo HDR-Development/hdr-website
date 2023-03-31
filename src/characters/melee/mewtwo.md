@@ -1,6 +1,6 @@
 # ![](../../images/Stock_Mewtwo.png) Mewtwo
 
-<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../style.css">
+<link rel="stylesheet" type="text/css" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Attributes</b>
   - Initial Dash Speed: 2.255 🠚 1.5
@@ -249,5 +249,5 @@
   - Down Throw:
     - FAF: <buff>42 🠚 36</buff>
 
-<script src="../../arrow.js">
+<script src="../../js/arrow.js">
 </script>

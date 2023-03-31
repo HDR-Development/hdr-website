@@ -10,5 +10,5 @@
 - Extra Modes may also be toggled in online arenas by pressing Dpad down while waiting for a match
   - Note that all players must have the exact same combination of modes selected or the match will immediately desync
 
-<script src="../arrow.js">
+<script src="../js/arrow.js">
 </script>
