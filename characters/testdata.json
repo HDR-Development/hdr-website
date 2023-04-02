@@ -1,0 +1,117 @@
+{
+    "moveset": [
+        {
+            "name": "Forward Air",
+            "data": [
+                {
+                    "name": "Early",
+                    "data": {
+                        "is_grab": false,
+                        "hitbox_start": 14,
+                        "hitbox_end": 15,
+                        "hitboxes": [{
+                            "id": 0,
+                            "damage": 14.0,
+                            "angle": 270,
+                            "BKB": 80,
+                            "KBG": 60,
+                            "hitbox_size": 4.0
+                        }, {
+                            "id": 1,
+                            "damage": 4.0,
+                            "angle": 270,
+                            "BKB": 80,
+                            "KBG": 60,
+                            "hitbox_size": 5.0
+                        }]
+                    }
+                },
+                {
+                    "name": "Late",
+                    "data": {
+                        "is_grab": true,
+                        "hitbox_start": 16,
+                        "hitbox_end": 18,
+                        "hitboxes": [{
+                            "id": 2,
+                            "damage": 15.0,
+                            "angle": 60,
+                            "BKB": 70,
+                            "FKB": 120,
+                            "KBG": 70,
+                            "hitbox_size": 3.0
+                        }, {
+                            "id": 3,
+                            "damage": 13.9,
+                            "angle": 60,
+                            "BKB": 70,
+                            "KBG": 70,
+                            "hitbox_size": 4.0
+                        }]
+                    }
+                }
+            ]
+        }, {
+            "name": "Back Air",
+            "data": [
+                {
+                    "name": "Multihits",
+                    "data": {
+                        "is_grab": false,
+                        "hitbox_start": [
+                            10,
+                            13,
+                            16,
+                            19
+                        ],
+                        "hitbox_end": [
+                            12,
+                            15,
+                            18,
+                            21
+                        ],
+                        "hitboxes": [{
+                            "id": 10,
+                            "damage": 1407.5,
+                            "angle": 2700,
+                            "BKB": 800,
+                            "FKB": 700,
+                            "KBG": 600,
+                            "hitbox_size": 40.0
+                        }, {
+                            "id": 20,
+                            "damage": 141.5,
+                            "angle": 2700,
+                            "BKB": 800,
+                            "KBG": 600,
+                            "hitbox_size": 50.0
+                        }]
+                    }
+                },
+                {
+                    "name": "Launcher",
+                    "data": {
+                        "is_grab": true,
+                        "hitbox_start": 160,
+                        "hitbox_end": 180,
+                        "hitboxes": [{
+                            "id": 30,
+                            "damage": 130.1,
+                            "angle": 600,
+                            "BKB": 700,
+                            "KBG": 700,
+                            "hitbox_size": 30.0
+                        }, {
+                            "id": 40,
+                            "damage": 130.5,
+                            "angle": 600,
+                            "BKB": 700,
+                            "KBG": 700,
+                            "hitbox_size": 40.0
+                        }]
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -3,12 +3,28 @@
 
 p {
     font-family: SplineSansMono;
-    font-size:20px;
+    font-size:24px;
+}
+
+.info {
+    font-family: SplineSansMono;
+    font-size:16px;
+}
+
+.info_header {
+    font-family: SplineSansMono;
+    font-size:18px;
 }
 
 ul {
     font-family: SplineSansMono;
     font-size:16px;
+}
+
+table {
+    font-family:SplineSansMono;
+    text-align:center;
+    width:100%;
 }
 
 buff {
