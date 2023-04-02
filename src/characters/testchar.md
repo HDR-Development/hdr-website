@@ -28,8 +28,12 @@
 <br>
 
 ![](../../images/SmashBall.png) <b>Moveset</b>
-
-<div id="dataEnd">
+<br><br>
+<p>Forward Air</p>
+<div class="charTable">
+</div>
+<p>Back Air</p>
+<div class="charTable">
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
