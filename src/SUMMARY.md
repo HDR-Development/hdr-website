@@ -122,3 +122,5 @@
     - [Mythra]()<!--./characters/ultimate/elight.md)-->
     - [Kazuya]()<!--./characters/ultimate/demon.md)-->
     - [Sora]()<!--./characters/ultimate/trail.md)-->
+
+- [Test](./characters/testchar.md)

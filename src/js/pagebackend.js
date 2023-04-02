@@ -1,8 +1,9 @@
 $(document).ready(function() {
-    //console.log($(this).prev('.charTable'));
-    $('input').on('click', function() {
-        //console.log($(this).attr('id'));
-        $(this).prev('div').toggle();
+    // toggle extra table on button click
+    $('button').on('click', function() {
+        var ext_table = $(this).parent().children().eq($(this).attr('id'));
+        ext_table.is(":visible") ? $(this).html('Show extra data') : $(this).html('Hide extra data');
+        $(ext_table).toggle();
     });
 });
 
@@ -10,113 +11,164 @@ $(document).ready(function() {
 var importFile = function(fileName) {
     const xmlhttp = new XMLHttpRequest();
     xmlhttp.onload = function() {
-        //console.log('h');
         const charJSON = JSON.parse(this.responseText);
-        //console.log(charJSON);
-        filterByMove(charJSON);
+        constructMoveTables(charJSON);
+
+        // hide ext tables on page load
+        $("table[id|='ext_data']").each(function() {
+            $(this).toggle();
+        });
     };
     xmlhttp.open("GET", fileName);
     xmlhttp.send();
 }
 
-// construct a table and populate it from the JSON based on table id
-function filterByMove(data) {
-    //const tables = $('.charTable table');
-    //console.log("tables: " + tables[0].getAttribute('id'));
+// construct a table and populate it from the JSON
+function constructMoveTables(charJSON) {
+    let page_end = document.getElementById("dataEnd");
 
-    const divs = $('.charTable');
-    //console.log(divs[1]);
+    for(let i = 0; i < charJSON.moveset.length; i++) {//{< divs.length; i++) {
+        let div = document.createElement('div');
+        div.className = "charTable";
+        let move = charJSON.moveset[i];
+        
+        // obtain each hitbox set of the move
+        for(let j = 0; j < move.data.length; j++) {
+            let hitboxSets = [];
+            let movePart = move.data[j];
 
-    for(let i = 0; i < divs.length; i++)
-    {
-        //const tables = [];
-        //tables.push(divs[0].childNodes[1], divs[1].childNodes[1]);
-        //console.log(tables);
+            let dataFlags = {
+                "is_grab": movePart.data.is_grab,   // if move is a grab
+                "has_fkb": false,                   // if move has FKB
+                "has_rehit": false,                 // if move has rehit rate
+                "include_fa": false,                // if move has documented frame advantage
+            };
 
-        var id = divs[i].getAttribute('id');
-        //console.log(id);
+            // construct move info
+            parseInfoData(div, movePart);
 
-        var filter;
+            // obtain individual hitbox data
+            for(let x = 0; x < movePart.data.hitboxes.length; x++) {
+                let hitbox = movePart.data.hitboxes[x];
+                
+                // check if certain data is present
+                dataFlags.has_fkb = (hitbox.FKB && hitbox.FKB != 0) ? true : dataFlags.has_fkb;
+                dataFlags.has_rehit = (hitbox.rehit_rate && hitbox.rehit_rate != 0) ? true : dataFlags.has_rehit;
 
-        // filter by id to find and construct the table
-        switch(id) {
-            case "forward_air":
-                //console.log('construct fair table');
-                filter = "forward_air";
-                break;
-            case "back_air":
-                //console.log('construct bair table');
-                filter = "back_air";
-                break;
-            default:
-                //console.log('move id not found');
-                filter = "none";
-                break;
-        }
-
-        // search for move name and construct table
-        if (filter && filter != "none") {
-            for(let j = 0; j < data.moveset.length; j++)
-            {
-                var index = data.moveset[j];
-                if (index && index.name == filter)
-                {
-                    //console.log('found ' + filter + ' at index ' + j);
-                    //let h = divs[i].childNodes[1];
-                    //console.log(h.getElementsByTagName('tbody')[0]);
-                    
-                    constructMoveTable(divs[i].childNodes[1].getElementsByTagName('tbody')[0], divs[i].childNodes[3].getElementsByTagName('tbody')[0], index);
-                }
+                hitboxSets.push(hitbox);
             }
+
+            // iterate through moveparts and construct table and ext_table for each hitbox set
+            let table = document.createElement('table');
+            let table_head = document.createElement('thead');
+            let table_body = document.createElement('tbody');
+            let ext_table = document.createElement('table');
+            let ext_table_head = document.createElement('thead');
+            let ext_table_body = document.createElement('tbody');
+            ext_table.id = "ext_data";  // used for toggle script
+            
+            // construct table header
+            let header_data = [
+                // Hitbox ID,
+                "Damage",
+                "Angle",
+                "BKB",
+                // FKB
+                "KBG",
+            ];
+
+            // add additional fields according to data flags
+            if (!dataFlags.is_grab) {
+                header_data.splice(0, 0, "Hitbox ID");
+            }
+            if (dataFlags.has_fkb) {
+                header_data.splice(3 + !dataFlags.is_grab, 0, "FKB");
+            }
+            insertRowFromData(table_head, header_data);
+
+            // construct ext_table header
+            let ext_header_data = [
+                "BKB",
+                "KBG",
+                "Hitbox Size",
+            ];
+            insertRowFromData(ext_table_head, ext_header_data);
+            
+            // populate hitbox set
+            hitboxSets.forEach( hitbox => {
+                let row_data = [
+                    //hitbox.id,
+                    hitbox.damage + ((/^\d+\.\d$/).test(hitbox.damage) ? '%' : '.0%'),
+                    hitbox.angle,
+                    hitbox.BKB,
+                    // hitbox.FKB
+                    hitbox.KBG,
+                ];
+
+                let ext_row_data = [
+                    hitbox.BKB,
+                    hitbox.KBG,
+                    hitbox.hitbox_size + ((/^\d+\.\d$/).test(hitbox.damage) ? 'u' : '.0u'),
+                ];
+
+                // add additional fields according to data flags
+                if (!dataFlags.is_grab) {
+                    row_data.splice(0, 0, hitbox.id);
+                }
+                if (dataFlags.has_fkb) {
+                    row_data.splice(3 + !dataFlags.is_grab, 0, hitbox.FKB ? hitbox.FKB : "-");
+                }
+                console.log(row_data);
+
+                // populate main table
+                insertRowFromData(table_body, row_data);
+
+                // populate extra table
+                insertRowFromData(ext_table_body, ext_row_data);
+
+                // append table and ext_table to div
+                table.appendChild(table_head);
+                table.appendChild(table_body);
+                ext_table.appendChild(ext_table_head);
+                ext_table.appendChild(ext_table_body);
+                div.appendChild(table);
+                div.appendChild(ext_table);
+            });
+
+            // add buttons and spacing
+            let button = document.createElement('button');
+            button.type = "button";
+            button.textContent = "Show extra data";
+            button.id = (8 * j) + 4;    // offset id for toggle script
+            div.appendChild(button);
+            div.appendChild(document.createElement('br'));
+            div.appendChild(document.createElement('br'));
         }
+
+        // append complete move to document and update current page end
+        page_end.parentNode.insertBefore(div, page_end.nextSibling);
+        page_end = page_end.nextSibling;
     }
 }
 
-// parses all data for the character page
-function constructMoveTable(table, ext_table, move) {
-    //console.log(table);
-    //console.log(ext_table);
-    //console.log(move);
-
-    // obtain each hitbox set of the move
-    for(let j = 0; j < move.data.length; j++)
-    {
-        var result = [];
-        var movePart = move.data[j];
-        //console.log(movePart.data);
-
-        // obtain individual hitbox data
-        for(let x = 0; x < movePart.data.hitboxes.length; x++)
-        {
-            var hitbox = movePart.data.hitboxes[x];
-            //console.log(hitbox.damage);
-            result.push(hitbox);
-        }
-
-        // populate table
-        result.forEach( data => {
-            // populate main table
-            let row = table.insertRow();
-            let id = row.insertCell(0);
-            id.innerHTML = data.id;
-            let damage = row.insertCell(1);
-            damage.innerHTML = data.damage;
-            let angle = row.insertCell(2);
-            angle.innerHTML = data.angle;
-
-            // populate extra table
-            let ext_row = ext_table.insertRow();
-            let bkb = ext_row.insertCell(0);
-            bkb.innerHTML = data.BKB;
-            let kbg = ext_row.insertCell(1);
-            kbg.innerHTML = data.KBG;
-            let hitbox_size = ext_row.insertCell(2);
-            hitbox_size.innerHTML = data.hitbox_size;
-        });
-    }
+// populate table header/row with a collection of data
+function insertRowFromData(table, data, debug = false) {
+    let row = table.insertRow();
+    data.forEach( h => {
+        let cell = row.insertCell(data.indexOf(h));
+        cell.innerHTML = h;
+    });
 }
 
-// format data such as adding units or missing decimals for whole numbers
-function formatFields() {
+// populate info section with overview data
+function parseInfoData(div, movePart) {
+    let hitbox_duration = document.createElement('p');
 
+    hitbox_duration.textContent = "Hitbox Duration: F" + movePart.data.hitbox_start + " - F" + movePart.data.hitbox_end;
+    hitbox_duration.style.textAlign = "center";
+    hitbox_duration.style.fontSize = "16px";
+
+    div.appendChild(hitbox_duration);
+    div.appendChild(document.createElement('br'));
+    div.appendChild(document.createElement('br'));
 }
