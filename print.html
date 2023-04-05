@@ -182,11 +182,15 @@ Beta changelogs:<br>
   </thead>
   <tbody>
     <tr>
+      <td><a href="https://docs.google.com/document/d/1rWgSBXDgdKZLIV9kvXUEqhF0WPvLeQBR8fXWe9pFf7o">0.30.??</a></td>
+      <td>4/??/2023</td>
+    </tr>
+    <tr>
       <td><a href="https://docs.google.com/document/d/1Vtuvw-Z_Cbbbpsia1BRZEhzvQPbnxUeMyXP2U6upugw">0.26.100</a></td>
       <td>2/19/2023</td>
     </tr>
     <tr>
-      <td><a href="https://docs.google.com/document/d/1kFUdtKlywRh4TX32iqGMDzsuw_M8C4NOXzBHe2z5NTw">0.26.37</a></td>
+      <td><a href="https://docs.google.com/document/d/1kFUdtKlywRh4TX32iqGMDzsuw_M8C4NOXzBHe2z5NTw">0.26.40</a></td>
       <td>1/1/2023</td>
     </tr>
     <tr>
@@ -1300,6 +1304,15 @@ Beta changelogs:<br>
 <h2 id="shield-damage"><a class="header" href="#shield-damage">Shield Damage</a></h2>
 <ul>
 <li>How much additional damage a hitbox deals specifically to shields. Negative values will result in the move doing less shield damage than normal</li>
+</ul>
+<h2 id="shield-safety"><a class="header" href="#shield-safety">Shield Safety</a></h2>
+<ul>
+<li>The difference in frames between the attacker and the opponent's actionability when hitting the opponent's shield
+<ul>
+<li>For moves without landing lag, assumes hitting shield with the earliest active frame of the move</li>
+<li>For moves with landing lag, assumes hitting shield the frame before landing</li>
+</ul>
+</li>
 </ul>
 <h2 id="first-actionable-frame-faf"><a class="header" href="#first-actionable-frame-faf">First Actionable Frame (FAF)</a></h2>
 <ul>
@@ -15260,6 +15273,7 @@ Beta changelogs:<br>
 <script src="../../js/arrow.js">
 </script><div style="break-before: page; page-break-before: always;"></div><h1 id="ike"><a class="header" href="#ike">Ike</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="img-srccharactersimagesstock_ikepng-alt--testchar"><a class="header" href="#img-srccharactersimagesstock_ikepng-alt--testchar"><img src="characters/../../images/Stock_Ike.png" alt="" /> TestChar</a></h1>
+<meta name="viewport" content="width=device-width; initial-scale=1.0;">
 <link rel="stylesheet" type="text/css" href="../../style.css">
 <p><img src="characters/../../images/SmashBall.png" alt="" /> <b>Overview</b></p>
 <p class="info">This character is a rushdown swordie with an emphasis on utilizing throws and safe pokes to keep the opponent in disadvantage</p>
@@ -15289,6 +15303,7 @@ Beta changelogs:<br>
 <p>Forward Air</p>
 <div class="charTable">
 </div>
+<br>
 <p>Back Air</p>
 <div class="charTable">
 </div>
@@ -15298,7 +15313,7 @@ Beta changelogs:<br>
 <script type="text/javascript" src="../js/pagebackend.js">
 </script>
 <script type="text/javascript">
-  importFile("./testdata.json");
+  importFile("./../testing/testdata.json");
 </script>
                     </main>
 

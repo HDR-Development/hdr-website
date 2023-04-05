@@ -1,0 +1,143 @@
+{
+  "moveset": [
+    {
+      "move_name": "Forward Air",
+      "data": [
+        {
+          "movepart_name": "Early",
+          "data": {
+            "is_throw": false,
+            "has_on_shield": true,
+            "hitbox_start": 14,
+            "hitbox_end": 15,
+            "faf": 0,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 14.0,
+                "angle": 60,
+                "bkb": 80,
+                "kbg": 60,
+                "hitbox_size": 4.0,
+                "on_shield": 4
+              },
+              {
+                "id": 1,
+                "damage": 4.0,
+                "angle": 25,
+                "bkb": 80,
+                "kbg": 60,
+                "hitbox_size": 5.0
+              }
+            ]
+          }
+        },
+        {
+          "movepart_name": "Late",
+          "data": {
+            "is_throw": true,
+            "has_on_shield": true,
+            "hitbox_start": 16,
+            "hitbox_end": 18,
+            "faf": 42,
+            "hitboxes": [
+              {
+                "id": 2,
+                "damage": 15.0,
+                "angle": 180,
+                "bkb": 70,
+                "fkb": 120,
+                "kbg": 70,
+                "hitbox_size": 3.0,
+                "fa_0": 1,
+                "fa_100": 10
+              },
+              {
+                "id": 3,
+                "damage": 13.9,
+                "angle": 270,
+                "bkb": 70,
+                "kbg": 70,
+                "hitbox_size": 4.0,
+                "on_shield": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "move_name": "Back Air",
+      "data": [
+        {
+          "movepart_name": "Multihits",
+          "data": {
+            "is_throw": false,
+            "has_on_shield": true,
+            "hitbox_start": [
+              10,
+              13,
+              16,
+              19
+            ],
+            "hitbox_end": [
+              12,
+              15,
+              18,
+              21
+            ],
+            "hitboxes": [
+              {
+                "id": 10,
+                "damage": 1407.5,
+                "angle": 361,
+                "bkb": 800,
+                "fkb": 700,
+                "kbg": 600,
+                "hitbox_size": 40.0,
+                "on_shield": -3
+              },
+              {
+                "id": 20,
+                "damage": 141.5,
+                "angle": 360,
+                "bkb": 800,
+                "kbg": 600,
+                "hitbox_size": 50.0
+              }
+            ]
+          }
+        },
+        {
+          "movepart_name": "Launcher",
+          "data": {
+            "is_throw": true,
+            "has_on_shield": true,
+            "hitbox_start": 160,
+            "hitbox_end": 180,
+            "hitboxes": [
+              {
+                "id": 30,
+                "damage": 130.1,
+                "angle": 365,
+                "bkb": 700,
+                "kbg": 700,
+                "hitbox_size": 30.0,
+                "on_shield": -10
+              },
+              {
+                "id": 40,
+                "damage": 130.5,
+                "angle": 325,
+                "bkb": 700,
+                "kbg": 700,
+                "hitbox_size": 40.0,
+                "on_shield": 1
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
