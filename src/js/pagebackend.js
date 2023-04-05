@@ -1,7 +1,7 @@
 $(document).ready(function() {
     // toggle extra table on button click
     $('button.toggle_ext').on('click', function() {
-        var ext_table = $(this).prev()//$(this).parent().children().eq($(this).attr('id'));
+        var ext_table = $(this).prev();
         ext_table.is(":visible") ? $(this).html('Show extra data') : $(this).html('Hide extra data');
         $(this).prev().toggle();
     });
@@ -24,10 +24,15 @@ var importFile = function(fileName) {
             let arrow = $(this);
             let value = $(this).next();
             let angle = value[0].childNodes[0].data;
-            if (angle > 360) {
+            if (angle > 361) {
                 arrow[0].childNodes[0].data = "*";
             }
             else {
+                if (angle == 361) {
+                    arrow[0].childNodes[0].data = "*->";
+                    angle = 44;
+                }
+
                 angle *= -1;
                 arrow.css({'-webkit-transform': 'rotate(' + angle + 'deg)',
                 '-moz-transform': 'rotate(' + angle + 'deg)',
@@ -35,7 +40,6 @@ var importFile = function(fileName) {
                 '-o-transform': 'rotate(' + angle + 'deg)',
                 'transform': 'rotate(' + angle + 'deg)'});
             }
-            
         });
     };
     xmlhttp.open("GET", fileName);
@@ -55,13 +59,11 @@ function constructMoveTables(charJSON) {
             let movePart = move.data[j];
 
             let dataFlags = {
-                "is_grab": movePart.data.is_grab,           // if move is a grab
-                "has_fkb": false,                           // if move has FKB
-                "has_fa": false,                            // if move has documented frame advantage
-                "has_ac": movePart.data.has_ac,             // if move has autocancel windows
-                "has_early_ac":                             // if move has an early autocancel window
-                    movePart.data.autocancel_early_start
-                    && movePart.data.autocancel_early_end,
+                "is_throw": movePart.data.is_throw,             // if move is a throw
+                "has_fkb": false,                               // if move has FKB
+                "has_fa": false,                                // if move has documented frame advantage
+                "has_ac": movePart.data.has_ac,                 // if move has autocancel windows
+                "has_on_shield": movePart.data.has_on_shield,   // if move has documented shield safety (placeholder until formula verified)
             };
 
             // construct move info
@@ -73,7 +75,7 @@ function constructMoveTables(charJSON) {
                 
                 // check if certain data is present
                 dataFlags.has_fkb = (hitbox.fkb && hitbox.fkb != 0) ? true : dataFlags.has_fkb;
-                dataFlags.has_fa = (hitbox.frame_advantage_0 && hitbox.frame_advantage_100) ? true : dataFlags.has_fa;
+                dataFlags.has_fa = (null != hitbox.fa_0 && null != hitbox.fa_100) ? true : dataFlags.has_fa;
 
                 hitboxSets.push(hitbox);
             }
@@ -87,79 +89,22 @@ function constructMoveTables(charJSON) {
             let ext_table_body = document.createElement('tbody');
             ext_table.id = "ext_data";  // used for toggle script
             
-            // construct table header
-            let header_data = [
-                // Hitbox ID,
-                "Damage",
-                "Angle",
-                "BKB",
-                // FKB
-                "KBG",
-                "Hitbox Size",
-            ];
-
-            // add additional fields according to data flags
-            if (!dataFlags.is_grab) {
-                header_data.splice(0, 0, "Hitbox ID");
-            }
-            if (dataFlags.has_fkb) {
-                header_data.splice(3 + !dataFlags.is_grab, 0, "FKB");
-            }
-            insertRowFromData(table_head, header_data, true, false, 1 + !dataFlags.is_grab);
-
-            // construct ext_table header
-            let ext_header_data = [
-                "Hitlag Multiplier",
-                "SDI Multiplier",
-                "Shieldstun Multiplier",
-                "Shield Damage",
-                "Additional Hitstun",
-                // Frame Advantage
-            ];
-            if (dataFlags.has_fa) {
-                header_data.splice(5, 0, "Frame Advantage (0/100%)");
-            }
-            insertRowFromData(ext_table_head, ext_header_data);
+            // construct and populate table headers
+            let header_data = [];
+            let ext_header_data = [];
             
-            // populate hitbox set
+            constructTableHeaders(header_data, ext_header_data, dataFlags);
+            insertRowFromData(table_head, header_data, true, false, 1 + !dataFlags.is_throw);
+            insertRowFromData(ext_table_head, ext_header_data);
+
+            // construct hitbox set
             hitboxSets.forEach( hitbox => {
-                let row_data = [
-                    //hitbox.id,
-                    hitbox.damage + ((/^\d+\.\d$/).test(hitbox.damage) ? '%' : '.0%'),
-                    hitbox.angle,
-                    hitbox.bkb,
-                    // hitbox.fkb
-                    hitbox.kbg,
-                    hitbox.hitbox_size + ((/^\d+\.\d$/).test(hitbox.hitbox_size) ? 'u' : '.0u'),
-                ];
+                let row_data = [];
+                let ext_row_data = [];
 
-                let ext_row_data = [
-                    hitbox.hitlag_mul ? hitbox.hitlag_mul + ((/^\d+\.\d$/).test(hitbox.damage) ? 'x' : '.0x') : "1.0x",
-                    hitbox.sdi_mul ? hitbox.sdi_mul + ((/^\d+\.\d$/).test(hitbox.damage) ? 'x' : '.0x') : "1.0x",
-                    hitbox.shieldstun_mul ? hitbox.shieldstun_mul + ((/^\d+\.\d$/).test(hitbox.damage) ? 'x' : '.0x') : "1.0x",
-                    hitbox.shield_damage ? hitbox.shield_damage : "0",
-                    hitbox.add_hitstun ? hitbox.add_hitstun + "F" : "0F",
-                    // hitbox.frame_advantage
-                ];
-
-                // add additional fields according to data flags
-                if (!dataFlags.is_grab) {
-                    row_data.splice(0, 0, hitbox.id);
-                }
-                if (dataFlags.has_fkb) {
-                    row_data.splice(3 + !dataFlags.is_grab, 0, hitbox.fkb ? hitbox.fkb : "-");
-                }
-                if (dataFlags.has_fa) {
-                    ext_row_data.splice(5, 0, hitbox.frame_advantage_0 ?
-                        hitbox.frame_advantage_0 + "/" + hitbox.frame_advantage_100 + "F" : "-");
-                }
-                //console.log(row_data);
-                //console.log(ext_row_data);
-
-                // populate main table
+                // populate tables
+                populateHitboxSet(row_data, ext_row_data, hitbox, dataFlags);
                 insertRowFromData(table_body, row_data, false, true, header_data.indexOf("Angle"));
-
-                // populate extra table
                 insertRowFromData(ext_table_body, ext_row_data);
 
                 // append table and ext_table to div
@@ -210,17 +155,16 @@ function insertRowFromData(table, data, span_row = false, insert_arrow = false, 
 
 // populate info section with overview data
 function parseInfoData(div, movePart, dataFlags) {
-    if (movePart.name) {
+    if (movePart.movepart_name) {
         let name = document.createElement('p');
-        name.textContent = movePart.name;
-        name.style.fontSize = "16px";
+        name.textContent = movePart.movepart_name;
+        name.style.fontSize = "18px";
         div.appendChild(name);
     }
 
     if (movePart.data.hitbox_start && movePart.data.hitbox_end) {
         let hitbox_duration = document.createElement('p');
-        hitbox_duration.textContent = "Hitbox Duration: F" + movePart.data.hitbox_start + "-" + movePart.data.hitbox_end;
-        //hitbox_duration.style.textAlign = "center";
+        hitbox_duration.textContent = parseFrameWindow(movePart.data.hitbox_start, movePart.data.hitbox_end, "Hitbox Duration");
         hitbox_duration.style.fontSize = "16px";
         div.appendChild(hitbox_duration);
     }
@@ -228,18 +172,13 @@ function parseInfoData(div, movePart, dataFlags) {
     if (movePart.data.faf) {
         let faf = document.createElement('p');
         faf.textContent = "FAF: " + movePart.data.faf;
-        //faf.style.textAlign = "center";
         faf.style.fontSize = "16px";
         div.appendChild(faf);
     }
 
     if (dataFlags.has_ac) {
         let autocancel = document.createElement('p');
-        autocancel.textContent = "Autocancel: F"
-            + dataFlags.has_early_ac ? movePart.data.autocancel_early_start : movePart.data.autocancel_start + "-"
-            + dataFlags.has_early_ac ? movePart.data.autocancel_early_end : movePart.data.autocancel_end
-            + dataFlags.has_early_ac ? "/F" + movePart.data.autocancel_late_start + "-" + movePart.data.autocancel_early_end : "";
-        //autocancel.style.textAlign = "center";
+        autocancel.textContent = parseFrameWindow(movePart.data.autocancel_start, movePart.data.autocancel_end, "Autocancel");
         autocancel.style.fontSize = "16px";
         div.appendChild(autocancel);
     }
@@ -247,10 +186,116 @@ function parseInfoData(div, movePart, dataFlags) {
     if (movePart.data.landing_lag) {
         let landing_lag = document.createElement('p');
         landing_lag.textContent = "Landing Lag: " + movePart.data.landing_lag + "F";
-        //landing_lag.style.textAlign = "center";
         landing_lag.style.fontSize = "16px";
         div.appendChild(landing_lag);
     }
+}
 
-    //div.appendChild(document.createElement('br'));
+// detects fields as single or multiple and formats to a combined ordered string
+function parseFrameWindow(start, end, headerString) {
+    if (start.length && end.length) {
+        let str = headerString + ": F";
+        for(let i = 0; i < start.length; i++) {
+            str += start[i] + "-" + end[i];
+            if (i < start.length - 1) {
+                str += "/F";
+            }
+        }
+        return str;
+    }
+    else {
+        return headerString + ": F" + start + "-" + end;
+    }
+}
+
+function constructTableHeaders(header_data, ext_header_data, dataFlags) {
+    /*
+    *   <Table Header>
+    *   [Hitbox ID]
+    *   Damage
+    *   Angle
+    *   BKB
+    *   [FKB]
+    *   KBG
+    *   Hitbox Size
+    *   Shield Safety
+    */
+
+    if (!dataFlags.is_throw) {
+        header_data.push("Hitbox ID");
+    }
+    header_data.push("Damage", "Angle", "BKB");
+    if (dataFlags.has_fkb) {
+        header_data.push("FKB");
+    }
+    header_data.push("KBG", "Hitbox Size");
+    // placeholder
+    if (dataFlags.has_on_shield) {  
+        header_data.push("On Shield");
+    }
+
+    /*
+    *   <Ext Table Header>
+    *   Hitlag Multiplier
+    *   SDI Multiplier
+    *   Shieldstun Multiplier
+    *   Shield Damage
+    *   Additional Hitstun
+    *   [Frame Advantage]
+    */
+
+    ext_header_data.push(
+        "Hitlag Multiplier",
+        "SDI Multiplier",
+        "Shieldstun Multiplier",
+        "Shield Damage",
+        "Additional Hitstun");
+    if (dataFlags.has_fa) {
+        ext_header_data.push("Frame Advantage (0/100%)");
+    }
+}
+
+function populateHitboxSet(row_data, ext_row_data, hitbox, dataFlags) {
+    if(!dataFlags.is_throw) {
+        row_data.push(hitbox.id);
+    }
+    row_data.push(
+        hitbox.damage + ((/^\d+\.\d$/).test(hitbox.damage) ? '%' : '.0%'),
+        hitbox.angle,
+        hitbox.bkb ? hitbox.bkb : 0,
+    );
+    if (dataFlags.has_fkb) {
+        row_data.push(hitbox.fkb ? hitbox.fkb : 0);
+    }
+    row_data.push(
+        hitbox.kbg ? hitbox.kbg : 0,
+        hitbox.hitbox_size + ((/^\d+\.\d$/).test(hitbox.hitbox_size) ? 'u' : '.0u'),
+    );
+    if (dataFlags.has_on_shield) {
+        // placeholder
+        (null != hitbox.on_shield) ?
+            row_data.push((hitbox.on_shield >= 0 ? "+" : "") + hitbox.on_shield + "F")
+        : row_data.push("-");
+    }
+
+    ext_row_data.push(
+        hitbox.hitlag_mul ? hitbox.hitlag_mul + ((/^\d+\.\d$/).test(hitbox.hitlag_mul) ? 'x' : '.0x') : "1.0x",
+        hitbox.sdi_mul ? hitbox.sdi_mul + ((/^\d+\.\d$/).test(hitbox.sdi_mul) ? 'x' : '.0x') : "1.0x",
+        hitbox.shieldstun_mul ? hitbox.shieldstun_mul + ((/^\d+\.\d$/).test(hitbox.shieldstun_mul) ? 'x' : '.0x') : "1.0x",
+        hitbox.shield_damage ? hitbox.shield_damage : 0,
+        hitbox.add_hitstun ? hitbox.add_hitstun + "F" : "0F",
+    );
+    if (dataFlags.has_fa) {
+        (null != hitbox.fa_0 && null != hitbox.fa_100) ? 
+            ext_row_data.push((hitbox.fa_0 >= 0 ? "+" : "") + hitbox.fa_0 
+            + "/" + (hitbox.fa_100 >= 0 ? "+" : "") + hitbox.fa_100 + "F")
+        : ext_row_data.push("-");
+    }
+    //console.log(row_data);
+    //console.log(ext_row_data);
+}
+
+// use internal shieldstun formula to manually calculate shield safety
+function calculateShieldStun() {
+
 }

@@ -1,5 +1,6 @@
 # ![](../../images/Stock_Ike.png) TestChar
 
+<meta name="viewport" content="width=device-width; initial-scale=1.0;">
 <link rel="stylesheet" type="text/css" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Overview</b>
@@ -32,6 +33,7 @@
 <p>Forward Air</p>
 <div class="charTable">
 </div>
+<br>
 <p>Back Air</p>
 <div class="charTable">
 </div>
@@ -42,5 +44,5 @@
 <script type="text/javascript" src="../js/pagebackend.js">
 </script>
 <script type="text/javascript">
-  importFile("./testdata.json");
+  importFile("./../testing/testdata.json");
 </script>

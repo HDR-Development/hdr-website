@@ -37,11 +37,15 @@ Beta changelogs:<br>
   </thead>
   <tbody>
     <tr>
+      <td><a href="https://docs.google.com/document/d/1rWgSBXDgdKZLIV9kvXUEqhF0WPvLeQBR8fXWe9pFf7o">0.30.??</a></td>
+      <td>4/??/2023</td>
+    </tr>
+    <tr>
       <td><a href="https://docs.google.com/document/d/1Vtuvw-Z_Cbbbpsia1BRZEhzvQPbnxUeMyXP2U6upugw">0.26.100</a></td>
       <td>2/19/2023</td>
     </tr>
     <tr>
-      <td><a href="https://docs.google.com/document/d/1kFUdtKlywRh4TX32iqGMDzsuw_M8C4NOXzBHe2z5NTw">0.26.37</a></td>
+      <td><a href="https://docs.google.com/document/d/1kFUdtKlywRh4TX32iqGMDzsuw_M8C4NOXzBHe2z5NTw">0.26.40</a></td>
       <td>1/1/2023</td>
     </tr>
     <tr>

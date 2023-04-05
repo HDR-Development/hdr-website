@@ -1,0 +1,172 @@
+{
+  "moveset": [
+    {
+      "move_name": "Jab 1",
+      "data": [
+        {}
+      ]
+    },
+    {
+      "move_name": "Jab 2",
+      "data": [
+        {}
+      ]
+    },
+    {
+      "move_name": "Jab 3",
+      "data": [
+        {}
+      ]
+    },
+    {
+      "move_name": "Rapid Jab",
+      "data": [
+        {}
+      ]
+    },
+    {
+      "move_name": "Rapid Jab Finisher",
+      "data": [
+        {}
+      ]
+    },
+    {
+      "move_name": "Forward Tilt",
+      "data": [
+        {}
+      ]
+    },
+    {
+      "move_name": "Up Tilt",
+      "data": [
+        {}
+      ]
+    },
+    {
+      "move_name": "Down Tilt",
+      "data": [
+        {}
+      ]
+    },
+    {
+      "move_name": "Dash Attack",
+      "data": [
+        {}
+      ]
+    },
+    {
+      "move_name": "Forward Smash",
+      "data": [
+        {}
+      ]
+    },
+    {
+      "move_name": "Up Smash",
+      "data": [
+        {}
+      ]
+    },
+    {
+      "move_name": "Down Smash",
+      "data": [
+        {}
+      ]
+    },
+    {
+      "move_name": "Neutral Air",
+      "data": [
+        {}
+      ]
+    },
+    {
+      "move_name": "Forward Air",
+      "data": [
+        {}
+      ]
+    },
+    {
+      "move_name": "Back Air",
+      "data": [
+        {}
+      ]
+    },
+    {
+      "move_name": "Up Air",
+      "data": [
+        {}
+      ]
+    },
+    {
+      "move_name": "Down Air",
+      "data": [
+        {}
+      ]
+    },
+    {
+      "move_name": "Neutral Special",
+      "data": [
+        {}
+      ]
+    },
+    {
+      "move_name": "Side Special",
+      "data": [
+        {}
+      ]
+    },
+    {
+      "move_name": "Up Special",
+      "data": [
+        {}
+      ]
+    },
+    {
+      "move_name": "Down Special",
+      "data": [
+        {}
+      ]
+    },
+    {
+      "move_name": "Standing Grab",
+      "data": [
+        {}
+      ]
+    },
+    {
+      "move_name": "Dash Grab",
+      "data": [
+        {}
+      ]
+    },
+    {
+      "move_name": "Pivot Grab",
+      "data": [
+        {}
+      ]
+    },
+    {
+      "move_name": "Forward Throw",
+      "data": [
+        {}
+      ]
+    },
+    {
+      "move_name": "Back Throw",
+      "data": [
+        {}
+      ]
+    },
+    {
+      "move_name": "Up Throw",
+      "data": [
+        {}
+      ]
+    },
+    {
+      "move_name": "Down Throw",
+      "data": [
+        {}
+      ]
+    }
+  ]
+}

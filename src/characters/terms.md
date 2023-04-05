@@ -38,6 +38,11 @@
 ## Shield Damage
 - How much additional damage a hitbox deals specifically to shields. Negative values will result in the move doing less shield damage than normal
 
+## Shield Safety
+- The difference in frames between the attacker and the opponent's actionability when hitting the opponent's shield
+  - For moves without landing lag, assumes hitting shield with the earliest active frame of the move
+  - For moves with landing lag, assumes hitting shield the frame before landing
+
 ## First Actionable Frame (FAF)
 - The first frame that a character becomes fully actionable after performing a move
 
