@@ -1,5 +1,6 @@
 # ![](../../images/Stock_Ike.png) TestChar
 
+<!DOCTYPE html>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;">
 <link rel="stylesheet" type="text/css" href="../../style.css">
 

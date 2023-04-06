@@ -1,34 +1,40 @@
 {
-  "movepart_name": "",
-  "data": {
-    "is_throw": false,
-    "has_on_shield": false,
-    "hitbox_start": 0,
-    "hitbox_end": 0,
-    "faf": 0,
-    "autocancel_start": 0,
-    "autocancel_end": 0,
-    "jc_frame": 0,
-    "lc_frame": 0,
-    "landing_lag": 0,
-    "hitboxes": [
-      {
-        "id": 0,
-        "damage": 0.0,
-        "angle": 0,
-        "bkb": 0,
-        "fkb": 0,
-        "kbg": 0,
-        "hitlag_mul": 1.0,
-        "sdi_mul": 1.0,
-        "shieldstun_mul": 1.0,
-        "shield_damage": 0,
-        "add_hitstun": 0,
-        "hitbox_size": 0.0,
-        "on_shield": 0,
-        "fa_0": 0,
-        "fa_100": 0
+  "move_name": "New Move",
+  "is_normal": false,
+  "is_smash": false,
+  "is_aerial": false,
+  "data": [
+    {
+      "movepart_name": "",
+      "data": {
+        "is_projectile": false,
+        "is_throw": false,
+        "has_fall": false,
+        "hitbox_start": 0,
+        "hitbox_end": 0,
+        "faf": 0,
+        "autocancel_start": 0,
+        "autocancel_end": 0,
+        "landing_lag": 0,
+        "hitboxes": [
+          {
+            "id": 0,
+            "damage": 0.0,
+            "angle": 0,
+            "bkb": 0,
+            "fkb": 0,
+            "kbg": 0,
+            "hitlag_mul": 1.0,
+            "sdi_mul": 1.0,
+            "shieldstun_mul": 1.0,
+            "shield_damage": 0,
+            "add_hitstun": 0,
+            "hitbox_size": 0.0,
+            "fa_0": 0,
+            "fa_100": 0
+          }
+        ]
       }
-    ]
-  }
+    }
+  ]
 }
