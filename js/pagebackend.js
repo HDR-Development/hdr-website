@@ -59,11 +59,15 @@ function constructMoveTables(charJSON) {
             let movePart = move.data[j];
 
             let dataFlags = {
+                "is_normal": move.is_normal,                    // if move is a normal or special
+                "is_smash": move.is_smash,                      // if move is a smash attack
+                "is_aerial": move.is_aerial,                    // if move is an aerial
+                "is_projectile": movePart.data.is_projectile,   // if move is a projectile
                 "is_throw": movePart.data.is_throw,             // if move is a throw
                 "has_fkb": false,                               // if move has FKB
                 "has_fa": false,                                // if move has documented frame advantage
                 "has_ac": movePart.data.has_ac,                 // if move has autocancel windows
-                "has_on_shield": movePart.data.has_on_shield,   // if move has documented shield safety (placeholder until formula verified)
+                "has_fall": movePart.data.has_fall,             // if move transitions to special fall
             };
 
             // construct move info
@@ -104,6 +108,7 @@ function constructMoveTables(charJSON) {
 
                 // populate tables
                 populateHitboxSet(row_data, ext_row_data, hitbox, dataFlags);
+                calculateShieldSafety(row_data, hitbox, movePart.data.hitbox_start, movePart.data.faf, dataFlags, movePart.data.landing_lag);
                 insertRowFromData(table_body, row_data, false, true, header_data.indexOf("Angle"));
                 insertRowFromData(ext_table_body, ext_row_data);
 
@@ -228,11 +233,7 @@ function constructTableHeaders(header_data, ext_header_data, dataFlags) {
     if (dataFlags.has_fkb) {
         header_data.push("FKB");
     }
-    header_data.push("KBG", "Hitbox Size");
-    // placeholder
-    if (dataFlags.has_on_shield) {  
-        header_data.push("On Shield");
-    }
+    header_data.push("KBG", "Hitbox Size", "On Shield");
 
     /*
     *   <Ext Table Header>
@@ -271,12 +272,7 @@ function populateHitboxSet(row_data, ext_row_data, hitbox, dataFlags) {
         hitbox.kbg ? hitbox.kbg : 0,
         hitbox.hitbox_size + ((/^\d+\.\d$/).test(hitbox.hitbox_size) ? 'u' : '.0u'),
     );
-    if (dataFlags.has_on_shield) {
-        // placeholder
-        (null != hitbox.on_shield) ?
-            row_data.push((hitbox.on_shield >= 0 ? "+" : "") + hitbox.on_shield + "F")
-        : row_data.push("-");
-    }
+    
 
     ext_row_data.push(
         hitbox.hitlag_mul ? hitbox.hitlag_mul + ((/^\d+\.\d$/).test(hitbox.hitlag_mul) ? 'x' : '.0x') : "1.0x",
@@ -296,6 +292,39 @@ function populateHitboxSet(row_data, ext_row_data, hitbox, dataFlags) {
 }
 
 // use internal shieldstun formula to manually calculate shield safety
-function calculateShieldStun() {
+function calculateShieldSafety(row_data, hitbox, start_frame, faf, dataFlags, landing_lag = null) {
+    let shieldstun = calculateShieldStun(hitbox, dataFlags);
+    let start = start_frame.length ? start_frame[0] : start_frame;
 
+    if (!dataFlags.has_fall) {
+        let safety;
+        if (landing_lag > 0) {
+            safety = landing_lag + shieldstun;
+        }
+        else {
+            safety = start - faf + shieldstun + 1.0;
+        }
+        row_data.push((safety >= 0 ? "+" : "") + safety + "F");
+    }
+    else {
+        row_data.push("-");
+    }
+}
+
+function calculateShieldStun(hitbox, dataFlags) {
+    let mul_const = 0.55;
+    let shieldstun_mul = hitbox.shieldstun_mul ? hitbox.shieldstun_mul : 1.0;
+    let calc_mul;
+
+    if (dataFlags.is_smash || dataFlags.is_normal) {
+        calc_mul = 1.0;
+    }
+    else if (dataFlags.is_aerial) {
+        calc_mul = 1.0;
+    }
+    else if (dataFlags.is_projectile) {
+        calc_mul = 0.5156;
+    }
+    
+    return Math.floor((hitbox.damage * mul_const * calc_mul * shieldstun_mul)) + 2.0;
 }

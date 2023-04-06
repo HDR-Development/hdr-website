@@ -1,16 +1,16 @@
 {
   "moveset": [
     {
-      "move_name": "Forward Air",
+      "move_name": "Move 1",
+      "is_normal": true,
       "data": [
         {
           "movepart_name": "Early",
           "data": {
             "is_throw": false,
-            "has_on_shield": true,
             "hitbox_start": 14,
             "hitbox_end": 15,
-            "faf": 0,
+            "faf": 20,
             "hitboxes": [
               {
                 "id": 0,
@@ -18,8 +18,7 @@
                 "angle": 60,
                 "bkb": 80,
                 "kbg": 60,
-                "hitbox_size": 4.0,
-                "on_shield": 4
+                "hitbox_size": 4.0
               },
               {
                 "id": 1,
@@ -36,7 +35,6 @@
           "movepart_name": "Late",
           "data": {
             "is_throw": true,
-            "has_on_shield": true,
             "hitbox_start": 16,
             "hitbox_end": 18,
             "faf": 42,
@@ -58,8 +56,7 @@
                 "angle": 270,
                 "bkb": 70,
                 "kbg": 70,
-                "hitbox_size": 4.0,
-                "on_shield": 0
+                "hitbox_size": 4.0
               }
             ]
           }
@@ -67,13 +64,13 @@
       ]
     },
     {
-      "move_name": "Back Air",
+      "move_name": "Move 2",
+      "is_aerial": true,
       "data": [
         {
           "movepart_name": "Multihits",
           "data": {
             "is_throw": false,
-            "has_on_shield": true,
             "hitbox_start": [
               10,
               13,
@@ -86,6 +83,7 @@
               18,
               21
             ],
+            "faf": 60,
             "hitboxes": [
               {
                 "id": 10,
@@ -94,8 +92,7 @@
                 "bkb": 800,
                 "fkb": 700,
                 "kbg": 600,
-                "hitbox_size": 40.0,
-                "on_shield": -3
+                "hitbox_size": 40.0
               },
               {
                 "id": 20,
@@ -112,9 +109,9 @@
           "movepart_name": "Launcher",
           "data": {
             "is_throw": true,
-            "has_on_shield": true,
             "hitbox_start": 160,
             "hitbox_end": 180,
+            "faf": 200,
             "hitboxes": [
               {
                 "id": 30,
@@ -122,8 +119,7 @@
                 "angle": 365,
                 "bkb": 700,
                 "kbg": 700,
-                "hitbox_size": 30.0,
-                "on_shield": -10
+                "hitbox_size": 30.0
               },
               {
                 "id": 40,
@@ -131,8 +127,7 @@
                 "angle": 325,
                 "bkb": 700,
                 "kbg": 700,
-                "hitbox_size": 40.0,
-                "on_shield": 1
+                "hitbox_size": 40.0
               }
             ]
           }
