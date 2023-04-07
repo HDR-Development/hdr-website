@@ -52,32 +52,44 @@ function constructMoveTables(charJSON) {
 
     for(let i = 0; i < divs.length; i++) {
         let move = charJSON.moveset[i];
+        let dataFlags;
         
         // obtain each hitbox set of the move
         for(let j = 0; j < move.data.length; j++) {
             let hitboxSets = [];
             let movePart = move.data[j];
 
-            let dataFlags = {
-                "is_normal": move.is_normal,                    // if move is a normal or special
-                "is_smash": move.is_smash,                      // if move is a smash attack
-                "is_aerial": move.is_aerial,                    // if move is an aerial
+            dataFlags = {
+                "is_normal": movePart.data.is_normal,           // if move is a normal or special
+                "is_smash": movePart.data.is_smash,             // if move is a smash attack
+                "is_aerial": movePart.data.is_aerial,           // if move is an aerial
                 "is_projectile": movePart.data.is_projectile,   // if move is a projectile
                 "is_throw": movePart.data.is_throw,             // if move is a throw
                 "has_fkb": false,                               // if move has FKB
                 "has_fa": false,                                // if move has documented frame advantage
-                "has_ac": movePart.data.has_ac,                 // if move has autocancel windows
+                "has_ac": move.data[0].data.autocancel_start,   // if move has autocancel windows
                 "has_fall": movePart.data.has_fall,             // if move transitions to special fall
+                //"persisted_faf": 0,                           // if move has parts with different FAF
+                //"persisted_ac_start": 0,                      // if move has parts with different autocancels
+                //"persisted_ac_end": 0,
+                //"persisted_ll": 0,                            // if move has parts with different landing lag
             };
 
-            // construct move info
-            parseInfoData(divs[i], movePart, dataFlags);
+            // check for persisting data
+            //dataFlags.persisted_faf = (!dataFlags.persisted_faf && movePart.data.faf > 0) ? dataFlags.persisted_faf : movePart.data.faf;
+            //dataFlags.persisted_ac_start = (!dataFlags.persisted_ac_start && movePart.data.autocancel_start) ? dataFlags.persisted_ac_start : movePart.data.autocancel_start;
+            //dataFlags.persisted_ac_end = (!dataFlags.persisted_ac_end && movePart.data.autocancel_start) ? dataFlags.persisted_ac_end : movePart.data.autocancel_end;
+            //dataFlags.persisted_ll = (!dataFlags.persisted_ll && movePart.data.landing_lag > 0) ? dataFlags.persisted_ll : movePart.data.landing_lag;
+            //console.log(movePart.movepart_name + " - faf: " + dataFlags.persisted_faf + /*", ac: " + dataFlags.persisted_ac + */ ", ll: " + dataFlags.persisted_ll);
+
+            // construct move header info
+            parseInfoHeaderData(divs[i], movePart, dataFlags);
 
             // obtain individual hitbox data
             for(let x = 0; x < movePart.data.hitboxes.length; x++) {
                 let hitbox = movePart.data.hitboxes[x];
                 
-                // check if certain data is present
+                // set certain data flags
                 dataFlags.has_fkb = (hitbox.fkb && hitbox.fkb != 0) ? true : dataFlags.has_fkb;
                 dataFlags.has_fa = (null != hitbox.fa_0 && null != hitbox.fa_100) ? true : dataFlags.has_fa;
 
@@ -97,7 +109,7 @@ function constructMoveTables(charJSON) {
             let header_data = [];
             let ext_header_data = [];
             
-            constructTableHeaders(header_data, ext_header_data, dataFlags);
+            constructTableHeaders(header_data, ext_header_data, dataFlags, (movePart.data.faf > 0 || movePart.data.landing_lag > 0));
             insertRowFromData(table_head, header_data, true, false, 1 + !dataFlags.is_throw);
             insertRowFromData(ext_table_head, ext_header_data);
 
@@ -108,7 +120,9 @@ function constructMoveTables(charJSON) {
 
                 // populate tables
                 populateHitboxSet(row_data, ext_row_data, hitbox, dataFlags);
-                calculateShieldSafety(row_data, hitbox, movePart.data.hitbox_start, movePart.data.faf, dataFlags, movePart.data.landing_lag);
+                if(!dataFlags.is_throw && (movePart.data.faf > 0 || movePart.data.landing_lag > 0)) {
+                    calculateShieldSafety(row_data, hitbox, movePart.data.hitbox_start, movePart.data.faf, dataFlags, movePart.data.landing_lag);
+                }
                 insertRowFromData(table_body, row_data, false, true, header_data.indexOf("Angle"));
                 insertRowFromData(ext_table_body, ext_row_data);
 
@@ -128,8 +142,11 @@ function constructMoveTables(charJSON) {
             button.textContent = "Show extra data";
             divs[i].appendChild(button);
             divs[i].appendChild(document.createElement('br'));
-            divs[i].appendChild(document.createElement('br'));
         }
+
+        // construct move footer info
+        parseInfoFooterData(divs[i], move.data[0], dataFlags);
+        divs[i].appendChild(document.createElement('br'));
     }
 }
 
@@ -158,8 +175,7 @@ function insertRowFromData(table, data, span_row = false, insert_arrow = false, 
     });
 }
 
-// populate info section with overview data
-function parseInfoData(div, movePart, dataFlags) {
+function parseInfoHeaderData(div, movePart, dataFlags) {
     if (movePart.movepart_name) {
         let name = document.createElement('p');
         name.textContent = movePart.movepart_name;
@@ -167,13 +183,37 @@ function parseInfoData(div, movePart, dataFlags) {
         div.appendChild(name);
     }
 
-    if (movePart.data.hitbox_start && movePart.data.hitbox_end) {
+    if (movePart.data.hitbox_start) {
         let hitbox_duration = document.createElement('p');
         hitbox_duration.textContent = parseFrameWindow(movePart.data.hitbox_start, movePart.data.hitbox_end, "Hitbox Duration");
         hitbox_duration.style.fontSize = "16px";
         div.appendChild(hitbox_duration);
     }
 
+    // if (!dataFlags.persisted_faf && movePart.data.faf) {
+    //     let faf = document.createElement('p');
+    //     faf.textContent = "FAF: " + movePart.data.faf;
+    //     faf.style.fontSize = "16px";
+    //     div.appendChild(faf);
+    // }
+
+    // if (!dataFlags.persisted_ac && dataFlags.has_ac) {
+    //     let autocancel = document.createElement('p');
+    //     autocancel.textContent = parseFrameWindow(movePart.data.autocancel_start, movePart.data.autocancel_end, "Autocancel");
+    //     autocancel.style.fontSize = "16px";
+    //     div.appendChild(autocancel);
+    // }
+
+    // if (!dataFlags.persisted_ll && movePart.data.landing_lag) {
+    //     let landing_lag = document.createElement('p');
+    //     landing_lag.textContent = "Landing Lag: " + movePart.data.landing_lag + "F";
+    //     landing_lag.style.fontSize = "16px";
+    //     div.appendChild(landing_lag);
+    // }
+}
+
+// populate info section with overview data
+function parseInfoFooterData(div, movePart, dataFlags) {
     if (movePart.data.faf) {
         let faf = document.createElement('p');
         faf.textContent = "FAF: " + movePart.data.faf;
@@ -196,24 +236,39 @@ function parseInfoData(div, movePart, dataFlags) {
     }
 }
 
-// detects fields as single or multiple and formats to a combined ordered string
-function parseFrameWindow(start, end, headerString) {
-    if (start.length && end.length) {
-        let str = headerString + ": F";
-        for(let i = 0; i < start.length; i++) {
-            str += start[i] + "-" + end[i];
-            if (i < start.length - 1) {
-                str += "/F";
+// detects durations as single or multiple and formats to a combined ordered string
+function parseFrameWindow(start, end = false, headerString) {
+    if (end) {
+        if (start.length && end.length) {   // multiple durations
+            let str = headerString + ": F";
+            for(let i = 0; i < start.length; i++) {
+                if (end[i]) {
+                    if (start[i] != end[i]) {   // duration of more than one frame
+                        str += start[i] + "-" + end[i];
+                    }
+                    else {  // duration of one frame
+                        str += start[i];
+                    }
+                    if (i < start.length - 1) { // if not final duration
+                        str += "/F";
+                    }
+                }
+                else {  // open autocancel
+                    str += start[i] + "+";
+                }
             }
+            return str;
         }
-        return str;
+        else {  // single duration of more than one frame
+            return headerString + ": F" + start + "-" + end;
+        }
     }
-    else {
-        return headerString + ": F" + start + "-" + end;
+    else {  // single duration of one frame
+        return headerString + ": F" + start;
     }
 }
 
-function constructTableHeaders(header_data, ext_header_data, dataFlags) {
+function constructTableHeaders(header_data, ext_header_data, dataFlags, has_faf = false) {
     /*
     *   <Table Header>
     *   [Hitbox ID]
@@ -229,11 +284,17 @@ function constructTableHeaders(header_data, ext_header_data, dataFlags) {
     if (!dataFlags.is_throw) {
         header_data.push("Hitbox ID");
     }
-    header_data.push("Damage", "Angle", "BKB");
-    if (dataFlags.has_fkb) {
+    header_data.push("Damage", "Angle");
+    if (!dataFlags.has_fkb) {
+        header_data.push("BKB");
+    }
+    else {
         header_data.push("FKB");
     }
-    header_data.push("KBG", "Hitbox Size", "On Shield");
+    header_data.push("KBG", "Hitbox Size");
+    if(!dataFlags.is_throw && has_faf) {
+        header_data.push("On Shield");
+    }
 
     /*
     *   <Ext Table Header>
@@ -258,27 +319,28 @@ function constructTableHeaders(header_data, ext_header_data, dataFlags) {
 
 function populateHitboxSet(row_data, ext_row_data, hitbox, dataFlags) {
     if(!dataFlags.is_throw) {
-        row_data.push(hitbox.id);
+        row_data.push(hitbox.id.toString());
     }
     row_data.push(
-        hitbox.damage + ((/^\d+\.\d$/).test(hitbox.damage) ? '%' : '.0%'),
-        hitbox.angle,
-        hitbox.bkb ? hitbox.bkb : 0,
+        hitbox.damage + ((/^\d+\.\d+$/).test(hitbox.damage) ? '%' : '.0%'),
+        hitbox.angle.toString(),
     );
+    if (hitbox.bkb > 0) {
+        row_data.push(hitbox.bkb ? hitbox.bkb.toString() : 0);
+    }
     if (dataFlags.has_fkb) {
-        row_data.push(hitbox.fkb ? hitbox.fkb : 0);
+        row_data.push(hitbox.fkb ? hitbox.fkb.toString() : 0);
     }
     row_data.push(
-        hitbox.kbg ? hitbox.kbg : 0,
-        hitbox.hitbox_size + ((/^\d+\.\d$/).test(hitbox.hitbox_size) ? 'u' : '.0u'),
+        hitbox.kbg ? hitbox.kbg.toString() : 0,
+        hitbox.hitbox_size + ((/^\d+\.\d+$/).test(hitbox.hitbox_size) ? 'u' : '.0u'),
     );
-    
 
     ext_row_data.push(
-        hitbox.hitlag_mul ? hitbox.hitlag_mul + ((/^\d+\.\d$/).test(hitbox.hitlag_mul) ? 'x' : '.0x') : "1.0x",
-        hitbox.sdi_mul ? hitbox.sdi_mul + ((/^\d+\.\d$/).test(hitbox.sdi_mul) ? 'x' : '.0x') : "1.0x",
-        hitbox.shieldstun_mul ? hitbox.shieldstun_mul + ((/^\d+\.\d$/).test(hitbox.shieldstun_mul) ? 'x' : '.0x') : "1.0x",
-        hitbox.shield_damage ? hitbox.shield_damage : 0,
+        hitbox.hitlag_mul ? hitbox.hitlag_mul + ((/^\d+\.\d+$/).test(hitbox.hitlag_mul) ? 'x' : '.0x') : "1.0x",
+        hitbox.sdi_mul ? hitbox.sdi_mul + ((/^\d+\.\d+$/).test(hitbox.sdi_mul) ? 'x' : '.0x') : "1.0x",
+        hitbox.shieldstun_mul ? hitbox.shieldstun_mul + ((/^\d+\.\d+$/).test(hitbox.shieldstun_mul) ? 'x' : '.0x') : "1.0x",
+        hitbox.shield_damage ? hitbox.shield_damage.toString() : 0,
         hitbox.add_hitstun ? hitbox.add_hitstun + "F" : "0F",
     );
     if (dataFlags.has_fa) {
@@ -292,17 +354,18 @@ function populateHitboxSet(row_data, ext_row_data, hitbox, dataFlags) {
 }
 
 // use internal shieldstun formula to manually calculate shield safety
-function calculateShieldSafety(row_data, hitbox, start_frame, faf, dataFlags, landing_lag = null) {
+function calculateShieldSafety(row_data, hitbox, start_frame, faf = null, dataFlags, landing_lag = null) {
     let shieldstun = calculateShieldStun(hitbox, dataFlags);
     let start = start_frame.length ? start_frame[0] : start_frame;
+    let shieldstun_offset = hitbox.shieldstun_mul == 1.0 ? 1.0 : 0.0;
 
     if (!dataFlags.has_fall) {
         let safety;
         if (landing_lag > 0) {
-            safety = landing_lag + shieldstun;
+            safety = (landing_lag * -1.0) + shieldstun;
         }
         else {
-            safety = start - faf + shieldstun + 1.0;
+            safety = start - faf + shieldstun + shieldstun_offset;
         }
         row_data.push((safety >= 0 ? "+" : "") + safety + "F");
     }
