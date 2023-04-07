@@ -1,12 +1,12 @@
 {
   "move_name": "New Move",
-  "is_normal": false,
-  "is_smash": false,
-  "is_aerial": false,
   "data": [
     {
       "movepart_name": "",
       "data": {
+        "is_normal": false,
+        "is_smash": false,
+        "is_aerial": false,
         "is_projectile": false,
         "is_throw": false,
         "has_fall": false,

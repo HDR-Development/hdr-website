@@ -127,24 +127,6 @@
       ]
     },
     {
-      "move_name": "Standing Grab",
-      "data": [
-        {}
-      ]
-    },
-    {
-      "move_name": "Dash Grab",
-      "data": [
-        {}
-      ]
-    },
-    {
-      "move_name": "Pivot Grab",
-      "data": [
-        {}
-      ]
-    },
-    {
       "move_name": "Forward Throw",
       "data": [
         {}

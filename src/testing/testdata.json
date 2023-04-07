@@ -2,11 +2,11 @@
   "moveset": [
     {
       "move_name": "Move 1",
-      "is_normal": true,
       "data": [
         {
           "movepart_name": "Early",
           "data": {
+            "is_normal": true,
             "is_throw": false,
             "hitbox_start": 14,
             "hitbox_end": 15,
@@ -65,11 +65,11 @@
     },
     {
       "move_name": "Move 2",
-      "is_aerial": true,
       "data": [
         {
           "movepart_name": "Multihits",
           "data": {
+            "is_aerial": true,
             "is_throw": false,
             "hitbox_start": [
               10,
