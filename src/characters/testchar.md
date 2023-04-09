@@ -67,4 +67,3 @@
 <script type="text/javascript">
   importFile("./../testing/data_mario.json");
 </script>
-<script type="text.javascript" src="../js/onpageload.js"></script>
