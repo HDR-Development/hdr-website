@@ -23,7 +23,6 @@ var importFile = function(fileName) {
                     arrow[0].childNodes[0].data = "*->";
                     angle = 44;
                 }
-
                 angle *= -1;
                 arrow.css({'-webkit-transform': 'rotate(' + angle + 'deg)',
                 '-moz-transform': 'rotate(' + angle + 'deg)',
