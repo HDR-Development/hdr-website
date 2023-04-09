@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;">
-<link rel="stylesheet" type="text/css" href="../../style.css">
+<link rel="stylesheet" type="text/css" href="../style.css">
 
 ![](../../images/SmashBall.png) <b>Overview</b>
 <p class="info">This character is a rushdown swordie with an emphasis on utilizing throws and safe pokes to keep the opponent in disadvantage</p>
