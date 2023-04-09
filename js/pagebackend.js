@@ -1,14 +1,10 @@
 $(document).ready(function() {
-    console.log("DOM ready");
-    window.onload = function() {
-        // toggle extra table on button click
-        $('button.toggle_ext').on('click', function() {
-            console.log("window loaded");
-            var ext_table = $(this).prev();
-            ext_table.is(":visible") ? $(this).html('Show extra data') : $(this).html('Hide extra data');
-            $(this).prev().toggle();
-        });
-    };
+    // toggle extra table on button click
+    $('button.toggle_ext').on('click', function() {
+        var ext_table = $(this).prev();
+        ext_table.is(":visible") ? $(this).html('Show extra data') : $(this).html('Hide extra data');
+        $(this).prev().toggle();
+    });
 });
 
 // import the JSON file
