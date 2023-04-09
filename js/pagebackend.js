@@ -1,12 +1,3 @@
-$(document).ready(function() {
-    // toggle extra table on button click
-    $('button.toggle_ext').on('click', function() {
-        var ext_table = $(this).prev();
-        ext_table.is(":visible") ? $(this).html('Show extra data') : $(this).html('Hide extra data');
-        $(this).prev().toggle();
-    });
-});
-
 // import the JSON file
 var importFile = function(fileName) {
     const xmlhttp = new XMLHttpRequest();
@@ -39,6 +30,15 @@ var importFile = function(fileName) {
                 '-o-transform': 'rotate(' + angle + 'deg)',
                 'transform': 'rotate(' + angle + 'deg)'});
             }
+        });
+        console.log("test");
+
+        // toggle extra table on button click
+        $('button.toggle_ext').on('click', function() {
+            console.log("test2");
+            var ext_table = $(this).prev();
+            ext_table.is(":visible") ? $(this).html('Show extra data') : $(this).html('Hide extra data');
+            $(this).prev().toggle();
         });
     };
     xmlhttp.open("GET", fileName);
