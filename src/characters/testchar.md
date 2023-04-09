@@ -1,4 +1,4 @@
-# ![](../../images/Stock_Ike.png) TestChar
+# ![](../images/Stock_Ike.png) TestChar
 
 <!DOCTYPE html>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;">
