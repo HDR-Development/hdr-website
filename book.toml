@@ -3,10 +3,10 @@ authors = ["Askew"]
 language = "en"
 multilingual = false
 src = "src"
-title = "HDR Master Changelog"
+title = "HDR Data"
 
 [output.html]
-site-url = "/hdr-changelog/"
+site-url = "/hdr-data/"
 default-theme = "ayu"
 copy-fonts = true
 

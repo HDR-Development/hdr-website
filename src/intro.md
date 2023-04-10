@@ -10,19 +10,19 @@ Created by The HDR Dev Team <br>
 </b></i>
 </div>
 <div style="text-align:center;font-size:125%;font-family:Verdana">
-<i>Changelog made by Askew</i><br>
+<i>Website made by Askew</i><br>
 </div>
 <div style="text-align:center;font-size:115%;font-family:Verdana">
 <i>Legacy Contributors: Gabe, JOB, Sergio C.</i><br><br>
 </div>
 <h1 style="text-align:center;font-size:325%;font-family:Verdana">
-<u>Master Changelog</u>
+<u>HDR Data</u>
 </h1>
 <div style="text-align:center;font-size:150%">
-Current release version: <span style="color:limegreen">v0.26.100</span>
+Current release version: <span style="color:limegreen">v0.30.40</span>
 </div>
 <div style="text-align:center;font-size:150%">
-Current changelog version: <span style="color:green">v0.26.100</span>
+Current site version: <span style="color:green">v0.26.100</span>
 </div>
 <br><br><br>
 <div style="text-align:center;font-size:140%">
@@ -37,8 +37,8 @@ Beta changelogs:<br>
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://docs.google.com/document/d/1rWgSBXDgdKZLIV9kvXUEqhF0WPvLeQBR8fXWe9pFf7o">0.30.??</a></td>
-      <td>4/??/2023</td>
+      <td><a href="https://docs.google.com/document/d/1rWgSBXDgdKZLIV9kvXUEqhF0WPvLeQBR8fXWe9pFf7o">0.30.40</a></td>
+      <td>4/9/2023</td>
     </tr>
     <tr>
       <td><a href="https://docs.google.com/document/d/1Vtuvw-Z_Cbbbpsia1BRZEhzvQPbnxUeMyXP2U6upugw">0.26.100</a></td>

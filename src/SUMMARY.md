@@ -1,6 +1,6 @@
 # Summary
 
-[Introduction](intro.md)
+[Home](intro.md)
 
 - [Engine Changes]()
   - [Mechanics](./engine/mechanics.md)
@@ -22,10 +22,10 @@
   - [Extra Modes](./system/modes.md)
   - [Online](./system/online.md)
 
-- [Stage Changes]()
+- [Stages]()
   - [Stages]()
 
-- [Character Changes]()
+- [Character Pages]()
   - [Overview](./characters/characterlist.md)
   - [Terms](./characters/terms.md)
   - [Smash 64]()
