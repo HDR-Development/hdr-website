@@ -44,6 +44,9 @@
         {
           "movepart_name": "Jablock",
           "data": {
+            "is_lock": true,
+            "hitbox_start": 2,
+            "hitbox_end": 4,
             "hitboxes": [
               {
                 "id": 3,
@@ -124,6 +127,9 @@
         {
           "movepart_name": "Jablock",
           "data": {
+            "is_lock": true,
+            "hitbox_start": 2,
+            "hitbox_end": 4,
             "hitboxes": [
               {
                 "id": 3,
@@ -233,9 +239,6 @@
           "movepart_name": "Mid",
           "data": {
             "is_normal": true,
-            "hitbox_start": 5,
-            "hitbox_end": 7,
-            "faf": 26,
             "hitboxes": [
               {
                 "id": 0,
@@ -268,9 +271,6 @@
           "movepart_name": "Low",
           "data": {
             "is_normal": true,
-            "hitbox_start": 5,
-            "hitbox_end": 7,
-            "faf": 26,
             "hitboxes": [
               {
                 "id": 0,
@@ -345,7 +345,6 @@
             "is_normal": true,
             "hitbox_start": 7,
             "hitbox_end": 11,
-            "faf": 30,
             "hitboxes": [
               {
                 "id": 0,
@@ -458,7 +457,6 @@
             "is_normal": true,
             "hitbox_start": 10,
             "hitbox_end": 25,
-            "faf": 38,
             "hitboxes": [
               {
                 "id": 0,
@@ -527,9 +525,6 @@
           "movepart_name": "Mid",
           "data": {
             "is_normal": true,
-            "hitbox_start": 15,
-            "hitbox_end": 17,
-            "faf": 48,
             "hitboxes": [
               {
                 "id": 0,
@@ -562,9 +557,6 @@
           "movepart_name": "Low",
           "data": {
             "is_normal": true,
-            "hitbox_start": 15,
-            "hitbox_end": 17,
-            "faf": 48,
             "hitboxes": [
               {
                 "id": 0,
@@ -663,7 +655,6 @@
             "is_normal": true,
             "hitbox_start": 14,
             "hitbox_end": 15,
-            "faf": 45,
             "hitboxes": [
               {
                 "id": 0,
@@ -729,7 +720,6 @@
             "is_aerial": true,
             "hitbox_start": 6,
             "hitbox_end": 28,
-            "landing_lag": 7,
             "hitboxes": [
               {
                 "id": 0,
@@ -795,7 +785,6 @@
             "is_aerial": true,
             "hitbox_start": 18,
             "hitbox_end": 21,
-            "landing_lag": 11,
             "hitboxes": [
               {
                 "id": 0,
@@ -823,7 +812,6 @@
           "data": {
             "is_aerial": true,
             "hitbox_start": 22,
-            "landing_lag": 11,
             "hitboxes": [
               {
                 "id": 0,
@@ -891,7 +879,6 @@
             "is_aerial": true,
             "hitbox_start": 9,
             "hitbox_end": 16,
-            "landing_lag": 7,
             "hitboxes": [
               {
                 "id": 0,
@@ -957,7 +944,6 @@
             "is_aerial": true,
             "hitbox_start": 8,
             "hitbox_end": 9,
-            "landing_lag": 7,
             "hitboxes": [
               {
                 "id": 0,
@@ -1040,7 +1026,6 @@
             "is_aerial": true,
             "hitbox_start": 30,
             "hitbox_end": 31,
-            "landing_lag": 12,
             "hitboxes": [
               {
                 "id": 0,
@@ -1059,7 +1044,59 @@
     {
       "move_name": "Neutral Special",
       "data": [
-        {}
+        {
+          "movepart_name": "Fireball",
+          "data": {
+            "is_projectile": true,
+            "hitbox_start": 17,
+            "hitbox_end": 86,
+            "faf": 41,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 6.5,
+                "angle": 361,
+                "bkb": 0,
+                "kbg": 0,
+                "hitlag_mul": 1.0,
+                "sdi_mul": 1.0,
+                "shieldstun_mul": 1.0,
+                "shield_damage": 0,
+                "add_hitstun": 0,
+                "hitbox_size": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "movepart_name": "Firebrand",
+          "data": {
+            "is_normal": true,
+            "hitbox_start": 18,
+            "hitbox_end": 22,
+            "faf": 47,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 12.0,
+                "angle": 50,
+                "bkb": 50,
+                "kbg": 115,
+                "hitlag_mul": 1.2,
+                "hitbox_size": 6.5
+              },
+              {
+                "id": 1,
+                "damage": 12.0,
+                "angle": 50,
+                "bkb": 50,
+                "kbg": 115,
+                "hitlag_mul": 1.2,
+                "hitbox_size": 3.5
+              }
+            ]
+          }
+        }
       ]
     },
     {

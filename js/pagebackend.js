@@ -62,22 +62,20 @@ function constructMoveTables(charJSON) {
                 "is_aerial": movePart.data.is_aerial,           // if move is an aerial
                 "is_projectile": movePart.data.is_projectile,   // if move is a projectile
                 "is_throw": movePart.data.is_throw,             // if move is a throw
+                "is_lock": movePart.data.is_lock,               // if move is a jablock
                 "has_fkb": false,                               // if move has FKB
                 "has_fa": false,                                // if move has documented frame advantage
-                "has_ac": move.data[0].data.autocancel_start,   // if move has autocancel windows
+                "has_ac": movePart.data.autocancel_start,       // if move has autocancel windows
                 "has_fall": movePart.data.has_fall,             // if move transitions to special fall
-                //"persisted_faf": 0,                           // if move has parts with different FAF
-                //"persisted_ac_start": 0,                      // if move has parts with different autocancels
-                //"persisted_ac_end": 0,
-                //"persisted_ll": 0,                            // if move has parts with different landing lag
+                "split_faf": false,                             // if move has parts with different FAF
+                "split_ac": false,                              // if move has parts with different autocancels
+                "split_ll": false,                              // if move has parts with different landing lag
             };
 
-            // check for persisting data
-            //dataFlags.persisted_faf = (!dataFlags.persisted_faf && movePart.data.faf > 0) ? dataFlags.persisted_faf : movePart.data.faf;
-            //dataFlags.persisted_ac_start = (!dataFlags.persisted_ac_start && movePart.data.autocancel_start) ? dataFlags.persisted_ac_start : movePart.data.autocancel_start;
-            //dataFlags.persisted_ac_end = (!dataFlags.persisted_ac_end && movePart.data.autocancel_start) ? dataFlags.persisted_ac_end : movePart.data.autocancel_end;
-            //dataFlags.persisted_ll = (!dataFlags.persisted_ll && movePart.data.landing_lag > 0) ? dataFlags.persisted_ll : movePart.data.landing_lag;
-            //console.log(movePart.movepart_name + " - faf: " + dataFlags.persisted_faf + /*", ac: " + dataFlags.persisted_ac + */ ", ll: " + dataFlags.persisted_ll);
+            // copy persisting info data
+            if (j < move.data.length - 1) {
+                AddPersistDataFields(movePart, move.data[j + 1], dataFlags);
+            }
 
             // construct move header info
             parseInfoHeaderData(divs[i], movePart, dataFlags);
@@ -117,7 +115,7 @@ function constructMoveTables(charJSON) {
 
                 // populate tables
                 populateHitboxSet(row_data, ext_row_data, hitbox, dataFlags);
-                if(!dataFlags.is_throw && (movePart.data.faf > 0 || movePart.data.landing_lag > 0)) {
+                if(!dataFlags.is_throw && !dataFlags.is_lock && (movePart.data.faf > 0 || movePart.data.landing_lag > 0)) {
                     calculateShieldSafety(row_data, hitbox, movePart.data.hitbox_start, movePart.data.faf, dataFlags, movePart.data.landing_lag);
                 }
                 insertRowFromData(table_body, row_data, false, true, header_data.indexOf("Angle"));
@@ -139,10 +137,15 @@ function constructMoveTables(charJSON) {
             button.textContent = "Show extra data";
             divs[i].appendChild(button);
             divs[i].appendChild(document.createElement('br'));
+
+            // display any non-persisting footer data
+            if (j < move.data.length - 1) {
+                parseInfoPartialFooterData(divs[i], movePart, dataFlags);
+            }
         }
 
         // construct move footer info
-        parseInfoFooterData(divs[i], move.data[0], dataFlags);
+        parseInfoFooterData(divs[i], move.data[move.data.length - 1], dataFlags);
         divs[i].appendChild(document.createElement('br'));
     }
 }
@@ -172,7 +175,47 @@ function insertRowFromData(table, data, span_row = false, insert_arrow = false, 
     });
 }
 
-function parseInfoHeaderData(div, movePart, dataFlags) {
+// copies over persisting info data
+function AddPersistDataFields(movePart, moveNext, dataFlags) {
+    if (!moveNext.data.hitbox_start && movePart.data.hitbox_start) {
+        moveNext.data["hitbox_start"] = movePart.data.hitbox_start;
+    }
+    if (!moveNext.data.hitbox_end && movePart.data.hitbox_end) {
+        moveNext.data["hitbox_end"] = movePart.data.hitbox_end;
+    }
+
+    if (!moveNext.data.faf && movePart.data.faf) {
+        moveNext.data["faf"] = movePart.data.faf;
+        dataFlags.has_faf = true;
+    }
+    else if (moveNext.data.faf != movePart.data.faf) {
+        dataFlags.split_faf = true;
+    }
+
+    if (!moveNext.data.autocancel_start && movePart.data.autocancel_start) {
+        moveNext.data["autocancel_start"] = movePart.data.autocancel_start;
+        dataFlags.has_ac = true;
+    }
+    else if (moveNext.data.autocancel_start != movePart.data.autocancel_start) {
+        dataFlags.split_ac = true;
+    }
+    if (!moveNext.data.autocancel_end && movePart.data.autocancel_end) {
+        moveNext.data["autocancel_end"] = movePart.data.autocancel_end;
+        dataFlags.has_ac = true;
+    }
+    else if (moveNext.data.autocancel_end != movePart.data.autocancel_end) {
+        dataFlags.split_ac = true;
+    }
+
+    if (!moveNext.data.landing_lag && movePart.data.landing_lag) {
+        moveNext.data["landing_lag"] = movePart.data.landing_lag;
+    }
+    else if (moveNext.data.landing_lag != movePart.data.landing_lag) {
+        dataFlags.split_ll = true;
+    }
+}
+
+function parseInfoHeaderData(div, movePart) {
     if (movePart.movepart_name) {
         let name = document.createElement('p');
         name.textContent = movePart.movepart_name;
@@ -186,27 +229,6 @@ function parseInfoHeaderData(div, movePart, dataFlags) {
         hitbox_duration.style.fontSize = "16px";
         div.appendChild(hitbox_duration);
     }
-
-    // if (!dataFlags.persisted_faf && movePart.data.faf) {
-    //     let faf = document.createElement('p');
-    //     faf.textContent = "FAF: " + movePart.data.faf;
-    //     faf.style.fontSize = "16px";
-    //     div.appendChild(faf);
-    // }
-
-    // if (!dataFlags.persisted_ac && dataFlags.has_ac) {
-    //     let autocancel = document.createElement('p');
-    //     autocancel.textContent = parseFrameWindow(movePart.data.autocancel_start, movePart.data.autocancel_end, "Autocancel");
-    //     autocancel.style.fontSize = "16px";
-    //     div.appendChild(autocancel);
-    // }
-
-    // if (!dataFlags.persisted_ll && movePart.data.landing_lag) {
-    //     let landing_lag = document.createElement('p');
-    //     landing_lag.textContent = "Landing Lag: " + movePart.data.landing_lag + "F";
-    //     landing_lag.style.fontSize = "16px";
-    //     div.appendChild(landing_lag);
-    // }
 }
 
 // populate info section with overview data
@@ -233,9 +255,35 @@ function parseInfoFooterData(div, movePart, dataFlags) {
     }
 }
 
+// for use with split movepart data
+function parseInfoPartialFooterData(div, movePart, dataFlags) {
+    if (dataFlags.split_faf && movePart.data.faf) {
+        let faf = document.createElement('p');
+        faf.textContent = "FAF: " + movePart.data.faf;
+        faf.style.fontSize = "16px";
+        div.appendChild(faf);
+    }
+
+    if (dataFlags.split_ac && dataFlags.has_ac) {
+        let autocancel = document.createElement('p');
+        autocancel.textContent = parseFrameWindow(movePart.data.autocancel_start, movePart.data.autocancel_end, "Autocancel");
+        autocancel.style.fontSize = "16px";
+        div.appendChild(autocancel);
+    }
+
+    if (dataFlags.split_ll && movePart.data.landing_lag) {
+        let landing_lag = document.createElement('p');
+        landing_lag.textContent = "Landing Lag: " + movePart.data.landing_lag + "F";
+        landing_lag.style.fontSize = "16px";
+        div.appendChild(landing_lag);
+    }
+
+    div.appendChild(document.createElement('br'));
+}
+
 // detects durations as single or multiple and formats to a combined ordered string
 function parseFrameWindow(start, end = false, headerString) {
-    if (end) {
+    if (end && start != end) {
         if (start.length && end.length) {   // multiple durations
             let str = headerString + ": F";
             for(let i = 0; i < start.length; i++) {
@@ -289,7 +337,7 @@ function constructTableHeaders(header_data, ext_header_data, dataFlags, has_faf 
         header_data.push("FKB");
     }
     header_data.push("KBG", "Hitbox Size");
-    if(!dataFlags.is_throw && has_faf) {
+    if(!dataFlags.is_throw && !dataFlags.is_lock && has_faf) {
         header_data.push("On Shield");
     }
 
@@ -322,10 +370,10 @@ function populateHitboxSet(row_data, ext_row_data, hitbox, dataFlags) {
         hitbox.damage + ((/^\d+\.\d+$/).test(hitbox.damage) ? '%' : '.0%'),
         hitbox.angle.toString(),
     );
-    if (hitbox.bkb > 0) {
+    if (!dataFlags.has_fkb) {
         row_data.push(hitbox.bkb ? hitbox.bkb.toString() : 0);
     }
-    if (dataFlags.has_fkb) {
+    else {
         row_data.push(hitbox.fkb ? hitbox.fkb.toString() : 0);
     }
     row_data.push(

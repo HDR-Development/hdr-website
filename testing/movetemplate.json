@@ -9,6 +9,7 @@
         "is_aerial": false,
         "is_projectile": false,
         "is_throw": false,
+        "is_lock":  false,
         "has_fall": false,
         "hitbox_start": 0,
         "hitbox_end": 0,
