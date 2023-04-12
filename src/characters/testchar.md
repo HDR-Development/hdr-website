@@ -60,6 +60,8 @@
 <p>Up Air</p><div class="charTable"></div>
 <br>
 <p>Down Air</p><div class="charTable"></div>
+<br>
+<p>Fireball / Firebrand</p><div class="charTable"></div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script src="../js/arrow.js"></script>
