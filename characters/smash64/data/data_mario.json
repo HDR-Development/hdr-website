@@ -688,7 +688,8 @@
             "hitbox_end": 5,
             "faf": 46,
             "autocancel_start": [
-              1, 36
+              1,
+              36
             ],
             "autocancel_end": [
               2
@@ -753,7 +754,8 @@
             "hitbox_end": 17,
             "faf": 46,
             "autocancel_start": [
-              1, 43
+              1,
+              43
             ],
             "autocancel_end": [
               2
@@ -847,7 +849,8 @@
             "hitbox_end": 8,
             "faf": 35,
             "autocancel_start": [
-              1, 24
+              1,
+              24
             ],
             "autocancel_end": [
               5
@@ -912,7 +915,8 @@
             "hitbox_end": 7,
             "faf": 36,
             "autocancel_start": [
-              1, 17
+              1,
+              17
             ],
             "autocancel_end": [
               3
@@ -1042,48 +1046,76 @@
       ]
     },
     {
-      "move_name": "Neutral Special",
+      "move_name": "Neutral Special (Fireball)",
       "data": [
         {
-          "movepart_name": "Fireball",
+          "movepart_name": "Fireball (early/mid/late)",
           "data": {
             "is_projectile": true,
-            "hitbox_start": 17,
-            "hitbox_end": 86,
+            "hitbox_start": [
+              18,
+              21,
+              51
+            ],
+            "hitbox_end": [
+              20,
+              50,
+              86
+            ],
             "faf": 41,
             "hitboxes": [
               {
                 "id": 0,
                 "damage": 6.5,
                 "angle": 361,
-                "bkb": 0,
-                "kbg": 0,
-                "hitlag_mul": 1.0,
-                "sdi_mul": 1.0,
-                "shieldstun_mul": 1.0,
-                "shield_damage": 0,
-                "add_hitstun": 0,
-                "hitbox_size": 0.0
+                "bkb": 20,
+                "kbg": 35,
+                "shield_damage": -2.5,
+                "hitbox_size": 2.5
+              },
+              {
+                "id": 0,
+                "damage": 6.5,
+                "angle": 361,
+                "bkb": 20,
+                "kbg": 25,
+                "shield_damage": -2.5,
+                "hitbox_size": 2.5
+              },
+              {
+                "id": 0,
+                "damage": 5.0,
+                "angle": 361,
+                "bkb": 20,
+                "kbg": 22,
+                "shield_damage": -2,
+                "hitbox_size": 2.5
               }
             ]
           }
-        },
+        }
+      ]
+    },
+    {
+      "move_name": "Neutral Special (Firebrand)",
+      "data": [
         {
-          "movepart_name": "Firebrand",
+          "movepart_name": "Early",
           "data": {
             "is_normal": true,
             "hitbox_start": 18,
-            "hitbox_end": 22,
-            "faf": 47,
+            "hitbox_end": 19,
+            "faf": 48,
+            "faf_air": 50,
             "hitboxes": [
               {
                 "id": 0,
-                "damage": 12.0,
-                "angle": 50,
+                "damage": 10.0,
+                "angle": 45,
                 "bkb": 50,
-                "kbg": 115,
+                "kbg": 110,
                 "hitlag_mul": 1.2,
-                "hitbox_size": 6.5
+                "hitbox_size": 3.0
               },
               {
                 "id": 1,
@@ -1092,7 +1124,35 @@
                 "bkb": 50,
                 "kbg": 115,
                 "hitlag_mul": 1.2,
-                "hitbox_size": 3.5
+                "hitbox_size": 5.5
+              }
+            ]
+          }
+        },
+        {
+          "movepart_name": "Late",
+          "data": {
+            "is_normal": true,
+            "hitbox_start": 20,
+            "hitbox_end": 24,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 8.0,
+                "angle": 40,
+                "bkb": 50,
+                "kbg": 40,
+                "hitlag_mul": 1.2,
+                "hitbox_size": 3.0
+              },
+              {
+                "id": 1,
+                "damage": 8.0,
+                "angle": 40,
+                "bkb": 50,
+                "kbg": 40,
+                "hitlag_mul": 1.2,
+                "hitbox_size": 5.5
               }
             ]
           }
@@ -1102,43 +1162,258 @@
     {
       "move_name": "Side Special",
       "data": [
-        {}
+        {
+          "movepart_name": "",
+          "data": {
+            "is_normal": true,
+            "hitbox_start": 12,
+            "hitbox_end": 14,
+            "faf": 36,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 10.0,
+                "angle": 110,
+                "fkb": 80,
+                "kbg": 100,
+                "shield_damage": 4,
+                "hitbox_size": 7.5
+              },
+              {
+                "id": 1,
+                "damage": 10.0,
+                "angle": 110,
+                "fkb": 80,
+                "kbg": 100,
+                "shield_damage": 4,
+                "hitbox_size": 5.0
+              }
+            ]
+          }
+        }
       ]
     },
     {
       "move_name": "Up Special",
       "data": [
-        {}
-      ]
-    },
-    {
-      "move_name": "Down Special",
-      "data": [
-        {}
+        {
+          "movepart_name": "Initial Hit",
+          "data": {
+            "has_fall": true,
+            "hitbox_start": 3,
+            "hitbox_end": 6,
+            "landing_lag": 30,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 5.0,
+                "angle": 60,
+                "fkb": 160,
+                "kbg": 100,
+                "sdi_mul": 0.0,
+                "hitbox_size": 2.5
+              },
+              {
+                "id": 1,
+                "damage": 5.0,
+                "angle": 86,
+                "fkb": 150,
+                "kbg": 100,
+                "sdi_mul": 0.0,
+                "hitbox_size": 4.0
+              },
+              {
+                "id": 2,
+                "damage": 5.0,
+                "angle": 100,
+                "fkb": 150,
+                "kbg": 100,
+                "sdi_mul": 0.0,
+                "hitbox_size": 4.0
+              }
+            ]
+          }
+        },
+        {
+          "movepart_name": "Multihits",
+          "data": {
+            "has_fall": true,
+            "hitbox_start": 7,
+            "hitbox_end": 16,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 0.6,
+                "angle": 60,
+                "fkb": 180,
+                "kbg": 100,
+                "hitlag_mul": 0.75,
+                "sdi_mul": 0.0,
+                "hitbox_size": 3.0
+              },
+              {
+                "id": 1,
+                "damage": 0.6,
+                "angle": 92,
+                "fkb": 170,
+                "kbg": 100,
+                "hitlag_mul": 0.75,
+                "sdi_mul": 0.0,
+                "hitbox_size": 3.8
+              },
+              {
+                "id": 2,
+                "damage": 0.6,
+                "angle": 60,
+                "fkb": 110,
+                "kbg": 100,
+                "hitlag_mul": 0.75,
+                "sdi_mul": 0.0,
+                "hitbox_size": 3.0
+              },
+              {
+                "id": 3,
+                "damage": 0.6,
+                "angle": 92,
+                "fkb": 110,
+                "kbg": 100,
+                "hitlag_mul": 0.75,
+                "sdi_mul": 0.0,
+                "hitbox_size": 3.8
+              }
+            ]
+          }
+        },
+        {
+          "movepart_name": "Launcher",
+          "data": {
+            "has_fall": true,
+            "hitbox_start": 17,
+            "hitbox_end": 18,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 5.0,
+                "angle": 60,
+                "bkb": 50,
+                "kbg": 155,
+                "hitlag_mul": 1.5,
+                "hitbox_size": 7.5
+              },
+              {
+                "id": 1,
+                "damage": 5.0,
+                "angle": 60,
+                "bkb": 50,
+                "kbg": 155,
+                "hitlag_mul": 1.5,
+                "hitbox_size": 7.5
+              }
+            ]
+          }
+        }
       ]
     },
     {
       "move_name": "Forward Throw",
       "data": [
-        {}
+        {
+          "movepart_name": "",
+          "data": {
+            "is_throw": true,
+            "faf": 28,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 8.0,
+                "angle": 45,
+                "bkb": 60,
+                "kbg": 65
+              }
+            ]
+          }
+        }
       ]
     },
     {
       "move_name": "Back Throw",
       "data": [
-        {}
+        {
+          "movepart_name": "Throw",
+          "data": {
+            "is_throw": true,
+            "faf": 60,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 11.0,
+                "angle": 45,
+                "bkb": 70,
+                "kbg": 66
+              }
+            ]
+          }
+        },
+        {
+          "movepart_name": "Collateral",
+          "data": {
+            "is_normal": true,
+            "hitbox_start": 13,
+            "hitbox_end": 39,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 8.0,
+                "angle": 50,
+                "bkb": 100,
+                "kbg": 70,
+                "hitbox_size": 4.0
+              }
+            ]
+          }
+        }
       ]
     },
     {
       "move_name": "Up Throw",
       "data": [
-        {}
+        {
+          "movepart_name": "",
+          "data": {
+            "is_throw": true,
+            "faf": 37,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 7.0,
+                "angle": 90,
+                "bkb": 70,
+                "kbg": 82
+              }
+            ]
+          }
+        }
       ]
     },
     {
       "move_name": "Down Throw",
       "data": [
-        {}
+        {
+          "movepart_name": "",
+          "data": {
+            "is_throw": true,
+            "faf": 38,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 6.0,
+                "angle": 74,
+                "bkb": 50,
+                "kbg": 105
+              }
+            ]
+          }
+        }
       ]
     }
   ]
