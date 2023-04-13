@@ -47,8 +47,7 @@
 <br>
 <p>Down Air</p><div class="charTable"></div>
 <br>
-<p>(Neutral Special)</p>
-<div class="charTable"></div>
+<p>(Neutral Special)</p><div class="charTable"></div>
 <br>
 <p>(Side Special)</p><div class="charTable"></div>
 <br>
