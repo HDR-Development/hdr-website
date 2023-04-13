@@ -63,10 +63,13 @@ function constructMoveTables(charJSON) {
                 "is_projectile": movePart.data.is_projectile,   // if move is a projectile
                 "is_throw": movePart.data.is_throw,             // if move is a throw
                 "is_lock": movePart.data.is_lock,               // if move is a jablock
+                "has_fall": movePart.data.has_fall,             // if move transitions to special fall
                 "has_fkb": false,                               // if move has FKB
                 "has_fa": false,                                // if move has documented frame advantage
                 "has_ac": movePart.data.autocancel_start,       // if move has autocancel windows
-                "has_fall": movePart.data.has_fall,             // if move transitions to special fall
+                "has_shield_damage": false,                     // if move has a hitbox with additional shield damage
+                "has_add_hitstun": false,                       // if move has a hitbox with additional hitstun
+                "has_no_reverse": false,                        // if move has a hitbox that DOES NOT reverse hit
                 "split_faf": false,                             // if move has parts with different FAF
                 "split_ac": false,                              // if move has parts with different autocancels
                 "split_ll": false,                              // if move has parts with different landing lag
@@ -87,7 +90,10 @@ function constructMoveTables(charJSON) {
                 // set certain data flags
                 dataFlags.has_fkb = (hitbox.fkb && hitbox.fkb != 0) ? true : dataFlags.has_fkb;
                 dataFlags.has_fa = (null != hitbox.fa_0 && null != hitbox.fa_100) ? true : dataFlags.has_fa;
-
+                dataFlags.has_shield_damage = (hitbox.shield_damage && hitbox.shield_damage != 0) ? true : dataFlags.has_shield_damage;
+                dataFlags.has_add_hitstun = (hitbox.add_hitstun && hitbox.add_hitstun != 0) ? true : dataFlags.has_add_hitstun;
+                dataFlags.has_no_reverse = hitbox.no_reverse ? true : dataFlags.has_no_reverse;
+                
                 hitboxSets.push(hitbox);
             }
 
@@ -347,11 +353,11 @@ function constructTableHeaders(header_data, ext_header_data, dataFlags, has_faf 
     *   [Hitbox ID]
     *   Damage
     *   Angle
-    *   BKB
+    *   [BKB]
     *   [FKB]
     *   KBG
-    *   Hitbox Size
-    *   Shield Safety
+    *   [Hitbox Size]
+    *   [Shield Safety]
     */
 
     if (!dataFlags.is_throw) {
@@ -375,19 +381,30 @@ function constructTableHeaders(header_data, ext_header_data, dataFlags, has_faf 
     /*
     *   <Ext Table Header>
     *   Hitlag Multiplier
-    *   SDI Multiplier
-    *   Shieldstun Multiplier
-    *   Shield Damage
-    *   Additional Hitstun
+    *   [SDI Multiplier]
+    *   [Shieldstun Multiplier]
+    *   [Shield Damage]
+    *   [Additional Hitstun]
+    *   [Reverse Hit]
     *   [Frame Advantage]
     */
 
-    ext_header_data.push(
-        "Hitlag Multiplier",
-        "SDI Multiplier",
-        "Shieldstun Multiplier",
-        "Shield Damage",
-        "Additional Hitstun");
+    ext_header_data.push("Hitlag Multiplier");
+    if (!dataFlags.is_throw) {
+        ext_header_data.push("SDI Multiplier");
+    }
+    if (!dataFlags.is_throw) {
+        ext_header_data.push("Shieldstun Multiplier");
+    }
+    if (dataFlags.has_shield_damage) {
+        ext_header_data.push("Shield Damage");
+    }
+    if (dataFlags.has_add_hitstun) {
+        ext_header_data.push("Additional Hitstun");
+    }
+    if (!dataFlags.is_throw && !dataFlags.is_lock && dataFlags.has_no_reverse) {
+        ext_header_data.push("Reverse Hit");
+    }
     if (dataFlags.has_fa) {
         ext_header_data.push("Frame Advantage (0/100%)");
     }
@@ -412,13 +429,22 @@ function populateHitboxSet(row_data, ext_row_data, hitbox, dataFlags) {
         row_data.push(hitbox.hitbox_size + ((/^\d+\.\d+$/).test(hitbox.hitbox_size) ? 'u' : '.0u'));
     }
 
-    ext_row_data.push(
-        hitbox.hitlag_mul ? hitbox.hitlag_mul + ((/^\d+\.\d+$/).test(hitbox.hitlag_mul) ? 'x' : '.0x') : "1.0x",
-        hitbox.sdi_mul ? hitbox.sdi_mul + ((/^\d+\.\d+$/).test(hitbox.sdi_mul) ? 'x' : '.0x') : "1.0x",
-        hitbox.shieldstun_mul ? hitbox.shieldstun_mul + ((/^\d+\.\d+$/).test(hitbox.shieldstun_mul) ? 'x' : '.0x') : "1.0x",
-        hitbox.shield_damage ? hitbox.shield_damage + ((/^\d+\.\d+$/).test(hitbox.shield_damage > 0 ? hitbox.shield_damage : hitbox.shield_damage.toString().substring(1)) ? '%' : '.0%') : "0%",
-        hitbox.add_hitstun ? hitbox.add_hitstun + "F" : "0F",
-    );
+    ext_row_data.push(hitbox.hitlag_mul ? hitbox.hitlag_mul + ((/^\d+\.\d+$/).test(hitbox.hitlag_mul) ? 'x' : '.0x') : "1.0x");
+    if (!dataFlags.is_throw) {
+        ext_row_data.push(hitbox.sdi_mul ? hitbox.sdi_mul + ((/^\d+\.\d+$/).test(hitbox.sdi_mul) ? 'x' : '.0x') : "1.0x");
+    }
+    if (!dataFlags.is_throw) {
+        ext_row_data.push(hitbox.shieldstun_mul ? hitbox.shieldstun_mul + ((/^\d+\.\d+$/).test(hitbox.shieldstun_mul) ? 'x' : '.0x') : "1.0x");
+    }
+    if (dataFlags.has_shield_damage) {
+        ext_row_data.push(hitbox.shield_damage ? hitbox.shield_damage + ((/^\d+\.\d+$/).test(hitbox.shield_damage > 0 ? hitbox.shield_damage : hitbox.shield_damage.toString().substring(1)) ? '%' : '.0%') : "0%");
+    }
+    if (dataFlags.has_add_hitstun) {
+        ext_row_data.push(hitbox.add_hitstun ? hitbox.add_hitstun + "F" : "0F");
+    }
+    if (!dataFlags.is_throw && !dataFlags.is_lock && dataFlags.has_no_reverse) {
+        ext_row_data.push(hitbox.no_reverse ? "No" : "Yes");
+    }
     if (dataFlags.has_fa) {
         (null != hitbox.fa_0 && null != hitbox.fa_100) ? 
             ext_row_data.push((hitbox.fa_0 >= 0 ? "+" : "") + hitbox.fa_0 
