@@ -1,21 +1,21 @@
-# ![](../images/Stock_Ike.png) TestChar
+# ![](../../images/Stock_Ike.png) TestChar
 
 <!DOCTYPE html>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;">
-<link rel="stylesheet" type="text/css" href="../style.css">
+<link rel="stylesheet" type="text/css" href="../../style.css">
 
-![](../images/SmashBall.png) <b>Overview</b>
+![](../../images/SmashBall.png) <b>Overview</b>
 <p class="info"></p>
 <br>
 
-![](../images/SmashBall.png) <b>General</b>
+![](../../images/SmashBall.png) <b>General</b>
 <p class="info_header"></p>
 <ul>
   <li></li>
 </ul>
 <br>
 
-![](../images/SmashBall.png) <b>Moveset</b>
+![](../../images/SmashBall.png) <b>Moveset</b>
 <br>
 <p>Jab 1</p><div class="charTable"></div>
 <br>
@@ -53,7 +53,7 @@
 <br>
 <p>(Up Special)</p><div class="charTable"></div>
 <br>
-<p>F.L.U.D.D. (Down Special)</p><div class="charTable"></div>
+<p>(Down Special)</p><div class="charTable"></div>
 <br>
 <p>Forward Throw</p><div class="charTable"></div>
 <br>
@@ -64,8 +64,8 @@
 <p>Down Throw</p><div class="charTable"></div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-<script src="../js/arrow.js"></script>
-<script type="text/javascript" src="../js/pagebackend.js"></script>
+<script src="../../js/arrow.js"></script>
+<script type="text/javascript" src="../../js/dataparser.js"></script>
 <script type="text/javascript">
-  importFile("./../testing/data_mario.json");
+  importFile("./data/data_mario.json");
 </script>
