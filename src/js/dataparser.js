@@ -71,7 +71,6 @@ function constructMoveTables(charJSON) {
                 "has_shield_damage": false,                     // if move has a hitbox with additional shield damage
                 "has_add_hitstun": false,                       // if move has a hitbox with additional hitstun
                 "has_ga": false,                                // if move has a hitbox that hits ground-only or air-only
-                //"has_no_reverse": false,                      // if move has a hitbox that DOES NOT reverse hit
                 "split_faf": false,                             // if move has parts with different FAF
                 "split_ac": false,                              // if move has parts with different autocancels
                 "split_ll": false,                              // if move has parts with different landing lag
@@ -96,7 +95,6 @@ function constructMoveTables(charJSON) {
                 dataFlags.has_shield_damage = (hitbox.shield_damage && hitbox.shield_damage != 0) ? true : dataFlags.has_shield_damage;
                 dataFlags.has_add_hitstun = (hitbox.add_hitstun && hitbox.add_hitstun != 0) ? true : dataFlags.has_add_hitstun;
                 dataFlags.has_ga = (hitbox.ground_air && hitbox.ground_air != "") ? true : dataFlags.has_ga;
-                //dataFlags.has_no_reverse = hitbox.no_reverse ? true : dataFlags.has_no_reverse;
                 
                 hitboxSets.push(hitbox);
             }
@@ -124,25 +122,7 @@ function constructMoveTables(charJSON) {
                 let ext_row_data = [];
 
                 // populate tables
-                populateHitboxSet(row_data, ext_row_data, hitbox, dataFlags);
-                if(!dataFlags.is_throw && !dataFlags.is_lock && !dataFlags.has_fall && (movePart.data.faf > 0 || movePart.data.landing_lag > 0)) {
-                    let safety = calculateShieldSafety(hitbox, movePart.data.hitbox_start, movePart.data.faf, dataFlags, movePart.data.landing_lag);
-                    let safety_air = "/";
-
-                    if (movePart.data.faf_air) {
-                        safety_air += calculateShieldSafety(hitbox, movePart.data.hitbox_start, movePart.data.faf_air, dataFlags, movePart.data.landing_lag) + "F";
-                    }
-                    else {
-                        if (hitbox.ground_air && hitbox.ground_air.toUpperCase() == "A") {
-                            // do nothing
-                        }
-                        else {
-                            safety += "F";
-                        }
-                    }
-
-                    row_data.push(safety + (safety_air != "/" ? safety_air : ""));
-                }
+                populateHitboxSet(row_data, ext_row_data, hitbox, movePart, dataFlags);
                 insertRowFromData(table_body, row_data, false, true, header_data.indexOf("Angle"));
                 insertRowFromData(ext_table_body, ext_row_data);
 
@@ -422,7 +402,7 @@ function constructTableHeaders(header_data, ext_header_data, dataFlags, has_faf 
     }
 }
 
-function populateHitboxSet(row_data, ext_row_data, hitbox, dataFlags) {
+function populateHitboxSet(row_data, ext_row_data, hitbox, movePart, dataFlags) {
     if(!dataFlags.is_throw) {
         row_data.push(hitbox.id.toString());
     }
@@ -439,6 +419,24 @@ function populateHitboxSet(row_data, ext_row_data, hitbox, dataFlags) {
     row_data.push(hitbox.kbg ? hitbox.kbg.toString() : 0);
     if (!dataFlags.is_throw) {
         row_data.push(hitbox.hitbox_size + ((/^\d+\.\d+$/).test(hitbox.hitbox_size) ? 'u' : '.0u'));
+    }
+    if(!dataFlags.is_throw && !dataFlags.is_lock && !dataFlags.has_fall && (movePart.data.faf > 0 || movePart.data.landing_lag > 0)) {
+        let safety = calculateShieldSafety(hitbox, movePart.data.hitbox_start, movePart.data.faf, dataFlags, movePart.data.landing_lag);
+        let safety_air = "/";
+
+        if (movePart.data.faf_air) {
+            safety_air += calculateShieldSafety(hitbox, movePart.data.hitbox_start, movePart.data.faf_air, dataFlags, movePart.data.landing_lag) + "F";
+        }
+        else {
+            if (hitbox.ground_air && hitbox.ground_air.toUpperCase() == "A") {
+                // do nothing
+            }
+            else {
+                safety += "F";
+            }
+        }
+
+        row_data.push(safety + (safety_air != "/" ? safety_air : ""));
     }
 
     if(dataFlags.has_ga) {

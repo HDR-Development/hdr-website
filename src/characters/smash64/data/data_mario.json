@@ -688,8 +688,7 @@
             "hitbox_end": 5,
             "faf": 46,
             "autocancel_start": [
-              1,
-              36
+              1, 36
             ],
             "autocancel_end": [
               2
@@ -754,8 +753,7 @@
             "hitbox_end": 17,
             "faf": 46,
             "autocancel_start": [
-              1,
-              43
+              1, 43
             ],
             "autocancel_end": [
               2
@@ -893,8 +891,7 @@
             "hitbox_end": 8,
             "faf": 35,
             "autocancel_start": [
-              1,
-              24
+              1, 24
             ],
             "autocancel_end": [
               5
@@ -959,8 +956,7 @@
             "hitbox_end": 7,
             "faf": 36,
             "autocancel_start": [
-              1,
-              17
+              1, 17
             ],
             "autocancel_end": [
               3
@@ -1022,23 +1018,14 @@
           "data": {
             "is_aerial": true,
             "hitbox_start": [
-              6,
-              9,
-              12,
-              14,
-              17
+              6, 9, 12, 14, 17
             ],
             "hitbox_end": [
-              7,
-              9,
-              12,
-              15,
-              17
+              7, 9, 12, 15, 17
             ],
             "faf": 52,
             "autocancel_start": [
-              1,
-              40
+              1, 40
             ],
             "autocancel_end": [
               2
@@ -1097,14 +1084,10 @@
           "data": {
             "is_projectile": true,
             "hitbox_start": [
-              18,
-              21,
-              51
+              18, 21, 51
             ],
             "hitbox_end": [
-              20,
-              50,
-              86
+              20, 50, 86
             ],
             "faf": 41,
             "hitboxes": [
