@@ -434,7 +434,7 @@
                 "kbg": 43,
                 "hitlag_mul": 1.2,
                 "shieldstun_mul": 1.875,
-                "shield_damage": 1,
+                "shield_damage": 1.0,
                 "hitbox_size": 3.5
               },
               {
@@ -445,7 +445,7 @@
                 "kbg": 43,
                 "hitlag_mul": 1.2,
                 "shieldstun_mul": 1.875,
-                "shield_damage": 1,
+                "shield_damage": 1.0,
                 "hitbox_size": 3.5
               }
             ]
@@ -465,7 +465,7 @@
                 "bkb": 70,
                 "kbg": 50,
                 "shieldstun_mul": 1.875,
-                "shield_damage": 1,
+                "shield_damage": 1.0,
                 "hitbox_size": 3.5
               },
               {
@@ -475,7 +475,7 @@
                 "bkb": 70,
                 "kbg": 50,
                 "shieldstun_mul": 1.875,
-                "shield_damage": 1,
+                "shield_damage": 1.0,
                 "hitbox_size": 3.5
               }
             ]
@@ -795,7 +795,8 @@
                 "bkb": 30,
                 "kbg": 75,
                 "hitlag_mul": 1.2,
-                "hitbox_size": 4.0
+                "hitbox_size": 4.0,
+                "ground_air": "G"
               },
               {
                 "id": 1,
@@ -804,7 +805,28 @@
                 "bkb": 30,
                 "kbg": 75,
                 "hitlag_mul": 1.2,
-                "hitbox_size": 4.6
+                "hitbox_size": 4.6,
+                "ground_air": "G"
+              },
+              {
+                "id": 2,
+                "damage": 15.0,
+                "angle": 280,
+                "bkb": 30,
+                "kbg": 43,
+                "hitlag_mul": 1.2,
+                "hitbox_size": 4.0,
+                "ground_air": "A"
+              },
+              {
+                "id": 3,
+                "damage": 15.0,
+                "angle": 280,
+                "bkb": 30,
+                "kbg": 43,
+                "hitlag_mul": 1.2,
+                "hitbox_size": 4.6,
+                "ground_air": "A"
               }
             ]
           }
@@ -822,7 +844,8 @@
                 "bkb": 25,
                 "kbg": 75,
                 "hitlag_mul": 1.2,
-                "hitbox_size": 4.0
+                "hitbox_size": 4.0,
+                "ground_air": "G"
               },
               {
                 "id": 1,
@@ -831,7 +854,28 @@
                 "bkb": 25,
                 "kbg": 75,
                 "hitlag_mul": 1.2,
-                "hitbox_size": 4.6
+                "hitbox_size": 4.6,
+                "ground_air": "G"
+              },
+              {
+                "id": 2,
+                "damage": 13.0,
+                "angle": 280,
+                "bkb": 25,
+                "kbg": 51,
+                "hitlag_mul": 1.2,
+                "hitbox_size": 4.0,
+                "ground_air": "A"
+              },
+              {
+                "id": 3,
+                "damage": 13.0,
+                "angle": 280,
+                "bkb": 25,
+                "kbg": 51,
+                "hitlag_mul": 1.2,
+                "hitbox_size": 4.6,
+                "ground_air": "A"
               }
             ]
           }
@@ -1088,7 +1132,7 @@
                 "angle": 361,
                 "bkb": 20,
                 "kbg": 22,
-                "shield_damage": -2,
+                "shield_damage": -2.0,
                 "hitbox_size": 2.5
               }
             ]
@@ -1176,7 +1220,7 @@
                 "angle": 110,
                 "fkb": 80,
                 "kbg": 100,
-                "shield_damage": 4,
+                "shield_damage": 4.0,
                 "hitbox_size": 7.5,
                 "no_reverse": true
               },
@@ -1186,7 +1230,7 @@
                 "angle": 110,
                 "fkb": 80,
                 "kbg": 100,
-                "shield_damage": 4,
+                "shield_damage": 4.0,
                 "hitbox_size": 5.0,
                 "no_reverse": true
               }
