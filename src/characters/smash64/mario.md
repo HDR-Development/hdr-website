@@ -41,6 +41,7 @@
 <p>Down Air</p><div class="charTable"></div>
 <br>
 <p>Fireball / Firebrand (Neutral Special)</p>
+<p class="info_header">Fireball (early/mid/late)</p>
 <div class="charTable"></div>
 <p class="info_header">Firebrand</p>
 <ul>

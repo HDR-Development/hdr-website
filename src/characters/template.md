@@ -55,6 +55,24 @@
 <br>
 <p>(Down Special)</p><div class="charTable"></div>
 <br>
+<p>Standing Grab</p>
+<ul>
+  <li>Hitbox Duration: F</li>
+  <li>FAF: </li>
+</ul>
+<br>
+<p>Dash Grab</p>
+<ul>
+  <li>Hitbox Duration: F</li>
+  <li>FAF: </li>
+</ul>
+<br>
+<p>Pivot Grab</p>
+<ul>
+  <li>Hitbox Duration: F</li>
+  <li>FAF: </li>
+</ul>
+<br>
 <p>Forward Throw</p><div class="charTable"></div>
 <br>
 <p>Back Throw</p><div class="charTable"></div>
