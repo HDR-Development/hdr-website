@@ -61,6 +61,7 @@ function constructMoveTables(charJSON) {
                 "is_smash": movePart.data.is_smash,             // if move is a smash attack
                 "is_aerial": movePart.data.is_aerial,           // if move is an aerial
                 "is_projectile": movePart.data.is_projectile,   // if move is a projectile
+                "is_grab": movePart.data.is_grab,               // if move is a command grab
                 "is_throw": movePart.data.is_throw,             // if move is a throw
                 "is_lock": movePart.data.is_lock,               // if move is a jablock
                 "has_fall": movePart.data.has_fall,             // if move transitions to special fall
@@ -71,6 +72,7 @@ function constructMoveTables(charJSON) {
                 "has_shield_damage": false,                     // if move has a hitbox with additional shield damage
                 "has_add_hitstun": false,                       // if move has a hitbox with additional hitstun
                 "has_ga": false,                                // if move has a hitbox that hits ground-only or air-only
+                "hide_faf": movePart.data.hide_faf,             // if move should hide faf display (very rare)
                 "split_faf": false,                             // if move has parts with different FAF
                 "split_ac": false,                              // if move has parts with different autocancels
                 "split_ll": false,                              // if move has parts with different landing lag
@@ -113,7 +115,7 @@ function constructMoveTables(charJSON) {
             let ext_header_data = [];
             
             constructTableHeaders(header_data, ext_header_data, dataFlags, (movePart.data.faf > 0 || movePart.data.landing_lag > 0));
-            insertRowFromData(table_head, header_data, true, false, 1 + !dataFlags.is_throw);
+            insertRowFromData(table_head, header_data, true, false, dataFlags.is_grab, header_data.indexOf("Angle"));
             insertRowFromData(ext_table_head, ext_header_data);
 
             // construct hitbox set
@@ -123,7 +125,7 @@ function constructMoveTables(charJSON) {
 
                 // populate tables
                 populateHitboxSet(row_data, ext_row_data, hitbox, movePart, dataFlags);
-                insertRowFromData(table_body, row_data, false, true, header_data.indexOf("Angle"));
+                insertRowFromData(table_body, row_data, false, true, false, header_data.indexOf("Angle"));
                 insertRowFromData(ext_table_body, ext_row_data);
 
                 // append table and ext_table to div
@@ -156,28 +158,30 @@ function constructMoveTables(charJSON) {
 }
 
 // populate table header/row with a collection of data
-function insertRowFromData(table, data, span_row = false, insert_arrow = false, index = null) {
+function insertRowFromData(table, data, span_row = false, insert_arrow = false, is_grab = false, arrow_index = null) {
     let row = table.insertRow();
     let offset = 0;
     data.forEach( h => {
-        let cell = row.insertCell(data.indexOf(h) + offset);
+        let cell = row.insertCell(offset);
 
-        // span angle header
-        if (span_row && row.cells.length == index + 1) {
-            cell.colSpan = 2;
-        }
+        if (!is_grab) {
+            // span angle header
+            if (span_row && row.cells.length == arrow_index + 1) {
+                cell.colSpan = 2;
+            }
 
-        // insert angle arrow cell
-        if (insert_arrow && row.cells.length == index + 1) {
-            cell.className = "angle_img";
-            cell.innerHTML = "-->";
-            cell = row.insertCell(data.indexOf(h) + 1);
-            data[data.indexOf(h)] = "H"; // prevents duplicate found index causing display order errors
-            cell.className = "angle_val"
-            offset += 1;
+            // insert angle arrow cell
+            if (insert_arrow && row.cells.length == arrow_index + 1) {
+                cell.className = "angle_img";
+                cell.innerHTML = "-->";
+                offset++;
+                cell = row.insertCell(offset);
+                cell.className = "angle_val"
+            }
         }
 
         cell.innerHTML = h;
+        offset++;
     });
 }
 
@@ -196,10 +200,11 @@ function AddPersistDataFields(movePart, moveNext, dataFlags) {
         dataFlags.split_faf = true;
     }
 
-    if (!moveNext.data.faf_air && movePart.data.faf_air) {
-        moveNext.data["faf_air"] = movePart.data.faf_air;
+    if (!moveNext.data.faf_2nd && movePart.data.faf_2nd) {
+        moveNext.data["faf_2nd"] = movePart.data.faf_2nd;
+        moveNext.data["faf_str"] = movePart.data.faf_str;
     }
-    else if (moveNext.data.faf_air != movePart.data.faf_air) {
+    else if (moveNext.data.faf_2nd != movePart.data.faf_2nd) {
         dataFlags.split_faf = true;
     }
 
@@ -244,13 +249,13 @@ function parseInfoHeaderData(div, movePart) {
 
 // populate info section with overview data
 function parseInfoFooterData(div, movePart, dataFlags) {
-    if (movePart.data.faf) {
+    if (movePart.data.faf && !dataFlags.hide_faf) {
         let faf = document.createElement('p');
-        if (!movePart.data.faf_air) {
+        if (!movePart.data.faf_2nd) {
             faf.textContent = "FAF: " + movePart.data.faf;
         }
         else {
-            faf.textContent = "FAF (ground/air): " + movePart.data.faf + "/" + movePart.data.faf_air;
+            faf.textContent = "FAF (" +  movePart.data.faf_str + "): " + movePart.data.faf + "/" + movePart.data.faf_2nd;
         }
         faf.style.fontSize = "16px";
         div.appendChild(faf);
@@ -275,11 +280,11 @@ function parseInfoFooterData(div, movePart, dataFlags) {
 function parseInfoPartialFooterData(div, movePart, dataFlags) {
     if (dataFlags.split_faf && movePart.data.faf) {
         let faf = document.createElement('p');
-        if (!movePart.data.faf_air) {
+        if (!movePart.data.faf_2nd) {
             faf.textContent = "FAF: " + movePart.data.faf;
         }
         else {
-            faf.textContent = "FAF (ground/air): " + movePart.data.faf + "/" + movePart.data.faf_air;
+            faf.textContent = "FAF (" + movePart.data.faf_str + "): " + movePart.data.faf + "/" + movePart.data.faf_2nd;
         }
         
         faf.style.fontSize = "16px";
@@ -339,11 +344,11 @@ function constructTableHeaders(header_data, ext_header_data, dataFlags, has_faf 
     /*
     *   <Table Header>
     *   [Hitbox ID]
-    *   Damage
-    *   Angle
+    *   [Damage]
+    *   [Angle]
     *   [BKB]
     *   [FKB]
-    *   KBG
+    *   [KBG]
     *   [Hitbox Size]
     *   [Shield Safety]
     */
@@ -351,25 +356,29 @@ function constructTableHeaders(header_data, ext_header_data, dataFlags, has_faf 
     if (!dataFlags.is_throw) {
         header_data.push("Hitbox ID");
     }
-    header_data.push("Damage", "Angle");
-    if (!dataFlags.has_fkb) {
+    if (!dataFlags.is_grab) {
+        header_data.push("Damage", "Angle");
+    }
+    if (!dataFlags.is_grab && !dataFlags.has_fkb) {
         header_data.push("BKB");
     }
-    else {
+    if (!dataFlags.is_grab && dataFlags.has_fkb) {
         header_data.push("FKB");
     }
-    header_data.push("KBG");
+    if(!dataFlags.is_grab) {
+        header_data.push("KBG");
+    }
     if (!dataFlags.is_throw) {
         header_data.push("Hitbox Size");
     }
-    if (!dataFlags.is_throw && !dataFlags.is_lock && !dataFlags.has_fall && has_faf) {
+    if (!dataFlags.is_grab && !dataFlags.is_throw && !dataFlags.is_lock && !dataFlags.has_fall && has_faf) {
         header_data.push("On Shield");
     }
 
     /*
     *   <Ext Table Header>
     *   [Ground/Air]
-    *   Hitlag Multiplier
+    *   [Hitlag Multiplier]
     *   [SDI Multiplier]
     *   [Shieldstun Multiplier]
     *   [Shield Damage]
@@ -381,11 +390,13 @@ function constructTableHeaders(header_data, ext_header_data, dataFlags, has_faf 
     if (dataFlags.has_ga) {
         ext_header_data.push("Ground/Air");
     }
-    ext_header_data.push("Hitlag Multiplier");
-    if (!dataFlags.is_throw) {
+    if (!dataFlags.is_grab) {
+        ext_header_data.push("Hitlag Multiplier");
+    }
+    if (!dataFlags.is_grab && !dataFlags.is_throw) {
         ext_header_data.push("SDI Multiplier");
     }
-    if (!dataFlags.is_throw && dataFlags.has_shieldstun_mul) {
+    if (!dataFlags.is_grab && !dataFlags.is_throw && dataFlags.has_shieldstun_mul) {
         ext_header_data.push("Shieldstun Multiplier");
     }
     if (dataFlags.has_shield_damage) {
@@ -394,7 +405,7 @@ function constructTableHeaders(header_data, ext_header_data, dataFlags, has_faf 
     if (dataFlags.has_add_hitstun) {
         ext_header_data.push("Additional Hitstun");
     }
-    if (!dataFlags.is_throw && !dataFlags.is_lock) {
+    if (!dataFlags.is_grab && !dataFlags.is_throw && !dataFlags.is_lock) {
         ext_header_data.push("Reverse Hit");
     }
     if (dataFlags.has_fa) {
@@ -406,26 +417,30 @@ function populateHitboxSet(row_data, ext_row_data, hitbox, movePart, dataFlags) 
     if(!dataFlags.is_throw) {
         row_data.push(hitbox.id.toString());
     }
-    row_data.push(
-        hitbox.damage + ((/^\d+\.\d+$/).test(hitbox.damage) ? '%' : '.0%'),
-        hitbox.angle.toString(),
-    );
-    if (!dataFlags.has_fkb) {
+    if (!dataFlags.is_grab) {
+        row_data.push(
+            hitbox.damage + ((/^\d+\.\d+$/).test(hitbox.damage) ? '%' : '.0%'),
+            hitbox.angle.toString(),
+        );
+    }
+    if (!dataFlags.is_grab && !dataFlags.has_fkb) {
         row_data.push(hitbox.bkb ? hitbox.bkb.toString() : 0);
     }
-    else {
+    if (!dataFlags.is_grab && dataFlags.has_fkb) {
         row_data.push(hitbox.fkb ? hitbox.fkb.toString() : 0);
     }
-    row_data.push(hitbox.kbg ? hitbox.kbg.toString() : 0);
+    if (!dataFlags.is_grab) {
+        row_data.push(hitbox.kbg ? hitbox.kbg.toString() : 0);
+    }
     if (!dataFlags.is_throw) {
         row_data.push(hitbox.hitbox_size + ((/^\d+\.\d+$/).test(hitbox.hitbox_size) ? 'u' : '.0u'));
     }
-    if(!dataFlags.is_throw && !dataFlags.is_lock && !dataFlags.has_fall && (movePart.data.faf > 0 || movePart.data.landing_lag > 0)) {
+    if(!dataFlags.is_grab && !dataFlags.is_throw && !dataFlags.is_lock && !dataFlags.has_fall && (movePart.data.faf > 0 || movePart.data.landing_lag > 0)) {
         let safety = calculateShieldSafety(hitbox, movePart.data.hitbox_start, movePart.data.faf, dataFlags, movePart.data.landing_lag);
-        let safety_air = "/";
+        let safety_2nd = "/";
 
-        if (movePart.data.faf_air) {
-            safety_air += calculateShieldSafety(hitbox, movePart.data.hitbox_start, movePart.data.faf_air, dataFlags, movePart.data.landing_lag) + "F";
+        if (movePart.data.faf_2nd) {
+            safety_2nd += calculateShieldSafety(hitbox, movePart.data.hitbox_start, movePart.data.faf_2nd, dataFlags, movePart.data.landing_lag) + "F";
         }
         else {
             if (hitbox.ground_air && hitbox.ground_air.toUpperCase() == "A") {
@@ -436,7 +451,7 @@ function populateHitboxSet(row_data, ext_row_data, hitbox, movePart, dataFlags) 
             }
         }
 
-        row_data.push(safety + (safety_air != "/" ? safety_air : ""));
+        row_data.push(safety + (safety_2nd != "/" ? safety_2nd : ""));
     }
 
     if(dataFlags.has_ga) {
@@ -444,11 +459,13 @@ function populateHitboxSet(row_data, ext_row_data, hitbox, movePart, dataFlags) 
             hitbox.ground_air.toUpperCase() == "G" ? "Ground" : hitbox.ground_air.toUpperCase() == "A" ? "Air" : "Ground/Air"
         ) : "Ground/Air");
     }
-    ext_row_data.push(hitbox.hitlag_mul ? hitbox.hitlag_mul + ((/^\d+\.\d+$/).test(hitbox.hitlag_mul) ? 'x' : '.0x') : "1.0x");
-    if (!dataFlags.is_throw) {
+    if (!dataFlags.is_grab) {
+        ext_row_data.push(hitbox.hitlag_mul ? hitbox.hitlag_mul + ((/^\d+\.\d+$/).test(hitbox.hitlag_mul) ? 'x' : '.0x') : "1.0x");
+    }
+    if (!dataFlags.is_grab && !dataFlags.is_throw) {
         ext_row_data.push(hitbox.sdi_mul ? hitbox.sdi_mul + ((/^\d+\.\d+$/).test(hitbox.sdi_mul) ? 'x' : '.0x') : "1.0x");
     }
-    if (!dataFlags.is_throw && dataFlags.has_shieldstun_mul) {
+    if (!dataFlags.is_grab && !dataFlags.is_throw && dataFlags.has_shieldstun_mul) {
         ext_row_data.push(hitbox.shieldstun_mul ? hitbox.shieldstun_mul + ((/^\d+\.\d+$/).test(hitbox.shieldstun_mul) ? 'x' : '.0x') : "1.0x");
     }
     if (dataFlags.has_shield_damage) {
@@ -457,7 +474,7 @@ function populateHitboxSet(row_data, ext_row_data, hitbox, movePart, dataFlags) 
     if (dataFlags.has_add_hitstun) {
         ext_row_data.push(hitbox.add_hitstun ? hitbox.add_hitstun + "F" : "0F");
     }
-    if (!dataFlags.is_throw && !dataFlags.is_lock) {
+    if (!dataFlags.is_grab && !dataFlags.is_throw && !dataFlags.is_lock) {
         ext_row_data.push(hitbox.no_reverse ? "No" : "Yes");
     }
     if (dataFlags.has_fa) {

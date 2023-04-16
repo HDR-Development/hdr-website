@@ -1080,7 +1080,7 @@
       "move_name": "Neutral Special (Fireball)",
       "data": [
         {
-          "movepart_name": "Fireball (early/mid/late)",
+          "movepart_name": "",
           "data": {
             "is_projectile": true,
             "hitbox_start": [
@@ -1133,7 +1133,8 @@
             "hitbox_start": 18,
             "hitbox_end": 19,
             "faf": 48,
-            "faf_air": 50,
+            "faf_2nd": 50,
+            "faf_str": "ground/air",
             "hitboxes": [
               {
                 "id": 0,
