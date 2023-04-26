@@ -489,7 +489,7 @@
         {
           "movepart_name": "High",
           "data": {
-            "is_normal": true,
+            "is_smash": true,
             "hitbox_start": 15,
             "hitbox_end": 17,
             "faf": 48,
@@ -524,7 +524,7 @@
         {
           "movepart_name": "Mid",
           "data": {
-            "is_normal": true,
+            "is_smash": true,
             "hitboxes": [
               {
                 "id": 0,
@@ -556,7 +556,7 @@
         {
           "movepart_name": "Low",
           "data": {
-            "is_normal": true,
+            "is_smash": true,
             "hitboxes": [
               {
                 "id": 0,
@@ -593,7 +593,7 @@
         {
           "movepart_name": "",
           "data": {
-            "is_normal": true,
+            "is_smash": true,
             "hitbox_start": 9,
             "hitbox_end": 14,
             "faf": 44,
@@ -625,7 +625,7 @@
         {
           "movepart_name": "Front",
           "data": {
-            "is_normal": true,
+            "is_smash": true,
             "hitbox_start": 5,
             "hitbox_end": 6,
             "faf": 45,
@@ -652,7 +652,7 @@
         {
           "movepart_name": "Back",
           "data": {
-            "is_normal": true,
+            "is_smash": true,
             "hitbox_start": 14,
             "hitbox_end": 15,
             "hitboxes": [
