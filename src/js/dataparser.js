@@ -173,7 +173,7 @@ function insertRowFromData(table, data, span_row = false, insert_arrow = false, 
             // insert angle arrow cell
             if (insert_arrow && row.cells.length == arrow_index + 1) {
                 cell.className = "angle_img";
-                cell.innerHTML = "-->";
+                cell.innerHTML = h == "various" ? "*" : "-->";
                 offset++;
                 cell = row.insertCell(offset);
                 cell.className = "angle_val"
@@ -433,7 +433,7 @@ function populateHitboxSet(row_data, ext_row_data, hitbox, movePart, dataFlags) 
         row_data.push(hitbox.kbg ? hitbox.kbg.toString() : 0);
     }
     if (!dataFlags.is_throw) {
-        row_data.push(hitbox.hitbox_size + ((/^\d+\.\d+$/).test(hitbox.hitbox_size) ? 'u' : '.0u'));
+        row_data.push(hitbox.hitbox_size == "various" ? "various" : hitbox.hitbox_size + ((/^\d+\.\d+$/).test(hitbox.hitbox_size) ? 'u' : '.0u'));
     }
     if(!dataFlags.is_grab && !dataFlags.is_throw && !dataFlags.is_lock && !dataFlags.has_fall && (movePart.data.faf > 0 || movePart.data.landing_lag > 0)) {
         let safety = calculateShieldSafety(hitbox, movePart.data.hitbox_start, movePart.data.faf, dataFlags, movePart.data.landing_lag);
@@ -499,7 +499,7 @@ function calculateShieldSafety(hitbox, start_frame, faf = null, dataFlags, landi
     if (!dataFlags.has_fall) {
         let safety;
         if (landing_lag > 0) {
-            safety = (landing_lag * -1.0) + shieldstun;
+            safety = shieldstun - landing_lag;
         }
         else {
             safety = start - faf + shieldstun + shieldstun_offset;
