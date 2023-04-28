@@ -98,7 +98,12 @@ function constructMoveTables(charJSON) {
                 dataFlags.has_add_hitstun = (hitbox.add_hitstun && hitbox.add_hitstun != 0) ? true : dataFlags.has_add_hitstun;
                 dataFlags.has_ga = (hitbox.ground_air && hitbox.ground_air != "") ? true : dataFlags.has_ga;
                 
-                hitboxSets.push(hitbox);
+                if (hitbox.id.length) {
+                    unwrapHitboxArray(hitboxSets, hitbox);
+                }
+                else {
+                    hitboxSets.push(hitbox);
+                }
             }
 
             // iterate through moveparts and construct table and ext_table for each hitbox set
@@ -231,6 +236,39 @@ function AddPersistDataFields(movePart, moveNext, dataFlags) {
     }
 }
 
+// construct sets of hitboxes from a single hitbox with an array of ids
+function unwrapHitboxArray(hitboxSets, arrayHitbox) {
+    let fields = [
+        "id",
+        "damage",
+        "angle",
+        "bkb",
+        "fkb",
+        "kbg",
+        "hitlag_mul",
+        "sdi_mul",
+        "shieldstun_mul",
+        "shield_damage",
+        "add_hitstun",
+        "hitbox_size",
+        "ground_air",
+        "no_reverse"
+    ];
+
+    for (let y = 0; y < arrayHitbox.id.length; y++) {
+        let hitbox = JSON.parse(JSON.stringify(arrayHitbox));
+        hitbox.id = arrayHitbox.id[y];
+
+        fields.forEach( prop => {
+            if (arrayHitbox[prop] && arrayHitbox[prop].length) {
+                hitbox[prop] = arrayHitbox[prop][y];
+            }
+        });
+
+        hitboxSets.push(hitbox);
+    }
+}
+
 function parseInfoHeaderData(div, movePart) {
     if (movePart.movepart_name) {
         let name = document.createElement('p');
@@ -358,14 +396,14 @@ function constructTableHeaders(header_data, ext_header_data, dataFlags, has_faf 
     }
     if (!dataFlags.is_grab) {
         header_data.push("Damage", "Angle");
-    }
-    if (!dataFlags.is_grab && !dataFlags.has_fkb) {
-        header_data.push("BKB");
-    }
-    if (!dataFlags.is_grab && dataFlags.has_fkb) {
-        header_data.push("FKB");
-    }
-    if(!dataFlags.is_grab) {
+
+        if (dataFlags.has_fkb) {
+           header_data.push("FKB");
+        }
+        else {
+            header_data.push("BKB");
+        }
+
         header_data.push("KBG");
     }
     if (!dataFlags.is_throw) {
@@ -414,28 +452,41 @@ function constructTableHeaders(header_data, ext_header_data, dataFlags, has_faf 
 }
 
 function populateHitboxSet(row_data, ext_row_data, hitbox, movePart, dataFlags) {
-    if(!dataFlags.is_throw) {
+    if (!dataFlags.is_throw) {
         row_data.push(hitbox.id.toString());
     }
     if (!dataFlags.is_grab) {
-        row_data.push(
-            hitbox.damage + ((/^\d+\.\d+$/).test(hitbox.damage) ? '%' : '.0%'),
-            hitbox.angle.toString(),
-        );
-    }
-    if (!dataFlags.is_grab && !dataFlags.has_fkb) {
-        row_data.push(hitbox.bkb ? hitbox.bkb.toString() : 0);
-    }
-    if (!dataFlags.is_grab && dataFlags.has_fkb) {
-        row_data.push(hitbox.fkb ? hitbox.fkb.toString() : 0);
+        if (dataFlags.is_throw && hitbox.damage.length) {
+            // parse array of damage values for throws
+            let damageStr = "";
+            for (let i = 0; i < hitbox.damage.length; i++) {
+                damageStr += hitbox.damage[i] + ((/^\d+\.\d+$/).test(hitbox.damage[i]) ? '' : '.0');
+
+                if (i < hitbox.damage.length - 1) {
+                    damageStr += '/';
+                }
+            }
+            row_data.push(damageStr + '%')
+        }
+        else {
+            row_data.push(hitbox.damage + ((/^\d+\.\d+$/).test(hitbox.damage) ? '%' : '.0%'));
+        }
+
+        row_data.push(hitbox.angle.toString());
     }
     if (!dataFlags.is_grab) {
+        if (dataFlags.has_fkb) {
+            row_data.push(hitbox.fkb ? hitbox.fkb.toString() : 0);
+        }
+        else {
+            row_data.push(hitbox.bkb ? hitbox.bkb.toString() : 0);
+        }
         row_data.push(hitbox.kbg ? hitbox.kbg.toString() : 0);
     }
     if (!dataFlags.is_throw) {
         row_data.push(hitbox.hitbox_size == "various" ? "various" : hitbox.hitbox_size + ((/^\d+\.\d+$/).test(hitbox.hitbox_size) ? 'u' : '.0u'));
     }
-    if(!dataFlags.is_grab && !dataFlags.is_throw && !dataFlags.is_lock && !dataFlags.has_fall && (movePart.data.faf > 0 || movePart.data.landing_lag > 0)) {
+    if (!dataFlags.is_grab && !dataFlags.is_throw && !dataFlags.is_lock && !dataFlags.has_fall && (movePart.data.faf > 0 || movePart.data.landing_lag > 0)) {
         let safety = calculateShieldSafety(hitbox, movePart.data.hitbox_start, movePart.data.faf, dataFlags, movePart.data.landing_lag);
         let safety_2nd = "/";
 
@@ -454,7 +505,7 @@ function populateHitboxSet(row_data, ext_row_data, hitbox, movePart, dataFlags) 
         row_data.push(safety + (safety_2nd != "/" ? safety_2nd : ""));
     }
 
-    if(dataFlags.has_ga) {
+    if (dataFlags.has_ga) {
         ext_row_data.push(hitbox.ground_air ? (
             hitbox.ground_air.toUpperCase() == "G" ? "Ground" : hitbox.ground_air.toUpperCase() == "A" ? "Air" : "Ground/Air"
         ) : "Ground/Air");
