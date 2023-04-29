@@ -1,0 +1,308 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js ayu">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Contributor Guide - HDR Data</title>
+                
+
+        <!-- Custom HTML head -->
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+                <link rel="icon" href="favicon.svg">
+                        <link rel="shortcut icon" href="favicon.png">
+                <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+                <link rel="stylesheet" href="css/print.css" media="print">
+        
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+                <link rel="stylesheet" href="fonts/fonts.css">
+        
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+            </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "ayu";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="intro.html">Home</a></li><li class="chapter-item "><div><strong aria-hidden="true">1.</strong> Engine Changes</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="engine/mechanics.html"><strong aria-hidden="true">1.1.</strong> Mechanics</a></li><li class="chapter-item "><a href="engine/fighterstats.html"><strong aria-hidden="true">1.2.</strong> Fighter Stats</a></li><li class="chapter-item "><a href="engine/knockback.html"><strong aria-hidden="true">1.3.</strong> Knockback</a></li><li class="chapter-item "><a href="engine/di.html"><strong aria-hidden="true">1.4.</strong> Directional Influence</a></li><li class="chapter-item "><a href="engine/collision.html"><strong aria-hidden="true">1.5.</strong> Collision</a></li><li class="chapter-item "><a href="engine/ledges.html"><strong aria-hidden="true">1.6.</strong> Ledges</a></li><li class="chapter-item "><a href="engine/shields.html"><strong aria-hidden="true">1.7.</strong> Shielding</a></li><li class="chapter-item "><a href="engine/airdodges.html"><strong aria-hidden="true">1.8.</strong> Airdodging / Wavedashing</a></li><li class="chapter-item "><a href="engine/rolls.html"><strong aria-hidden="true">1.9.</strong> Rolling / Teching</a></li><li class="chapter-item "><a href="engine/items.html"><strong aria-hidden="true">1.10.</strong> Footstooling / Item Mechanics</a></li><li class="chapter-item "><a href="engine/misc.html"><strong aria-hidden="true">1.11.</strong> Miscellaneous</a></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">2.</strong> System Changes</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="system/launcher.html"><strong aria-hidden="true">2.1.</strong> Launcher</a></li><li class="chapter-item "><a href="system/inputs.html"><strong aria-hidden="true">2.2.</strong> Inputs and Controls</a></li><li class="chapter-item "><a href="system/ui.html"><strong aria-hidden="true">2.3.</strong> User Interface and Graphics</a></li><li class="chapter-item "><a href="system/modes.html"><strong aria-hidden="true">2.4.</strong> Extra Modes</a></li><li class="chapter-item "><a href="system/online.html"><strong aria-hidden="true">2.5.</strong> Online</a></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">3.</strong> Stages</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">3.1.</strong> Stages</div></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">4.</strong> Character Pages</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="characters/characterlist.html"><strong aria-hidden="true">4.1.</strong> Overview</a></li><li class="chapter-item "><a href="characters/terms.html"><strong aria-hidden="true">4.2.</strong> Terms</a></li><li class="chapter-item "><div><strong aria-hidden="true">4.3.</strong> Smash 64</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="characters/smash64/mario.html"><strong aria-hidden="true">4.3.1.</strong> Mario</a></li><li class="chapter-item "><a href="characters/smash64/donkey.html"><strong aria-hidden="true">4.3.2.</strong> Donkey Kong</a></li><li class="chapter-item "><a href="characters/smash64/link.html"><strong aria-hidden="true">4.3.3.</strong> Link</a></li><li class="chapter-item "><a href="characters/smash64/samus.html"><strong aria-hidden="true">4.3.4.</strong> Samus</a></li><li class="chapter-item "><a href="characters/smash64/yoshi.html"><strong aria-hidden="true">4.3.5.</strong> Yoshi</a></li><li class="chapter-item "><a href="characters/smash64/kirby.html"><strong aria-hidden="true">4.3.6.</strong> Kirby</a></li><li class="chapter-item "><a href="characters/smash64/fox.html"><strong aria-hidden="true">4.3.7.</strong> Fox</a></li><li class="chapter-item "><a href="characters/smash64/pikachu.html"><strong aria-hidden="true">4.3.8.</strong> Pikachu</a></li><li class="chapter-item "><a href="characters/smash64/luigi.html"><strong aria-hidden="true">4.3.9.</strong> Luigi</a></li><li class="chapter-item "><a href="characters/smash64/ness.html"><strong aria-hidden="true">4.3.10.</strong> Ness</a></li><li class="chapter-item "><a href="characters/smash64/captain.html"><strong aria-hidden="true">4.3.11.</strong> Captain Falcon</a></li><li class="chapter-item "><a href="characters/smash64/purin.html"><strong aria-hidden="true">4.3.12.</strong> Jigglypuff</a></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">4.4.</strong> Melee</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="characters/melee/peach.html"><strong aria-hidden="true">4.4.1.</strong> Peach</a></li><li class="chapter-item "><a href="characters/melee/koopa.html"><strong aria-hidden="true">4.4.2.</strong> Bowser</a></li><li class="chapter-item "><a href="characters/melee/popo.html"><strong aria-hidden="true">4.4.3.</strong> Ice Climbers</a></li><li class="chapter-item "><a href="characters/melee/sheik.html"><strong aria-hidden="true">4.4.4.</strong> Sheik</a></li><li class="chapter-item "><a href="characters/melee/zelda.html"><strong aria-hidden="true">4.4.5.</strong> Zelda</a></li><li class="chapter-item "><a href="characters/melee/mariod.html"><strong aria-hidden="true">4.4.6.</strong> Dr. Mario</a></li><li class="chapter-item "><a href="characters/melee/pichu.html"><strong aria-hidden="true">4.4.7.</strong> Pichu</a></li><li class="chapter-item "><a href="characters/melee/falco.html"><strong aria-hidden="true">4.4.8.</strong> Falco</a></li><li class="chapter-item "><a href="characters/melee/marth.html"><strong aria-hidden="true">4.4.9.</strong> Marth</a></li><li class="chapter-item "><a href="characters/melee/younglink.html"><strong aria-hidden="true">4.4.10.</strong> Young Link</a></li><li class="chapter-item "><a href="characters/melee/ganon.html"><strong aria-hidden="true">4.4.11.</strong> Ganondorf</a></li><li class="chapter-item "><a href="characters/melee/mewtwo.html"><strong aria-hidden="true">4.4.12.</strong> Mewtwo</a></li><li class="chapter-item "><a href="characters/melee/roy.html"><strong aria-hidden="true">4.4.13.</strong> Roy</a></li><li class="chapter-item "><a href="characters/melee/gamewatch.html"><strong aria-hidden="true">4.4.14.</strong> Mr. Game and Watch</a></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.</strong> Brawl</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="characters/brawl/metaknight.html"><strong aria-hidden="true">4.5.1.</strong> Meta Knight</a></li><li class="chapter-item "><a href="characters/brawl/pit.html"><strong aria-hidden="true">4.5.2.</strong> Pit</a></li><li class="chapter-item "><a href="characters/brawl/szerosuit.html"><strong aria-hidden="true">4.5.3.</strong> Zero Suit Samus</a></li><li class="chapter-item "><a href="characters/brawl/wario.html"><strong aria-hidden="true">4.5.4.</strong> Wario</a></li><li class="chapter-item "><a href="characters/brawl/snake.html"><strong aria-hidden="true">4.5.5.</strong> Snake</a></li><li class="chapter-item "><a href="characters/brawl/ike.html"><strong aria-hidden="true">4.5.6.</strong> Ike</a></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.7.</strong> Squirtle</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.8.</strong> Ivysaur</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.9.</strong> Charizard</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.10.</strong> Diddy Kong</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.11.</strong> Lucas</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.12.</strong> Sonic</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.13.</strong> King Dedede</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.14.</strong> Olimar</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.15.</strong> Lucario</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.16.</strong> R.O.B.</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.17.</strong> Toon Link</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.5.18.</strong> Wolf</div></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.</strong> Smash 4</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">4.6.1.</strong> Villager</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.2.</strong> Mega Man</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.3.</strong> Wii Fit Trainer</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.4.</strong> Rosalina and Luma</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.5.</strong> Little Mac</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.6.</strong> Greninja</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.7.</strong> Mii Brawler</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.8.</strong> Mii Swordfighter</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.9.</strong> Mii Gunner</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.10.</strong> Palutena</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.11.</strong> Dark Pit</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.12.</strong> Pac-Man</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.13.</strong> Lucina</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.14.</strong> Robin</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.15.</strong> Shulk</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.16.</strong> Bowser Jr.</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.17.</strong> Duck Hunt</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.18.</strong> Ryu</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.19.</strong> Cloud</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.20.</strong> Corrin</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.6.21.</strong> Bayonetta</div></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.</strong> Ultimate</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">4.7.1.</strong> Inkling</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.2.</strong> Daisy</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.3.</strong> Ridley</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.4.</strong> Simon</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.5.</strong> Richter</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.6.</strong> Chrom</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.7.</strong> Dark Samus</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.8.</strong> King K. Rool</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.9.</strong> Isabelle</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.10.</strong> Ken</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.11.</strong> Incineroar</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.12.</strong> Piranha Plant</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.13.</strong> Joker</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.14.</strong> Hero</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.15.</strong> Banjo and Kazooie</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.16.</strong> Terry</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.17.</strong> Byleth</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.18.</strong> Min Min</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.19.</strong> Steve</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.20.</strong> Sephiroth</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.21.</strong> Pyra</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.22.</strong> Mythra</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.23.</strong> Kazuya</div></li><li class="chapter-item "><div><strong aria-hidden="true">4.7.24.</strong> Sora</div></li></ol></li></ol></li><li class="chapter-item expanded "><a href="contribguide.html" class="active"><strong aria-hidden="true">5.</strong> Contributor Guide</a></li></ol>            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu (default)</button></li>
+                        </ul>
+                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                                            </div>
+
+                    <h1 class="menu-title">HDR Data</h1>
+
+                    <div class="right-buttons">
+                                                <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                                                                        
+                    </div>
+                </div>
+
+                                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="hdr-data-contributors-guide"><a class="header" href="#hdr-data-contributors-guide">HDR Data Contributor's Guide</a></h1>
+<p>Greetings! If you're interested in helping out with makes changes to HDR Data, then here's everything you'll need to know</p>
+<h2 id="the-environment"><a class="header" href="#the-environment">The Environment</a></h2>
+<p>Setting up the development environment is much simpler than that of HDR. All you need is VSCode and Github Desktop (or a similar program such as GitKraken). Then simply fork the repo and open it within VSCode</p>
+<h2 id="install-rust"><a class="header" href="#install-rust">Install Rust</a></h2>
+<p>If you have previously set up the HDR dev environment, you should have Rust installed already. If not, please go to <a href="https://www.rust-lang.org/tools/install">this link</a> and click the download button that pertains to your OS</p>
+<h2 id="install-mdbook"><a class="header" href="#install-mdbook">Install mdbook</a></h2>
+<p>Once you have Rust installed, open a new terminal in VSCode and run the following command: <code>cargo install mdbook</code></p>
+<h2 id="the-very-handy-command"><a class="header" href="#the-very-handy-command">The Very Handy Command</a></h2>
+<p>From the home directory of the repository, you can type <code>mdbook serve --open</code> in the VSCode terminal to launch a locally hosted web session of the masterlog. It will update and refresh every time you save any changes to a file, making previewing changes quick and easy. You can also hit <code>Ctrl+F5</code> to fully reload the session, which can help with refreshing styles and if the data doesn't seem to be pulling correctly</p>
+<h2 id="submitting-the-pull-request"><a class="header" href="#submitting-the-pull-request">Submitting the Pull Request</a></h2>
+<p>Once you have made your changes, simply commit your changes in Github Desktop and create a pull request. I should see it immediately and will merge it after review and any further needed adjustments</p>
+<h2 id="making-changes"><a class="header" href="#making-changes">Making Changes</a></h2>
+<p>To update characters with new changes, you'll need to look at two locations: the character page (<code>&lt;char&gt;.md</code>) and that character's data file (<code>&lt;char&gt;.json</code>). Both can be found in the characters folder, separated by game. The data file is located in the same directory as the character page under the data folder</p>
+<h2 id="the-character-page-charmd"><a class="header" href="#the-character-page-charmd">The Character Page (<code>&lt;char&gt;.md</code>)</a></h2>
+<p>This is the skeleton that gets populated with all the character's data on page load
+<br><br><br>
+To add a new move, use the following template:</p>
+<pre><code class="language-html">&lt;p&gt;Move Name&lt;/p&gt;&lt;div class=&quot;charTable&quot;&gt;&lt;/div&gt;
+&lt;br&gt;
+</code></pre>
+<br>
+To include textual info about the move (such as unique properties or mechanic explanations), you will need to format as follows:
+<pre><code class="language-html">&lt;p&gt;Move Name&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Here is an example move property&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;charTable&quot;&gt;&lt;/div&gt;
+&lt;br&gt;
+</code></pre>
+<br>
+You can also split the move into separate moves in the data file in order to provide information for specific moves parts like so:
+<pre><code class="language-html">&lt;p&gt;Move Name&lt;/p&gt;
+&lt;p class=&quot;info_movepart&quot;&gt;Move Part 1&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Some info pertaining only to this part of the move&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;charTable&quot;&gt;&lt;/div&gt;
+&lt;p class=&quot;info_movepart&quot;&gt;Move Part 2&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Some other info pertaining only to this part of the move&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;charTable&quot;&gt;&lt;/div&gt;
+&lt;br&gt;
+</code></pre>
+<br>
+** Note that the character page needs to have the exact number of divs with the `charTable` label as the data file does move entries, or you will either be missing tables or the page may not load anything at all
+<h2 id="the-character-data-file-charjson"><a class="header" href="#the-character-data-file-charjson">The Character Data File (<code>&lt;char&gt;.json</code>)</a></h2>
+<p>The moveset template (<code>basetemplate.json</code>) and move template (<code>movetemplate.json</code>) can be found in the <code>testing</code> folder on the root of the repo</p>
+<p>Data fields do not need to be present if they are the same as the default values found in the template. Data fields do not technically need to be in order, but I do reserve the right to yell at you for not having them in order</p>
+<p>All possible data fields are as follows, with a brief explanation for each:</p>
+<h3 id="header-data"><a class="header" href="#header-data">Header Data</a></h3>
+<ul>
+<li><code>moveset</code> - This does not need to be touched</li>
+<li><code>move_name</code> - The identifier for the move (ie <code>Up Tilt</code>, <code>Down Air</code>, etc). Does not get pulled into the web page, this is solely for visibility when working in the data file</li>
+<li><code>movepart_name</code> - The identifier for the move part (ie <code>Early</code>, <code>Launcher</code>, etc). This will show up in the move part's info if not empty, used for distinguishing between different move parts</li>
+</ul>
+<h3 id="data-flags"><a class="header" href="#data-flags">Data Flags</a></h3>
+<p>** Note that each move part in a move can have different data flags. Data flags need to be defined per move part</p>
+<ul>
+<li><code>is_normal</code> - Classifies the move part as a normal (which is most of the time). This should only be false for smash attacks, aerials, projectiles, command grabs, and throws</li>
+<li><code>is_smash</code> - Classifies the move part as a smash attack</li>
+<li><code>is_aerial</code> - Classifies the move part as an aerial</li>
+<li><code>is_projectile</code> - Classifies the move part as a projectile</li>
+<li><code>is_grab</code> - Classifies the move part as a command grab (normal grabs should be handled solely on the character page)</li>
+<li><code>is_throw</code> - Classifies the move part as a throw</li>
+<li><code>is_lock</code> - Classifies the move part as a jablock hitbox. Used when a move contains hitboxes specifically for locking (ie certain jabs)</li>
+<li><code>has_fall</code> - Used when the move transitions into special fall</li>
+</ul>
+<h3 id="info-data"><a class="header" href="#info-data">Info Data</a></h3>
+<p>** Info data only needs to be defined in the first move part of each move if no subsequent move parts contain different values</p>
+<ul>
+<li><code>hitbox_start</code> - The starting frame of activity for the move part's hitboxes. If multiple hits, use array notation</li>
+<li><code>hitbox_end</code> - The ending frame of activity for the move part's hitboxes. If multiple hits, use array notation. For durations of a single frame, you can either set start and end to the same frame or only use start (if the last/only value)</li>
+<li><code>faf</code> - The first actionable frame of the move part</li>
+<li><code>faf_2nd</code> - Used when the move part has a different FAF under some condition (such as ground/air or hit/whiff)</li>
+<li><code>faf_str</code> - Used to specify the conditions pertaining to the first/second FAF</li>
+<li><code>hide_faf</code> - Used to forgo displaying the FAF in the table footer when move parts are split across multiple tables to allow for displaying part-specific info. Very rare use case, so this is intentionally omitted from the template</li>
+<li><code>autocancel_start</code> - The starting frame for a move part's autocancel window. Can be array notated similar to hitbox durations</li>
+<li><code>autocancel_end</code> - The ending frame for a move part's autocancel window</li>
+<li><code>landing_lag</code> - The landing lag of the move</li>
+</ul>
+<h3 id="hitbox-data"><a class="header" href="#hitbox-data">Hitbox Data</a></h3>
+<ul>
+<li><code>id</code> - Hitbox ID</li>
+<li><code>damage</code> - Damage</li>
+<li><code>angle</code> - Angle</li>
+<li><code>bkb</code> - Base Knockback. Does not need to be present when using FKB</li>
+<li><code>fkb</code> - Fixed Knockback. Does not need to be present when using BKB</li>
+<li><code>kbg</code> - Knockback Growth</li>
+<li><code>hitlag_mul</code> - Hitlag Multiplier</li>
+<li><code>sdi_mul</code> - SDI Multiplier</li>
+<li><code>shieldstun_mul</code> - Shieldstun Multiplier</li>
+<li><code>shield_damage</code> - Additional Shield Damage</li>
+<li><code>add_hitstun</code> - Additional Hitstun</li>
+<li><code>hitbox_size</code> - Hitbox Size</li>
+<li><code>ground_air</code> - If the hitbox hits only ground (<code>&quot;G&quot;</code>) or air (<code>&quot;A&quot;</code>). Can also use <code>&quot;&quot;</code> to denote both if used in array notation (see array notation section)</li>
+<li><code>no_reverse</code> - If the hitbox explicitly does not reverse hit. Not used for throws</li>
+<li><code>fa_0</code> - Frame Advantage at 0%. Used for certain moves such as jabs or dragdown aerials. Do not include if not properly documented</li>
+<li><code>fa_100</code> - Frame Advantage at 100%</li>
+</ul>
+<h2 id="array-notation"><a class="header" href="#array-notation">Array Notation</a></h2>
+<p>A lot of hitbox sets have mostly or completely identical properties for several if not all of their hitboxes. To avoid needless redundancy and clutter, you can construct identical or semi-identical hitboxes as a single hitbox entry if you make the id field into an array</p>
+<pre><code class="language-json">{
+  &quot;id&quot;: [ 0, 1, 2 ],
+  &quot;damage&quot;: [ 15.0, 15.0, 20.0 ],
+  &quot;angle&quot;: 361,
+  &quot;bkb&quot;: 30,
+  &quot;kbg&quot;: [ 100, 100, 97 ],
+  &quot;hitbox_size&quot;: [ 2.5, 3.5, 5.7 ]
+}
+</code></pre>
+<p>All hitbox data fields in the <code>Hitbox Data</code> list be shorthanded in this manner if they differ between hitboxes within the same hitbox set<br>
+** Note that all differing fields will need to have the same amount of values as the id array, with each index of the arrays corresponding</p>
+<h2 id="damage-array-notation-for-throws"><a class="header" href="#damage-array-notation-for-throws">Damage Array Notation for Throws</a></h2>
+<p>Certain throws have multiple separate hitboxes before the release, in which case the damage field can be made into an array</p>
+<br>
+Please don't hesitate to reach out to me via the HDR Discord if there are any questions. Happy contributing!<br>
+-- Askew
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                                                    <a rel="prev" href="characters/brawl/ike.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+                        
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                                    <a rel="prev" href="characters/brawl/ike.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+                            </nav>
+
+        </div>
+
+        
+        
+        
+                <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+        
+                <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        
+    </body>
+</html>
