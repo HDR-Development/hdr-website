@@ -82,3 +82,7 @@ Beta changelogs:<br>
     </tr>
   </tbody>
 </table>
+<br>
+<div style="text-align:center;font-size:100%">
+Interested in helping out? Please check out the <a href="./contribguide.md">Contributor Guide</b>
+</div>
