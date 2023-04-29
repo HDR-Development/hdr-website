@@ -1,6 +1,6 @@
 # HDR Data Contributor's Guide
 
-Greetings! If you're interested in helping out with makes changes to HDR Data, then here's everything you'll need to know
+Greetings! If you're interested in helping out with making changes to HDR Data, then here's everything you'll need to know
 
 
 ## The Environment
@@ -16,7 +16,7 @@ Once you have Rust installed, open a new terminal in VSCode and run the followin
 
 
 ## The Very Handy Command
-From the home directory of the repository, you can type `mdbook serve --open` in the VSCode terminal to launch a locally hosted web session of the masterlog. It will update and refresh every time you save any changes to a file, making previewing changes quick and easy. You can also hit `Ctrl+F5` to fully reload the session, which can help with refreshing styles and if the data doesn't seem to be pulling correctly
+From the home directory of the repository, you can type `mdbook serve --open` in the VSCode terminal to launch a locally hosted web session. It will update and refresh every time you save any changes to a file, making previewing changes quick and easy. You can also hit `Ctrl+F5` to fully reload the session, which can help with refreshing styles and if the data doesn't seem to be pulling correctly
 
 
 ## Submitting the Pull Request
