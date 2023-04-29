@@ -217,6 +217,7 @@ You can also split the move into separate moves in the data file in order to pro
 <ul>
 <li><code>hitbox_start</code> - The starting frame of activity for the move part's hitboxes. If multiple hits, use array notation</li>
 <li><code>hitbox_end</code> - The ending frame of activity for the move part's hitboxes. If multiple hits, use array notation. For durations of a single frame, you can either set start and end to the same frame or only use start (if the last/only value)</li>
+<li><code>open_end</code> - Used if the hitbox has an arbitrary ending frame, such as being able to be interrupted at any point until some eventual period or the move continuing until it hits the ground. Two examples of this are Yoshi's Egg Roll and the falling portion of Egg Bomb</li>
 <li><code>faf</code> - The first actionable frame of the move part</li>
 <li><code>faf_2nd</code> - Used when the move part has a different FAF under some condition (such as ground/air or hit/whiff)</li>
 <li><code>faf_str</code> - Used to specify the conditions pertaining to the first/second FAF</li>
