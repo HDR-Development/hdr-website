@@ -98,6 +98,7 @@ All possible data fields are as follows, with a brief explanation for each:
 
 - `hitbox_start` - The starting frame of activity for the move part's hitboxes. If multiple hits, use array notation
 - `hitbox_end` - The ending frame of activity for the move part's hitboxes. If multiple hits, use array notation. For durations of a single frame, you can either set start and end to the same frame or only use start (if the last/only value)
+- `open_end` - Used if the hitbox has an arbitrary ending frame, such as being able to be interrupted at any point until some eventual period or the move continuing until it hits the ground. Two examples of this are Yoshi's Egg Roll and the falling portion of Egg Bomb
 - `faf` - The first actionable frame of the move part
 - `faf_2nd` - Used when the move part has a different FAF under some condition (such as ground/air or hit/whiff)
 - `faf_str` - Used to specify the conditions pertaining to the first/second FAF

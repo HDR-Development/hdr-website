@@ -14,6 +14,7 @@
         "has_fall": false,
         "hitbox_start": 0,
         "hitbox_end": 0,
+        "open_end": false,
         "faf": 0,
         "faf_2nd": 0,
         "faf_str": "",
@@ -38,6 +39,63 @@
             "no_reverse": false,
             "fa_0": 0,
             "fa_100": 0
+          }
+        ]
+      }
+    },
+    {
+      "movepart_name": "",
+      "data": {
+        "is_normal": true,
+        "hitbox_start": 0,
+        "hitbox_end": 0,
+        "faf": 0,
+        "hitboxes": [
+          {
+            "id": 0,
+            "damage": 0.0,
+            "angle": 0,
+            "bkb": 0,
+            "kbg": 0,
+            "hitbox_size": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "movepart_name": "",
+      "data": {
+        "is_aerial": true,
+        "hitbox_start": 0,
+        "hitbox_end": 0,
+        "faf": 0,
+        "autocancel_start": 0,
+        "autocancel_end": 0,
+        "landing_lag": 0,
+        "hitboxes": [
+          {
+            "id": 0,
+            "damage": 0.0,
+            "angle": 0,
+            "bkb": 0,
+            "kbg": 0,
+            "hitbox_size": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "movepart_name": "",
+      "data": {
+        "is_throw": true,
+        "faf": 0,
+        "hitboxes": [
+          {
+            "id": 0,
+            "damage": 0.0,
+            "angle": 0,
+            "bkb": 0,
+            "kbg": 0
           }
         ]
       }

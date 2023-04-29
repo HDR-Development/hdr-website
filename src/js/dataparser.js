@@ -65,6 +65,7 @@ function constructMoveTables(charJSON) {
                 "is_throw": movePart.data.is_throw,             // if move is a throw
                 "is_lock": movePart.data.is_lock,               // if move is a jablock
                 "has_fall": movePart.data.has_fall,             // if move transitions to special fall
+                "open_end": movePart.data.open_end,             // if move has arbitrary hitbox duration
                 "has_fkb": false,                               // if move has FKB
                 "has_fa": false,                                // if move has documented frame advantage
                 "has_ac": movePart.data.autocancel_start,       // if move has autocancel windows
@@ -269,7 +270,7 @@ function unwrapHitboxArray(hitboxSets, arrayHitbox) {
     }
 }
 
-function parseInfoHeaderData(div, movePart) {
+function parseInfoHeaderData(div, movePart, dataFlags) {
     if (movePart.movepart_name) {
         let name = document.createElement('p');
         name.textContent = movePart.movepart_name;
@@ -279,7 +280,7 @@ function parseInfoHeaderData(div, movePart) {
 
     if (movePart.data.hitbox_start) {
         let hitbox_duration = document.createElement('p');
-        hitbox_duration.textContent = parseFrameWindow(movePart.data.hitbox_start, movePart.data.hitbox_end, "Hitbox Duration");
+        hitbox_duration.textContent = parseFrameWindow(movePart.data.hitbox_start, movePart.data.hitbox_end, "Hitbox Duration", false, dataFlags.open_end);
         hitbox_duration.style.fontSize = "16px";
         div.appendChild(hitbox_duration);
     }
@@ -347,7 +348,7 @@ function parseInfoPartialFooterData(div, movePart, dataFlags) {
 }
 
 // detects durations as single or multiple and formats to a combined ordered string
-function parseFrameWindow(start, end = false, headerString, ac = false) {
+function parseFrameWindow(start, end = false, headerString, ac = false, open_end = false) {
     if (end && start != end) {
         if (start.length && end.length) {   // multiple durations
             let str = headerString + ": F";
@@ -374,7 +375,12 @@ function parseFrameWindow(start, end = false, headerString, ac = false) {
         }
     }
     else {  // single duration of one frame
-        return headerString + ": F" + start + (ac ? "+" : "");
+        if (open_end) {
+            return headerString + ": F" + start + "+";
+        }
+        else {
+            return headerString + ": F" + start + (ac ? "+" : "");
+        }
     }
 }
 
