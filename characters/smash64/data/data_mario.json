@@ -4,7 +4,6 @@
       "move_name": "Jab 1",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_normal": true,
             "hitbox_start": 2,
@@ -48,7 +47,6 @@
       "move_name": "Jab 2",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_normal": true,
             "hitbox_start": 2,
@@ -93,7 +91,6 @@
       "move_name": "Jab 3",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_normal": true,
             "hitbox_start": 3,
@@ -216,7 +213,6 @@
       "move_name": "Down Tilt",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_normal": true,
             "hitbox_start": 5,
@@ -343,7 +339,6 @@
       "move_name": "Up Smash",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_smash": true,
             "hitbox_start": 9,
@@ -658,7 +653,6 @@
       "move_name": "Neutral Special (Fireball)",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_projectile": true,
             "hitbox_start": [ 18, 21, 51 ],
@@ -729,7 +723,6 @@
       "move_name": "Side Special",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_normal": true,
             "hitbox_start": 12,
@@ -822,7 +815,6 @@
       "move_name": "Forward Throw",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_throw": true,
             "faf": 28,
@@ -882,7 +874,6 @@
       "move_name": "Up Throw",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_throw": true,
             "faf": 37,
@@ -903,7 +894,6 @@
       "move_name": "Down Throw",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_throw": true,
             "faf": 38,

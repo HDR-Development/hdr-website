@@ -149,8 +149,8 @@
 <p>Setting up the development environment is much simpler than that of HDR. All you need is VSCode and Github Desktop (or a similar program such as GitKraken). Then simply fork the repo and open it within VSCode</p>
 <h2 id="install-rust"><a class="header" href="#install-rust">Install Rust</a></h2>
 <p>If you have previously set up the HDR dev environment, you should have Rust installed already. If not, please go to <a href="https://www.rust-lang.org/tools/install">this link</a> and click the download button that pertains to your OS</p>
-<h2 id="install-mdbook"><a class="header" href="#install-mdbook">Install mdbook</a></h2>
-<p>Once you have Rust installed, open a new terminal in VSCode and run the following command: <code>cargo install mdbook</code></p>
+<h2 id="install-cargo-and-mdbook"><a class="header" href="#install-cargo-and-mdbook">Install cargo and mdbook</a></h2>
+<p>In the Extensions tab in VSCode, search for <code>cargo</code> and install it. Once you have cargo installed, open a new terminal in VSCode and run the following command: <code>cargo install mdbook</code></p>
 <h2 id="the-very-handy-command"><a class="header" href="#the-very-handy-command">The Very Handy Command</a></h2>
 <p>From the home directory of the repository, you can type <code>mdbook serve --open</code> in the VSCode terminal to launch a locally hosted web session. It will update and refresh every time you save any changes to a file, making previewing changes quick and easy. You can also hit <code>Ctrl+F5</code> to fully reload the session, which can help with refreshing styles and if the data doesn't seem to be pulling correctly</p>
 <h2 id="submitting-the-pull-request"><a class="header" href="#submitting-the-pull-request">Submitting the Pull Request</a></h2>
@@ -201,7 +201,6 @@ You can also split the move into separate moves in the data file in order to pro
 <li><code>movepart_name</code> - The identifier for the move part (ie <code>Early</code>, <code>Launcher</code>, etc). This will show up in the move part's info if not empty, used for distinguishing between different move parts</li>
 </ul>
 <h3 id="data-flags"><a class="header" href="#data-flags">Data Flags</a></h3>
-<p>** Note that each move part in a move can have different data flags. Data flags need to be defined per move part</p>
 <ul>
 <li><code>is_normal</code> - Classifies the move part as a normal (which is most of the time). This should only be false for smash attacks, aerials, projectiles, command grabs, and throws</li>
 <li><code>is_smash</code> - Classifies the move part as a smash attack</li>
@@ -212,6 +211,7 @@ You can also split the move into separate moves in the data file in order to pro
 <li><code>is_lock</code> - Classifies the move part as a jablock hitbox. Used when a move contains hitboxes specifically for locking (ie certain jabs)</li>
 <li><code>has_fall</code> - Used when the move transitions into special fall</li>
 </ul>
+<p>** Only one of these flags should be <code>true</code> per move part, with the exception of <code>has_fall</code>. Data flags need to be defined per move part, as each part can have different data flags</p>
 <h3 id="info-data"><a class="header" href="#info-data">Info Data</a></h3>
 <p>** Info data only needs to be defined in the first move part of each move if no subsequent move parts contain different values</p>
 <ul>
@@ -221,7 +221,7 @@ You can also split the move into separate moves in the data file in order to pro
 <li><code>faf</code> - The first actionable frame of the move part</li>
 <li><code>faf_2nd</code> - Used when the move part has a different FAF under some condition (such as ground/air or hit/whiff)</li>
 <li><code>faf_str</code> - Used to specify the conditions pertaining to the first/second FAF</li>
-<li><code>hide_faf</code> - Used to forgo displaying the FAF in the table footer when move parts are split across multiple tables to allow for displaying part-specific info. Very rare use case, so this is intentionally omitted from the template</li>
+<li><code>hide_faf</code> - Used to forgo displaying the FAF in the table footer when move parts are split across multiple tables to allow for displaying part-specific info</li>
 <li><code>autocancel_start</code> - The starting frame for a move part's autocancel window. Can be array notated similar to hitbox durations</li>
 <li><code>autocancel_end</code> - The ending frame for a move part's autocancel window</li>
 <li><code>landing_lag</code> - The landing lag of the move</li>
@@ -246,7 +246,7 @@ You can also split the move into separate moves in the data file in order to pro
 <li><code>fa_100</code> - Frame Advantage at 100%</li>
 </ul>
 <h2 id="array-notation"><a class="header" href="#array-notation">Array Notation</a></h2>
-<p>A lot of hitbox sets have mostly or completely identical properties for several if not all of their hitboxes. To avoid needless redundancy and clutter, you can construct identical or semi-identical hitboxes as a single hitbox entry if you make the id field into an array</p>
+<p>A lot of hitbox sets have mostly or completely identical properties for several if not all of their hitboxes. To avoid needless redundancy and clutter, you can construct identical or semi-identical hitboxes as a single entry</p>
 <pre><code class="language-json">{
   &quot;id&quot;: [ 0, 1, 2 ],
   &quot;damage&quot;: [ 15.0, 15.0, 20.0 ],
@@ -256,8 +256,8 @@ You can also split the move into separate moves in the data file in order to pro
   &quot;hitbox_size&quot;: [ 2.5, 3.5, 5.7 ]
 }
 </code></pre>
-<p>All hitbox data fields in the <code>Hitbox Data</code> list be shorthanded in this manner if they differ between hitboxes within the same hitbox set<br>
-** Note that all differing fields will need to have the same amount of values as the id array, with each index of the arrays corresponding</p>
+<p>All hitbox data fields in the <code>Hitbox Data</code> list be shorthanded in this manner if they differ between hitboxes within the same hitbox set</p>
+<p>** Note that all differing fields will need to have the same amount of values as the id array, with each index of the arrays corresponding</p>
 <h2 id="damage-array-notation-for-throws"><a class="header" href="#damage-array-notation-for-throws">Damage Array Notation for Throws</a></h2>
 <p>Certain throws have multiple separate hitboxes before the release, in which case the damage field can be made into an array</p>
 <br>

@@ -18,6 +18,7 @@
         "faf": 0,
         "faf_2nd": 0,
         "faf_str": "",
+        "hide_faf": true,
         "autocancel_start": 0,
         "autocancel_end": 0,
         "landing_lag": 0,

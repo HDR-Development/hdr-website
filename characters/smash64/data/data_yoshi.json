@@ -4,7 +4,6 @@
       "move_name": "Jab 1",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_normal": true,
             "hitbox_start": 3,
@@ -44,7 +43,6 @@
       "move_name": "Jab 2",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_normal": true,
             "hitbox_start": 3,
@@ -130,7 +128,6 @@
       "move_name": "Up Tilt",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_normal": true,
             "hitbox_start": 7,
@@ -154,7 +151,6 @@
       "move_name": "Down Tilt",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_normal": true,
             "hitbox_start": 7,
@@ -373,7 +369,6 @@
       "move_name": "Forward Air",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_aerial": true,
             "hitbox_start": 16,
@@ -447,7 +442,6 @@
       "move_name": "Up Air",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_aerial": true,
             "hitbox_start": 5,
@@ -540,7 +534,6 @@
       "move_name": "Neutral Special",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_grab": true,
             "hitbox_start": 19,
@@ -563,7 +556,6 @@
       "move_name": "Side Special",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_normal": true,
             "hitbox_start": 21,
@@ -674,7 +666,6 @@
       "move_name": "Down Special (Air)",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_normal": true,
             "hitbox_start": 27,
@@ -700,7 +691,6 @@
       "move_name": "Forward Throw",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_throw": true,
             "faf": 40,
@@ -721,7 +711,6 @@
       "move_name": "Back Throw",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_throw": true,
             "faf": 44,
@@ -742,7 +731,6 @@
       "move_name": "Up Throw",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_throw": true,
             "faf": 44,
@@ -763,7 +751,6 @@
       "move_name": "Down Throw",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_throw": true,
             "faf": 44,

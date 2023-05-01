@@ -4,7 +4,6 @@
       "move_name": "Jab 1",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_normal": true,
             "hitbox_start": 5,
@@ -48,7 +47,6 @@
       "move_name": "Jab 2",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_normal": true,
             "hitbox_start": 4,
@@ -130,7 +128,6 @@
       "move_name": "Up Tilt",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_normal": true,
             "hitbox_start": 6,
@@ -154,7 +151,6 @@
       "move_name": "Down Tilt",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_normal": true,
             "hitbox_start": 6,
@@ -226,7 +222,6 @@
       "move_name": "Forward Smash",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_smash": true,
             "hitbox_start": 22,
@@ -253,7 +248,6 @@
       "move_name": "Up Smash",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_smash": true,
             "hitbox_start": 14,
@@ -459,7 +453,6 @@
       "move_name": "Up Air",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_aerial": true,
             "hitbox_start": 6,
@@ -486,7 +479,6 @@
       "move_name": "Down Air",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_aerial": true,
             "hitbox_start": 16,
@@ -591,7 +583,6 @@
       "move_name": "Side Special",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_normal": true,
             "hitbox_start": 20,
@@ -617,7 +608,6 @@
       "move_name": "Up Special (ground, initial hit)",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_normal": true,
             "hitbox_start": 3,
@@ -642,7 +632,6 @@
       "move_name": "Up Special (ground, multihits)",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_normal": true,
             "hitbox_start": [ 14, 21, 28, 35, 42, 49, 56 ],
@@ -667,7 +656,6 @@
       "move_name": "Up Special (air, initial hit)",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_normal": true,
             "has_fall": true,
@@ -692,7 +680,6 @@
       "move_name": "Up Special (air, multihits)",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_normal": true,
             "has_fall": true,
@@ -768,7 +755,6 @@
       "move_name": "Down Special (Air Cargo)",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_grab": true,
             "hitbox_start": 18,
@@ -790,7 +776,6 @@
       "move_name": "Cargo Forward Throw",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_throw": true,
             "faf": 27,
@@ -811,7 +796,6 @@
       "move_name": "Cargo Back Throw",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_throw": true,
             "faf": 33,
@@ -832,7 +816,6 @@
       "move_name": "Cargo Up Throw",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_throw": true,
             "faf": 32,
@@ -853,7 +836,6 @@
       "move_name": "Cargo Down Throw",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_throw": true,
             "faf": 41,
@@ -874,7 +856,6 @@
       "move_name": "Back Throw",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_throw": true,
             "faf": 40,
@@ -895,7 +876,6 @@
       "move_name": "Up Throw",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_throw": true,
             "faf": 44,
@@ -916,7 +896,6 @@
       "move_name": "Down Throw",
       "data": [
         {
-          "movepart_name": "",
           "data": {
             "is_throw": true,
             "faf": 55,
