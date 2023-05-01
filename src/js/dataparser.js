@@ -214,6 +214,10 @@ function AddPersistDataFields(movePart, moveNext, dataFlags) {
         dataFlags.split_faf = true;
     }
 
+    if (!moveNext.data.hide_faf && movePart.data.hide_faf) {
+        moveNext.data["hide_faf"] = movePart.data.hide_faf;
+    }
+
     if (!moveNext.data.autocancel_start && movePart.data.autocancel_start) {
         moveNext.data["autocancel_start"] = movePart.data.autocancel_start;
         dataFlags.has_ac = true;
