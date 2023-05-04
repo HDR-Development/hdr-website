@@ -47,12 +47,13 @@ var importFile = function(fileName) {
 function constructMoveTables(charJSON) {
     let divs = $('.charTable');
 
-    for(let i = 0; i < divs.length; i++) {
+    for (let i = 0; i < divs.length; i++) {
         let move = charJSON.moveset[i];
         let dataFlags;
+        let move_ext_collection = [];
         
         // obtain each hitbox set of the move
-        for(let j = 0; j < move.data.length; j++) {
+        for (let j = 0; j < move.data.length; j++) {
             let hitboxSets = [];
             let movePart = move.data[j];
 
@@ -88,7 +89,7 @@ function constructMoveTables(charJSON) {
             parseInfoHeaderData(divs[i], movePart, dataFlags);
 
             // obtain individual hitbox data
-            for(let x = 0; x < movePart.data.hitboxes.length; x++) {
+            for (let x = 0; x < movePart.data.hitboxes.length; x++) {
                 let hitbox = movePart.data.hitboxes[x];
                 
                 // set certain data flags
@@ -119,9 +120,16 @@ function constructMoveTables(charJSON) {
             // construct and populate table headers
             let header_data = [];
             let ext_header_data = [];
-            
+            let prev_ext_data = [];
+            let distinct_ids_applied = false;
+            let flag_id_groups = 0;
+            let ext_row_data_collection = {
+                "rows": [],
+                "ids": [],
+            };
+
             constructTableHeaders(header_data, ext_header_data, dataFlags, (movePart.data.faf > 0 || movePart.data.landing_lag > 0));
-            insertRowFromData(table_head, header_data, true, false, dataFlags.is_grab, header_data.indexOf("Angle"));
+            insertRowFromData(table_head, header_data, false, true, false, dataFlags.is_grab, header_data.indexOf("Angle"));
             insertRowFromData(ext_table_head, ext_header_data);
 
             // construct hitbox set
@@ -131,8 +139,23 @@ function constructMoveTables(charJSON) {
 
                 // populate tables
                 populateHitboxSet(row_data, ext_row_data, hitbox, movePart, dataFlags);
-                insertRowFromData(table_body, row_data, false, true, false, header_data.indexOf("Angle"));
-                insertRowFromData(ext_table_body, ext_row_data);
+                insertRowFromData(table_body, row_data, false, false, true, false, header_data.indexOf("Angle"));
+                ext_row_data_collection.rows.push(ext_row_data);
+                ext_row_data_collection.ids.push(hitbox.id);
+
+                // simplify ext_data
+                if (prev_ext_data.length == 0 || distinctExtData(prev_ext_data, ext_row_data)) {
+                    // add hitbox ids to ext_data
+                    if (!distinct_ids_applied && flag_id_groups == 1) {
+                        let cell = ext_table_head.childNodes[0].insertCell(0);
+                        cell.innerHTML = "Hitbox ID";
+                        distinct_ids_applied = true;
+                    }
+
+                    insertRowFromData(ext_table_body, ext_row_data, true);
+                    prev_ext_data.push(ext_row_data);
+                    flag_id_groups++;
+                }
 
                 // append table and ext_table to div
                 table.appendChild(table_head);
@@ -143,19 +166,25 @@ function constructMoveTables(charJSON) {
                 divs[i].appendChild(ext_table);
             });
 
-            // add buttons and spacing
-            let button = document.createElement('button');
-            button.type = "button";
-            button.className = "toggle_ext";
-            button.textContent = "Show extra data";
-            divs[i].appendChild(button);
-            divs[i].appendChild(document.createElement('br'));
+            move_ext_collection.push(ext_row_data_collection);
+
+            if (ext_table_body.childNodes[0].cells.length > 0) {
+                // add buttons and spacing
+                let button = document.createElement('button');
+                button.type = "button";
+                button.className = "toggle_ext";
+                button.textContent = "Show extra data";
+                divs[i].appendChild(button);
+                divs[i].appendChild(document.createElement('br'));
+            }
 
             // display any non-persisting footer data
             if (j < move.data.length - 1) {
                 parseInfoPartialFooterData(divs[i], movePart, dataFlags);
             }
         }
+
+        insertExtIDGroups(divs[i], move_ext_collection);
 
         // construct move footer info
         parseInfoFooterData(divs[i], move.data[move.data.length - 1], dataFlags);
@@ -164,7 +193,7 @@ function constructMoveTables(charJSON) {
 }
 
 // populate table header/row with a collection of data
-function insertRowFromData(table, data, span_row = false, insert_arrow = false, is_grab = false, arrow_index = null) {
+function insertRowFromData(table, data, is_ext_data = false, span_row = false, insert_arrow = false, is_grab = false, arrow_index = null) {
     let row = table.insertRow();
     let offset = 0;
     data.forEach( h => {
@@ -186,9 +215,96 @@ function insertRowFromData(table, data, span_row = false, insert_arrow = false, 
             }
         }
 
+        if (is_ext_data) {
+            cell.className = "ext_row_data";
+        }
+
         cell.innerHTML = h;
         offset++;
     });
+}
+
+// combine identical sets of ext_data
+function distinctExtData(prev_ext_data, ext_row_data) {
+    let duplicates = Array(prev_ext_data.length).fill(false);
+    let duplicate_index = -1;
+    
+    for (let i = 0; i < prev_ext_data.length; i++) {
+        let distinct = false;
+        prev_ext_data[i].forEach( prev => {
+            if (prev != ext_row_data[prev_ext_data[i].indexOf(prev)]) {
+                distinct = true;
+            }
+        });
+        
+        if (!distinct) {
+            duplicates[i] = true;
+            duplicate_index = i;
+        }
+    }
+
+    // if ext does not match with *any* prev, return distinct
+    if (!duplicates.some(x => x == true)) {
+        return true;
+    }
+    else {
+        // add hitbox id to collection of duplicate ids
+        return false;
+    }
+}
+
+// insert hitbox IDs for each grouping of ext_data
+function insertExtIDGroups(div, move_ext_collection) {
+    let ext_divs = $(div).children('#ext_data');
+
+    // iterate through ext_data for each movePart and push each index of stored index collection
+    for (let i = 0; i < ext_divs.length; i++) {
+        // only run if more than one distinct ext_data is present
+        if (ext_divs[i].childNodes[1].childNodes.length > 1) {
+            let id_groups = [];
+
+            for (let j = 0; j < ext_divs.length; j++) {
+                let ext_table_rows = ext_divs[j].childNodes[1].childNodes;
+
+                // compare ext data to each index of ext_table_body
+                for (let h = 0; h < ext_table_rows.length; h++) {
+                    let hitbox_ids = [];
+                    let compiled_row = [];
+                    let index = 0;
+
+                    //let test = $(ext_table_rows[h]).find('.ext_row_data');
+
+                    for (let x = 0; x < ext_table_rows[h].cells.length; x++) {
+                        compiled_row.push(ext_table_rows[h].cells[x].textContent);
+                    }
+
+                    move_ext_collection[j].rows.forEach( hitbox => {
+                        // add to corresponding group index if matching
+                        if (JSON.stringify(hitbox) == JSON.stringify(compiled_row)) {
+                            hitbox_ids.push(move_ext_collection[j].ids[index]);
+                        }
+
+                        index++;
+                    });
+
+                    id_groups.push(hitbox_ids);
+                }
+            }
+
+            // add hitbox ids to ext_data groupings
+            for (let j = 0; j < ext_divs[i].childNodes[1].childNodes.length; j++) {
+                let cell = ext_divs[i].childNodes[1].childNodes[j].insertCell(0);
+                let str = "";
+
+                id_groups[j].forEach( id => {
+                    str += id + "/";
+                });
+
+                str = str.slice(0, -1);
+                cell.innerHTML = str;
+            }
+        }
+    }
 }
 
 // copies over persisting info data
@@ -356,7 +472,7 @@ function parseFrameWindow(start, end = false, headerString, ac = false, open_end
     if (end && start != end) {
         if (start.length && end.length) {   // multiple durations
             let str = headerString + ": F";
-            for(let i = 0; i < start.length; i++) {
+            for (let i = 0; i < start.length; i++) {
                 if (end[i]) {
                     if (start[i] != end[i]) {   // duration of more than one frame
                         str += start[i] + "-" + end[i];
@@ -470,12 +586,10 @@ function populateHitboxSet(row_data, ext_row_data, hitbox, movePart, dataFlags) 
             // parse array of damage values for throws
             let damageStr = "";
             for (let i = 0; i < hitbox.damage.length; i++) {
-                damageStr += hitbox.damage[i] + ((/^\d+\.\d+$/).test(hitbox.damage[i]) ? '' : '.0');
-
-                if (i < hitbox.damage.length - 1) {
-                    damageStr += '/';
-                }
+                damageStr += hitbox.damage[i] + ((/^\d+\.\d+$/).test(hitbox.damage[i]) ? '' : '.0') + '/';
             }
+
+            damageStr = damageStr.slice(0, -1);
             row_data.push(damageStr + '%')
         }
         else {
