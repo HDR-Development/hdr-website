@@ -84,5 +84,5 @@ Beta changelogs:<br>
 </table>
 <br>
 <div style="text-align:center;font-size:100%">
-Interested in helping out? Please check out the <a href="./contribguide.md">Contributor Guide</b>
+Interested in helping out? Please check out the <a href="./information/contribguide.md">Contributor Guide</b>
 </div>

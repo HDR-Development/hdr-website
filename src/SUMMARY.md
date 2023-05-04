@@ -123,4 +123,5 @@
     - [Kazuya]()<!--./characters/ultimate/demon.md)-->
     - [Sora]()<!--./characters/ultimate/trail.md)-->
 
-- [Contributor Guide](./contribguide.md)
+- [Information]()
+  - [Contributor Guide](./information/contribguide.md)
