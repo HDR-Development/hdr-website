@@ -1,15 +1,15 @@
 # ![](../../images/SmashBall.png) Character Changes
 
 ## Overview
-- These pages denote every change made to each character compared to their vanilla data (v13.0.1)<br><br>
+<!-- - These pages denote every change made to each character compared to their vanilla data (v13.0.1)<br><br>
 - Buffs are in <span style="color:CornFlowerBlue">blue</span>
 - Nerfs are in <span style="color:Red">red</span>
 - Adjustments (both a buff and a nerf depending on context) are in <span style="color:#CF68CF">purple</span>
 - Reworks are in <span style="color:#FFF8E7">white</span>
 - New properties or features are in <span style="color:LimeGreen">green</span>
 - Aesthetic changes are in <span style="color:#C5AC00">yellow</span>
-- Unchanged fields are default color
-- Definitions for all terms can be found [here](./terms.md)
+- Unchanged fields are default color -->
+- Definitions for all terms can be found [here](./glossary.md)
 <br><br>
 
 <table class="charTable" style="text-align:center;width:100%">

@@ -27,7 +27,7 @@
 
 - [Character Pages]()
   - [Overview](./characters/characterlist.md)
-  - [Terms](./characters/terms.md)
+  - [Glossary](./characters/glossary.md)
   - [Smash 64]()
     - [Mario](./characters/smash64/mario.md)
     - [Donkey Kong](./characters/smash64/donkey.md)

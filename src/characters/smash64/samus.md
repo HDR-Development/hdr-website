@@ -8,13 +8,6 @@
 <p class="info">Description here</p>
 <br>
 
-![](../../images/SmashBall.png) <b>General</b>
-<p class="info_header"></p>
-<ul>
-  <li></li>
-</ul>
-<br>
-
 ![](../../images/SmashBall.png) <b>Moveset</b>
 <br>
 <p>Jab 1</p><div class="charTable"></div>

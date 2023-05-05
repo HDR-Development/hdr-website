@@ -5,14 +5,7 @@
 <link rel="stylesheet" type="text/css" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Overview</b>
-<p class="info"></p>
-<br>
-
-![](../../images/SmashBall.png) <b>General</b>
-<p class="info_header"></p>
-<ul>
-  <li></li>
-</ul>
+<p class="info">Description here</p>
 <br>
 
 ![](../../images/SmashBall.png) <b>Moveset</b>

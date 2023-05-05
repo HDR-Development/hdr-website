@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="../../style.css">
 
 ![](../../images/SmashBall.png) <b>Overview</b>
-<p class="info"></p>
+<p class="info">Description here</p>
 <br>
 
 ![](../../images/SmashBall.png) <b>General</b>

@@ -69,7 +69,7 @@ You can also split the move into separate moves in the data file in order to pro
 
 ## The Character Data File (`<char>.json`)
 
-The moveset template (`basetemplate.json`) and move template (`movetemplate.json`) can be found in the `testing` folder on the root of the repo
+The moveset template (`basetemplate.json`) and move template (`movetemplate.json`) can be found in the `templates` folder on the root of the repo
 
 Data fields do not need to be present if they are the same as the default values found in the template. Data fields do not technically need to be in order, but I do reserve the right to yell at you for not having them in order
 

@@ -99,5 +99,5 @@
 <script src="../js/arrow.js"></script>
 <script type="text/javascript" src="../js/dataparser.js"></script>
 <script type="text/javascript">
-  importFile("./../testing/data_mario.json");
+  importFile("./../templates/data_mario.json");
 </script>

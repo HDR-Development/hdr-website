@@ -1,4 +1,4 @@
-# Terms
+# Glossary
 
 ## Hitbox Duration
 - The frames that a hitbox is active. Different parts of a move (such as an early and late hit) are separated by a "/"

@@ -1,8 +1,8 @@
 book
-src/testing/.vs/ProjectSettings.json
-src/testing/.vs/slnx.sqlite
-src/testing/.vs/testing/v17/.suo
-src/testing/.vs/VSWorkspaceState.json
+src/templates/.vs/ProjectSettings.json
+src/templates/.vs/slnx.sqlite
+src/templates/.vs/templates/v17/.suo
+src/templates/.vs/VSWorkspaceState.json
 src/characters/smash64/data/.vs/ProjectSettings.json
 src/characters/smash64/data/.vs/slnx.sqlite
 src/characters/smash64/data/.vs/VSWorkspaceState.json
