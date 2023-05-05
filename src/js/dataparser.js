@@ -1,3 +1,5 @@
+//#region Runtime
+
 // import the JSON file
 var importFile = function(fileName) {
     const xmlhttp = new XMLHttpRequest();
@@ -42,6 +44,9 @@ var importFile = function(fileName) {
     xmlhttp.open("GET", fileName);
     xmlhttp.send();
 }
+//#endregion
+
+//#region Main Method
 
 // construct a table and populate it from the JSON
 function constructMoveTables(charJSON) {
@@ -82,7 +87,7 @@ function constructMoveTables(charJSON) {
 
             // copy persisting info data
             if (j < move.data.length - 1) {
-                AddPersistDataFields(movePart, move.data[j + 1], dataFlags);
+                AddPersistingDataFields(movePart, move.data[j + 1], dataFlags);
             }
 
             // construct move header info
@@ -191,6 +196,9 @@ function constructMoveTables(charJSON) {
         divs[i].appendChild(document.createElement('br'));
     }
 }
+//#endregion
+
+//#region Row Operations
 
 // populate table header/row with a collection of data
 function insertRowFromData(table, data, is_ext_data = false, span_row = false, insert_arrow = false, is_grab = false, arrow_index = null) {
@@ -224,91 +232,8 @@ function insertRowFromData(table, data, is_ext_data = false, span_row = false, i
     });
 }
 
-// combine identical sets of ext_data
-function distinctExtData(prev_ext_data, ext_row_data) {
-    let duplicates = Array(prev_ext_data.length).fill(false);
-    let duplicate_index = -1;
-    
-    for (let i = 0; i < prev_ext_data.length; i++) {
-        let distinct = false;
-        prev_ext_data[i].forEach( prev => {
-            if (prev != ext_row_data[prev_ext_data[i].indexOf(prev)]) {
-                distinct = true;
-            }
-        });
-        
-        if (!distinct) {
-            duplicates[i] = true;
-            duplicate_index = i;
-        }
-    }
-
-    // if ext does not match with *any* prev, return distinct
-    if (!duplicates.some(x => x == true)) {
-        return true;
-    }
-    else {
-        // add hitbox id to collection of duplicate ids
-        return false;
-    }
-}
-
-// insert hitbox IDs for each grouping of ext_data
-function insertExtIDGroups(div, move_ext_collection) {
-    let ext_divs = $(div).children('#ext_data');
-
-    // iterate through ext_data for each movePart and push each index of stored index collection
-    for (let i = 0; i < ext_divs.length; i++) {
-        // only run if more than one distinct ext_data is present
-        if (ext_divs[i].childNodes[1].childNodes.length > 1) {
-            let id_groups = [];
-
-            for (let j = 0; j < ext_divs.length; j++) {
-                let ext_table_rows = ext_divs[j].childNodes[1].childNodes;
-
-                // compare ext data to each index of ext_table_body
-                for (let h = 0; h < ext_table_rows.length; h++) {
-                    let hitbox_ids = [];
-                    let compiled_row = [];
-                    let index = 0;
-
-                    //let test = $(ext_table_rows[h]).find('.ext_row_data');
-
-                    for (let x = 0; x < ext_table_rows[h].cells.length; x++) {
-                        compiled_row.push(ext_table_rows[h].cells[x].textContent);
-                    }
-
-                    move_ext_collection[j].rows.forEach( hitbox => {
-                        // add to corresponding group index if matching
-                        if (JSON.stringify(hitbox) == JSON.stringify(compiled_row)) {
-                            hitbox_ids.push(move_ext_collection[j].ids[index]);
-                        }
-
-                        index++;
-                    });
-
-                    id_groups.push(hitbox_ids);
-                }
-            }
-
-            // add hitbox ids to ext_data groupings
-            for (let j = 0; j < ext_divs[i].childNodes[1].childNodes.length; j++) {
-                let cell = ext_divs[i].childNodes[1].childNodes[j].insertCell(0);
-                let str = "";
-
-                id_groups[j].forEach( id => {
-                    str += id + "/";
-                });
-
-                str = str.slice(0, -1);
-                cell.innerHTML = str;
-            }
-        }
-    }
-}
-
-// copies over persisting info data
-function AddPersistDataFields(movePart, moveNext, dataFlags) {
+// copies over persisting info data to the next hitbox
+function AddPersistingDataFields(movePart, moveNext, dataFlags) {
     if (!moveNext.data.hitbox_start && movePart.data.hitbox_start) {
         moveNext.data["hitbox_start"] = movePart.data.hitbox_start;
         moveNext.data["hitbox_end"] = movePart.data.hitbox_end;
@@ -389,7 +314,11 @@ function unwrapHitboxArray(hitboxSets, arrayHitbox) {
         hitboxSets.push(hitbox);
     }
 }
+//#endregion
 
+//#region Header/Footer Operations
+
+// populate upper info section with overview data
 function parseInfoHeaderData(div, movePart, dataFlags) {
     if (movePart.movepart_name) {
         let name = document.createElement('p');
@@ -406,7 +335,7 @@ function parseInfoHeaderData(div, movePart, dataFlags) {
     }
 }
 
-// populate info section with overview data
+// populate lower info section with overview data
 function parseInfoFooterData(div, movePart, dataFlags) {
     if (movePart.data.faf && !dataFlags.hide_faf) {
         let faf = document.createElement('p');
@@ -435,7 +364,7 @@ function parseInfoFooterData(div, movePart, dataFlags) {
     }
 }
 
-// for use with split movepart data
+// populate info section below split moveparts
 function parseInfoPartialFooterData(div, movePart, dataFlags) {
     if (dataFlags.split_faf && movePart.data.faf) {
         let faf = document.createElement('p');
@@ -576,6 +505,9 @@ function constructTableHeaders(header_data, ext_header_data, dataFlags, has_faf 
         ext_header_data.push("Frame Advantage (0/100%)");
     }
 }
+//#endregion
+
+//#region Data Operations
 
 function populateHitboxSet(row_data, ext_row_data, hitbox, movePart, dataFlags) {
     if (!dataFlags.is_throw) {
@@ -700,3 +632,90 @@ function calculateShieldStun(hitbox, dataFlags) {
     
     return Math.floor((hitbox.damage * mul_const * calc_mul * shieldstun_mul)) + 2.0;
 }
+//#endregion
+
+//#region Ext Data Operations
+
+// combine identical sets of ext_data
+function distinctExtData(prev_ext_data, ext_row_data) {
+    let duplicates = Array(prev_ext_data.length).fill(false);
+    let duplicate_index = -1;
+    
+    for (let i = 0; i < prev_ext_data.length; i++) {
+        let distinct = false;
+        prev_ext_data[i].forEach( prev => {
+            if (prev != ext_row_data[prev_ext_data[i].indexOf(prev)]) {
+                distinct = true;
+            }
+        });
+        
+        if (!distinct) {
+            duplicates[i] = true;
+            duplicate_index = i;
+        }
+    }
+
+    // if ext does not match with *any* prev, return distinct
+    if (!duplicates.some(x => x == true)) {
+        return true;
+    }
+    else {
+        // add hitbox id to collection of duplicate ids
+        return false;
+    }
+}
+
+// insert hitbox IDs for each grouping of ext_data
+function insertExtIDGroups(div, move_ext_collection) {
+    let ext_divs = $(div).children('#ext_data');
+
+    // iterate through ext_data for each movePart and push each index of stored index collection
+    for (let i = 0; i < ext_divs.length; i++) {
+        // only run if more than one distinct ext_data is present
+        if (ext_divs[i].childNodes[1].childNodes.length > 1) {
+            let id_groups = [];
+
+            for (let j = 0; j < ext_divs.length; j++) {
+                let ext_table_rows = ext_divs[j].childNodes[1].childNodes;
+
+                // compare ext data to each index of ext_table_body
+                for (let h = 0; h < ext_table_rows.length; h++) {
+                    let hitbox_ids = [];
+                    let compiled_row = [];
+                    let index = 0;
+
+                    //let test = $(ext_table_rows[h]).find('.ext_row_data');
+
+                    for (let x = 0; x < ext_table_rows[h].cells.length; x++) {
+                        compiled_row.push(ext_table_rows[h].cells[x].textContent);
+                    }
+
+                    move_ext_collection[j].rows.forEach( hitbox => {
+                        // add to corresponding group index if matching
+                        if (JSON.stringify(hitbox) == JSON.stringify(compiled_row)) {
+                            hitbox_ids.push(move_ext_collection[j].ids[index]);
+                        }
+
+                        index++;
+                    });
+
+                    id_groups.push(hitbox_ids);
+                }
+            }
+
+            // add hitbox ids to ext_data groupings
+            for (let j = 0; j < ext_divs[i].childNodes[1].childNodes.length; j++) {
+                let cell = ext_divs[i].childNodes[1].childNodes[j].insertCell(0);
+                let str = "";
+
+                id_groups[j].forEach( id => {
+                    str += id + "/";
+                });
+
+                str = str.slice(0, -1);
+                cell.innerHTML = str;
+            }
+        }
+    }
+}
+//#endregion
