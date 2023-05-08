@@ -1,14 +1,15 @@
-# ![](../../images/Stock_Yoshi.png) Yoshi
+# Yoshi
 
+<br>
 <!DOCTYPE html>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;">
 <link rel="stylesheet" type="text/css" href="../../style.css">
 
-![](../../images/SmashBall.png) <b>Overview</b>
+<p class="center"><b>Overview</b></p>
 <p class="info">Description here</p>
 <br>
 
-![](../../images/SmashBall.png) <b>General</b>
+<p class="center"><b>General</b></p>
 <p class="info_header">Flutter Jump</p>
 <ul>
   <li>Yoshi's double jump has a delayed rise similar to Melee</li>
@@ -17,7 +18,7 @@
 </ul>
 <br>
 
-![](../../images/SmashBall.png) <b>Moveset</b>
+<p class="center"><b>Moveset</b></p>
 <br>
 <p>Jab 1</p><div class="charTable"></div>
 <br>

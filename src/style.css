@@ -6,6 +6,11 @@ p {
     font-size:24px;
 }
 
+.center {
+    font-family: SplineSansMono;
+    text-align: center;
+}
+
 .info {
     font-family: SplineSansMono;
     font-size:16px;
