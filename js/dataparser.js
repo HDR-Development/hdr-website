@@ -72,6 +72,7 @@ function constructMoveTables(charJSON) {
                 "is_lock": movePart.data.is_lock,               // if move is a jablock
                 "has_fall": movePart.data.has_fall,             // if move transitions to special fall
                 "open_end": movePart.data.open_end,             // if move has arbitrary hitbox duration
+                "has_bkb": false,                               // if move has BKB
                 "has_fkb": false,                               // if move has FKB
                 "has_fa": false,                                // if move has documented frame advantage
                 "has_ac": movePart.data.autocancel_start,       // if move has autocancel windows
@@ -98,6 +99,7 @@ function constructMoveTables(charJSON) {
                 let hitbox = movePart.data.hitboxes[x];
                 
                 // set certain data flags
+                dataFlags.has_bkb = (hitbox.bkb && hitbox.bkb != 0) ? true : dataFlags.has_bkb;
                 dataFlags.has_fkb = (hitbox.fkb && hitbox.fkb != 0) ? true : dataFlags.has_fkb;
                 dataFlags.has_fa = (null != hitbox.fa_0 && null != hitbox.fa_100) ? true : dataFlags.has_fa;
                 dataFlags.has_shieldstun_mul = (hitbox.shieldstun_mul && hitbox.shieldstun_mul != 1.0) ? true : dataFlags.has_shieldstun_mul;
@@ -452,11 +454,11 @@ function constructTableHeaders(header_data, ext_header_data, dataFlags, has_faf 
     if (!dataFlags.is_grab) {
         header_data.push("Damage", "Angle");
 
+        if (dataFlags.has_bkb || (!dataFlags.has_bkb && !dataFlags.has_fkb)) {
+            header_data.push("BKB");
+        }
         if (dataFlags.has_fkb) {
            header_data.push("FKB");
-        }
-        else {
-            header_data.push("BKB");
         }
 
         header_data.push("KBG");
@@ -531,11 +533,11 @@ function populateHitboxSet(row_data, ext_row_data, hitbox, movePart, dataFlags) 
         row_data.push(hitbox.angle.toString());
     }
     if (!dataFlags.is_grab) {
+        if (dataFlags.has_bkb || (!dataFlags.has_bkb && !dataFlags.has_fkb)) {
+            row_data.push(hitbox.bkb ? hitbox.bkb.toString() : 0);
+        }
         if (dataFlags.has_fkb) {
             row_data.push(hitbox.fkb ? hitbox.fkb.toString() : 0);
-        }
-        else {
-            row_data.push(hitbox.bkb ? hitbox.bkb.toString() : 0);
         }
         row_data.push(hitbox.kbg ? hitbox.kbg.toString() : 0);
     }
@@ -673,34 +675,31 @@ function insertExtIDGroups(div, move_ext_collection) {
     for (let i = 0; i < ext_divs.length; i++) {
         // only run if more than one distinct ext_data is present
         if (ext_divs[i].childNodes[1].childNodes.length > 1) {
+            let ext_table_rows = ext_divs[i].childNodes[1].childNodes;
             let id_groups = [];
 
-            for (let j = 0; j < ext_divs.length; j++) {
-                let ext_table_rows = ext_divs[j].childNodes[1].childNodes;
+            // compare ext data to each index of ext_table_body
+            for (let h = 0; h < ext_table_rows.length; h++) {
+                let hitbox_ids = [];
+                let compiled_row = [];
+                let index = 0;
 
-                // compare ext data to each index of ext_table_body
-                for (let h = 0; h < ext_table_rows.length; h++) {
-                    let hitbox_ids = [];
-                    let compiled_row = [];
-                    let index = 0;
+                //let test = $(ext_table_rows[h]).find('.ext_row_data');
 
-                    //let test = $(ext_table_rows[h]).find('.ext_row_data');
+                for (let x = 0; x < ext_table_rows[h].cells.length; x++) {
+                    compiled_row.push(ext_table_rows[h].cells[x].textContent);
+                }
 
-                    for (let x = 0; x < ext_table_rows[h].cells.length; x++) {
-                        compiled_row.push(ext_table_rows[h].cells[x].textContent);
+                move_ext_collection[i].rows.forEach( hitbox => {
+                    // add to corresponding group index if matching
+                    if (JSON.stringify(hitbox) == JSON.stringify(compiled_row)) {
+                        hitbox_ids.push(move_ext_collection[i].ids[index]);
                     }
 
-                    move_ext_collection[j].rows.forEach( hitbox => {
-                        // add to corresponding group index if matching
-                        if (JSON.stringify(hitbox) == JSON.stringify(compiled_row)) {
-                            hitbox_ids.push(move_ext_collection[j].ids[index]);
-                        }
+                    index++;
+                });
 
-                        index++;
-                    });
-
-                    id_groups.push(hitbox_ids);
-                }
+                id_groups.push(hitbox_ids);
             }
 
             // add hitbox ids to ext_data groupings
