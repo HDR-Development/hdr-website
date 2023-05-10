@@ -679,16 +679,14 @@ function insertExtIDGroups(div, move_ext_collection) {
             let id_groups = [];
 
             // compare ext data to each index of ext_table_body
-            for (let h = 0; h < ext_table_rows.length; h++) {
+            for (let j = 0; j < ext_table_rows.length; j++) {
                 let hitbox_ids = [];
                 let compiled_row = [];
                 let index = 0;
 
-                //let test = $(ext_table_rows[h]).find('.ext_row_data');
-
-                for (let x = 0; x < ext_table_rows[h].cells.length; x++) {
-                    compiled_row.push(ext_table_rows[h].cells[x].textContent);
-                }
+                $(ext_table_rows[j]).find('.ext_row_data').each(function() {
+                    compiled_row.push(this.childNodes[0].textContent);
+                });
 
                 move_ext_collection[i].rows.forEach( hitbox => {
                     // add to corresponding group index if matching
