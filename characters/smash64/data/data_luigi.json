@@ -661,9 +661,14 @@
               }
             ]
           }
-        },
+        }
+      ]
+    },
+    {
+      "move_name": "Side Special (Misfire)",
+      "data": [
         {
-          "movepart_name": "Misfire",
+          "movepart_name": "",
           "data": {
             "is_normal": true,
             "hitboxes": [
