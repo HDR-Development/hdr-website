@@ -11,9 +11,6 @@
 
 <p class="center"><b>General</b></p>
 <p class="info_header"></p>
-<ul>
-  <li></li>
-</ul>
 <br>
 
 <p class="center"><b>Moveset</b></p>
@@ -59,7 +56,21 @@
 </ul>
 <div class="charTable"></div>
 <br>
-<p>Green Missile (Side Special)</p><div class="charTable"></div>
+<p>Green Missile (Side Special)</p>
+<ul>
+  <li>Resets vertical speed when starting the charge</li>
+</ul>
+<div class="charTable"></div>
+<p class="info_movepart">Misfire</p>
+<ul>
+  <li>Misfire is always guaranteed within 8 uses of Green Missile (as a 12.5% chance)</li>
+  <li>During the charge, pressing Shield will store the charge</li>
+    <ul>
+      <li>Storing a misfire decreases its damage by 5%, to a max of 20%</li>
+    </ul>
+  <li>The charge effects will be green when Luigi is about to perform a misfire</li>
+</ul>
+<div class="charTable"></div>
 <br>
 <p>Super Jump Punch (Up Special)</p>
 <p class="info_header">Ground</p>
@@ -68,6 +79,9 @@
 <div class="charTable"></div>
 <br>
 <p>Luigi Tornado (Down Special)</p>
+<ul>
+  <li>Resets vertical speed if started while falling</li>
+</ul>
 <p class="info_header">Ground</p>
 <div class="charTable"></div>
 <p class="info_header">Air</p>
