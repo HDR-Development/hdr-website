@@ -168,7 +168,7 @@
         {
           "movepart_name": "Early",
           "data": {
-            "is_normal": true,
+            "is_smash": true,
             "hitbox_start": 15,
             "hitbox_end": 19,
             "faf": 61,
@@ -189,7 +189,7 @@
         {
           "movepart_name": "Late",
           "data": {
-            "is_normal": true,
+            "is_smash": true,
             "hitbox_start": 20,
             "hitbox_end": 29,
             "hitboxes": [
@@ -214,7 +214,7 @@
         {
           "movepart_name": "Early",
           "data": {
-            "is_normal": true,
+            "is_smash": true,
             "hitbox_start": 10,
             "hitbox_end": 12,
             "faf": 50,
@@ -233,7 +233,7 @@
         {
           "movepart_name": "Mid",
           "data": {
-            "is_normal": true,
+            "is_smash": true,
             "hitbox_start": 13,
             "hitbox_end": 14,
             "hitboxes": [
@@ -251,7 +251,7 @@
         {
           "movepart_name": "Late",
           "data": {
-            "is_normal": true,
+            "is_smash": true,
             "hitbox_start": 15,
             "hitbox_end": 17,
             "hitboxes": [
@@ -274,7 +274,7 @@
         {
           "movepart_name": "Multihits",
           "data": {
-            "is_normal": true,
+            "is_smash": true,
             "hitbox_start": [ 8, 11, 14, 17, 20 ],
             "hitbox_end": [ 9, 12, 15, 18, 21 ],
             "faf": 66,
@@ -295,7 +295,7 @@
         {
           "movepart_name": "Launcher",
           "data": {
-            "is_normal": true,
+            "is_smash": true,
             "hitbox_start": 23,
             "hitboxes": [
               {

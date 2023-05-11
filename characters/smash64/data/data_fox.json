@@ -297,7 +297,7 @@
         {
           "movepart_name": "Early",
           "data": {
-            "is_normal": true,
+            "is_smash": true,
             "hitbox_start": 13,
             "hitbox_end": 14,
             "faf": 51,
@@ -317,7 +317,7 @@
         {
           "movepart_name": "Late",
           "data": {
-            "is_normal": true,
+            "is_smash": true,
             "hitbox_start": 15,
             "hitbox_end": 16,
             "hitboxes": [
@@ -341,7 +341,7 @@
         {
           "movepart_name": "Early",
           "data": {
-            "is_normal": true,
+            "is_smash": true,
             "hitbox_start": 7,
             "hitbox_end": 10,
             "faf": 56,
@@ -360,7 +360,7 @@
         {
           "movepart_name": "Late",
           "data": {
-            "is_normal": true,
+            "is_smash": true,
             "hitbox_start": 11,
             "hitbox_end": 12,
             "hitboxes": [
@@ -383,7 +383,7 @@
         {
           "movepart_name": "",
           "data": {
-            "is_normal": true,
+            "is_smash": true,
             "hitbox_start": 6,
             "hitbox_end": 10,
             "faf": 53,
