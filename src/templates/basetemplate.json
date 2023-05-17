@@ -6,40 +6,18 @@
         {
           "movepart_name": "",
           "data": {
-            "is_normal": false,
-            "is_smash": false,
-            "is_aerial": false,
-            "is_projectile": false,
-            "is_grab": false,
-            "is_throw": false,
-            "is_lock": false,
-            "has_fall": false,
+            "is_normal": true,
             "hitbox_start": 0,
             "hitbox_end": 0,
             "faf": 0,
-            "faf_2nd": 0,
-            "faf_str": "",
-            "autocancel_start": 0,
-            "autocancel_end": 0,
-            "landing_lag": 0,
             "hitboxes": [
               {
                 "id": 0,
                 "damage": 0.0,
                 "angle": 0,
                 "bkb": 0,
-                "fkb": 0,
                 "kbg": 0,
-                "hitlag_mul": 1.0,
-                "sdi_mul": 1.0,
-                "shieldstun_mul": 1.0,
-                "shield_damage": 0,
-                "add_hitstun": 0,
-                "hitbox_size": 0.0,
-                "ground_air": "",
-                "no_reverse": false,
-                "fa_0": 0,
-                "fa_100": 0
+                "hitbox_size": 0.0
               }
             ]
           }
@@ -49,97 +27,352 @@
     {
       "move_name": "Jab 2",
       "data": [
-        {}
+        {
+          "movepart_name": "",
+          "data": {
+            "is_normal": true,
+            "hitbox_start": 0,
+            "hitbox_end": 0,
+            "faf": 0,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 0.0,
+                "angle": 0,
+                "bkb": 0,
+                "kbg": 0,
+                "hitbox_size": 0.0
+              }
+            ]
+          }
+        }
       ]
     },
     {
       "move_name": "Jab 3",
       "data": [
-        {}
-      ]
-    },
-    {
-      "move_name": "Rapid Jab",
-      "data": [
-        {}
-      ]
-    },
-    {
-      "move_name": "Rapid Jab Finisher",
-      "data": [
-        {}
+        {
+          "movepart_name": "",
+          "data": {
+            "is_normal": true,
+            "hitbox_start": 0,
+            "hitbox_end": 0,
+            "faf": 0,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 0.0,
+                "angle": 0,
+                "bkb": 0,
+                "kbg": 0,
+                "hitbox_size": 0.0
+              }
+            ]
+          }
+        }
       ]
     },
     {
       "move_name": "Forward Tilt",
       "data": [
-        {}
+        {
+          "movepart_name": "",
+          "data": {
+            "is_normal": true,
+            "hitbox_start": 0,
+            "hitbox_end": 0,
+            "faf": 0,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 0.0,
+                "angle": 0,
+                "bkb": 0,
+                "kbg": 0,
+                "hitbox_size": 0.0
+              }
+            ]
+          }
+        }
       ]
     },
     {
       "move_name": "Up Tilt",
       "data": [
-        {}
+        {
+          "movepart_name": "",
+          "data": {
+            "is_normal": true,
+            "hitbox_start": 0,
+            "hitbox_end": 0,
+            "faf": 0,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 0.0,
+                "angle": 0,
+                "bkb": 0,
+                "kbg": 0,
+                "hitbox_size": 0.0
+              }
+            ]
+          }
+        }
       ]
     },
     {
       "move_name": "Down Tilt",
       "data": [
-        {}
+        {
+          "movepart_name": "",
+          "data": {
+            "is_normal": true,
+            "hitbox_start": 0,
+            "hitbox_end": 0,
+            "faf": 0,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 0.0,
+                "angle": 0,
+                "bkb": 0,
+                "kbg": 0,
+                "hitbox_size": 0.0
+              }
+            ]
+          }
+        }
       ]
     },
     {
       "move_name": "Dash Attack",
       "data": [
-        {}
+        {
+          "movepart_name": "",
+          "data": {
+            "is_normal": true,
+            "hitbox_start": 0,
+            "hitbox_end": 0,
+            "faf": 0,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 0.0,
+                "angle": 0,
+                "bkb": 0,
+                "kbg": 0,
+                "hitbox_size": 0.0
+              }
+            ]
+          }
+        }
       ]
     },
     {
       "move_name": "Forward Smash",
       "data": [
-        {}
+        {
+          "movepart_name": "",
+          "data": {
+            "is_smash": true,
+            "hitbox_start": 0,
+            "hitbox_end": 0,
+            "faf": 0,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 0.0,
+                "angle": 0,
+                "bkb": 0,
+                "kbg": 0,
+                "hitbox_size": 0.0
+              }
+            ]
+          }
+        }
       ]
     },
     {
       "move_name": "Up Smash",
       "data": [
-        {}
+        {
+          "movepart_name": "",
+          "data": {
+            "is_smash": true,
+            "hitbox_start": 0,
+            "hitbox_end": 0,
+            "faf": 0,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 0.0,
+                "angle": 0,
+                "bkb": 0,
+                "kbg": 0,
+                "hitbox_size": 0.0
+              }
+            ]
+          }
+        }
       ]
     },
     {
       "move_name": "Down Smash",
       "data": [
-        {}
+        {
+          "movepart_name": "",
+          "data": {
+            "is_smash": true,
+            "hitbox_start": 0,
+            "hitbox_end": 0,
+            "faf": 0,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 0.0,
+                "angle": 0,
+                "bkb": 0,
+                "kbg": 0,
+                "hitbox_size": 0.0
+              }
+            ]
+          }
+        }
       ]
     },
     {
       "move_name": "Neutral Air",
       "data": [
-        {}
+        {
+          "movepart_name": "",
+          "data": {
+            "is_aerial": true,
+            "hitbox_start": 0,
+            "hitbox_end": 0,
+            "faf": 0,
+            "autocancel_start": 0,
+            "autocancel_end": 0,
+            "landing_lag": 0,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 0.0,
+                "angle": 0,
+                "bkb": 0,
+                "kbg": 0,
+                "hitbox_size": 0.0
+              }
+            ]
+          }
+        }
       ]
     },
     {
       "move_name": "Forward Air",
       "data": [
-        {}
+        {
+          "movepart_name": "",
+          "data": {
+            "is_aerial": true,
+            "hitbox_start": 0,
+            "hitbox_end": 0,
+            "faf": 0,
+            "autocancel_start": 0,
+            "autocancel_end": 0,
+            "landing_lag": 0,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 0.0,
+                "angle": 0,
+                "bkb": 0,
+                "kbg": 0,
+                "hitbox_size": 0.0
+              }
+            ]
+          }
+        }
       ]
     },
     {
       "move_name": "Back Air",
       "data": [
-        {}
+        {
+          "movepart_name": "",
+          "data": {
+            "is_aerial": true,
+            "hitbox_start": 0,
+            "hitbox_end": 0,
+            "faf": 0,
+            "autocancel_start": 0,
+            "autocancel_end": 0,
+            "landing_lag": 0,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 0.0,
+                "angle": 0,
+                "bkb": 0,
+                "kbg": 0,
+                "hitbox_size": 0.0
+              }
+            ]
+          }
+        }
       ]
     },
     {
       "move_name": "Up Air",
       "data": [
-        {}
+        {
+          "movepart_name": "",
+          "data": {
+            "is_aerial": true,
+            "hitbox_start": 0,
+            "hitbox_end": 0,
+            "faf": 0,
+            "autocancel_start": 0,
+            "autocancel_end": 0,
+            "landing_lag": 0,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 0.0,
+                "angle": 0,
+                "bkb": 0,
+                "kbg": 0,
+                "hitbox_size": 0.0
+              }
+            ]
+          }
+        }
       ]
     },
     {
       "move_name": "Down Air",
       "data": [
-        {}
+        {
+          "movepart_name": "",
+          "data": {
+            "is_aerial": true,
+            "hitbox_start": 0,
+            "hitbox_end": 0,
+            "faf": 0,
+            "autocancel_start": 0,
+            "autocancel_end": 0,
+            "landing_lag": 0,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 0.0,
+                "angle": 0,
+                "bkb": 0,
+                "kbg": 0,
+                "hitbox_size": 0.0
+              }
+            ]
+          }
+        }
       ]
     },
     {
@@ -169,25 +402,85 @@
     {
       "move_name": "Forward Throw",
       "data": [
-        {}
+        {
+          "movepart_name": "",
+          "data": {
+            "is_throw": true,
+            "faf": 0,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 0.0,
+                "angle": 0,
+                "bkb": 0,
+                "kbg": 0
+              }
+            ]
+          }
+        }
       ]
     },
     {
       "move_name": "Back Throw",
       "data": [
-        {}
+        {
+          "movepart_name": "",
+          "data": {
+            "is_throw": true,
+            "faf": 0,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 0.0,
+                "angle": 0,
+                "bkb": 0,
+                "kbg": 0
+              }
+            ]
+          }
+        }
       ]
     },
     {
       "move_name": "Up Throw",
       "data": [
-        {}
+        {
+          "movepart_name": "",
+          "data": {
+            "is_throw": true,
+            "faf": 0,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 0.0,
+                "angle": 0,
+                "bkb": 0,
+                "kbg": 0
+              }
+            ]
+          }
+        }
       ]
     },
     {
       "move_name": "Down Throw",
       "data": [
-        {}
+        {
+          "movepart_name": "",
+          "data": {
+            "is_throw": true,
+            "faf": 0,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 0.0,
+                "angle": 0,
+                "bkb": 0,
+                "kbg": 0
+              }
+            ]
+          }
+        }
       ]
     }
   ]
