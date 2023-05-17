@@ -408,8 +408,8 @@
           "movepart_name": "",
           "data": {
             "is_aerial": true,
-            "hitbox_start": 0,
-            "hitbox_end": 0,
+            "hitbox_start": 9,
+            "hitbox_end": 12,
             "faf": 38,
             "autocancel_start": [ 1, 29 ],
             "autocancel_end": [ 3 ],
