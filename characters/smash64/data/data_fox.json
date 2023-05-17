@@ -736,9 +736,9 @@
           "movepart_name": "Ground",
           "data": {
             "is_normal": true,
-            "hitbox_start": 25,
-            "hitbox_end": 29,
-            "faf": 56,
+            "hitbox_start": 20,
+            "hitbox_end": 24,
+            "faf": 51,
             "hitboxes": [
               {
                 "id": 0,
@@ -756,7 +756,8 @@
           "movepart_name": "Air",
           "data": {
             "is_normal": true,
-            "faf": 78,
+            "has_fall": true,
+            "landing_lag": 21,
             "hitboxes": [
               {
                 "id": 0,
@@ -792,7 +793,7 @@
                 "kbg": 20,
                 "hitlag_mul": 0.8,
                 "sdi_mul": 0.6,
-                "hitbox_size": 8.0
+                "hitbox_size": 4.0
               }
             ]
           }

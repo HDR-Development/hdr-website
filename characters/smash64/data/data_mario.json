@@ -798,12 +798,12 @@
             "hitboxes": [
               {
                 "id": [ 0, 1 ],
-                "damage": 5.0,
-                "angle": 60,
-                "bkb": 50,
-                "kbg": 155,
+                "damage": 3.0,
+                "angle": 50,
+                "bkb": 40,
+                "kbg": 140,
                 "hitlag_mul": 1.5,
-                "hitbox_size": 7.5,
+                "hitbox_size": 5.5,
                 "no_reverse": true
               }
             ]
@@ -835,7 +835,7 @@
       "move_name": "Back Throw",
       "data": [
         {
-          "movepart_name": "Throw",
+          "movepart_name": "",
           "data": {
             "is_throw": true,
             "faf": 60,
@@ -846,24 +846,6 @@
                 "angle": 45,
                 "bkb": 70,
                 "kbg": 66
-              }
-            ]
-          }
-        },
-        {
-          "movepart_name": "Collateral",
-          "data": {
-            "is_normal": true,
-            "hitbox_start": 13,
-            "hitbox_end": 39,
-            "hitboxes": [
-              {
-                "id": 0,
-                "damage": 8.0,
-                "angle": 50,
-                "bkb": 100,
-                "kbg": 70,
-                "hitbox_size": 4.0
               }
             ]
           }

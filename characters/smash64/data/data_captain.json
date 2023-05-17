@@ -893,7 +893,7 @@
             "is_grab": true,
             "has_fall": true,
             "hitbox_start": 15,
-            "hitbox_end": 30,
+            "hitbox_end": 20,
             "hitboxes": [
               {
                 "id": [ 0, 1 ],
