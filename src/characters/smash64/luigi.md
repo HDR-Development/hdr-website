@@ -9,10 +9,6 @@
 <p class="info"></p>
 <br>
 
-<p class="center"><b>General</b></p>
-<p class="info_header"></p>
-<br>
-
 <p class="center"><b>Moveset</b></p>
 <br>
 <p>Jab 1</p><div class="charTable"></div>

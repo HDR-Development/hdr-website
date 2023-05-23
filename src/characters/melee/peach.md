@@ -9,19 +9,16 @@
 <p class="info"></p>
 <br>
 
-<p class="center"><b>General</b></p>
-<p class="info_header"></p>
+<p class="center"><b>Mechanics</b></p>
+<p class="info_header">Double Jump</p>
 <ul>
-  <li>Double Jump</li>
-  <ul>
-    <li>Peach's double jump has a delayed rise similar to Melee</li>
-    <li>Release Jump within three frames of performing an aerial to interrupt the vertical momentum of the jump (double jump cancel), or continue holding Jump to rise with the aerial</li>
-  </ul>
-  <br>
-  <li>Float Canceling</li>
-  <ul>
-    <li>All aerials performed during float will incur only 4 frames of landing lag</li>
-  </ul>
+  <li>Peach's double jump has a delayed rise similar to Melee</li>
+  <li>Release Jump within three frames of performing an aerial to interrupt the vertical momentum of the jump (double jump cancel), or continue holding Jump to rise with the aerial</li>
+</ul>
+<br>
+<p class="info_header">Float Canceling</p>
+<ul>
+  <li>All aerials performed during float will incur only 4 frames of landing lag</li>
 </ul>
 <br>
 
