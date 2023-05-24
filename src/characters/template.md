@@ -9,7 +9,7 @@
 <p class="info"></p>
 <br>
 
-<p class="center"><b>General</b></p>
+<p class="center"><b>Mechanics</b></p>
 <p class="info_header"></p>
 <ul>
   <li></li>
