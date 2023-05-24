@@ -568,7 +568,7 @@ function populateHitboxSet(row_data, ext_row_data, hitbox, movePart, dataFlags) 
             hitbox.ground_air.toUpperCase() == "G" ? "Ground" : hitbox.ground_air.toUpperCase() == "A" ? "Air" : "Ground/Air"
         ) : "Ground/Air");
     }
-    if (!dataFlags.is_grab) {
+    if (!dataFlags.is_grab && !dataFlags.is_throw) {
         ext_row_data.push(hitbox.hitlag_mul ? hitbox.hitlag_mul + ((/^\d+\.\d+$/).test(hitbox.hitlag_mul) ? 'x' : '.0x') : "1.0x");
     }
     if (!dataFlags.is_grab && !dataFlags.is_throw) {
