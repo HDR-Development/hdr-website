@@ -244,16 +244,16 @@ function AddPersistingDataFields(movePart, moveNext, dataFlags) {
     if (!moveNext.data.faf && movePart.data.faf) {
         moveNext.data["faf"] = movePart.data.faf;
         dataFlags.has_faf = true;
+
+        if (!moveNext.data.faf_2nd && movePart.data.faf_2nd) {
+            moveNext.data["faf_2nd"] = movePart.data.faf_2nd;
+            moveNext.data["faf_str"] = movePart.data.faf_str;
+        }
+        else if (moveNext.data.faf_2nd != movePart.data.faf_2nd) {
+            dataFlags.split_faf = true;
+        }
     }
     else if (moveNext.data.faf != movePart.data.faf) {
-        dataFlags.split_faf = true;
-    }
-
-    if (!moveNext.data.faf_2nd && movePart.data.faf_2nd) {
-        moveNext.data["faf_2nd"] = movePart.data.faf_2nd;
-        moveNext.data["faf_str"] = movePart.data.faf_str;
-    }
-    else if (moveNext.data.faf_2nd != movePart.data.faf_2nd) {
         dataFlags.split_faf = true;
     }
 
