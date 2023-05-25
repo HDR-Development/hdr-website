@@ -1,0 +1,327 @@
+# ![](../../images/Stock_MarioD.png) Dr. Mario
+
+<link rel="stylesheet" type="text/css" href="../../style.css">
+
+![](../../images/SmashBall.png) <b>Attributes</b>
+  - Walk Speed: 1.155 🠚 1.12
+  - Initial Dash Speed: 1.936 🠚 1.7
+  - Run Speed: 1.76 🠚 1.5
+  - Run Acceleration (base/multiplier): 0.044/0.10978 🠚 0.02/0.06
+  - Ground Friction: 0.106 🠚 0.061
+  - Jumpsquat: 3F 🠚 4F
+  - Max Horizontal Jump Speed: 1.3 🠚 1.505
+  - Short Hop Height: 17.54 🠚 12.0
+  - Double Jump Height: 36.33 🠚 29.5
+  - Air Speed: 1.208 🠚 0.95
+  - Air Acceleration (base/multiplier): 0.01/0.07 🠚 0.024/0.03
+  - Gravity: 0.087 🠚 0.0965
+  - Fall Speed: 1.5 🠚 2.0
+  - Fast Fall Speed: 2.4 🠚 2.7
+  - Weight: 98 🠚 104
+  - Shield Radius: 9.7 🠚 9.9
+  - Speed Equipment: -65 🠚 0
+  - Attack Equipment: 22 🠚 0
+<br><br>
+
+![](../../images/SmashBall.png) <b>Moveset</b>
+  - General:
+    - <aesth>Many moves given electric effects and properties</aesth>
+<br><br>
+  - Jab:
+    - Jab 1
+      - <adjust>Attached hitboxes to arm</adjust>
+      - <buff>Added locking hitbox</buff>
+      - Damage: <buff>2.5% 🠚 3.0%</buff>
+      - Angle: <rework>361 🠚 83</rework>
+      - BKB: <rework>25/20/10 🠚 0</rework>
+      - FKB: <rework>0 🠚 25</rework>
+      - KBG: <rework>50/33/20 🠚 100</rework>
+      - Hitlag Multiplier: <adjust>1.8x 🠚 1.2x</adjust>
+      - Hitbox Size (shoulder/arm/hand): <buff>1.2/1.5/1.8u 🠚 2.5/3.0/3.5u</buff>
+      - FAF: <buff>20 🠚 16</buff>
+    - Jab 2
+      - <adjust>Attached hitboxes to arm</adjust>
+      - Damage: <buff>1.5% 🠚 2.0%</buff>
+      - Angle: <rework>361 🠚 80</rework>
+      - BKB: <rework>30/20/15 🠚 0</rework>
+      - FKB: <rework>0 🠚 32</rework>
+      - KBG: <rework>35/25/15 🠚 100</rework>
+      - Additional Hitstun: <buff>0F 🠚 1F</buff>
+      - Hitbox Size (shoulder/arm/hand): <buff>1.8/3.0/4.0u 🠚 3.0/2.5/4.0u</buff>
+      - FAF: <buff>22 🠚 18</buff>
+    - Jab 3
+      - FAF: <buff>34 🠚 28</buff>
+<br><br>
+  - Forward Tilt:
+    - Angle: <rework>361 🠚 60</rework>
+    - BKB: <adjust>55 🠚 45</adjust>
+    - KBG: <adjust>65 🠚 60</adjust>
+    - Hitbox Size (hip/knee/foot): <buff>2.0/3.0/3.8u 🠚 3.5/3.0/4.5u</buff>
+<br><br>
+  - Up Tilt:
+    - <adjust>Split into early and late hit</adjust>
+    - Early
+      - Hitbox Duration: <rework>F5-11 🠚 F5-6</rework>
+      - Damage: <buff>6.3% 🠚 8.0%</buff>
+      - BKB: <adjust>28 🠚 50</adjust>
+      - KBG: <adjust>130 🠚 85</adjust>
+      - Hitbox Size (shoulder/arm/hand): <buff>3.5/4.2/5.0u 🠚 4.0/6.2/6.0u</buff>
+    - Late
+      - Hitbox Duration: F7-11
+      - Damage: <buff>6.3% 🠚 8.0%
+      - BKB: <adjust>28 🠚 50</adjust>
+      - KBG: <adjust>130 🠚 85</adjust>
+      - Hitbox Size (shoulder/arm/hand): <buff>3.5/4.2/5.0u 🠚 4.0/4.0/4.0u</buff>
+<br><br>
+  - Down Tilt:
+    - <buff>Added hip hitbox</buff>
+    - Hip/Knee
+      - Damage: <buff>7.0% 🠚 9.0%</buff>
+      - Angle: <rework>80 🠚 120</rework>
+      - BKB: <rework>35 🠚 40</rework>
+      - KBG: <rework>55 🠚 70</rework>
+      - Hitbox Size (hip): 2.5u
+    - Foot
+      - Damage: <buff>5.0% 🠚 8.0%</buff>
+      - Angle: <rework>80 🠚 100</rework>
+      - BKB: <rework>35 🠚 45</rework>
+      - KBG: <rework>55 🠚 60</rework>
+      - Hitbox Size: <buff>4.2u 🠚 4.5u</buff>
+    - FAF: <buff>28 🠚 25</buff>
+<br><br>
+  - Dash Attack:
+    - <adjust>Attached hitbox to leg</adjust>
+    - <buff>Added hip hitbox</buff>
+    - Early
+      - Damage: <nerf>9.8% 🠚 9.5%</nerf>
+      - Angle: <nerf>90 🠚 80</nerf>
+      - BKB: <buff>90 🠚 70</buff>
+      - KBG: <nerf>38 🠚 40</nerf>
+      - Hitlag Multiplier: <adjust>1.0x 🠚 1.2x</adjust>
+      - Hitbox Size (hip): 3.5u
+    - Late
+      - Damage: <buff>6.0% 🠚 8.5%</buff>
+      - Angle: <nerf>90 🠚 80</nerf>
+      - BKB: <buff>90 🠚 60</buff>
+      - KBG: <nerf>42 🠚 50</nerf>
+      - Hitbox Size (hip/leg): <buff>*/2.7u 🠚 3.5/3.5u</buff>
+<br><br>
+  - Forward Smash:
+    - <rework>Sweetspot moved to hand</rework>
+    - <buff>Added back shoulder hitbox</buff>
+    - High
+      - Shoulder/Arm
+        - Damage: <buff>17.8% 🠚 18.0%</buff>
+        - KBG: <buff>96 🠚 101</buff>
+        - Hitbox Size (shoulder): 2.5u
+      - Hand
+        - Damage: <buff>14.7% 🠚 20.0%</buff>
+        - KBG: <nerf>100 🠚 93</nerf>
+        - Hitlag Multiplier: <adjust>0.8x 🠚 1.0x</adjust>
+        - Hitbox Size: <buff>3.7u 🠚 4.0u</buff>
+    - Mid
+      - Shoulder/Arm
+        - Damage: <buff>17.8% 🠚 17.0%</buff>
+        - KBG: <buff>94 🠚 101</buff>
+        - Hitbox Size (shoulder): 2.5u
+      - Hand
+        - Damage: <buff>14.7% 🠚 19.0%</buff>
+        - KBG: <nerf>100 🠚 93</nerf>
+        - Hitlag Multiplier: <adjust>0.8x 🠚 1.0x</adjust>
+        - Hitbox Size: <buff>3.7u 🠚 4.0u</buff>
+    - Low
+      - Shoulder/Arm
+        - Damage: <buff>17.8% 🠚 16.0%</buff>
+        - KBG: <buff>95 🠚 101</buff>
+        - Hitbox Size (shoulder): 2.5u
+      - Hand
+        - Damage: <buff>14.7% 🠚 18.0%</buff>
+        - KBG: <nerf>100 🠚 93</nerf>
+        - Hitlag Multiplier: <adjust>0.8x 🠚 1.0x</adjust>
+        - Hitbox Size: <buff>3.7u 🠚 4.0u</buff>
+    - FAF: <nerf>48 🠚 50</nerf>
+<br><br>
+  - Up Smash:
+    - <rework>Split into early and late hit</rework>
+    - Early
+      - Hitbox Duration: <rework>F9-13 🠚 F9-10</rework>
+      - Damage: <buff>14.0% 🠚 16.0%</buff>
+      - Angle: <buff>120 🠚 97</buff>
+      - BKB: <buff>0 🠚 35</buff>
+      - KBG: <nerf>117 🠚 95</nerf>
+      - Hitbox Size (head/chest): <nerf>5.0/4.0u 🠚 4.7/3.5u</nerf>
+    - Late
+      - Hitbox Duration: F11-12
+      - Damage: 13.0%
+      - Angle (ground/air): 259/76
+      - BKB: 35
+      - KBG: 95
+      - Hitbox Size (head/chest): 4.7/3.5u
+    - FAF: <nerf>40 🠚 42</nerf>
+<br><br>
+  - Down Smash:
+    - Hit 1
+      - Damage (leg/foot): <buff>10.0% 🠚 17.0/18.0%</buff>
+      - Angle: <nerf>32 🠚 361</nerf>
+      - BKB: <adjust>30 🠚 45</adjust>
+      - KBG: <adjust>100 🠚 75</adjust>
+      - Hitbox Size (leg/foot): <buff>3.3/4.0u 🠚 3.5/4.5u</buff>
+    - Hit 2
+      - Damage (leg/foot): <buff>12.0% 🠚 13.0/15.0%</buff>
+      - Angle: <nerf>30 🠚 38</nerf>
+      - BKB: <adjust>30 🠚 40</adjust>
+      - KBG: <adjust>100 🠚 75</adjust>
+      - Hitbox Size (leg/foot): <adjust>3.3/4.0u 🠚 3.5/4.5u</adjust>
+    - FAF: <nerf>44 🠚 48</nerf>
+<br><br>
+  - Neutral Air:
+    - Early
+      - Hitbox Duration: <adjust>F3-10 🠚 F3-9</adjust>
+      - Damage: <buff>8.0% 🠚 10.0%</buff>
+      - Angle: <adjust>361 🠚 50</adjust>
+      - BKB: <adjust>20 🠚 25</adjust>
+      - KBG: <adjust>100 🠚 95</adjust>
+      - Hitbox Size: <nerf>4.0u 🠚 3.7u</nerf>
+    - Late
+      - Hitbox Duration: <buff>F11-27 🠚 F10-26</buff>
+      - Damage: <buff>12.0% 🠚 14.0%</buff>
+      - BKB: <buff>13 🠚 20</buff>
+      - Hitlag Multiplier: <adjust>1.0x 🠚 0.8x</adjust>
+      - Hitbox Size: <nerf>3.6u 🠚 3.0u</nerf>
+    - Autocancel: <nerf>F1-2/F34 🠚 F1-2/F35</nerf>
+    - Landing Lag: <nerf>7F 🠚 8F</nerf>
+<br><br>
+  - Forward Air:
+    - Early
+      - <buff>Added shoulder hitbox</buff>
+      - Damage (shoulder/hand): <buff>*/10.0% 🠚 15.0/16.0%</buff>
+      - Hitlag Multiplier: <adjust>1.0x 🠚 0.8x</adjust>
+      - Hitbox Size (shoulder): 4.0u
+    - Mid
+      - Damage (shoulder/hand): <buff>15.0% 🠚 16.0/17.0%</buff>
+      - KBG: <nerf>102 🠚 95</nerf>
+      - Hitlag Multiplier: <adjust>1.0x 🠚 0.8x</adjust>
+    - Late
+      - Hitbox Duration: <buff>F21 🠚 F21-22</buff>
+      - Damage (shoulder/hand): <buff>9.0% 🠚 14.0/15.0%</buff>
+      - BKB: <buff>20 🠚 30</buff>
+      - Hitlag Multiplier: <adjust>1.0x 🠚 0.8x</adjust>
+    - FAF: <buff>60 🠚 50</buff>
+    - Landing Lag: <buff>17F 🠚 12F</buff>
+<br><br>
+  - Back Air:
+    - Early
+      - Leg
+        - Damage: <nerf>12.0% 🠚 8.0%</nerf>
+        - BKB: <adjust>10 🠚 43</adjust>
+        - KBG: <adjust>95 🠚 70</adjust>
+        - Hitbox Size: <nerf>5.4u 🠚 4.7u</nerf>
+      - Foot
+        - Damage: <buff>12.0% 🠚 13.0%</buff>
+        - BKB: <buff>10 🠚 20</buff>
+        - KBG: <buff>95 🠚 105</buff>
+        - Hitbox Size: <nerf>4.2u 🠚 3.7u</nerf>
+      - Hitlag Multiplier: <adjust>1.0x 🠚 0.8x</adjust>
+    - Late
+      - Hitbox Duration: <buff>F9-13 🠚 F9-15</buff>
+      - BKB: <adjust>7 🠚 20</adjust>
+      - KBG: <adjust>90 🠚 100</adjust>
+      - Hitlag Multiplier: <adjust>1.0x 🠚 0.8x</adjust>
+      - Hitbox Size (leg/foot): <nerf>5.3/4.5u 🠚 4.5/3.5u</nerf>
+    - FAF: <nerf>34 🠚 35</nerf>
+    - Autocancel: <nerf>F1-5/F19 🠚 F1-5/F21</nerf>
+    - Landing Lag: <buff>10F 🠚 8F</buff>
+<br><br>
+  - Up Air:
+    - <buff>Added late hit</buff>
+    - Early
+      - Damage: <nerf>10.2% 🠚 10.0%</nerf>
+      - Angle: <buff>45 🠚 50</buff>
+      - BKB: <adjust>10 🠚 25</adjust>
+      - KBG: <adjust>100 🠚 90</adjust>
+      - Hitbox Size (leg/foot): <nerf>4.4/5.5u 🠚 3.5/4.7u</nerf>
+    - Late
+      - Hitbox Duration: F8-9
+      - Damage: 9.0%
+      - Angle: 361
+      - BKB: 20
+      - KBG: 90
+      - Hitbox Size (leg/foot): 3.5/4.7u
+    - FAF: <buff>31 🠚 30</buff>
+    - Autocancel: <nerf>F1-2/F18 🠚 F1-2/F19</nerf>
+<br><br>
+  - Down Air:
+    - <adjust>Attached hitboxes to legs</adjust>
+    - Hitbox Duration: <nerf>F14-17 🠚 F16-18</nerf>
+    - KBG (ground/air): <nerf>100 🠚 100/70</nerf>
+    - Hitbox Size (foot/leg): <nerf>5.2/4.5u 🠚 5.0/4.0u</nerf>
+    - FAF: <buff>43 🠚 41</buff>
+    - Autocancel: <nerf>F1-5/F33 🠚 F1-5/F35</nerf>
+    - Landing Lag: <buff>13F 🠚 12F</buff>
+<br><br>
+  - Megavitamins / Chill Pill (Neutral Special):
+    - Chill Pill
+      - <property>Hold Special during Megavitamins to give Dr. Mario’s hand a freezing hitbox</property>
+      - <buff>Added head and arm intangibility during active frames</buff>
+      - Hitbox Duration: F16-19
+      - Damage: 10.0%
+      - Angle: 69
+      - BKB: 50
+      - KBG: 90
+      - Hitlag Multiplier: 1.2x
+      - Hitbox Size (head/arm): 3.5/4.5u
+<br><br>
+  - Super Sheet (Side Special):
+    - <buff>Added windbox in front of sheet</buff>
+    - Air
+      - <rework>Briefly stalls momentum</rework>
+      - Vertical Speed: <rework>0.0 🠚 0.5</rework>
+      - Gravity: <rework>0.092 🠚 0.03</rework>
+      - Max Fall Speed: <rework>1.5 🠚 0.75</rework>
+<br><br>
+  - Super Jump Punch (Up Special):
+    - Ground
+      - <property>Hold the opposite direction during startup to perform a small hit and land immediately</property>
+        - Hitbox Duration: F4
+        - Damage: 1.0%
+        - Angle: 70
+        - FKB: 125
+        - KBG: 100
+        - Hitlag Multiplier: 0.8x
+        - Hitbox Size: 5.0u
+      - Height Multiplier: <buff>0.85x 🠚 0.9x</buff>
+      - Early
+        - KBG: <nerf>105 🠚 102</nerf>
+        - Hitlag Multiplier: <adjust>1.0x 🠚 1.25x</adjust>
+      - Late
+        - Hitbox Size: <nerf>6.0u 🠚 4.0u</nerf>
+    - Air
+      - Height Multiplier: <buff>0.85x 🠚 0.92x</buff>
+      - Early
+        - KBG: <nerf>105 🠚 102</nerf>
+        - Hitlag Multiplier: <adjust>1.0x 🠚 1.25x</adjust>
+      - Late
+        - Hitbox Size: <nerf>6.0u 🠚 4.0u</nerf>
+<br><br>
+  - Doctor Tornado (Down Special):
+    - Buoyancy: <buff>1.35 🠚 1.45</buff>
+    - Heavy Armor Threshold: <nerf>10.0% 🠚 5.0%</nerf>
+    - Multihits
+      - Angle (outer, air-only): <nerf>367 🠚 365</nerf>
+    - Launcher
+      - Angle: <nerf>45 🠚 46</nerf>
+      - Hitlag Multiplier: <adjust>2.0x 🠚 1.2x</adjust>
+      - Hitbox Size (top/bottom): <nerf>6.5/6.0u 🠚 6.0/5.5u</nerf>
+<br><br>
+  - Back Throw:
+    - Damage: <buff>12.0% 🠚 13.0%</buff>
+    - KBG: <buff>68 🠚 85</buff>
+    - FAF: <buff>60 🠚 47</buff>
+<br><br>
+  - Down Throw:
+    - Damage: <buff>5.0% 🠚 6.0%</buff>
+    - Angle: <buff>80 🠚 85</buff>
+    - KBG: <buff>45 🠚 42</buff>    
+
+<script src="../../js/arrow.js">
+</script>
