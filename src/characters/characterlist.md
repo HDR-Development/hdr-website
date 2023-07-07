@@ -1,4 +1,4 @@
-# ![](../../images/SmashBall.png) Character Changes
+# Character Changes
 
 ## Overview
 <!-- - These pages denote every change made to each character compared to their vanilla data (v13.0.1)<br><br>
