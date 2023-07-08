@@ -19,11 +19,11 @@ From the home directory of the repository, you can type `mdbook serve --open` in
 
 
 ## Submitting the Pull Request
-Once you have made your changes, simply commit your changes in Github Desktop and create a pull request. I should see it immediately and will merge it after review and any further needed adjustments
+Once you have made your changes, simply commit your changes in Github Desktop and create a pull request. It will be merged after review and any further needed adjustments
 
 
 ## Making Changes
-To update characters with new changes, you'll need to look at two locations: the character page (`<char>.md`) and that character's data file (`<char>.json`). Both can be found in the characters folder, separated by game. The data file is located in the same directory as the character page under the data folder
+To update characters with new changes, you'll need to look at two locations: the character page (`<char>.md`) and that character's data file (`<char>.json`). Both can be found in the characters folder, separated by game. The data file is located in the same directory as the character page under the `data` folder
 
 
 ## The Character Page (`<char>.md`)
@@ -93,8 +93,6 @@ All possible data fields are as follows, with a brief explanation for each:
 ** Only one of these flags should be `true` per move part, with the exception of `has_fall`. Data flags need to be defined per move part, as each part can have different data flags
 
 ### Info Data
-** Info data only needs to be defined in the first move part of each move if no subsequent move parts contain different values
-
 - `hitbox_start` - The starting frame of activity for the move part's hitboxes. If multiple hits, use array notation
 - `hitbox_end` - The ending frame of activity for the move part's hitboxes. If multiple hits, use array notation. For durations of a single frame, you can either set start and end to the same frame or only use start (if the last/only value)
 - `open_end` - Used if the hitbox has an arbitrary ending frame, such as being able to be interrupted at any point until some eventual period or the move continuing until it hits the ground. Two examples of this are Yoshi's Egg Roll and the falling portion of Egg Bomb
@@ -105,6 +103,8 @@ All possible data fields are as follows, with a brief explanation for each:
 - `autocancel_start` - The starting frame for a move part's autocancel window. Can be array notated similar to hitbox durations
 - `autocancel_end` - The ending frame for a move part's autocancel window
 - `landing_lag` - The landing lag of the move
+
+** Info data only needs to be defined in the first move part of each move if no subsequent move parts contain different values
 
 ### Hitbox Data
 - `id` - Hitbox ID

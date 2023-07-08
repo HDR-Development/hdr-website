@@ -88,6 +88,21 @@
     {
       "movepart_name": "",
       "data": {
+        "is_grab": true,
+        "hitbox_start": 0,
+        "hitbox_end": 0,
+        "faf": 0,
+        "hitboxes": [
+          {
+            "id": 0,
+            "hitbox_size": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "movepart_name": "",
+      "data": {
         "is_throw": true,
         "faf": 0,
         "hitboxes": [
