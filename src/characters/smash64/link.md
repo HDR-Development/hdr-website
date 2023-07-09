@@ -52,8 +52,7 @@
 <p>Spin Attack (Up Special)</p>
 <p class="info_header">Ground</p>
 <ul>
-  <li>Link can move left and right slightly along the ground during the charge and release</li>
-  <li>Can be land canceled after sliding off a ledge</li>
+  <li>Can slide off edges during the charge and release</li>
 </ul>
 <div class="charTable"></div>
 <p class="info_header">Air</p>

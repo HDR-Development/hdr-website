@@ -11,14 +11,12 @@
             "faf": 13,
             "hitboxes": [
               {
-                "id": [ 4, 5, 6, 7 ],
+                "id": [ 0, 1, 2 ],
                 "damage": 4.0,
                 "angle": 70,
-                "bkb": 25,
-                "kbg": [ 25, 25, 15, 15 ],
-                "hitlag_mul": 1.6,
-                "add_hitstun": 3,
-                "hitbox_size": 2.5,
+                "bkb": 30,
+                "kbg": 25,
+                "hitbox_size": 3.0,
                 "no_reverse": true
               }
             ]
@@ -30,13 +28,11 @@
             "is_lock": true,
             "hitboxes": [
               {
-                "id": [ 0, 1, 2, 3 ],
+                "id": 3,
                 "damage": 4.0,
-                "angle": [ 361, 361, 180, 361 ],
-                "bkb": [ 25, 25, 20, 20 ],
-                "kbg": [ 25, 25, 15, 15 ],
-                "hitlag_mul": 1.6,
-                "add_hitstun": 3,
+                "angle": 361,
+                "bkb": 25,
+                "kbg": 25,
                 "hitbox_size": 2.5,
                 "no_reverse": true
               }
@@ -56,13 +52,12 @@
             "faf": 18,
             "hitboxes": [
               {
-                "id": [ 0, 1, 2, 3 ],
+                "id": [ 0, 1, 2 ],
                 "damage": 3.0,
-                "angle": [ 361, 361, 180, 361 ],
-                "bkb": [ 25, 25, 20, 20 ],
-                "kbg": [ 25, 25, 15, 15 ],
-                "hitlag_mul": 1.2,
-                "hitbox_size": [ 2.8, 3.5, 3.5, 3.5 ],
+                "angle": 361,
+                "bkb": 25,
+                "kbg": 25,
+                "hitbox_size": 3.0,
                 "no_reverse": true
               }
             ]
@@ -86,8 +81,8 @@
                 "angle": 30,
                 "bkb": 70,
                 "kbg": 70,
-                "hitlag_mul": 2.0,
-                "hitbox_size": [ 4.5, 4.5, 3.8 ],
+                "hitlag_mul": 1.2,
+                "hitbox_size": 3.0,
                 "no_reverse": true
               }
             ]
@@ -107,11 +102,11 @@
             "hitboxes": [
               {
                 "id": [ 0, 1, 2, 3 ],
-                "damage": [ 13.0, 14.0, 13.0, 13.0 ],
-                "angle": [ 35, 361, 35, 35 ],
-                "bkb": [ 35, 55, 35, 35 ],
-                "kbg": [ 90, 86, 90, 990 ],
-                "hitbox_size": [ 4.5, 4.5, 3.0, 3.0 ]
+                "damage": [ 13.0, 13.0, 13.0, 14.0 ],
+                "angle": [ 35, 35, 35, 361 ],
+                "bkb": [ 35, 35, 35, 55 ],
+                "kbg": [ 90, 90, 90, 86 ],
+                "hitbox_size": [ 2.5, 3.5, 3.5, 3.5 ]
               }
             ]
           }
@@ -131,11 +126,11 @@
               {
                 "id": [ 0, 1, 2, 3 ],
                 "damage": 10.0,
-                "angle": [ 95, 85, 85, 85 ],
-                "bkb": 36,
-                "kbg": [ 100, 105, 102, 101 ],
+                "angle": [ 85, 85, 85, 95 ],
+                "bkb": 40,
+                "kbg": 105,
                 "hitlag_mul": 0.9,
-                "hitbox_size": [ 3.5, 3.5, 3.0, 4.0 ]
+                "hitbox_size": [ 2.5, 3.5, 3.5, 3.5 ]
               }
             ]
           }
@@ -153,13 +148,13 @@
             "faf": 28,
             "hitboxes": [
               {
-                "id": [ 0, 1, 2, 3, 4, 5, 6, 7 ],
+                "id": [ 0, 1, 2, 3, 4, 5, 6 ],
                 "damage": 11.0,
-                "angle": [ 80, 80, 80, 80, 80, 280, 280, 280 ],
-                "bkb": [ 85, 85, 85, 85, 85, 40, 40, 40 ],
-                "kbg": [ 30, 30, 30, 30, 30, 43, 43, 43 ],
-                "hitbox_size": [ 4.0, 4.0, 4.5, 4.5, 4.5, 4.5, 4.0, 4.0 ],
-                "ground_air": [ "G", "G", "G", "G", "A", "A", "A", "A" ]
+                "angle": [ 80, 80, 80, 80, 280, 280, 280 ],
+                "bkb": [ 85, 85, 85, 85, 40, 40, 40 ],
+                "kbg": [ 30, 30, 30, 30, 43, 43, 43 ],
+                "hitbox_size": [ 2.5, 3.5, 3.5, 3.5, 2.5, 3.5, 3.5 ],
+                "ground_air": [ "G", "G", "G", "G", "A", "A", "A" ]
               }
             ]
           }
@@ -178,12 +173,12 @@
             "hitboxes": [
               {
                 "id": [ 0, 1, 2, 3 ],
-                "damage": [ 13.0, 14.0, 13.0, 13.0 ],
-                "angle": [ 50, 45, 55, 55 ],
-                "bkb": [ 75, 70, 85, 85 ],
-                "kbg": [ 82, 82, 78, 78 ],
+                "damage": 14.0,
+                "angle": 45,
+                "bkb": 70,
+                "kbg": 82,
                 "shieldstun_mul": 1.4,
-                "hitbox_size": [ 3.5, 3.6, 3.5, 4.0 ],
+                "hitbox_size": [ 4.0, 3.5, 3.5, 3.6 ],
                 "no_reverse": true
               }
             ]
@@ -204,11 +199,11 @@
             "hitboxes": [
               {
                 "id": [ 0, 1, 2 ],
-                "damage": [ 7.0, 14.0, 7.0 ],
-                "angle": [ 69, 361, 60 ],
-                "bkb": [ 45, 30, 45 ],
-                "kbg": [ 12, 100, 12 ],
-                "hitbox_size": [ 4.3, 3.5, 3.2 ],
+                "damage": 7.0,
+                "angle": [ 69, 69, 60 ],
+                "bkb": 45,
+                "kbg": 12,
+                "hitbox_size": [ 3.5, 3.5, 3.0 ],
                 "no_reverse": true
               }
             ]
@@ -224,12 +219,12 @@
             "hitboxes": [
               {
                 "id": [ 0, 1, 2, 3 ],
-                "damage": [ 18.0, 18.0, 20.0, 20.0 ],
+                "damage": [ 16.0, 16.0, 18.0, 18.0 ],
                 "angle": 50,
                 "bkb": 30,
                 "kbg": 100,
                 "hitlag_mul": 1.5,
-                "hitbox_size": [ 3.5, 3.5, 4.5, 4.5 ],
+                "hitbox_size": [ 3.0, 3.0, 3.5, 3.5 ],
                 "no_reverse": true
               }
             ]
@@ -244,20 +239,39 @@
           "movepart_name": "Hit 1/Hit 2",
           "data": {
             "is_smash": true,
-            "hitbox_start": [ 10, 25 ],
-            "hitbox_end": [ 16, 33 ],
+            "hitbox_start": 10,
+            "hitbox_end": 16,
             "faf": 83,
             "hitboxes": [
               {
-                "id": [ 0, 2, 4, 1, 3 ],
+                "id": [ 0, 1, 2, 3, 4 ],
                 "damage": 4.0,
-                "angle": [ 105, 107, 107, 115, 115 ],
-                "fkb": [ 55, 28, 28, 48, 28 ],
+                "angle": [ 105, 115, 107, 115, 107 ],
+                "fkb": [ 55, 38, 28, 28, 28 ],
                 "kbg": 100,
                 "sdi_mul": 0.5,
-                "add_hitstun": 3,
-                "hitbox_size": [ 3.5, 4.8, 3.0, 4.8, 3.0 ],
-                "ground_air": [ "", "G", "G", "A", "A" ]
+                "hitbox_size": [ 3.5, 4.0, 4.0, 3.0, 3.0 ],
+                "ground_air": [ "", "A", "G", "A", "G" ]
+              }
+            ]
+          }
+        },
+        {
+          "movepart_name": "Hit 2",
+          "data": {
+            "is_smash": true,
+            "hitbox_start": 25,
+            "hitbox_end": 33,
+            "hitboxes": [
+              {
+                "id": [ 0, 1, 2, 3, 4 ],
+                "damage": 3.0,
+                "angle": [ 105, 115, 107, 115, 107 ],
+                "fkb": [ 55, 38, 28, 28, 28 ],
+                "kbg": 100,
+                "sdi_mul": 0.5,
+                "hitbox_size": [ 3.5, 4.0, 4.0, 3.0, 3.0 ],
+                "ground_air": [ "", "A", "G", "A", "G" ]
               }
             ]
           }
@@ -275,7 +289,7 @@
                 "angle": [ 80, 90, 90, 90 ],
                 "bkb": 60,
                 "kbg": 96,
-                "hitbox_size": [ 4.3, 4.3, 3.0, 5.2 ]
+                "hitbox_size": [ 4.0, 4.0, 3.0, 4.5 ]
               }
             ]
           }
@@ -295,11 +309,12 @@
             "hitboxes": [
               {
                 "id": [ 0, 1, 2, 3 ],
-                "damage": [ 16.0, 17.0, 16.0, 14.0 ],
+                "damage": [ 16.0, 16.0, 14.0, 14.0 ],
                 "angle": 75,
                 "bkb": [ 40, 40, 40, 26 ],
                 "kbg": 88,
-                "hitbox_size": [ 3.5, 3.6, 3.4, 3.0 ]
+                "hitlag_mul": 1.2,
+                "hitbox_size": [ 3.5, 3.5, 3.0, 3.0 ]
               }
             ]
           }
@@ -313,11 +328,12 @@
             "hitboxes": [
               {
                 "id": [ 0, 1, 2, 3 ],
-                "damage": [ 14.0, 14.0, 13.0, 12.0 ],
+                "damage": [ 14.0, 14.0, 12.0, 12.0 ],
                 "angle": 30,
                 "bkb": 80,
                 "kbg": 60,
-                "hitbox_size": [ 3.5, 3.6, 3.4, 3.0 ]
+                "hitlag_mul": 1.2,
+                "hitbox_size": [ 3.5, 3.5, 3.0, 3.0 ]
               }
             ]
           }
@@ -343,7 +359,7 @@
                 "angle": 361,
                 "bkb": 15,
                 "kbg": 100,
-                "hitbox_size": [ 5.0, 5.0, 4.0 ]
+                "hitbox_size": [ 5.0, 5.0, 3.5 ]
               }
             ]
           }
@@ -357,11 +373,11 @@
             "hitboxes": [
               {
                 "id": [ 0, 1, 2 ],
-                "damage": 7.0,
+                "damage": 8.0,
                 "angle": 361,
                 "bkb": 10,
                 "kbg": 100,
-                "hitbox_size": [ 5.0, 5.0, 4.0 ]
+                "hitbox_size": [ 4.0, 4.0, 3.0 ]
               }
             ]
           }
@@ -387,8 +403,7 @@
                 "angle": 361,
                 "bkb": 30,
                 "kbg": 100,
-                "hitlag_mul": 1.1,
-                "hitbox_size": [ 3.0, 3.5, 6.0, 5.0 ]
+                "hitbox_size": [ 2.5, 3.5, 4.5, 4.0 ]
               }
             ]
           }
@@ -407,7 +422,7 @@
                 "bkb": 40,
                 "kbg": 120,
                 "shield_damage": 2,
-                "hitbox_size": [ 3.0, 3.5, 6.0, 6.0 ]
+                "hitbox_size": [ 2.5, 3.5, 4.5, 4.0 ]
               }
             ]
           }
@@ -428,16 +443,15 @@
             "landing_lag": 7,
             "hitboxes": [
               {
-                "id": [ 0, 2, 4, 1, 3, 5 ],
-                "damage": 7.0,
-                "angle": [ 73, 70, 70, 367, 367, 367 ],
-                "fkb": [ 57, 57, 57, 40, 40, 40 ],
+                "id": [ 0, 1, 2, 3, 4, 5 ],
+                "damage": 5.0,
+                "angle": [ 70, 366, 70, 366, 70, 366 ],
+                "fkb": 40,
                 "kbg": 100,
                 "hitlag_mul": 0.8,
-                "add_hitstun": [ 6, 6, 6, 3, 3, 3 ],
-                "hitbox_size": [ 4.5, 4.5, 5.0, 4.5, 4.5, 5.0 ],
-                "ground_air": [ "G", "G", "G", "A", "A", "A" ],
-                "no_reverse": true
+                "hitbox_size": 4.0,
+                "ground_air": [ "G", "A", "G", "A", "G", "A" ],
+                "no_reverse": [ false, false, true, true, true, true ]
               }
             ]
           }
@@ -455,8 +469,8 @@
                 "angle": 361,
                 "bkb": 25,
                 "kbg": 100,
-                "hitbox_size": [ 5.0, 5.0, 5.5 ],
-                "no_reverse": true
+                "hitbox_size": 4.5,
+                "no_reverse": [ false, true, true ]
               }
             ]
           }
@@ -482,8 +496,7 @@
                 "angle": 85,
                 "bkb": 25,
                 "kbg": 92,
-                "hitlag_mul": 1.2,
-                "hitbox_size": 4.5
+                "hitbox_size": 3.5
               }
             ]
           }
@@ -501,8 +514,7 @@
                 "angle": 85,
                 "bkb": 22,
                 "kbg": 85,
-                "hitlag_mul": 1.1,
-                "hitbox_size": 4.5
+                "hitbox_size": 3.5
               }
             ]
           }
@@ -525,12 +537,11 @@
             "hitboxes": [
               {
                 "id": [ 0, 1 ],
-                "damage": 21.0,
+                "damage": 18.0,
                 "angle": [ 270, 65 ],
-                "bkb": [ 30, 45 ],
-                "kbg": [ 33, 85 ],
-                "hitlag_mul": 1.2,
-                "hitbox_size": 4.0,
+                "bkb": [ 30, 42 ],
+                "kbg": [ 38, 98 ],
+                "hitbox_size": 3.5,
                 "ground_air": [ "A", "G" ]
               }
             ]
@@ -545,12 +556,11 @@
             "hitboxes": [
               {
                 "id": 0,
-                "damage": 18.0,
+                "damage": 15.0,
                 "angle": 65,
-                "bkb": 45,
-                "kbg": 85,
-                "hitlag_mul": 1.2,
-                "hitbox_size": 4.2
+                "bkb": 41,
+                "kbg": 100,
+                "hitbox_size": 3.5
               }
             ]
           }
@@ -591,7 +601,7 @@
             "hitboxes": [
               {
                 "id": 0,
-                "damage": 20.0,
+                "damage": 17.0,
                 "angle": 361,
                 "bkb": 10,
                 "kbg": 71,
@@ -617,13 +627,29 @@
             "hitboxes": [
               {
                 "id": 0,
+                "damage": 10.0,
+                "angle": 80,
+                "bkb": 91,
+                "kbg": 29,
+                "hitbox_size": 4.0
+              }
+            ]
+          }
+        },
+        {
+          "movepart_name": "Mid",
+          "data": {
+            "is_projectile": true,
+            "hitbox_start": 36,
+            "hitbox_end": 48,
+            "hitboxes": [
+              {
+                "id": 0,
                 "damage": 8.0,
                 "angle": 80,
-                "bkb": 90,
-                "kbg": 35,
-                "hitlag_mul": 1.2,
-                "shield_damage": -4,
-                "hitbox_size": 4.0
+                "bkb": 74,
+                "kbg": 37,
+                "hitbox_size": 3.6
               }
             ]
           }
@@ -632,17 +658,15 @@
           "movepart_name": "Late",
           "data": {
             "is_projectile": true,
-            "hitbox_start": 36,
+            "hitbox_start": 49,
             "hitbox_end": 63,
             "hitboxes": [
               {
                 "id": 0,
                 "damage": 6.0,
                 "angle": 80,
-                "bkb": 90,
-                "kbg": 40,
-                "hitlag_mul": 1.2,
-                "shield_damage": -3,
+                "bkb": 55,
+                "kbg": 44,
                 "hitbox_size": 3.6
               }
             ]
@@ -659,7 +683,7 @@
                 "id": 0,
                 "damage": 4.0,
                 "angle": 80,
-                "bkb": 55,
+                "bkb": 50,
                 "kbg": 40,
                 "hitlag_mul": 1.2,
                 "shield_damage": -1.5,
@@ -677,8 +701,8 @@
           "movepart_name": "Early",
           "data": {
             "is_normal": true,
-            "hitbox_start": 7,
-            "hitbox_end": 15,
+            "hitbox_start": 10,
+            "hitbox_end": 18,
             "faf": 82,
             "hitboxes": [
               {
@@ -697,13 +721,13 @@
           "movepart_name": "Mid",
           "data": {
             "is_normal": true,
-            "hitbox_start": 16,
-            "hitbox_end": 27,
+            "hitbox_start": 19,
+            "hitbox_end": 30,
             "hitboxes": [
               {
                 "id": [ 0, 1, 2 ],
                 "damage": 11.0,
-                "angle": 30,
+                "angle": 40,
                 "bkb": 52,
                 "kbg": 92,
                 "shieldstun_mul": 2.0,
@@ -716,13 +740,13 @@
           "movepart_name": "Late",
           "data": {
             "is_normal": true,
-            "hitbox_start": 28,
-            "hitbox_end": 40,
+            "hitbox_start": 31,
+            "hitbox_end": 43,
             "hitboxes": [
               {
                 "id": [ 0, 1, 2 ],
                 "damage": 6.0,
-                "angle": 15,
+                "angle": 40,
                 "bkb": 40,
                 "kbg": 100,
                 "shieldstun_mul": 2.0,

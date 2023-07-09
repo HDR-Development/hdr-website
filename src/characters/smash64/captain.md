@@ -26,7 +26,7 @@
 <p>Up Tilt</p><div class="charTable">
 <ul>
   <li>Front arm intangible during frames 1-13</li>
-  <li>Lower leg intangible during frames 14-15</li>
+  <li>Lower leg intangible during frames 14-18</li>
 </ul>
 </div>
 <br>

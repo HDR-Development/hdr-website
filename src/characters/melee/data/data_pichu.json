@@ -17,7 +17,7 @@
                 "angle": 67,
                 "bkb": 70,
                 "kbg": 72,
-                "hitbox_size": 3.0,
+                "hitbox_size": [ 4.5, 4.0 ],
                 "no_reverse": true
               }
             ]
@@ -83,7 +83,7 @@
               {
                 "id": [ 0, 1, 2 ],
                 "damage": 5.5,
-                "angle": 75,
+                "angle": 80,
                 "bkb": 70,
                 "kbg": 90,
                 "hitbox_size": [ 3.0, 3.5, 4.2 ]
@@ -106,8 +106,8 @@
             "hitboxes": [
               {
                 "id": [ 0, 1 ],
-                "damage": [ 6.0, 7.0 ],
-                "angle": [ 101, 110 ],
+                "damage": 6.0,
+                "angle": 120,
                 "bkb": 65,
                 "kbg": [ 70, 50 ],
                 "hitbox_size": [ 3.5, 4.5 ]
@@ -198,7 +198,7 @@
                 "damage": 8.0,
                 "angle": 40,
                 "bkb": 65,
-                "kbg": 130,
+                "kbg": 110,
                 "hitlag_mul": 1.2,
                 "hitbox_size": [ 5.3, 4.3 ],
                 "no_reverse": true
@@ -223,8 +223,8 @@
                 "id": [ 0, 1 ],
                 "damage": 15.0,
                 "angle": 95,
-                "bkb": [ 40, 15 ],
-                "kbg": 98,
+                "bkb": [ 45, 20 ],
+                "kbg": 105,
                 "hitbox_size": [ 6.0, 3.2 ]
               }
             ]
@@ -453,7 +453,7 @@
                 "angle": 63,
                 "bkb": 45,
                 "kbg": 95,
-                "hitbox_size": [ 4.0, 5.0 ]
+                "hitbox_size": [ 5.0, 6.0 ]
               }
             ]
           }
@@ -474,13 +474,12 @@
             "landing_lag": 14,
             "hitboxes": [
               {
-                "id": [ 0, 1, 2 ],
-                "damage": [ 12.0, 13.0, 13.0 ],
-                "angle": [ 361, 270, 270 ],
-                "bkb": [ 40, 16, 16 ],
-                "kbg": [ 110, 86, 63 ],
-                "hitbox_size": [ 4.5, 5.5, 5.5 ],
-                "ground_air": [ "", "G", "A" ]
+                "id": [ 0, 1 ],
+                "damage": 13.0,
+                "angle": 361,
+                "bkb": 40,
+                "kbg": 110,
+                "hitbox_size": [ 4.5, 5.5 ]
               }
             ]
           }
@@ -494,7 +493,7 @@
             "hitboxes": [
               {
                 "id": [ 0, 1 ],
-                "damage": 12.0,
+                "damage": 11.0,
                 "angle": 361,
                 "bkb": 35,
                 "kbg": 104,
@@ -512,9 +511,9 @@
           "movepart_name": "",
           "data": {
             "is_projectile": true,
-            "hitbox_start": 13,
-            "hitbox_end": 85,
-            "faf": 46,
+            "hitbox_start": 15,
+            "hitbox_end": 87,
+            "faf": 48,
             "hitboxes": [
               {
                 "id": 0,
@@ -539,9 +538,9 @@
           "movepart_name": "",
           "data": {
             "is_projectile": true,
-            "hitbox_start": 20,
-            "hitbox_end": 92,
-            "faf": 54,
+            "hitbox_start": 18,
+            "hitbox_end": 90,
+            "faf": 52,
             "hitboxes": [
               {
                 "id": 0,
@@ -569,6 +568,7 @@
             "hitbox_start": 13,
             "hitbox_end": 31,
             "faf": 39,
+            "faf_str": "Hit",
             "hitboxes": [
               {
                 "id": 0,
@@ -593,7 +593,8 @@
             "is_normal": true,
             "hitbox_start": 13,
             "hitbox_end": 18,
-            "faf": 51,
+            "faf": 46,
+            "faf_str": "Hit",
             "hitboxes": [
               {
                 "id": 0,
@@ -687,12 +688,10 @@
             "hitboxes": [
               {
                 "id": 0,
-                "damage": 6.0,
-                "angle": 270,
-                "bkb": 55,
-                "fkb": 125,
-                "kbg": 60,
-                "hitlag_mul": 0.0,
+                "damage": 10.0,
+                "angle": 94,
+                "bkb": 75,
+                "kbg": 85,
                 "shield_damage": 1.0,
                 "hitbox_size": 7.0
               }
@@ -708,7 +707,7 @@
             "hitboxes": [
               {
                 "id": 0,
-                "damage": 4.0,
+                "damage": 6.0,
                 "angle": 94,
                 "bkb": 74,
                 "kbg": 60,
@@ -748,10 +747,10 @@
           "movepart_name": "",
           "data": {
             "is_normal": true,
-            "hitbox_start": 21,
-            "hitbox_end": 24,
-            "faf": 81,
-            "faf_2nd": 72,
+            "hitbox_start": 18,
+            "hitbox_end": 21,
+            "faf": 78,
+            "faf_2nd": 69,
             "faf_str": "Ground/Air",
             "hitboxes": [
               {
@@ -781,8 +780,8 @@
                 "id": 0,
                 "damage": [ 6.0, 6.0 ],
                 "angle": 45,
-                "bkb": 55,
-                "kbg": 110
+                "bkb": 65,
+                "kbg": 115
               }
             ]
           }
@@ -790,7 +789,7 @@
       ]
     },
     {
-      "move_name": "Back Throw",
+      "move_name": "Back Throw (Normal)",
       "data": [
         {
           "movepart_name": "",
@@ -811,6 +810,27 @@
       ]
     },
     {
+      "move_name": "Back Throw (Charge State)",
+      "data": [
+        {
+          "movepart_name": "",
+          "data": {
+            "is_throw": true,
+            "faf": 31,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 9.0,
+                "angle": 85,
+                "bkb": 85,
+                "kbg": 30
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
       "move_name": "Up Throw (Normal)",
       "data": [
         {
@@ -823,8 +843,8 @@
                 "id": 0,
                 "damage": [ 5.0, 5.0 ],
                 "angle": 90,
-                "bkb": 90,
-                "kbg": 45
+                "bkb": 80,
+                "kbg": 50
               }
             ]
           }
@@ -842,10 +862,10 @@
             "hitboxes": [
               {
                 "id": 0,
-                "damage": [ 6.0, 9.0 ],
+                "damage": [ 6.0, 5.0 ],
                 "angle": 90,
-                "bkb": 70,
-                "kbg": 90
+                "bkb": 60,
+                "kbg": 55
               }
             ]
           }
@@ -853,7 +873,7 @@
       ]
     },
     {
-      "move_name": "Down Throw",
+      "move_name": "Down Throw (Normal)",
       "data": [
         {
           "movepart_name": "",
@@ -867,6 +887,27 @@
                 "angle": 80,
                 "bkb": 60,
                 "kbg": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "move_name": "Down Throw (Charge State)",
+      "data": [
+        {
+          "movepart_name": "",
+          "data": {
+            "is_throw": true,
+            "faf": 58,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": [ 15.0, 5.0 ],
+                "angle": 60,
+                "bkb": 135,
+                "kbg": 5
               }
             ]
           }

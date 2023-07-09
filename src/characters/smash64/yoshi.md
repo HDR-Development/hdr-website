@@ -68,7 +68,11 @@
 </ul>
 <div class="charTable"></div>
 <br>
-<p>Egg Toss (Up Special)</p><div class="charTable"></div>
+<p>Egg Toss (Up Special)</p>
+<ul>
+  <li>The grounded version can slide off edges</li>
+</ul>
+<div class="charTable"></div>
 <br>
 <p>Egg Bomb (Down Special)</p>
 <p class="info_header">Ground</p>

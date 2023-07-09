@@ -557,7 +557,7 @@
             "is_normal": true,
             "hitbox_start": 16,
             "hitbox_end": 24,
-            "faf": 61,
+            "faf": 66,
             "hitboxes": [
               {
                 "id": [ 0, 1, 2 ],
