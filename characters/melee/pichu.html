@@ -156,11 +156,11 @@
 <ul>
   <li>Using electric attacks builds up charge</li>
   <ul>
-    <li>Connecting with the move will build charge equal to the move's damage whereas whiffing will only accrue 25% of that</li>
+    <li>Connecting with the move will build charge equal to the move's damage whereas whiffing will only accrue about 25% of that</li>
   </ul>
-  <li>After dealing a total of 60% with electric attacks, Pichu enters Charge State</li>
+  <li>After dealing a total of 50% with electric attacks, Pichu enters Charge State</li>
   <ul>
-    <li>Charge State lasts 15 seconds, increasing the damage of all electric attacks by 1.2x while also increasing their recoil by 1.25x</li>
+    <li>Charge State lasts 25 seconds, increasing the damage of all electric attacks by 1.2x while also increasing their recoil by 1.25x</li>
     <li>Pichu's specials also change significantly</li>
   </ul>
   <li>Pressing Shield while taunting in training mode instantly activates Charge State</li>
@@ -237,7 +237,7 @@
 <p class="info-header">Electroweb</p>
 <ul>
   <li>Paralyzes opponents</li>
-  <li>Decrements Charge State timer by 1 sec on use</li>
+  <li>Decrements Charge State timer by 2sec on use</li>
   <li>Inflicts 3.0% recoil</li>
 </ul>
 <div class="charTable"></div>
@@ -251,8 +251,8 @@
 <div class="charTable"></div>
 <p class="info-header">Wild Charge</p>
 <ul>
-  <li>Grounded/Aerial FAF on whiff is 65/79</li>
-  <li>Decrements Charge State timer by 1 sec on use</li>
+  <li>Grounded/Aerial FAF on whiff is 59/73</li>
+  <li>Decrements Charge State timer by 2sec on use</li>
   <li>Inflicts 3.0% recoil</li>
 </ul>
 <div class="charTable"></div>
@@ -267,7 +267,7 @@
 <ul>
   <li>Can be jump canceled on hit</li>
   <li>Inflicts 1.0/2.0% recoil</li>
-  <li>Decrements Charge State timer by 1 sec on use</li>
+  <li>Decrements Charge State timer by 2sec on use</li>
 </ul>
 <div class="charTable"></div>
 <br>
@@ -283,10 +283,10 @@
   <li>Size, damage, and recoil scale linearly based on how much Charge State time is left, down to a minimum of 75% size and 50% damage/recoil</li>
   <ul>
     <li>FAF also decreases depending on remaining Charge State</li>
-    <li>Remains at full power for the first three seconds of Charge State</li>
+    <li>Remains at full power for the first 5 seconds of Charge State</li>
   </ul>
   <li>Ends Charge State on use</li>
-  <li>Intanigble during frames 7-20</li>
+  <li>Intangible during frames 7-15</li>
 </ul>
 <div class="charTable"></div>
 <br>
@@ -320,14 +320,6 @@
 <div class="charTable"></div>
 <br>
 <p>Back Throw</p>
-<ul>
-  <li>Sends at an angle of 80 during Charge State</li>
-  <li>FAF is 31 during Charge State</li>
-  <li>Inflicts 1.0% recoil during Charge State</li>
-</ul>
-<div class="charTable"></div>
-<br>
-<p>Up Throw</p>
 <p class="info-header">Normal</p>
 <div class="charTable"></div>
 <p class="info-header">Charge State</p>
@@ -336,7 +328,23 @@
 </ul>
 <div class="charTable"></div>
 <br>
-<p>Down Throw</p><div class="charTable"></div>
+<p>Up Throw</p>
+<ul>
+  <li>Inflicts 1.0% recoil</li>
+</ul>
+<p class="info-header">Normal</p>
+<div class="charTable"></div>
+<p class="info-header">Charge State</p>
+<div class="charTable"></div>
+<br>
+<p>Down Throw</p>
+<p class="info-header">Normal</p>
+<div class="charTable"></div>
+<p class="info-header">Charge State</p>
+<ul>
+  <li>Decrements Charge State timer by 3sec on use</li>
+</ul>
+<div class="charTable"></div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script src="../../js/arrow.js"></script>
 <script type="text/javascript" src="../../js/dataparser.js"></script>

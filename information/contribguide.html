@@ -154,9 +154,9 @@
 <h2 id="the-very-handy-command"><a class="header" href="#the-very-handy-command">The Very Handy Command</a></h2>
 <p>From the home directory of the repository, you can type <code>mdbook serve --open</code> in the VSCode terminal to launch a locally hosted web session. It will update and refresh every time you save any changes to a file, making previewing changes quick and easy. You can also hit <code>Ctrl+F5</code> to fully reload the session, which can help with refreshing styles and if the data doesn't seem to be pulling correctly</p>
 <h2 id="submitting-the-pull-request"><a class="header" href="#submitting-the-pull-request">Submitting the Pull Request</a></h2>
-<p>Once you have made your changes, simply commit your changes in Github Desktop and create a pull request. I should see it immediately and will merge it after review and any further needed adjustments</p>
+<p>Once you have made your changes, simply commit your changes in Github Desktop and create a pull request. It will be merged after review and any further needed adjustments</p>
 <h2 id="making-changes"><a class="header" href="#making-changes">Making Changes</a></h2>
-<p>To update characters with new changes, you'll need to look at two locations: the character page (<code>&lt;char&gt;.md</code>) and that character's data file (<code>&lt;char&gt;.json</code>). Both can be found in the characters folder, separated by game. The data file is located in the same directory as the character page under the data folder</p>
+<p>To update characters with new changes, you'll need to look at two locations: the character page (<code>&lt;char&gt;.md</code>) and that character's data file (<code>&lt;char&gt;.json</code>). Both can be found in the characters folder, separated by game. The data file is located in the same directory as the character page under the <code>data</code> folder</p>
 <h2 id="the-character-page-charmd"><a class="header" href="#the-character-page-charmd">The Character Page (<code>&lt;char&gt;.md</code>)</a></h2>
 <p>This is the skeleton that gets populated with all the character's data on page load
 <br><br><br>
@@ -213,7 +213,6 @@ You can also split the move into separate moves in the data file in order to pro
 </ul>
 <p>** Only one of these flags should be <code>true</code> per move part, with the exception of <code>has_fall</code>. Data flags need to be defined per move part, as each part can have different data flags</p>
 <h3 id="info-data"><a class="header" href="#info-data">Info Data</a></h3>
-<p>** Info data only needs to be defined in the first move part of each move if no subsequent move parts contain different values</p>
 <ul>
 <li><code>hitbox_start</code> - The starting frame of activity for the move part's hitboxes. If multiple hits, use array notation</li>
 <li><code>hitbox_end</code> - The ending frame of activity for the move part's hitboxes. If multiple hits, use array notation. For durations of a single frame, you can either set start and end to the same frame or only use start (if the last/only value)</li>
@@ -226,6 +225,7 @@ You can also split the move into separate moves in the data file in order to pro
 <li><code>autocancel_end</code> - The ending frame for a move part's autocancel window</li>
 <li><code>landing_lag</code> - The landing lag of the move</li>
 </ul>
+<p>** Info data only needs to be defined in the first move part of each move if no subsequent move parts contain different values</p>
 <h3 id="hitbox-data"><a class="header" href="#hitbox-data">Hitbox Data</a></h3>
 <ul>
 <li><code>id</code> - Hitbox ID</li>

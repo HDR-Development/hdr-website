@@ -8,6 +8,7 @@
           "data": {
             "is_normal": true,
             "hitbox_start": 3,
+            "hitbox_end": 5,
             "faf": 16,
             "hitboxes": [
               {
@@ -16,9 +17,7 @@
                 "angle": 70,
                 "bkb": 30,
                 "kbg": [ 25, 25, 20 ],
-                "hitlag_mul": 1.6,
-                "hitbox_size": [ 2.5, 3.0, 3.5 ],
-                "no_reverse": true
+                "hitbox_size": [ 2.5, 3.0, 3.5 ]
               }
             ]
           }
@@ -26,7 +25,7 @@
         {
           "movepart_name": "Jablock",
           "data": {
-            "is_normal": true,
+            "is_lock": true,
             "hitboxes": [
               {
                 "id": 0,
@@ -57,10 +56,23 @@
                 "angle": 70,
                 "bkb": 30,
                 "kbg": 25,
-                "hitlag_mul": 1.2,
-                "add_hitstun": 2,
-                "hitbox_size": [ 2.5, 3.5, 4.0 ],
-                "no_reverse": true
+                "hitbox_size": [ 2.5, 3.5, 4.0 ]
+              }
+            ]
+          }
+        },
+        {
+          "movepart_name": "Jablock",
+          "data": {
+            "is_lock": true,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 2.0,
+                "angle": 361,
+                "bkb": 25,
+                "kbg": 10,
+                "hitbox_size": 2.5
               }
             ]
           }
@@ -75,7 +87,7 @@
           "data": {
             "is_normal": true,
             "hitbox_start": 6,
-            "hitbox_end": 7,
+            "hitbox_end": 9,
             "faf": 23,
             "hitboxes": [
               {
@@ -84,7 +96,6 @@
                 "angle": 361,
                 "bkb": 70,
                 "kbg": 100,
-                "hitlag_mul": 2.0,
                 "hitbox_size": [ 5.5, 3.8 ],
                 "no_reverse": true
               }
@@ -135,7 +146,7 @@
                 "id": [ 0, 1 ],
                 "damage": 3.0,
                 "angle": 45,
-                "bkb": 110,
+                "bkb": 80,
                 "kbg": 55,
                 "hitbox_size": 4.5
               }
@@ -161,8 +172,7 @@
                 "angle": 361,
                 "bkb": 60,
                 "kbg": 58,
-                "hitbox_size": [ 4.3, 4.3, 5.3 ],
-                "no_reverse": true
+                "hitbox_size": [ 4.3, 4.3, 5.3 ]
               }
             ]
           }
@@ -178,8 +188,7 @@
                 "angle": 361,
                 "bkb": 60,
                 "kbg": 58,
-                "hitbox_size": [ 4.3, 4.3, 5.3 ],
-                "no_reverse": true
+                "hitbox_size": [ 4.3, 4.3, 5.3 ]
               }
             ]
           }
@@ -195,8 +204,7 @@
                 "angle": 361,
                 "bkb": 60,
                 "kbg": 58,
-                "hitbox_size": [ 4.3, 4.3, 5.3 ],
-                "no_reverse": true
+                "hitbox_size": [ 4.3, 4.3, 5.3 ]
               }
             ]
           }
@@ -216,11 +224,11 @@
             "hitboxes": [
               {
                 "id": [ 0, 1, 2, 3, 4, 5 ],
-                "damage": 11.0,
-                "angle": 285,
-                "bkb": [ 30, 30, 30, 25, 25, 25 ],
-                "kbg": [ 90, 90, 90, 61, 61, 61 ],
-                "hitbox_size": [ 6.0, 4.0, 3.0, 4.0, 4.0, 3.0 ],
+                "damage": 12.0,
+                "angle": [ 285, 285, 285, 361, 361, 361 ],
+                "bkb": [ 30, 30, 30, 50, 50, 50 ],
+                "kbg": [ 90, 90, 90, 80, 80, 80 ],
+                "hitbox_size": [ 4.5, 4.0, 3.0, 4.0, 4.0, 3.0 ],
                 "ground_air": [ "G", "G", "G", "A", "A", "A" ]
               }
             ]
@@ -241,11 +249,11 @@
             "hitboxes": [
               {
                 "id": [ 0, 1, 2 ],
-                "damage": [ 11.0, 11.0, 10.5 ],
+                "damage": 11.0,
                 "angle": [ 80, 80, 25 ],
                 "bkb": 46,
                 "kbg": [ 75, 75, 65 ],
-                "hitbox_size": 5.0
+                "hitbox_size": [ 4.0, 5.0, 5.0 ]
               }
             ]
           }
@@ -266,12 +274,11 @@
               {
                 "id": [ 0, 1 ],
                 "damage": 10.0,
-                "angle": 65,
-                "bkb": 90,
-                "kbg": 67,
-                "hitlag_mul": 1.25,
+                "angle": 51,
+                "bkb": 70,
+                "kbg": 80,
                 "shield_damage": 1.0,
-                "hitbox_size": [ 6.5, 4.5 ]
+                "hitbox_size": [ 5.5, 4.5 ]
               }
             ]
           }
@@ -286,12 +293,11 @@
               {
                 "id": [ 0, 1 ],
                 "damage": 6.0,
-                "angle": 65,
-                "bkb": 90,
-                "kbg": 67,
-                "hitlag_mul": 1.25,
+                "angle": 51,
+                "bkb": 70,
+                "kbg": 80,
                 "shield_damage": 1.0,
-                "hitbox_size": [ 5.0, 4.0 ]
+                "hitbox_size": 4.0
               }
             ]
           }
@@ -315,8 +321,7 @@
                 "angle": 45,
                 "bkb": 36,
                 "kbg": 93,
-                "hitbox_size": [ 3.8, 3.2, 3.2 ],
-                "no_reverse": true
+                "hitbox_size": [ 3.8, 3.2, 3.2 ]
               }
             ]
           }
@@ -334,8 +339,7 @@
                 "angle": 45,
                 "bkb": 36,
                 "kbg": 91,
-                "hitbox_size": [ 3.8, 3.2, 3.2 ],
-                "no_reverse": true
+                "hitbox_size": [ 3.8, 3.2, 3.2 ]
               }
             ]
           }
@@ -359,8 +363,7 @@
                 "angle": 43,
                 "bkb": 36,
                 "kbg": 93,
-                "hitbox_size": [ 3.8, 3.2, 3.2 ],
-                "no_reverse": true
+                "hitbox_size": [ 3.8, 3.2, 3.2 ]
               }
             ]
           }
@@ -378,8 +381,7 @@
                 "angle": 43,
                 "bkb": 36,
                 "kbg": 93,
-                "hitbox_size": [ 3.8, 3.2, 3.2 ],
-                "no_reverse": true
+                "hitbox_size": [ 3.8, 3.2, 3.2 ]
               }
             ]
           }
@@ -403,8 +405,7 @@
                 "angle": 38,
                 "bkb": 36,
                 "kbg": 93,
-                "hitbox_size": [ 3.8, 3.2, 3.2 ],
-                "no_reverse": true
+                "hitbox_size": [ 3.8, 3.2, 3.2 ]
               }
             ]
           }
@@ -422,8 +423,7 @@
                 "angle": 38,
                 "bkb": 36,
                 "kbg": 91,
-                "hitbox_size": [ 3.8, 3.2, 3.2 ],
-                "no_reverse": true
+                "hitbox_size": [ 3.8, 3.2, 3.2 ]
               }
             ]
           }
@@ -534,9 +534,8 @@
                 "id": [ 0, 1, 2 ],
                 "damage": 6.0,
                 "angle": [ 82, 80, 74 ],
-                "fkb": 50,
+                "fkb": 45,
                 "kbg": 100,
-                "hitlag_mul": 1.1,
                 "hitbox_size": [ 5.5, 6.5, 5.0 ]
               }
             ]
@@ -618,7 +617,7 @@
             "hitbox_start": 10,
             "hitbox_end": 12,
             "faf": 34,
-            "autocancel_start": [ 1, 20 ],
+            "autocancel_start": [ 1, 22 ],
             "autocancel_end": [ 4 ],
             "landing_lag": 9,
             "hitboxes": [
@@ -628,7 +627,7 @@
                 "angle": 361,
                 "bkb": [ 27, 0, 0 ],
                 "kbg": 100,
-                "hitbox_size": [ 4.75, 4.5, 4.75 ]
+                "hitbox_size": [ 4.75, 4.5, 4.0 ]
               }
             ]
           }
@@ -646,7 +645,7 @@
                 "angle": 361,
                 "bkb": [ 27, 0, 0 ],
                 "kbg": 100,
-                "hitbox_size": [ 5.0, 4.0, 4.25 ]
+                "hitbox_size": [ 4.75, 4.5, 4.0 ]
               }
             ]
           }
@@ -713,10 +712,10 @@
             "hitboxes": [
               {
                 "id": [ 0, 1, 2, 3, 4, 5 ],
-                "damage": 14.0,
+                "damage": 16.0,
                 "angle": [ 270, 270, 290, 270, 270, 290 ],
-                "bkb": 30,
-                "kbg": [ 100, 100, 100, 47, 47, 53 ],
+                "bkb": [ 30, 30, 30, 31, 31, 30 ],
+                "kbg": [ 100, 100, 100, 42, 42, 56 ],
                 "hitbox_size": [ 4.5, 5.0, 4.5, 4.5, 5.0, 4.5 ],
                 "ground_air": [ "G", "G", "G", "A", "A", "A" ]
               }

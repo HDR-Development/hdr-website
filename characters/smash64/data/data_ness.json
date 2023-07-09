@@ -530,45 +530,23 @@
       "move_name": "Up Air",
       "data": [
         {
-          "movepart_name": "Multihits",
+          "movepart_name": "",
           "data": {
             "is_aerial": true,
             "hitbox_start": 8,
-            "hitbox_end": 14,
-            "faf": 35,
-            "autocancel_start": 1,
-            "autocancel_end": 6,
-            "landing_lag": 8,
+            "hitbox_end": 11,
+            "faf": 42,
+            "autocancel_start": [ 1, 27 ],
+            "autocancel_end": [ 7 ],
+            "landing_lag": 9,
             "hitboxes": [
               {
-                "id": [ 0, 1, 2, 3 ],
-                "damage": 2.5,
-                "angle": [ 367, 367, 366, 366 ],
-                "fkb": 30,
-                "kbg": 100,
-                "hitlag_mul": 0.75,
-                "hitbox_size": [ 5.5, 3.5, 5.5, 3.5 ],
-                "ground_air": [ "A", "A", "G", "G" ],
-                "no_reverse": true
-              }
-            ]
-          }
-        },
-        {
-          "movepart_name": "Launcher",
-          "data": {
-            "is_aerial": true,
-            "hitbox_start": 15,
-            "hitbox_end": 17,
-            "hitboxes": [
-              {
-                "id": [ 0, 1 ],
-                "damage": 5.0,
-                "angle": 73,
-                "bkb": 40,
-                "kbg": 180,
-                "hitlag_mul": 1.5,
-                "hitbox_size": [ 3.5, 6.5 ]
+                "id": [ 0 ],
+                "damage": 13.0,
+                "angle": 85,
+                "bkb": 13,
+                "kbg": 118,
+                "hitbox_size": 5.9
               }
             ]
           }

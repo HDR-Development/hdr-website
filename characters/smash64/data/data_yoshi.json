@@ -69,17 +69,17 @@
           "movepart_name": "High",
           "data": {
             "is_normal": true,
-            "hitbox_start": 5,
-            "hitbox_end": 7,
+            "hitbox_start": 6,
+            "hitbox_end": 8,
             "faf": 30,
             "hitboxes": [
               {
                 "id": [ 0, 1, 2 ],
-                "damage": 11.0,
-                "angle": [ 75, 75, 85 ],
-                "bkb": 52,
-                "kbg": 73,
-                "hitbox_size": [ 5.0, 4.5, 4.0 ]
+                "damage": 13.0,
+                "angle": 70,
+                "bkb": 40,
+                "kbg": 70,
+                "hitbox_size": [ 5.0, 4.4, 3.3 ]
               }
             ]
           }
@@ -88,17 +88,16 @@
           "movepart_name": "Mid",
           "data": {
             "is_normal": true,
-            "hitbox_start": 5,
-            "hitbox_end": 7,
-            "faf": 30,
+            "hitbox_start": 6,
+            "hitbox_end": 8,
             "hitboxes": [
               {
                 "id": [ 0, 1, 2 ],
-                "damage": 10.0,
-                "angle": [ 75, 75, 85 ],
-                "bkb": 52,
-                "kbg": 73,
-                "hitbox_size": [ 5.0, 4.5, 4.0 ]
+                "damage": 12.0,
+                "angle": 70,
+                "bkb": 40,
+                "kbg": 70,
+                "hitbox_size": [ 5.0, 4.4, 3.3 ]
               }
             ]
           }
@@ -107,17 +106,16 @@
           "movepart_name": "Low",
           "data": {
             "is_normal": true,
-            "hitbox_start": 5,
-            "hitbox_end": 7,
-            "faf": 30,
+            "hitbox_start": 6,
+            "hitbox_end": 8,
             "hitboxes": [
               {
                 "id": [ 0, 1, 2 ],
-                "damage": 9.0,
-                "angle": [ 75, 75, 85 ],
-                "bkb": 52,
-                "kbg": 73,
-                "hitbox_size": [ 5.0, 4.5, 4.0 ]
+                "damage": 11.0,
+                "angle": 70,
+                "bkb": 40,
+                "kbg": 70,
+                "hitbox_size": [ 5.0, 4.4, 3.3 ]
               }
             ]
           }

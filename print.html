@@ -148,26 +148,14 @@
 <img src=./images/HDRLogo.jpeg>
 </img>
 </p>
-<div style="text-align:center;font-size:200%;font-family:Verdana">
-<i><b>
-A Mod for Super Smash Bros. Ultimate <br>
-Created by The HDR Dev Team <br>
-</b></i>
-</div>
-<div style="text-align:center;font-size:125%;font-family:Verdana">
-<i>Website made by Askew</i><br>
-</div>
-<div style="text-align:center;font-size:115%;font-family:Verdana">
-<i>Legacy Contributors: Gabe, JOB, Sergio C.</i><br><br>
-</div>
 <h1 style="text-align:center;font-size:325%;font-family:Verdana">
 <u>HDR Data</u>
 </h1>
 <div style="text-align:center;font-size:150%">
-Current release version: <span style="color:limegreen">v0.30.40</span>
+Current release version: <span style="color:green">v0.34.??</span>
 </div>
 <div style="text-align:center;font-size:150%">
-Current site version: <span style="color:green">v0.26.100</span>
+Current site version: <span style="color:limegreen">v0.??.??</span>
 </div>
 <br><br><br>
 <div style="text-align:center;font-size:140%">
@@ -181,6 +169,14 @@ Beta changelogs:<br>
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><a href="https://docs.google.com/document/d/1jy-1a4FJ-M5ibwGJI4k8PIEkmCM7XIvwYBB9SXZrF5A">0.34.24</a></td>
+      <td>7/8/2023</td>
+    </tr>
+    <tr>
+      <td><a href="https://docs.google.com/document/d/1gnO06dYaOFGamMeVHKJE9ZFrWzE9KcodmqU2NsWx7Lw">0.32.6</a></td>
+      <td>5/26/2023</td>
+    </tr>
     <tr>
       <td><a href="https://docs.google.com/document/d/1rWgSBXDgdKZLIV9kvXUEqhF0WPvLeQBR8fXWe9pFf7o">0.30.40</a></td>
       <td>4/9/2023</td>
@@ -1422,6 +1418,8 @@ Interested in helping out? Please check out the <a href="./information/contribgu
 <p>Up Throw</p><div class="charTable"></div>
 <br>
 <p>Down Throw</p><div class="charTable"></div>
+<br>
+<p>Side Taunt</p><div class="charTable"></div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script src="../../js/arrow.js"></script>
 <script type="text/javascript" src="../../js/dataparser.js"></script>
@@ -1506,16 +1504,17 @@ Interested in helping out? Please check out the <a href="./information/contribgu
 <div class="charTable"></div>
 <p class="info_movepart">Multihits</p>
 <ul>
-  <li>Deals 0.85x + 1.0% damage for each subsequent hit</li>
+  <li>Deals 0.75x + 1.0% damage for each subsequent hit</li>
 </ul>
 <div class="charTable"></div>
 <br>
-<p>Hand Slap / Air Cargo (Down Special)</p>
-<p class="info_header">Hand Slap</p>
+<p>Barrel Pull / Air Cargo (Down Special)</p>
+<p class="info_header">Barrel Pull</p>
 <ul>
-  <li>Performs a second slap if Special is held</li>
+  <li>Pulls a barrel from the ground</li>
+  <li>DK cannot pull a second barrel while one is still present</li>
+  <li>Barrels are unbreakable and bounce off opponents when colliding with them</li>
 </ul>
-<div class="charTable"></div>
 <p class="info_header">Air Cargo</p>
 <ul>
   <li>Air Cargo is a command grab that transitions into Cargo Carry upon grabbing an opponent</li>
@@ -1541,6 +1540,17 @@ Interested in helping out? Please check out the <a href="./information/contribgu
 <ul>
   <li>Hitbox Duration: F12-14</li>
   <li>FAF: 42</li>
+</ul>
+<p>Heavy Item Carry (Superlift)
+<ul>
+  <li>Can drop through platforms and fastfall during superlift</li>
+  <li>Added a neutral toss</li>
+  <li>Items can be thrown at any point during turnaround</li>
+  <li>Has 45KB heavy armor</li>
+</ul>
+<p>Heavy Item Down Throw</p>
+<ul>
+  <li>Gives DK a burst of vertical momentum</li>
 </ul>
 <br>
 <p>Cargo Forward Throw</p><div class="charTable"></div>
@@ -1612,8 +1622,7 @@ Interested in helping out? Please check out the <a href="./information/contribgu
 <p>Spin Attack (Up Special)</p>
 <p class="info_header">Ground</p>
 <ul>
-  <li>Link can move left and right slightly along the ground during the charge and release</li>
-  <li>Can be land canceled after sliding off a ledge</li>
+  <li>Can slide off edges during the charge and release</li>
 </ul>
 <div class="charTable"></div>
 <p class="info_header">Air</p>
@@ -1836,7 +1845,11 @@ Interested in helping out? Please check out the <a href="./information/contribgu
 </ul>
 <div class="charTable"></div>
 <br>
-<p>Egg Toss (Up Special)</p><div class="charTable"></div>
+<p>Egg Toss (Up Special)</p>
+<ul>
+  <li>The grounded version can slide off edges</li>
+</ul>
+<div class="charTable"></div>
 <br>
 <p>Egg Bomb (Down Special)</p>
 <p class="info_header">Ground</p>
@@ -1910,7 +1923,11 @@ Interested in helping out? Please check out the <a href="./information/contribgu
 </ul>
 <div class="charTable"></div>
 <br>
-<p>Dash Attack</p><div class="charTable"></div>
+<p>Dash Attack</p>
+<ul>
+  <li>Can slide off edges during frames 1-21</li>
+</ul>
+<div class="charTable"></div>
 <br>
 <p>Forward Smash</p><div class="charTable"></div>
 <br>
@@ -1962,13 +1979,27 @@ Interested in helping out? Please check out the <a href="./information/contribgu
 <p class="info_header">Air</p>
 <div class="charTable"></div>
 <br>
-<p>Final Cutter (Up Special)</p><div class="charTable"></div>
+<p>Final Cutter / Cutter Dash (Up Special)</p>
+<p class=info_header>Final Cutter</p>
+<ul>
+  <li>Hold Special and either left or right before Kirby starts rising to transition into Cutter Dash</li>
+</ul>
+<div class="charTable"></div>
 <p class="info_header">Cutter Wave</p>
+<div class="charTable"></div>
+<p class=info_header>Cutter Dash</p>
+<p class="info_movepart">Ground</p>
+<div class="charTable"></div>
+<p class="info_movepart">Air</p>
+<ul>
+  <li>Actionable on hit</li>
+</ul>
 <div class="charTable"></div>
 <br>
 <p>Stone Transform (Down Special)</p>
 <ul>
-  <li>Has 25.0% heavy armor starting on frame 11/19 (ground/air)</li>
+  <li>Has 100KB light armor during frames 8-15 and 15.0% heavy armor starting on frame 11/19 (ground/air)</li>
+  <li>Has 25.0% heavy armor while fully transformed</li>
   <li>Can release from the stone after falling for at least 10 frames</li>
 </ul>
 <div class="charTable"></div>
@@ -2460,7 +2491,7 @@ Interested in helping out? Please check out the <a href="./information/contribgu
 <p>Up Tilt</p><div class="charTable">
 <ul>
   <li>Front arm intangible during frames 1-13</li>
-  <li>Lower leg intangible during frames 14-15</li>
+  <li>Lower leg intangible during frames 14-18</li>
 </ul>
 </div>
 <br>
@@ -3359,11 +3390,11 @@ Interested in helping out? Please check out the <a href="./information/contribgu
 <ul>
   <li>Using electric attacks builds up charge</li>
   <ul>
-    <li>Connecting with the move will build charge equal to the move's damage whereas whiffing will only accrue 25% of that</li>
+    <li>Connecting with the move will build charge equal to the move's damage whereas whiffing will only accrue about 25% of that</li>
   </ul>
-  <li>After dealing a total of 60% with electric attacks, Pichu enters Charge State</li>
+  <li>After dealing a total of 50% with electric attacks, Pichu enters Charge State</li>
   <ul>
-    <li>Charge State lasts 15 seconds, increasing the damage of all electric attacks by 1.2x while also increasing their recoil by 1.25x</li>
+    <li>Charge State lasts 25 seconds, increasing the damage of all electric attacks by 1.2x while also increasing their recoil by 1.25x</li>
     <li>Pichu's specials also change significantly</li>
   </ul>
   <li>Pressing Shield while taunting in training mode instantly activates Charge State</li>
@@ -3440,7 +3471,7 @@ Interested in helping out? Please check out the <a href="./information/contribgu
 <p class="info-header">Electroweb</p>
 <ul>
   <li>Paralyzes opponents</li>
-  <li>Decrements Charge State timer by 1 sec on use</li>
+  <li>Decrements Charge State timer by 2sec on use</li>
   <li>Inflicts 3.0% recoil</li>
 </ul>
 <div class="charTable"></div>
@@ -3454,8 +3485,8 @@ Interested in helping out? Please check out the <a href="./information/contribgu
 <div class="charTable"></div>
 <p class="info-header">Wild Charge</p>
 <ul>
-  <li>Grounded/Aerial FAF on whiff is 65/79</li>
-  <li>Decrements Charge State timer by 1 sec on use</li>
+  <li>Grounded/Aerial FAF on whiff is 59/73</li>
+  <li>Decrements Charge State timer by 2sec on use</li>
   <li>Inflicts 3.0% recoil</li>
 </ul>
 <div class="charTable"></div>
@@ -3470,7 +3501,7 @@ Interested in helping out? Please check out the <a href="./information/contribgu
 <ul>
   <li>Can be jump canceled on hit</li>
   <li>Inflicts 1.0/2.0% recoil</li>
-  <li>Decrements Charge State timer by 1 sec on use</li>
+  <li>Decrements Charge State timer by 2sec on use</li>
 </ul>
 <div class="charTable"></div>
 <br>
@@ -3486,10 +3517,10 @@ Interested in helping out? Please check out the <a href="./information/contribgu
   <li>Size, damage, and recoil scale linearly based on how much Charge State time is left, down to a minimum of 75% size and 50% damage/recoil</li>
   <ul>
     <li>FAF also decreases depending on remaining Charge State</li>
-    <li>Remains at full power for the first three seconds of Charge State</li>
+    <li>Remains at full power for the first 5 seconds of Charge State</li>
   </ul>
   <li>Ends Charge State on use</li>
-  <li>Intanigble during frames 7-20</li>
+  <li>Intangible during frames 7-15</li>
 </ul>
 <div class="charTable"></div>
 <br>
@@ -3523,14 +3554,6 @@ Interested in helping out? Please check out the <a href="./information/contribgu
 <div class="charTable"></div>
 <br>
 <p>Back Throw</p>
-<ul>
-  <li>Sends at an angle of 80 during Charge State</li>
-  <li>FAF is 31 during Charge State</li>
-  <li>Inflicts 1.0% recoil during Charge State</li>
-</ul>
-<div class="charTable"></div>
-<br>
-<p>Up Throw</p>
 <p class="info-header">Normal</p>
 <div class="charTable"></div>
 <p class="info-header">Charge State</p>
@@ -3539,7 +3562,23 @@ Interested in helping out? Please check out the <a href="./information/contribgu
 </ul>
 <div class="charTable"></div>
 <br>
-<p>Down Throw</p><div class="charTable"></div>
+<p>Up Throw</p>
+<ul>
+  <li>Inflicts 1.0% recoil</li>
+</ul>
+<p class="info-header">Normal</p>
+<div class="charTable"></div>
+<p class="info-header">Charge State</p>
+<div class="charTable"></div>
+<br>
+<p>Down Throw</p>
+<p class="info-header">Normal</p>
+<div class="charTable"></div>
+<p class="info-header">Charge State</p>
+<ul>
+  <li>Decrements Charge State timer by 3sec on use</li>
+</ul>
+<div class="charTable"></div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script src="../../js/arrow.js"></script>
 <script type="text/javascript" src="../../js/dataparser.js"></script>
@@ -3833,7 +3872,7 @@ Interested in helping out? Please check out the <a href="./information/contribgu
 <p>Spin Attack (Up Special)</p>
 <ul>
   <li>Young Link can move left and right slightly along the ground during the charge and release</li>
-  <li>Can be land canceled after sliding off a ledge</li>
+  <li>Can slide off edges</li>
 </ul>
 <p class="info-header">Ground</p>
 <div class="charTable"></div>
@@ -3924,6 +3963,7 @@ Interested in helping out? Please check out the <a href="./information/contribgu
   <li>When performed in the air, Ganondorf will lose all vertical momentum and start floating immediately</li>
   <li>The float can be canceled into any move starting on frame 6 of the float</li>
   <li>The float lasts 89 frames</li>
+  <li>FAF (ground): 28</li>
 </ul>
 <br>
 <p>Flame Choke (Side Special)</p>
@@ -7278,9 +7318,9 @@ Interested in helping out? Please check out the <a href="./information/contribgu
 <h2 id="the-very-handy-command"><a class="header" href="#the-very-handy-command">The Very Handy Command</a></h2>
 <p>From the home directory of the repository, you can type <code>mdbook serve --open</code> in the VSCode terminal to launch a locally hosted web session. It will update and refresh every time you save any changes to a file, making previewing changes quick and easy. You can also hit <code>Ctrl+F5</code> to fully reload the session, which can help with refreshing styles and if the data doesn't seem to be pulling correctly</p>
 <h2 id="submitting-the-pull-request"><a class="header" href="#submitting-the-pull-request">Submitting the Pull Request</a></h2>
-<p>Once you have made your changes, simply commit your changes in Github Desktop and create a pull request. I should see it immediately and will merge it after review and any further needed adjustments</p>
+<p>Once you have made your changes, simply commit your changes in Github Desktop and create a pull request. It will be merged after review and any further needed adjustments</p>
 <h2 id="making-changes"><a class="header" href="#making-changes">Making Changes</a></h2>
-<p>To update characters with new changes, you'll need to look at two locations: the character page (<code>&lt;char&gt;.md</code>) and that character's data file (<code>&lt;char&gt;.json</code>). Both can be found in the characters folder, separated by game. The data file is located in the same directory as the character page under the data folder</p>
+<p>To update characters with new changes, you'll need to look at two locations: the character page (<code>&lt;char&gt;.md</code>) and that character's data file (<code>&lt;char&gt;.json</code>). Both can be found in the characters folder, separated by game. The data file is located in the same directory as the character page under the <code>data</code> folder</p>
 <h2 id="the-character-page-charmd"><a class="header" href="#the-character-page-charmd">The Character Page (<code>&lt;char&gt;.md</code>)</a></h2>
 <p>This is the skeleton that gets populated with all the character's data on page load
 <br><br><br>
@@ -7337,7 +7377,6 @@ You can also split the move into separate moves in the data file in order to pro
 </ul>
 <p>** Only one of these flags should be <code>true</code> per move part, with the exception of <code>has_fall</code>. Data flags need to be defined per move part, as each part can have different data flags</p>
 <h3 id="info-data"><a class="header" href="#info-data">Info Data</a></h3>
-<p>** Info data only needs to be defined in the first move part of each move if no subsequent move parts contain different values</p>
 <ul>
 <li><code>hitbox_start</code> - The starting frame of activity for the move part's hitboxes. If multiple hits, use array notation</li>
 <li><code>hitbox_end</code> - The ending frame of activity for the move part's hitboxes. If multiple hits, use array notation. For durations of a single frame, you can either set start and end to the same frame or only use start (if the last/only value)</li>
@@ -7350,6 +7389,7 @@ You can also split the move into separate moves in the data file in order to pro
 <li><code>autocancel_end</code> - The ending frame for a move part's autocancel window</li>
 <li><code>landing_lag</code> - The landing lag of the move</li>
 </ul>
+<p>** Info data only needs to be defined in the first move part of each move if no subsequent move parts contain different values</p>
 <h3 id="hitbox-data"><a class="header" href="#hitbox-data">Hitbox Data</a></h3>
 <ul>
 <li><code>id</code> - Hitbox ID</li>

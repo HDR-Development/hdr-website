@@ -247,10 +247,12 @@ function AddPersistingDataFields(movePart, moveNext, dataFlags) {
 
         if (!moveNext.data.faf_2nd && movePart.data.faf_2nd) {
             moveNext.data["faf_2nd"] = movePart.data.faf_2nd;
-            moveNext.data["faf_str"] = movePart.data.faf_str;
         }
         else if (moveNext.data.faf_2nd != movePart.data.faf_2nd) {
             dataFlags.split_faf = true;
+        }
+        if (!moveNext.data.faf_str && movePart.data.faf_str) {
+            moveNext.data["faf_str"] = movePart.data.faf_str;
         }
     }
     else if (moveNext.data.faf != movePart.data.faf) {
@@ -342,7 +344,12 @@ function parseInfoFooterData(div, movePart, dataFlags) {
     if (movePart.data.faf && !dataFlags.hide_faf) {
         let faf = document.createElement('p');
         if (!movePart.data.faf_2nd) {
-            faf.textContent = "FAF: " + movePart.data.faf;
+            if (movePart.data.faf_str) {
+                faf.textContent = "FAF (" +  movePart.data.faf_str + "): " + movePart.data.faf;
+            }
+            else {
+                faf.textContent = "FAF: " + movePart.data.faf;
+            }
         }
         else {
             faf.textContent = "FAF (" +  movePart.data.faf_str + "): " + movePart.data.faf + "/" + movePart.data.faf_2nd;
@@ -371,12 +378,16 @@ function parseInfoPartialFooterData(div, movePart, dataFlags) {
     if (dataFlags.split_faf && movePart.data.faf) {
         let faf = document.createElement('p');
         if (!movePart.data.faf_2nd) {
-            faf.textContent = "FAF: " + movePart.data.faf;
+            if (movePart.data.faf_str) {
+                faf.textContent = "FAF (" +  movePart.data.faf_str + "): " + movePart.data.faf;
+            }
+            else {
+                faf.textContent = "FAF: " + movePart.data.faf;
+            }
         }
         else {
-            faf.textContent = "FAF (" + movePart.data.faf_str + "): " + movePart.data.faf + "/" + movePart.data.faf_2nd;
+            faf.textContent = "FAF (" +  movePart.data.faf_str + "): " + movePart.data.faf + "/" + movePart.data.faf_2nd;
         }
-        
         faf.style.fontSize = "16px";
         div.appendChild(faf);
     }

@@ -14,7 +14,7 @@
               {
                 "id": [ 0, 1, 2 ],
                 "damage": 4.0,
-                "angle": 75,
+                "angle": 70,
                 "bkb": 30,
                 "kbg": 40,
                 "hitlag_mul": 1.1,
@@ -57,7 +57,7 @@
               {
                 "id": [ 0, 1, 2 ],
                 "damage": 4.0,
-                "angle": 75,
+                "angle": 70,
                 "bkb": 30,
                 "kbg": 40,
                 "hitlag_mul": 1.1,
@@ -243,7 +243,7 @@
                 "angle": 75,
                 "bkb": 25,
                 "kbg": 140,
-                "hitbox_size": [ 3.7, 3.5, 3.3 ]
+                "hitbox_size": [ 3.5, 3.0, 2.5 ]
               }
             ]
           }
@@ -489,7 +489,7 @@
               {
                 "id": [ 0, 1, 2, 3 ],
                 "damage": 3.0,
-                "angle": 367,
+                "angle": 366,
                 "fkb": 33,
                 "kbg": 100,
                 "hitlag_mul": 0.75,

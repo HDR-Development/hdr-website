@@ -862,10 +862,10 @@
             "hitboxes": [
               {
                 "id": 0,
-                "damage": 7.0,
+                "damage": 6.0,
                 "angle": 90,
                 "bkb": 70,
-                "kbg": 82
+                "kbg": 90
               }
             ]
           }
@@ -882,10 +882,34 @@
             "hitboxes": [
               {
                 "id": 0,
-                "damage": 6.0,
-                "angle": 74,
-                "bkb": 50,
-                "kbg": 105
+                "damage": 7.0,
+                "angle": 90,
+                "bkb": 60,
+                "kbg": 90
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "move_name": "Side Taunt",
+      "data": [
+        {
+          "data": {
+            "is_normal": true,
+            "hitbox_start": 10,
+            "hitbox_end": 41,
+            "faf": 40,
+            "hitboxes": [
+              {
+                "id": 0,
+                "damage": 1.0,
+                "angle": 361,
+                "bkb": 20,
+                "kbg": 30,
+                "hitlag_mul": 1.5,
+                "hitbox_size": 2.5
               }
             ]
           }
