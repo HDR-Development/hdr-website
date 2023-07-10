@@ -7,7 +7,7 @@
 <u>HDR Data</u>
 </h1>
 <div style="text-align:center;font-size:150%">
-Current release version: <span style="color:green">v0.34.??</span>
+Current release version: <span style="color:green">v0.35.00</span>
 </div>
 <div style="text-align:center;font-size:150%">
 Current site version: <span style="color:limegreen">v0.??.??</span>
@@ -25,8 +25,8 @@ Beta changelogs:<br>
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://docs.google.com/document/d/1jy-1a4FJ-M5ibwGJI4k8PIEkmCM7XIvwYBB9SXZrF5A">0.34.24</a></td>
-      <td>7/8/2023</td>
+      <td><a href="https://docs.google.com/document/d/1jy-1a4FJ-M5ibwGJI4k8PIEkmCM7XIvwYBB9SXZrF5A">0.35.00</a></td>
+      <td>7/10/2023</td>
     </tr>
     <tr>
       <td><a href="https://docs.google.com/document/d/1gnO06dYaOFGamMeVHKJE9ZFrWzE9KcodmqU2NsWx7Lw">0.32.6</a></td>
