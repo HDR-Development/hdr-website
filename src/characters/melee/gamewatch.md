@@ -1,354 +1,152 @@
-# ![](../../images/Stock_Gamewatch.png) Mr. Game and Watch
+# Mr. Game and Watch
+<br>
 
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width; initial-scale=1.0;">
 <link rel="stylesheet" type="text/css" href="../../style.css">
 
-![](../../images/SmashBall.png) <b>Attributes</b>
-  - Initial Dash Speed: 1.98 🠚 1.5
-  - Run Speed: 1.679 🠚 1.5
-  - Run Acceleration (base/multiplier): 0.044/0.09053 🠚 0.02/0.06
-  - Ground Friction: 0.131 🠚 0.06
-  - Jumpsquat: 3F 🠚 4F
-  - Max Horizontal Jump Speed: 1.5 🠚 1.475
-  - Short Hop Height 13.26 🠚 11.76
-  - Air Speed: 1.176 🠚 1.0
-  - Air Acceleration (base/multiplier): 0.07/0.03 🠚 0.02/0.048
-  - Air Friction: 0.012 🠚 0.016
-  - Gravity: 0.08 🠚 0.095
-  - Fall Speed: 1.24 🠚 1.71
-  - Fast Fall Speed: 1.984 🠚 2.28
-  - Combo Gravity: 0.0672 🠚 0.095
-  - Combo Fall Speed: 1.8 🠚 1.71
-  - Shield Radius: 10.4 🠚 10.0
-<br><br>
+<p class="center"><b>Overview</b></p>
+<p class="info"></p>
+<br>
 
-![](../../images/SmashBall.png) <b>Moveset</b>
-  - Jab (Green House):
-    - Jab 1
-      - <property>Can be canceled into Rapid Jab Finisher by pressing Attack between frames 6 and 13</property>
-        - Holding attack will still transition into Rapid Jab
-      - Hitlag Multiplier: <adjust>1.5x 🠚 1.2x</adjust>
-      - Jab Transition Frame: <adjust>F8 🠚 F6</adjust>
-    - Rapid Jab Finisher
-      - FAF: <buff>35 🠚 27</buff>
-<br><br>
-  - Forward Tilt (Lion):
-    - <buff>Chair legs hitbox angled slightly to match visual</buff>
-    - Early
-      - Angle: <buff>361 🠚 35</buff>
-      - KBG (chair/arm): <buff>96/100 🠚 99/103</buff>
-    - Late
-      - Angle: <buff>361 🠚 35</buff>
-<br><br>
-  - Up Tilt (Flagman):
-    - <buff>Added head intangibility during active frames</buff>
-    - <buff>Arm hitbox moved downward</buff>
-    - <buff>Added head hitbox</buff>
-    - Hitbox Duration (hit 1/hit 2): <buff>F10-12/F20-22 🠚 F7-9/F11-13</buff>
-    - Hit 1
-      - Damage: <buff>7.0% 🠚 9.5%</buff>
-      - Angle: <rework>170/145 🠚 75</rework>
-      - BKB: <rework>0 🠚 60</rework>
-      - FKB: <rework>60 🠚 0</rework>
-      - KBG: <rework>100 🠚 76</rework>
-      - Hitbox Size (head/arm/hand): <buff>*/3.0/4.5u 🠚 4.0/3.7/4.5u</buff>
-    - Hit 2
-      - Damage: <buff>7.0% 🠚 9.0%</buff>
-      - BKB: <rework>50 🠚 60</rework>
-      - KBG: <rework>117 🠚 76</rework>
-      - Hitbox Size (head/arm/hand): <buff>*/3.0/4.5u 🠚 4./3.7/4.5u</buff>
-    - FAF: <buff>34 🠚 27</buff>
-<br><br>
-  - Down Tilt (Manhole):
-    - <rework>Animation changed to Smash4 down tilt</rework>
-    - <buff>Can hit aerial opponents</buff>
-    - Hitbox Duration: <buff>F6-9 🠚 F6-10</buff>
-    - Damage: <buff>9.0% 🠚 11.0%</buff>
-    - Angle: <rework>30 🠚 85</rework>
-    - BKB: <rework>45 🠚 36</rework>
-    - KBG: <rework>112 🠚 116</rework>
-    - FAF: <buff>43 🠚 30</buff>
-<br><br>
-  - Dash Attack (Helmet):
-    - Hitbox Duration (early/late): <buff>F6-9/F10-19 🠚 F5-8/F9-18</buff>
-    - Early
-      - BKB: <nerf>70 🠚 50</nerf>
-    - Late
-      - Damage: <buff>6.5% 🠚 8.5%</buff>
-      - Angle: <rework>50 🠚 120</rework>
-      - BKB: <rework>70 🠚 65</rework>
-      - KBG: <rework>70 🠚 60</rework>
-    - FAF: <buff>39 🠚 36</buff>
-<br><br>
-  - Forward Smash (Fire Attack):
-    - <buff>Added late hit</buff>
-    - Hitbox Duration (early/late): <buff>F17-18 🠚 F13-15/F16-23</buff>
-    - Early
-      - Flame/Stick
-        - KBG: <buff>97 🠚 100</buff>
-      - Hand
-        - KBG: <buff>100 🠚 105</buff>
-    - Late
-      - Flame/Stick
-        - Damage: 18.0%
-        - Angle: 48
-        - BKB: 46
-        - KBG: 100
-        - Hitbox Size: 5.3/2.9u
-      - Hand
-        - Damage: 14.0%
-        - Angle: 48
-        - BKB: 42
-        - KBG: 100
-        - Hitbox Size: 2.6u
-    - FAF: <buff>43 🠚 39</buff>
-<br><br>
-  - Up Smash (Diver):
-    - KBG: <buff>98 🠚 114</buff>
-    - FAF: <nerf>39 🠚 44</nerf>
-<br><br>
-  - Down Smash (Vermin):
-    - Hitbox Duration: <nerf>F12-16 🠚 F14-18</nerf>
-    - Hammer Heads
-      - <rework>Removed bury properties</rework>
-      - KBG: <buff>55 🠚 91</buff>
-    - FAF: <nerf>38 🠚 43</nerf>
-<br><br>
-  - Neutral Air (Tropical Fish):
-    - Hit 1
-      - Bowl
-        - <buff>Lower bowl hitbox moved downward</buff>
-        - Damage: <buff>3.0% 🠚 3.5%</buff>
-        - Angle (lower): <buff>105 🠚 367</buff>
-        - BKB: <rework>0 🠚 26</rework>
-        - FKB: <rework>30 🠚 0</rework>
-        - KBG: <rework>100 🠚 22</rework>
-        - Hitlag Multiplier: <adjust>0.8x 🠚 0.5x</adjust>
-        - Hitbox Size: <buff>3.0/3.0u 🠚 4.0/4.0u</buff>
-      - Fish
-        - <buff>Front fish hitbox moved forward</buff>
-        - Damage: <buff>3.0% 🠚 3.5%</buff>
-        - Angle: <buff>165 🠚 235</buff>
-        - FKB: <buff>30 🠚 35</buff>
-        - Hitlag Multiplier: <adjust>0.8x 🠚 0.5x</adjust>
-        - Hitbox Size: <buff>2.5/2.5u 🠚 4.0/4.0u</buff>
-    - Hit 2
-      - Bowl
-        - <buff>Lower bowl hitbox moved downward</buff>
-        - Damage: <buff>3.0% 🠚 3.5%</buff>
-        - Angle (lower): <buff>105 🠚 367</buff>
-        - BKB: <rework>0 🠚 26</rework>
-        - FKB: <rework>20 🠚 0</rework>
-        - KBG: <rework>100 🠚 22</rework>
-        - Hitlag Multiplier: <adjust>0.8x 🠚 0.5x</adjust>
-        - Hitbox Size: <buff>3.0/3.0u 🠚 4.25/4.25u</buff>
-      - Fish
-        - Damage: <buff>3.0% 🠚 3.5%</buff>
-        - Angle (front fish/back fish): <buff>160/150 🠚 225/215</buff>
-        - FKB: <buff>30 🠚 35</buff>
-        - Hitlag Multiplier: <adjust>0.8x 🠚 0.5x</adjust>
-        - Hitbox Size: <buff>3.0/3.0u 🠚 4.5/4.5u</buff>
-    - Hit 3
-      - Bowl
-        - <buff>Lower bowl hitbox moved downward</buff>
-        - Damage: <buff>3.0% 🠚 3.5%</buff>
-        - Angle: <buff>120 🠚 367</buff>
-        - BKB: <rework>0 🠚 26</rework>
-        - FKB: <rework>15 🠚 0</rework>
-        - KBG: <rework>100 🠚 22</rework>
-        - Hitlag Multiplier: <adjust>0.8x 🠚 0.5x</adjust>
-        - Hitbox Size: <buff>3.0/3.0u 🠚 4.75/4.75u</buff>
-      - Fish
-        - Damage: <buff>3.0% 🠚 3.5%</buff>
-        - Angle (front fish/back fish): <buff>145/140 🠚 160/155</buff>
-        - FKB: <buff>30 🠚 35</buff>
-        - Hitlag Multiplier: <adjust>0.8x 🠚 0.5x</adjust>
-        - Hitbox Size: <buff>3.5/3.5u 🠚 4.75/4.75u</buff>
-    - Hit 4
-      - Bowl
-        - Angle: <rework>70 🠚 50</rework>
-        - BKB: <rework>40 🠚 35</rework>
-        - KBG: <rework>150 🠚 125</rework>
-        - Hitlag Multiplier: <adjust>2.0x 🠚 1.25x</adjust>
-        - Hitbox Size: <buff>7.5u 🠚 8.5u</buff>
-      - Fish
-        - Damage: <buff>4.0% 🠚 4.2%</buff>
-        - Angle: <rework>70 🠚 40</rework>
-        - BKB: <rework>40 🠚 35</rework>
-        - KBG: <rework>150 🠚 190</rework>
-        - Hitlag Multiplier: <adjust>2.0x 🠚 1.5x</adjust>
-        - Hitbox Size: <buff>3.0u 🠚 5.0u</buff>
-<br><br>
-  - Forward Air (Mario Bros.):
-    - <rework>Animation changed to Smash4 forward air</rework>
-    - Hitbox Duration (initial/early/late): F9/F10-12/F13-32
-    - Initial
-      - Damage: 16.0%
-      - Angle: 50
-      - BKB: 14
-      - KBG: 100
-      - Hitbox Size (hand/box): 5.2/6.0u
-    - Early
-      - Damage: 16.0%
-      - Angle: 361
-      - BKB: 14
-      - KBG: 100
-      - Hitbox Size (hand/box): 5.2/6.0u
-    - Late
-      - Damage: 8.0%
-      - Angle: 361
-      - BKB: 10
-      - KBG: 90
-      - Hitbox Size (hand/box): 5.2/6.0u
-    - FAF: 48
-    - Autocancel: F1-2/F42
-    - Landing Lag: 12F
-<br><br>
-  - Back Air (Turtle Bridge):
-    - <adjust>Removed landing hitbox</adjust>
-    - Hitbox Duration (hit 1/hit 2/hit 3/launcher): <adjust>F10-13/F14-17/F18-21/F22 🠚 F10-12/F14-16/F18-21/F22-23</adjust>
-    - Multihits
-      - Damage: <buff>2.0% 🠚 3.0%</buff>
-      - BKB: <buff>0 🠚 35</buff>
-      - KBG: <nerf>100 🠚 40</nerf>
-      - Hitlag Multiplier: <adjust>0.9x 🠚 0.5x</adjust>
-      - SDI Multiplier: <nerf>1.0x 🠚 1.1x</nerf>
-      - Hitbox Size (turtle/hand): <buff>4.2/3.3u 🠚 4.2/4.5u</buff>
-    - Launcher
-      - Damage: <buff>3.0% 🠚 5.0%</buff>
-      - Angle: <rework>361 🠚 60</rework>
-      - BKB: <rework>35 🠚 75</rework>
-      - KBG: <rework>185 🠚 70</rework>
-      - Hitlag Multiplier: <adjust>2.0x 🠚 1.5x</adjust>
-    - Landing Lag: <buff>18F 🠚 11F</buff>
-<br><br>
-  - Up Air (Spitball Sparky):
-    - <rework>Changed to a single toot</rework>
-    - Hitbox Duration: F5-9
-    - Damage: 8.0%
-    - Angle: 85
-    - BKB: 65
-    - KBG: 40
-    - Hitbox Size (head/puff): 5.0/6.0u
-    - FAF: 23
-    - Autocancel: None
-    - Landing Lag: 10F
-<br><br>
-  - Down Air (Donkey Kong Jr.):
-    - <rework>Removed stall and fall</rework>
-    - <buff>Added late hit</buff>
-    - <buff>Added hand hitbox</buff>
-    - Hitbox Duration (early/mid/late): <adjust>F12-13/F14-38 🠚 F12-13/F14-25/F26-35</adjust>
-    - Early
-      - Damage: <buff>11.0% 🠚 15.0%</buff>
-      - KBG (ground/air): <nerf>106 🠚 86/48</nerf>
-      - Hitbox Size (hand/key): <buff>*/4.0u 🠚 4.0/4.5u</buff>
-    - Mid
-      - Damage: <buff>11.0% 🠚 14.0%</buff>
-      - KBG: <adjust>117 🠚 108</adjust>
-      - Hitbox Size (hand/key): <buff>*/4.0u 🠚 4.0/4.5u</buff>
-    - Late
-      - Damage: 9.0%
-      - Angle: 60
-      - BKB: 20
-      - KBG: 100
-      - Hitbox Size (hand/key): 4.0/4.5u
-    - Landing Lag: <buff>22F 🠚 10F</buff>
-<br><br>
-  - Chef (Neutral Special):
-    - <buff>Retains aerial momentum</buff>
-    - <property>Can drift around in midair and fast fall during the animation</property>
-    - <property>Can be land canceled</property>
-    - Pan
-      - Hitbox Duration: <buff>F18-20 🠚 F10-11</buff>
-    - Food
-      - Maximum Projectile Count: <nerf>4 🠚 2</nerf>
-      - Lifetime: <nerf>80F 🠚 70F</nerf>
-      - Min interval between pieces: <nerf>10F 🠚 25F</nerf>
-      - Size Multiplier: <buff>1.0x 🠚 1.25x</buff>
-      - Trajectory Vertical Speed: <nerf>0.85/0.95/0.85/0.95/1.05 🠚 0.75/0.9/0.75/0.9/1.0</nerf>
-      - Trajectory Horizontal Speed: <adjust>0.6/0.6/0.5/0.5/0.5 🠚 0.45/0.6/0.5/0.6/0.55</adjust>
-      - Startup: <buff>F18 🠚 F10</buff>
-      - FAF: <buff>55 🠚 29</buff>
-<br><br>
-  - Judge (Side Special):
-    - Judge 1
-      - <rework>Added air-only hitboxes</rework>
-      - Self-Damage: <buff>12.0% 🠚 9.0%</buff>
-      - Air-only
-        - Damage: 2.0%
-        - Angle: 270
-        - BKB: 50
-        - KBG: 10
-        - Hitbox Size (hand/hammer): 3.0/6.0u
-    - Judge 2
-      - <buff>Deals an additional 10.0% damage over time similar to Eiha</buff>
-    - Judge 3
-      - <aesth>Hit effect changed to darkness</aesth>
-    - Judge 4
-      - <property>Can be jump canceled on hit</property>
-      - Angle: <rework>40 🠚 69</rework>
-      - Hitlag Multiplier: <adjust>1.0x 🠚 2.8x</adjsut>
-    - Judge 5
-      - Multihits
-        - Angle: <buff>75 🠚 367</buff>
-      - Launcher
-        - BKB: <nerf>40 🠚 60</nerf>
-    - Judge 7
-      - <property>Heals 9% on use and spawns one apple on hit instead of three</property>
-    - Judge 9
-      - Damage: <nerf>32.0% 🠚 25.0%</nerf>
-<br><br>
-  - Fire (Up Special):
-    - <property>Connecting with the trampoline makes the body hitbox not appear</property>
-    - <buff>Can jump out of the parachute flight</buff>
-    - <nerf>Removed intangibility</nerf>
-    - Height Multiplier: <nerf>1.1x 🠚 0.75x</nerf>
-    - Ground
-      - Hitbox Duration (launch/rise): <nerf>F3-4/F9-18 🠚 F7-8/F13-22</nerf>
-      - Launch
-        - Damage: <buff>3.0% 🠚 6.0%</buff>
-        - Angle: <buff>83 🠚 85</buff>
-        - BKB: <adjust>132 🠚 134</adjust>
-        - KBG: <buff>36 🠚 23</buff>
-        - Hitlag Multiplier: <adjust>1.5x 🠚 1.0x</adjust>
-    - Air
-      - Hitbox Duration (launch/rise): <nerf>F3-4/F9-18 🠚 F5-6/F11-20</nerf>
-      - Launch
-        - Damage: <buff>3.0% 🠚 6.0%</buff>
-        - Angle: <buff>75 🠚 85</buff>
-        - BKB: <adjust>100 🠚 105</adjust>
-        - KBG: <buff>70 🠚 43</buff>
-        - Hitlag Multiplier: <adjust>1.5x 🠚 1.0x</adjust>
-<br><br>
-  - Oil Panic (Down Special):
-    - Reflector
-      - Lifetime Multiplier: <buff>0.8x 🠚 1.0x</buff>
-      - Speed Multiplier: <buff>0.8x 🠚 1.0x</buff>
-<br><br>
-  - Forward Throw (Ball):
-    - Angle: <buff>52 🠚 68</buff>
-    - FAF: <buff>41 🠚 38</buff>
-<br><br>
-  - Back Throw (Ball):
-    - Angle: <buff>52 🠚 68</buff>
-    - FAF: <buff>41 🠚 38</buff>
-<br><br>
-  - Up Throw (Ball):
-    - BKB: <adjust>100 🠚 95</adjust>
-    - KBG: <buff>29 🠚 54</buff>
-    - FAF: <buff>41 🠚 40</buff>
-<br><br>
-  - Down Throw (Ball Drop):
-    - <property>Puts opponents into knockdown</property>
-    - Damage: <buff>4.0% 🠚 8.0%</buff>
-    - Angle: <rework>80 🠚 270</rework>
-    - BKB: <rework>70 🠚 0</rework>
-    - FKB: <rework>0 🠚 30</rework>
-    - KBG: <rework>120 🠚 100</rework>
-    - FAF: <buff>50 🠚 49</buff>
-<br><br>
-  - Up Taunt:
-    - <aesth>Plays a higher-pitched beep</aesth>
+<p class="center"><b>Moveset</b></p>
+<br>
+<p>Jab 1</p>
+<ul>
+  <li>Can be canceled into Rapid Jab Finisher by pressing Attack between frames 6 and 13</li>
+  <li>Holding Attack will transition into Rapid Jab</li>
+</ul>
+<div class="charTable"></div>
+<br>
+<p>Rapid Jab</p><div class="charTable"></div>
+<br>
+<p>Rapid Jab Finisher</p><div class="charTable"></div>
+<br>
+<p>Forward Tilt</p><div class="charTable"></div>
+<br>
+<p>Up Tilt</p>
+<ul>
+  <li>Hands intangible during entire move</li>
+  <li>Arms and head intangible during frames 7-13</li>
+</ul>
+<div class="charTable"></div>
+<br>
+<p>Down Tilt</p><div class="charTable"></div>
+<br>
+<p>Dash Attack</p><div class="charTable"></div>
+<br>
+<p>Forward Smash</p><div class="charTable"></div>
+<br>
+<p>Up Smash</p>
+<ul>
+  <li>Fully invincible during active frames</li>
+</ul>
+<div class="charTable"></div>
+<br>
+<p>Down Smash</p><div class="charTable"></div>
+<br>
+<p>Neutral Air</p><div class="charTable"></div>
+<br>
+<p>Forward Air</p><div class="charTable"></div>
+<br>
+<p>Back Air</p><div class="charTable"></div>
+<br>
+<p>Up Air</p><div class="charTable"></div>
+<br>
+<p>Down Air</p><div class="charTable"></div>
+<br>
+<p>Chef (Neutral Special)</p>
+<ul>
+  <li>Can be land canceled</li>
+  <li>Retains aerial momentum</li>
+  <li>Can drift and fastfall during the move</li>
+</ul>
+<div class="charTable"></div>
+<br>
+<p>Judge (Side Special)</p>
+<p class="info_header">Judge 1</p>
+<div class="charTable"></div>
+<p class="info_header">Judge 2</p>
+<ul>
+  <li>Deals 10.0% poison damage over time</li>
+</ul>
+<div class="charTable"></div>
+<p class="info_header">Judge 3</p>
+<div class="charTable"></div>
+<p class="info_header">Judge 4</p>
+<ul>
+  <li>Can be jump canceled on hit</li>
+</ul>
+<div class="charTable"></div>
+<p class="info_header">Judge 5</p>
+<div class="charTable"></div>
+<p class="info_header">Judge 6</p>
+<div class="charTable"></div>
+<p class="info_header">Judge 7</p>
+<ul>
+  <li>Heals for 9.0% and spawns an apple on hit</li>
+</ul>
+<div class="charTable"></div>
+<p class="info_header">Judge 8</p>
+<ul>
+  <li>Freezes opponents</li>
+</ul>
+<div class="charTable"></div>
+<p class="info_header">Judge 9</p>
+<div class="charTable"></div>
+<br>
+<p>Fire (Up Special)</p>
+<ul>
+  <li>Connecting with the trampoline makes the body hitbox not appear</li>
+  <li>Mr. Game and Watch is fully actionable during the parachute drift</li>
+</ul>
+<div class="charTable"></div>
+<br>
+<p>Oil Panic (Down Special)</p>
+<ul>
+  <li>Reflects physical projectiles and absorbs energy-based ones</li>
+  <ul>
+    <li>The bucket has three stages, each capable of storing up to 16.0%</li>
+    <li>The bucket takes the damage of whatever it absorbs and multiplies it by 2. If the resulting damage is greater than 16.0%, then the bucket will be filled by two stages (three if above 32.0%)</li>
+  </ul>
+  <li>Fully intangible during the entire absorb animation</li>
+  <li>FAF on absorb or release is 14</li>
+</ul>
+<div class="charTable"></div>
+<br>
+<p>Standing Grab</p>
+<ul>
+  <li>Hitbox Duration: F7-8</li>
+  <li>FAF: 36</li>
+</ul>
+<br>
+<p>Dash Grab</p>
+<ul>
+  <li>Hitbox Duration: F9-10</li>
+  <li>FAF: 43</li>
+</ul>
+<br>
+<p>Pivot Grab</p>
+<ul>
+  <li>Hitbox Duration: F10-11</li>
+  <li>FAF: 38</li>
+</ul>
+<br>
+<p>Forward Throw</p><div class="charTable"></div>
+<br>
+<p>Back Throw</p><div class="charTable"></div>
+<br>
+<p>Up Throw</p><div class="charTable"></div>
+<br>
+<p>Down Throw</p>
+<ul>
+  <li>Puts opponents into knockdown</li>
+</ul>
+<div class="charTable"></div>
 
-<script src="../../js/arrow.js">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="../../js/arrow.js"></script>
+<script type="text/javascript" src="../../js/dataparser.js"></script>
+<script type="text/javascript">
+  importFile("./data/data_gamewatch.json");
 </script>
